@@ -1,0 +1,292 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_goodnight",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -101.30202,
+       35.018148
+      ],
+      [
+       -101.300002,
+       35.018148
+      ],
+      [
+       -101.299995,
+       35.021145
+      ],
+      [
+       -101.302002,
+       35.021142
+      ],
+      [
+       -101.30202,
+       35.018148
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_goodnight",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Goodnight, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -101.30531,
+       35.018152
+      ],
+      [
+       -101.304451,
+       35.018151
+      ],
+      [
+       -101.304185,
+       35.018144
+      ],
+      [
+       -101.303292,
+       35.018149
+      ],
+      [
+       -101.303295,
+       35.019263
+      ],
+      [
+       -101.303284,
+       35.020034
+      ],
+      [
+       -101.303274,
+       35.021155
+      ],
+      [
+       -101.304155,
+       35.021143
+      ],
+      [
+       -101.304407,
+       35.021146
+      ],
+      [
+       -101.305285,
+       35.021146
+      ],
+      [
+       -101.305299,
+       35.020034
+      ],
+      [
+       -101.30531,
+       35.018152
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_goodnight",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Goodnight, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -101.307269,
+       35.015664
+      ],
+      [
+       -101.307261,
+       35.011796
+      ],
+      [
+       -101.305251,
+       35.011796
+      ],
+      [
+       -101.305236,
+       35.015633
+      ],
+      [
+       -101.307269,
+       35.015664
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_goodnight",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Goodnight, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -101.298976,
+       35.018164
+      ],
+      [
+       -101.294281,
+       35.018158
+      ],
+      [
+       -101.294266,
+       35.019899
+      ],
+      [
+       -101.298954,
+       35.019905
+      ],
+      [
+       -101.298976,
+       35.018164
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_goodnight",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Goodnight, feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -101.302697,
+       35.024273
+      ],
+      [
+       -101.30271,
+       35.022581
+      ],
+      [
+       -101.29806,
+       35.02257
+      ],
+      [
+       -101.29806,
+       35.024251
+      ],
+      [
+       -101.302697,
+       35.024273
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_goodnight",
+    "name": "epoch_building_011",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Goodnight, feature 11",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -101.302702,
+       35.025635
+      ],
+      [
+       -101.298049,
+       35.025624
+      ],
+      [
+       -101.298029,
+       35.027315
+      ],
+      [
+       -101.302681,
+       35.027344
+      ],
+      [
+       -101.302702,
+       35.025635
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_goodnight",
+    "name": "epoch_building_012",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Goodnight, feature 12",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

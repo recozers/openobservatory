@@ -1,0 +1,107 @@
+"""Audit the Epoch import and independent roof results; fail unmet A1 criteria."""
+import csv
+import json
+from pathlib import Path
+import re
+import sys
+
+import pandas as pd
+from shapely.geometry import shape
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from tools.s2_roof_timeline import roof_on_month
+from tools.epoch_roof_review import construction_context, review
+
+
+def main():
+    data = ROOT / "data"
+    context = construction_context(ROOT)
+    audit = list(csv.DictReader((data / "epoch/import_audit.csv").open()))
+    sites = {r['site_id']: r for r in csv.DictReader((data / "sites.csv").open())}
+    tl = list(csv.DictReader((data / "capacity_timeline.csv").open()))
+    statuses = {r['site_id']: r for r in json.loads((ROOT / 'site/data/status.json').read_text())['sites']}
+    totals = dict(epoch_records=len(audit), existing_sites=0, new_sites=0, new_sites_with_polygons=0, new_sites_with_s2=0,
+                  new_sites_with_event_dates=0, hall_polygons=0, dated_halls=0, already_roof_like=0, unresolved_halls=0, repaired_geometries=0, date_conflicts=0)
+    failures = []
+    def reject_constant(value):
+        raise ValueError(f"Non-JSON numeric token: {value}")
+    for path in (ROOT / "site/data").rglob("*.json"):
+        try:
+            json.loads(path.read_text(), parse_constant=reject_constant)
+        except ValueError as exc:
+            failures.append(f"{path.relative_to(ROOT)}: {exc}")
+    details = []
+    for row in audit:
+        sid = row['site_id']
+        if row['status'] == 'existing_curated':
+            totals['existing_sites'] += 1
+            continue
+        totals['new_sites'] += 1
+        s = sites[sid]
+        if not s['capacity_url'] or not s['capacity_source'] or sid not in statuses:
+            failures.append(f'{sid}: missing source or public status')
+        rows = [r for r in tl if r['site_id'] == sid]
+        if any(not r['url'] or r['capacity_basis'] not in ('it_reported', 'facility_design') for r in rows):
+            failures.append(f'{sid}: unsupported timeline provenance or units')
+        polygon = data / 'polygons' / f'{sid}.geojson'
+        features = json.loads(polygon.read_text())['features'] if polygon.exists() else []
+        if features:
+            totals['new_sites_with_polygons'] += 1
+        totals['hall_polygons'] += len(features)
+        for feature in features:
+            p = feature['properties']
+            if not shape(feature['geometry']).is_valid or not p.get('confidence') or not p.get('digitised_from') or not p.get('source_url'):
+                failures.append(f'{sid}: invalid or unsourced polygon')
+            totals['repaired_geometries'] += bool(p.get('geometry_repair'))
+        series = ROOT / 'results_s2' / f'{sid}.csv'
+        piv = pd.read_csv(series, index_col=0) if series.exists() else pd.DataFrame()
+        n_dates = n_existing = n_unknown = 0
+        for feature in features:
+            name = feature['properties']['name']
+            result = roof_on_month(piv[name]) if name in piv else 'unknown'
+            if review(result, feature['properties'], context.get(sid)):
+                totals['date_conflicts'] += 1
+                result = 'unknown'
+            if re.fullmatch(r'\d{4}-\d{2}', result):
+                n_dates += 1
+            elif result == 'existing':
+                n_existing += 1
+            else:
+                n_unknown += 1
+        available = bool(not piv.empty and piv.notna().any().any())
+        totals['new_sites_with_s2'] += available
+        totals['new_sites_with_event_dates'] += n_dates > 0
+        totals['dated_halls'] += n_dates
+        totals['already_roof_like'] += n_existing
+        totals['unresolved_halls'] += n_unknown
+        row['roof_status'] = 'dated' if n_dates else ('left_censored' if n_existing else ('unresolved' if features else 'no_polygons'))
+        details.append(f"| {s['name']} | {len(features)} | {n_dates} | {n_existing} | {n_unknown} | {s['coords_quality']} |")
+    if totals['epoch_records'] != 86 or totals['new_sites_with_event_dates'] < 40:
+        failures.append('A1 requires all 86 records accounted for and at least 40 new sites with independent event dates')
+    with (data / 'epoch/import_audit.csv').open('w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=list(audit[0]), lineterminator='\n'); writer.writeheader(); writer.writerows(audit)
+    report = dict(totals=totals, failures=failures,
+                  source='https://epoch.ai/data/ai-data-centers/map', sensor='COPERNICUS/S2_SR_HARMONIZED',
+                  rule='visible brightness above early baseline, two consecutive calendar months',
+                  caveats=['Epoch annotations include planned structures and are not independent proof of a data centre.',
+                           'An existing roof is left-censored at the first observations, not dated to 2018.',
+                           'A brightness non-detection leaves dark/grey roofs unresolved; it is not evidence of no construction.',
+                           'Capacity is an Epoch reported/modelled estimate, not measured electricity use.'])
+    (data / 'epoch/validation.json').write_text(json.dumps(report, indent=2) + '\n')
+    (ROOT / 'docs/epoch_inventory_audit.md').write_text(
+        '# Epoch inventory audit\n\nGenerated by `python tools/validate_epoch.py`. Counts refer to new physical site entries, excluding seven curated matches.\n\n'
+        + '\n'.join(f'- {k.replace("_", " ")}: {v}' for k, v in totals.items())
+        + '\n\nSources: [Epoch map annotations](https://epoch.ai/data/ai-data-centers/map), bundled Epoch CSV tables, '
+          'and Sentinel-2 SR harmonized monthly polygon brightness from 2018 through the extraction end date. '
+          'The saved snapshots and extraction summaries retain source URLs, geometry hashes, dates and confidence.\n\n'
+        + '\n'.join('- ' + c for c in report['caveats'])
+        + '\n\n| Site | Annotated halls | Event dates | Already roof-like | Unresolved | Coordinates |\n'
+          '|---|---:|---:|---:|---:|---|\n' + '\n'.join(details) + '\n')
+    print(json.dumps(report, indent=2), file=sys.stderr)
+    if failures:
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

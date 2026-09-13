@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_norway",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       7.8946615,
+       58.2572222
+      ],
+      [
+       7.8952803,
+       58.2568418
+      ],
+      [
+       7.8950722,
+       58.2567439
+      ],
+      [
+       7.895346,
+       58.2565652
+      ],
+      [
+       7.8955621,
+       58.256661
+      ],
+      [
+       7.8962278,
+       58.2562541
+      ],
+      [
+       7.8966166,
+       58.2564096
+      ],
+      [
+       7.8959813,
+       58.2568044
+      ],
+      [
+       7.8963005,
+       58.2569452
+      ],
+      [
+       7.8960172,
+       58.2571151
+      ],
+      [
+       7.8956911,
+       58.2569859
+      ],
+      [
+       7.8950448,
+       58.2573893
+      ],
+      [
+       7.8946615,
+       58.2572222
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_norway",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Norway, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

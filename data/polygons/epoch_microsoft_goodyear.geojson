@@ -1,0 +1,178 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_microsoft_goodyear",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -112.36687505999572,
+       33.40877692324658
+      ],
+      [
+       -112.36272697350852,
+       33.40877565461784
+      ],
+      [
+       -112.36272697350852,
+       33.40930389530192
+      ],
+      [
+       -112.36686973010926,
+       33.40930489277427
+      ],
+      [
+       -112.36687505999572,
+       33.40877692324658
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_goodyear",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Goodyear, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -112.36272928532888,
+       33.40998079227391
+      ],
+      [
+       -112.36272433512545,
+       33.41050355341581
+      ],
+      [
+       -112.36695057608914,
+       33.41050205958676
+      ],
+      [
+       -112.36695143484393,
+       33.40997897629596
+      ],
+      [
+       -112.36272928532888,
+       33.40998079227391
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_goodyear",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Goodyear, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -112.36695323170072,
+       33.41129903136884
+      ],
+      [
+       -112.36272908622998,
+       33.41129675087954
+      ],
+      [
+       -112.36272627241986,
+       33.411820531188184
+      ],
+      [
+       -112.36695281451641,
+       33.41182269605507
+      ],
+      [
+       -112.36695323170072,
+       33.41129903136884
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_goodyear",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Goodyear, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -112.3627259529758,
+       33.413081127305645
+      ],
+      [
+       -112.36695100692982,
+       33.41308075809964
+      ],
+      [
+       -112.36695219735283,
+       33.41255510381838
+      ],
+      [
+       -112.36272467946483,
+       33.41255492698444
+      ],
+      [
+       -112.3627259529758,
+       33.413081127305645
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_goodyear",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Goodyear, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

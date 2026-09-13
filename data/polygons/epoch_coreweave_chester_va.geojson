@@ -1,0 +1,151 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_chester_va",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.327217,
+       37.3611837
+      ],
+      [
+       -77.3283262,
+       37.3605192
+      ],
+      [
+       -77.3266542,
+       37.3588152
+      ],
+      [
+       -77.3257106,
+       37.3594073
+      ],
+      [
+       -77.3268115,
+       37.3604468
+      ],
+      [
+       -77.3266045,
+       37.3605916
+      ],
+      [
+       -77.327217,
+       37.3611837
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_chester_va",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Chester VA, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.3261343,
+       37.3608393
+      ],
+      [
+       -77.3262978,
+       37.3607348
+      ],
+      [
+       -77.3249721,
+       37.3593618
+      ],
+      [
+       -77.3243927,
+       37.3597121
+      ],
+      [
+       -77.3258516,
+       37.3611977
+      ],
+      [
+       -77.3262637,
+       37.3609521
+      ],
+      [
+       -77.3261343,
+       37.3608393
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_chester_va",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Chester VA, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.3343066,
+       37.3577002
+      ],
+      [
+       -77.334816,
+       37.356381
+      ],
+      [
+       -77.3322224,
+       37.3557184
+      ],
+      [
+       -77.3316281,
+       37.3570744
+      ],
+      [
+       -77.3343066,
+       37.3577002
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_chester_va",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Chester VA, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

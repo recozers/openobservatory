@@ -90,6 +90,8 @@ def main():
             areas = G.polygon_areas_m2(pl, lon, lat)
             for p in pl:
                 polys.append(dict(name=p.name, ptype=p.ptype, confidence=p.props.get("confidence", ""), note=p.props.get("note", ""),
+                                  digitised_from=p.props.get("digitised_from", ""), source_url=p.props.get("source_url", ""),
+                                  geometry_repair=p.props.get("geometry_repair", ""), roof_date_required=p.props.get("roof_date_required", False),
                                   valid_from=p.valid_from, area_ha=round(G.polygon_areas_m2([p], lon, lat)[p.ptype] / 1e4, 2)))
         so = obs[obs.site_id == sid] if not obs.empty else pd.DataFrame()
         sr = rej[rej.site_id == sid] if not rej.empty else pd.DataFrame()
@@ -113,7 +115,7 @@ def main():
         transfer_note = ""
         if region_cn:
             transfer_note = ("Chinese site. No thermal inversion is shown for any site (the cross-site relation is not identified). "
-                             "The load band below comes from documented or Epoch capacity, Sentinel-2 roof timelines and, where an adjacent plant exists, an NO2 activity index. Polygons are low-confidence 10 m digitisations.")
+                             "The load band below comes from documented or Epoch capacity, Sentinel-2 roof timelines and, where an adjacent plant exists, an NO2 activity index. See each polygon's source and confidence.")
         n_frames = int(so.datetime_utc.nunique()) if not so.empty else 0
         rej_counts = sr.groupby("reason").size().to_dict() if not sr.empty else {}
         n_rej_frames = int(sr.groupby(["product_id"]).ngroups) if not sr.empty else 0

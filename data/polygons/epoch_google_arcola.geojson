@@ -1,0 +1,79 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_arcola",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -77.531518,
+        38.940331
+       ],
+       [
+        -77.53150424162934,
+        38.940338086777814
+       ],
+       [
+        -77.531498,
+        38.940331
+       ],
+       [
+        -77.531518,
+        38.940331
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -77.532253,
+        38.942929
+       ],
+       [
+        -77.532021,
+        38.942661
+       ],
+       [
+        -77.532094,
+        38.942614
+       ],
+       [
+        -77.530557,
+        38.940826
+       ],
+       [
+        -77.53150424162934,
+        38.940338086777814
+       ],
+       [
+        -77.5333,
+        38.942377
+       ],
+       [
+        -77.532253,
+        38.942929
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_arcola",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": " Source self-intersection repaired with Shapely make_valid; non-area remnants discarded.",
+    "digitised_from": "Epoch AI public map annotation: Google Arcola, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

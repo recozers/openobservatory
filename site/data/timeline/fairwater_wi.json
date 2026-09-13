@@ -11,6 +11,14 @@
 "roof_basis": {
 "fairwater_1": "s2"
 },
+"roof_evidence": {
+"fairwater_1": {
+"rule": "visible_brightness",
+"first_observation": "2018-02",
+"valid_months": 88,
+"inferred_roof_on": "2024-04"
+}
+},
 "radar_on": {},
 "ntl_lit": "2024-10 (baseline -9.5, level -0.6, reached 45.9)",
 "s2_available": true,

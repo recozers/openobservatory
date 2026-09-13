@@ -1,0 +1,97 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_southgate_melbourne",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       144.843326,
+       -37.815845
+      ],
+      [
+       144.843142,
+       -37.816861
+      ],
+      [
+       144.843142,
+       -37.816861
+      ],
+      [
+       144.843142,
+       -37.816861
+      ],
+      [
+       144.843891,
+       -37.816964
+      ],
+      [
+       144.843951,
+       -37.816626
+      ],
+      [
+       144.845182,
+       -37.816785
+      ],
+      [
+       144.845301,
+       -37.816193
+      ],
+      [
+       144.844552,
+       -37.816099
+      ],
+      [
+       144.844546,
+       -37.816005
+      ],
+      [
+       144.844427,
+       -37.816033
+      ],
+      [
+       144.844445,
+       -37.815935
+      ],
+      [
+       144.844088,
+       -37.815902
+      ],
+      [
+       144.84407,
+       -37.815996
+      ],
+      [
+       144.843909,
+       -37.815977
+      ],
+      [
+       144.843915,
+       -37.815911
+      ],
+      [
+       144.843326,
+       -37.815845
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_southgate_melbourne",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Southgate Melbourne, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+"site_id": "epoch_crusoe_abilene_expansion",
+"name": "Crusoe Abilene Expansion",
+"tier": "A2",
+"density_mw_per_ha": 15.0,
+"density_basis": "default 15 MW/ha",
+"hall_area_ha": 14.7,
+"roof_on": {
+"epoch_building_000": "2026-06",
+"epoch_building_001": "2026-06"
+},
+"roof_basis": {
+"epoch_building_000": "s2",
+"epoch_building_001": "s2"
+},
+"roof_evidence": {
+"epoch_building_000": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-06"
+},
+"epoch_building_001": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-06"
+}
+},
+"radar_on": {},
+"ntl_lit": null,
+"s2_available": true,
+"no2_available": false,
+"no2_baseline": null,
+"thermal_night_available": false,
+"thermal_day_available": false,
+"quarters": [
+{
+"q": "2026Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 2,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "no roof yet",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+},
+{
+"q": "2026Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 2,
+"halls_total": 2,
+"built_ha": 14.7,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "roof on (14.7 ha) but not yet fitted out",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+},
+{
+"q": "2026Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 2,
+"halls_total": 2,
+"built_ha": 14.7,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "roof on (14.7 ha) but not yet fitted out",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+}
+],
+"caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
+}

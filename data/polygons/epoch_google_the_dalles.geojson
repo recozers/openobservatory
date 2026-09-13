@@ -1,0 +1,108 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_the_dalles",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.20656634110858,
+       45.62489396837762
+      ],
+      [
+       -121.20706887497826,
+       45.62570400844325
+      ],
+      [
+       -121.20981442587711,
+       45.62487682454599
+      ],
+      [
+       -121.2098573251103,
+       45.62494968579384
+      ],
+      [
+       -121.21028018897613,
+       45.62481682109424
+      ],
+      [
+       -121.20975314125903,
+       45.623929619703915
+      ],
+      [
+       -121.20656634110858,
+       45.62489396837762
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_the_dalles",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google The Dalles, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.20479159115749,
+       45.62326924146993
+      ],
+      [
+       -121.20530638195089,
+       45.624092163069804
+      ],
+      [
+       -121.20803967592603,
+       45.62325638322423
+      ],
+      [
+       -121.20808257515878,
+       45.623320674424036
+      ],
+      [
+       -121.20849318210135,
+       45.62320066412508
+      ],
+      [
+       -121.20796000592216,
+       45.62231772331248
+      ],
+      [
+       -121.20479159115749,
+       45.62326924146993
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_the_dalles",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google The Dalles, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

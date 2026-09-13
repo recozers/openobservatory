@@ -1,0 +1,15 @@
+{
+  "start": "2018-01-01",
+  "end_exclusive": "2026-09-14",
+  "rule": "visible_brightness",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "threshold": 0.3,
+  "polygons_sha256": "2ed784d4890399b3117d3da8fdab4744cc8af1cf7fbf4b8c7b0363478288bdcf",
+  "halls": {
+    "epoch_building_000": {
+      "roof_on": "2023-04",
+      "first_observation": "2018-01",
+      "valid_months": 105
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_sarpy",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.146074,
+       41.10573
+      ],
+      [
+       -96.145577,
+       41.105216
+      ],
+      [
+       -96.144445,
+       41.105852
+      ],
+      [
+       -96.143972,
+       41.1054
+      ],
+      [
+       -96.143312,
+       41.105788
+      ],
+      [
+       -96.143785,
+       41.106214
+      ],
+      [
+       -96.142671,
+       41.10685
+      ],
+      [
+       -96.143169,
+       41.107347
+      ],
+      [
+       -96.144326,
+       41.106723
+      ],
+      [
+       -96.144571,
+       41.106959
+      ],
+      [
+       -96.145204,
+       41.106596
+      ],
+      [
+       -96.144926,
+       41.106341
+      ],
+      [
+       -96.146074,
+       41.10573
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_sarpy",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Sarpy, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}
