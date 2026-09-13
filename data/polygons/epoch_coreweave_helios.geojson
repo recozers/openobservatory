@@ -1,0 +1,57 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_helios",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -100.86735454642213,
+       33.7746487500154
+      ],
+      [
+       -100.86744386068878,
+       33.7746487500154
+      ],
+      [
+       -100.86744386068878,
+       33.77457282194733
+      ],
+      [
+       -100.87081600013522,
+       33.77458386545638
+      ],
+      [
+       -100.87081770352289,
+       33.77422280793171
+      ],
+      [
+       -100.86735414391617,
+       33.774215441938466
+      ],
+      [
+       -100.86735454642213,
+       33.7746487500154
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_helios",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Coreweave Helios, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

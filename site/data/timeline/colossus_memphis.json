@@ -11,6 +11,14 @@
 "roof_basis": {
 "electrolux_hall": "s2"
 },
+"roof_evidence": {
+"electrolux_hall": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 100,
+"inferred_roof_on": "existing"
+}
+},
 "radar_on": {},
 "ntl_lit": "2025-01 (baseline 6.9, level 18.1, reached 25.2)",
 "s2_available": true,

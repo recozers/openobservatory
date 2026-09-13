@@ -1,0 +1,49 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_start_campus_sines_data_campus",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -8.813131,
+       37.935648
+      ],
+      [
+       -8.813708,
+       37.934837
+      ],
+      [
+       -8.812103,
+       37.934103
+      ],
+      [
+       -8.811516,
+       37.934921
+      ],
+      [
+       -8.813131,
+       37.935648
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_start_campus_sines_data_campus",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Start Campus Sines Data Campus, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

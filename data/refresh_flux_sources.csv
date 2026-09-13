@@ -1,0 +1,6 @@
+site_id,profile,baseline_before,notes
+colossus2_southaven,results_no2/flux_colossus2.csv,2025-07-01,Season-matched baseline cutoff reproduces the checked-in monthly NOx series within CSV rounding (0.05 kg/h).
+cn_horinger_cloud_valley,results_no2/flux_cn_horinger_shengle_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
+cn_ulanqab_park,results_no2/flux_cn_ulanqab_jining_700.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
+zhongwei_hub,results_no2/flux_cn_zhongwei_cpi_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
+chongqing_hub,results_no2/flux_cn_chongqing_liangjiang_gas.csv,,Adjacent plant only; preserve its existing activity-index interpretation.

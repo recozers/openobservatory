@@ -1,0 +1,261 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_council_bluffs_east",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.803176,
+       41.169739
+      ],
+      [
+       -95.799977,
+       41.169723
+      ],
+      [
+       -95.799973,
+       41.170699
+      ],
+      [
+       -95.802755,
+       41.170693
+      ],
+      [
+       -95.802755,
+       41.170774
+      ],
+      [
+       -95.803171,
+       41.170774
+      ],
+      [
+       -95.803176,
+       41.169739
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_council_bluffs_east",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Council Bluffs (East), feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.79377,
+       41.173143
+      ],
+      [
+       -95.790572,
+       41.173126
+      ],
+      [
+       -95.790568,
+       41.174103
+      ],
+      [
+       -95.793349,
+       41.174096
+      ],
+      [
+       -95.793349,
+       41.174178
+      ],
+      [
+       -95.793766,
+       41.174178
+      ],
+      [
+       -95.79377,
+       41.173143
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_council_bluffs_east",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Council Bluffs (East), feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.806764,
+       41.16974
+      ],
+      [
+       -95.803566,
+       41.169724
+      ],
+      [
+       -95.803561,
+       41.170701
+      ],
+      [
+       -95.806343,
+       41.170694
+      ],
+      [
+       -95.806343,
+       41.170776
+      ],
+      [
+       -95.80676,
+       41.170776
+      ],
+      [
+       -95.806764,
+       41.16974
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_council_bluffs_east",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Council Bluffs (East), feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.790247,
+       41.173133
+      ],
+      [
+       -95.787045,
+       41.173129
+      ],
+      [
+       -95.787038,
+       41.174102
+      ],
+      [
+       -95.78982,
+       41.174102
+      ],
+      [
+       -95.78982,
+       41.174187
+      ],
+      [
+       -95.790234,
+       41.174187
+      ],
+      [
+       -95.790247,
+       41.173133
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_council_bluffs_east",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Council Bluffs (East), feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.790311,
+       41.169271
+      ],
+      [
+       -95.789024,
+       41.169266
+      ],
+      [
+       -95.789037,
+       41.171776
+      ],
+      [
+       -95.790211,
+       41.171776
+      ],
+      [
+       -95.790204,
+       41.169668
+      ],
+      [
+       -95.790311,
+       41.169663
+      ],
+      [
+       -95.790311,
+       41.169271
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_council_bluffs_east",
+    "name": "epoch_building_015",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Council Bluffs (East), feature 15",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

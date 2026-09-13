@@ -1,0 +1,268 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_alibaba_zhangbei",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       114.7348276463789,
+       41.18465606519618
+      ],
+      [
+       114.7373517440468,
+       41.18485995903555
+      ],
+      [
+       114.73726595181853,
+       41.185502220480345
+      ],
+      [
+       114.73473733877131,
+       41.18531531964925
+      ],
+      [
+       114.7348276463789,
+       41.18465606519618
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_alibaba_zhangbei",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Alibaba Zhangbei, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       114.73507064836667,
+       41.18300477102659
+      ],
+      [
+       114.73758119989208,
+       41.18320867000668
+      ],
+      [
+       114.73749992304465,
+       41.18387813386343
+      ],
+      [
+       114.73496227923584,
+       41.18367763525484
+      ],
+      [
+       114.73507064836667,
+       41.18300477102659
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_alibaba_zhangbei",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Alibaba Zhangbei, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       114.7349365705997,
+       41.183841794234354
+      ],
+      [
+       114.73749227593032,
+       41.18404908887686
+      ],
+      [
+       114.7374064837021,
+       41.18468796004018
+      ],
+      [
+       114.73485529375228,
+       41.184470472684325
+      ],
+      [
+       114.7349365705997,
+       41.183841794234354
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_alibaba_zhangbei",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Alibaba Zhangbei, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       114.73509599317867,
+       41.182861120415026
+      ],
+      [
+       114.7352152988816,
+       41.18214793955707
+      ],
+      [
+       114.73766453843939,
+       41.18233220465817
+      ],
+      [
+       114.73756423807635,
+       41.18306404558629
+      ],
+      [
+       114.73509599317867,
+       41.182861120415026
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_alibaba_zhangbei",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Alibaba Zhangbei, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       114.72708295526195,
+       41.183372036206435
+      ],
+      [
+       114.72731509824382,
+       41.18183879758695
+      ],
+      [
+       114.72733284950363,
+       41.18156139744451
+      ],
+      [
+       114.72828833204926,
+       41.181637497502976
+      ],
+      [
+       114.72800760097971,
+       41.18343718315873
+      ],
+      [
+       114.72708295526195,
+       41.183372036206435
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_alibaba_zhangbei",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Alibaba Zhangbei, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       114.728569470737,
+       41.18435018091449
+      ],
+      [
+       114.72865292508862,
+       41.18373726532053
+      ],
+      [
+       114.73117382207022,
+       41.183921357179344
+      ],
+      [
+       114.73108173451095,
+       41.18454076833956
+      ],
+      [
+       114.728569470737,
+       41.18435018091449
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_alibaba_zhangbei",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Alibaba Zhangbei, feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_marble_nc",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -83.91534506066694,
+       35.18600427047602
+      ],
+      [
+       -83.91759688021394,
+       35.18567059344102
+      ],
+      [
+       -83.91742010185682,
+       35.18487251497427
+      ],
+      [
+       -83.91464636525569,
+       35.18530939510575
+      ],
+      [
+       -83.91482735262105,
+       35.186100589365665
+      ],
+      [
+       -83.91505463908044,
+       35.18606962973476
+      ],
+      [
+       -83.91520195437785,
+       35.186681940237975
+      ],
+      [
+       -83.91534506066694,
+       35.18666474056759
+      ],
+      [
+       -83.91531559760719,
+       35.18655122265285
+      ],
+      [
+       -83.9154671219135,
+       35.18652714307454
+      ],
+      [
+       -83.91534506066694,
+       35.18600427047602
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_marble_nc",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Marble NC, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

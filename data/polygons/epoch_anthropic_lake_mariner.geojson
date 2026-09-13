@@ -1,0 +1,135 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_anthropic_lake_mariner",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.59851198554479,
+       43.35788506470092
+      ],
+      [
+       -78.59696018629842,
+       43.358059582708506
+      ],
+      [
+       -78.59759095361792,
+       43.36104254546592
+      ],
+      [
+       -78.59916508091108,
+       43.36087209440217
+      ],
+      [
+       -78.59851198554479,
+       43.35788506470092
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_anthropic_lake_mariner",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Anthropic Lake Mariner, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.60214515762631,
+       43.356568872223676
+      ],
+      [
+       -78.59934247078093,
+       43.356899771417204
+      ],
+      [
+       -78.59950919009484,
+       43.357672954578135
+      ],
+      [
+       -78.60231638286804,
+       43.35734861199424
+      ],
+      [
+       -78.60214515762631,
+       43.356568872223676
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_anthropic_lake_mariner",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Anthropic Lake Mariner, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.59663503271778,
+       43.36117631735658
+      ],
+      [
+       -78.59600058731337,
+       43.35816722546866
+      ],
+      [
+       -78.59444975455878,
+       43.3583422356414
+      ],
+      [
+       -78.59510407595344,
+       43.36134409354722
+      ],
+      [
+       -78.59663503271778,
+       43.36117631735658
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_anthropic_lake_mariner",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Anthropic Lake Mariner, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

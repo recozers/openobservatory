@@ -1,0 +1,73 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_xai_qts_atlanta",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.419956,
+       33.779241
+      ],
+      [
+       -84.419928,
+       33.775919
+      ],
+      [
+       -84.419928,
+       33.775919
+      ],
+      [
+       -84.419928,
+       33.775929
+      ],
+      [
+       -84.418962,
+       33.775908
+      ],
+      [
+       -84.418986,
+       33.776203
+      ],
+      [
+       -84.419219,
+       33.776203
+      ],
+      [
+       -84.419214,
+       33.778233
+      ],
+      [
+       -84.419333,
+       33.778233
+      ],
+      [
+       -84.419413,
+       33.779241
+      ],
+      [
+       -84.419956,
+       33.779241
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_xai_qts_atlanta",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: xAI QTS Atlanta, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

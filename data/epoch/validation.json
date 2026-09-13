@@ -1,0 +1,26 @@
+{
+  "totals": {
+    "epoch_records": 86,
+    "existing_sites": 7,
+    "new_sites": 79,
+    "new_sites_with_polygons": 78,
+    "new_sites_with_s2": 78,
+    "new_sites_with_event_dates": 71,
+    "hall_polygons": 264,
+    "dated_halls": 217,
+    "already_roof_like": 13,
+    "unresolved_halls": 34,
+    "repaired_geometries": 19,
+    "date_conflicts": 16
+  },
+  "failures": [],
+  "source": "https://epoch.ai/data/ai-data-centers/map",
+  "sensor": "COPERNICUS/S2_SR_HARMONIZED",
+  "rule": "visible brightness above early baseline, two consecutive calendar months",
+  "caveats": [
+    "Epoch annotations include planned structures and are not independent proof of a data centre.",
+    "An existing roof is left-censored at the first observations, not dated to 2018.",
+    "A brightness non-detection leaves dark/grey roofs unresolved; it is not evidence of no construction.",
+    "Capacity is an Epoch reported/modelled estimate, not measured electricity use."
+  ]
+}

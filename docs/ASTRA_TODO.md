@@ -60,9 +60,17 @@ have no Earth Engine access, do the tasks marked [no-EE] first. Long Earth Engin
 ## Tasks, in priority order
 
 ### A1. Ingest the Epoch AI site list as the inventory backbone  [no-EE for steps 1–3]
+Status: done (PR #2; 78 new polygon/S2 sites, 71 with accepted event dates)
+
 Goal: the 86 sites in `data/epoch/data_centers.csv` (and their `data_center_timelines.csv` rows, which carry dated IT MW and
 buildings-operational counts) become proper inventory entries.
-Steps: (1) geocode each address (Nominatim, 1 request/s, `User-Agent` set) and record `coords_quality=geocoded_address`;
+Update (Astra, 2026-09-13): Epoch's public map now exposes coordinates and explicit Building annotations for 85/86 entries.
+Use the saved, attributed `data/epoch/map_annotations.json` as the polygon source instead of assuming nearby OSM buildings are halls.
+Retain cached address geocoding for comparison; use `epoch_published` when there is no reliable address match.
+Annotations can include planned buildings: missing brightness detections remain unknown, not existing roofs.
+The three provisional Chinese parks are distinct from the published Epoch coordinates; their unsupported Epoch MW labels are withdrawn.
+
+Original fallback steps: (1) geocode each address (Nominatim, 1 request/s, `User-Agent` set) and record `coords_quality=geocoded_address`;
 (2) for each site, fetch OpenStreetMap building footprints within 1 km (Overpass, `out geom`) and keep buildings ≥ 0.7 ha as
 hall polygons (`confidence=medium`, `digitised_from=OSM way <id>`); where OSM has nothing, render a Sentinel-2 chip with
 `tools/chip.py` and digitise by hand (`confidence=low`); (3) convert Epoch timeline rows into `capacity_timeline.csv` rows
@@ -72,6 +80,7 @@ hall polygons (`confidence=medium`, `digitised_from=OSM way <id>`); where OSM ha
 no site without a source.
 
 ### A2. Chinese project documents  [no-EE]
+Status: done (PR #3; provincial search audit and negative-search alternative)
 Goal: replace the low-confidence Chinese labels with filed figures. For `cn_horinger_cloud_valley`, `cn_zhangbei_alibaba`,
 `cn_ulanqab_park` and the seven hub centroids, search for 环境影响报告表/报告书 公示 (EIA notices), 节能审查 (energy review),
 土地出让公告 (land transfer) and 备案 (project filing) documents naming the campuses. Record IT load (MW), rack counts, generator
@@ -80,6 +89,7 @@ counts, coordinates and dates with the document URL in `capacity_timeline.csv` (
 has at least one filed figure with URL, or a note that none was found after searching the provincial EPB and NDRC sites.
 
 ### A3. Dark-roof and grey-roof detection in the Sentinel-2 timeline
+Status: blocked (proposed index rule fails Hyperion validation; draft PR #4)
 `tools/s2_roof_timeline.py` dates roofs by visible brightness rising above the polygon's early baseline; dark membranes
 (Hyperion) and grey Chinese roofs are missed. Add a second criterion using change against bare soil: NDVI falling below 0.15 and
 a built-up index (NDBI or BSI) rising, sustained two months; report whichever fires first and label the rule. Validate on
@@ -87,6 +97,7 @@ Abilene (12 known dates), Hyperion (roofs on by Jan 2026) and the three Chinese 
 dates; Abilene's dates move by ≤ 1 month.
 
 ### A4. Candidate-site discovery from Sentinel-2 change (the automatic-detection layer)
+Status: done (PR #7; 3/3 US recall, 7 Chinese candidates, all 30 chips reviewed)
 Note: a radar version now exists (`tools/s1_timeline.py --candidates`, see A8/A9) and a night-lights regional scan
 (`tools/ntl_scan.py`). The optical detector is still wanted as the confirmation stage: for each radar or lights candidate,
 confirm a flat-roofed complex and date its roofs; the region-wide optical scan is the lower priority.
@@ -100,7 +111,7 @@ Accept: recall = 3/3 on the US validation boxes; a ranked candidate list with ch
 false-positive rate you observed.
 
 ### A5. Low-stack NOx calibration plants
-Status: blocked (3 gas candidates have factors; physical stack class, non-power isolation and exact overpass alignment unverified; astra/a5-low-stack-screen)
+Status: blocked (3 gas factors available; stack class, broader isolation and overpass alignment unverified; draft PR #6)
 The NOx calibration uses tall-stack coal plants. Find gas-turbine or engine plants that (a) report hourly to EPA CAMPD
 (`tools/campd_hourly.py <facilityId> 2023` returns rows), (b) emit ≥ 1,000 short tons NOx/yr (eGRID `data/egrid/plants_2023.csv`),
 and (c) have no other large emitter within 15 km. Run `tools/no2_flux.py` on each for 2023 and add them to
@@ -108,6 +119,8 @@ and (c) have no other large emitter within 15 km. Run `tools/no2_flux.py` on eac
 low-stack vs tall-stack factors in `docs/LOG.md`.
 
 ### A6. Monthly refresh workflow
+Status: done (PR #1; expanded 218-file workflow_dispatch dry run green)
+
 Write `.github/workflows/refresh.yml` (manual trigger plus monthly cron) that installs the environment, runs
 `tools/s2_roof_timeline.py` for every site with polygons, `tools/no2_flux_quarterly.py` for sites with flux files, then the three
 build scripts, and commits `site/data/*` to `main`. Secrets `EE_SERVICE_ACCOUNT_JSON`, `EARTHDATA_TOKEN`, `EPA_API_KEY` are to be
@@ -117,6 +130,7 @@ JSON is present. Accept: the workflow runs green on `workflow_dispatch` in a dry
 are absent.
 
 ### A7. Housekeeping  [no-EE]
+Status: done (PR #5; name, mobile layout and contributor guide; pins/tests in PRs #1/#2)
 - Pin `requirements.txt` (add earthengine-api, tabulate, openpyxl, scipy versions in use).
 - `CONTRIBUTING.md`: how to add a site, the provenance rule, the branch convention above.
 - Make the site name consistent (repo is openobservatory; pages say DC Watch): ask Stuart which, then apply.
@@ -125,6 +139,7 @@ are absent.
 - Mobile layout for `site/index.html` panel (currently overlaps the legend below 500 px).
 
 ### A8. Digitise the campuses the radar scan found  [no-EE]
+Status: todo
 `results_s1/<hub>_candidates.csv` (hub = ulanqab, horinger, zhangbei, guian, chongqing_shuitu, qingyang) lists new structures
 2021→2026 ranked by area with a chip per candidate (`results_s1/<hub>_candNN.png`, 1.2 km, annual Sentinel-2 median). For every
 candidate ≥ 5 ha, decide from the chip whether it is a data-hall complex (long white halls, cooling yards, generator rows,
@@ -135,6 +150,7 @@ first to do. Then run `tools/s2_roof_timeline.py` and `tools/s1_timeline.py` on 
 in the six boxes classified with a one-line reason in `docs/LOG.md`; polygons for the data-hall ones; site rebuilt.
 
 ### A9. Radar candidate boxes for every inventory site and hub
+Status: todo
 Run `python tools/s1_timeline.py --chip LAT LON --candidates --half 6000 --early 2021 --late 2026 --out results_s1/<site>`
 for every site in `data/sites.csv` that does not yet have a `results_s1/<site>_candidates.csv` (the US AI sites are the
 validation: their known halls must appear in the top ranks), and for the Chinese hub centroids not yet covered (zhongwei_hub,
@@ -142,6 +158,7 @@ qingyang_hub if missing). Note the recall at the known sites and the false-posit
 candidates CSV per site; a table of recall.
 
 ### A10. Chinese operator filings, campus level  [no-EE]
+Status: todo
 `docs/cn_operator_disclosures_notes.md` found that no listed operator gives per-campus figures in its headline tables, but
 Chindata's FY2022 20-F has a per-data-centre table (CN01–CN23, MW per site inside the Zhangjiakou/Datong clusters) that was
 not parsed, and VNET's 6-Ks mention Ulanqab orders (235 MW, a 100 MW framework) that could not be fetched. Download the
@@ -150,6 +167,7 @@ service, utilised, period, URL), and run an EDGAR full-text search for "Ulanqab"
 "Zhongwei" across VNET, GDS and Chindata filings. Accept: every per-campus MW figure in those filings recorded with its URL.
 
 ### A11. Operator disclosure ingest  [no-EE]
+Status: todo
 Write `tools/ingest_disclosures.py` that turns `data/operator_disclosures.csv` electricity rows into
 `data/capacity_timeline.csv` rows (basis `facility_measured_annual`, tier A2) idempotently, so the next Meta index (each
 July) is a one-line update. Then extend the CSV: Meta's other campuses that are in the Epoch list (Forest City, Altoona,

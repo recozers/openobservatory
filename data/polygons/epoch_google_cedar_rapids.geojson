@@ -1,0 +1,135 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_cedar_rapids",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -91.72569486687573,
+       41.91939812399133
+      ],
+      [
+       -91.72564019341861,
+       41.916980063146525
+      ],
+      [
+       -91.72444982688837,
+       41.91699497936952
+      ],
+      [
+       -91.7245194306606,
+       41.91941857620924
+      ],
+      [
+       -91.72569486687573,
+       41.91939812399133
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_cedar_rapids",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Cedar Rapids, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -91.7200965954066,
+       41.91851782742657
+      ],
+      [
+       -91.71889829028763,
+       41.91853310167508
+      ],
+      [
+       -91.71897355441087,
+       41.92096248741743
+      ],
+      [
+       -91.720188940806,
+       41.92095293464442
+      ],
+      [
+       -91.7200965954066,
+       41.91851782742657
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_cedar_rapids",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Cedar Rapids, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -91.72006356314101,
+       41.9158118329338
+      ],
+      [
+       -91.71889898914958,
+       41.915814541031295
+      ],
+      [
+       -91.71893449499296,
+       41.91813745629193
+      ],
+      [
+       -91.72012881786918,
+       41.91812683442913
+      ],
+      [
+       -91.72006356314101,
+       41.9158118329338
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_cedar_rapids",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Cedar Rapids, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

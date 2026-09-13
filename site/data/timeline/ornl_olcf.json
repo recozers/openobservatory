@@ -11,6 +11,14 @@
 "roof_basis": {
 "east_campus_5600_complex": "s2"
 },
+"roof_evidence": {
+"east_campus_5600_complex": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 100,
+"inferred_roof_on": "not_yet"
+}
+},
 "radar_on": {},
 "ntl_lit": "not_yet",
 "s2_available": true,

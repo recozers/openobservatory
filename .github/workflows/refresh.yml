@@ -1,0 +1,85 @@
+# Stuart: add repository secrets EE_SERVICE_ACCOUNT_JSON (the full private JSON),
+# EARTHDATA_TOKEN and EPA_API_KEY in Settings > Secrets and variables > Actions.
+# Register the service account's Cloud project for Earth Engine and enable its API.
+# Optional repository variable EE_PROJECT overrides the key's project_id.
+# Missing EE credentials automatically select dry-run: no EE calls or commits.
+name: Monthly evidence refresh
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Rebuild saved evidence without Earth Engine or publication
+        type: boolean
+        default: true
+  schedule:
+    - cron: '0 4 3 * *'
+  pull_request:
+    paths: ['.github/workflows/refresh.yml', 'tools/refresh.py', 'dcheat/gee.py', 'requirements.txt', 'tests/test_refresh.py']
+permissions:
+  contents: read
+concurrency:
+  group: evidence-refresh-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'schedule' && 'main' || github.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Test credential and refresh behavior
+        run: python -m unittest discover -s tests -v
+      - name: Refresh evidence and validate static JSON
+        id: refresh
+        env:
+          # Pull requests never receive service account secrets.
+          EE_SERVICE_ACCOUNT_JSON: ${{ github.event_name != 'pull_request' && secrets.EE_SERVICE_ACCOUNT_JSON || '' }}
+          EE_PROJECT: ${{ vars.EE_PROJECT }}
+          EARTHDATA_TOKEN: ${{ github.event_name != 'pull_request' && secrets.EARTHDATA_TOKEN || '' }}
+          EPA_API_KEY: ${{ github.event_name != 'pull_request' && secrets.EPA_API_KEY || '' }}
+          DRY_RUN: ${{ github.event_name == 'pull_request' || inputs.dry_run || github.ref != 'refs/heads/main' }}
+          EE_DEADLINE_MS: '180000'
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            python tools/refresh.py --dry-run
+          else
+            python tools/refresh.py
+          fi
+      - name: Save refreshed evidence for review and reproduction
+        uses: actions/upload-artifact@v4
+        with:
+          name: refreshed-evidence
+          path: |
+            site/data/
+            results_s2/
+            results_no2/*_monthly.csv
+          retention-days: 30
+      - name: Commit site data to main
+        id: commit
+        if: steps.refresh.outputs.publish == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/data/
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Refresh public evidence and site data'
+          # Reject a concurrent main update; rerun against the new inventory.
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Deploy refreshed Pages data
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # A GITHUB_TOKEN push does not trigger the Pages push workflow.
+        run: gh workflow run pages.yml --ref main

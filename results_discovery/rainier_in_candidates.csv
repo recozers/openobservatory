@@ -1,0 +1,5 @@
+rank,site_box,lat,lon,area_ha,rectangularity,first_change_year,chip,confidence,digitised_from,review
+1,rainier_in,41.66523921155529,-86.47432905687808,138.0,0.6344827586206897,2024,rainier_in_001.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+2,rainier_in,41.690045573285566,-86.4679550416096,65.5,0.6717948717948717,2024,rainier_in_002.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+3,rainier_in,41.67629029056827,-86.4785178846285,59.75,0.7422360248447205,2024,rainier_in_003.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+4,rainier_in,41.68897134530688,-86.4593309615266,12.25,0.8166666666666667,2025,rainier_in_004.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
