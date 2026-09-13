@@ -1,0 +1,55 @@
+{
+  "site_box": "rainier_in",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "season": "January 1 through September 13, same season in each year; latest year incomplete",
+  "grid_m": 50,
+  "rgb_grid_m": 20,
+  "region": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -86.3994186962578,
+          41.62460529129195
+        ],
+        [
+          -86.39841296740505,
+          41.732685412081786
+        ],
+        [
+          -86.54270190251641,
+          41.73335023921858
+        ],
+        [
+          -86.54346643383235,
+          41.625267614705145
+        ],
+        [
+          -86.3994186962578,
+          41.62460529129195
+        ]
+      ]
+    ]
+  },
+  "signature": "0a86ff1df5feb2554264",
+  "index_sha256": "a9a4f48cd18787eaec0cc2ef521aefc7329b07f2e2293b5945a85faf85c885d4",
+  "rule": "NDVI drop >= .15, current NDVI < .25, brightness rise >= .08 OR NDBI rise >= .10; 8-connected area >= 3 ha; rectangularity >= .6",
+  "first_change_definition": "First sampled year with at least half the final candidate pixels meeting the rule against 2022; not a month or commissioning date",
+  "count": 4,
+  "validation": {
+    "known_campus_recovered": true,
+    "intersecting_ranks": [
+      1,
+      2
+    ],
+    "definition": "At least one candidate overlaps an independently stored hall polygon; not per-hall recall"
+  },
+  "caveat": "Bare soil, construction yards, roads and other industries can pass; source identity needs review."
+}

@@ -1,0 +1,7 @@
+rank,site_box,lat,lon,area_ha,rectangularity,first_change_year,chip,confidence,digitised_from,review
+1,stargate_abilene,32.49776548787068,-99.79571133968345,70.25,0.7231234816842723,2026,stargate_abilene_001.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+2,stargate_abilene,32.50586189067947,-99.77975036321561,64.0,0.6095238095238096,2025,stargate_abilene_002.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+3,stargate_abilene,32.48414631084548,-99.78940317586267,22.0,0.7521367521367521,2026,stargate_abilene_003.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+4,stargate_abilene,32.48596998835527,-99.77926402240219,6.75,0.675,2026,stargate_abilene_004.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+5,stargate_abilene,32.49186544178458,-99.78608996614193,5.5,0.7857142857142857,2026,stargate_abilene_005.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+6,stargate_abilene,32.48932763037225,-99.79142686209515,3.25,0.8125,2026,stargate_abilene_006.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
