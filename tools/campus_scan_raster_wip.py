@@ -6,7 +6,7 @@ from pathlib import Path
 import ee, numpy as np, pandas as pd
 from scipy import ndimage
 import os; ee.Initialize(project=os.environ.get('EE_PROJECT') or None); ee.data.setDeadline(900000)
-S = '/private/tmp/claude-501/-Users-stuartbladon-Documents-Duke-Duke2025-Meridian/c86b0055-6aad-4703-9bda-9b4946f14ec7/scratchpad'
+S = str(Path(__file__).resolve().parents[1] / 'results_campus')  # classifier and training features live here
 M = pickle.load(open(f'{S}/dc_classifier.pkl', 'rb'))
 bands = [f'A{i:02d}' for i in range(64)]
 w = dict(zip(M['cols'], M['w'])); b = M['b']
