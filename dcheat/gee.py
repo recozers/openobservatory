@@ -37,11 +37,28 @@ QA_FILL, QA_DILATED, QA_CIRRUS, QA_CLOUD, QA_SHADOW = 1 << 0, 1 << 1, 1 << 2, 1 
 def _ee():
     import ee  # noqa: F401
     proj = os.environ.get("EE_PROJECT")
-    try:
-        ee.Initialize(project=proj) if proj else ee.Initialize()
-    except Exception:
-        ee.Authenticate()
-        ee.Initialize(project=proj) if proj else ee.Initialize()
+    key_data = os.environ.get("EE_SERVICE_ACCOUNT_JSON")
+    key_file = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+    if not key_data and key_file:
+        key_data = Path(key_file).read_text()
+    if key_data:
+        try:
+            info = json.loads(key_data)
+            email = info["client_email"]
+            proj = proj or info["project_id"]
+            credentials = ee.ServiceAccountCredentials(email, key_data=key_data)
+        except Exception:
+            # Never include private key material in exception messages or logs.
+            raise ValueError("Invalid Earth Engine service-account JSON") from None
+        ee.Initialize(credentials, project=proj)
+    else:
+        try:
+            ee.Initialize(project=proj) if proj else ee.Initialize()
+        except Exception:
+            if os.environ.get("CI", "").lower() in ("1", "true"):
+                raise RuntimeError("Earth Engine credentials unavailable in CI; configure EE_SERVICE_ACCOUNT_JSON or use dry-run") from None
+            ee.Authenticate()
+            ee.Initialize(project=proj) if proj else ee.Initialize()
     # fail a hung request (e.g. after the machine sleeps) instead of blocking forever; the per-site cache makes re-runs cheap
     ee.data.setDeadline(int(os.environ.get("EE_DEADLINE_MS", "900000")))
     return ee

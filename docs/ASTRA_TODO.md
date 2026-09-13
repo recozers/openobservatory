@@ -104,6 +104,8 @@ and (c) have no other large emitter within 15 km. Run `tools/no2_flux.py` on eac
 low-stack vs tall-stack factors in `docs/LOG.md`.
 
 ### A6. Monthly refresh workflow
+Status: in progress (astra/a6-refresh)
+
 Write `.github/workflows/refresh.yml` (manual trigger plus monthly cron) that installs the environment, runs
 `tools/s2_roof_timeline.py` for every site with polygons, `tools/no2_flux_quarterly.py` for sites with flux files, then the three
 build scripts, and commits `site/data/*` to `main`. Secrets `EE_SERVICE_ACCOUNT_JSON`, `EARTHDATA_TOKEN`, `EPA_API_KEY` are to be

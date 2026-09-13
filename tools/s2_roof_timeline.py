@@ -48,9 +48,8 @@ def main():
     ap.add_argument("--max-cloud", type=float, default=60.0)
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
-    import ee
-    ee.Initialize(project=os.environ.get("EE_PROJECT") or None)
-    ee.data.setDeadline(int(os.environ.get("EE_DEADLINE_MS", "900000")))
+    from dcheat.gee import _ee
+    ee = _ee()
     polys = [p for p in G.load_site_polygons(Path(args.polygons)) if p.ptype == args.ptype]
     if not polys:
         sys.exit(f"no polygons of ptype {args.ptype}")

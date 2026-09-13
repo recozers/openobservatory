@@ -16,7 +16,9 @@ xarray==2026.7.0
 matplotlib==3.11.2
 pillow==12.3.0
 mgrs==1.5.4
+earthengine-api==1.7.43
+tabulate==0.10.0
+openpyxl==3.1.5
 # optional
-# earthengine-api>=1.5      # gee backend (extract.py --backend gee)
 # tabpfn>=2.0               # secondary learner; needs model weights from Hugging Face
 # playwright==1.62.0        # screenshot check of the static site

@@ -45,6 +45,41 @@ cd site && python -m http.server 8000
 
 Earth Engine is free for non-commercial use; the Earthdata login and the EPA key are free.
 
+## Monthly refresh
+
+`.github/workflows/refresh.yml` runs at 04:00 UTC on the third day of each month,
+and can be started from Actions → Monthly evidence refresh → Run workflow.
+The manual trigger defaults to **dry-run**: it skips Earth Engine, rebuilds from
+saved evidence, validates every generated JSON file, and uploads a review artifact.
+Missing service-account credentials also select dry-run, without committing.
+Pull requests run the same dry-run check without access to service-account secrets.
+
+Stuart must add `EE_SERVICE_ACCOUNT_JSON` (the full JSON key), `EARTHDATA_TOKEN`,
+and `EPA_API_KEY` under Settings → Secrets and variables → Actions. Register the
+service account's Cloud project with Earth Engine and enable its API. The optional
+repository variable `EE_PROJECT` overrides the project in the key. Keys are read
+in memory and never included in artifacts or commits. Local OAuth still works;
+`GOOGLE_APPLICATION_CREDENTIALS` can alternatively point to a local key file.
+See [Earth Engine service-account setup](https://developers.google.com/earth-engine/guides/service_account).
+
+Live refresh runs one roof-extraction process per hall-bearing site from 2018,
+recomputes the published NOx series listed in `data/refresh_flux_sources.csv`, and
+runs the three build scripts. That manifest preserves the original seasonal
+baseline and maps adjacent-plant profiles to their existing activity strips.
+Research and calibration profiles are not automatically promoted into campus
+generation estimates. NOx daily profiles are saved inputs: this workflow does
+not fetch new daily NOx observations. Earthdata and EPA keys are reserved for
+future extraction steps; the present refresh does not require them.
+
+Live runs on `main` commit only `site/data/`, retain extracted evidence as a
+30-day Actions artifact, and explicitly dispatch Pages after a successful push.
+If main changes during extraction, the push fails normally; rerun on the new
+inventory. Branch protection may require Stuart to permit the automation's
+data commits. No force pushes are used.
+
+Local check: `python tools/refresh.py --dry-run`. Dependencies, including
+Earth Engine, tabulate, openpyxl and scipy, are pinned in `requirements.txt`.
+
 ## Provenance rule
 
 Every number shown must trace to a free public dataset, a script in this repository and a polygon with a stated confidence.
