@@ -4,3 +4,4 @@ cn_horinger_cloud_valley,results_no2/flux_cn_horinger_shengle_cogen.csv,,Adjacen
 cn_ulanqab_park,results_no2/flux_cn_ulanqab_jining_700.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
 zhongwei_hub,results_no2/flux_cn_zhongwei_cpi_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
 chongqing_hub,results_no2/flux_cn_chongqing_liangjiang_gas.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
+stargate_abilene,results_no2/flux_abilene.csv,2025-01-01,Pre-2025 analysis baseline; SCR permit ceiling does not establish a two-sided emission factor or campus MW.

@@ -1,0 +1,30 @@
+[
+  {
+    "source_id": "abilene_review",
+    "url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&Rendition=Web&dID=8600163",
+    "retrieved": "2026-09-13",
+    "sha256": "13bd44e0d6070bd8d1c616d4832c162dd7ee13fbe2e509e32e853248b3957176",
+    "pages": 2
+  },
+  {
+    "source_id": "abilene_modification",
+    "url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&Rendition=Web&dID=8600639",
+    "retrieved": "2026-09-13",
+    "sha256": "4e9054cae94213ed251074f5c749f7b864556e6755e24f1c674909e995cfb63b",
+    "pages": 64
+  },
+  {
+    "source_id": "fermi_final",
+    "url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=GET_FILE&allowInterrupt=1&dDocName=8281239&dID=9562400",
+    "retrieved": "2026-09-13",
+    "sha256": "0d31975ec96d668bec3b1149643c53d16c5cef2c3edb9780442603af93426403",
+    "pages": 43
+  },
+  {
+    "source_id": "mzx_final",
+    "url": "https://opcgis.deq.state.ms.us/ensearchonline/get_doc.aspx?dt=finalp&id=1834338",
+    "retrieved": "2026-09-13",
+    "sha256": "62734b21f553899dfc3abb82bd8b2ef3de34357b29bb09522e24d0f9ba155fe4",
+    "pages": 40
+  }
+]

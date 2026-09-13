@@ -1,0 +1,62 @@
+{
+  "calibration_sha256": "84f83b17c4094e162daf3a539234dc85f3a8883f4c91c75257cc65f34ccd7b53",
+  "method": "tools/no2_flux.py estimate; tools/no2_flux_quarterly.py monthly",
+  "records": [
+    {
+      "record_id": "abilene_registered",
+      "site_id": "stargate_abilene",
+      "profile": "results_no2/flux_abilene.csv",
+      "profile_sha256": "4d305628528462de5c9f0ed81e7c18b77439d0be216fe8415c977a8b768ed9e3",
+      "observation_start": "2023-01-01",
+      "observation_end": "2026-08-31",
+      "observation_days": 880,
+      "baseline_before": "2025-01-01",
+      "monthly_output": "results_no2/flux_stargate_abilene_monthly.csv",
+      "monthly_sha256": "286ff621ef63a0642142dadf55b4dd693bb13958ca1a98384fcf4bc84f88eed0",
+      "post_baseline_months": 20,
+      "months_ge_2_5_sigma": 0,
+      "maximum_monthly_z": 2.381,
+      "monthly_screen": "below_detection",
+      "composite_fit": {
+        "label": "abilene_registered cached daily profiles",
+        "n_days": 880,
+        "E_mol_s": 0.8302823066472143,
+        "E_se": 0.19271283798860872,
+        "nox_kg_h": 181.51477023299438,
+        "nox_tpy": 1443.4764048792345,
+        "x0_km": 13.740357242541506,
+        "sigma_km": 7.873224347716601,
+        "offset": -0.07843665594788186
+      },
+      "caveat": "Monthly screen uses the existing conditional baseline SE and coal calibration; it is not an independent source-attribution test or a measured IT-load verdict. First-fire dates remain unverified."
+    },
+    {
+      "record_id": "colossus2_temporary",
+      "site_id": "colossus2_southaven",
+      "profile": "results_no2/flux_colossus2.csv",
+      "profile_sha256": "0e9c8ea6316c2eda77262b9efa8d2a64a845d9c6dcae79e421753bc1024e5ccb",
+      "observation_start": "2023-01-01",
+      "observation_end": "2026-08-28",
+      "observation_days": 607,
+      "baseline_before": "2025-07-01",
+      "monthly_output": "results_no2/flux_colossus2_southaven_monthly.csv",
+      "monthly_sha256": "1ae0b4db190a2670fb20b694285da263ef56450f21b136d12d6bf3d772a4ad3c",
+      "post_baseline_months": 14,
+      "months_ge_2_5_sigma": 7,
+      "maximum_monthly_z": 4.386,
+      "monthly_screen": "detected",
+      "composite_fit": {
+        "label": "colossus2_temporary cached daily profiles",
+        "n_days": 607,
+        "E_mol_s": 2.180473260245826,
+        "E_se": 0.24611594763811953,
+        "nox_kg_h": 476.69099975278533,
+        "nox_tpy": 3790.8331629332192,
+        "x0_km": 67.20488545791905,
+        "sigma_km": 10.5270030732108,
+        "offset": -0.4778349782780852
+      },
+      "caveat": "Monthly screen uses the existing conditional baseline SE and coal calibration; it is not an independent source-attribution test or a measured IT-load verdict. First-fire dates remain unverified."
+    }
+  ]
+}

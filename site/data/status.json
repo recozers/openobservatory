@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T16:32:13.981443+00:00",
+"generated": "2026-09-13T16:57:53.350711+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -441,6 +441,7 @@
 "Sentinel-1 radar structure dating (where brightness dating could not)",
 "VIIRS night lights: campus lit from Dec 2024 (construction and energisation, not load)",
 "TROPOMI NO\u2082 plume test",
+"TROPOMI NOx flux (calibrated on EPA-monitored plants)",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: Crusoe: two-building 200 MW+ first phase live Sep 2025 (racks from Jun 2025); 0.6 GW by la"
 ],
