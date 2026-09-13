@@ -6,6 +6,14 @@
   document.getElementById("build-note").textContent = `Built ${String(data.generated || "").slice(0, 10)}.`;
   const all = data.sites;
   const isHub = s => /_hub$/.test(s.site_id) && !s.series.some(p => p.y);
+  const kinds = {
+    measured: { label: "Measured: reported electricity or on-site generation", sw: "sw-comb", rank: 0 },
+    derived: { label: "Derived from published water use", sw: "sw-der", rank: 1 },
+    detected: { label: "Detected activity; load not measured", sw: "sw-det", rank: 2 },
+    presumed: { label: "Presumed from documented capacity", sw: "sw-doc", rank: 3 },
+    construction: { label: "Construction / unknown", sw: "sw-build", rank: 4 }
+  };
+  const kind = s => Object.hasOwn(kinds, s.evidence_kind) ? s.evidence_kind : "construction";
 
   function spark(s) {
     const pts = s.series.filter(p => p.y !== null && p.y !== undefined && p.x);
@@ -28,9 +36,11 @@
   }
 
   function card(s) {
-    return `<div class="card">
+    const evidence = kinds[kind(s)];
+    return `<div class="card" data-evidence-kind="${kind(s)}">
       <h2>${esc(s.name)}</h2>
       <div class="meta">${esc(s.operator)} · ${esc(s.country)}${s.polygons_low ? " · polygons are low-confidence" : ""}</div>
+      <div class="evidence"><span class="sw ${evidence.sw}" aria-hidden="true"></span>${evidence.label}</div>
       <div class="lines">
         <div>Built</div><div>${esc(s.built)}</div>
         <div>Running</div><div>${esc(s.running)}</div>
@@ -45,11 +55,15 @@
 
   function render() {
     const sort = document.getElementById("sort").value, hide = document.getElementById("hide-hubs").checked;
-    let rows = all.filter(s => !(hide && isHub(s)));
+    const selected = document.getElementById("evidence").value;
+    let rows = all.filter(s => !(hide && isHub(s)) && (selected === "all" || kind(s) === selected));
+    if (sort === "default") rows.sort((a, b) => kinds[kind(a)].rank - kinds[kind(b)].rank || (b.est_mid ?? b.est_hi ?? 0) - (a.est_mid ?? a.est_hi ?? 0) || a.name.localeCompare(b.name));
     if (sort === "name") rows = [...rows].sort((a, b) => a.name.localeCompare(b.name));
     if (sort === "country") rows = [...rows].sort((a, b) => (a.country + a.name).localeCompare(b.country + b.name));
-    document.getElementById("cards").innerHTML = rows.map(card).join("");
+    document.getElementById("result-count").textContent = `${rows.length} of ${all.length} sites shown${hide ? " · approximate hub centroids hidden" : ""}.`;
+    document.getElementById("cards").innerHTML = rows.length ? rows.map(card).join("") : '<p class="empty">No sites match these filters. Choose another evidence kind or show approximate hub centroids.</p>';
   }
+  document.getElementById("evidence").addEventListener("change", render);
   document.getElementById("sort").addEventListener("change", render);
   document.getElementById("hide-hubs").addEventListener("change", render);
   render();

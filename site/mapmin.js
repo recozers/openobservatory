@@ -3,7 +3,8 @@
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
   const data = await (await fetch("data/status.json", { cache: "no-cache" })).json();
-  const sites = data.sites.filter(s => !(/_hub$/.test(s.site_id) && !s.series.some(p => p.y)));
+  const sites = data.sites.filter(s => !(/_hub$/.test(s.site_id) && !s.series.some(p => p.y)) &&
+    Number.isFinite(s.lon) && Number.isFinite(s.lat) && Math.abs(s.lon) <= 180 && Math.abs(s.lat) <= 90);
   const klass = s => s.evidence_kind || (s.combustion ? "measured" : (/^presumably|^yes/.test(s.running) ? "presumed" : "construction"));
   const COLOR = { measured: "#c05621", derived: "#f6ad55", detected: "#d69e2e", presumed: "#2b6cb0", construction: "#ffffff" };
   const STROKE = { measured: "#fff", derived: "#c05621", detected: "#fff", presumed: "#fff", construction: "#9a9a95" };
@@ -16,7 +17,15 @@
       { id: "land", type: "fill", source: "countries", paint: { "fill-color": "#f3f1ea" } },
       { id: "borders", type: "line", source: "countries", paint: { "line-color": "#c9c5b8", "line-width": 0.6 } },
       { id: "osm", type: "raster", source: "osm", paint: { "raster-opacity": 0.85 } } ] };
-  const map = new maplibregl.Map({ container: "map", style, center: [20, 30], zoom: 1.5, attributionControl: true, maxZoom: 17 });
+  const map = new maplibregl.Map({ container: "map", style, center: [20, 30], zoom: 1.5, minZoom: -2, attributionControl: true, maxZoom: 17 });
+  function fitAll() {
+    if (!sites.length) return;
+    const bounds = new maplibregl.LngLatBounds();
+    sites.forEach(s => bounds.extend([s.lon, s.lat]));
+    const legend = document.getElementById("legend");
+    const bottom = getComputedStyle(legend).position === "absolute" ? legend.offsetHeight + 48 : 32;
+    map.fitBounds(bounds, { padding: { top: 32, right: 32, bottom, left: 32 }, maxZoom: 5, duration: 0 });
+  }
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
   document.getElementById("chk-tiles").addEventListener("change", e => map.setLayoutProperty("osm", "visibility", e.target.checked ? "visible" : "none"));
   const fc = { type: "FeatureCollection", features: sites.map(s => ({ type: "Feature", geometry: { type: "Point", coordinates: [s.lon, s.lat] },
@@ -35,6 +44,7 @@
     map.on("click", "pts", e => openSite(e.features[0].properties.site_id));
     const h = location.hash.replace("#", "");
     if (h && sites.some(s => s.site_id === h)) openSite(h);
+    else fitAll();
   }
   map.on("load", ensure); map.on("idle", ensure);
   const poll = setInterval(() => { ensure(); if (added) clearInterval(poll); }, 250);

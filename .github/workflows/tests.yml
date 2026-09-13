@@ -16,6 +16,11 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test list filtering and map framing
+        run: node --test tests/frontend_evidence.test.cjs
       - name: Rebuild saved public evidence
         env:
           OBS_FILE: data/observations_all.csv

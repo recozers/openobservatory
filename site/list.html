@@ -20,6 +20,9 @@
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
   .card h2 { font-size: 16px; margin: 0 0 2px; }
   .card .meta { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+  .evidence { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 8px; font-size: 12px; }
+  .evidence .sw { flex-shrink: 0; }
+  .empty { grid-column: 1 / -1; padding: 20px; border: 1px solid var(--line); border-radius: 10px; }
   .lines { display: grid; grid-template-columns: 92px 1fr; gap: 4px 10px; font-size: 13.5px; }
   .lines div:nth-child(odd) { color: var(--muted); }
   .conf { display: inline-block; font-size: 11.5px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); margin-left: 6px; }
@@ -43,11 +46,13 @@
     <p class="small"><a href="index.html">Map</a> · <a href="map.html">Quarterly detail</a> · <a href="research/index.html">Research view</a> · <a href="https://github.com/recozers/openobservatory">Code and data</a> · <a href="https://epoch.ai/data/ai-data-centers">Epoch AI</a> data and annotations (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>); modified and independently roof-dated here.</p>
   </div>
   <div class="toolbar">
+    <label>Evidence <select id="evidence"><option value="all">All evidence kinds</option><option value="measured">Measured</option><option value="derived">Derived from water use</option><option value="detected">Detected activity</option><option value="presumed">Presumed from capacity</option><option value="construction">Construction / unknown</option></select></label>
     <label>Sort <select id="sort"><option value="default">measured first, then by load</option><option value="name">by name</option><option value="country">by country</option></select></label>
     <label><input type="checkbox" id="hide-hubs" checked> hide approximate hub centroids</label>
   </div>
+  <p id="result-count" class="small" role="status" aria-live="polite"></p>
   <div class="cards" id="cards"></div>
 </div>
-<script src="cards.js?v=20260913a"></script>
+<script src="cards.js?v=20260914b6"></script>
 </body>
 </html>

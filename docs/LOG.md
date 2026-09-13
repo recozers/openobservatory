@@ -182,3 +182,12 @@ Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this br
   and may miss the parks, and eastern Chinese data centres are often multi-storey buildings that the classifier, trained on
   single-storey hyperscale halls, has never seen. Needs: verified park coordinates (Astra A2/B8) and eastern positives
   before the classifier is trusted there. No entries added from these boxes.
+
+
+## 2026-09-14 — Astra B6 evidence filter and default map fit
+
+Built on current main 003aabf, retaining Claude's 39 Chinese radar candidates and B8/B9 brief additions. List now filters all five evidence kinds, composes with the hub toggle and sort, shows text plus matching colour swatches, announces result counts, and has an empty state. Default ordering actually groups measured first, then derived/detected/presumed/construction and load. The map fits all displayed valid coordinates once on initial load; a valid site hash keeps its selected-site view. Phone layouts put the legend below a bounded-height map because MapLibre's Mercator height constraint otherwise prevents fitting the full longitude span. No private transform overrides. Desktop and 390px mobile visuals checked; detected filter includes Abilene and its unchanged measurement caveats.
+
+Six synthetic status tests cover all five categories, annual zero, calibrated generation, night lights, missing timeline and unconfirmed radar. They exposed and fixed the uncarried water-derived annual basis being missed, annual zero falling through to unknown, and a missing-timeline null dereference. Current published inventory values remain unchanged; only regenerated timestamps were discarded. Four Node tests exercise list filtering/sorting/hub composition/escaping, map coordinate inclusion, legend padding, five marker colours, one-time fit and deep links. Node tests run in validation CI.
+
+28 Python tests and 4 Node tests pass; dry refresh validates 318 JSON files; Epoch audit has zero failures. The existing annual-disclosure audit fix from PR #9 was cherry-picked independently (bf92f0d) so this branch targets main and preserves the newer China work; it does not depend on the B2/B4/B5 stack. No main merge or deployment. B7–B9 remain unfinished; conditional B1/B2/B3 source-attribution limits still apply.
