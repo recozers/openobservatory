@@ -2,6 +2,7 @@
 (50 m pixel + 250 m + 700 m neighbourhood means), evaluated server-side as three weighted bands,
 pulled as a small 100 m score raster and grouped into candidate objects locally."""
 import sys, json, pickle, time
+from pathlib import Path
 import ee, numpy as np, pandas as pd
 from scipy import ndimage
 import os; ee.Initialize(project=os.environ.get('EE_PROJECT') or None); ee.data.setDeadline(900000)
