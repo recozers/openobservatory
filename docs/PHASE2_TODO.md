@@ -56,6 +56,7 @@ rows (tier A2, band ±30 %), attributing Microsoft metros to campuses only where
 with an annual load figure and source URLs; the derivation and WUE assumptions in `docs/operator_disclosures_notes.md`.
 
 ### B4. Municipal water records  [no-EE]
+Status: public-source audit implemented on astra/b4 (stacked on PR #9): all eight cities checked; Bluffdale municipal/customer/return records retained as four separate series, 312 monthly observations. Other cities have no attributable monthly series established; access limitations and non-campus aggregates documented in `docs/water_monthly_notes.md`.
 Cities that supply water-cooled campuses sometimes publish or release monthly volumes (The Dalles, Mesa, Council
 Bluffs, Bluffdale, Prineville, Lenoir, Clarksville, Papillion). Collect what is public with URLs into
 `data/water_monthly.csv`; monthly series become an evidence strip ("water use, monthly"). Accept: whatever exists, with a

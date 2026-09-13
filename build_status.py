@@ -132,6 +132,8 @@ def main():
             running += "; the NO₂ series shown is the adjacent power plant, not the campus"
         # ---- how we know
         how = []
+        if (t or {}).get("water_monthly"):
+            how.append("Municipal monthly water deliveries, with separate customer and return records; water evidence only, not electricity use")
         if any(q.get("campd") for q in Q):
             how.append("EPA CAMPD plant generation; campus allocation only where separately verified at >=80%; other plant records are evidence only")
         if (t or {}).get("s2_available"):

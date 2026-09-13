@@ -1,0 +1,62 @@
+{
+  "retrieved_utc": "2026-09-13",
+  "publisher": "Utah Division of Water Rights; reports by Bluffdale and Utah Data Center",
+  "sources": [
+    {
+      "series_id": "bluffdale_sold",
+      "site_id": "nsa_utah",
+      "city": "Bluffdale",
+      "metric": "municipal_delivery",
+      "preferred": "yes",
+      "notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use.",
+      "source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+      "source_system_id": "1264",
+      "source_record_id": "108544372",
+      "source_sha256": "67fe9cd692d3b7c3a89d6f31ff9079f1fa4d0e351b64fb4cb08e7db4c5d6874e",
+      "file": "data/water_sources/bluffdale_sold.html",
+      "table_sha256": "5a0c429c51c186db7d3986668cc0bd9ac988b877b86ec9fa9cc5b0a6f7283a2c"
+    },
+    {
+      "series_id": "udc_purchased",
+      "site_id": "nsa_utah",
+      "city": "Bluffdale",
+      "metric": "campus_purchase",
+      "preferred": "no",
+      "notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries.",
+      "source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+      "source_system_id": "11418",
+      "source_record_id": "108544468",
+      "source_sha256": "0b56390d32606c3c0307de68e4e480546e9097dc15530a0b353aafd1312c4ad9",
+      "file": "data/water_sources/udc_purchased.html",
+      "table_sha256": "2f5e47db8b7451f7791da73c8e8455d749e692fcd71a5f4b6942f347342f3260"
+    },
+    {
+      "series_id": "udc_irrigation",
+      "site_id": "nsa_utah",
+      "city": "Bluffdale",
+      "metric": "irrigation_transfer_out",
+      "preferred": "no",
+      "notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series.",
+      "source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+      "source_system_id": "11418",
+      "source_record_id": "108546665",
+      "source_sha256": "0b56390d32606c3c0307de68e4e480546e9097dc15530a0b353aafd1312c4ad9",
+      "file": "data/water_sources/udc_irrigation.html",
+      "table_sha256": "ae1ab826150376dacc374b67f54d31024656513212994ba15e5ba63214eaad04"
+    },
+    {
+      "series_id": "udc_river",
+      "site_id": "nsa_utah",
+      "city": "Bluffdale",
+      "metric": "river_return",
+      "preferred": "no",
+      "notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption.",
+      "source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+      "source_system_id": "11418",
+      "source_record_id": "108548606",
+      "source_sha256": "0b56390d32606c3c0307de68e4e480546e9097dc15530a0b353aafd1312c4ad9",
+      "file": "data/water_sources/udc_river.html",
+      "table_sha256": "23f16e201de2c941da6f7c36f5358933a692a86d3b060783c3cadf3576fe67d0"
+    }
+  ]
+}

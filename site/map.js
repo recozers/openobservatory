@@ -91,6 +91,7 @@
       `<div class="small" style="margin-top:6px"><a href="research/index.html#${esc(s.site_id)}">research view</a>: thermal time series, polygons, frames.</div></div>`;
     body.innerHTML = html;
     renderLoad(s.site_id, t);
+    renderWater(t);
   }
 
   function renderLoad(id, t) {
@@ -130,6 +131,28 @@
       plantNote +
       `<table><tr><th>quarter</th><th>est. MW</th><th>doc. MW</th><th>roofs</th><th>NO₂ z</th><th>NOx kg/h</th><th>night ΔT</th></tr>${rows}</table>` +
       `<div class="callout small">${esc(t.caveat)}</div></div>`;
+  }
+
+  function renderWater(t) {
+    const water = (t && t.water_monthly) || [];
+    const deliveries = water.filter(r => r.preferred).sort((a, b) => a.month.localeCompare(b.month));
+    if (!deliveries.length) return;
+    const first = deliveries[0], last = deliveries[deliveries.length - 1];
+    const monthIndex = m => Number(m.slice(0, 4)) * 12 + Number(m.slice(5, 7)) - 1;
+    const n = monthIndex(last.month) - monthIndex(first.month) + 1;
+    const W = 430, H = 105, L = 35, R = 8, T = 12, B = 22, ih = H - T - B, bw = (W - L - R) / n;
+    const top = Math.max(1, ...deliveries.map(r => r.volume_ml || 0));
+    const y = v => T + ih - v / top * ih;
+    let g = `<line x1="${L}" x2="${W - R}" y1="${y(0)}" y2="${y(0)}" stroke="#999"/><text x="${L - 4}" y="${T + 8}" text-anchor="end" font-size="9">${fmt(top, 0)}</text>`;
+    deliveries.forEach(r => {
+      const x = L + (monthIndex(r.month) - monthIndex(first.month)) * bw;
+      if (r.volume_ml !== null) g += `<rect x="${x}" y="${y(r.volume_ml)}" width="${Math.max(bw - 0.6, 0.2)}" height="${Math.max(y(0) - y(r.volume_ml), 1)}" fill="#287e92"><title>${esc(r.month)} municipal delivery: ${fmt(r.volume_ml, 2)} ML (${esc(r.method)}); water evidence, not electricity use</title></rect>`;
+      if (r.month.endsWith("-01") && Number(r.month.slice(0, 4)) % 2 === 0) g += `<text x="${x}" y="${H - 5}" font-size="9">${esc(r.month.slice(0, 4))}</text>`;
+    });
+    const at = (month, metric) => water.find(r => r.month === month && r.metric === metric);
+    const cell = (month, metric) => { const r = at(month, metric); return r ? fmt(r.volume_ml, 2) : "—"; };
+    const rows = deliveries.slice(-12).reverse().map(r => `<tr><td>${esc(r.month)}</td><td class="num">${fmt(r.volume_ml, 2)}</td><td class="num">${cell(r.month, "campus_purchase")}</td><td class="num">${cell(r.month, "irrigation_transfer_out")}</td><td class="num">${cell(r.month, "river_return")}</td></tr>`).join("");
+    document.getElementById("load-section").insertAdjacentHTML("beforeend", `<div class="section"><h3>Water use, monthly</h3><div class="small">Municipal deliveries in megalitres (ML), ${esc(first.month)}–${esc(last.month)}. Latest: ${fmt(last.volume_ml, 2)} ML. Hover for each month.</div><svg class="chart" viewBox="0 0 ${W} ${H}" style="height:${H}px">${g}</svg><p class="small"><a href="${esc(first.source_url)}" target="_blank" rel="noopener">City delivery records</a> · <a href="${esc((water.find(r => r.metric === "campus_purchase") || first).source_url)}" target="_blank" rel="noopener">Customer purchases and returns</a></p><div class="callout small">Water deliveries are not electricity use or net consumption. The city and customer meters differ in some months; they are shown separately and never added together. The source flags meter problems and chiller cleaning in 2020, and a corrected city reading in 2021. Records after ${esc(last.month)} are unavailable, not zero.</div><details><summary>Latest 12 months — all values in ML</summary><table><tr><th>month</th><th>city delivery</th><th>customer purchase</th><th>irrigation out</th><th>river return</th></tr>${rows}</table><div class="small">— means unreported. Return flows do not cover all years or all discharges; no net-consumption estimate is made. The 2022 irrigation series is calculated by the reporting entity.</div></details></div>`);
   }
 
   // ---- methods
