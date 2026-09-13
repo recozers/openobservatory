@@ -42,6 +42,19 @@ def quarters(start="2018Q1", end=None):
 MEASURED = ("facility_measured_annual", "it_measured_annual")
 
 
+def emission_factor_range(site):
+    """A permit ceiling is not a two-sided operating emission-factor estimate."""
+    if str(site.get("nox_ef_basis") or "") == "permit_upper_limit":
+        return None
+    try:
+        lo_raw, hi_raw = site.get("nox_ef_lo"), site.get("nox_ef_hi")
+        lo = float(0.5 if lo_raw is None or str(lo_raw).strip() == "" else lo_raw)
+        hi = float(1.0 if hi_raw is None or str(hi_raw).strip() == "" else hi_raw)
+    except (TypeError, ValueError):
+        return None
+    return (lo, hi) if math.isfinite(lo) and math.isfinite(hi) and 0 < lo <= hi else None
+
+
 def it_mw(cap, basis, pue):
     return cap / pue if basis in ("facility_design", "grid_connection", "facility_measured_annual", "carried_measured_annual") else cap
 
@@ -232,14 +245,19 @@ def main():
         fluxf = ROOT / "results_no2" / f"flux_{sid}_monthly.csv"
         fluxq = {}
         # kg NOx per MWh: site-specific if sites.csv has nox_ef_lo/nox_ef_hi, else uncontrolled simple-cycle turbines 0.5-1.0 (25-60 ppm)
-        EF_LO = float(s.get("nox_ef_lo") or 0.5) if str(s.get("nox_ef_lo") or "").strip() else 0.5
-        EF_HI = float(s.get("nox_ef_hi") or 1.0) if str(s.get("nox_ef_hi") or "").strip() else 1.0
+        ef = emission_factor_range(s)
+        EF_LO, EF_HI = ef if ef else (None, None)
         if fluxf.exists():
             fm = pd.read_csv(fluxf, index_col=0)
             fm["q"] = pd.PeriodIndex(fm.index, freq="M").asfreq("Q").astype(str)
             for q, g in fm.groupby("q"):
                 kgh = float(g.nox_kgh_cal.mean()); se = float(np.sqrt((g.nox_se ** 2).sum()) / len(g))
-                fluxq[q] = dict(nox_kgh=round(kgh, 0), nox_se=round(se, 0), mw_lo=round(max(kgh - se, 0) / EF_HI, 0), mw_hi=round(max(kgh + se, 0) / EF_LO, 0), n_days=int(g.n_days.sum()))
+                fluxq[q] = dict(nox_kgh=round(kgh, 0), nox_se=round(se, 0),
+                               mw_lo=round(max(kgh - se, 0) / EF_HI, 0) if ef else None,
+                               mw_hi=round(max(kgh + se, 0) / EF_LO, 0) if ef else None,
+                               n_days=int(g.n_days.sum()))
+                if not ef:
+                    fluxq[q]["mw_unavailable_reason"] = "No two-sided operating emission factor; a permit limit alone cannot identify generation."
         # quarters
         rows = []
         for q in quarters():
@@ -272,7 +290,7 @@ def main():
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, "no roof yet"
             fx = fluxq.get(qs)
             adj = "ADJACENT PLANT" in str(s.get("nox_ef_note") or "")
-            if fx and not adj and fx["nox_kgh"] > 2 * fx["nox_se"] and fx["nox_kgh"] > 100:
+            if fx and ef and not adj and fx["nox_kgh"] > 2 * fx["nox_se"] and fx["nox_kgh"] > 100:
                 lo, mid, hi, basis = fx["mw_lo"], round(fx["nox_kgh"] / ((EF_LO + EF_HI) / 2), 0), fx["mw_hi"], (("ADJACENT PLANT generation, not campus load: " if adj else "NO2-flux on-site generation: ") + f"{fx['nox_kgh']:.0f} ± {fx['nox_se']:.0f} kg NOx/h (TROPOMI, calibrated on 5 plants) at {EF_LO}-{EF_HI} kg NOx/MWh, midpoint at {(EF_LO + EF_HI) / 2}")
             rows.append(dict(q=qs, cap_doc_mw=None if cap is None else round(cap, 1), cap_tier=cap_tier, cap_basis=cap_basis, no2_flux=fx,
                              halls_roofed=len(roofed), halls_total=len(halls), built_ha=round(built_ha, 1), fitted_ha=round(fitted_ha, 1),

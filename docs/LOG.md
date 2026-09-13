@@ -133,3 +133,17 @@ Final phone-width review caught a wording ambiguity when a site has both an old 
   sd 1.42, 95th percentile 1.89, max 2.00, none at 2.5 sigma. So the 2.5-sigma bar has a measured false-positive rate of
   0/32 and stays. Only generator-driven sites can reach "measured": the route is Astra's B1 register plus a flux run per
   operating fleet. results_no2/plume_batch_summary.csv keeps the per-site z-scores.
+
+## 2026-09-13 — Astra B1 permit audit started
+
+Working in isolated astra/b1 from 6b24514. Claude C1/C2 outputs remain owned by Claude. Build change: distinguish an emission-factor ceiling from a two-sided operating range before adding Abilene monthly NOx; a permit limit must not create an invented MW interval. Research includes the named candidates and additional Ohio leads.
+
+### Astra B1 initial results
+
+14-record register covers named leads and additional Ohio projects, with source URLs, exact permit identifiers where verified, explicit generation scope and unknown first-fire dates. Visually checked Abilene technical review and SCR application, Fermi final permit and MZX final permit. Abilene registration: 360.5 MW, NOx ceiling 0.14 lb/MWh; no defensible lower operating emission factor, so the build preserves NOx but does not infer MW. Planned/portfolio figures are not operating campuses or a summable total. New candidate sites await attributable hall geometry.
+
+Replayed existing no2_flux composite and monthly methods on saved daily profiles through August 2026: Abilene 880 days, 0/20 post-baseline months >=2.5 sigma (max 2.381), monthly flux below detection; Colossus 2 607 days, 7/14 months (max 4.386), existing detection retained. Colossus 1 remains Claude C2's negative result, not rerun. Unknown first fire is distinct from the chosen analysis baseline. Conditional baseline SE, source attribution, SCR fleet transition and coal calibration remain limitations. No new measured campus claimed.
+
+Validation: 20 tests pass; dry-run rebuild strictly validates 220 JSON files; inventory audit passes. Checked the local Abilene front page and quarterly NOx strip in the browser: capacity remains explicitly assumed, new NOx values retain negative months, and no NOx-derived MW is shown. Remaining B1 work: identify permits and commissioning for unresolved leads and source hall geometry before adding new inventory sites. This is a reviewable initial implementation, not an exhaustive completed census.
+
+Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this branch for B1 follow-up; do not duplicate the register or rerun Claude C2. B2-B6 remain available when further B1 progress requires new source evidence.
