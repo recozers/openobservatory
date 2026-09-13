@@ -70,6 +70,17 @@ Not per site.
 white, with the legend updated; `list.html` gets a filter by kind; the default map view fits all markers. Accept: Abilene
 and the operator-reported sites no longer look presumed; a synthetic test per kind in `tests/`.
 
+
+### B7. Watch list for generator fleets under construction  [EE for the monthly runs]
+B1's register shows that, apart from Colossus 2, Abilene (SCR) and the historical Colossus 1, every on-site generation
+fleet in scope is planned or under construction for 2026–2028 (Fermi Matador, Vantage Frontier, Poolside Horizon, Cheyenne
+Project Jade, Ohio Apollo, Wonder Valley, Entergy's Hyperion plants). Add each as a site with `site_class=generator_planned`,
+coordinates from the permit or siting filing, the permit emission factor, and the expected first-fire date; give them a
+flux profile and a monthly series in `data/refresh_flux_sources.csv` so the refresh runs them every month; the map shows
+them as "watching: generator fleet under construction" until the calibrated NOx exceeds 2σ and 100 kg/h, when they turn
+orange automatically. Accept: the watch list on the map with a documented first-fire target per site; a monthly NOx
+series per site from the refresh; the first detection recorded in `docs/LOG.md`.
+
 ## Claude tasks
 
 - **C1 (done)**: plume test over 33 sites, stopped once the grid-fed null was clear: none above 2.5σ except Colossus 2
@@ -81,3 +92,5 @@ and the operator-reported sites no longer look presumed; a synthetic test per ki
 - **C4 (done)**: null distribution from the 32 grid-fed sites: z sd 1.42, 95th percentile 1.89, max 2.00, 0/32 at 2.5σ.
   The 2.5σ bar stays; nothing below it is claimed.
 - **C5**: classifier recalibration with the labels from phase-1 A8 and the optical review, then scores in the site JSON.
+- **C6 (running)**: generator-driven campuses outside the US: NOx flux over Dublin's Grange Castle (Microsoft's permitted
+  170 MW gas plant) and the west-Dublin cluster; then other grid-constrained markets if Dublin shows anything.
