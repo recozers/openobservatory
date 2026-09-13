@@ -1,0 +1,65 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_midlothian",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.061123,
+       32.441466
+      ],
+      [
+       -97.061599,
+       32.441268
+      ],
+      [
+       -97.061634,
+       32.441324
+      ],
+      [
+       -97.062113,
+       32.44113
+      ],
+      [
+       -97.060934,
+       32.439182
+      ],
+      [
+       -97.061027,
+       32.439144
+      ],
+      [
+       -97.060853,
+       32.438865
+      ],
+      [
+       -97.059843,
+       32.439302
+      ],
+      [
+       -97.061123,
+       32.441466
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_midlothian",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Midlothian, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

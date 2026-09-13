@@ -1,0 +1,199 @@
+{
+"site_id": "epoch_openai_stargate_shackelford",
+"name": "OpenAI Stargate Shackelford",
+"tier": "A2",
+"density_mw_per_ha": 15.0,
+"density_basis": "default 15 MW/ha",
+"hall_area_ha": 47.5,
+"roof_on": {
+"epoch_building_000": "2025-10",
+"epoch_building_001": "2025-11",
+"epoch_building_002": "2025-11",
+"epoch_building_003": "2025-12",
+"epoch_building_005": "2026-02",
+"epoch_building_012": "2026-03",
+"epoch_building_013": "2026-05",
+"epoch_building_014": "2026-05",
+"epoch_building_015": "2026-05",
+"epoch_building_016": "2026-03"
+},
+"roof_basis": {
+"epoch_building_000": "s2",
+"epoch_building_001": "s2",
+"epoch_building_002": "s2",
+"epoch_building_003": "s2",
+"epoch_building_005": "s2",
+"epoch_building_012": "s2",
+"epoch_building_013": "s2",
+"epoch_building_014": "s2",
+"epoch_building_015": "s2",
+"epoch_building_016": "s2"
+},
+"roof_evidence": {
+"epoch_building_000": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-10"
+},
+"epoch_building_001": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-11"
+},
+"epoch_building_002": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-11"
+},
+"epoch_building_003": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-12"
+},
+"epoch_building_005": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-02"
+},
+"epoch_building_012": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-03"
+},
+"epoch_building_013": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-05"
+},
+"epoch_building_014": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-05"
+},
+"epoch_building_015": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-05"
+},
+"epoch_building_016": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2026-03"
+}
+},
+"radar_on": {},
+"ntl_lit": null,
+"s2_available": true,
+"no2_available": false,
+"no2_baseline": null,
+"thermal_night_available": false,
+"thermal_day_available": false,
+"quarters": [
+{
+"q": "2025Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 10,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "no roof yet",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+},
+{
+"q": "2025Q4",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 4,
+"halls_total": 10,
+"built_ha": 21.1,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "roof on (21.1 ha) but not yet fitted out",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+},
+{
+"q": "2026Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 7,
+"halls_total": 10,
+"built_ha": 34.8,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "roof on (34.8 ha) but not yet fitted out",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+},
+{
+"q": "2026Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 10,
+"halls_total": 10,
+"built_ha": 47.5,
+"fitted_ha": 21.1,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 285.1,
+"basis": "roofed \u22656 months (21.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+},
+{
+"q": "2026Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "it_reported",
+"no2_flux": null,
+"halls_roofed": 10,
+"halls_total": 10,
+"built_ha": 47.5,
+"fitted_ha": 34.8,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 469.5,
+"basis": "roofed \u22656 months (34.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": null
+}
+],
+"caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
+}

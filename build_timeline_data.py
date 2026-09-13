@@ -65,7 +65,10 @@ def cap_in_force(tl, sid, date, pue):
             return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis
     if r.empty:
         return None, None, None
-    r = r.sort_values("valid_from").iloc[-1]
+    # Epoch carries IT and facility figures for the same date. Prefer direct IT
+    # over a PUE conversion; never sum the two or depend on CSV row order.
+    r = r.assign(it_preferred=r.capacity_basis.isin(["it_reported", "it_measured_hpl"]))
+    r = r.sort_values(["it_preferred", "valid_from"]).iloc[-1]
     cap = float(r.capacity_mw)
     if r.capacity_basis == "placeholder":
         return 0.0, r.tier, "placeholder"
@@ -112,6 +115,8 @@ def hall_frames(obs, sid, tod):
 
 
 def main():
+    from tools.epoch_roof_review import construction_context, review
+    epoch_context = construction_context(ROOT)
     sites = pd.read_csv(DATA / "sites.csv", dtype=str).fillna("")
     tl = pd.read_csv(DATA / "capacity_timeline.csv", dtype=str).fillna("")
     eco = pd.read_csv(DATA / "observations_eco.csv", dtype={"product_id": str}) if (DATA / "observations_eco.csv").exists() else pd.DataFrame()
@@ -129,26 +134,43 @@ def main():
         if pfile.exists():
             for p in G.load_site_polygons(pfile):
                 if p.ptype == "hall":
-                    halls.append(dict(name=p.name, area_ha=G.polygon_areas_m2([p], lon, lat)[p.ptype] / 1e4, valid_from=p.valid_from))
+                    halls.append(dict(name=p.name, area_ha=G.polygon_areas_m2([p], lon, lat)[p.ptype] / 1e4, valid_from=p.valid_from,
+                                      props=p.props,
+                                      roof_date_required=p.props.get("roof_date_required", False)))
         hall_area = sum(h["area_ha"] for h in halls)
         # roof-on month per hall from Sentinel-2, falling back to the polygon's valid_from, else "existing"
         roof_on = {}
+        roof_evidence = {}
         s2 = ROOT / "results_s2" / f"{sid}.csv"
-        s2_available = s2.exists()
-        if s2_available:
+        s2_available = False
+        if s2.exists():
             piv = pd.read_csv(s2, index_col=0)
+            s2_available = bool(not piv.empty and piv.notna().any().any())
             from tools.s2_roof_timeline import roof_on_month
             vf = {h["name"]: h["valid_from"] for h in halls}
+            required = {h["name"]: h["roof_date_required"] for h in halls}
             for c in piv.columns:
                 r = roof_on_month(piv[c])
-                if r == "not_yet":
+                valid = piv[c].dropna()
+                roof_evidence[c] = dict(rule="visible_brightness", first_observation=str(valid.index[0]) if len(valid) else None,
+                                        valid_months=len(valid), inferred_roof_on=r)
+                props = next((h['props'] for h in halls if h['name'] == c), {})
+                conflict = review(r, props, epoch_context.get(sid))
+                if conflict:
+                    roof_evidence[c]['review_required'] = conflict
+                    r = 'unknown'
+                if r == "not_yet" and required.get(c):
+                    # Planned footprints do not prove a roof; dark roofs also
+                    # cannot be distinguished from soil by a non-detection.
+                    r = "unknown"
+                elif r == "not_yet":
                     # brightness dating only catches new bright roofs: a polygon digitised without a valid_from is an existing
                     # structure by declaration; one with a valid_from keeps the analyst's date (lower confidence)
                     r = "existing" if not vf.get(c) else vf[c][:7]
                 roof_on[c] = r
         for h in halls:
             if h["name"] not in roof_on:
-                roof_on[h["name"]] = h["valid_from"][:7] if h["valid_from"] else "existing"
+                roof_on[h["name"]] = "unknown" if h["roof_date_required"] else (h["valid_from"][:7] if h["valid_from"] else "existing")
         # Sentinel-1 radar dates fill in where brightness dating could not (grey roofs, bright-soil baselines)
         radar_on, roof_basis = {}, {h["name"]: "s2" for h in halls}
         s1f = ROOT / "results_s1" / f"{sid}.csv"
@@ -165,8 +187,8 @@ def main():
                     continue
                 # radar leads the membrane by 0-2 months at Abilene; a radar date more than 3 months before the
                 # brightness date means brightness dating was late (grey roof), so the radar date is used
-                late_s2 = cur not in ("existing", "not_yet", None) and (pd.Period(cur, freq="M") - pd.Period(r[:7], freq="M")).n > 3
-                if cur in ("existing", "not_yet") or late_s2:
+                late_s2 = cur not in ("existing", "not_yet", "unknown", None) and (pd.Period(cur, freq="M") - pd.Period(r[:7], freq="M")).n > 3
+                if cur in ("existing", "not_yet", "unknown") or late_s2:
                     roof_on[h["name"]] = r[:7]
                     roof_basis[h["name"]] = "radar"
         # VIIRS night lights: the month the campus lit up relative to its surroundings (construction/energisation, not load)
@@ -217,9 +239,11 @@ def main():
         rows = []
         for q in quarters():
             qs = str(q)
-            qend = q.end_time.strftime("%Y-%m-%d")
+            qend = min(q.end_time.strftime("%Y-%m-%d"), pd.Timestamp.utcnow().strftime("%Y-%m-%d"))
             cap, cap_tier, cap_basis = cap_in_force(tl, sid, qend, pue)
-            roofed = [h for h in halls if roof_on.get(h["name"]) == "existing" or (roof_on.get(h["name"]) not in ("not_yet", None) and roof_on[h["name"]] <= qend[:7])]
+            roofed = [h for h in halls if (roof_on.get(h["name"]) == "existing" and
+                      (not h["roof_date_required"] or (roof_evidence.get(h["name"], {}).get("first_observation") or "9999") <= qend[:7]))
+                      or (roof_on.get(h["name"]) not in ("existing", "not_yet", "unknown", None) and roof_on[h["name"]] <= qend[:7])]
             fitted = [h for h in roofed if roof_on.get(h["name"]) == "existing" or (pd.Period(roof_on[h["name"]], freq="M") + FIT_OUT_MONTHS) <= pd.Period(qend[:7], freq="M")]
             built_ha = sum(h["area_ha"] for h in roofed)
             fitted_ha = sum(h["area_ha"] for h in fitted)
@@ -253,7 +277,7 @@ def main():
         first = next((i for i, r in enumerate(rows) if r["halls_roofed"] or r["night"] or r["day"] or r["no2"] or (r["cap_doc_mw"] or 0) > 0), 0)
         rows = rows[max(0, first - 1):]
         out = dict(site_id=sid, name=s["name"], tier=tier, density_mw_per_ha=round(density, 1), density_basis=density_basis,
-                   hall_area_ha=round(hall_area, 1), roof_on=roof_on, roof_basis=roof_basis, radar_on=radar_on, ntl_lit=ntl_lit, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
+                   hall_area_ha=round(hall_area, 1), roof_on=roof_on, roof_basis=roof_basis, roof_evidence=roof_evidence, radar_on=radar_on, ntl_lit=ntl_lit, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
                    thermal_night_available=bool(night), thermal_day_available=bool(day), quarters=rows,
                    caveat="Load is not measured by any sensor here. The estimate is documented capacity, or roofed area × a density prior, "
                           "times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); "

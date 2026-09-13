@@ -1,0 +1,522 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_amazon_madison_mega_site",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.087834,
+       32.597513
+      ],
+      [
+       -90.085123,
+       32.600233
+      ],
+      [
+       -90.085541,
+       32.600528
+      ],
+      [
+       -90.088278,
+       32.597804
+      ],
+      [
+       -90.087834,
+       32.597513
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 11,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.088503,
+       32.599028
+      ],
+      [
+       -90.085771,
+       32.601738
+      ],
+      [
+       -90.086187,
+       32.602021
+      ],
+      [
+       -90.088946,
+       32.599319
+      ],
+      [
+       -90.088503,
+       32.599028
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 10,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.089219,
+       32.599455
+      ],
+      [
+       -90.086508,
+       32.602175
+      ],
+      [
+       -90.086902,
+       32.602449
+      ],
+      [
+       -90.089662,
+       32.599746
+      ],
+      [
+       -90.089219,
+       32.599455
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 9,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.091525,
+       32.599322
+      ],
+      [
+       -90.088814,
+       32.602043
+      ],
+      [
+       -90.089209,
+       32.602316
+      ],
+      [
+       -90.091969,
+       32.599614
+      ],
+      [
+       -90.091525,
+       32.599322
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 8,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.092162,
+       32.596549
+      ],
+      [
+       -90.089451,
+       32.599269
+      ],
+      [
+       -90.089846,
+       32.599543
+      ],
+      [
+       -90.092606,
+       32.596841
+      ],
+      [
+       -90.092162,
+       32.596549
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 7,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.090033,
+       32.595107
+      ],
+      [
+       -90.087932,
+       32.597196
+      ],
+      [
+       -90.08846,
+       32.597589
+      ],
+      [
+       -90.090575,
+       32.595485
+      ],
+      [
+       -90.090033,
+       32.595107
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.084904,
+       32.600413
+      ],
+      [
+       -90.082193,
+       32.603133
+      ],
+      [
+       -90.08261,
+       32.603427
+      ],
+      [
+       -90.085348,
+       32.600704
+      ],
+      [
+       -90.084904,
+       32.600413
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 12,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.091443,
+       32.596069
+      ],
+      [
+       -90.08874,
+       32.598759
+      ],
+      [
+       -90.089161,
+       32.599077
+      ],
+      [
+       -90.091864,
+       32.596357
+      ],
+      [
+       -90.091443,
+       32.596069
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_013",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 13",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.099605,
+       32.595763
+      ],
+      [
+       -90.096341,
+       32.595782
+      ],
+      [
+       -90.096343,
+       32.596379
+      ],
+      [
+       -90.099602,
+       32.596366
+      ],
+      [
+       -90.099605,
+       32.595763
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_024",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 24",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.095996,
+       32.59638
+      ],
+      [
+       -90.095996,
+       32.595782
+      ],
+      [
+       -90.092767,
+       32.595773
+      ],
+      [
+       -90.092764,
+       32.596362
+      ],
+      [
+       -90.095996,
+       32.59638
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_025",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 25",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.09604,
+       32.594154
+      ],
+      [
+       -90.092789,
+       32.594161
+      ],
+      [
+       -90.092797,
+       32.594761
+      ],
+      [
+       -90.096035,
+       32.594761
+      ],
+      [
+       -90.09604,
+       32.594154
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_026",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 26",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.099612,
+       32.594171
+      ],
+      [
+       -90.09636,
+       32.594165
+      ],
+      [
+       -90.096365,
+       32.594772
+      ],
+      [
+       -90.099609,
+       32.594757
+      ],
+      [
+       -90.099612,
+       32.594171
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_madison_mega_site",
+    "name": "epoch_building_027",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Madison Mega Site, feature 27",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

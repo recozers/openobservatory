@@ -1,0 +1,294 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_qts_hillsboro_2",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.930057,
+       45.560013
+      ],
+      [
+       -122.930057,
+       45.559926
+      ],
+      [
+       -122.929897,
+       45.559926
+      ],
+      [
+       -122.929904,
+       45.5579
+      ],
+      [
+       -122.929931,
+       45.557886
+      ],
+      [
+       -122.930267,
+       45.557885
+      ],
+      [
+       -122.930266,
+       45.557659
+      ],
+      [
+       -122.929174,
+       45.557665
+      ],
+      [
+       -122.929159,
+       45.560007
+      ],
+      [
+       -122.930057,
+       45.560013
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_qts_hillsboro_2",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta-QTS Hillsboro 2, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.932241,
+       45.559934
+      ],
+      [
+       -122.932259,
+       45.557716
+      ],
+      [
+       -122.931317,
+       45.557714
+      ],
+      [
+       -122.931321,
+       45.557931
+      ],
+      [
+       -122.931438,
+       45.557933
+      ],
+      [
+       -122.931436,
+       45.558713
+      ],
+      [
+       -122.931487,
+       45.558714
+      ],
+      [
+       -122.931482,
+       45.559105
+      ],
+      [
+       -122.931429,
+       45.559106
+      ],
+      [
+       -122.931426,
+       45.559848
+      ],
+      [
+       -122.9313,
+       45.559848
+      ],
+      [
+       -122.931301,
+       45.55993
+      ],
+      [
+       -122.932241,
+       45.559934
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_qts_hillsboro_2",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta-QTS Hillsboro 2, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.933409,
+       45.559936
+      ],
+      [
+       -122.933409,
+       45.559852
+      ],
+      [
+       -122.933283,
+       45.559851
+      ],
+      [
+       -122.933288,
+       45.559112
+      ],
+      [
+       -122.933239,
+       45.559111
+      ],
+      [
+       -122.933241,
+       45.558711
+      ],
+      [
+       -122.933289,
+       45.558712
+      ],
+      [
+       -122.93329,
+       45.557936
+      ],
+      [
+       -122.933429,
+       45.557935
+      ],
+      [
+       -122.933427,
+       45.557718
+      ],
+      [
+       -122.932493,
+       45.557715
+      ],
+      [
+       -122.932472,
+       45.559932
+      ],
+      [
+       -122.933409,
+       45.559936
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_qts_hillsboro_2",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta-QTS Hillsboro 2, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.935557,
+       45.559941
+      ],
+      [
+       -122.935576,
+       45.557721
+      ],
+      [
+       -122.934636,
+       45.557724
+      ],
+      [
+       -122.93464,
+       45.557938
+      ],
+      [
+       -122.934754,
+       45.557941
+      ],
+      [
+       -122.934753,
+       45.558723
+      ],
+      [
+       -122.934796,
+       45.558724
+      ],
+      [
+       -122.934797,
+       45.559117
+      ],
+      [
+       -122.934746,
+       45.559117
+      ],
+      [
+       -122.93474,
+       45.559852
+      ],
+      [
+       -122.934613,
+       45.559851
+      ],
+      [
+       -122.934618,
+       45.559935
+      ],
+      [
+       -122.935557,
+       45.559941
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_qts_hillsboro_2",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta-QTS Hillsboro 2, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

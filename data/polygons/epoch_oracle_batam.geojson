@@ -1,0 +1,139 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_oracle_batam",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       104.105546,
+       1.189606
+      ],
+      [
+       104.104523,
+       1.188898
+      ],
+      [
+       104.104909,
+       1.188369
+      ],
+      [
+       104.105917,
+       1.189105
+      ],
+      [
+       104.105546,
+       1.189606
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_oracle_batam",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Oracle Batam, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       104.105988,
+       1.189074
+      ],
+      [
+       104.104965,
+       1.188366
+      ],
+      [
+       104.105351,
+       1.187838
+      ],
+      [
+       104.106359,
+       1.188573
+      ],
+      [
+       104.105988,
+       1.189074
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_oracle_batam",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Oracle Batam, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       104.104397,
+       1.188845
+      ],
+      [
+       104.103623,
+       1.188338
+      ],
+      [
+       104.103574,
+       1.187558
+      ],
+      [
+       104.103963,
+       1.186966
+      ],
+      [
+       104.105147,
+       1.187807
+      ],
+      [
+       104.104397,
+       1.188845
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_oracle_batam",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Oracle Batam, feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

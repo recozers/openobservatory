@@ -1,0 +1,261 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_new_albany",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.76920415860002,
+       40.053569384766405
+      ],
+      [
+       -82.7660737623511,
+       40.053410621911496
+      ],
+      [
+       -82.76599694281143,
+       40.05428087301627
+      ],
+      [
+       -82.7687160876282,
+       40.054421585190056
+      ],
+      [
+       -82.76870875734268,
+       40.054504564017094
+      ],
+      [
+       -82.76912349808327,
+       40.05451901411831
+      ],
+      [
+       -82.76920415860002,
+       40.053569384766405
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_new_albany",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google New Albany, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.76687272243109,
+       40.058468409877605
+      ],
+      [
+       -82.76696276250016,
+       40.05758816405995
+      ],
+      [
+       -82.7642410967744,
+       40.05745346351864
+      ],
+      [
+       -82.76423700404393,
+       40.05736261881708
+      ],
+      [
+       -82.76381954554193,
+       40.0573406907676
+      ],
+      [
+       -82.76372950547288,
+       40.058314915873325
+      ],
+      [
+       -82.76687272243109,
+       40.058468409877605
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_new_albany",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google New Albany, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.77227859633953,
+       40.060590668262165
+      ],
+      [
+       -82.77249194122179,
+       40.058179747742116
+      ],
+      [
+       -82.77134050634069,
+       40.058122115131624
+      ],
+      [
+       -82.77115539828048,
+       40.06022567382249
+      ],
+      [
+       -82.77104558841455,
+       40.060220871250976
+      ],
+      [
+       -82.77101421416735,
+       40.060528235141504
+      ],
+      [
+       -82.77227859633953,
+       40.060590668262165
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_new_albany",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google New Albany, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.765343413127,
+       40.05352108508487
+      ],
+      [
+       -82.76220871808296,
+       40.053371281816396
+      ],
+      [
+       -82.76213448418491,
+       40.0542623481372
+      ],
+      [
+       -82.76484739571941,
+       40.0543889044377
+      ],
+      [
+       -82.76484064718316,
+       40.05446638777113
+      ],
+      [
+       -82.76526243069345,
+       40.05449221552911
+      ],
+      [
+       -82.765343413127,
+       40.05352108508487
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_new_albany",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google New Albany, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.77272420634138,
+       40.055347123894904
+      ],
+      [
+       -82.77157084297072,
+       40.05528657004186
+      ],
+      [
+       -82.77140012853657,
+       40.05737405338468
+      ],
+      [
+       -82.77130436190286,
+       40.05737086643552
+      ],
+      [
+       -82.77127521553612,
+       40.057679999769135
+      ],
+      [
+       -82.77252434554096,
+       40.057740551494646
+      ],
+      [
+       -82.77272420634138,
+       40.055347123894904
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_new_albany",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google New Albany, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

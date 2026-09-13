@@ -1,0 +1,2616 @@
+{
+  "Colossus 2": {
+    "address": "5420 Tulane Rd, Memphis, TN 38109",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5420+Tulane+Rd%2C+Memphis%2C+TN+38109&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:07.674165+00:00",
+    "results": [
+      {
+        "place_id": 336083757,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1386926534,
+        "lat": "34.9979829",
+        "lon": "-90.0348674",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 7.276951247420488e-05,
+        "addresstype": "building",
+        "name": "xAI Macrohard Colossus 2",
+        "display_name": "xAI Macrohard Colossus 2, 5420, Tulane Road, Scaife, Memphis, Shelby County, West Tennessee, Tennessee, 38109, United States",
+        "address": {
+          "building": "xAI Macrohard Colossus 2",
+          "house_number": "5420",
+          "road": "Tulane Road",
+          "hamlet": "Scaife",
+          "city": "Memphis",
+          "county": "Shelby County",
+          "state_district": "West Tennessee",
+          "state": "Tennessee",
+          "ISO3166-2-lvl4": "US-TN",
+          "postcode": "38109",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "34.9956873",
+          "35.0002786",
+          "-90.0358356",
+          "-90.0338988"
+        ]
+      }
+    ]
+  },
+  "Microsoft Fairwater Atlanta": {
+    "address": "1435 Hwy 54 W, Fayetteville, GA 30214",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1435+Hwy+54+W%2C+Fayetteville%2C+GA+30214&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:08.879374+00:00",
+    "results": [
+      {
+        "place_id": 389589730,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 133115401,
+        "lat": "33.4454917",
+        "lon": "-84.5241153",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "1435, Highway 54 West, Fayetteville, Fayette County, Georgia, 30214, United States",
+        "address": {
+          "house_number": "1435",
+          "road": "Highway 54 West",
+          "town": "Fayetteville",
+          "county": "Fayette County",
+          "state": "Georgia",
+          "ISO3166-2-lvl4": "US-GA",
+          "postcode": "30214",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.4454417",
+          "33.4455417",
+          "-84.5241653",
+          "-84.5240653"
+        ]
+      },
+      {
+        "place_id": 389591023,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 458947287,
+        "lat": "33.4453541",
+        "lon": "-84.5254819",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "1435, Highway 54 West, Fayetteville, Fayette County, Georgia, 30214, United States",
+        "address": {
+          "house_number": "1435",
+          "road": "Highway 54 West",
+          "town": "Fayetteville",
+          "county": "Fayette County",
+          "state": "Georgia",
+          "ISO3166-2-lvl4": "US-GA",
+          "postcode": "30214",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.4453041",
+          "33.4454041",
+          "-84.5255319",
+          "-84.5254319"
+        ]
+      }
+    ]
+  },
+  "Anthropic-Amazon New Carlisle": {
+    "address": "55001 Larrison Blvd, New Carlisle, IN 46552",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=55001+Larrison+Blvd%2C+New+Carlisle%2C+IN+46552&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:10.088397+00:00",
+    "results": []
+  },
+  "Meta Prometheus": {
+    "address": "1 Community Cir, New Albany, OH 43054",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1+Community+Cir%2C+New+Albany%2C+OH+43054&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:11.127428+00:00",
+    "results": []
+  },
+  "Google Pryor (North)": {
+    "address": "4581 Webb St, Pryor, OK 74361",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=4581+Webb+St%2C+Pryor%2C+OK+74361&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:12.572413+00:00",
+    "results": [
+      {
+        "place_id": 331991367,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 309666504,
+        "lat": "36.2411721",
+        "lon": "-95.3300473",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 3.500190737769158e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "4581, Webb Street, Mid-America Industrial Park, Lusta, Pryor Creek, Mayes County, Oklahoma, 74361, United States",
+        "address": {
+          "house_number": "4581",
+          "road": "Webb Street",
+          "industrial": "Mid-America Industrial Park",
+          "hamlet": "Lusta",
+          "town": "Pryor Creek",
+          "county": "Mayes County",
+          "state": "Oklahoma",
+          "ISO3166-2-lvl4": "US-OK",
+          "postcode": "74361",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "36.2403107",
+          "36.2420334",
+          "-95.3303887",
+          "-95.3297059"
+        ]
+      }
+    ]
+  },
+  "Google New Albany": {
+    "address": "1101 Beech Rd SW, New Albany, OH 43054",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1101+Beech+Rd+SW%2C+New+Albany%2C+OH+43054&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:13.273446+00:00",
+    "results": [
+      {
+        "place_id": 390847996,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1461435100,
+        "lat": "40.0700510",
+        "lon": "-82.7540420",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "1101, Beech Road Southwest, New Albany, Jersey Township, Licking County, Ohio, 43054, United States",
+        "address": {
+          "house_number": "1101",
+          "road": "Beech Road Southwest",
+          "town": "New Albany",
+          "municipality": "Jersey Township",
+          "county": "Licking County",
+          "state": "Ohio",
+          "ISO3166-2-lvl4": "US-OH",
+          "postcode": "43054",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "40.0700010",
+          "40.0701010",
+          "-82.7540920",
+          "-82.7539920"
+        ]
+      }
+    ]
+  },
+  "OpenAI Stargate Abilene": {
+    "address": "5502 Spinks Rd, Abilene, TX 79601",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5502+Spinks+Rd%2C+Abilene%2C+TX+79601&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:14.672277+00:00",
+    "results": [
+      {
+        "place_id": 333474819,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1025224678,
+        "lat": "32.4942321",
+        "lon": "-99.8009071",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.0533620332646677,
+        "addresstype": "road",
+        "name": "Spinks Road",
+        "display_name": "Spinks Road, Abilene, Taylor County, Texas, 79603, United States",
+        "address": {
+          "road": "Spinks Road",
+          "city": "Abilene",
+          "county": "Taylor County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "79603",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.4868322",
+          "32.4991720",
+          "-99.8122471",
+          "-99.7931038"
+        ]
+      }
+    ]
+  },
+  "Microsoft Fairwater Wisconsin": {
+    "address": "4800 90th St, Mount Pleasant, WI 53403",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=4800+90th+St%2C+Mount+Pleasant%2C+WI+53403&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:15.501663+00:00",
+    "results": [
+      {
+        "place_id": 415865199,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 519163260,
+        "lat": "42.6748702",
+        "lon": "-87.8948880",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "4800, 90th Street, Mount Pleasant, Racine County, Wisconsin, 53403, United States",
+        "address": {
+          "house_number": "4800",
+          "road": "90th Street",
+          "town": "Mount Pleasant",
+          "county": "Racine County",
+          "state": "Wisconsin",
+          "ISO3166-2-lvl4": "US-WI",
+          "postcode": "53403",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "42.6748202",
+          "42.6749202",
+          "-87.8949380",
+          "-87.8948380"
+        ]
+      }
+    ]
+  },
+  "Google Columbus": {
+    "address": "5076 S High St, Columbus, OH 43207",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5076+S+High+St%2C+Columbus%2C+OH+43207&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:16.752680+00:00",
+    "results": [
+      {
+        "place_id": 404849482,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1315842258,
+        "lat": "39.8614521",
+        "lon": "-83.0039995",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "5076, South High Street, Columbus, Franklin County, Ohio, 43137, United States",
+        "address": {
+          "house_number": "5076",
+          "road": "South High Street",
+          "city": "Columbus",
+          "county": "Franklin County",
+          "state": "Ohio",
+          "ISO3166-2-lvl4": "US-OH",
+          "postcode": "43137",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "39.8614021",
+          "39.8615021",
+          "-83.0040495",
+          "-83.0039495"
+        ]
+      }
+    ]
+  },
+  "Google Mesa": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "DayOne Nusajaya": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "Colossus 1": {
+    "address": "3231 Riverport Rd, Memphis, TN 38109",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=3231+Riverport+Rd%2C+Memphis%2C+TN+38109&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:17.586987+00:00",
+    "results": [
+      {
+        "place_id": 334543286,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 604011266,
+        "lat": "35.0735541",
+        "lon": "-90.0873076",
+        "category": "highway",
+        "type": "secondary",
+        "place_rank": 26,
+        "importance": 0.053406102845807546,
+        "addresstype": "road",
+        "name": "Riverport Road",
+        "display_name": "Riverport Road, Memphis, Shelby County, West Tennessee, Tennessee, 38109, United States",
+        "address": {
+          "road": "Riverport Road",
+          "city": "Memphis",
+          "county": "Shelby County",
+          "state_district": "West Tennessee",
+          "state": "Tennessee",
+          "ISO3166-2-lvl4": "US-TN",
+          "postcode": "38109",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "35.0693512",
+          "35.0798346",
+          "-90.0968189",
+          "-90.0792729"
+        ]
+      },
+      {
+        "place_id": 335812063,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 19655939,
+        "lat": "35.0879421",
+        "lon": "-90.0731727",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.053406102845807546,
+        "addresstype": "road",
+        "name": "Riverport Road",
+        "display_name": "Riverport Road, Mallory, Memphis, Shelby County, West Tennessee, Tennessee, 38109, United States",
+        "address": {
+          "road": "Riverport Road",
+          "hamlet": "Mallory",
+          "city": "Memphis",
+          "county": "Shelby County",
+          "state_district": "West Tennessee",
+          "state": "Tennessee",
+          "ISO3166-2-lvl4": "US-TN",
+          "postcode": "38109",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "35.0868406",
+          "35.0890354",
+          "-90.0733096",
+          "-90.0731477"
+        ]
+      }
+    ]
+  },
+  "Google Council Bluffs (East)": {
+    "address": "10410 Bunge Ave, Council Bluffs, IA 51503",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=10410+Bunge+Ave%2C+Council+Bluffs%2C+IA+51503&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:18.649149+00:00",
+    "results": [
+      {
+        "place_id": 393727359,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 16010108,
+        "lat": "41.1666499",
+        "lon": "-95.7977408",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "10410, Bunge Avenue, Council Bluffs, Lewis Township, Pottawattamie County, Iowa, 51503, United States",
+        "address": {
+          "house_number": "10410",
+          "road": "Bunge Avenue",
+          "city": "Council Bluffs",
+          "municipality": "Lewis Township",
+          "county": "Pottawattamie County",
+          "state": "Iowa",
+          "ISO3166-2-lvl4": "US-IA",
+          "postcode": "51503",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.1665999",
+          "41.1666999",
+          "-95.7977908",
+          "-95.7976908"
+        ]
+      },
+      {
+        "place_id": 393734693,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 16010108,
+        "lat": "41.1676044",
+        "lon": "-95.7936882",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "10410, Bunge Avenue, Council Bluffs, Lewis Township, Pottawattamie County, Iowa, 51503, United States",
+        "address": {
+          "house_number": "10410",
+          "road": "Bunge Avenue",
+          "city": "Council Bluffs",
+          "municipality": "Lewis Township",
+          "county": "Pottawattamie County",
+          "state": "Iowa",
+          "ISO3166-2-lvl4": "US-IA",
+          "postcode": "51503",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.1675544",
+          "41.1676544",
+          "-95.7937382",
+          "-95.7936382"
+        ]
+      }
+    ]
+  },
+  "CoreWeave Denton TX": {
+    "address": "8171 Jim Christal Rd, Denton, TX 76207",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=8171+Jim+Christal+Rd%2C+Denton%2C+TX+76207&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:19.757040+00:00",
+    "results": [
+      {
+        "place_id": 333320677,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 9963473,
+        "lat": "33.2192732",
+        "lon": "-97.1747150",
+        "category": "highway",
+        "type": "unclassified",
+        "place_rank": 26,
+        "importance": 0.053395766384374724,
+        "addresstype": "road",
+        "name": "Jim Christal Road",
+        "display_name": "Jim Christal Road, Denton, Denton County, Texas, 76203, United States",
+        "address": {
+          "road": "Jim Christal Road",
+          "city": "Denton",
+          "county": "Denton County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "76203",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.2187800",
+          "33.2192823",
+          "-97.1767300",
+          "-97.1725380"
+        ]
+      },
+      {
+        "place_id": 334397680,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 537215966,
+        "lat": "33.2192700",
+        "lon": "-97.1808979",
+        "category": "highway",
+        "type": "tertiary",
+        "place_rank": 26,
+        "importance": 0.053395766384374724,
+        "addresstype": "road",
+        "name": "Jim Christal Road",
+        "display_name": "Jim Christal Road, Denton, Denton County, Texas, 76203, United States",
+        "address": {
+          "road": "Jim Christal Road",
+          "city": "Denton",
+          "county": "Denton County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "76203",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.2187800",
+          "33.2192757",
+          "-97.1851686",
+          "-97.1767300"
+        ]
+      }
+    ]
+  },
+  "QTS Richmond 1": {
+    "address": "6000 Technology Blvd, Sandston, VA 23150",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=6000+Technology+Blvd%2C+Sandston%2C+VA+23150&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:20.890556+00:00",
+    "results": [
+      {
+        "place_id": 346920476,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 9892863,
+        "lat": "37.4888273",
+        "lon": "-77.2474900",
+        "category": "building",
+        "type": "industrial",
+        "place_rank": 30,
+        "importance": 3.500190737769158e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "6000, Technology Boulevard, Sandston, Henrico County, Virginia, 23150, United States",
+        "address": {
+          "house_number": "6000",
+          "road": "Technology Boulevard",
+          "village": "Sandston",
+          "county": "Henrico County",
+          "state": "Virginia",
+          "ISO3166-2-lvl4": "US-VA",
+          "postcode": "23150",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "37.4870688",
+          "37.4906563",
+          "-77.2484094",
+          "-77.2439750"
+        ]
+      }
+    ]
+  },
+  "Meta Rosemount": {
+    "address": "1772-2396 145th St, Rosemount, MN 55068, USA",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1772-2396+145th+St%2C+Rosemount%2C+MN+55068%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:22.211755+00:00",
+    "results": []
+  },
+  "Amazon Madison Mega Site": {
+    "address": "Amazon Data Services Inc, Madison Mega Site Nissan Parkway and Highway 22 Canton, Mississippi Madison County",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Amazon+Data+Services+Inc%2C+Madison+Mega+Site+Nissan+Parkway+and+Highway+22+Canton%2C+Mississippi+Madison+County&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:23.184921+00:00",
+    "results": []
+  },
+  "Google Bristow": {
+    "address": "13001 Rollins Ford Road, Bristow, VA 20136",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=13001+Rollins+Ford+Road%2C+Bristow%2C+VA+20136&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:24.300200+00:00",
+    "results": []
+  },
+  "Microsoft Goodyear": {
+    "address": "14250 W Broadway Rd, Goodyear, AZ 85338",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=14250+W+Broadway+Rd%2C+Goodyear%2C+AZ+85338&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:25.919669+00:00",
+    "results": [
+      {
+        "place_id": 320174842,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1091128478,
+        "lat": "33.4089905",
+        "lon": "-112.3647996",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.544899671926478e-05,
+        "addresstype": "building",
+        "name": "PHX-11",
+        "display_name": "PHX-11, 14250, West Broadway Road, Goodyear, Maricopa County, Arizona, 85338, United States",
+        "address": {
+          "building": "PHX-11",
+          "house_number": "14250",
+          "road": "West Broadway Road",
+          "city": "Goodyear",
+          "county": "Maricopa County",
+          "state": "Arizona",
+          "ISO3166-2-lvl4": "US-AZ",
+          "postcode": "85338",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.4087564",
+          "33.4093048",
+          "-112.3669293",
+          "-112.3627251"
+        ]
+      },
+      {
+        "place_id": 320168892,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 795384117,
+        "lat": "33.4079462",
+        "lon": "-112.3648298",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.544899671926478e-05,
+        "addresstype": "building",
+        "name": "PHX-10",
+        "display_name": "PHX-10, 14250, West Broadway Road, Goodyear, Maricopa County, Arizona, 85338, United States",
+        "address": {
+          "building": "PHX-10",
+          "house_number": "14250",
+          "road": "West Broadway Road",
+          "city": "Goodyear",
+          "county": "Maricopa County",
+          "state": "Arizona",
+          "ISO3166-2-lvl4": "US-AZ",
+          "postcode": "85338",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.4076761",
+          "33.4082163",
+          "-112.3669458",
+          "-112.3627137"
+        ]
+      },
+      {
+        "place_id": 420509209,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1532070752,
+        "lat": "33.4102347",
+        "lon": "-112.3648662",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 5.544899671926478e-05,
+        "addresstype": "building",
+        "name": "PHX-12",
+        "display_name": "PHX-12, 14250, West Broadway Road, Goodyear, Maricopa County, Arizona, 85338, United States",
+        "address": {
+          "building": "PHX-12",
+          "house_number": "14250",
+          "road": "West Broadway Road",
+          "city": "Goodyear",
+          "county": "Maricopa County",
+          "state": "Arizona",
+          "ISO3166-2-lvl4": "US-AZ",
+          "postcode": "85338",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.4099699",
+          "33.4104989",
+          "-112.3669815",
+          "-112.3627509"
+        ]
+      }
+    ]
+  },
+  "Meta Jeffersonville": {
+    "address": "500 8th St, Jeffersonville, IN 47130, USA",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=500+8th+St%2C+Jeffersonville%2C+IN+47130%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:27.079896+00:00",
+    "results": [
+      {
+        "place_id": 391960689,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 17282380,
+        "lat": "38.2791310",
+        "lon": "-85.7390090",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "500, East 8th Street, Port Fulton, Jeffersonville, Clark County, Indiana, 47130, United States",
+        "address": {
+          "house_number": "500",
+          "road": "East 8th Street",
+          "hamlet": "Port Fulton",
+          "city": "Jeffersonville",
+          "county": "Clark County",
+          "state": "Indiana",
+          "ISO3166-2-lvl4": "US-IN",
+          "postcode": "47130",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "38.2790810",
+          "38.2791810",
+          "-85.7390590",
+          "-85.7389590"
+        ]
+      }
+    ]
+  },
+  "Google Kansas City East": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "AWS New Albany": {
+    "address": "13360 Miller Rd NW",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=13360+Miller+Rd+NW&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:28.122529+00:00",
+    "results": [
+      {
+        "place_id": 405120233,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1093263213,
+        "lat": "40.1158074",
+        "lon": "-82.7395358",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "13360, Miller Road Northwest, Jersey Township, Licking County, Ohio, 43031, United States",
+        "address": {
+          "house_number": "13360",
+          "road": "Miller Road Northwest",
+          "municipality": "Jersey Township",
+          "county": "Licking County",
+          "state": "Ohio",
+          "ISO3166-2-lvl4": "US-OH",
+          "postcode": "43031",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "40.1157574",
+          "40.1158574",
+          "-82.7395858",
+          "-82.7394858"
+        ]
+      }
+    ]
+  },
+  "Google Omaha": {
+    "address": "11110 State St, Omaha, NE 68142",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=11110+State+St%2C+Omaha%2C+NE+68142&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:28.859558+00:00",
+    "results": [
+      {
+        "place_id": 327246417,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 166417288,
+        "lat": "41.3356809",
+        "lon": "-96.0523625",
+        "category": "highway",
+        "type": "tertiary",
+        "place_rank": 26,
+        "importance": 0.05340351338979168,
+        "addresstype": "road",
+        "name": "State Street",
+        "display_name": "State Street, Omaha, Union Precinct, Douglas County, Nebraska, 68007, United States",
+        "address": {
+          "road": "State Street",
+          "city": "Omaha",
+          "municipality": "Union Precinct",
+          "county": "Douglas County",
+          "state": "Nebraska",
+          "ISO3166-2-lvl4": "US-NE",
+          "postcode": "68007",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.3356720",
+          "41.3359184",
+          "-96.0621695",
+          "-96.0425737"
+        ]
+      },
+      {
+        "place_id": 331221853,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 166094679,
+        "lat": "41.3357366",
+        "lon": "-96.0384591",
+        "category": "highway",
+        "type": "tertiary",
+        "place_rank": 26,
+        "importance": 0.05340351338979168,
+        "addresstype": "road",
+        "name": "State Street",
+        "display_name": "State Street, Omaha, Douglas County, Nebraska, 68122, United States",
+        "address": {
+          "road": "State Street",
+          "city": "Omaha",
+          "county": "Douglas County",
+          "state": "Nebraska",
+          "ISO3166-2-lvl4": "US-NE",
+          "postcode": "68122",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.3323750",
+          "41.3357560",
+          "-96.0499200",
+          "-96.0264531"
+        ]
+      },
+      {
+        "place_id": 372112935,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 14094904,
+        "lat": "41.3337331",
+        "lon": "-95.9796879",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340351338979168,
+        "addresstype": "road",
+        "name": "State Street",
+        "display_name": "State Street, Florence, Omaha, Douglas County, Nebraska, 68112, United States",
+        "address": {
+          "road": "State Street",
+          "village": "Florence",
+          "city": "Omaha",
+          "county": "Douglas County",
+          "state": "Nebraska",
+          "ISO3166-2-lvl4": "US-NE",
+          "postcode": "68112",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.3337240",
+          "41.3338770",
+          "-95.9801350",
+          "-95.9791700"
+        ]
+      }
+    ]
+  },
+  "Google Lincoln": {
+    "address": "5475 Cloud Ct, Lincoln, NE 68514",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5475+Cloud+Ct%2C+Lincoln%2C+NE+68514&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:30.249842+00:00",
+    "results": [
+      {
+        "place_id": 329494889,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1353391256,
+        "lat": "40.9074720",
+        "lon": "-96.6457832",
+        "category": "highway",
+        "type": "unclassified",
+        "place_rank": 26,
+        "importance": 0.0533620332646677,
+        "addresstype": "road",
+        "name": "Cloud Court",
+        "display_name": "Cloud Court, Lincoln, Lancaster County, Nebraska, 68514, United States",
+        "address": {
+          "road": "Cloud Court",
+          "city": "Lincoln",
+          "county": "Lancaster County",
+          "state": "Nebraska",
+          "ISO3166-2-lvl4": "US-NE",
+          "postcode": "68514",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "40.9074116",
+          "40.9075017",
+          "-96.6458744",
+          "-96.6456773"
+        ]
+      }
+    ]
+  },
+  "QTS Richmond 2": {
+    "address": "6030–6070 Technology Blvd, Sandston, VA 23150",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=6030%E2%80%936070+Technology+Blvd%2C+Sandston%2C+VA+23150&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:31.050307+00:00",
+    "results": []
+  },
+  "Google The Dalles": {
+    "address": "3500 River Rd, The Dalles, OR",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=3500+River+Rd%2C+The+Dalles%2C+OR&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:31.966369+00:00",
+    "results": [
+      {
+        "place_id": 325688215,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 798956909,
+        "lat": "45.6253889",
+        "lon": "-121.2023887",
+        "category": "highway",
+        "type": "tertiary",
+        "place_rank": 26,
+        "importance": 0.05339015259021893,
+        "addresstype": "road",
+        "name": "River Road",
+        "display_name": "River Road, The Dalles, Wasco County, Oregon, 97058, United States",
+        "address": {
+          "road": "River Road",
+          "town": "The Dalles",
+          "county": "Wasco County",
+          "state": "Oregon",
+          "ISO3166-2-lvl4": "US-OR",
+          "postcode": "97058",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "45.6221851",
+          "45.6287926",
+          "-121.2034719",
+          "-121.2008125"
+        ]
+      },
+      {
+        "place_id": 326829463,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 179097661,
+        "lat": "45.6306088",
+        "lon": "-121.2133363",
+        "category": "highway",
+        "type": "secondary",
+        "place_rank": 26,
+        "importance": 0.05337421606775002,
+        "addresstype": "road",
+        "name": "River Road",
+        "display_name": "River Road, The Dalles, Wasco County, Oregon, 97058, United States",
+        "address": {
+          "road": "River Road",
+          "town": "The Dalles",
+          "county": "Wasco County",
+          "state": "Oregon",
+          "ISO3166-2-lvl4": "US-OR",
+          "postcode": "97058",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "45.6305484",
+          "45.6306692",
+          "-121.2137380",
+          "-121.2129346"
+        ]
+      }
+    ]
+  },
+  "QTS Richmond 3": {
+    "address": "3525–3543 Portugee Rd, Sandston, VA 23150",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=3525%E2%80%933543+Portugee+Rd%2C+Sandston%2C+VA+23150&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:33.148225+00:00",
+    "results": []
+  },
+  "Meta Montgomery": {
+    "address": "Co Rd 42, Montgomery, AL 36105, USA",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Co+Rd+42%2C+Montgomery%2C+AL+36105%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:35.070709+00:00",
+    "results": []
+  },
+  "Meta Kuna": {
+    "address": "601 Kuna Mora Rd,  Kuna ID 83634",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=601+Kuna+Mora+Rd%2C++Kuna+ID+83634&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:35.861042+00:00",
+    "results": [
+      {
+        "place_id": 390286761,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 13695266,
+        "lat": "43.4592072",
+        "lon": "-116.4211106",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "601, West Kuna Mora Road, Kuna, Ada County, Idaho, 83634, United States",
+        "address": {
+          "house_number": "601",
+          "road": "West Kuna Mora Road",
+          "town": "Kuna",
+          "county": "Ada County",
+          "state": "Idaho",
+          "ISO3166-2-lvl4": "US-ID",
+          "postcode": "83634",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "43.4591572",
+          "43.4592572",
+          "-116.4211606",
+          "-116.4210606"
+        ]
+      }
+    ]
+  },
+  "Meta Temple": {
+    "address": "2310 Eberhardt Rd, Temple, TX 76504",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=2310+Eberhardt+Rd%2C+Temple%2C+TX+76504&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:36.438959+00:00",
+    "results": [
+      {
+        "place_id": 387730040,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 15122178,
+        "lat": "31.1260165",
+        "lon": "-97.3600001",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "2310, Eberhardt Road, Temple, Bell County, Texas, 76504, United States",
+        "address": {
+          "house_number": "2310",
+          "road": "Eberhardt Road",
+          "city": "Temple",
+          "county": "Bell County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "76504",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "31.1259665",
+          "31.1260665",
+          "-97.3600501",
+          "-97.3599501"
+        ]
+      }
+    ]
+  },
+  "Meta Cheyenne": {
+    "address": "Cheyenne, WY 82007, USA",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Cheyenne%2C+WY+82007%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:37.562571+00:00",
+    "results": [
+      {
+        "place_id": 331131966,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 252208,
+        "lat": "41.1399810",
+        "lon": "-104.8202460",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.5693636991600631,
+        "addresstype": "city",
+        "name": "Cheyenne",
+        "display_name": "Cheyenne, Laramie County, Wyoming, United States",
+        "address": {
+          "city": "Cheyenne",
+          "county": "Laramie County",
+          "state": "Wyoming",
+          "ISO3166-2-lvl4": "US-WY",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.0730957",
+          "41.1930263",
+          "-104.8611236",
+          "-104.6749326"
+        ]
+      },
+      {
+        "place_id": 326574252,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 40867139,
+        "lat": "41.1265824",
+        "lon": "-104.8377722",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.1867292874036774,
+        "addresstype": "city",
+        "name": "Cheyenne",
+        "display_name": "Cheyenne, Laramie County, Wyoming, United States",
+        "address": {
+          "city": "Cheyenne",
+          "county": "Laramie County",
+          "state": "Wyoming",
+          "ISO3166-2-lvl4": "US-WY",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.1242934",
+          "41.1286445",
+          "-104.8384411",
+          "-104.8371212"
+        ]
+      }
+    ]
+  },
+  "Amazon Ridgeland": {
+    "address": "1626 County Line Road Ridgeland, Mississippi",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1626+County+Line+Road+Ridgeland%2C+Mississippi&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:38.676237+00:00",
+    "results": [
+      {
+        "place_id": 392925725,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 13602716,
+        "lat": "32.4000327",
+        "lon": "-90.1971708",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "1626, West County Line Road, Lakeover, Jackson, Hinds County, Mississippi, 39213, United States",
+        "address": {
+          "house_number": "1626",
+          "road": "West County Line Road",
+          "residential": "Lakeover",
+          "hamlet": "Lakeover",
+          "city": "Jackson",
+          "county": "Hinds County",
+          "state": "Mississippi",
+          "ISO3166-2-lvl4": "US-MS",
+          "postcode": "39213",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.3999827",
+          "32.4000827",
+          "-90.1972208",
+          "-90.1971208"
+        ]
+      },
+      {
+        "place_id": 407794390,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 13602716,
+        "lat": "32.4000327",
+        "lon": "-90.1971708",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "1626, West County Line Road, Lakeover, Jackson, Hinds County, Mississippi, 39213, United States",
+        "address": {
+          "house_number": "1626",
+          "road": "West County Line Road",
+          "residential": "Lakeover",
+          "hamlet": "Lakeover",
+          "city": "Jackson",
+          "county": "Hinds County",
+          "state": "Mississippi",
+          "ISO3166-2-lvl4": "US-MS",
+          "postcode": "39213",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.3999827",
+          "32.4000827",
+          "-90.1972208",
+          "-90.1971208"
+        ]
+      }
+    ]
+  },
+  "Meta Huntsville": {
+    "address": "5400 Prosperity Dr NW, Toney, AL",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5400+Prosperity+Dr+NW%2C+Toney%2C+AL&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:40.258774+00:00",
+    "results": []
+  },
+  "Meta Aiken": {
+    "address": "7601 State Hwy 105, Trenton, SC 29847, USA",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=7601+State+Hwy+105%2C+Trenton%2C+SC+29847%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:41.541504+00:00",
+    "results": []
+  },
+  "Coreweave Helios": {
+    "address": "984 County Road 112, Afton, TX 79220",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=984+County+Road+112%2C+Afton%2C+TX+79220&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:42.145687+00:00",
+    "results": []
+  },
+  "Microsoft Project Osmium": {
+    "address": "5855 SW Kerry St, Cumming, IA 50061",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5855+SW+Kerry+St%2C+Cumming%2C+IA+50061&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:43.219726+00:00",
+    "results": []
+  },
+  "Meta Eagle Mountain": {
+    "address": "1275 N Community Cir, Eagle Mountain, UT 84005",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1275+N+Community+Cir%2C+Eagle+Mountain%2C+UT+84005&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:44.688830+00:00",
+    "results": []
+  },
+  "Google Midlothian": {
+    "address": "3250 Railport Parkway, Midlothian, TX 76065",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=3250+Railport+Parkway%2C+Midlothian%2C+TX+76065&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:45.209817+00:00",
+    "results": [
+      {
+        "place_id": 333439723,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 368890553,
+        "lat": "32.4389270",
+        "lon": "-97.0507991",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.053388150606546086,
+        "addresstype": "road",
+        "name": "Railport Parkway",
+        "display_name": "Railport Parkway, Midlothian, Ellis County, Texas, 76084, United States",
+        "address": {
+          "road": "Railport Parkway",
+          "town": "Midlothian",
+          "county": "Ellis County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "76084",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.4347866",
+          "32.4430738",
+          "-97.0532057",
+          "-97.0483825"
+        ]
+      }
+    ]
+  },
+  "Google Storey County": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "Google Lancaster": {
+    "address": "105 Whiley Rd, Lancaster, OH 43130",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=105+Whiley+Rd%2C+Lancaster%2C+OH+43130&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:46.375304+00:00",
+    "results": [
+      {
+        "place_id": 404787773,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 19048744,
+        "lat": "39.7270407",
+        "lon": "-82.6831433",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "105, Whiley Road Southwest, Lancaster, Hocking Township, Fairfield County, Ohio, 43130, United States",
+        "address": {
+          "house_number": "105",
+          "road": "Whiley Road Southwest",
+          "city": "Lancaster",
+          "municipality": "Hocking Township",
+          "county": "Fairfield County",
+          "state": "Ohio",
+          "ISO3166-2-lvl4": "US-OH",
+          "postcode": "43130",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "39.7269907",
+          "39.7270907",
+          "-82.6831933",
+          "-82.6830933"
+        ]
+      }
+    ]
+  },
+  "Meta-QTS Hillsboro 2": {
+    "address": "4755 NE Huffman St, Hillsboro, OR 97124",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=4755+NE+Huffman+St%2C+Hillsboro%2C+OR+97124&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:47.548300+00:00",
+    "results": [
+      {
+        "place_id": 325923374,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 909742340,
+        "lat": "45.5588758",
+        "lon": "-122.9296051",
+        "category": "building",
+        "type": "industrial",
+        "place_rank": 30,
+        "importance": 5.9144731822644654e-05,
+        "addresstype": "building",
+        "name": "QTS Data Center - Hillsboro 2",
+        "display_name": "QTS Data Center - Hillsboro 2, 4755, Northeast Huffman Street, North Hillsboro, Hillsboro, Washington County, Oregon, 97124, United States",
+        "address": {
+          "building": "QTS Data Center - Hillsboro 2",
+          "house_number": "4755",
+          "road": "Northeast Huffman Street",
+          "suburb": "North Hillsboro",
+          "city": "Hillsboro",
+          "county": "Washington County",
+          "state": "Oregon",
+          "ISO3166-2-lvl4": "US-OR",
+          "postcode": "97124",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "45.5576234",
+          "45.5599751",
+          "-122.9303222",
+          "-122.9292260"
+        ]
+      }
+    ]
+  },
+  "Google Waltham Cross": {
+    "address": "Land at Maxwell's Farm West, Great Cambridge Road, Cheshunt, EN8 8XH",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Land+at+Maxwell%27s+Farm+West%2C+Great+Cambridge+Road%2C+Cheshunt%2C+EN8+8XH&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:48.621072+00:00",
+    "results": []
+  },
+  "VNET Bayin Ulanqab": {
+    "address": "Bayin, Ulanqab, China",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Bayin%2C+Ulanqab%2C+China&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:49.553950+00:00",
+    "results": [
+      {
+        "place_id": 223863357,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 10465102,
+        "lat": "41.6241526",
+        "lon": "112.6325011",
+        "category": "boundary",
+        "type": "administrative",
+        "place_rank": 16,
+        "importance": 0.20813244289121335,
+        "addresstype": "town",
+        "name": "巴音乡",
+        "display_name": "巴音乡, 察哈尔右翼中旗 ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ, 乌兰察布市 ᠤᠯᠠᠭᠠᠨᠴᠠᠪ ᠬᠣᠲᠠ, 内蒙古自治区 ᠦᠪᠦᠷ ᠮᠣᠩᠭᠤᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠣ ᠣᠷᠣᠨ, 013500, 中国",
+        "address": {
+          "town": "巴音乡",
+          "county": "察哈尔右翼中旗 ᠴᠠᠬᠠᠷ ᠪᠠᠷᠠᠭᠤᠨ ᠭᠠᠷᠤᠨ ᠳᠤᠮᠳᠠᠳᠤ ᠬᠣᠰᠢᠭᠤ",
+          "city": "乌兰察布市 ᠤᠯᠠᠭᠠᠨᠴᠠᠪ ᠬᠣᠲᠠ",
+          "state": "内蒙古自治区 ᠦᠪᠦᠷ ᠮᠣᠩᠭᠤᠯ ᠤᠨ ᠥᠪᠡᠷᠲᠡᠭᠡᠨ ᠵᠠᠰᠠᠬᠣ ᠣᠷᠣᠨ",
+          "ISO3166-2-lvl4": "CN-NM",
+          "postcode": "013500",
+          "country": "中国",
+          "country_code": "cn"
+        },
+        "boundingbox": [
+          "41.5639864",
+          "41.7116239",
+          "112.5561074",
+          "112.7135959"
+        ]
+      }
+    ]
+  },
+  "Huawei Horinger": {
+    "address": "Huawei, Horinger, China",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Huawei%2C+Horinger%2C+China&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:50.647907+00:00",
+    "results": []
+  },
+  "Google Arcola": {
+    "address": "42575 Arcola Blvd, Sterling, VA 20166",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=42575+Arcola+Blvd%2C+Sterling%2C+VA+20166&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:52.022920+00:00",
+    "results": []
+  },
+  "Google Red Oak": {
+    "address": "330 Austin Blvd, Red Oak, TX 75154",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=330+Austin+Blvd%2C+Red+Oak%2C+TX+75154&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:53.176463+00:00",
+    "results": [
+      {
+        "place_id": 335688028,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13113462020,
+        "lat": "32.5376266",
+        "lon": "-96.7966747",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 5.409552147702781e-05,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "330, North Austin Boulevard, Red Oak, Ellis County, Texas, 75154, United States",
+        "address": {
+          "house_number": "330",
+          "road": "North Austin Boulevard",
+          "town": "Red Oak",
+          "county": "Ellis County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "75154",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.5375766",
+          "32.5376766",
+          "-96.7967247",
+          "-96.7966247"
+        ]
+      },
+      {
+        "place_id": 411174854,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 264247760,
+        "lat": "32.5299498",
+        "lon": "-96.7998172",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "330, South Austin Boulevard, Elva, Red Oak, Ellis County, Texas, 75154, United States",
+        "address": {
+          "house_number": "330",
+          "road": "South Austin Boulevard",
+          "neighbourhood": "Elva",
+          "town": "Red Oak",
+          "county": "Ellis County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "75154",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.5298998",
+          "32.5299998",
+          "-96.7998672",
+          "-96.7997672"
+        ]
+      }
+    ]
+  },
+  "Google Papillion": {
+    "address": "14651-15249 Gold Coast Rd 68138 Papillion Nebraska, USA",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=14651-15249+Gold+Coast+Rd+68138+Papillion+Nebraska%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:54.121784+00:00",
+    "results": []
+  },
+  "Meta Gallatin": {
+    "address": "1 Meta Lp, Gallatin, TN 37066",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1+Meta+Lp%2C+Gallatin%2C+TN+37066&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:55.334089+00:00",
+    "results": []
+  },
+  "Meta Los Lunas": {
+    "address": "4250 Messenger Lp, Los Lunas, NM 87031",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=4250+Messenger+Lp%2C+Los+Lunas%2C+NM+87031&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:56.219708+00:00",
+    "results": [
+      {
+        "place_id": 332684021,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 626785488,
+        "lat": "34.8301645",
+        "lon": "-106.7838267",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 3.000152590214416e-05,
+        "addresstype": "building",
+        "name": "Meta",
+        "display_name": "Meta, 4250, Messenger Loop Northwest, Meta Los Lunas Data Center, Los Lunas, Valencia County, New Mexico, 87031, United States",
+        "address": {
+          "building": "Meta",
+          "house_number": "4250",
+          "road": "Messenger Loop Northwest",
+          "industrial": "Meta Los Lunas Data Center",
+          "town": "Los Lunas",
+          "county": "Valencia County",
+          "state": "New Mexico",
+          "ISO3166-2-lvl4": "US-NM",
+          "postcode": "87031",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "34.8285396",
+          "34.8319446",
+          "-106.7852809",
+          "-106.7823438"
+        ]
+      }
+    ]
+  },
+  "CoreWeave Ellendale ND": {
+    "address": "9685 87th Ave SE, Ellendale, ND 58436",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=9685+87th+Ave+SE%2C+Ellendale%2C+ND+58436&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:57.383895+00:00",
+    "results": [
+      {
+        "place_id": 329074976,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 9646316,
+        "lat": "46.0102576",
+        "lon": "-98.5686907",
+        "category": "highway",
+        "type": "unclassified",
+        "place_rank": 26,
+        "importance": 0.053383334859235486,
+        "addresstype": "road",
+        "name": "87th Avenue Southeast",
+        "display_name": "87th Avenue Southeast, Ellendale Township, Dickey County, North Dakota, 58436, United States",
+        "address": {
+          "road": "87th Avenue Southeast",
+          "municipality": "Ellendale Township",
+          "county": "Dickey County",
+          "state": "North Dakota",
+          "ISO3166-2-lvl4": "US-ND",
+          "postcode": "58436",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "45.9376790",
+          "46.0828310",
+          "-98.5693790",
+          "-98.5678290"
+        ]
+      }
+    ]
+  },
+  "Meta Sarpy": {
+    "address": "14436-14998 Fairview Rd, Springfield, NE 68059, USA",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=14436-14998+Fairview+Rd%2C+Springfield%2C+NE+68059%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:58.552690+00:00",
+    "results": []
+  },
+  "CoreWeave Chester VA": {
+    "address": "1401 Meadowville Technology Parkway, Chester, VA",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1401+Meadowville+Technology+Parkway%2C+Chester%2C+VA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:59.597296+00:00",
+    "results": []
+  },
+  "Oracle Batam": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "AWS Berwick": {
+    "address": "1125 Electron Ave, Berwick, PA 18603",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1125+Electron+Ave%2C+Berwick%2C+PA+18603&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:00.656851+00:00",
+    "results": [
+      {
+        "place_id": 349320301,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1334234458,
+        "lat": "41.0838485",
+        "lon": "-76.1435333",
+        "category": "building",
+        "type": "industrial",
+        "place_rank": 30,
+        "importance": 4.19722285801025e-05,
+        "addresstype": "building",
+        "name": "Amazon AWS PHL",
+        "display_name": "Amazon AWS PHL, 1125, Electron Avenue, Berwick, Luzerne County, Pennsylvania, 18603, United States",
+        "address": {
+          "building": "Amazon AWS PHL",
+          "house_number": "1125",
+          "road": "Electron Avenue",
+          "town": "Berwick",
+          "county": "Luzerne County",
+          "state": "Pennsylvania",
+          "ISO3166-2-lvl4": "US-PA",
+          "postcode": "18603",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.0829829",
+          "41.0849985",
+          "-76.1442549",
+          "-76.1424948"
+        ]
+      }
+    ]
+  },
+  "CoreWeave Marble NC": {
+    "address": "155 Palmer Ln, Marble, NC 28905",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=155+Palmer+Ln%2C+Marble%2C+NC+28905&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:01.745487+00:00",
+    "results": [
+      {
+        "place_id": 401920790,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 16471134,
+        "lat": "35.1849883",
+        "lon": "-83.9141225",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "155, Palmer Lane, Marble, Cherokee County, North Carolina, 28905, United States",
+        "address": {
+          "house_number": "155",
+          "road": "Palmer Lane",
+          "hamlet": "Marble",
+          "county": "Cherokee County",
+          "state": "North Carolina",
+          "ISO3166-2-lvl4": "US-NC",
+          "postcode": "28905",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "35.1849383",
+          "35.1850383",
+          "-83.9141725",
+          "-83.9140725"
+        ]
+      }
+    ]
+  },
+  "Core42 Lake Mariner": {
+    "address": "7725 Lake Rd, Barker, NY 14012",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=7725+Lake+Rd%2C+Barker%2C+NY+14012&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:03.036730+00:00",
+    "results": [
+      {
+        "place_id": 351418813,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 856529683,
+        "lat": "43.3586546",
+        "lon": "-78.6041280",
+        "category": "building",
+        "type": "industrial",
+        "place_rank": 30,
+        "importance": 4.1084153505714774e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "7725, Lake Road, Town of Somerset, Niagara County, New York, 14012, United States",
+        "address": {
+          "house_number": "7725",
+          "road": "Lake Road",
+          "village": "Town of Somerset",
+          "county": "Niagara County",
+          "state": "New York",
+          "ISO3166-2-lvl4": "US-NY",
+          "postcode": "14012",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "43.3574678",
+          "43.3598528",
+          "-78.6058268",
+          "-78.6034009"
+        ]
+      }
+    ]
+  },
+  "Microsoft SAT40": {
+    "address": "15000 Lambda Drive, San Antonio, TX 78245",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=15000+Lambda+Drive%2C+San+Antonio%2C+TX+78245&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:05.131845+00:00",
+    "results": []
+  },
+  "STACK Infrastructure NVA02": {
+    "address": "9590 Hornbaker Rd, Manassas, VA 20109",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=9590+Hornbaker+Rd%2C+Manassas%2C+VA+20109&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:05.683898+00:00",
+    "results": [
+      {
+        "place_id": 348696763,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1059036248,
+        "lat": "38.7458055",
+        "lon": "-77.5377246",
+        "category": "building",
+        "type": "data_center",
+        "place_rank": 30,
+        "importance": 4.794766155484882e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "9590, Hornbaker Road, Manassas, Prince William County, Virginia, 20109, United States",
+        "address": {
+          "house_number": "9590",
+          "road": "Hornbaker Road",
+          "city": "Manassas",
+          "county": "Prince William County",
+          "state": "Virginia",
+          "ISO3166-2-lvl4": "US-VA",
+          "postcode": "20109",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "38.7448161",
+          "38.7471654",
+          "-77.5392031",
+          "-77.5358945"
+        ]
+      }
+    ]
+  },
+  "Anthropic Lake Mariner": {
+    "address": "7725 Lake Rd, Barker, NY 14012",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=7725+Lake+Rd%2C+Barker%2C+NY+14012&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:03.036730+00:00",
+    "results": [
+      {
+        "place_id": 351418813,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 856529683,
+        "lat": "43.3586546",
+        "lon": "-78.6041280",
+        "category": "building",
+        "type": "industrial",
+        "place_rank": 30,
+        "importance": 4.1084153505714774e-05,
+        "addresstype": "building",
+        "name": "",
+        "display_name": "7725, Lake Road, Town of Somerset, Niagara County, New York, 14012, United States",
+        "address": {
+          "house_number": "7725",
+          "road": "Lake Road",
+          "village": "Town of Somerset",
+          "county": "Niagara County",
+          "state": "New York",
+          "ISO3166-2-lvl4": "US-NY",
+          "postcode": "14012",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "43.3574678",
+          "43.3598528",
+          "-78.6058268",
+          "-78.6034009"
+        ]
+      }
+    ]
+  },
+  "Microsoft-Nebius New Jersey": {
+    "address": "3963 S Lincoln Ave, Vineland, New Jersey",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=3963+S+Lincoln+Ave%2C+Vineland%2C+New+Jersey&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:06.360676+00:00",
+    "results": [
+      {
+        "place_id": 412459670,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 11610107,
+        "lat": "39.4281986",
+        "lon": "-75.0184088",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "3963, South Lincoln Avenue, Clayville, Vineland, Cumberland County, New Jersey, 08361, United States",
+        "address": {
+          "house_number": "3963",
+          "road": "South Lincoln Avenue",
+          "hamlet": "Clayville",
+          "city": "Vineland",
+          "county": "Cumberland County",
+          "state": "New Jersey",
+          "ISO3166-2-lvl4": "US-NJ",
+          "postcode": "08361",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "39.4281486",
+          "39.4282486",
+          "-75.0184588",
+          "-75.0183588"
+        ]
+      }
+    ]
+  },
+  "CoreWeave Norway": {
+    "address": "Stølevegen 39, 4715 Øvrebø, Norway",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=St%C3%B8levegen+39%2C+4715+%C3%98vreb%C3%B8%2C+Norway&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:07.989614+00:00",
+    "results": [
+      {
+        "place_id": 159785776,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 4867663242,
+        "lat": "58.2575730",
+        "lon": "7.8920500",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 5.2655069809979666e-05,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "39, Stølevegen, Vennesla, Agder, 4715, Norge",
+        "address": {
+          "house_number": "39",
+          "road": "Stølevegen",
+          "municipality": "Vennesla",
+          "county": "Agder",
+          "ISO3166-2-lvl4": "NO-42",
+          "postcode": "4715",
+          "country": "Norge",
+          "country_code": "no"
+        },
+        "boundingbox": [
+          "58.2575230",
+          "58.2576230",
+          "7.8920000",
+          "7.8921000"
+        ]
+      }
+    ]
+  },
+  "Southgate Melbourne": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "Stream Phoenix": {
+    "address": "2950 S. Litchfield Road",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=2950+S.+Litchfield+Road&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:08.918311+00:00",
+    "results": [
+      {
+        "place_id": 317457157,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 468707940,
+        "lat": "33.4194907",
+        "lon": "-112.3599884",
+        "category": "building",
+        "type": "warehouse",
+        "place_rank": 30,
+        "importance": 5.544899671926478e-05,
+        "addresstype": "building",
+        "name": "Stream Data Centers PHX-1",
+        "display_name": "Stream Data Centers PHX-1, 2950, South Litchfield Road, Litchfield, Goodyear, Maricopa County, Arizona, 85338, United States",
+        "address": {
+          "building": "Stream Data Centers PHX-1",
+          "house_number": "2950",
+          "road": "South Litchfield Road",
+          "hamlet": "Litchfield",
+          "city": "Goodyear",
+          "county": "Maricopa County",
+          "state": "Arizona",
+          "ISO3166-2-lvl4": "US-AZ",
+          "postcode": "85338",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.4188847",
+          "33.4200967",
+          "-112.3616490",
+          "-112.3583275"
+        ]
+      }
+    ]
+  },
+  "Microsoft SAT14": {
+    "address": "3545 Wiseman Boulevard, San Antonio, TX 78251",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=3545+Wiseman+Boulevard%2C+San+Antonio%2C+TX+78251&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:09.673338+00:00",
+    "results": [
+      {
+        "place_id": 317868096,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 146316978,
+        "lat": "29.4712837",
+        "lon": "-98.7023324",
+        "category": "highway",
+        "type": "secondary",
+        "place_rank": 26,
+        "importance": 0.053405954833295154,
+        "addresstype": "road",
+        "name": "Wiseman Boulevard",
+        "display_name": "Wiseman Boulevard, Westover Hills, San Antonio, Bexar County, Texas, 78251, United States",
+        "address": {
+          "road": "Wiseman Boulevard",
+          "suburb": "Westover Hills",
+          "city": "San Antonio",
+          "county": "Bexar County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "78251",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "29.4673183",
+          "29.4744635",
+          "-98.7046229",
+          "-98.6990702"
+        ]
+      }
+    ]
+  },
+  "Vantage TX1": {
+    "address": "14720 Omicron Dr, San Antonio, TX 78245",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=14720+Omicron+Dr%2C+San+Antonio%2C+TX+78245&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:11.206777+00:00",
+    "results": [
+      {
+        "place_id": 421925937,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1533148730,
+        "lat": "29.4168571",
+        "lon": "-98.7901875",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "building",
+        "name": "Vantage TX11",
+        "display_name": "Vantage TX11, 14720, Omicron Drive, San Antonio, Bexar County, Texas, 78245, United States",
+        "address": {
+          "building": "Vantage TX11",
+          "house_number": "14720",
+          "road": "Omicron Drive",
+          "city": "San Antonio",
+          "county": "Bexar County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "78245",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "29.4161043",
+          "29.4176098",
+          "-98.7909119",
+          "-98.7894630"
+        ]
+      },
+      {
+        "place_id": 421983899,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1533349843,
+        "lat": "29.4155984",
+        "lon": "-98.7888658",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "building",
+        "name": "Vantage TX12",
+        "display_name": "Vantage TX12, 14720, Omicron Drive, San Antonio, Bexar County, Texas, 78245, United States",
+        "address": {
+          "building": "Vantage TX12",
+          "house_number": "14720",
+          "road": "Omicron Drive",
+          "city": "San Antonio",
+          "county": "Bexar County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "78245",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "29.4148456",
+          "29.4163511",
+          "-98.7895902",
+          "-98.7881413"
+        ]
+      }
+    ]
+  },
+  "CoreWeave Dalton 1 & 2": {
+    "address": "2205 Industrial South Rd, Dalton, GA, 30721",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=2205+Industrial+South+Rd%2C+Dalton%2C+GA%2C+30721&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:11.947876+00:00",
+    "results": [
+      {
+        "place_id": 412756444,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 9537095,
+        "lat": "34.7134428",
+        "lon": "-84.9521507",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "2205, Industrial South Road, Dalton, Whitfield County, Georgia, 30721, United States",
+        "address": {
+          "house_number": "2205",
+          "road": "Industrial South Road",
+          "city": "Dalton",
+          "county": "Whitfield County",
+          "state": "Georgia",
+          "ISO3166-2-lvl4": "US-GA",
+          "postcode": "30721",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "34.7133928",
+          "34.7134928",
+          "-84.9522007",
+          "-84.9521007"
+        ]
+      }
+    ]
+  },
+  "Alibaba Zhangbei": {
+    "address": "Alibaba Zhangbei Yun Calculation Data Center, Zhangbei County, Zhangjiakou, Hebei, China, 076471",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Alibaba+Zhangbei+Yun+Calculation+Data+Center%2C+Zhangbei+County%2C+Zhangjiakou%2C+Hebei%2C+China%2C+076471&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:13.008864+00:00",
+    "results": []
+  },
+  "Start Campus Sines Data Campus": {
+    "address": "Start Campus - Sustainable Data Center Services, Sines, Portugal",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Start+Campus+-+Sustainable+Data+Center+Services%2C+Sines%2C+Portugal&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:14.141466+00:00",
+    "results": []
+  },
+  "xAI QTS Atlanta": {
+    "address": "1025 Jefferson Street NW, Atlanta, GA 30318",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1025+Jefferson+Street+NW%2C+Atlanta%2C+GA+30318&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:15.182539+00:00",
+    "results": [
+      {
+        "place_id": 343586357,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1007825570,
+        "lat": "33.7771907",
+        "lon": "-84.4195485",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 7.908064393067854e-05,
+        "addresstype": "building",
+        "name": "QTS Atlanta Data Center 2",
+        "display_name": "QTS Atlanta Data Center 2, 1025, Jefferson Street Northwest, Bellwood, Bankhead, Atlanta, Fulton County, Georgia, 30318, United States",
+        "address": {
+          "building": "QTS Atlanta Data Center 2",
+          "house_number": "1025",
+          "road": "Jefferson Street Northwest",
+          "neighbourhood": "Bellwood",
+          "suburb": "Bankhead",
+          "city": "Atlanta",
+          "county": "Fulton County",
+          "state": "Georgia",
+          "ISO3166-2-lvl4": "US-GA",
+          "postcode": "30318",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "33.7759282",
+          "33.7792745",
+          "-84.4199555",
+          "-84.4189371"
+        ]
+      }
+    ]
+  },
+  "Anthropic Barber Lake": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "CoreWeave Muskogee OK": {
+    "address": "1525 W 43rd St S, Muskogee, OK 74401, USA",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=1525+W+43rd+St+S%2C+Muskogee%2C+OK+74401%2C+USA&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:16.663774+00:00",
+    "results": [
+      {
+        "place_id": 333141468,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 14907727,
+        "lat": "35.6967854",
+        "lon": "-95.4951648",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05336833524071104,
+        "addresstype": "road",
+        "name": "West 43rd Street South",
+        "display_name": "West 43rd Street South, Beland, Muskogee County, Oklahoma, 74401, United States",
+        "address": {
+          "road": "West 43rd Street South",
+          "hamlet": "Beland",
+          "county": "Muskogee County",
+          "state": "Oklahoma",
+          "ISO3166-2-lvl4": "US-OK",
+          "postcode": "74401",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "35.6965600",
+          "35.6968553",
+          "-95.5356800",
+          "-95.4545780"
+        ]
+      },
+      {
+        "place_id": 333137707,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 14907723,
+        "lat": "35.6969368",
+        "lon": "-95.6056728",
+        "category": "highway",
+        "type": "unclassified",
+        "place_rank": 26,
+        "importance": 0.0533433333333333,
+        "addresstype": "road",
+        "name": "West 43rd Street South",
+        "display_name": "West 43rd Street South, Muskogee County, Oklahoma, 74401, United States",
+        "address": {
+          "road": "West 43rd Street South",
+          "county": "Muskogee County",
+          "state": "Oklahoma",
+          "ISO3166-2-lvl4": "US-OK",
+          "postcode": "74401",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "35.6951840",
+          "35.6969420",
+          "-95.6210260",
+          "-95.5888470"
+        ]
+      },
+      {
+        "place_id": 347044302,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 14907717,
+        "lat": "35.6968700",
+        "lon": "-95.5621131",
+        "category": "highway",
+        "type": "track",
+        "place_rank": 26,
+        "importance": 0.0533433333333333,
+        "addresstype": "road",
+        "name": "West 43rd Street South",
+        "display_name": "West 43rd Street South, Muskogee County, Oklahoma, 74401, United States",
+        "address": {
+          "road": "West 43rd Street South",
+          "county": "Muskogee County",
+          "state": "Oklahoma",
+          "ISO3166-2-lvl4": "US-OK",
+          "postcode": "74401",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "35.6968480",
+          "35.6968730",
+          "-95.5709860",
+          "-95.5532400"
+        ]
+      }
+    ]
+  },
+  "Crusoe Abilene Expansion": {
+    "address": "5502 Spinks Rd, Abilene, TX 79601",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5502+Spinks+Rd%2C+Abilene%2C+TX+79601&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:17:14.672277+00:00",
+    "results": [
+      {
+        "place_id": 333474819,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1025224678,
+        "lat": "32.4942321",
+        "lon": "-99.8009071",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.0533620332646677,
+        "addresstype": "road",
+        "name": "Spinks Road",
+        "display_name": "Spinks Road, Abilene, Taylor County, Texas, 79603, United States",
+        "address": {
+          "road": "Spinks Road",
+          "city": "Abilene",
+          "county": "Taylor County",
+          "state": "Texas",
+          "ISO3166-2-lvl4": "US-TX",
+          "postcode": "79603",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.4868322",
+          "32.4991720",
+          "-99.8122471",
+          "-99.7931038"
+        ]
+      }
+    ]
+  },
+  "Goodnight": {
+    "address": "10001 Lima Rd, Claude, TX 79019",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=10001+Lima+Rd%2C+Claude%2C+TX+79019&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:17.561178+00:00",
+    "results": []
+  },
+  "Google Cedar Rapids": {
+    "address": "5800 EDGEWOOD RD SW CEDAR RAPIDS, IA 52404",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=5800+EDGEWOOD+RD+SW+CEDAR+RAPIDS%2C+IA+52404&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:19.139939+00:00",
+    "results": [
+      {
+        "place_id": 393191615,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 15954749,
+        "lat": "41.9222823",
+        "lon": "-91.7156692",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "5800, Edgewood Road Southwest, Cedar Rapids, Linn County, Iowa, 52404, United States",
+        "address": {
+          "house_number": "5800",
+          "road": "Edgewood Road Southwest",
+          "city": "Cedar Rapids",
+          "county": "Linn County",
+          "state": "Iowa",
+          "ISO3166-2-lvl4": "US-IA",
+          "postcode": "52404",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.9222323",
+          "41.9223323",
+          "-91.7157192",
+          "-91.7156192"
+        ]
+      }
+    ]
+  },
+  "Google Fort Wayne": {
+    "address": "6015 Adams Center Road, Fort Wayne, IN 46806",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=6015+Adams+Center+Road%2C+Fort+Wayne%2C+IN+46806&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:20.237420+00:00",
+    "results": [
+      {
+        "place_id": 370825897,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1159046244,
+        "lat": "41.0309293",
+        "lon": "-85.0536261",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 2.8699931334355954e-05,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "6015, Adams Center Road, Fort Wayne, Allen County, Indiana, 46816, United States",
+        "address": {
+          "house_number": "6015",
+          "road": "Adams Center Road",
+          "city": "Fort Wayne",
+          "county": "Allen County",
+          "state": "Indiana",
+          "ISO3166-2-lvl4": "US-IN",
+          "postcode": "46816",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.0308687",
+          "41.0309899",
+          "-85.0536963",
+          "-85.0535560"
+        ]
+      }
+    ]
+  },
+  "Meta Hyperion": {
+    "address": "Holly Ridge, LA 71269",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Holly+Ridge%2C+LA+71269&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:20.885878+00:00",
+    "results": [
+      {
+        "place_id": 335967526,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 151651953,
+        "lat": "32.4676421",
+        "lon": "-91.6267883",
+        "category": "place",
+        "type": "hamlet",
+        "place_rank": 20,
+        "importance": 0.13336833524071104,
+        "addresstype": "hamlet",
+        "name": "Holly Ridge",
+        "display_name": "Holly Ridge, Richland Parish, Louisiana, United States",
+        "address": {
+          "hamlet": "Holly Ridge",
+          "county": "Richland Parish",
+          "state": "Louisiana",
+          "ISO3166-2-lvl4": "US-LA",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "32.4476421",
+          "32.4876421",
+          "-91.6467883",
+          "-91.6067883"
+        ]
+      }
+    ]
+  },
+  "Microsoft Narvik Norway": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "OpenAI Stargate Lordstown": {
+    "address": "2300 Hallock Young Rd, Warren, OH 44481",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=2300+Hallock+Young+Rd%2C+Warren%2C+OH+44481&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:21.908760+00:00",
+    "results": []
+  },
+  "OpenAI Stargate Michigan": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "OpenAI Stargate Milam": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "OpenAI Stargate New Mexico": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "OpenAI Stargate Shackelford": {
+    "address": "175 Private Road 1604, Abilene, TX 79601, Shackelford County",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=175+Private+Road+1604%2C+Abilene%2C+TX+79601%2C+Shackelford+County&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:23.031702+00:00",
+    "results": []
+  },
+  "OpenAI Stargate UAE": {
+    "address": "Nexus L&T Project Office, Al Bihouth, Al Dhafrah, Abu Dhabi, United Arab Emirates",
+    "status": "not_found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=Nexus+L%26T+Project+Office%2C+Al+Bihouth%2C+Al+Dhafrah%2C+Abu+Dhabi%2C+United+Arab+Emirates&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:24.135773+00:00",
+    "results": []
+  },
+  "OpenAI Stargate Wisconsin": {
+    "address": "",
+    "status": "missing_address",
+    "results": []
+  },
+  "QTS Cedar Rapids": {
+    "address": "6200 76th Ave SW, Fairfax, IA 52228",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=6200+76th+Ave+SW%2C+Fairfax%2C+IA+52228&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:25.156602+00:00",
+    "results": [
+      {
+        "place_id": 403638116,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 162761635,
+        "lat": "41.9056197",
+        "lon": "-91.7509874",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 9.99999999995449e-06,
+        "addresstype": "place",
+        "name": "",
+        "display_name": "6200, 76th Avenue Southwest, Cedar Rapids, Linn County, Iowa, 52228, United States",
+        "address": {
+          "house_number": "6200",
+          "road": "76th Avenue Southwest",
+          "city": "Cedar Rapids",
+          "county": "Linn County",
+          "state": "Iowa",
+          "ISO3166-2-lvl4": "US-IA",
+          "postcode": "52228",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "41.9055697",
+          "41.9056697",
+          "-91.7510374",
+          "-91.7509374"
+        ]
+      }
+    ]
+  },
+  "QTS Eagle Mountain": {
+    "address": "652 E Hyperscale Way, Eagle Mountain, UT 84013",
+    "status": "found",
+    "requested_url": "https://nominatim.openstreetmap.org/search?q=652+E+Hyperscale+Way%2C+Eagle+Mountain%2C+UT+84013&format=jsonv2&limit=3&addressdetails=1",
+    "retrieved_at": "2026-09-13T13:18:26.324957+00:00",
+    "results": [
+      {
+        "place_id": 327892327,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1412596322,
+        "lat": "40.2688855",
+        "lon": "-112.0342942",
+        "category": "highway",
+        "type": "unclassified",
+        "place_rank": 26,
+        "importance": 0.053376741435873926,
+        "addresstype": "road",
+        "name": "Hyperscale Way",
+        "display_name": "Hyperscale Way, Eagle Mountain, Utah County, Utah, 84005, United States",
+        "address": {
+          "road": "Hyperscale Way",
+          "town": "Eagle Mountain",
+          "county": "Utah County",
+          "state": "Utah",
+          "ISO3166-2-lvl4": "US-UT",
+          "postcode": "84005",
+          "country": "United States",
+          "country_code": "us"
+        },
+        "boundingbox": [
+          "40.2688384",
+          "40.2689218",
+          "-112.0438260",
+          "-112.0247625"
+        ]
+      }
+    ]
+  }
+}

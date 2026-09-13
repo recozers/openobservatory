@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_jeffersonville",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -85.6626773319086,
+       38.36949770483565
+      ],
+      [
+       -85.66517920716454,
+       38.36780538439348
+      ],
+      [
+       -85.66445153756395,
+       38.36713870183851
+      ],
+      [
+       -85.66194966230799,
+       38.36885667902098
+      ],
+      [
+       -85.6626773319086,
+       38.36949770483565
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_jeffersonville",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Jeffersonville, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -85.66478797421847,
+       38.37145049890964
+      ],
+      [
+       -85.66776406112396,
+       38.36943130285377
+      ],
+      [
+       -85.66702821546056,
+       38.36877745586514
+      ],
+      [
+       -85.66407665674349,
+       38.37080949039276
+      ],
+      [
+       -85.66478797421847,
+       38.37145049890964
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_jeffersonville",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Jeffersonville, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

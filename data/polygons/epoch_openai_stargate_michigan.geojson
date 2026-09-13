@@ -1,0 +1,156 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_openai_stargate_michigan",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -83.889893,
+       42.12265
+      ],
+      [
+       -83.889885,
+       42.120547
+      ],
+      [
+       -83.890196,
+       42.120523
+      ],
+      [
+       -83.89018,
+       42.120085
+      ],
+      [
+       -83.889909,
+       42.120079
+      ],
+      [
+       -83.889861,
+       42.118083
+      ],
+      [
+       -83.888631,
+       42.118083
+      ],
+      [
+       -83.888663,
+       42.120073
+      ],
+      [
+       -83.888423,
+       42.120067
+      ],
+      [
+       -83.888416,
+       42.120559
+      ],
+      [
+       -83.888647,
+       42.120553
+      ],
+      [
+       -83.888663,
+       42.122644
+      ],
+      [
+       -83.889893,
+       42.12265
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_michigan",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Michigan, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -83.878178,
+       42.124178
+      ],
+      [
+       -83.880942,
+       42.124099
+      ],
+      [
+       -83.880919,
+       42.12437
+      ],
+      [
+       -83.881534,
+       42.124356
+      ],
+      [
+       -83.88154,
+       42.124135
+      ],
+      [
+       -83.88436,
+       42.124154
+      ],
+      [
+       -83.884383,
+       42.123068
+      ],
+      [
+       -83.88152,
+       42.123068
+      ],
+      [
+       -83.881509,
+       42.122924
+      ],
+      [
+       -83.880888,
+       42.122951
+      ],
+      [
+       -83.880888,
+       42.123094
+      ],
+      [
+       -83.878149,
+       42.123057
+      ],
+      [
+       -83.878178,
+       42.124178
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_michigan",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Michigan, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

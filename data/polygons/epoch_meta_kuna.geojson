@@ -1,0 +1,234 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_kuna",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -116.27277446364158,
+       43.46487017997862
+      ],
+      [
+       -116.27154977781647,
+       43.46487262854458
+      ],
+      [
+       -116.27154750115727,
+       43.46259372934148
+      ],
+      [
+       -116.27146614076563,
+       43.46259430462723
+      ],
+      [
+       -116.27146153223731,
+       43.4621819195205
+      ],
+      [
+       -116.27160026246564,
+       43.46217892680454
+      ],
+      [
+       -116.2715927986649,
+       43.461802304734675
+      ],
+      [
+       -116.27270764326684,
+       43.461793864952426
+      ],
+      [
+       -116.2727067265899,
+       43.462171485240304
+      ],
+      [
+       -116.27284254401917,
+       43.46217279464736
+      ],
+      [
+       -116.2728424870802,
+       43.46258959864116
+      ],
+      [
+       -116.27276258002868,
+       43.462590820706964
+      ],
+      [
+       -116.27276258002868,
+       43.462603022310475
+      ],
+      [
+       -116.27277070520097,
+       43.462603225670875
+      ],
+      [
+       -116.27277446364158,
+       43.46487017997862
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_kuna",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 0.00 m).",
+    "digitised_from": "Epoch AI public map annotation: Meta Kuna, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -116.26890148762865,
+       43.464426877491576
+      ],
+      [
+       -116.26767985015323,
+       43.46443644807283
+      ],
+      [
+       -116.26765927934954,
+       43.462124225767695
+      ],
+      [
+       -116.2677216213434,
+       43.4621236654265
+      ],
+      [
+       -116.26772298318718,
+       43.46183788267717
+      ],
+      [
+       -116.2688327802721,
+       43.46182189739639
+      ],
+      [
+       -116.26883441537659,
+       43.46210674646903
+      ],
+      [
+       -116.26889076510571,
+       43.46210710264788
+      ],
+      [
+       -116.26890148762865,
+       43.464426877491576
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_kuna",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 0.00 m).",
+    "digitised_from": "Epoch AI public map annotation: Meta Kuna, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -116.27277029743578,
+       43.470635356498576
+      ],
+      [
+       -116.2722181391992,
+       43.4706413482557
+      ],
+      [
+       -116.27223853284794,
+       43.47311375207329
+      ],
+      [
+       -116.27279201675867,
+       43.47311112513103
+      ],
+      [
+       -116.27277029743578,
+       43.470635356498576
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_kuna",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Kuna, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -116.27163389681735,
+       43.47064308265428
+      ],
+      [
+       -116.27108891662915,
+       43.470643966455015
+      ],
+      [
+       -116.27111205511329,
+       43.473119126695735
+      ],
+      [
+       -116.27166306335025,
+       43.47311522768217
+      ],
+      [
+       -116.27163389681735,
+       43.47064308265428
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_kuna",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Kuna, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

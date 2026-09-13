@@ -1,0 +1,107 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_microsoft_nebius_new_jersey",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -75.017625,
+        39.427279
+       ],
+       [
+        -75.017715,
+        39.427344
+       ],
+       [
+        -75.017322,
+        39.427688
+       ],
+       [
+        -75.017277,
+        39.427658
+       ],
+       [
+        -75.016909,
+        39.428011
+       ],
+       [
+        -75.016948,
+        39.428046
+       ],
+       [
+        -75.016768,
+        39.42822
+       ],
+       [
+        -75.016684,
+        39.428175
+       ],
+       [
+        -75.016497,
+        39.428285
+       ],
+       [
+        -75.015988,
+        39.428001
+       ],
+       [
+        -75.016046,
+        39.427912
+       ],
+       [
+        -75.015363,
+        39.427513
+       ],
+       [
+        -75.015421,
+        39.427449
+       ],
+       [
+        -75.015318,
+        39.427409
+       ],
+       [
+        -75.015272,
+        39.427444
+       ],
+       [
+        -75.014377,
+        39.426906
+       ],
+       [
+        -75.015492,
+        39.425781
+       ],
+       [
+        -75.017734,
+        39.42713
+       ],
+       [
+        -75.017625,
+        39.427279
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_nebius_new_jersey",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": " Source self-intersection repaired with Shapely make_valid; non-area remnants discarded.",
+    "digitised_from": "Epoch AI public map annotation: Microsoft-Nebius New Jersey, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

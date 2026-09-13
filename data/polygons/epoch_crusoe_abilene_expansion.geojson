@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_crusoe_abilene_expansion",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.78078311359522,
+       32.492599435193455
+      ],
+      [
+       -99.77664465490905,
+       32.49256711388871
+      ],
+      [
+       -99.77664465490905,
+       32.49421548494061
+      ],
+      [
+       -99.78078311359482,
+       32.49423164529078
+      ],
+      [
+       -99.78078311359522,
+       32.492599435193455
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_crusoe_abilene_expansion",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Crusoe Abilene Expansion, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.78529823579808,
+       32.493194995172814
+      ],
+      [
+       -99.78729555833111,
+       32.493194995172814
+      ],
+      [
+       -99.78731471786226,
+       32.4895356408297
+      ],
+      [
+       -99.78531739532885,
+       32.48953564068972
+      ],
+      [
+       -99.78529823579808,
+       32.493194995172814
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_crusoe_abilene_expansion",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Crusoe Abilene Expansion, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

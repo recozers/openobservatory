@@ -1,0 +1,140 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_eagle_mountain",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -112.020072,
+       40.271178
+      ],
+      [
+       -112.020052,
+       40.268857
+      ],
+      [
+       -112.019998,
+       40.268857
+      ],
+      [
+       -112.019998,
+       40.268567
+      ],
+      [
+       -112.018944,
+       40.268575
+      ],
+      [
+       -112.018944,
+       40.268857
+      ],
+      [
+       -112.018884,
+       40.268858
+      ],
+      [
+       -112.018905,
+       40.271182
+      ],
+      [
+       -112.020072,
+       40.271178
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_eagle_mountain",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Eagle Mountain, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -112.019985,
+       40.267435
+      ],
+      [
+       -112.019979,
+       40.267055
+      ],
+      [
+       -112.020109,
+       40.267057
+      ],
+      [
+       -112.020104,
+       40.266629
+      ],
+      [
+       -112.020032,
+       40.266627
+      ],
+      [
+       -112.02002,
+       40.264367
+      ],
+      [
+       -112.018854,
+       40.264371
+      ],
+      [
+       -112.018866,
+       40.266628
+      ],
+      [
+       -112.018799,
+       40.266627
+      ],
+      [
+       -112.018802,
+       40.267064
+      ],
+      [
+       -112.018929,
+       40.267064
+      ],
+      [
+       -112.018934,
+       40.267444
+      ],
+      [
+       -112.019985,
+       40.267435
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_eagle_mountain",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Eagle Mountain, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

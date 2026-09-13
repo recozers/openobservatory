@@ -1,0 +1,280 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_stack_infrastructure_nva02",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.538817,
+       38.744123
+      ],
+      [
+       -77.537587,
+       38.742839
+      ],
+      [
+       -77.53701,
+       38.743172
+      ],
+      [
+       -77.53826,
+       38.744454
+      ],
+      [
+       -77.538817,
+       38.744123
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_stack_infrastructure_nva02",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: STACK Infrastructure NVA02, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.538887,
+       38.747312
+      ],
+      [
+       -77.538198,
+       38.747069
+      ],
+      [
+       -77.536688,
+       38.749077
+      ],
+      [
+       -77.537343,
+       38.749363
+      ],
+      [
+       -77.538887,
+       38.747312
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_stack_infrastructure_nva02",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: STACK Infrastructure NVA02, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.543521,
+       38.744178
+      ],
+      [
+       -77.542443,
+       38.742768
+      ],
+      [
+       -77.54181,
+       38.743067
+      ],
+      [
+       -77.542842,
+       38.744449
+      ],
+      [
+       -77.543521,
+       38.744178
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_stack_infrastructure_nva02",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: STACK Infrastructure NVA02, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.543404,
+       38.742317
+      ],
+      [
+       -77.544468,
+       38.743704
+      ],
+      [
+       -77.544931,
+       38.743483
+      ],
+      [
+       -77.543919,
+       38.742096
+      ],
+      [
+       -77.543404,
+       38.742317
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_stack_infrastructure_nva02",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: STACK Infrastructure NVA02, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.54175,
+       38.740487
+      ],
+      [
+       -77.541914,
+       38.740966
+      ],
+      [
+       -77.543428,
+       38.74067
+      ],
+      [
+       -77.543272,
+       38.740135
+      ],
+      [
+       -77.54175,
+       38.740487
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_stack_infrastructure_nva02",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: STACK Infrastructure NVA02, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.538557,
+       38.74484
+      ],
+      [
+       -77.535835,
+       38.74661
+      ],
+      [
+       -77.536497,
+       38.74723
+      ],
+      [
+       -77.536674,
+       38.747108
+      ],
+      [
+       -77.53661,
+       38.74702
+      ],
+      [
+       -77.538964,
+       38.745498
+      ],
+      [
+       -77.539047,
+       38.745574
+      ],
+      [
+       -77.539238,
+       38.745436
+      ],
+      [
+       -77.538557,
+       38.74484
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_stack_infrastructure_nva02",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: STACK Infrastructure NVA02, feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

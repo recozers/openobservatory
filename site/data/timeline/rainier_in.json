@@ -41,6 +41,104 @@
 "north_1471517736": "s2",
 "north_1471517737": "s2"
 },
+"roof_evidence": {
+"north_1471517731": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 95,
+"inferred_roof_on": "2024-06"
+},
+"north_1471517732": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2024-08"
+},
+"north_1471517733": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2024-05"
+},
+"north_1471517734": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 95,
+"inferred_roof_on": "2024-08"
+},
+"north_1471517735": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2024-06"
+},
+"north_1471517736": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 95,
+"inferred_roof_on": "2024-05"
+},
+"north_1471517737": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2024-05"
+},
+"south_1471517722": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2025-05"
+},
+"south_1471517723": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2024-08"
+},
+"south_1471517724": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 96,
+"inferred_roof_on": "2025-05"
+},
+"south_1471517725": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 97,
+"inferred_roof_on": "2025-07"
+},
+"south_1471517726": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 97,
+"inferred_roof_on": "2025-02"
+},
+"south_1471517727": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 97,
+"inferred_roof_on": "2025-04"
+},
+"south_1471517728": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 95,
+"inferred_roof_on": "2024-08"
+},
+"south_1471517729": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 97,
+"inferred_roof_on": "2025-02"
+},
+"south_1471517730": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 97,
+"inferred_roof_on": "2025-06"
+}
+},
 "radar_on": {},
 "ntl_lit": "2024-08 (baseline 4.0, level 12.8, reached 21.4)",
 "s2_available": true,

@@ -1,0 +1,159 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_bristow",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.58775,
+       38.77996
+      ],
+      [
+       -77.585768,
+       38.778067
+      ],
+      [
+       -77.58487,
+       38.778634
+      ],
+      [
+       -77.586622,
+       38.780261
+      ],
+      [
+       -77.586503,
+       38.780313
+      ],
+      [
+       -77.5868,
+       38.780556
+      ],
+      [
+       -77.58775,
+       38.77996
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_bristow",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Bristow, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.583459,
+       38.777242
+      ],
+      [
+       -77.584078,
+       38.776416
+      ],
+      [
+       -77.581603,
+       38.775116
+      ],
+      [
+       -77.580953,
+       38.775835
+      ],
+      [
+       -77.583155,
+       38.776988
+      ],
+      [
+       -77.583103,
+       38.777062
+      ],
+      [
+       -77.583459,
+       38.777242
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_bristow",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Bristow, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.58717,
+       38.774738
+      ],
+      [
+       -77.584559,
+       38.77334
+      ],
+      [
+       -77.583972,
+       38.774141
+      ],
+      [
+       -77.586195,
+       38.775269
+      ],
+      [
+       -77.586174,
+       38.775367
+      ],
+      [
+       -77.586499,
+       38.775515
+      ],
+      [
+       -77.58717,
+       38.774738
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_bristow",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Bristow, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -13,6 +13,20 @@
 "structure_north": "s2",
 "structure_south": "s2"
 },
+"roof_evidence": {
+"structure_north": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "not_yet"
+},
+"structure_south": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "not_yet"
+}
+},
 "radar_on": {
 "structure_north": "not_yet",
 "structure_south": "not_yet"
