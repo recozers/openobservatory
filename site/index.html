@@ -40,13 +40,14 @@
     <div id="panel-body"></div>
   </aside>
   <div class="legend" id="legend">
-    <div class="legend-row"><span class="sw sw-comb"></span> fuel burning measured on site</div>
-    <div class="legend-row"><span class="sw sw-doc"></span> documented capacity, not directly observed</div>
+    <div class="legend-row"><span class="sw sw-comb"></span> measured: operator-reported electricity, or fuel burning seen from orbit</div>
+    <div class="legend-row"><span class="sw sw-det"></span> detected: combustion or energisation signal, load not measured</div>
+    <div class="legend-row"><span class="sw sw-doc"></span> presumed: documented capacity × utilisation prior</div>
     <div class="legend-row"><span class="sw sw-build"></span> construction, unknown, or approximate</div>
     <label class="legend-row"><input type="checkbox" id="chk-tiles" checked> map tiles</label>
   </div>
 </main>
 <script src="vendor/maplibre-gl.js"></script>
-<script src="mapmin.js?v=20260913a"></script>
+<script src="mapmin.js?v=20260913b"></script>
 </body>
 </html>

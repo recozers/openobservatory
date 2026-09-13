@@ -173,7 +173,11 @@ def main():
                         built=built, built_conf=built_conf, running=running, load=load, confidence=conf, how=how, key=key, series=series, series_label=series_label,
                         recent=recent, est_mid=(last or {}).get("est_mid"), est_hi=(last or {}).get("est_hi") or 0, last_q=(last or {}).get("q"),
                         polygons_low=bool(s.get("polygons") and any(p.get("confidence") == "low" for p in s["polygons"])),
-                        combustion=key == "nox"))
+                        combustion=key == "nox",
+                        evidence_kind=("measured" if (key == "nox" or running.startswith("yes: operator reports") or running.startswith("yes: about"))
+                                       else "detected" if running.startswith("yes") or (t or {}).get("ntl_lit", "")[:4].isdigit() and running.startswith("presumably")
+                                       else "presumed" if running.startswith("presumably")
+                                       else "construction")))
     out.sort(key=lambda r: (-(1 if r["combustion"] else 0), -(r["est_hi"] or 0)))
     (SITE / "data" / "status.json").write_text(json.dumps(dict(generated=data.get("generated"), sites=out), indent=0))
     for r in out:

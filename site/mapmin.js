@@ -4,8 +4,9 @@
   const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
   const data = await (await fetch("data/status.json", { cache: "no-cache" })).json();
   const sites = data.sites.filter(s => !(/_hub$/.test(s.site_id) && !s.series.some(p => p.y)));
-  const klass = s => s.combustion ? "comb" : (/^presumably|^yes/.test(s.running) ? "doc" : "build");
-  const COLOR = { comb: "#c05621", doc: "#2b6cb0", build: "#ffffff" }, STROKE = { comb: "#fff", doc: "#fff", build: "#9a9a95" };
+  const klass = s => s.evidence_kind || (s.combustion ? "measured" : (/^presumably|^yes/.test(s.running) ? "presumed" : "construction"));
+  const COLOR = { measured: "#c05621", detected: "#d69e2e", presumed: "#2b6cb0", construction: "#ffffff" };
+  const STROKE = { measured: "#fff", detected: "#fff", presumed: "#fff", construction: "#9a9a95" };
   const radius = s => Math.min(20, 5 + 8 * Math.sqrt((s.est_mid || s.est_hi / 2 || 0) / 500));
 
   const style = { version: 8, sources: {

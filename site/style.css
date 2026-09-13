@@ -66,7 +66,7 @@ a { color: #1f4e82; }
   .panel:not([hidden]) ~ .legend { display: none; }
 }
 /* trimmed front page */
-.sw-comb { background: #c05621; } .sw-doc { background: #2b6cb0; } .sw-build { background: #fff; box-shadow: 0 0 0 1.5px #9a9a95; }
+.sw-comb { background: #c05621; } .sw-det { background: #d69e2e; } .sw-doc { background: #2b6cb0; } .sw-build { background: #fff; box-shadow: 0 0 0 1.5px #9a9a95; }
 .badge.comb { background: #fdeee2; border-color: #f4c9a6; color: #8a3d0c; }
 .badge.doc { background: #e3edf8; border-color: #b7cfe9; color: #1f4e82; }
 .panel h2 { font-size: 17px; }
