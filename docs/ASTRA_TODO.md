@@ -116,6 +116,7 @@ JSON is present. Accept: the workflow runs green on `workflow_dispatch` in a dry
 are absent.
 
 ### A7. Housekeeping  [no-EE]
+Status: in progress (astra/a7-housekeeping; pins in PR #1, evidence tests in PR #2)
 - Pin `requirements.txt` (add earthengine-api, tabulate, openpyxl, scipy versions in use).
 - `CONTRIBUTING.md`: how to add a site, the provenance rule, the branch convention above.
 - Make the site name consistent (repo is openobservatory; pages say DC Watch): ask Stuart which, then apply.
