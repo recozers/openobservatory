@@ -82,6 +82,23 @@ them as "watching: generator fleet under construction" until the calibrated NOx 
 orange automatically. Accept: the watch list on the map with a documented first-fire target per site; a monthly NOx
 series per site from the refresh; the first detection recorded in `docs/LOG.md`.
 
+### B8. China: dedicated plants and public stack monitors  [no-EE]
+Chinese hub campuses have no operator disclosure and no self-generation, but several sit beside plants built for them
+(源网荷储一体化 projects, park cogeneration) and large plants publish hourly stack monitoring (重点排污单位自动监测数据: SO₂,
+NOx, flue-gas flow per outlet) on provincial platforms. That is the plant's own monitor, not a statistic, and the analogue
+of EPA CAMPD. For each hub (Ulanqab, Horinger, Zhangbei, Zhongwei, Qingyang, Gui'an, Chongqing Shuitu, Tianfu, Wuhu,
+Shaoguan, Zhangjiakou/Huailai): identify plants dedicated to or physically inside the data-centre park (EIA documents,
+grid-connection notices, park plans), find whether their hourly monitor data is public (platform URL, outlet ids, how far
+back), and pull what exists into `data/cn_stack_monitors/<plant>_<year>.csv`. Accept: a table of hub → plant → dedication
+evidence → monitor URL; hourly or daily series for every plant with public data; a note on which platforms block access.
+
+### B9. China: operator utilisation priors from filings  [no-EE]
+VNET, GDS and Chindata report company-wide utilisation of in-service capacity (70–80 %) in SEC filings; where a campus's
+operator is known (VNET Ulanqab, GDS Ulanqab, Chindata Zhangjiakou/Datong), that figure is the utilisation prior with
+provenance. Add `operator_utilisation` rows to `data/cn_operator_disclosures.csv` per filing period and let
+`build_timeline_data.py` use the operator's latest reported utilisation (±10 points) instead of the generic cloud prior for
+those sites. Accept: priors applied to every Chinese site with a known listed operator; the basis text names the filing.
+
 ## Claude tasks
 
 - **C1 (done)**: plume test over 33 sites, stopped once the grid-fed null was clear: none above 2.5σ except Colossus 2
@@ -93,5 +110,8 @@ series per site from the refresh; the first detection recorded in `docs/LOG.md`.
 - **C4 (done)**: null distribution from the 32 grid-fed sites: z sd 1.42, 95th percentile 1.89, max 2.00, 0/32 at 2.5σ.
   The 2.5σ bar stays; nothing below it is claimed.
 - **C5**: classifier recalibration with the labels from phase-1 A8 and the optical review, then scores in the site JSON.
+- **C7 (running)**: China coverage from radar: every hall-like radar candidate ≥ 5 ha in the twelve hub boxes becomes an
+  inventory entry with its outline, radar structure-on month and classifier score, labelled unconfirmed; eastern hubs
+  (Zhangjiakou/Huailai, Wuhu, Shaoguan, Tianfu, Wuqing) scanned as well.
 - **C6 (done, inconclusive)**: Dublin's Grange Castle: the box method reads the city's plume (964 ± 96 kg/h, winter peaks),
   not the campus plant; a near-field westerly-wind sector test would be needed (`docs/LOG.md`).
