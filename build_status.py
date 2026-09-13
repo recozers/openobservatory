@@ -49,6 +49,9 @@ def main():
         else:
             roofed = last["halls_roofed"]
             when = f", roofed {month_label(dated[0])} to {month_label(dated[-1])}" if len(dated) > 1 else (f", roofed {month_label(dated[0])}" if dated else (", present at the start of observations" if existing == halls_total else ""))
+            if existing and dated:
+                span = month_label(dated[0]) if dated[0] == dated[-1] else f"{month_label(dated[0])} to {month_label(dated[-1])}"
+                when = f"; {existing} present at first observations; {len(dated)} roofed {span}"
             unknown_roofs = sum(v == "unknown" for v in roof_on.values())
             built = f"{roofed} of {halls_total} halls{when}" + (f"; {unknown_roofs} roof dates unresolved" if unknown_roofs else "")
             built_conf = "low" if unknown_roofs else ("high" if (t or {}).get("s2_available") else "medium")

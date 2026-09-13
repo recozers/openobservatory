@@ -125,6 +125,13 @@ class StatusTests(unittest.TestCase):
             q.update(no2_flux={'nox_kgh': 300, 'nox_se': se})
             self.assertFalse(self.render(q)['combustion'])
 
+    def test_mixed_existing_and_new_roofs_keep_distinct_dates(self):
+        q = self.quarter()
+        q.update(halls_total=2, halls_roofed=2)
+        result = self.render(q, {"old": "existing", "new": "2024-01"})
+        self.assertIn("1 present at first observations", result["built"])
+        self.assertIn("1 roofed Jan 2024", result["built"])
+
     def test_unknown_roof_is_not_a_date(self):
         q = self.quarter()
         q.update(halls_roofed=0, est_hi=0)
