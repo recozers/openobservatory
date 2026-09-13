@@ -116,6 +116,34 @@ def main():
         for h in halls:
             if h["name"] not in roof_on:
                 roof_on[h["name"]] = h["valid_from"][:7] if h["valid_from"] else "existing"
+        # Sentinel-1 radar dates fill in where brightness dating could not (grey roofs, bright-soil baselines)
+        radar_on, roof_basis = {}, {h["name"]: "s2" for h in halls}
+        s1f = ROOT / "results_s1" / f"{sid}.csv"
+        if s1f.exists():
+            from tools.s1_timeline import s1_on
+            s1piv = pd.read_csv(s1f, index_col=0)
+            for c in s1piv.columns:
+                if c.startswith("VV:"):
+                    radar_on[c[3:]] = s1_on(s1piv[c])
+            for h in halls:
+                r = radar_on.get(h["name"], "")
+                cur = roof_on.get(h["name"])
+                if not r[:4].isdigit():
+                    continue
+                # radar leads the membrane by 0-2 months at Abilene; a radar date more than 3 months before the
+                # brightness date means brightness dating was late (grey roof), so the radar date is used
+                late_s2 = cur not in ("existing", "not_yet", None) and (pd.Period(cur, freq="M") - pd.Period(r[:7], freq="M")).n > 3
+                if cur in ("existing", "not_yet") or late_s2:
+                    roof_on[h["name"]] = r[:7]
+                    roof_basis[h["name"]] = "radar"
+        # VIIRS night lights: the month the campus lit up relative to its surroundings (construction/energisation, not load)
+        ntl_lit, ntlq = None, {}
+        ntlf = ROOT / "results_ntl" / f"{sid}.csv"
+        if ntlf.exists():
+            from tools.ntl_timeline import lit_month
+            ntl = pd.read_csv(ntlf, index_col=0)
+            ntl_lit = lit_month(ntl["diff"])
+            ntlq = {str(q): round(float(v), 1) for q, v in ntl["diff"].groupby(pd.PeriodIndex(ntl.index, freq="M").asfreq("Q")).mean().items()}
         # density prior
         tier = s.capacity_tier or "U"
         cap_site = float(s.capacity_mw) if s.capacity_mw else None
@@ -186,12 +214,12 @@ def main():
             rows.append(dict(q=qs, cap_doc_mw=None if cap is None else round(cap, 1), cap_tier=cap_tier, cap_basis=cap_basis, no2_flux=fx,
                              halls_roofed=len(roofed), halls_total=len(halls), built_ha=round(built_ha, 1), fitted_ha=round(fitted_ha, 1),
                              est_lo=round(lo, 1), est_mid=None if mid is None else round(mid, 1), est_hi=round(hi, 1), basis=basis,
-                             night=night.get(qs), day=day.get(qs), no2=no2q.get(qs)))
+                             night=night.get(qs), day=day.get(qs), no2=no2q.get(qs), ntl=ntlq.get(qs)))
         # trim leading quarters with nothing at all
         first = next((i for i, r in enumerate(rows) if r["halls_roofed"] or r["night"] or r["day"] or r["no2"] or (r["cap_doc_mw"] or 0) > 0), 0)
         rows = rows[max(0, first - 1):]
         out = dict(site_id=sid, name=s["name"], tier=tier, density_mw_per_ha=round(density, 1), density_basis=density_basis,
-                   hall_area_ha=round(hall_area, 1), roof_on=roof_on, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
+                   hall_area_ha=round(hall_area, 1), roof_on=roof_on, roof_basis=roof_basis, radar_on=radar_on, ntl_lit=ntl_lit, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
                    thermal_night_available=bool(night), thermal_day_available=bool(day), quarters=rows,
                    caveat="Load is not measured by any sensor here. The estimate is documented capacity, or roofed area × a density prior, "
                           "times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); "

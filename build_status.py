@@ -106,6 +106,11 @@ def main():
         how = []
         if (t or {}).get("s2_available"):
             how.append("Sentinel-2 roof dating")
+        if any(v == "radar" for v in (t or {}).get("roof_basis", {}).values()):
+            how.append("Sentinel-1 radar structure dating (where brightness dating could not)")
+        lit = (t or {}).get("ntl_lit") or ""
+        if lit[:4].isdigit():
+            how.append(f"VIIRS night lights: campus lit from {month_label(lit[:7])} (construction and energisation, not load)")
         if (t or {}).get("no2_available"):
             how.append("TROPOMI NO₂ plume test")
         if fx_months or adjacent:

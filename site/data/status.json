@@ -67,6 +67,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"VIIRS night lights: campus lit from Aug 2024 (construction and energisation, not load)",
 "TROPOMI NO\u2082 plume test",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: AWS/press: campus opened Oct 2025 with 18 of 32 planned buildings; 2.2 GW campus design pr"
@@ -169,13 +170,15 @@
 "country": "US",
 "lat": 32.5,
 "lon": -99.783,
-"built": "12 of 12 halls, roofed Jul 2024 to Oct 2025",
+"built": "12 of 12 halls, roofed Jul 2024 to Jul 2025",
 "built_conf": "high",
 "running": "yes: combustion activity detected (NO\u2082) since 2025Q3; documented 522 MW in force",
 "load": "documented capacity 522 MW \u00d7 0.5\u20131.0 utilisation; not directly measured",
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"Sentinel-1 radar structure dating (where brightness dating could not)",
+"VIIRS night lights: campus lit from Dec 2024 (construction and energisation, not load)",
 "TROPOMI NO\u2082 plume test",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: Crusoe: two-building 200 MW+ first phase live Sep 2025 (racks from Jun 2025); 0.6 GW by la"
@@ -254,23 +257,23 @@
 },
 {
 "x": "2025Q2",
-"y": 10,
+"y": 11,
 "y2": 5.4
 },
 {
 "x": "2025Q3",
-"y": 11,
+"y": 12,
 "y2": 13.7
 },
 {
 "x": "2025Q4",
 "y": 12,
-"y2": 34.7
+"y2": 37.0
 },
 {
 "x": "2026Q1",
 "y": 12,
-"y2": 40.1
+"y2": 42.3
 },
 {
 "x": "2026Q2",
@@ -284,7 +287,7 @@
 }
 ],
 "series_label": "halls roofed (of 12)",
-"recent": "last roof completed Oct 2025",
+"recent": "last roof completed Jul 2025",
 "est_mid": 417.4,
 "est_hi": 521.7,
 "last_q": "2026Q3",
@@ -862,161 +865,197 @@
 "country": "CN",
 "lat": 40.545,
 "lon": 111.805,
-"built": "4 of 4 halls, all pre-2018",
+"built": "4 of 4 halls, roofed Jun 2019 to Jun 2024",
 "built_conf": "high",
 "running": "presumably: documented 202 MW in force since 2022Q1; not directly observed",
 "load": "101\u2013202 MW assumed from documented capacity; not directly measured",
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"Sentinel-1 radar structure dating (where brightness dating could not)",
 "TROPOMI NOx flux (calibrated on EPA-monitored plants)",
 "documented capacity: Epoch AI: Huawei Horinger current power 241.8 MW (whole cloud valley hosts several operato"
 ],
-"key": "capacity",
+"key": "roofs",
 "series": [
 {
 "x": "2018Q1",
-"y": null
+"y": 2,
+"y2": 30.0
 },
 {
 "x": "2018Q2",
-"y": null
+"y": 2,
+"y2": 30.0
 },
 {
 "x": "2018Q3",
-"y": null
+"y": 2,
+"y2": 30.0
 },
 {
 "x": "2018Q4",
-"y": null
+"y": 2,
+"y2": 30.0
 },
 {
 "x": "2019Q1",
-"y": null
+"y": 2,
+"y2": 30.0
 },
 {
 "x": "2019Q2",
-"y": null
+"y": 3,
+"y2": 30.0
 },
 {
 "x": "2019Q3",
-"y": null
+"y": 3,
+"y2": 30.0
 },
 {
 "x": "2019Q4",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2020Q1",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2020Q2",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2020Q3",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2020Q4",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2021Q1",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2021Q2",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2021Q3",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2021Q4",
-"y": null
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2022Q1",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2022Q2",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2022Q3",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2022Q4",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2023Q1",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2023Q2",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2023Q3",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2023Q4",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2024Q1",
-"y": 201.5
+"y": 3,
+"y2": 45.0
 },
 {
 "x": "2024Q2",
-"y": 201.5
+"y": 4,
+"y2": 45.0
 },
 {
 "x": "2024Q3",
-"y": 201.5
+"y": 4,
+"y2": 45.0
 },
 {
 "x": "2024Q4",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2025Q1",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2025Q2",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2025Q3",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2025Q4",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2026Q1",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2026Q2",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 },
 {
 "x": "2026Q3",
-"y": 201.5
+"y": 4,
+"y2": 57.0
 }
 ],
-"series_label": "documented capacity, MW",
-"recent": "",
+"series_label": "halls roofed (of 4)",
+"recent": "last roof completed Jun 2024",
 "est_mid": 161.2,
 "est_hi": 201.5,
 "last_q": "2026Q3",
@@ -1030,13 +1069,14 @@
 "country": "CN",
 "lat": 41.055,
 "lon": 113.16,
-"built": "2 of 2 halls, roofed Nov 2025",
+"built": "2 of 2 halls, roofed Sep 2024",
 "built_conf": "high",
 "running": "presumably: documented 184 MW in force since 2022Q1; not directly observed",
 "load": "92\u2013184 MW assumed from documented capacity; not directly measured",
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"Sentinel-1 radar structure dating (where brightness dating could not)",
 "TROPOMI NOx flux (calibrated on EPA-monitored plants)",
 "documented capacity: Epoch AI: VNET Bayin Ulanqab current power 221 MW (park hosts several operators; halls not"
 ],
@@ -1174,38 +1214,38 @@
 },
 {
 "x": "2024Q3",
-"y": 1,
+"y": 2,
 "y2": 9.0
 },
 {
 "x": "2024Q4",
-"y": 1,
+"y": 2,
 "y2": 9.0
 },
 {
 "x": "2025Q1",
-"y": 1,
-"y2": 9.0
+"y": 2,
+"y2": 31.5
 },
 {
 "x": "2025Q2",
-"y": 1,
-"y2": 9.0
+"y": 2,
+"y2": 31.5
 },
 {
 "x": "2025Q3",
-"y": 1,
-"y2": 9.0
+"y": 2,
+"y2": 31.5
 },
 {
 "x": "2025Q4",
 "y": 2,
-"y2": 9.0
+"y2": 31.5
 },
 {
 "x": "2026Q1",
 "y": 2,
-"y2": 9.0
+"y2": 31.5
 },
 {
 "x": "2026Q2",
@@ -1219,7 +1259,7 @@
 }
 ],
 "series_label": "halls roofed (of 2)",
-"recent": "last roof completed Nov 2025",
+"recent": "last roof completed Sep 2024",
 "est_mid": 147.3,
 "est_hi": 184.2,
 "last_q": "2026Q3",
@@ -1233,160 +1273,161 @@
 "country": "CN",
 "lat": 41.2,
 "lon": 114.73,
-"built": "1 of 1 halls, all pre-2018",
+"built": "1 of 1 halls, roofed Jan 2020",
 "built_conf": "high",
 "running": "presumably: documented 141 MW in force since 2022Q1; not directly observed",
 "load": "70\u2013141 MW assumed from documented capacity; not directly measured",
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"Sentinel-1 radar structure dating (where brightness dating could not)",
 "documented capacity: Epoch AI: Alibaba Zhangbei current power 169 MW; attribution of these halls to Alibaba is "
 ],
-"key": "capacity",
+"key": "roofs",
 "series": [
 {
-"x": "2018Q1",
-"y": null
-},
-{
-"x": "2018Q2",
-"y": null
-},
-{
-"x": "2018Q3",
-"y": null
-},
-{
-"x": "2018Q4",
-"y": null
-},
-{
-"x": "2019Q1",
-"y": null
-},
-{
-"x": "2019Q2",
-"y": null
-},
-{
-"x": "2019Q3",
-"y": null
-},
-{
 "x": "2019Q4",
-"y": null
+"y": 0,
+"y2": 0
 },
 {
 "x": "2020Q1",
-"y": null
+"y": 1,
+"y2": 0
 },
 {
 "x": "2020Q2",
-"y": null
+"y": 1,
+"y2": 0
 },
 {
 "x": "2020Q3",
-"y": null
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2020Q4",
-"y": null
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2021Q1",
-"y": null
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2021Q2",
-"y": null
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2021Q3",
-"y": null
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2021Q4",
-"y": null
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2022Q1",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2022Q2",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2022Q3",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2022Q4",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2023Q1",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2023Q2",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2023Q3",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2023Q4",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2024Q1",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2024Q2",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2024Q3",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2024Q4",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2025Q1",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2025Q2",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2025Q3",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2025Q4",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2026Q1",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2026Q2",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 },
 {
 "x": "2026Q3",
-"y": 140.8
+"y": 1,
+"y2": 15.0
 }
 ],
-"series_label": "documented capacity, MW",
-"recent": "",
+"series_label": "halls roofed (of 1)",
+"recent": "last roof completed Jan 2020",
 "est_mid": 112.7,
 "est_hi": 140.8,
 "last_q": "2026Q3",
@@ -1407,6 +1448,7 @@
 "confidence": "high",
 "how": [
 "Sentinel-2 roof dating",
+"VIIRS night lights: campus lit from Jan 2025 (construction and energisation, not load)",
 "TROPOMI NO\u2082 plume test",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: Memphis Light Gas & Water / TVA approvals: 8 MW initial grid supply (mid-2024) then 150 MW"

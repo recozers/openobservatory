@@ -133,3 +133,47 @@ plant) work; Horinger and Chongqing do not.
   commissioning indicator at best. It could still flag a shutdown (contractors leaving) or a fit-out surge.
 - Job postings, contractor announcements and procurement notices: cheap, public, and the best early indicator of fit-out and
   expansion; not of load.
+
+## Pilots, 13 Sep 2026 (night): radar dating, radar candidate scan, night lights, snow
+
+Three new layers were tested against sites with known dates, plus one indicator that failed. Tools: `tools/s1_timeline.py`,
+`tools/ntl_timeline.py`, `tools/ntl_scan.py`, `tools/ntl_scan_tiles.py`, `tools/snow_persistence.py`, `tools/pilot_compare.py`,
+`tools/scan_check.py`. Results in `results_s1/`, `results_ntl/`, `results_snow/`.
+
+**Sentinel-1 radar structure dating (validated).** Monthly median VV backscatter per hall polygon on one relative orbit. A hall
+is "structure on" in the first month whose VV is at least 4 dB above the 20th percentile of all earlier months and stays there
+for six months. At Abilene all 12 halls fall within 0–4 months of the Sentinel-2 roof dates (9 within 2 months; radar usually
+leads the membrane by a month, since walls and steel reflect before the roof is white). Over Hyperion's farmland, whose VV
+swings 3 dB with the seasons, the rule gives no false positive. In China it dates blocks that brightness dating could only call
+"existing" because Inner Mongolian bare soil is already bright: Ulanqab long halls 2024-09 (Sentinel-2 said 2025-11, a grey
+roof), Horinger block A 2024-06 and block B 2019-06, Zhangbei west halls 2020-01. The site build now uses the radar date when
+Sentinel-2 says "existing" or "not yet", or when it lags radar by more than three months; the basis is recorded per hall.
+
+**Radar candidate scan (works, including under cloud).** In a 12 km box, 20 m blobs where the annual-median VV rose at least
+4 dB between 2021 and 2026 and now exceeds −8 dB, at least 1 ha, ranked by area, each with a chip cut from the cloud-masked
+annual Sentinel-2 median. Ulanqab: the two largest candidates (32 ha and 12 ha, +9 dB) are the campus itself; an 8 ha candidate
+5 km away is a photovoltaic compound. Horinger: 99 candidates; the top three (42, 38, 33 ha, +10 to +12 dB, at 40.535/111.815,
+40.584/111.847, 40.581/111.862) are new white-hall campuses that are not in the inventory. Zhangbei: four new 9–17 ha
+structures 2 km south of the digitised halls (41.18, 114.70–114.75); the digitised halls date from 2020 and correctly do not
+appear as new. Gui'an, where every individual Sentinel-2 scene is cloudy: 25 candidates, the two largest 22 and 21 ha, with
+usable chips from the annual median. This is the construction-detection chain for China: radar flags and sizes new structures,
+the optical median gives a person a chip, Sentinel-2 dates the roof where it can.
+
+**VIIRS night lights (construction and energisation, not load).** Daily Black Marble radiance (500 m), campus minus a 3–10 km
+annulus, monthly medians. Abilene sits at −9 nW/cm²/sr below its surroundings from 2019 to mid-2024, lights up in 2024-12
+(six months after ground-breaking) and climbs to +120 by 2026 as build-out continues. Colossus 1 steps up in 2025-01, six months
+after IT load began: lights follow yard and site expansion, not the operating date. As a regional scan (3-month medians, latest
+versus three years earlier, brightening ≥ 10 nW/cm²/sr and ratio ≥ 3, blobs ≥ 2 pixels) over 150 km boxes, it recovers six of
+seven US campuses within 0.4 km (Hyperion's blob centroid is 2.3 km from the stored coordinate) with 8–22 blobs per box, and the
+campus is the first or second blob in five boxes. It misses Colossus 1 (brownfield inside an already-lit industrial area) and the
+three Chinese campuses (already-lit parks, build-out before the three-year window): in China the radar stage does the work.
+
+**Winter snow persistence (negative, closed).** Sentinel-2 snow fraction per polygon on days when the built-up ring is at least
+40 % snow-covered. Operating halls hold snow like every other roof: Luleå 0.97–1.00 against a ring of 0.97–1.00 over eight
+winters (11–23 snow days each), the NSA technical strip 1.0 every winter, Rainier 0.97–1.00 in its operating winters while the
+control factory sheds to 0.33–0.84, the Chinese campuses equal to their rings. The only low values are construction winters with
+roofs not yet on. Consistent with the thermal result: hall roofs are cold roofs.
+
+Nothing here changes a load band. Radar dates and lit-up months appear in "how we know"; the utilisation question is unchanged.
+Next: the tiled lights scan over the western hub provinces (`tools/ntl_scan_tiles.py`), polygons for the campuses the radar
+scan found (Astra task A8), and a Sentinel-2 roof timeline run automatically for every radar candidate.
