@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T12:21:45.275116+00:00",
+ "generated": "2026-09-13T14:07:07.188255+00:00",
  "extract_meta": {
   "backend": "Landsat 8 C1 brightness temperature 2013-2021 (day) + Landsat 8/9 C2 surface temperature 2022-2026 (day, Earth Engine) + ECOSTRESS 2018-2026 (day and night)",
   "start": "2013-04-11",
@@ -1091,6 +1091,136 @@
      "source": "Facebook/Vattenfall/Lule\u00e5 Energi statements at opening: facility requires 120 MW (DCK 2013; The Register 2013)",
      "url": "https://www.datacenterknowledge.com/hyperscalers/live-in-lulea-facebook-goes-global-and-gets-greener",
      "notes": "Campus grid/design figure; actual load and its growth over 2013-2021 unknown."
+    },
+    {
+     "valid_from": "2012-01-01",
+     "valid_to": "2012-12-31",
+     "capacity_mw": 0.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 5,000 MWh in 2012 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2013-01-01",
+     "valid_to": "2013-12-31",
+     "capacity_mw": 6.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 53,000 MWh in 2013 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2014-01-01",
+     "valid_to": "2014-12-31",
+     "capacity_mw": 12.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 105,000 MWh in 2014 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2015-01-01",
+     "valid_to": "2015-12-31",
+     "capacity_mw": 21.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 187,000 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2016-01-01",
+     "valid_to": "2016-12-31",
+     "capacity_mw": 33.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 295,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2017-01-01",
+     "valid_to": "2017-12-31",
+     "capacity_mw": 34.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 301,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 38.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 337,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 42.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 373,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 42.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 369,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 34.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 306,054 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 30.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 267,471 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 40.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 351,931 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 53.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 468,809 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
     }
    ],
    "q_hat_mw": null,
@@ -1188,7 +1318,148 @@
      "area_ha": 311.96
     }
    ],
-   "capacity_timeline": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2011-01-01",
+     "valid_to": "2011-12-31",
+     "capacity_mw": 8.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 71,000 MWh in 2011 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2012-01-01",
+     "valid_to": "2012-12-31",
+     "capacity_mw": 17.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 153,000 MWh in 2012 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2013-01-01",
+     "valid_to": "2013-12-31",
+     "capacity_mw": 25.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 224,000 MWh in 2013 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2014-01-01",
+     "valid_to": "2014-12-31",
+     "capacity_mw": 29.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 262,000 MWh in 2014 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2015-01-01",
+     "valid_to": "2015-12-31",
+     "capacity_mw": 32.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 284,000 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2016-01-01",
+     "valid_to": "2016-12-31",
+     "capacity_mw": 37.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 327,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2017-01-01",
+     "valid_to": "2017-12-31",
+     "capacity_mw": 48.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 426,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 55.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 488,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 65.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 573,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 78.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 686,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 102.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 898,409 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 112.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 982,177 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 157.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,375,321 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 197.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,728,291 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    }
+   ],
    "q_hat_mw": null,
    "q_lo_mw": null,
    "q_hi_mw": null,
@@ -1323,6 +1594,26 @@
      "source": "TOP500 Frontier 24607 kW (Nov 2024 list onward)",
      "url": "https://www.top500.org/system/180047/",
      "notes": "Frontier only"
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 11.4,
+     "basis": "it_measured_annual",
+     "tier": "A1",
+     "source": "ORNL measured Frontier energy: 100000 MWh in 2022",
+     "url": "https://info.ornl.gov/sites/publications/Files/Pub207081.pdf",
+     "notes": "Frontier system only (other systems in building 5600 add an unknown amount); annual average IT power, PUE 1.05-1.07."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 12.2,
+     "basis": "it_measured_annual",
+     "tier": "A1",
+     "source": "ORNL measured Frontier energy: 12.2 MW in 2023",
+     "url": "https://www.nature.com/articles/s41597-024-03913-w",
+     "notes": "Frontier system only (other systems in building 5600 add an unknown amount); annual average IT power, PUE 1.05-1.07."
     }
    ],
    "q_hat_mw": null,
@@ -2110,6 +2401,66 @@
      "source": "AEP Ohio Schedule DCT interim arrangement, up to 250 MW new load Jan 2026-Dec 2028, per MeasuredAI reporting",
      "url": "https://measuredai.substack.com/p/meta-prometheus-google-ohio",
      "notes": "Excludes unknown NAO conventional load; no pre-2026 row for that reason"
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 4.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 38,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 30.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 270,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 58.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 511,414 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 80.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 702,694 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 90.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 793,063 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 59.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 521,217 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
     }
    ],
    "q_hat_mw": null,
@@ -2416,7 +2767,7 @@
    "capacity_source": "No document-derived capacity retrieved; \u73af\u8bc4/\u80fd\u8bc4 documents are the intended source",
    "capacity_url": "https://baike.baidu.com/item/%E8%A5%BF%E9%83%A8%E4%BA%91%E5%9F%BA%E5%9C%B0%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83/13831155",
    "in_epoch_db": "unknown",
-   "notes": "Hub centroid only (industrial park north of Zhongwei); campus polygons not digitised so no thermal extraction. Unvalidated transfer case once polygons exist.",
+   "notes": "Hub centroid only (industrial park north of Zhongwei); campus polygons not digitised so no thermal extraction. Unvalidated transfer case once polygons exist. [Astra project search 2026-09-13] Provincial EPB/NDRC search found Zhongjin Xuanhe supply-project EIA and grid approvals; no parcel/load matched to the generic hub centroid. https://sthjt.nx.gov.cn/zwgk/hjpj_63348/hjyxpjsl/202605/t20260509_5235732.html",
    "thermal_backend": "gcs_c1",
    "obs_start": "2017-01-01",
    "obs_end": "2021-12-31",
@@ -2454,7 +2805,7 @@
    "capacity_source": "No document-derived capacity retrieved",
    "capacity_url": "https://www.cac.gov.cn/2018-12/30/c_1123925765.htm",
    "in_epoch_db": "unknown",
-   "notes": "Hub centroid only (Jining district); campus polygons not digitised so no thermal extraction.",
+   "notes": "Hub centroid only (Jining district); campus polygons not digitised so no thermal extraction. [Astra project search 2026-09-13] VNET 110 kV supply-line EIA gives a project location, not hub-wide IT load or a campus boundary. Provincial EPB/NDRC search; see data/china_project_documents.json. https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/t20250110_2651491.html",
    "thermal_backend": "gcs_c1",
    "obs_start": "2017-01-01",
    "obs_end": "2021-12-31",
@@ -2492,7 +2843,7 @@
    "capacity_source": "No document-derived capacity retrieved",
    "capacity_url": "https://epoch.ai/data/ai-data-centers",
    "in_epoch_db": "unknown",
-   "notes": "Hub centroid only; campus polygons not digitised so no thermal extraction.",
+   "notes": "Hub centroid only; campus polygons not digitised so no thermal extraction. [Astra project search 2026-09-13] Provincial EPB/NDRC search found Huawei south-area power infrastructure, not a load or parcel attributable to this hub centroid. https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/t20250210_2664372.html",
    "thermal_backend": "gcs_c1",
    "obs_start": "2014-01-01",
    "obs_end": "2021-12-31",
@@ -2530,7 +2881,7 @@
    "capacity_source": "Company case study: Miaotan campus 37000 kW IT load and 51000 kVA supply (newdc.org.cn low-carbon case collection 2022) \u2014 not verified against a \u73af\u8bc4 document",
    "capacity_url": "https://static.newdc.org.cn/zsdh/pdf/whitepaper/",
    "in_epoch_db": "unknown",
-   "notes": "Hub centroid only (county seat); the two campuses were not located in 10 m imagery. Capacity note is a company statement and is deliberately not used as a label.",
+   "notes": "Hub centroid only (county seat); the two campuses were not located in 10 m imagery. Capacity note is a company statement and is deliberately not used as a label. [Astra project search 2026-09-13] No filed load matched to the hub centroid after provincial EPB/NDRC searches. Yunlian phase-two approval remains a retrieval lead, not imported capacity. https://gxt.hebei.gov.cn/sme/zx/gzdt9/2025042122120672072/index.html",
    "thermal_backend": "gcs_c1",
    "obs_start": "2016-09-01",
    "obs_end": "2021-12-31",
@@ -2568,7 +2919,7 @@
    "capacity_source": "No document-derived capacity retrieved; Apple Gui'an substation 252 MVA final transformer capacity is a supply figure only",
    "capacity_url": "https://m.thepaper.cn/baijiahao_10261395",
    "in_epoch_db": "unknown",
-   "notes": "Hub centroid only. Every Sentinel-2 scene inspected was cloud-covered: Landsat thermal coverage here will be sparse even with polygons.",
+   "notes": "Hub centroid only. Every Sentinel-2 scene inspected was cloud-covered: Landsat thermal coverage here will be sparse even with polygons. [Astra project search 2026-09-13] Provincial EPB/NDRC search found Huawei AZ3/A4 substation EIA leads. PDFs not fully inspected or matched to a campus parcel; no figures imported. https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202503/P020250321602011794355.pdf",
    "thermal_backend": "gcs_c1",
    "obs_start": "2015-01-01",
    "obs_end": "2021-12-31",
@@ -2606,7 +2957,7 @@
    "capacity_source": "No document-derived capacity retrieved",
    "capacity_url": "https://epoch.ai/data/ai-data-centers",
    "in_epoch_db": "unknown",
-   "notes": "Construction began 2022: outside the reachable Landsat C1 archive. Hub centroid only.",
+   "notes": "Construction began 2022: outside the reachable Landsat C1 archive. Hub centroid only. [Astra project search 2026-09-13] No attributable campus filing figure found in indexed searches of sthj.gansu.gov.cn and fzgg.gansu.gov.cn. This is a bounded negative search, not proof that no filing exists; see docs/china_project_search.md.",
    "thermal_backend": "gee",
    "obs_start": "2022-06-01",
    "obs_end": "2026-09-01",
@@ -2644,7 +2995,7 @@
    "capacity_source": "No document-derived capacity retrieved",
    "capacity_url": "https://epoch.ai/data/ai-data-centers",
    "in_epoch_db": "unknown",
-   "notes": "Hub centroid only; campus polygons not digitised.",
+   "notes": "Hub centroid only; campus polygons not digitised. [Astra project search 2026-09-13] Provincial EPB/NDRC search found Benmao and GDS energy reviews; named project parcels not matched to this hub centroid. Planned annual electricity is not measured current IT load. https://fzggw.cq.gov.cn/zwgk/zfxxgkml/sphzbaxx/202406/t20240606_13270491_wap.html",
    "thermal_backend": "gcs_c1",
    "obs_start": "2013-04-11",
    "obs_end": "2021-12-31",
@@ -3245,7 +3596,7 @@
    "capacity_source": "Epoch AI: Huawei Horinger current power 241.8 MW (whole cloud valley hosts several operators; blocks not attributed)",
    "capacity_url": "https://epoch.ai/data/ai-data-centers",
    "in_epoch_db": "yes",
-   "notes": "\u4e1c\u6570\u897f\u7b97 hub campus. Hall blocks digitised at 10 m, low confidence, operators not attributed. Adjacent fossil plant for the NO2 layer: cn_horinger_shengle_cogen.",
+   "notes": "\u4e1c\u6570\u897f\u7b97 hub campus. Hall blocks digitised at 10 m, low confidence, operators not attributed. Adjacent fossil plant for the NO2 layer: cn_horinger_shengle_cogen. [Astra project search 2026-09-13] No regulatory IT MW matched to these provisional halls after searches of sthjt.nmg.gov.cn and fgw.nmg.gov.cn. Huawei south-area substation EIA is a separate location; its transformer MVA is not IT MW. https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/t20250210_2664372.html",
    "thermal_backend": "none",
    "obs_start": "2018-01-01",
    "obs_end": "2026-09-01",
@@ -3335,7 +3686,7 @@
    "capacity_source": "Epoch AI: Alibaba Zhangbei current power 169 MW; attribution of these halls to Alibaba is tentative",
    "capacity_url": "https://epoch.ai/data/ai-data-centers",
    "in_epoch_db": "yes",
-   "notes": "\u4e1c\u6570\u897f\u7b97 hub campus. Hall blocks digitised at 10 m, low confidence, operators not attributed. Adjacent fossil plant for the NO2 layer: none.",
+   "notes": "\u4e1c\u6570\u897f\u7b97 hub campus. Hall blocks digitised at 10 m, low confidence, operators not attributed. Adjacent fossil plant for the NO2 layer: none. [Astra project search 2026-09-13] No attributable regulatory IT MW found after searches of hbepb.hebei.gov.cn and hbdrc.hebei.gov.cn for Alibaba, Yunlian, Miaotan and Xiaoertai. MIIT case study is not an energy-review filing; underlying phase-two approval not retrieved. https://gxt.hebei.gov.cn/sme/zx/gzdt9/2025042122120672072/index.html",
    "thermal_backend": "none",
    "obs_start": "2018-01-01",
    "obs_end": "2026-09-01",
@@ -3401,7 +3752,7 @@
    "capacity_source": "Epoch AI: VNET Bayin Ulanqab current power 221 MW (park hosts several operators; halls not attributed)",
    "capacity_url": "https://epoch.ai/data/ai-data-centers",
    "in_epoch_db": "yes",
-   "notes": "\u4e1c\u6570\u897f\u7b97 hub campus. Hall blocks digitised at 10 m, low confidence, operators not attributed. Adjacent fossil plant for the NO2 layer: cn_ulanqab_jining_700.",
+   "notes": "\u4e1c\u6570\u897f\u7b97 hub campus. Hall blocks digitised at 10 m, low confidence, operators not attributed. Adjacent fossil plant for the NO2 layer: cn_ulanqab_jining_700. [Astra project search 2026-09-13] No regulatory IT MW matched to this provisional park after searches of sthjt.nmg.gov.cn and fgw.nmg.gov.cn. VNET line-terminal coordinates are about 15 km away, near the separate Epoch VNET location. https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/t20250110_2651491.html",
    "thermal_backend": "none",
    "obs_start": "2018-01-01",
    "obs_end": "2026-09-01",

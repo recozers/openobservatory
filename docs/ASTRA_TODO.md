@@ -72,6 +72,7 @@ hall polygons (`confidence=medium`, `digitised_from=OSM way <id>`); where OSM ha
 no site without a source.
 
 ### A2. Chinese project documents  [no-EE]
+Status: in progress (astra/a2-project-documents; negative-search alternative documented)
 Goal: replace the low-confidence Chinese labels with filed figures. For `cn_horinger_cloud_valley`, `cn_zhangbei_alibaba`,
 `cn_ulanqab_park` and the seven hub centroids, search for 环境影响报告表/报告书 公示 (EIA notices), 节能审查 (energy review),
 土地出让公告 (land transfer) and 备案 (project filing) documents naming the campuses. Record IT load (MW), rack counts, generator

@@ -1,0 +1,132 @@
+{
+  "searched_on": "2026-09-13",
+  "scope": "Indexed provincial EPB/NDRC searches; not exhaustive municipal archive coverage",
+  "site_notes": {
+    "cn_horinger_cloud_valley": "No regulatory IT MW matched to these provisional halls after searches of sthjt.nmg.gov.cn and fgw.nmg.gov.cn. Huawei south-area substation EIA is a separate location; its transformer MVA is not IT MW. https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/t20250210_2664372.html",
+    "helingeer_hub": "Provincial EPB/NDRC search found Huawei south-area power infrastructure, not a load or parcel attributable to this hub centroid. https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/t20250210_2664372.html",
+    "cn_ulanqab_park": "No regulatory IT MW matched to this provisional park after searches of sthjt.nmg.gov.cn and fgw.nmg.gov.cn. VNET line-terminal coordinates are about 15 km away, near the separate Epoch VNET location. https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/t20250110_2651491.html",
+    "ulanqab_hub": "VNET 110 kV supply-line EIA gives a project location, not hub-wide IT load or a campus boundary. Provincial EPB/NDRC search; see data/china_project_documents.json. https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/t20250110_2651491.html",
+    "cn_zhangbei_alibaba": "No attributable regulatory IT MW found after searches of hbepb.hebei.gov.cn and hbdrc.hebei.gov.cn for Alibaba, Yunlian, Miaotan and Xiaoertai. MIIT case study is not an energy-review filing; underlying phase-two approval not retrieved. https://gxt.hebei.gov.cn/sme/zx/gzdt9/2025042122120672072/index.html",
+    "zhangbei_hub": "No filed load matched to the hub centroid after provincial EPB/NDRC searches. Yunlian phase-two approval remains a retrieval lead, not imported capacity. https://gxt.hebei.gov.cn/sme/zx/gzdt9/2025042122120672072/index.html",
+    "zhongwei_hub": "Provincial EPB/NDRC search found Zhongjin Xuanhe supply-project EIA and grid approvals; no parcel/load matched to the generic hub centroid. https://sthjt.nx.gov.cn/zwgk/hjpj_63348/hjyxpjsl/202605/t20260509_5235732.html",
+    "guian_hub": "Provincial EPB/NDRC search found Huawei AZ3/A4 substation EIA leads. PDFs not fully inspected or matched to a campus parcel; no figures imported. https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202503/P020250321602011794355.pdf",
+    "qingyang_hub": "No attributable campus filing figure found in indexed searches of sthj.gansu.gov.cn and fzgg.gansu.gov.cn. This is a bounded negative search, not proof that no filing exists; see docs/china_project_search.md.",
+    "chongqing_hub": "Provincial EPB/NDRC search found Benmao and GDS energy reviews; named project parcels not matched to this hub centroid. Planned annual electricity is not measured current IT load. https://fzggw.cq.gov.cn/zwgk/zfxxgkml/sphzbaxx/202406/t20240606_13270491_wap.html"
+  },
+  "documents": [
+    {
+      "id": "huawei_horinger_south_substation",
+      "title": "华为云和林格尔数据中心项目-云谷南区（一期）220kV变电站",
+      "notice_date": "2025-02-10",
+      "source_tier": "A1 regulatory infrastructure EIA",
+      "notice_url": "https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/t20250210_2664372.html",
+      "document_url": "https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/P020250210586317957570.pdf",
+      "sha256": "43373abd1e7cbebce5385004c643585775c906ed24b1994365b81c07a7a39645",
+      "inspection": "Full text extracted; PDF pages 14 and 15 visually verified",
+      "figures": [
+        {
+          "metric": "supply_voltage",
+          "value": 220,
+          "unit": "kV",
+          "page": 14
+        },
+        {
+          "metric": "phase_transformer_count",
+          "value": 3,
+          "unit": "transformers",
+          "page": 15
+        },
+        {
+          "metric": "each_transformer_apparent_power",
+          "value": 100,
+          "unit": "MVA",
+          "page": 15
+        }
+      ],
+      "coordinates": {
+        "lon": 111.85340333333333,
+        "lat": 40.54246166666667,
+        "kind": "substation centre",
+        "page": 14,
+        "datum": "not established"
+      },
+      "attribution": "Separate south-area project; no campus IT MW or hall-boundary assignment"
+    },
+    {
+      "id": "vnet_ulanqab_supply_lines",
+      "title": "乌兰察布世纪互联云计算中心基地110千伏供电工程",
+      "notice_date": "2025-01-10",
+      "source_tier": "A1 regulatory infrastructure EIA",
+      "notice_url": "https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/t20250110_2651491.html",
+      "document_url": "https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/P020250110624290837677.pdf",
+      "sha256": "002f550e7777b2bca8c31da8a7251c8c27c83d74bc7798faaa5c63da0afe3a0e",
+      "inspection": "Full text extracted; PDF page 29 (printed 25) visually verified",
+      "figures": [
+        {
+          "metric": "supply_voltage",
+          "value": 110,
+          "unit": "kV",
+          "page": 29
+        }
+      ],
+      "coordinates": {
+        "lon": 113.31315027777778,
+        "lat": 40.98229305555556,
+        "kind": "line terminal outside VNET site, not campus centroid",
+        "page": 29,
+        "datum": "not established"
+      },
+      "attribution": "Supports separate Epoch VNET location; not provisional cn_ulanqab_park; no IT MW"
+    }
+  ],
+  "leads": [
+    {
+      "id": "zhangbei_case",
+      "url": "https://www.miit.gov.cn/jgsj/jns/nyjy/art/2021/art_8226a3a538384d63be03447b2a3081a7.html",
+      "inspection": "Notice/page inspected; project identity or underlying filing unresolved",
+      "imported_capacity": false
+    },
+    {
+      "id": "zhangbei_lead",
+      "url": "https://gxt.hebei.gov.cn/sme/zx/gzdt9/2025042122120672072/index.html",
+      "inspection": "Notice/page inspected; project identity or underlying filing unresolved",
+      "imported_capacity": false
+    },
+    {
+      "id": "zhongwei",
+      "url": "https://sthjt.nx.gov.cn/zwgk/hjpj_63348/hjyxpjsl/202605/t20260509_5235732.html",
+      "inspection": "Notice/page inspected; project identity or underlying filing unresolved",
+      "imported_capacity": false
+    },
+    {
+      "id": "zhongwei_grid",
+      "url": "https://fzggw.nx.gov.cn/zzb/xzsp/202411/t20241114_4726940.html",
+      "inspection": "Notice/page inspected; project identity or underlying filing unresolved",
+      "imported_capacity": false
+    },
+    {
+      "id": "guian_az3",
+      "url": "https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202503/P020250321602011794355.pdf",
+      "inspection": "Search lead only; PDF not inspected",
+      "imported_capacity": false
+    },
+    {
+      "id": "guian_a4",
+      "url": "https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202405/P020240515682131370766.pdf",
+      "inspection": "Search lead only; PDF not inspected",
+      "imported_capacity": false
+    },
+    {
+      "id": "chongqing_benmao",
+      "url": "https://fzggw.cq.gov.cn/zwgk/zfxxgkml/sphzbaxx/202406/t20240606_13270491_wap.html",
+      "inspection": "Notice/page inspected; project identity or underlying filing unresolved",
+      "imported_capacity": false
+    },
+    {
+      "id": "chongqing_gds",
+      "url": "https://fzggw.cq.gov.cn/zwgk/zfxxgkml/sphzbaxx/202010/t20201019_8033213.html",
+      "inspection": "Notice/page inspected; project identity or underlying filing unresolved",
+      "imported_capacity": false
+    }
+  ]
+}
