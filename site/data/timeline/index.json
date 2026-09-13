@@ -1128,5 +1128,395 @@
   "no2": false,
   "night": false,
   "quarters": 12
+ },
+ "cn_ulanqab_r05": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 70.8,
+  "basis": "roofed \u22656 months (5.2 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_ulanqab_r04": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 77.7,
+  "basis": "roofed \u22656 months (5.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_ulanqab_r03": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 81.8,
+  "basis": "roofed \u22656 months (6.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_ulanqab_r07": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 56.1,
+  "basis": "roofed \u22656 months (4.2 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_ulanqab_r06": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 68.3,
+  "basis": "roofed \u22656 months (5.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r15": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 121.7,
+  "basis": "roofed \u22656 months (9.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r27": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 50.8,
+  "basis": "roofed \u22656 months (3.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r16": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 110.2,
+  "basis": "roofed \u22656 months (8.2 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r13": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 126.6,
+  "basis": "roofed \u22656 months (9.4 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r03": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 339.8,
+  "basis": "roofed \u22656 months (25.2 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r04": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 272.8,
+  "basis": "roofed \u22656 months (20.2 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r26": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 50.8,
+  "basis": "roofed \u22656 months (3.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r24": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 57.3,
+  "basis": "roofed \u22656 months (4.2 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r02": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 393.0,
+  "basis": "roofed \u22656 months (29.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r19": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 77.4,
+  "basis": "roofed \u22656 months (5.7 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r21": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 71.7,
+  "basis": "roofed \u22656 months (5.3 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r20": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 76.6,
+  "basis": "roofed \u22656 months (5.7 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r17": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 106.6,
+  "basis": "roofed \u22656 months (7.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r06": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 188.9,
+  "basis": "roofed \u22656 months (14.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r23": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 64.3,
+  "basis": "roofed \u22656 months (4.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r14": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 122.9,
+  "basis": "roofed \u22656 months (9.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r18": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 82.3,
+  "basis": "roofed \u22656 months (6.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r05": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 211.3,
+  "basis": "roofed \u22656 months (15.7 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r08": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 173.0,
+  "basis": "roofed \u22656 months (12.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r22": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 65.1,
+  "basis": "roofed \u22656 months (4.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r11": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 142.6,
+  "basis": "roofed \u22656 months (10.6 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r12": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 128.2,
+  "basis": "roofed \u22656 months (9.5 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_horinger_r25": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 52.1,
+  "basis": "roofed \u22656 months (3.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_r03": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 107.2,
+  "basis": "roofed \u22656 months (7.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_r05": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 81.6,
+  "basis": "roofed \u22656 months (6.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_r01": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 177.1,
+  "basis": "roofed \u22656 months (13.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_r06": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 67.0,
+  "basis": "roofed \u22656 months (5.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_r07": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 50.8,
+  "basis": "roofed \u22656 months (3.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_r02": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 170.1,
+  "basis": "roofed \u22656 months (12.6 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_guian_r01": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 269.2,
+  "basis": "roofed \u22656 months (19.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_qingyang_r12": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 56.0,
+  "basis": "roofed \u22656 months (4.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_qingyang_r03": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 131.4,
+  "basis": "roofed \u22656 months (9.7 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_qingyang_r07": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 93.7,
+  "basis": "roofed \u22656 months (6.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_qingyang_r11": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 65.2,
+  "basis": "roofed \u22656 months (4.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
  }
 }

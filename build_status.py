@@ -55,6 +55,14 @@ def main():
             unknown_roofs = sum(v == "unknown" for v in roof_on.values())
             built = f"{roofed} of {halls_total} halls{when}" + (f"; {unknown_roofs} roof dates unresolved" if unknown_roofs else "")
             built_conf = "low" if unknown_roofs else ("high" if (t or {}).get("s2_available") else "medium")
+            if s.get("coords_quality") == "radar_candidate":
+                import re as _re
+                m = _re.search(r"score=([\d.]+) area_ha=([\d.]+)", str(s.get("notes") or ""))
+                score, area = (m.group(1), m.group(2)) if m else ("?", "?")
+                ron = str((t or {}).get("radar_on", {}).get("structure") or "")
+                first = f"structure on {month_label(ron[:7])} (radar)" if ron[:4].isdigit() else ("radar sees no sustained step since 2018 yet" if ron.startswith("not_yet") else "structure date pending (radar timeline not run)")
+                built = f"radar-detected new structure, {float(area):.0f} ha, {first}; hall-like score {score}; unconfirmed, operator unknown"
+                built_conf = "low"
             if any(p.get("confidence") == "low" for p in s.get("polygons", [])):
                 built_conf = "low"
             elif any(p.get("confidence") == "medium" for p in s.get("polygons", [])) and built_conf == "high":
@@ -122,6 +130,10 @@ def main():
             running = "unknown: no operating evidence" if cap_now is None else "not yet: no positive documented capacity"
             load = "unknown" if cap_now is None else "0 MW documented capacity; actual load not measured"
             conf, key = "low", "roofs" if halls_total else "none"
+        if s.get("coords_quality") == "radar_candidate":
+            running = "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence"
+            load = "not estimated (unconfirmed structure)"
+            conf, key = "low", "roofs"
         if adjacent:
             running += "; the NO₂ series shown is the adjacent power plant, not the campus"
         # ---- how we know

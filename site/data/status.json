@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T17:26:47.867962+00:00",
+"generated": "2026-09-13T23:04:01.887176+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -1389,6 +1389,206 @@
 "evidence_kind": "construction"
 },
 {
+"site_id": "cn_horinger_r02",
+"name": "Horinger radar structure #2 (38 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.58436,
+"lon": 111.84582,
+"built": "radar-detected new structure, 38 ha, structure date pending (radar timeline not run); hall-like score 0.90; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 29.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 29.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 393.0,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_microsoft_fairwater_atlanta",
 "name": "Microsoft Fairwater Atlanta",
 "operator": "Microsoft",
@@ -1657,6 +1857,206 @@
 "evidence_kind": "detected"
 },
 {
+"site_id": "cn_horinger_r03",
+"name": "Horinger radar structure #3 (33 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.58094,
+"lon": 111.86163,
+"built": "radar-detected new structure, 33 ha, structure date pending (radar timeline not run); hall-like score 0.93; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 25.2
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 25.2
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 339.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_google_papillion",
 "name": "Google Papillion",
 "operator": "Google",
@@ -1781,6 +2181,406 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "derived"
+},
+{
+"site_id": "cn_horinger_r04",
+"name": "Horinger radar structure #4 (27 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.53836,
+"lon": 111.82705,
+"built": "radar-detected new structure, 27 ha, structure date pending (radar timeline not run); hall-like score 0.93; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 20.2
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 20.2
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 272.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_guian_r01",
+"name": "Gui'an radar structure #1 (22 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 26.38181,
+"lon": 106.45638,
+"built": "radar-detected new structure, 22 ha, structure date pending (radar timeline not run); hall-like score 0.51; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 19.9
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 19.9
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 269.2,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_google_the_dalles",
@@ -2230,6 +3030,206 @@
 "evidence_kind": "measured"
 },
 {
+"site_id": "cn_horinger_r05",
+"name": "Horinger radar structure #5 (21 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.55507,
+"lon": 111.854,
+"built": "radar-detected new structure, 21 ha, structure date pending (radar timeline not run); hall-like score 0.77; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 15.7
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 15.7
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 211.3,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "cn_zhangbei_alibaba",
 "name": "Zhangbei data-centre halls west of county town (Alibaba Miaotan campus, tentative)",
 "operator": "Alibaba Cloud (tentative)",
@@ -2505,6 +3505,606 @@
 "evidence_kind": "derived"
 },
 {
+"site_id": "cn_horinger_r06",
+"name": "Horinger radar structure #6 (18 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54169,
+"lon": 111.80944,
+"built": "radar-detected new structure, 18 ha, structure date pending (radar timeline not run); hall-like score 0.84; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 14.0
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 14.0
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 188.9,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_zhangbei_r01",
+"name": "Zhangbei radar structure #1 (17 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.18246,
+"lon": 114.70175,
+"built": "radar-detected new structure, 17 ha, structure date pending (radar timeline not run); hall-like score 0.85; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 13.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 13.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 177.1,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_horinger_r08",
+"name": "Horinger radar structure #8 (17 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.50405,
+"lon": 111.81465,
+"built": "radar-detected new structure, 17 ha, structure date pending (radar timeline not run); hall-like score 0.71; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 12.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 12.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 173.0,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_amazon_madison_mega_site",
 "name": "Amazon Madison Mega Site",
 "operator": "Amazon",
@@ -2607,6 +4207,206 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "cn_zhangbei_r02",
+"name": "Zhangbei radar structure #2 (17 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.18874,
+"lon": 114.69384,
+"built": "radar-detected new structure, 17 ha, structure date pending (radar timeline not run); hall-like score 0.61; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 12.6
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 12.6
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 170.1,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "meta_newton",
@@ -4006,6 +5806,206 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_horinger_r11",
+"name": "Horinger radar structure #11 (14 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.53872,
+"lon": 111.8001,
+"built": "radar-detected new structure, 14 ha, structure date pending (radar timeline not run); hall-like score 0.62; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 10.6
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 10.6
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 142.6,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_meta_los_lunas",
 "name": "Meta Los Lunas",
 "operator": "Meta",
@@ -4483,6 +6483,406 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_qingyang_r03",
+"name": "Qingyang radar structure #3 (12 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 35.69995,
+"lon": 107.61242,
+"built": "radar-detected new structure, 12 ha, structure date pending (radar timeline not run); hall-like score 0.60; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 9.7
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 9.7
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 131.4,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_horinger_r12",
+"name": "Horinger radar structure #12 (12 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.53333,
+"lon": 111.79839,
+"built": "radar-detected new structure, 12 ha, structure date pending (radar timeline not run); hall-like score 0.59; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 9.5
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 9.5
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 128.2,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "meta_henrico",
 "name": "Meta Henrico (Virginia)",
 "operator": "Meta",
@@ -4752,6 +7152,206 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_horinger_r13",
+"name": "Horinger radar structure #13 (12 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.55202,
+"lon": 111.83064,
+"built": "radar-detected new structure, 12 ha, structure date pending (radar timeline not run); hall-like score 0.94; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 9.4
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 9.4
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 126.6,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "colossus_memphis",
 "name": "xAI Colossus 1 (Memphis)",
 "operator": "xAI",
@@ -4921,6 +7521,406 @@
 "polygons_low": true,
 "combustion": false,
 "evidence_kind": "detected"
+},
+{
+"site_id": "cn_horinger_r14",
+"name": "Horinger radar structure #14 (12 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54555,
+"lon": 111.83684,
+"built": "radar-detected new structure, 12 ha, structure date pending (radar timeline not run); hall-like score 0.83; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 9.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 9.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 122.9,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_horinger_r15",
+"name": "Horinger radar structure #15 (12 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54771,
+"lon": 111.83235,
+"built": "radar-detected new structure, 12 ha, structure date pending (radar timeline not run); hall-like score 0.95; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 9.0
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 9.0
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 121.7,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_microsoft_goodyear",
@@ -5397,6 +8397,206 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_horinger_r16",
+"name": "Horinger radar structure #16 (11 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.5204,
+"lon": 111.83028,
+"built": "radar-detected new structure, 11 ha, structure date pending (radar timeline not run); hall-like score 0.94; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 8.2
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 8.2
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 110.2,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_google_mesa",
 "name": "Google Mesa",
 "operator": "Google",
@@ -5759,6 +8959,206 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_zhangbei_r03",
+"name": "Zhangbei radar structure #3 (11 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.18084,
+"lon": 114.74846,
+"built": "radar-detected new structure, 11 ha, structure date pending (radar timeline not run); hall-like score 0.93; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 7.9
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 107.2,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_meta_huntsville",
 "name": "Meta Huntsville",
 "operator": "Meta",
@@ -6051,6 +9451,206 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "cn_horinger_r17",
+"name": "Horinger radar structure #17 (10 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.50171,
+"lon": 111.82732,
+"built": "radar-detected new structure, 10 ha, structure date pending (radar timeline not run); hall-like score 0.85; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 7.9
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 7.9
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 106.6,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_anthropic_barber_lake",
@@ -6698,6 +10298,206 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_qingyang_r07",
+"name": "Qingyang radar structure #7 (9 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 35.72519,
+"lon": 107.69767,
+"built": "radar-detected new structure, 9 ha, structure date pending (radar timeline not run); hall-like score 0.53; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 6.9
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 6.9
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 93.7,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_meta_montgomery",
 "name": "Meta Montgomery",
 "operator": "Meta",
@@ -7316,6 +11116,606 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_horinger_r18",
+"name": "Horinger radar structure #18 (8 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54555,
+"lon": 111.8089,
+"built": "radar-detected new structure, 8 ha, structure date pending (radar timeline not run); hall-like score 0.79; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 6.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 82.3,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_ulanqab_r03",
+"name": "Ulanqab radar structure #3 (8 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.02022,
+"lon": 113.18997,
+"built": "radar-detected new structure, 8 ha, structure date pending (radar timeline not run); hall-like score 0.73; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 6.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 6.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 81.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_zhangbei_r05",
+"name": "Zhangbei radar structure #5 (8 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.21983,
+"lon": 114.73238,
+"built": "radar-detected new structure, 8 ha, structure date pending (radar timeline not run); hall-like score 0.85; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 6.0
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 6.0
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 81.6,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_coreweave_helios",
 "name": "Coreweave Helios",
 "operator": "CoreWeave",
@@ -7442,6 +11842,406 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "cn_ulanqab_r04",
+"name": "Ulanqab radar structure #4 (8 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.0725,
+"lon": 113.14398,
+"built": "radar-detected new structure, 8 ha, structure date pending (radar timeline not run); hall-like score 0.86; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 77.7,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_horinger_r19",
+"name": "Horinger radar structure #19 (8 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.55435,
+"lon": 111.83873,
+"built": "radar-detected new structure, 8 ha, structure date pending (radar timeline not run); hall-like score 0.89; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.7
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 77.4,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "meta_odense",
@@ -7609,6 +12409,206 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "measured"
+},
+{
+"site_id": "cn_horinger_r20",
+"name": "Horinger radar structure #20 (8 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54106,
+"lon": 111.83648,
+"built": "radar-detected new structure, 8 ha, structure date pending (radar timeline not run); hall-like score 0.87; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.7
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.7
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 76.6,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_google_lancaster",
@@ -7933,6 +12933,606 @@
 "evidence_kind": "construction"
 },
 {
+"site_id": "cn_horinger_r21",
+"name": "Horinger radar structure #21 (7 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54106,
+"lon": 111.7957,
+"built": "radar-detected new structure, 7 ha, structure date pending (radar timeline not run); hall-like score 0.89; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.3
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.3
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 71.7,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_ulanqab_r05",
+"name": "Ulanqab radar structure #5 (7 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.06172,
+"lon": 113.10185,
+"built": "radar-detected new structure, 7 ha, structure date pending (radar timeline not run); hall-like score 0.87; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.2
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.2
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 70.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_ulanqab_r06",
+"name": "Ulanqab radar structure #6 (7 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.06514,
+"lon": 113.14937,
+"built": "radar-detected new structure, 7 ha, structure date pending (radar timeline not run); hall-like score 0.67; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 68.3,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "prometheus_oh",
 "name": "Meta Prometheus (New Albany)",
 "operator": "Meta",
@@ -8104,6 +13704,606 @@
 "evidence_kind": "measured"
 },
 {
+"site_id": "cn_zhangbei_r06",
+"name": "Zhangbei radar structure #6 (7 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.16179,
+"lon": 114.71917,
+"built": "radar-detected new structure, 7 ha, structure date pending (radar timeline not run); hall-like score 0.85; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 5.0
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 5.0
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 67.0,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_qingyang_r11",
+"name": "Qingyang radar structure #11 (6 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 35.73274,
+"lon": 107.70189,
+"built": "radar-detected new structure, 6 ha, structure date pending (radar timeline not run); hall-like score 0.51; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 4.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 65.2,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_horinger_r22",
+"name": "Horinger radar structure #22 (6 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.54115,
+"lon": 111.8398,
+"built": "radar-detected new structure, 6 ha, structure date pending (radar timeline not run); hall-like score 0.70; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 4.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 65.1,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_aws_berwick",
 "name": "AWS Berwick",
 "operator": "Amazon",
@@ -8220,6 +14420,206 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "cn_horinger_r23",
+"name": "Horinger radar structure #23 (6 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.56388,
+"lon": 111.85058,
+"built": "radar-detected new structure, 6 ha, structure date pending (radar timeline not run); hall-like score 0.84; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 4.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 4.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 64.3,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "lulea",
@@ -8459,6 +14859,606 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "cn_horinger_r24",
+"name": "Horinger radar structure #24 (6 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.57178,
+"lon": 111.84645,
+"built": "radar-detected new structure, 6 ha, structure date pending (radar timeline not run); hall-like score 0.90; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 4.2
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 57.3,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_ulanqab_r07",
+"name": "Ulanqab radar structure #7 (6 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.04717,
+"lon": 113.17102,
+"built": "radar-detected new structure, 6 ha, structure date pending (radar timeline not run); hall-like score 0.68; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 4.2
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 4.2
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 56.1,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_qingyang_r12",
+"name": "Qingyang radar structure #12 (5 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 35.73669,
+"lon": 107.69803,
+"built": "radar-detected new structure, 5 ha, structure date pending (radar timeline not run); hall-like score 0.66; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 4.1
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 4.1
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 56.0,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
 "site_id": "epoch_google_waltham_cross",
 "name": "Google Waltham Cross",
 "operator": "Google",
@@ -8540,6 +15540,206 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "cn_horinger_r25",
+"name": "Horinger radar structure #25 (5 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.49354,
+"lon": 111.77863,
+"built": "radar-detected new structure, 5 ha, structure date pending (radar timeline not run); hall-like score 0.54; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 3.9
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 3.9
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 52.1,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_stack_infrastructure_nva02",
@@ -8663,6 +15863,606 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "cn_horinger_r27",
+"name": "Horinger radar structure #27 (5 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.56334,
+"lon": 111.82265,
+"built": "radar-detected new structure, 5 ha, structure date pending (radar timeline not run); hall-like score 0.95; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 3.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 50.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_horinger_r26",
+"name": "Horinger radar structure #26 (5 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 40.52992,
+"lon": 111.73632,
+"built": "radar-detected new structure, 5 ha, structure date pending (radar timeline not run); hall-like score 0.90; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 3.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 50.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
+},
+{
+"site_id": "cn_zhangbei_r07",
+"name": "Zhangbei radar structure #7 (5 ha)",
+"operator": "unknown",
+"country": "CN",
+"lat": 41.16323,
+"lon": 114.72663,
+"built": "radar-detected new structure, 5 ha, structure date pending (radar timeline not run); hall-like score 0.77; unconfirmed, operator unknown",
+"built_conf": "low",
+"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"load": "not estimated (unconfirmed structure)",
+"confidence": "low",
+"how": [],
+"key": "roofs",
+"series": [
+{
+"x": "2018Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2018Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2019Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2020Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2021Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2022Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2023Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2024Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q3",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2025Q4",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q1",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q2",
+"y": 1,
+"y2": 3.8
+},
+{
+"x": "2026Q3",
+"y": 1,
+"y2": 3.8
+}
+],
+"series_label": "halls roofed (of 1)",
+"recent": "",
+"est_mid": null,
+"est_hi": 50.8,
+"last_q": "2026Q3",
+"polygons_low": true,
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "meta_dekalb",
