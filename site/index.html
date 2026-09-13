@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DC Watch</title>
+<title>Open Observatory</title>
 <link rel="stylesheet" href="vendor/maplibre-gl.css">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -20,12 +20,16 @@
   .spark { width: 100%; height: 80px; display: block; margin-top: 8px; }
   .how { font-size: 11.5px; color: var(--muted); margin-top: 8px; }
   .panel a { font-size: 12px; }
+  @media (max-width: 700px) {
+    .panel { width: auto; }
+    .panel .lines { overflow-wrap: anywhere; }
+  }
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="title">
-    <h1>DC Watch</h1>
+    <h1>Open Observatory</h1>
     <p class="sub">Data-centre construction and activity from free satellite data. We can see construction and on-site fuel burning; we cannot see electricity use directly. <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="research/index.html">Research</a> · <a href="https://github.com/recozers/openobservatory">Code</a> · <a href="https://epoch.ai/data/ai-data-centers">Epoch AI</a> data and annotations (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>); modified and independently roof-dated here.</p>
   </div>
 </header>
