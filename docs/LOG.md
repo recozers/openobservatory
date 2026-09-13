@@ -162,3 +162,17 @@ Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this br
 - Meta per-site electricity extended to all 18 disclosed campuses (docs/meta_disclosures_notes.md); ten campuses added
   to the inventory with OSM footprint coordinates. Map evidence kinds: measured 19, derived 12, detected 4, presumed 52,
   construction 26 (113 public sites).
+
+## 2026-09-14 (Claude): China coverage from radar (C7)
+- Every hall-like radar candidate (area >= 5 ha, classifier score >= 0.5, not overlapping a known site) in the hub boxes becomes
+  an inventory entry `cn_<hub>_r<rank>` with its 20 m radar outline as a low-confidence polygon, coords_quality
+  radar_candidate, tier U, and a note carrying score, area and VV rise (tools/ingest_radar_candidates.py). One radar
+  timeline per hub (results_s1/<hub>_newsites.csv, split per site by tools/split_s1_hub.py) gives each a structure-on month.
+  The site says "radar-detected new structure, N ha, structure on <month> (radar); hall-like score S; unconfirmed, operator
+  unknown", running "unknown: new structure found by radar, not confirmed as a data centre", load "not estimated".
+- First six hubs: 39 entries (Horinger 23, Zhangbei 6, Ulanqab 5, Qingyang 4, Gui'an 1, Chongqing 0), all dated; structure-on
+  months cluster in 2023-2025 (Jul 2024 x5, Aug 2025 x4, Jun 2023/2024 x3 each). Six more hub boxes scanned (Zhongwei 60
+  candidates, Zhangjiakou/Huailai 25, Wuhu 63, Shaoguan 24, Chengdu Tianfu 109, Tianjin Wuqing 78) and being scored.
+- What this is and is not: automatic, dated detection of new large hall-like structures in the hubs, with provenance;
+  not confirmation of a data centre, not an operator, not a load. Confirmation is human (chips in results_s1/) or
+  documents (Astra A8/A2/B8).
