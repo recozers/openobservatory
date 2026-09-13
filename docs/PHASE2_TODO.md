@@ -75,8 +75,8 @@ and the operator-reported sites no longer look presumed; a synthetic test per ki
 - **C1 (running)**: batch plume test over every inventory site with a documented or roof-derived start date
   (`tools/plume_batch.py` → `results_no2/<site>.csv`, summary in `results_no2/plume_batch_summary.csv`); sites at ≥ 2.5σ
   go to a flux run.
-- **C2**: Colossus 1 with the TVA Allen plant subtracted using CAMPD hourly emissions at overpass time, before and after
-  the turbine removal, so the 2024–25 turbine phase becomes a second measured site.
+- **C2 (done, negative)**: Colossus 1 with Allen and Southaven subtracted: turbine-period step 62 ± 63 kg NOx/h, no month
+  above 2.5σ; the turbine phase stays undetected (see `docs/LOG.md`, `results_no2/colossus1_subtraction.json`).
 - **C3**: night thermal revisited for the gigawatt-class campuses (Abilene, Rainier, Colossus 2 yard) with 2026
   ECOSTRESS, campus-wide including yards, against the documented load ramps. The 2025 null was at a few hundred MW.
 - **C4**: plume-test detection threshold: seasonal matching and longer baselines, false-positive rate measured on the

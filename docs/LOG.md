@@ -117,3 +117,8 @@ Final phone-width review caught a wording ambiguity when a site has both an old 
 - Calibration corrected to overpass hours 12-14 local standard (factor 4.41 ± 0.18, was 4.68); all NOx series regenerated.
 - C2 in progress: tools/known_source_subtract.py (regress the Colossus 1 plateau on Allen and Southaven CAMPD NOx at the
   overpass hours plus a turbine-period step); CAMPD hourly for Allen 2023-2026 being fetched.
+- C2 result (Colossus 1, TVA Allen and Southaven subtracted, tools/known_source_subtract.py, results_no2/colossus1_subtraction.json):
+  turbine-period step Jul 2024-Jun 2025 = 62 ± 63 kg NOx/h after regressing the daily plateau on both plants' overpass-hour
+  CAMPD NOx (594 days, r2 0.14); naive step 44. No month exceeds 2.5 sigma (Jan-Feb 2025 at 336 ± 140 and 391 ± 180 are the
+  largest). 2-sigma upper bound ~190 kg NOx/h: consistent with SCR-fitted turbines, low output, or noise; Colossus 1's
+  turbine phase cannot be shown as measured. Allen itself averaged 48 kg/h at overpass during that period vs 25 outside it.
