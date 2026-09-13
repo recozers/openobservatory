@@ -39,12 +39,30 @@ def quarters(start="2018Q1", end=None):
     return list(pd.period_range(start, end, freq="Q"))
 
 
+MEASURED = ("facility_measured_annual", "it_measured_annual")
+
+
 def it_mw(cap, basis, pue):
-    return cap / pue if basis in ("facility_design", "grid_connection") else cap
+    return cap / pue if basis in ("facility_design", "grid_connection", "facility_measured_annual", "carried_measured_annual") else cap
 
 
 def cap_in_force(tl, sid, date, pue):
-    r = tl[(tl.site_id == sid) & (tl.valid_from <= date) & ((tl.valid_to == "") | (tl.valid_to >= date))]
+    """Capacity row in force at `date`. An operator-reported annual average (measured) beats every other basis; when the
+    last measured year ended less than 24 months before `date` and no newer row has started since, it is carried forward."""
+    mine = tl[tl.site_id == sid]
+    r = mine[(mine.valid_from <= date) & ((mine.valid_to == "") | (mine.valid_to >= date))]
+    meas = r[r.capacity_basis.isin(MEASURED)]
+    if not meas.empty:
+        m = meas.sort_values("valid_from").iloc[-1]
+        return it_mw(float(m.capacity_mw), m.capacity_basis, pue), m.tier, m.capacity_basis
+    past = mine[mine.capacity_basis.isin(MEASURED) & (mine.valid_to != "") & (mine.valid_to < date)].sort_values("valid_to")
+    if not past.empty:
+        m = past.iloc[-1]
+        months = (pd.Period(date[:7], freq="M") - pd.Period(m.valid_to[:7], freq="M")).n
+        newer = r[r.valid_from > m.valid_to]
+        if months <= 24 and newer.empty:
+            basis = "carried_measured_annual" if m.capacity_basis == "facility_measured_annual" else "carried_it_measured_annual"
+            return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis
     if r.empty:
         return None, None, None
     r = r.sort_values("valid_from").iloc[-1]
@@ -52,6 +70,21 @@ def cap_in_force(tl, sid, date, pue):
     if r.capacity_basis == "placeholder":
         return 0.0, r.tier, "placeholder"
     return it_mw(cap, r.capacity_basis, pue), r.tier, r.capacity_basis
+
+
+def utilisation_prior(cap_basis, site_class):
+    """(lo, mid, hi) multipliers on the capacity figure in force. Calibration so far: Meta per-site annual electricity gives
+    Lulea at 0.25-0.45 of its 120 MW grid feed (2022-2024) and New Albany at 0.24-0.36 of its 250 MW connection (2023-2024);
+    ORNL Frontier averaged 12.2 MW in 2023 against 21-23 MW measured at HPL. AI-training campuses have no calibration yet."""
+    if cap_basis in MEASURED:
+        return 0.9, 1.0, 1.1, "operator-reported annual average electricity ÷ 8760 h, ±10 %"
+    if cap_basis in ("carried_measured_annual", "carried_it_measured_annual"):
+        return 0.7, 1.0, 1.3, "last operator-reported annual average carried forward (no newer figure), 0.7–1.3"
+    if cap_basis == "it_measured_hpl":
+        return 0.4, 0.6, 0.9, "HPL-measured system power × annual-average factor 0.4–0.9 (Frontier 2023: 0.55)"
+    if site_class in ("cloud", "mixed_cloud_ai", "hub"):
+        return 0.2, 0.4, 0.6, "utilisation 0.2–0.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24–0.45)"
+    return 0.5, 0.8, 1.0, "utilisation assumption 0.5–1.0 (AI-training campus, uncalibrated)"
 
 
 def quarterly_stats(df, tcol, vcol):
@@ -116,6 +149,34 @@ def main():
         for h in halls:
             if h["name"] not in roof_on:
                 roof_on[h["name"]] = h["valid_from"][:7] if h["valid_from"] else "existing"
+        # Sentinel-1 radar dates fill in where brightness dating could not (grey roofs, bright-soil baselines)
+        radar_on, roof_basis = {}, {h["name"]: "s2" for h in halls}
+        s1f = ROOT / "results_s1" / f"{sid}.csv"
+        if s1f.exists():
+            from tools.s1_timeline import s1_on
+            s1piv = pd.read_csv(s1f, index_col=0)
+            for c in s1piv.columns:
+                if c.startswith("VV:"):
+                    radar_on[c[3:]] = s1_on(s1piv[c])
+            for h in halls:
+                r = radar_on.get(h["name"], "")
+                cur = roof_on.get(h["name"])
+                if not r[:4].isdigit():
+                    continue
+                # radar leads the membrane by 0-2 months at Abilene; a radar date more than 3 months before the
+                # brightness date means brightness dating was late (grey roof), so the radar date is used
+                late_s2 = cur not in ("existing", "not_yet", None) and (pd.Period(cur, freq="M") - pd.Period(r[:7], freq="M")).n > 3
+                if cur in ("existing", "not_yet") or late_s2:
+                    roof_on[h["name"]] = r[:7]
+                    roof_basis[h["name"]] = "radar"
+        # VIIRS night lights: the month the campus lit up relative to its surroundings (construction/energisation, not load)
+        ntl_lit, ntlq = None, {}
+        ntlf = ROOT / "results_ntl" / f"{sid}.csv"
+        if ntlf.exists():
+            from tools.ntl_timeline import lit_month
+            ntl = pd.read_csv(ntlf, index_col=0)
+            ntl_lit = lit_month(ntl["diff"])
+            ntlq = {str(q): round(float(v), 1) for q, v in ntl["diff"].groupby(pd.PeriodIndex(ntl.index, freq="M").asfreq("Q")).mean().items()}
         # density prior
         tier = s.capacity_tier or "U"
         cap_site = float(s.capacity_mw) if s.capacity_mw else None
@@ -163,7 +224,8 @@ def main():
             built_ha = sum(h["area_ha"] for h in roofed)
             fitted_ha = sum(h["area_ha"] for h in fitted)
             if cap is not None and cap > 0:
-                lo, mid, hi, basis = 0.5 * cap, 0.8 * cap, 1.0 * cap, f"documented capacity in force ({cap_tier}, {cap_basis}) × utilisation assumption 0.5–1.0"
+                ulo, umid, uhi, utext = utilisation_prior(cap_basis, str(s.get("site_class") or "cloud"))
+                lo, mid, hi, basis = ulo * cap, umid * cap, uhi * cap, f"documented capacity in force ({cap_tier}, {cap_basis}) × {utext}"
             elif cap == 0.0 and cap_basis == "placeholder" and fitted_ha == 0:
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, "pre-operation (documented placeholder)"
             elif (fitted_ha > 0 and cap is None) or (cap == 0.0 and fitted_ha > 0):
@@ -186,12 +248,12 @@ def main():
             rows.append(dict(q=qs, cap_doc_mw=None if cap is None else round(cap, 1), cap_tier=cap_tier, cap_basis=cap_basis, no2_flux=fx,
                              halls_roofed=len(roofed), halls_total=len(halls), built_ha=round(built_ha, 1), fitted_ha=round(fitted_ha, 1),
                              est_lo=round(lo, 1), est_mid=None if mid is None else round(mid, 1), est_hi=round(hi, 1), basis=basis,
-                             night=night.get(qs), day=day.get(qs), no2=no2q.get(qs)))
+                             night=night.get(qs), day=day.get(qs), no2=no2q.get(qs), ntl=ntlq.get(qs)))
         # trim leading quarters with nothing at all
         first = next((i for i, r in enumerate(rows) if r["halls_roofed"] or r["night"] or r["day"] or r["no2"] or (r["cap_doc_mw"] or 0) > 0), 0)
         rows = rows[max(0, first - 1):]
         out = dict(site_id=sid, name=s["name"], tier=tier, density_mw_per_ha=round(density, 1), density_basis=density_basis,
-                   hall_area_ha=round(hall_area, 1), roof_on=roof_on, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
+                   hall_area_ha=round(hall_area, 1), roof_on=roof_on, roof_basis=roof_basis, radar_on=radar_on, ntl_lit=ntl_lit, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
                    thermal_night_available=bool(night), thermal_day_available=bool(day), quarters=rows,
                    caveat="Load is not measured by any sensor here. The estimate is documented capacity, or roofed area × a density prior, "
                           "times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); "

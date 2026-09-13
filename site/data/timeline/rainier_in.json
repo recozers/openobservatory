@@ -23,6 +23,26 @@
 "south_1471517729": "2025-02",
 "south_1471517730": "2025-06"
 },
+"roof_basis": {
+"south_1471517722": "s2",
+"south_1471517723": "s2",
+"south_1471517724": "s2",
+"south_1471517725": "s2",
+"south_1471517726": "s2",
+"south_1471517727": "s2",
+"south_1471517728": "s2",
+"south_1471517729": "s2",
+"south_1471517730": "s2",
+"north_1471517731": "s2",
+"north_1471517732": "s2",
+"north_1471517733": "s2",
+"north_1471517734": "s2",
+"north_1471517735": "s2",
+"north_1471517736": "s2",
+"north_1471517737": "s2"
+},
+"radar_on": {},
+"ntl_lit": "2024-08 (baseline 4.0, level 12.8, reached 21.4)",
 "s2_available": true,
 "no2_available": true,
 "no2_baseline": {
@@ -49,7 +69,8 @@
 "basis": "pre-operation (documented placeholder)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": 3.3
 },
 {
 "q": "2023Q1",
@@ -72,7 +93,8 @@
 "se": 4.55,
 "n": 23,
 "z": 1.0
-}
+},
+"ntl": 5.3
 },
 {
 "q": "2023Q2",
@@ -95,7 +117,8 @@
 "se": 0.76,
 "n": 40,
 "z": 1.4
-}
+},
+"ntl": 5.4
 },
 {
 "q": "2023Q3",
@@ -118,7 +141,8 @@
 "se": 1.28,
 "n": 36,
 "z": -0.6
-}
+},
+"ntl": 5.6
 },
 {
 "q": "2023Q4",
@@ -141,7 +165,8 @@
 "se": 2.63,
 "n": 33,
 "z": -0.2
-}
+},
+"ntl": 6.0
 },
 {
 "q": "2024Q1",
@@ -164,7 +189,8 @@
 "se": 1.78,
 "n": 30,
 "z": -1.1
-}
+},
+"ntl": 4.6
 },
 {
 "q": "2024Q2",
@@ -187,7 +213,8 @@
 "se": 1.7,
 "n": 42,
 "z": -1.8
-}
+},
+"ntl": 6.1
 },
 {
 "q": "2024Q3",
@@ -210,7 +237,8 @@
 "se": 1.14,
 "n": 36,
 "z": 1.1
-}
+},
+"ntl": 12.7
 },
 {
 "q": "2024Q4",
@@ -233,7 +261,8 @@
 "se": 2.29,
 "n": 34,
 "z": 0.1
-}
+},
+"ntl": 29.1
 },
 {
 "q": "2025Q1",
@@ -264,7 +293,8 @@
 "se": 3.67,
 "n": 35,
 "z": 1.4
-}
+},
+"ntl": 36.9
 },
 {
 "q": "2025Q2",
@@ -295,7 +325,8 @@
 "se": 1.5,
 "n": 35,
 "z": -1.7
-}
+},
+"ntl": 54.7
 },
 {
 "q": "2025Q3",
@@ -326,7 +357,8 @@
 "se": 1.1,
 "n": 36,
 "z": -1.1
-}
+},
+"ntl": 69.4
 },
 {
 "q": "2025Q4",
@@ -341,7 +373,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": -0.05,
 "se": 0.16,
@@ -357,7 +389,8 @@
 "se": 3.45,
 "n": 24,
 "z": 0.7
-}
+},
+"ntl": 98.0
 },
 {
 "q": "2026Q1",
@@ -372,7 +405,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": -0.03,
 "se": 0.31,
@@ -388,7 +421,8 @@
 "se": 1.93,
 "n": 35,
 "z": 2.2
-}
+},
+"ntl": 116.2
 },
 {
 "q": "2026Q2",
@@ -403,7 +437,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": 0.14,
 "se": 0.02,
@@ -419,7 +453,8 @@
 "se": 1.58,
 "n": 40,
 "z": -0.2
-}
+},
+"ntl": 95.6
 },
 {
 "q": "2026Q3",
@@ -434,7 +469,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": 1.27,
 "se": 0.47,
@@ -450,7 +485,8 @@
 "se": 1.65,
 "n": 23,
 "z": -1.4
-}
+},
+"ntl": 93.2
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
