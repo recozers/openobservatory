@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T17:26:47.867962+00:00",
+"generated": "2026-09-13T17:32:22.818423+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -14,12 +14,28 @@
 "load": "about 1207 MW from NO\u2082 (range 637\u20132919; absolute value uncertain 2\u20133\u00d7, month-to-month changes reliable)",
 "confidence": "high",
 "how": [
+"EPA CAMPD plant generation; campus allocation only where separately verified at >=80%; other plant records are evidence only",
 "TROPOMI NO\u2082 plume test",
 "TROPOMI NOx flux (calibrated on EPA-monitored plants)",
 "documented capacity: Reported 59 on-site gas turbines totalling up to 495 MW, operating unpermitted from late 2"
 ],
 "key": "nox",
 "series": [
+{
+"x": "2022Q4",
+"y": null,
+"se": null
+},
+{
+"x": "2023Q1",
+"y": -49.0,
+"se": 123.0
+},
+{
+"x": "2023Q2",
+"y": -55.0,
+"se": 115.0
+},
 {
 "x": "2023Q3",
 "y": 105.0,

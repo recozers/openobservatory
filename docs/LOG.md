@@ -162,3 +162,10 @@ Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this br
 - Meta per-site electricity extended to all 18 disclosed campuses (docs/meta_disclosures_notes.md); ten campuses added
   to the inventory with OSM footprint coordinates. Map evidence kinds: measured 19, derived 12, detected 4, presumed 52,
   construction 26 (113 public sites).
+
+
+## 2026-09-13 — Astra B2 CAMPD integration
+
+Working in isolated astra/b2; incorporated Claude's committed B3/B6 work through e91e31b before editing shared builders. Add monthly CAMPD evidence and a separate A1 load_basis, preserving documented capacity and existing NOx estimates. Physical allocation must be sourced and >=80% for a complete quarter; otherwise evidence only. Southaven is ORIS 55269 (6641 is Independence AR). Hyperion's original three plants remain pending IDs, reporting units and physical allocation.
+
+B2 validation: 42 complete Southaven plant-months (2023-01 to 2026-06), 14 complete quarters, latest 625 MW gross plant average; no physical campus allocation and no campus-load substitution. Independent EPA 2023 annual/monthly API fixtures reconcile gross MWh and operating unit-hours exactly and NOx within aggregate rounding. Hyperion remains header-only/pending, not zero output. 31 tests pass, including a full synthetic qualifying builder path with separate A1 load basis, zero-output status and the real non-dedicated control. Dry refresh validates 240 public JSON files; browser inspection confirms separate grey CAMPD strip and explicit evidence-only wording. No real qualifying dedicated-supply record exists yet; that conditional acceptance remains pending.

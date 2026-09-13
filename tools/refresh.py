@@ -50,6 +50,7 @@ def main():
         if source["baseline_before"]:
             cmd += ["--baseline-before", source["baseline_before"]]
         run(*cmd)
+    run("tools/campd_monthly.py", *(["--fetch"] if not dry and os.getenv("EPA_API_KEY") else []))
     os.environ.update(OBS_FILE="data/observations_all.csv", REJ_FILE="data/rejections_all.csv", RESULTS_DIR="results_gee")
     for script in ("build_site.py", "build_timeline_data.py", "build_status.py"):
         run(script)

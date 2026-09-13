@@ -26,6 +26,7 @@ import numpy as np
 import pandas as pd
 
 from dcheat import geom as G
+from tools.campd_monthly import quarterly_for_site
 
 ROOT = Path(__file__).resolve().parent
 DATA, SITE = ROOT / "data", ROOT / "site"
@@ -264,6 +265,7 @@ def main():
                                n_days=int(g.n_days.sum()))
                 if not ef:
                     fluxq[q]["mw_unavailable_reason"] = "No two-sided operating emission factor; a permit limit alone cannot identify generation."
+        campdq = quarterly_for_site(sid, pue, ROOT)
         # quarters
         rows = []
         for q in quarters():
@@ -298,12 +300,20 @@ def main():
             adj = "ADJACENT PLANT" in str(s.get("nox_ef_note") or "")
             if fx and ef and not adj and fx["nox_kgh"] > 2 * fx["nox_se"] and fx["nox_kgh"] > 100:
                 lo, mid, hi, basis = fx["mw_lo"], round(fx["nox_kgh"] / ((EF_LO + EF_HI) / 2), 0), fx["mw_hi"], (("ADJACENT PLANT generation, not campus load: " if adj else "NO2-flux on-site generation: ") + f"{fx['nox_kgh']:.0f} ± {fx['nox_se']:.0f} kg NOx/h (TROPOMI, calibrated on 5 plants) at {EF_LO}-{EF_HI} kg NOx/MWh, midpoint at {(EF_LO + EF_HI) / 2}")
+            plant = campdq.get(qs)
+            if plant and plant["basis"] == "dedicated_plant_measured":
+                lo = mid = hi = plant["it_equivalent_avg_mw"]
+                basis = "dedicated_plant_measured: allocated gross generation / assumed PUE; IT equivalent proxy, losses unmeasured"
             rows.append(dict(q=qs, cap_doc_mw=None if cap is None else round(cap, 1), cap_tier=cap_tier, cap_basis=cap_basis, cap_upper_bound="Upper bound" in (cap_note or ""), no2_flux=fx,
                              halls_roofed=len(roofed), halls_total=len(halls), built_ha=round(built_ha, 1), fitted_ha=round(fitted_ha, 1),
                              est_lo=round(lo, 1), est_mid=None if mid is None else round(mid, 1), est_hi=round(hi, 1), basis=basis,
                              night=night.get(qs), day=day.get(qs), no2=no2q.get(qs), ntl=ntlq.get(qs)))
+            if plant:
+                rows[-1]["campd"] = plant
+                if plant["basis"] == "dedicated_plant_measured":
+                    rows[-1].update(load_basis="dedicated_plant_measured", load_tier="A1")
         # trim leading quarters with nothing at all
-        first = next((i for i, r in enumerate(rows) if r["halls_roofed"] or r["night"] or r["day"] or r["no2"] or (r["cap_doc_mw"] or 0) > 0), 0)
+        first = next((i for i, r in enumerate(rows) if r.get("campd") or r["halls_roofed"] or r["night"] or r["day"] or r["no2"] or (r["cap_doc_mw"] or 0) > 0), 0)
         rows = rows[max(0, first - 1):]
         out = dict(site_id=sid, name=s["name"], tier=tier, density_mw_per_ha=round(density, 1), density_basis=density_basis,
                    hall_area_ha=round(hall_area, 1), roof_on=roof_on, roof_basis=roof_basis, roof_evidence=roof_evidence, radar_on=radar_on, ntl_lit=ntl_lit, s2_available=s2_available, no2_available=no2_available, no2_baseline=no2_base,
@@ -311,6 +321,8 @@ def main():
                    caveat="Load is not measured by any sensor here. The estimate is documented capacity, or roofed area × a density prior, "
                           "times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); "
                           "NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out.")
+        if any(r.get("load_basis") == "dedicated_plant_measured" for r in rows):
+            out["caveat"] = "CAMPD measures plant gross generation. Allocated output / assumed PUE is an IT equivalent proxy, not a campus meter; station and network losses are unmeasured. No uncertainty interval is established. Other quarters retain their stated capacity or satellite basis."
         (OUT / f"{sid}.json").write_text(json.dumps(out, indent=0, default=str))
         last = rows[-1] if rows else None
         index[sid] = dict(est_mid=last["est_mid"] if last else 0, est_lo=last["est_lo"] if last else 0, est_hi=last["est_hi"] if last else 0,

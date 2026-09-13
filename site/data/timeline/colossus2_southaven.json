@@ -21,6 +21,122 @@
 "thermal_day_available": false,
 "quarters": [
 {
+"q": "2022Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"cap_upper_bound": false,
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "no roof yet",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": -5.2
+},
+{
+"q": "2023Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"cap_upper_bound": false,
+"no2_flux": {
+"nox_kgh": -49.0,
+"nox_se": 123.0,
+"mw_lo": 0.0,
+"mw_hi": 148.0,
+"n_days": 39
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": 3.8,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 973185.73,
+"gross_avg_mw": 450.5489490740741,
+"calendar_hours": 2160,
+"complete": true,
+"nox_kg": 36744.2814009,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
+},
+{
+"q": "2023Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"cap_upper_bound": false,
+"no2_flux": {
+"nox_kgh": -55.0,
+"nox_se": 115.0,
+"mw_lo": 0.0,
+"mw_hi": 121.0,
+"n_days": 37
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": 0.9,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1086626.06,
+"gross_avg_mw": 497.5394047619048,
+"calendar_hours": 2184,
+"complete": true,
+"nox_kg": 39738.47185082,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
+},
+{
 "q": "2023Q3",
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
@@ -44,7 +160,29 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": 2.1
+"ntl": 2.1,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1220766.76,
+"gross_avg_mw": 552.8834963768116,
+"calendar_hours": 2208,
+"complete": true,
+"nox_kg": 45238.36914835,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2023Q4",
@@ -75,7 +213,29 @@
 "n": 40,
 "z": -0.4
 },
-"ntl": 20.9
+"ntl": 20.9,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1328736.98,
+"gross_avg_mw": 601.7830525362318,
+"calendar_hours": 2208,
+"complete": true,
+"nox_kg": 47188.13232206,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2024Q1",
@@ -106,7 +266,29 @@
 "n": 31,
 "z": 2.9
 },
-"ntl": 20.2
+"ntl": 20.2,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1109327.33,
+"gross_avg_mw": 507.9337591575092,
+"calendar_hours": 2184,
+"complete": true,
+"nox_kg": 39935.76366651,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2024Q2",
@@ -137,7 +319,29 @@
 "n": 31,
 "z": -1.9
 },
-"ntl": 20.9
+"ntl": 20.9,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1145037.52,
+"gross_avg_mw": 524.2845787545788,
+"calendar_hours": 2184,
+"complete": true,
+"nox_kg": 41373.71362157,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2024Q3",
@@ -168,7 +372,29 @@
 "n": 28,
 "z": -3.0
 },
-"ntl": 24.5
+"ntl": 24.5,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1534847.31,
+"gross_avg_mw": 695.1301222826087,
+"calendar_hours": 2208,
+"complete": true,
+"nox_kg": 51921.75697808,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2024Q4",
@@ -199,7 +425,29 @@
 "n": 34,
 "z": 0.9
 },
-"ntl": 19.5
+"ntl": 19.5,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 940556.23,
+"gross_avg_mw": 425.976553442029,
+"calendar_hours": 2208,
+"complete": true,
+"nox_kg": 33026.73676593,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2025Q1",
@@ -230,7 +478,29 @@
 "n": 35,
 "z": 4.2
 },
-"ntl": 18.0
+"ntl": 18.0,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1612498.83,
+"gross_avg_mw": 746.5272361111112,
+"calendar_hours": 2160,
+"complete": true,
+"nox_kg": 52785.93662548,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2025Q2",
@@ -261,7 +531,29 @@
 "n": 36,
 "z": -1.1
 },
-"ntl": 25.3
+"ntl": 25.3,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1047777.6299999999,
+"gross_avg_mw": 479.75166208791205,
+"calendar_hours": 2184,
+"complete": true,
+"nox_kg": 36167.09191396,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2025Q3",
@@ -292,7 +584,29 @@
 "n": 30,
 "z": -3.8
 },
-"ntl": 27.5
+"ntl": 27.5,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1489085.6099999999,
+"gross_avg_mw": 674.404714673913,
+"calendar_hours": 2208,
+"complete": true,
+"nox_kg": 50883.56296822,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2025Q4",
@@ -323,7 +637,29 @@
 "n": 39,
 "z": 2.7
 },
-"ntl": 22.0
+"ntl": 22.0,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1264391.92,
+"gross_avg_mw": 572.641268115942,
+"calendar_hours": 2208,
+"complete": true,
+"nox_kg": 42817.653717470006,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2026Q1",
@@ -354,7 +690,29 @@
 "n": 39,
 "z": 6.5
 },
-"ntl": 15.9
+"ntl": 15.9,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1436541.0999999999,
+"gross_avg_mw": 665.065324074074,
+"calendar_hours": 2160,
+"complete": true,
+"nox_kg": 47787.61043088,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2026Q2",
@@ -385,7 +743,29 @@
 "n": 38,
 "z": 6.8
 },
-"ntl": 55.0
+"ntl": 55.0,
+"campd": {
+"plants": [
+{
+"link_id": "southaven_control",
+"oris_id": 55269,
+"name": "Southaven Combined Cycle Plant",
+"gross_mwh": 1365467.28,
+"gross_avg_mw": 625.213956043956,
+"calendar_hours": 2184,
+"complete": true,
+"nox_kg": 44804.0530933,
+"relationship": "non_dedicated_control",
+"eligible": false,
+"source_url": "https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant",
+"reason": "Not a verified >=80% physical allocation with a complete quarter"
+}
+],
+"allocated_gross_avg_mw": null,
+"it_equivalent_avg_mw": null,
+"basis": "plant_evidence_only",
+"caveat": "Plant gross generation times a documented physical share; not a campus meter. IT equivalent uses assumed PUE; station and network losses are not measured."
+}
 },
 {
 "q": "2026Q3",
