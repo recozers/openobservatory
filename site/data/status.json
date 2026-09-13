@@ -2347,6 +2347,174 @@
 "combustion": false
 },
 {
+"site_id": "epoch_meta_sarpy",
+"name": "Meta Sarpy",
+"operator": "Meta",
+"country": "US",
+"lat": 41.111532,
+"lon": -96.1450745,
+"built": "1 of 1 halls, roofed Apr 2025",
+"built_conf": "medium",
+"running": "yes: operator reports an average IT load of 120 MW in 2024 (latest published year, carried forward)",
+"load": "about 120 MW, operator-reported annual electricity \u00f7 8760 h (range 84\u2013156); an average, not a peak",
+"confidence": "high",
+"how": [
+"Sentinel-2 roof dating",
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
+"documented capacity: Epoch AI: Meta Sarpy; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 0.5
+},
+{
+"x": "2018Q2",
+"y": 0.5
+},
+{
+"x": "2018Q3",
+"y": 0.5
+},
+{
+"x": "2018Q4",
+"y": 0.5
+},
+{
+"x": "2019Q1",
+"y": 16.9
+},
+{
+"x": "2019Q2",
+"y": 16.9
+},
+{
+"x": "2019Q3",
+"y": 16.9
+},
+{
+"x": "2019Q4",
+"y": 16.9
+},
+{
+"x": "2020Q1",
+"y": 49.3
+},
+{
+"x": "2020Q2",
+"y": 49.3
+},
+{
+"x": "2020Q3",
+"y": 49.3
+},
+{
+"x": "2020Q4",
+"y": 49.3
+},
+{
+"x": "2021Q1",
+"y": 70.1
+},
+{
+"x": "2021Q2",
+"y": 70.1
+},
+{
+"x": "2021Q3",
+"y": 70.1
+},
+{
+"x": "2021Q4",
+"y": 70.1
+},
+{
+"x": "2022Q1",
+"y": 95.8
+},
+{
+"x": "2022Q2",
+"y": 95.8
+},
+{
+"x": "2022Q3",
+"y": 95.8
+},
+{
+"x": "2022Q4",
+"y": 95.8
+},
+{
+"x": "2023Q1",
+"y": 109.2
+},
+{
+"x": "2023Q2",
+"y": 109.2
+},
+{
+"x": "2023Q3",
+"y": 109.2
+},
+{
+"x": "2023Q4",
+"y": 109.2
+},
+{
+"x": "2024Q1",
+"y": 119.7
+},
+{
+"x": "2024Q2",
+"y": 119.7
+},
+{
+"x": "2024Q3",
+"y": 119.7
+},
+{
+"x": "2024Q4",
+"y": 119.7
+},
+{
+"x": "2025Q1",
+"y": 119.7
+},
+{
+"x": "2025Q2",
+"y": 119.7
+},
+{
+"x": "2025Q3",
+"y": 119.7
+},
+{
+"x": "2025Q4",
+"y": 119.7
+},
+{
+"x": "2026Q1",
+"y": 119.7
+},
+{
+"x": "2026Q2",
+"y": 119.7
+},
+{
+"x": "2026Q3",
+"y": 119.7
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 119.7,
+"est_hi": 155.6,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
 "site_id": "epoch_huawei_horinger",
 "name": "Huawei Horinger",
 "operator": "Huawei",
@@ -3437,6 +3605,298 @@
 "combustion": false
 },
 {
+"site_id": "epoch_meta_los_lunas",
+"name": "Meta Los Lunas",
+"operator": "Meta",
+"country": "US",
+"lat": 34.8301645,
+"lon": -106.7838267,
+"built": "1 of 1 halls, present at the start of observations",
+"built_conf": "medium",
+"running": "yes: operator reports an average IT load of 109 MW in 2024 (latest published year, carried forward)",
+"load": "about 109 MW, operator-reported annual electricity \u00f7 8760 h (range 76\u2013141); an average, not a peak",
+"confidence": "high",
+"how": [
+"Sentinel-2 roof dating",
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
+"documented capacity: Epoch AI: Meta Los Lunas; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 2.5
+},
+{
+"x": "2018Q2",
+"y": 2.5
+},
+{
+"x": "2018Q3",
+"y": 2.5
+},
+{
+"x": "2018Q4",
+"y": 2.5
+},
+{
+"x": "2019Q1",
+"y": 27.5
+},
+{
+"x": "2019Q2",
+"y": 27.5
+},
+{
+"x": "2019Q3",
+"y": 27.5
+},
+{
+"x": "2019Q4",
+"y": 27.5
+},
+{
+"x": "2020Q1",
+"y": 54.3
+},
+{
+"x": "2020Q2",
+"y": 54.3
+},
+{
+"x": "2020Q3",
+"y": 54.3
+},
+{
+"x": "2020Q4",
+"y": 54.3
+},
+{
+"x": "2021Q1",
+"y": 68.3
+},
+{
+"x": "2021Q2",
+"y": 68.3
+},
+{
+"x": "2021Q3",
+"y": 68.3
+},
+{
+"x": "2021Q4",
+"y": 68.3
+},
+{
+"x": "2022Q1",
+"y": 88.4
+},
+{
+"x": "2022Q2",
+"y": 88.4
+},
+{
+"x": "2022Q3",
+"y": 88.4
+},
+{
+"x": "2022Q4",
+"y": 88.4
+},
+{
+"x": "2023Q1",
+"y": 105.6
+},
+{
+"x": "2023Q2",
+"y": 105.6
+},
+{
+"x": "2023Q3",
+"y": 105.6
+},
+{
+"x": "2023Q4",
+"y": 105.6
+},
+{
+"x": "2024Q1",
+"y": 108.8
+},
+{
+"x": "2024Q2",
+"y": 108.8
+},
+{
+"x": "2024Q3",
+"y": 108.8
+},
+{
+"x": "2024Q4",
+"y": 108.8
+},
+{
+"x": "2025Q1",
+"y": 108.8
+},
+{
+"x": "2025Q2",
+"y": 108.8
+},
+{
+"x": "2025Q3",
+"y": 108.8
+},
+{
+"x": "2025Q4",
+"y": 108.8
+},
+{
+"x": "2026Q1",
+"y": 108.8
+},
+{
+"x": "2026Q2",
+"y": 108.8
+},
+{
+"x": "2026Q3",
+"y": 108.8
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 108.8,
+"est_hi": 141.4,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "epoch_meta_eagle_mountain",
+"name": "Meta Eagle Mountain",
+"operator": "Meta",
+"country": "US",
+"lat": 40.2652905,
+"lon": -112.0192505,
+"built": "1 of 2 halls, roofed May 2024; 1 roof dates unresolved",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 106 MW in 2024 (latest published year, carried forward)",
+"load": "about 106 MW, operator-reported annual electricity \u00f7 8760 h (range 74\u2013138); an average, not a peak",
+"confidence": "high",
+"how": [
+"Sentinel-2 roof dating",
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
+"documented capacity: Epoch AI: Meta Eagle Mountain; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": 21.8
+},
+{
+"x": "2021Q2",
+"y": 21.8
+},
+{
+"x": "2021Q3",
+"y": 21.8
+},
+{
+"x": "2021Q4",
+"y": 21.8
+},
+{
+"x": "2022Q1",
+"y": 47.9
+},
+{
+"x": "2022Q2",
+"y": 47.9
+},
+{
+"x": "2022Q3",
+"y": 47.9
+},
+{
+"x": "2022Q4",
+"y": 47.9
+},
+{
+"x": "2023Q1",
+"y": 74.9
+},
+{
+"x": "2023Q2",
+"y": 74.9
+},
+{
+"x": "2023Q3",
+"y": 74.9
+},
+{
+"x": "2023Q4",
+"y": 74.9
+},
+{
+"x": "2024Q1",
+"y": 106.2
+},
+{
+"x": "2024Q2",
+"y": 106.2
+},
+{
+"x": "2024Q3",
+"y": 106.2
+},
+{
+"x": "2024Q4",
+"y": 106.2
+},
+{
+"x": "2025Q1",
+"y": 106.2
+},
+{
+"x": "2025Q2",
+"y": 106.2
+},
+{
+"x": "2025Q3",
+"y": 106.2
+},
+{
+"x": "2025Q4",
+"y": 106.2
+},
+{
+"x": "2026Q1",
+"y": 106.2
+},
+{
+"x": "2026Q2",
+"y": 106.2
+},
+{
+"x": "2026Q3",
+"y": 106.2
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 106.2,
+"est_hi": 138.0,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
 "site_id": "epoch_amazon_ridgeland",
 "name": "Amazon Ridgeland",
 "operator": "Amazon",
@@ -3615,211 +4075,6 @@
 "est_hi": 132.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
-},
-{
-"site_id": "prometheus_oh",
-"name": "Meta Prometheus (New Albany)",
-"operator": "Meta",
-"country": "US",
-"lat": 40.062,
-"lon": -82.746,
-"built": "5 of 5 halls; 1 present at first observations; 4 roofed Oct 2020 to May 2024",
-"built_conf": "low",
-"running": "presumably: documented 217 MW in force since 2019Q1; not directly observed",
-"load": "44\u2013130 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"ECOSTRESS night thermal (negative: roofs do not track load)",
-"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
-"documented capacity: AEP Ohio Schedule DCT interim arrangement: up to 250 MW new load for Meta New Albany, Jan "
-],
-"key": "roofs",
-"series": [
-{
-"x": "2018Q1",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2018Q2",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2018Q3",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2018Q4",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2019Q1",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2019Q2",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2019Q3",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2019Q4",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2020Q1",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2020Q2",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2020Q3",
-"y": 1,
-"y2": 6.2
-},
-{
-"x": "2020Q4",
-"y": 2,
-"y2": 6.2
-},
-{
-"x": "2021Q1",
-"y": 2,
-"y2": 6.2
-},
-{
-"x": "2021Q2",
-"y": 3,
-"y2": 9.6
-},
-{
-"x": "2021Q3",
-"y": 3,
-"y2": 9.6
-},
-{
-"x": "2021Q4",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2022Q1",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2022Q2",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2022Q3",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2022Q4",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2023Q1",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2023Q2",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2023Q3",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2023Q4",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2024Q1",
-"y": 3,
-"y2": 15.2
-},
-{
-"x": "2024Q2",
-"y": 5,
-"y2": 15.2
-},
-{
-"x": "2024Q3",
-"y": 5,
-"y2": 15.2
-},
-{
-"x": "2024Q4",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2025Q1",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2025Q2",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2025Q3",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2025Q4",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2026Q1",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2026Q2",
-"y": 5,
-"y2": 21.4
-},
-{
-"x": "2026Q3",
-"y": 5,
-"y2": 21.4
-}
-],
-"series_label": "halls roofed (of 5)",
-"recent": "last roof completed May 2024",
-"est_mid": 87.0,
-"est_hi": 130.4,
-"last_q": "2026Q3",
-"polygons_low": true,
 "combustion": false
 },
 {
@@ -4811,6 +5066,131 @@
 "recent": "last roof completed Mar 2023",
 "est_mid": 72.0,
 "est_hi": 108.0,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "epoch_meta_huntsville",
+"name": "Meta Huntsville",
+"operator": "Meta",
+"country": "US",
+"lat": 34.8538665,
+"lon": -86.626198,
+"built": "2 of 2 halls, roofed Sep 2022 to Jul 2025",
+"built_conf": "medium",
+"running": "yes: operator reports an average IT load of 82 MW in 2024 (latest published year, carried forward)",
+"load": "about 82 MW, operator-reported annual electricity \u00f7 8760 h (range 58\u2013107); an average, not a peak",
+"confidence": "high",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
+"documented capacity: Epoch AI: Meta Huntsville; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": 8.1
+},
+{
+"x": "2021Q2",
+"y": 8.1
+},
+{
+"x": "2021Q3",
+"y": 8.1
+},
+{
+"x": "2021Q4",
+"y": 8.1
+},
+{
+"x": "2022Q1",
+"y": 35.1
+},
+{
+"x": "2022Q2",
+"y": 35.1
+},
+{
+"x": "2022Q3",
+"y": 35.1
+},
+{
+"x": "2022Q4",
+"y": 35.1
+},
+{
+"x": "2023Q1",
+"y": 58.4
+},
+{
+"x": "2023Q2",
+"y": 58.4
+},
+{
+"x": "2023Q3",
+"y": 58.4
+},
+{
+"x": "2023Q4",
+"y": 58.4
+},
+{
+"x": "2024Q1",
+"y": 82.3
+},
+{
+"x": "2024Q2",
+"y": 82.3
+},
+{
+"x": "2024Q3",
+"y": 82.3
+},
+{
+"x": "2024Q4",
+"y": 82.3
+},
+{
+"x": "2025Q1",
+"y": 82.3
+},
+{
+"x": "2025Q2",
+"y": 82.3
+},
+{
+"x": "2025Q3",
+"y": 82.3
+},
+{
+"x": "2025Q4",
+"y": 82.3
+},
+{
+"x": "2026Q1",
+"y": 82.3
+},
+{
+"x": "2026Q2",
+"y": 82.3
+},
+{
+"x": "2026Q3",
+"y": 82.3
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 82.3,
+"est_hi": 107.0,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false
@@ -6015,124 +6395,6 @@
 "combustion": false
 },
 {
-"site_id": "epoch_meta_huntsville",
-"name": "Meta Huntsville",
-"operator": "Meta",
-"country": "US",
-"lat": 34.8538665,
-"lon": -86.626198,
-"built": "2 of 2 halls, roofed Sep 2022 to Jul 2025",
-"built_conf": "medium",
-"running": "presumably: documented 146 MW in force since 2026Q1; not directly observed",
-"load": "29\u201388 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Meta Huntsville; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2022Q2",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2022Q4",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2023Q1",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2023Q2",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2023Q3",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2023Q4",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2024Q1",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2024Q2",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2024Q3",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2024Q4",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2025Q1",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2025Q2",
-"y": 1,
-"y2": 3.3
-},
-{
-"x": "2025Q3",
-"y": 2,
-"y2": 3.3
-},
-{
-"x": "2025Q4",
-"y": 2,
-"y2": 3.3
-},
-{
-"x": "2026Q1",
-"y": 2,
-"y2": 6.1
-},
-{
-"x": "2026Q2",
-"y": 2,
-"y2": 6.1
-},
-{
-"x": "2026Q3",
-"y": 2,
-"y2": 6.1
-}
-],
-"series_label": "halls roofed (of 2)",
-"recent": "last roof completed Jul 2025",
-"est_mid": 58.4,
-"est_hi": 87.6,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false
-},
-{
 "site_id": "epoch_qts_richmond_3",
 "name": "QTS Richmond 3",
 "operator": "",
@@ -6466,88 +6728,6 @@
 "combustion": false
 },
 {
-"site_id": "epoch_meta_eagle_mountain",
-"name": "Meta Eagle Mountain",
-"operator": "Meta",
-"country": "US",
-"lat": 40.2652905,
-"lon": -112.0192505,
-"built": "1 of 2 halls, roofed May 2024; 1 roof dates unresolved",
-"built_conf": "low",
-"running": "presumably: documented 133 MW in force since 2025Q4; not directly observed",
-"load": "27\u201380 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Meta Eagle Mountain; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2024Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2024Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q4",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2025Q1",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2025Q2",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2025Q3",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2025Q4",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2026Q1",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2026Q2",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2026Q3",
-"y": 1,
-"y2": 2.8
-}
-],
-"series_label": "halls roofed (of 2)",
-"recent": "last roof completed May 2024",
-"est_mid": 53.2,
-"est_hi": 79.8,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false
-},
-{
 "site_id": "epoch_coreweave_helios",
 "name": "Coreweave Helios",
 "operator": "CoreWeave",
@@ -6729,6 +6909,176 @@
 "est_hi": 72.1,
 "last_q": "2026Q3",
 "polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "prometheus_oh",
+"name": "Meta Prometheus (New Albany)",
+"operator": "Meta",
+"country": "US",
+"lat": 40.062,
+"lon": -82.746,
+"built": "5 of 5 halls; 1 present at first observations; 4 roofed Oct 2020 to May 2024",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 52 MW in 2024 (latest published year, carried forward)",
+"load": "about 52 MW, operator-reported annual electricity \u00f7 8760 h (range 36\u201367); an average, not a peak",
+"confidence": "high",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"ECOSTRESS night thermal (negative: roofs do not track load)",
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
+"documented capacity: AEP Ohio Schedule DCT interim arrangement: up to 250 MW new load for Meta New Albany, Jan "
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": null
+},
+{
+"x": "2018Q2",
+"y": null
+},
+{
+"x": "2018Q3",
+"y": null
+},
+{
+"x": "2018Q4",
+"y": null
+},
+{
+"x": "2019Q1",
+"y": 3.7
+},
+{
+"x": "2019Q2",
+"y": 3.7
+},
+{
+"x": "2019Q3",
+"y": 3.7
+},
+{
+"x": "2019Q4",
+"y": 3.7
+},
+{
+"x": "2020Q1",
+"y": 26.8
+},
+{
+"x": "2020Q2",
+"y": 26.8
+},
+{
+"x": "2020Q3",
+"y": 26.8
+},
+{
+"x": "2020Q4",
+"y": 26.8
+},
+{
+"x": "2021Q1",
+"y": 50.8
+},
+{
+"x": "2021Q2",
+"y": 50.8
+},
+{
+"x": "2021Q3",
+"y": 50.8
+},
+{
+"x": "2021Q4",
+"y": 50.8
+},
+{
+"x": "2022Q1",
+"y": 69.7
+},
+{
+"x": "2022Q2",
+"y": 69.7
+},
+{
+"x": "2022Q3",
+"y": 69.7
+},
+{
+"x": "2022Q4",
+"y": 69.7
+},
+{
+"x": "2023Q1",
+"y": 78.7
+},
+{
+"x": "2023Q2",
+"y": 78.7
+},
+{
+"x": "2023Q3",
+"y": 78.7
+},
+{
+"x": "2023Q4",
+"y": 78.7
+},
+{
+"x": "2024Q1",
+"y": 51.7
+},
+{
+"x": "2024Q2",
+"y": 51.7
+},
+{
+"x": "2024Q3",
+"y": 51.7
+},
+{
+"x": "2024Q4",
+"y": 51.7
+},
+{
+"x": "2025Q1",
+"y": 51.7
+},
+{
+"x": "2025Q2",
+"y": 51.7
+},
+{
+"x": "2025Q3",
+"y": 51.7
+},
+{
+"x": "2025Q4",
+"y": 51.7
+},
+{
+"x": "2026Q1",
+"y": 51.7
+},
+{
+"x": "2026Q2",
+"y": 51.7
+},
+{
+"x": "2026Q3",
+"y": 51.7
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 51.7,
+"est_hi": 67.3,
+"last_q": "2026Q3",
+"polygons_low": true,
 "combustion": false
 },
 {
@@ -7308,235 +7658,6 @@
 "combustion": false
 },
 {
-"site_id": "epoch_meta_gallatin",
-"name": "Meta Gallatin",
-"operator": "Meta",
-"country": "US",
-"lat": 36.4071355,
-"lon": -86.368472,
-"built": "1 of 1 halls, roofed Apr 2025",
-"built_conf": "medium",
-"running": "presumably: documented 87 MW in force since 2026Q2; not directly observed",
-"load": "17\u201352 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Meta Gallatin; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2025Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2025Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2025Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2025Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2026Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2026Q2",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2026Q3",
-"y": 1,
-"y2": 2.7
-}
-],
-"series_label": "halls roofed (of 1)",
-"recent": "last roof completed Apr 2025",
-"est_mid": 34.8,
-"est_hi": 52.2,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false
-},
-{
-"site_id": "epoch_meta_los_lunas",
-"name": "Meta Los Lunas",
-"operator": "Meta",
-"country": "US",
-"lat": 34.8301645,
-"lon": -106.7838267,
-"built": "1 of 1 halls, present at the start of observations",
-"built_conf": "medium",
-"running": "presumably: documented 87 MW in force since 2026Q1; not directly observed",
-"load": "17\u201352 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Meta Los Lunas; IT power (MW); reported estimate"
-],
-"key": "capacity",
-"series": [
-{
-"x": "2018Q1",
-"y": null
-},
-{
-"x": "2018Q2",
-"y": null
-},
-{
-"x": "2018Q3",
-"y": null
-},
-{
-"x": "2018Q4",
-"y": null
-},
-{
-"x": "2019Q1",
-"y": null
-},
-{
-"x": "2019Q2",
-"y": null
-},
-{
-"x": "2019Q3",
-"y": null
-},
-{
-"x": "2019Q4",
-"y": null
-},
-{
-"x": "2020Q1",
-"y": null
-},
-{
-"x": "2020Q2",
-"y": null
-},
-{
-"x": "2020Q3",
-"y": null
-},
-{
-"x": "2020Q4",
-"y": null
-},
-{
-"x": "2021Q1",
-"y": null
-},
-{
-"x": "2021Q2",
-"y": null
-},
-{
-"x": "2021Q3",
-"y": null
-},
-{
-"x": "2021Q4",
-"y": null
-},
-{
-"x": "2022Q1",
-"y": null
-},
-{
-"x": "2022Q2",
-"y": null
-},
-{
-"x": "2022Q3",
-"y": null
-},
-{
-"x": "2022Q4",
-"y": null
-},
-{
-"x": "2023Q1",
-"y": null
-},
-{
-"x": "2023Q2",
-"y": null
-},
-{
-"x": "2023Q3",
-"y": null
-},
-{
-"x": "2023Q4",
-"y": null
-},
-{
-"x": "2024Q1",
-"y": null
-},
-{
-"x": "2024Q2",
-"y": null
-},
-{
-"x": "2024Q3",
-"y": 0.0
-},
-{
-"x": "2024Q4",
-"y": 0.0
-},
-{
-"x": "2025Q1",
-"y": 0.0
-},
-{
-"x": "2025Q2",
-"y": 0.0
-},
-{
-"x": "2025Q3",
-"y": 0.0
-},
-{
-"x": "2025Q4",
-"y": 0.0
-},
-{
-"x": "2026Q1",
-"y": 87.0
-},
-{
-"x": "2026Q2",
-"y": 87.0
-},
-{
-"x": "2026Q3",
-"y": 87.0
-}
-],
-"series_label": "documented capacity, MW",
-"recent": "",
-"est_mid": 34.8,
-"est_hi": 52.2,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false
-},
-{
 "site_id": "epoch_stack_infrastructure_nva02",
 "name": "STACK Infrastructure NVA02",
 "operator": "",
@@ -7856,68 +7977,6 @@
 "recent": "last roof completed Feb 2025",
 "est_mid": 32.8,
 "est_hi": 49.2,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false
-},
-{
-"site_id": "epoch_meta_sarpy",
-"name": "Meta Sarpy",
-"operator": "Meta",
-"country": "US",
-"lat": 41.111532,
-"lon": -96.1450745,
-"built": "1 of 1 halls, roofed Apr 2025",
-"built_conf": "medium",
-"running": "presumably: documented 80 MW in force since 2026Q3; not directly observed",
-"load": "16\u201348 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Meta Sarpy; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2025Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2025Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2025Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2025Q4",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2026Q1",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2026Q2",
-"y": 1,
-"y2": 2.8
-},
-{
-"x": "2026Q3",
-"y": 1,
-"y2": 2.8
-}
-],
-"series_label": "halls roofed (of 1)",
-"recent": "last roof completed Apr 2025",
-"est_mid": 32.0,
-"est_hi": 48.0,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false
@@ -8284,6 +8343,114 @@
 "recent": "last roof completed Nov 2018",
 "est_mid": 30.0,
 "est_hi": 45.0,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "epoch_meta_gallatin",
+"name": "Meta Gallatin",
+"operator": "Meta",
+"country": "US",
+"lat": 36.4071355,
+"lon": -86.368472,
+"built": "1 of 1 halls, roofed Apr 2025",
+"built_conf": "medium",
+"running": "yes: operator reports an average IT load of 34 MW in 2024 (latest published year, carried forward)",
+"load": "about 34 MW, operator-reported annual electricity \u00f7 8760 h (range 24\u201344); an average, not a peak",
+"confidence": "high",
+"how": [
+"Sentinel-2 roof dating",
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)",
+"documented capacity: Epoch AI: Meta Gallatin; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2021Q4",
+"y": 0.0
+},
+{
+"x": "2022Q1",
+"y": 0.6
+},
+{
+"x": "2022Q2",
+"y": 0.6
+},
+{
+"x": "2022Q3",
+"y": 0.6
+},
+{
+"x": "2022Q4",
+"y": 0.6
+},
+{
+"x": "2023Q1",
+"y": 11.1
+},
+{
+"x": "2023Q2",
+"y": 11.1
+},
+{
+"x": "2023Q3",
+"y": 11.1
+},
+{
+"x": "2023Q4",
+"y": 11.1
+},
+{
+"x": "2024Q1",
+"y": 34.2
+},
+{
+"x": "2024Q2",
+"y": 34.2
+},
+{
+"x": "2024Q3",
+"y": 34.2
+},
+{
+"x": "2024Q4",
+"y": 34.2
+},
+{
+"x": "2025Q1",
+"y": 34.2
+},
+{
+"x": "2025Q2",
+"y": 34.2
+},
+{
+"x": "2025Q3",
+"y": 34.2
+},
+{
+"x": "2025Q4",
+"y": 34.2
+},
+{
+"x": "2026Q1",
+"y": 34.2
+},
+{
+"x": "2026Q2",
+"y": 34.2
+},
+{
+"x": "2026Q3",
+"y": 34.2
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 34.2,
+"est_hi": 44.5,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false

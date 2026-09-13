@@ -100,10 +100,10 @@
   "quarters": 16
  },
  "prometheus_oh": {
-  "est_mid": 87.0,
-  "est_lo": 43.5,
-  "est_hi": 130.4,
-  "basis": "documented capacity in force (A2, grid_connection) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 51.7,
+  "est_lo": 36.2,
+  "est_hi": 67.3,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": true,
@@ -500,14 +500,14 @@
   "quarters": 11
  },
  "epoch_meta_huntsville": {
-  "est_mid": 58.4,
-  "est_lo": 29.2,
-  "est_hi": 87.6,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 82.3,
+  "est_lo": 57.6,
+  "est_hi": 107.0,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
-  "quarters": 18
+  "quarters": 24
  },
  "epoch_meta_aiken": {
   "est_mid": 56.8,
@@ -540,14 +540,14 @@
   "quarters": 32
  },
  "epoch_meta_eagle_mountain": {
-  "est_mid": 53.2,
-  "est_lo": 26.6,
-  "est_hi": 79.8,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 106.2,
+  "est_lo": 74.3,
+  "est_hi": 138.0,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
-  "quarters": 11
+  "quarters": 24
  },
  "epoch_google_midlothian": {
   "est_mid": 41.2,
@@ -650,20 +650,20 @@
   "quarters": 24
  },
  "epoch_meta_gallatin": {
-  "est_mid": 34.8,
-  "est_lo": 17.4,
-  "est_hi": 52.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 34.2,
+  "est_lo": 24.0,
+  "est_hi": 44.5,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
-  "quarters": 7
+  "quarters": 20
  },
  "epoch_meta_los_lunas": {
-  "est_mid": 34.8,
-  "est_lo": 17.4,
-  "est_hi": 52.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 108.8,
+  "est_lo": 76.1,
+  "est_hi": 141.4,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
@@ -680,14 +680,14 @@
   "quarters": 11
  },
  "epoch_meta_sarpy": {
-  "est_mid": 32.0,
-  "est_lo": 16.0,
-  "est_hi": 48.0,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 119.7,
+  "est_lo": 83.8,
+  "est_hi": 155.6,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
-  "quarters": 7
+  "quarters": 35
  },
  "epoch_coreweave_chester_va": {
   "est_mid": 32.8,
@@ -1028,5 +1028,105 @@
   "no2": false,
   "night": false,
   "quarters": 35
+ },
+ "meta_altoona": {
+  "est_mid": 164.5,
+  "est_lo": 115.2,
+  "est_hi": 213.9,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "meta_fort_worth": {
+  "est_mid": 115.1,
+  "est_lo": 80.6,
+  "est_hi": 149.6,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "meta_newton": {
+  "est_mid": 122.9,
+  "est_lo": 86.0,
+  "est_hi": 159.8,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 24
+ },
+ "meta_henrico": {
+  "est_mid": 98.5,
+  "est_lo": 68.9,
+  "est_hi": 128.0,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 32
+ },
+ "meta_odense": {
+  "est_mid": 59.1,
+  "est_lo": 41.4,
+  "est_hi": 76.8,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "meta_dekalb": {
+  "est_mid": 38.6,
+  "est_lo": 27.0,
+  "est_hi": 50.2,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 24
+ },
+ "meta_clonee": {
+  "est_mid": 111.7,
+  "est_lo": 78.2,
+  "est_hi": 145.2,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "meta_forest_city": {
+  "est_mid": 55.5,
+  "est_lo": 38.9,
+  "est_hi": 72.2,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "meta_kansas_city": {
+  "est_mid": 2.4,
+  "est_lo": 1.7,
+  "est_hi": 3.1,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 12
+ },
+ "meta_mesa": {
+  "est_mid": 2.5,
+  "est_lo": 1.8,
+  "est_hi": 3.3,
+  "basis": "documented capacity in force (A2, carried_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 12
  }
 }

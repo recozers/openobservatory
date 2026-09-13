@@ -74,7 +74,9 @@ def cap_in_force(tl, sid, date, pue):
     if not past.empty:
         m = past.iloc[-1]
         months = (pd.Period(date[:7], freq="M") - pd.Period(m.valid_to[:7], freq="M")).n
-        newer = r[r.valid_from > m.valid_to]
+        # only a regulator/measured figure (A1) or a newer measurement displaces a carried measured average; third-party
+        # estimates (Epoch it_reported, facility_design) often describe just the newest cluster, not the campus
+        newer = r[(r.valid_from > m.valid_to) & ((r.tier == "A1") | r.capacity_basis.isin(MEASURED))]
         if months <= 24 and newer.empty:
             basis = "carried_measured_annual" if m.capacity_basis == "facility_measured_annual" else "carried_it_measured_annual"
             return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis
