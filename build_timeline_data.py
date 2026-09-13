@@ -39,12 +39,30 @@ def quarters(start="2018Q1", end=None):
     return list(pd.period_range(start, end, freq="Q"))
 
 
+MEASURED = ("facility_measured_annual", "it_measured_annual")
+
+
 def it_mw(cap, basis, pue):
-    return cap / pue if basis in ("facility_design", "grid_connection") else cap
+    return cap / pue if basis in ("facility_design", "grid_connection", "facility_measured_annual", "carried_measured_annual") else cap
 
 
 def cap_in_force(tl, sid, date, pue):
-    r = tl[(tl.site_id == sid) & (tl.valid_from <= date) & ((tl.valid_to == "") | (tl.valid_to >= date))]
+    """Capacity row in force at `date`. An operator-reported annual average (measured) beats every other basis; when the
+    last measured year ended less than 24 months before `date` and no newer row has started since, it is carried forward."""
+    mine = tl[tl.site_id == sid]
+    r = mine[(mine.valid_from <= date) & ((mine.valid_to == "") | (mine.valid_to >= date))]
+    meas = r[r.capacity_basis.isin(MEASURED)]
+    if not meas.empty:
+        m = meas.sort_values("valid_from").iloc[-1]
+        return it_mw(float(m.capacity_mw), m.capacity_basis, pue), m.tier, m.capacity_basis
+    past = mine[mine.capacity_basis.isin(MEASURED) & (mine.valid_to != "") & (mine.valid_to < date)].sort_values("valid_to")
+    if not past.empty:
+        m = past.iloc[-1]
+        months = (pd.Period(date[:7], freq="M") - pd.Period(m.valid_to[:7], freq="M")).n
+        newer = r[r.valid_from > m.valid_to]
+        if months <= 24 and newer.empty:
+            basis = "carried_measured_annual" if m.capacity_basis == "facility_measured_annual" else "carried_it_measured_annual"
+            return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis
     if r.empty:
         return None, None, None
     r = r.sort_values("valid_from").iloc[-1]
@@ -52,6 +70,21 @@ def cap_in_force(tl, sid, date, pue):
     if r.capacity_basis == "placeholder":
         return 0.0, r.tier, "placeholder"
     return it_mw(cap, r.capacity_basis, pue), r.tier, r.capacity_basis
+
+
+def utilisation_prior(cap_basis, site_class):
+    """(lo, mid, hi) multipliers on the capacity figure in force. Calibration so far: Meta per-site annual electricity gives
+    Lulea at 0.25-0.45 of its 120 MW grid feed (2022-2024) and New Albany at 0.24-0.36 of its 250 MW connection (2023-2024);
+    ORNL Frontier averaged 12.2 MW in 2023 against 21-23 MW measured at HPL. AI-training campuses have no calibration yet."""
+    if cap_basis in MEASURED:
+        return 0.9, 1.0, 1.1, "operator-reported annual average electricity ÷ 8760 h, ±10 %"
+    if cap_basis in ("carried_measured_annual", "carried_it_measured_annual"):
+        return 0.7, 1.0, 1.3, "last operator-reported annual average carried forward (no newer figure), 0.7–1.3"
+    if cap_basis == "it_measured_hpl":
+        return 0.4, 0.6, 0.9, "HPL-measured system power × annual-average factor 0.4–0.9 (Frontier 2023: 0.55)"
+    if site_class in ("cloud", "mixed_cloud_ai", "hub"):
+        return 0.2, 0.4, 0.6, "utilisation 0.2–0.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24–0.45)"
+    return 0.5, 0.8, 1.0, "utilisation assumption 0.5–1.0 (AI-training campus, uncalibrated)"
 
 
 def quarterly_stats(df, tcol, vcol):
@@ -191,7 +224,8 @@ def main():
             built_ha = sum(h["area_ha"] for h in roofed)
             fitted_ha = sum(h["area_ha"] for h in fitted)
             if cap is not None and cap > 0:
-                lo, mid, hi, basis = 0.5 * cap, 0.8 * cap, 1.0 * cap, f"documented capacity in force ({cap_tier}, {cap_basis}) × utilisation assumption 0.5–1.0"
+                ulo, umid, uhi, utext = utilisation_prior(cap_basis, str(s.get("site_class") or "cloud"))
+                lo, mid, hi, basis = ulo * cap, umid * cap, uhi * cap, f"documented capacity in force ({cap_tier}, {cap_basis}) × {utext}"
             elif cap == 0.0 and cap_basis == "placeholder" and fitted_ha == 0:
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, "pre-operation (documented placeholder)"
             elif (fitted_ha > 0 and cap is None) or (cap == 0.0 and fitted_ha > 0):

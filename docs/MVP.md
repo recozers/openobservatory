@@ -177,3 +177,17 @@ roofs not yet on. Consistent with the thermal result: hall roofs are cold roofs.
 Nothing here changes a load band. Radar dates and lit-up months appear in "how we know"; the utilisation question is unchanged.
 Next: the tiled lights scan over the western hub provinces (`tools/ntl_scan_tiles.py`), polygons for the campuses the radar
 scan found (Astra task A8), and a Sentinel-2 roof timeline run automatically for every radar candidate.
+
+## Operator disclosures, 13 Sep 2026 (night): the first measured loads on the site
+
+Meta publishes annual electricity per campus in its Environmental Data Index (2011–2024). `data/operator_disclosures.csv`
+holds the series with URLs; `data/capacity_timeline.csv` carries them as `facility_measured_annual` rows (tier A2), which
+now take precedence over any other capacity figure in the site build and give a band of ±10 % around the year's average.
+Prineville: 8 MW average in 2011 to 197 MW in 2024 (1,728 GWh). Luleå: 54 MW in 2024 against a 120 MW grid feed, with a dip
+to 30 MW in 2022 that no satellite method here could have seen. New Albany: 91 MW in 2023, 60 MW in 2024 against a 250 MW
+connection. ORNL Frontier: 12.2 MW average in 2023 against 21–23 MW at HPL. These ratios replace the 0.5–1.0 utilisation
+assumption for cloud campuses (now 0.2–0.6) and supercomputers (0.4–0.9); AI-training campuses keep 0.5–1.0 until a
+disclosure or filing calibrates them. The site's "running" line says "operator reports an average IT load of N MW in YEAR"
+for these sites, confidence high. Chinese listed operators (VNET, GDS, Chindata, Sinnet, the three telcos) publish
+company-wide capacity and utilisation only; the per-campus figures that exist are opening press releases and park-committee
+statements, which stay outside the evidence (`docs/cn_operator_disclosures_notes.md`).

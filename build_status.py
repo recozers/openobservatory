@@ -84,9 +84,16 @@ def main():
             running = f"yes: on-site generation detected since {fx_months[0]}"
             load = f"about {last['est_mid']:.0f} MW from NO₂ (range {last['est_lo']:.0f}–{last['est_hi']:.0f}; absolute value uncertain 2–3×, month-to-month changes reliable)"
             conf, key = "high", "nox"
+        elif str(last.get("cap_basis") or "").endswith("measured_annual") and cap_now:
+            meas_q = [q for q in Q if str(q.get("cap_basis") or "") in ("facility_measured_annual", "it_measured_annual")]
+            yr = meas_q[-1]["q"][:4] if meas_q else "?"
+            carried = "carried" in str(last.get("cap_basis"))
+            running = f"yes: operator reports an average IT load of {cap_now:.0f} MW in {yr}" + (" (latest published year, carried forward)" if carried else "")
+            load = f"about {last['est_mid']:.0f} MW, operator-reported annual electricity ÷ 8760 h (range {last['est_lo']:.0f}–{last['est_hi']:.0f}); an average, not a peak"
+            conf, key = "high", "capacity"
         elif no2_active and cap_now:
             running = f"yes: combustion activity detected (NO₂) since {no2_active[0]}; documented {cap_now:.0f} MW in force"
-            load = f"documented capacity {cap_now:.0f} MW × 0.5–1.0 utilisation; not directly measured"
+            load = f"documented capacity {cap_now:.0f} MW × utilisation prior = {last['est_lo']:.0f}–{last['est_hi']:.0f} MW; not directly measured"
             conf, key = "medium", "roofs" if (t or {}).get("s2_available") else "capacity"
         elif cap_now:
             running = f"presumably: documented {cap_now:.0f} MW in force since {cap_since}; not directly observed"
@@ -117,6 +124,8 @@ def main():
             how.append("TROPOMI NOx flux (calibrated on EPA-monitored plants)")
         if (t or {}).get("thermal_night_available"):
             how.append("ECOSTRESS night thermal (negative: roofs do not track load)")
+        if any(str(q.get("cap_basis") or "") in ("facility_measured_annual", "it_measured_annual") for q in Q):
+            how.append("operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)")
         if s.get("capacity_source"):
             how.append(f"documented capacity: {s['capacity_source'][:90]}")
         # ---- key series
@@ -133,7 +142,8 @@ def main():
         elif key == "capacity":
             for q in Q:
                 series.append(dict(x=q["q"], y=q.get("cap_doc_mw")))
-            series_label = "documented capacity, MW"
+            measured = any(str(q.get("cap_basis") or "") in ("facility_measured_annual", "it_measured_annual") for q in Q)
+            series_label = "operator-reported average IT load, MW (annual; documented capacity where no report)" if measured else "documented capacity, MW"
         else:
             series_label = ""
         # recent change

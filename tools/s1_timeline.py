@@ -138,6 +138,14 @@ def candidates(args):
     df = pd.DataFrame(rows)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(f"{args.out}_candidates.csv", index=False)
+    # blob outlines as GeoJSON so the optical stage (tools/s2_roof_timeline.py) can date each candidate's roof
+    import json
+    gj = {"type": "FeatureCollection", "features": [
+        {"type": "Feature", "geometry": f["geometry"],
+         "properties": {"name": f"cand{r['rank']:02d}", "ptype": "hall", "confidence": "low", "rank": r["rank"], "area_ha": r["area_ha"],
+                        "rise_db": r["rise_db"], "digitised_from": f"Sentinel-1 VV rise {args.early}->{args.late}, orbit {orb}"}}
+        for f, r in zip(feats, rows)]}
+    Path(f"{args.out}_candidates.geojson").write_text(json.dumps(gj))
     print(f"{len(df)} candidates (VV rise >= {args.min_db} dB, late VV >= {args.min_vv} dB, >= {0.04 * args.min_px:.1f} ha) in a {2 * args.half / 1000:.0f} km box at {lat},{lon}; orbit {orb}")
     print(df.head(30).to_string(index=False))
     def s2med(y, region):

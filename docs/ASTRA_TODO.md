@@ -140,6 +140,22 @@ validation: their known halls must appear in the top ranks), and for the Chinese
 qingyang_hub if missing). Note the recall at the known sites and the false-positive types in `docs/LOG.md`. Accept: a
 candidates CSV per site; a table of recall.
 
+### A10. Chinese operator filings, campus level  [no-EE]
+`docs/cn_operator_disclosures_notes.md` found that no listed operator gives per-campus figures in its headline tables, but
+Chindata's FY2022 20-F has a per-data-centre table (CN01–CN23, MW per site inside the Zhangjiakou/Datong clusters) that was
+not parsed, and VNET's 6-Ks mention Ulanqab orders (235 MW, a 100 MW framework) that could not be fetched. Download the
+filings from EDGAR with a declared User-Agent, parse those tables into `data/cn_operator_disclosures.csv` (campus, MW in
+service, utilised, period, URL), and run an EDGAR full-text search for "Ulanqab", "Zhangbei", "Horinger", "Gui'an",
+"Zhongwei" across VNET, GDS and Chindata filings. Accept: every per-campus MW figure in those filings recorded with its URL.
+
+### A11. Operator disclosure ingest  [no-EE]
+Write `tools/ingest_disclosures.py` that turns `data/operator_disclosures.csv` electricity rows into
+`data/capacity_timeline.csv` rows (basis `facility_measured_annual`, tier A2) idempotently, so the next Meta index (each
+July) is a one-line update. Then extend the CSV: Meta's other campuses that are in the Epoch list (Forest City, Altoona,
+Fort Worth, Los Lunas, Papillion, Henrico, Newton, Eagle Mountain, Huntsville, DeKalb, Gallatin, Kuna, Mesa, Temple, Odense,
+Clonee), Microsoft's FY25 metro table, and Google per-site water/PUE as context rows. Accept: the ingest is idempotent
+(running twice adds nothing); at least ten more sites have measured annual loads once A1 adds them to the inventory.
+
 ## Claude's research (do not duplicate; results land in `docs/` and `results_*/`)
 
 - Done 13 Sep: Sentinel-1 structure dating and candidate scan (validated at Abilene; new campuses found at Horinger and

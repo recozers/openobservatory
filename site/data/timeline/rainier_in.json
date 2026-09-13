@@ -373,7 +373,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": -0.05,
 "se": 0.16,
@@ -405,7 +405,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": -0.03,
 "se": 0.31,
@@ -437,7 +437,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": 0.14,
 "se": 0.02,
@@ -469,7 +469,7 @@
 "est_lo": 539.1,
 "est_mid": 862.6,
 "est_hi": 1078.3,
-"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0 (AI-training campus, uncalibrated)",
 "night": {
 "mean": 1.27,
 "se": 0.47,

@@ -38,9 +38,21 @@ are themselves uncertain by about ±30 %.
     IT_site(t) = Σ_h D_h · g(s_h(t)) · u_h(t)
 
 - `g(s)`: 0 for S0–S1; 0–0.2 for S2 (commissioning loads); 0.1–0.6 for S3; 1 for S4.
-- `u_h`: utilisation of an operating hall, prior Beta(a, b) with mean and spread taken from operator disclosures
-  (annual MWh ÷ 8760 ÷ design IT; being collected in `data/operator_disclosures.csv`). Until that table is filled the
-  prior is uniform on 0.5–1.0, which is the current site rule.
+- `u_h`: utilisation of an operating hall, prior taken from operator disclosures (annual MWh ÷ 8760 ÷ the documented
+  figure; `data/operator_disclosures.csv`, `docs/operator_disclosures_notes.md`). Measured so far (13 Sep 2026):
+
+  | site | documented figure | operator-reported average | ratio |
+  |---|---|---|---|
+  | Meta Luleå | 120 MW grid feed | 30.5 MW (2022), 40.2 MW (2023), 53.5 MW (2024) | 0.25–0.45 |
+  | Meta New Albany | 250 MW connection | 90.5 MW (2023), 59.5 MW (2024) | 0.24–0.36 |
+  | ORNL Frontier | 21–23 MW at HPL | 11.4 MW (2022), 12.2 MW (2023) | 0.5–0.55 |
+  | Meta Prineville | none published | 197 MW (2024), up from 8 MW (2011) | n/a |
+
+  So the site now uses 0.2–0.6 (mid 0.4) of a connection or design figure for cloud campuses, 0.4–0.9 (mid 0.6) of an
+  HPL-measured figure for supercomputers, and keeps 0.5–1.0 for AI-training campuses, which have no calibration yet.
+  Where an operator reports the year's electricity, the band is that average ±10 %, carried forward for up to 24 months
+  at 0.7–1.3 when no newer figure exists. Chinese colocation operators report company-wide utilisation of in-service
+  capacity (VNET 70–74 %, GDS 75 %, Chindata 80 % in 2023) but nothing per campus (`docs/cn_operator_disclosures_notes.md`).
 - Grid-fed halls: `u_h` is not observable from satellites. The band on the site is the prior, and it says so.
 
 ## 4. Evidence and how each enters
@@ -79,8 +91,9 @@ statistic, never used to move it.
 
 1. Transition lags: Abilene (12 halls), Colossus 1 and 2, Rainier, Fairwater. Done for S1→S2; S2→S4 needs the disclosure
    and filing dates.
-2. Utilisation prior: operator per-site electricity disclosures (Meta, Google, Microsoft, EU data-centre registry). In
-   progress.
+2. Utilisation prior: operator per-site electricity disclosures. Done for Meta (per-site MWh 2011–2024), ORNL (Frontier);
+   Google publishes per-site PUE and water but not electricity; Microsoft publishes by metro from FY25; the EU registry
+   publishes aggregates only. Amazon publishes nothing per site.
 3. Emission factors: EPA CAMPD hourly for grid plants (done, five plants); turbine fleets from permits (Colossus 2 MDEQ:
    0.5–1.5 kg/MWh; Abilene TCEQ 0.14 lb/MWh, below detection). Low-stack calibration plants are Astra task A5.
 4. Density priors: recomputed from the inventory each build.
