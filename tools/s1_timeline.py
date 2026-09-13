@@ -148,7 +148,7 @@ def candidates(args):
     rows = [dict(rank=i + 1, lat=round(f["properties"]["lat"], 5), lon=round(f["properties"]["lon"], 5), area_ha=round(0.04 * f["properties"]["count"], 1),
                  early_db=round(f["properties"]["early"], 1), late_db=round(f["properties"]["late"], 1), rise_db=round(f["properties"]["diff"], 1))
             for i, f in enumerate(feats)]
-    df = pd.DataFrame(rows)
+    df = pd.DataFrame(rows, columns=["rank", "lat", "lon", "area_ha", "early_db", "late_db", "rise_db"])
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(f"{args.out}_candidates.csv", index=False)
     # blob outlines as GeoJSON so the optical stage (tools/s2_roof_timeline.py) can date each candidate's roof

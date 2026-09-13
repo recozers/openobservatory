@@ -28,7 +28,7 @@
 }
 },
 "radar_on": {},
-"ntl_lit": null,
+"ntl_lit": "not_yet",
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -128,7 +128,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 107.6
 },
 {
 "q": "2019Q2",
@@ -166,7 +166,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 14.7
 },
 {
 "q": "2019Q4",
@@ -185,7 +185,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 66.1
 },
 {
 "q": "2020Q1",
@@ -204,7 +204,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 86.7
 },
 {
 "q": "2020Q2",
@@ -261,7 +261,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 31.0
 },
 {
 "q": "2021Q1",
@@ -280,7 +280,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 67.6
 },
 {
 "q": "2021Q2",
@@ -337,7 +337,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 71.0
 },
 {
 "q": "2022Q1",
@@ -360,7 +360,7 @@
 "n": 2
 },
 "no2": null,
-"ntl": null
+"ntl": 168.5
 },
 {
 "q": "2022Q2",
@@ -425,7 +425,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 59.6
 },
 {
 "q": "2023Q1",
@@ -448,7 +448,7 @@
 "n": 4
 },
 "no2": null,
-"ntl": null
+"ntl": 139.2
 },
 {
 "q": "2023Q2",
@@ -513,7 +513,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 69.7
 },
 {
 "q": "2024Q1",
@@ -536,7 +536,7 @@
 "n": 6
 },
 "no2": null,
-"ntl": null
+"ntl": 151.9
 },
 {
 "q": "2024Q2",
@@ -605,7 +605,7 @@
 "n": 2
 },
 "no2": null,
-"ntl": null
+"ntl": 36.8
 },
 {
 "q": "2025Q1",
@@ -628,7 +628,7 @@
 "n": 5
 },
 "no2": null,
-"ntl": null
+"ntl": 126.7
 },
 {
 "q": "2025Q2",
@@ -674,7 +674,7 @@
 "n": 15
 },
 "no2": null,
-"ntl": null
+"ntl": 21.0
 },
 {
 "q": "2025Q4",
@@ -693,7 +693,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 61.4
 },
 {
 "q": "2026Q1",
@@ -716,7 +716,7 @@
 "n": 1
 },
 "no2": null,
-"ntl": null
+"ntl": 90.5
 },
 {
 "q": "2026Q2",

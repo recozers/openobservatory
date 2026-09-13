@@ -825,6 +825,7 @@
 "confidence": "low",
 "how": [
 "Sentinel-2 roof dating",
+"VIIRS night lights: campus lit from Dec 2025 (construction and energisation, not load)",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: Entergy Louisiana PSC filings (gas generation up to 2.26 GW) describe planned supply; not "
 ],
