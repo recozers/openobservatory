@@ -1,0 +1,44 @@
+{
+ "type": "FeatureCollection",
+ "name": "ctrl_newalbany_dsv",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "roof",
+    "ptype": "hall",
+    "confidence": "high",
+    "note": "CONTROL (not a data centre): DSV logistics warehouse, New Albany. OSM building footprint.",
+    "site_id": "ctrl_newalbany_dsv",
+    "digitised_from": "OSM way 1484162801"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.7330238,
+       40.1011017
+      ],
+      [
+       -82.7264521,
+       40.0981421
+      ],
+      [
+       -82.7254127,
+       40.0994923
+      ],
+      [
+       -82.7319843,
+       40.1024523
+      ],
+      [
+       -82.7330238,
+       40.1011017
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

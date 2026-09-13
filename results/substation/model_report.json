@@ -1,0 +1,45 @@
+{
+  "ptype": "substation",
+  "capacity_col": "density",
+  "met": [
+    "ta_c",
+    "wind_ms",
+    "tw_c",
+    "sun_elev_deg"
+  ],
+  "cooling_arch_term": false,
+  "arch_site_counts": {
+    "evaporative": 1
+  },
+  "n_frames_all": 103,
+  "n_sites_all": 1,
+  "n_frames_tier_a": 103,
+  "n_sites_tier_a": 1,
+  "frames_per_site": {
+    "nsa_utah": 103
+  },
+  "config": {
+    "obs": "/home/user/Meridian/data/observations.csv",
+    "sites": "/home/user/Meridian/data/sites.csv",
+    "polygons": "/home/user/Meridian/data/polygons",
+    "out": "results/substation",
+    "ptype": "substation",
+    "capacity": "density",
+    "met": [
+      "ta_c",
+      "wind_ms",
+      "tw_c",
+      "sun_elev_deg"
+    ],
+    "no_arch": false,
+    "cond_wind_max": 3.0,
+    "cond_ta_min": 5.0,
+    "cond_ta_max": 25.0,
+    "cond_cloud_max": 20.0,
+    "cond_valid_frac": 0.99,
+    "cond_sun_max": 40.0,
+    "min_frames": 5,
+    "exclude_sites": []
+  },
+  "status": "insufficient_tier_a_sites"
+}

@@ -1,0 +1,15 @@
+[rainier_in] 1103 days with wind >= 2.0 m/s at overpass
+[control_1] 1144 days with wind >= 2.0 m/s at overpass
+wrote results_no2/rainier_in.csv
+
+== rainier_in: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2025-10-01: +1.56 ± 0.64 (n=380)   |  from 2025-10-01: +2.77 ± 1.08 (n=122)
+   crosswind pair (null reference): before +0.13 ± 0.91 (n=380) | after +0.98 ± 1.57 (n=122)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': 3.57, '4-6': 2.0, '>6 m/s': -7.53}, 'count': {'<4': 66, '4-6': 55, '>6 m/s': 1}}
+   change in downwind excess: +1.21 ± 1.25 (1.0 sigma)
+
+== control_1: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2025-10-01: +0.58 ± 0.49 (n=401)   |  from 2025-10-01: -0.07 ± 1.10 (n=126)
+   crosswind pair (null reference): before -0.50 ± 0.65 (n=401) | after -1.09 ± 1.63 (n=126)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': 2.26, '4-6': -1.87, '>6 m/s': -0.99}, 'count': {'<4': 51, '4-6': 57, '>6 m/s': 18}}
+   change in downwind excess: -0.66 ± 1.21 (-0.5 sigma)

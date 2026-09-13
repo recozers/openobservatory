@@ -1,0 +1,11 @@
+[pearsall_gas] 323 days with 2.0-12.0 m/s wind at 100 m
+  81/323 days (11s)
+  162/323 days (28s)
+  243/323 days (40s)
+  323/323 days (51s)
+[pearsall_gas] 191 usable days after cloud filter (cloud fraction <= 0.3)
+
+== pearsall_gas 2023-01-01..2023-12-31: 191 days composited
+   NO2 emission rate E = 0.68 ± 0.55 mol/s   (x0 = 4.3 km, sigma = 9.1 km, offset -0.06)
+   NOx (x1.32): 149 ± 119 kg/h  =  1189 ± 948 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.0, -9:-0.0, -7:0.0, -5:0.0, -3:0.0, -1:0.0, +1:0.0, +3:0.0, +5:0.1, +7:0.1, +9:0.1, +11:0.0, +13:0.0, +15:-0.0, +17:-0.0, +19:-0.0, +21:-0.0, +23:-0.0, +25:-0.0, +27:-0.0, +29:-0.1

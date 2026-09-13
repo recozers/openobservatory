@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Watch</title>
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  .topbar { padding: 8px 14px; }
+  .topbar h1 { font-size: 15px; }
+  .topbar .sub { font-size: 12px; }
+  .legend { padding: 6px 10px; font-size: 11.5px; max-width: 240px; bottom: 24px; }
+  .panel { width: min(400px, calc(100% - 24px)); padding: 12px 14px 14px; }
+  .panel h2 { font-size: 15px; }
+  .lines { display: grid; grid-template-columns: 82px 1fr; gap: 3px 8px; font-size: 13px; margin-top: 6px; }
+  .lines div:nth-child(odd) { color: var(--muted); }
+  .conf { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); }
+  .conf.high { background: #e8f5ec; } .conf.medium { background: #fff7e6; } .conf.low { background: #eeeeec; }
+  .spark { width: 100%; height: 80px; display: block; margin-top: 8px; }
+  .how { font-size: 11.5px; color: var(--muted); margin-top: 8px; }
+  .panel a { font-size: 12px; }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="title">
+    <h1>DC Watch</h1>
+    <p class="sub">Data-centre construction and activity from free satellite data. We can see construction and on-site fuel burning; we cannot see electricity use directly. <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="research/index.html">Research</a> · <a href="https://github.com/recozers/Meridian">Code</a></p>
+  </div>
+</header>
+<main>
+  <div id="map"></div>
+  <aside id="panel" class="panel" hidden>
+    <button id="panel-close" class="close" aria-label="close">×</button>
+    <div id="panel-body"></div>
+  </aside>
+  <div class="legend" id="legend">
+    <div class="legend-row"><span class="sw sw-comb"></span> fuel burning measured on site</div>
+    <div class="legend-row"><span class="sw sw-doc"></span> documented capacity, not directly observed</div>
+    <div class="legend-row"><span class="sw sw-build"></span> construction, unknown, or approximate</div>
+    <label class="legend-row"><input type="checkbox" id="chk-tiles" checked> map tiles</label>
+  </div>
+</main>
+<script src="vendor/maplibre-gl.js"></script>
+<script src="mapmin.js?v=20260913a"></script>
+</body>
+</html>

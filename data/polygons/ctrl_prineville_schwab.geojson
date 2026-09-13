@@ -1,0 +1,44 @@
+{
+ "type": "FeatureCollection",
+ "name": "ctrl_prineville_schwab",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "roof",
+    "ptype": "hall",
+    "confidence": "high",
+    "note": "CONTROL (not a data centre): Les Schwab warehouse, Prineville. OSM building footprint.",
+    "site_id": "ctrl_prineville_schwab",
+    "digitised_from": "OSM way 373945187"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.8909521,
+       44.2791924
+      ],
+      [
+       -120.8853596,
+       44.2792208
+      ],
+      [
+       -120.8853494,
+       44.278193
+      ],
+      [
+       -120.8909419,
+       44.2781646
+      ],
+      [
+       -120.8909521,
+       44.2791924
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

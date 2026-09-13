@@ -1,0 +1,1 @@
+{"backend": "Landsat 8 C1 brightness temperature 2013-2021 (day) + Landsat 8/9 C2 surface temperature 2022-2026 (day, Earth Engine) + ECOSTRESS 2018-2026 (day and night)", "start": "2013-04-11", "end": "2026-09-01", "n_obs": 24581, "n_rej": 3141}

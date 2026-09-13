@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Watch — research view (thermal prototype)</title>
+<link rel="stylesheet" href="../vendor/maplibre-gl.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="title">
+    <h1>Data-centre heat rejection from public thermal satellite imagery</h1>
+    <p class="sub">Research prototype · a falsification exercise, not a product · <span id="build-note"></span></p>
+  </div>
+  <nav>
+    <button id="btn-methods" class="btn">Methods &amp; caveats</button>
+    <button id="btn-results" class="btn">Model results</button>
+  </nav>
+</header>
+
+<div id="verdict" class="verdict" hidden></div>
+
+<main>
+  <div id="map"></div>
+  <aside id="panel" class="panel" hidden>
+    <button id="panel-close" class="close" aria-label="close">×</button>
+    <div id="panel-body"></div>
+  </aside>
+  <div class="legend" id="legend">
+    <div class="legend-title">Marker key</div>
+    <div class="legend-row"><span class="sw sw-u"></span> Utilisation identified (capacity Tier A)</div>
+    <div class="legend-row"><span class="sw sw-q"></span> Q̂ only (capacity not independently known)</div>
+    <div class="legend-row"><span class="sw sw-t"></span> Unvalidated domain transfer (China, not in fit)</div>
+    <div class="legend-row"><span class="sw sw-m"></span> ΔT measured, Q̂ not identified (size = frame count)</div>
+    <div class="legend-row"><span class="sw sw-n"></span> No thermal observations in this build</div>
+    <div class="legend-title" style="margin-top:6px">Size = Q̂ bin (coarse) · halo = interval width</div>
+    <div class="legend-row small" id="legend-bins"></div>
+    <label class="legend-row small"><input type="checkbox" id="chk-tiles" checked> OpenStreetMap tiles (needs internet)</label>
+  </div>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-card">
+    <button id="modal-close" class="close" aria-label="close">×</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="../vendor/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

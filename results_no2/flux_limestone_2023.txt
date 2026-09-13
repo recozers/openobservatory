@@ -1,0 +1,12 @@
+[limestone] 334 days with 2.0-12.0 m/s wind at 100 m
+  81/334 days (12s)
+  162/334 days (20s)
+  243/334 days (32s)
+  324/334 days (45s)
+  334/334 days (46s)
+[limestone] 188 usable days after cloud filter (cloud fraction <= 0.3)
+
+== limestone 2023-01-01..2023-12-31: 188 days composited
+   NO2 emission rate E = 1.30 ± 0.21 mol/s   (x0 = 52.0 km, sigma = 4.8 km, offset -0.13)
+   NOx (x1.32): 284 ± 45 kg/h  =  2259 ± 358 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.0, -9:-0.0, -7:-0.0, -5:0.0, -3:0.1, -1:0.2, +1:0.4, +3:0.7, +5:0.9, +7:1.0, +9:0.9, +11:0.9, +13:0.9, +15:0.9, +17:0.9, +19:0.8, +21:0.8, +23:0.7, +25:0.7, +27:0.6, +29:0.5

@@ -1,0 +1,176 @@
+{
+ "type": "FeatureCollection",
+ "name": "nsa_utah",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "technical_strip",
+    "ptype": "hall",
+    "confidence": "high",
+    "note": "Whole 900 m technical strip (data halls, generator and chiller plants are not separable at 10 m; at 100 m thermal resolution they are one object anyway).",
+    "site_id": "nsa_utah",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_12TVK_20210820"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.9348357,
+       40.4312425
+      ],
+      [
+       -111.9334805,
+       40.4310624
+      ],
+      [
+       -111.9334216,
+       40.4300718
+      ],
+      [
+       -111.9334805,
+       40.4291713
+      ],
+      [
+       -111.9334216,
+       40.4280006
+      ],
+      [
+       -111.9336573,
+       40.4271
+      ],
+      [
+       -111.9337751,
+       40.4261994
+      ],
+      [
+       -111.9338929,
+       40.4252989
+      ],
+      [
+       -111.9342465,
+       40.4243983
+      ],
+      [
+       -111.9346,
+       40.4233177
+      ],
+      [
+       -111.9357784,
+       40.4233177
+      ],
+      [
+       -111.9356606,
+       40.4243983
+      ],
+      [
+       -111.9353071,
+       40.4252989
+      ],
+      [
+       -111.9351303,
+       40.4261994
+      ],
+      [
+       -111.9350124,
+       40.4271
+      ],
+      [
+       -111.9348946,
+       40.4280006
+      ],
+      [
+       -111.9347768,
+       40.4291713
+      ],
+      [
+       -111.9347178,
+       40.4300718
+      ],
+      [
+       -111.9348357,
+       40.4312425
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "substation_east",
+    "ptype": "substation",
+    "confidence": "low",
+    "note": "Grey switchyard-like rectangle east of the oval road; identification tentative at 10 m.",
+    "site_id": "nsa_utah",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_12TVK_20210820"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.931654,
+       40.4300718
+      ],
+      [
+       -111.9307112,
+       40.4300718
+      ],
+      [
+       -111.9307112,
+       40.4285409
+      ],
+      [
+       -111.931654,
+       40.4285409
+      ],
+      [
+       -111.931654,
+       40.4300718
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "oval_campus",
+    "ptype": "campus",
+    "confidence": "high",
+    "note": "Everything inside the perimeter road; excluded from the background annulus.",
+    "site_id": "nsa_utah",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_12TVK_20210820"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.9383709,
+       40.4202558
+      ],
+      [
+       -111.9307112,
+       40.4202558
+      ],
+      [
+       -111.9307112,
+       40.4328635
+      ],
+      [
+       -111.9383709,
+       40.4328635
+      ],
+      [
+       -111.9383709,
+       40.4202558
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "nscc_wuxi",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "nscc_building_box",
+    "ptype": "hall",
+    "confidence": "low",
+    "note": "160 m box centred on the published coordinates of Sunway TaihuLight (zh.wikipedia); the building could not be singled out in 10 m imagery of this dense district, so the box is deliberately generous.",
+    "site_id": "nscc_wuxi",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_51RTQ_20210503"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       120.2471975,
+       31.5493315
+      ],
+      [
+       120.2488825,
+       31.5493315
+      ],
+      [
+       120.2488825,
+       31.5478885
+      ],
+      [
+       120.2471975,
+       31.5478885
+      ],
+      [
+       120.2471975,
+       31.5493315
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "campus",
+    "ptype": "campus",
+    "confidence": "low",
+    "site_id": "nscc_wuxi",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_51RTQ_20210503"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       120.246355,
+       31.550053
+      ],
+      [
+       120.249725,
+       31.550053
+      ],
+      [
+       120.249725,
+       31.547167
+      ],
+      [
+       120.246355,
+       31.547167
+      ],
+      [
+       120.246355,
+       31.550053
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

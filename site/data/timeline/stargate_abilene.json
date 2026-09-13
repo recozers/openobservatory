@@ -1,0 +1,621 @@
+{
+"site_id": "stargate_abilene",
+"name": "Stargate / Crusoe Abilene",
+"tier": "A2",
+"density_mw_per_ha": 12.3,
+"density_basis": "site documented capacity / hall area",
+"hall_area_ha": 42.3,
+"roof_on": {
+"phase1_block1": "2025-01",
+"phase1_block2": "2024-07",
+"phase2_mid_block1": "2025-05",
+"phase2_mid_block2": "2025-03",
+"phase2_mid_block3": "2025-04",
+"phase2_mid_block4": "2025-06",
+"phase2_south_block1": "2025-05",
+"phase2_south_block2": "2025-04",
+"phase2_south_block3": "2025-05",
+"phase2_south_block4": "2025-10",
+"phase2_south_block5": "2025-06",
+"phase2_south_block6": "2025-07"
+},
+"s2_available": true,
+"no2_available": true,
+"no2_baseline": {
+"mean": 2.1484758999935147,
+"se": 0.2323527785735212,
+"n": 678
+},
+"thermal_night_available": true,
+"thermal_day_available": true,
+"quarters": [
+{
+"q": "2021Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "no roof yet",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2022Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": 0.47,
+"se": 0.21,
+"n": 11
+},
+"day": {
+"mean": -0.52,
+"se": 0.16,
+"n": 20
+},
+"no2": null
+},
+{
+"q": "2022Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -0.12,
+"se": 0.18,
+"n": 8
+},
+"day": {
+"mean": -1.89,
+"se": 0.2,
+"n": 22
+},
+"no2": null
+},
+{
+"q": "2022Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": 0.13,
+"se": 0.15,
+"n": 11
+},
+"day": {
+"mean": -1.37,
+"se": 0.28,
+"n": 19
+},
+"no2": null
+},
+{
+"q": "2022Q4",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": 0.38,
+"se": 0.4,
+"n": 16
+},
+"day": {
+"mean": -0.37,
+"se": 0.2,
+"n": 16
+},
+"no2": null
+},
+{
+"q": "2023Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -0.35,
+"se": 0.22,
+"n": 14
+},
+"day": {
+"mean": 0.2,
+"se": 0.14,
+"n": 20
+},
+"no2": {
+"excess": 3.46,
+"se": 0.96,
+"n": 50,
+"z": 1.3
+}
+},
+{
+"q": "2023Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -0.27,
+"se": 0.2,
+"n": 4
+},
+"day": {
+"mean": -0.49,
+"se": 0.28,
+"n": 22
+},
+"no2": {
+"excess": 2.02,
+"se": 0.69,
+"n": 62,
+"z": -0.2
+}
+},
+{
+"q": "2023Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": 0.26,
+"se": 0.09,
+"n": 8
+},
+"day": {
+"mean": -1.36,
+"se": 0.2,
+"n": 30
+},
+"no2": {
+"excess": 2.12,
+"se": 0.63,
+"n": 71,
+"z": -0.0
+}
+},
+{
+"q": "2023Q4",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -0.43,
+"se": 0.3,
+"n": 5
+},
+"day": {
+"mean": -0.46,
+"se": 0.12,
+"n": 17
+},
+"no2": {
+"excess": 1.11,
+"se": 1.2,
+"n": 64,
+"z": -0.9
+}
+},
+{
+"q": "2024Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -1.02,
+"se": 0.89,
+"n": 3
+},
+"day": {
+"mean": 0.14,
+"se": 0.19,
+"n": 17
+},
+"no2": {
+"excess": 1.88,
+"se": 0.76,
+"n": 60,
+"z": -0.3
+}
+},
+{
+"q": "2024Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 0,
+"halls_total": 12,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": 0.1,
+"se": 0.22,
+"n": 3
+},
+"day": {
+"mean": 0.58,
+"se": 0.45,
+"n": 29
+},
+"no2": {
+"excess": 1.0,
+"se": 0.76,
+"n": 63,
+"z": -1.4
+}
+},
+{
+"q": "2024Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 12,
+"built_ha": 5.4,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -1.44,
+"se": 1.24,
+"n": 3
+},
+"day": {
+"mean": -4.51,
+"se": 0.43,
+"n": 30
+},
+"no2": {
+"excess": 1.64,
+"se": 0.53,
+"n": 71,
+"z": -0.9
+}
+},
+{
+"q": "2024Q4",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 12,
+"built_ha": 5.4,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": {
+"mean": -0.74,
+"se": 0.2,
+"n": 11
+},
+"day": {
+"mean": -3.15,
+"se": 0.18,
+"n": 24
+},
+"no2": {
+"excess": 3.09,
+"se": 0.7,
+"n": 65,
+"z": 1.3
+}
+},
+{
+"q": "2025Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 12,
+"built_ha": 13.7,
+"fitted_ha": 5.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 59.4,
+"basis": "roofed \u22656 months (5.4 ha) \u00d7 12.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": -0.22,
+"se": 0.31,
+"n": 7
+},
+"day": {
+"mean": -3.58,
+"se": 0.17,
+"n": 21
+},
+"no2": {
+"excess": 2.97,
+"se": 0.75,
+"n": 63,
+"z": 1.0
+}
+},
+{
+"q": "2025Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": null,
+"halls_roofed": 10,
+"halls_total": 12,
+"built_ha": 34.7,
+"fitted_ha": 5.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 59.4,
+"basis": "roofed \u22656 months (5.4 ha) \u00d7 12.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": -1.4,
+"se": 0.89,
+"n": 5
+},
+"day": {
+"mean": 2.14,
+"se": 0.79,
+"n": 21
+},
+"no2": {
+"excess": 2.24,
+"se": 0.57,
+"n": 63,
+"z": 0.1
+}
+},
+{
+"q": "2025Q3",
+"cap_doc_mw": 173.9,
+"cap_tier": "A2",
+"cap_basis": "facility_design",
+"no2_flux": null,
+"halls_roofed": 11,
+"halls_total": 12,
+"built_ha": 40.1,
+"fitted_ha": 13.7,
+"est_lo": 87.0,
+"est_mid": 139.1,
+"est_hi": 173.9,
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": -0.04,
+"se": 0.26,
+"n": 7
+},
+"day": {
+"mean": 2.9,
+"se": 0.37,
+"n": 18
+},
+"no2": {
+"excess": 2.34,
+"se": 0.67,
+"n": 65,
+"z": 0.3
+}
+},
+{
+"q": "2025Q4",
+"cap_doc_mw": 173.9,
+"cap_tier": "A2",
+"cap_basis": "facility_design",
+"no2_flux": null,
+"halls_roofed": 12,
+"halls_total": 12,
+"built_ha": 42.3,
+"fitted_ha": 34.7,
+"est_lo": 87.0,
+"est_mid": 139.1,
+"est_hi": 173.9,
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": 0.28,
+"se": 0.31,
+"n": 9
+},
+"day": {
+"mean": -0.44,
+"se": 0.35,
+"n": 24
+},
+"no2": {
+"excess": 4.81,
+"se": 1.19,
+"n": 62,
+"z": 2.2
+}
+},
+{
+"q": "2026Q1",
+"cap_doc_mw": 173.9,
+"cap_tier": "A2",
+"cap_basis": "facility_design",
+"no2_flux": null,
+"halls_roofed": 12,
+"halls_total": 12,
+"built_ha": 42.3,
+"fitted_ha": 40.1,
+"est_lo": 87.0,
+"est_mid": 139.1,
+"est_hi": 173.9,
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": 0.39,
+"se": 0.26,
+"n": 11
+},
+"day": {
+"mean": -2.01,
+"se": 0.23,
+"n": 24
+},
+"no2": {
+"excess": 2.91,
+"se": 0.83,
+"n": 68,
+"z": 0.9
+}
+},
+{
+"q": "2026Q2",
+"cap_doc_mw": 521.7,
+"cap_tier": "A2",
+"cap_basis": "facility_design",
+"no2_flux": null,
+"halls_roofed": 12,
+"halls_total": 12,
+"built_ha": 42.3,
+"fitted_ha": 42.3,
+"est_lo": 260.9,
+"est_mid": 417.4,
+"est_hi": 521.7,
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": -0.88,
+"se": 0.2,
+"n": 4
+},
+"day": {
+"mean": 1.25,
+"se": 0.8,
+"n": 16
+},
+"no2": {
+"excess": 4.08,
+"se": 0.73,
+"n": 53,
+"z": 2.5
+}
+},
+{
+"q": "2026Q3",
+"cap_doc_mw": 521.7,
+"cap_tier": "A2",
+"cap_basis": "facility_design",
+"no2_flux": null,
+"halls_roofed": 12,
+"halls_total": 12,
+"built_ha": 42.3,
+"fitted_ha": 42.3,
+"est_lo": 260.9,
+"est_mid": 417.4,
+"est_hi": 521.7,
+"basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": 0.31,
+"se": 0.13,
+"n": 3
+},
+"day": {
+"mean": -0.49,
+"se": 0.55,
+"n": 15
+},
+"no2": {
+"excess": 2.9,
+"se": 0.57,
+"n": 54,
+"z": 1.2
+}
+}
+],
+"caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
+}

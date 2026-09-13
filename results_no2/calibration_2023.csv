@@ -1,0 +1,6 @@
+plant,oris,days,truth_kgh,sat_kgh,sat_se,factor,factor_se,load_mw,egrid_tpy
+Martin Lake,6146,169,1145,322,27,3.56,0.3,1826,9145
+Limestone,298,188,710,284,45,2.5,0.4,983,5511
+Oak Grove,6180,193,490,352,89,1.39,0.35,1634,4373
+Welsh Power Plant,6139,165,500,178,108,2.81,1.7,535,4017
+Independence,6641,183,523,175,28,2.99,0.48,693,4753

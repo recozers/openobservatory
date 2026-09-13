@@ -1,0 +1,60 @@
+{
+ "type": "FeatureCollection",
+ "name": "ctrl_newalbany_af",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "roof",
+    "ptype": "hall",
+    "confidence": "high",
+    "note": "CONTROL (not a data centre): Abercrombie & Fitch distribution center, New Albany. OSM building footprint.",
+    "site_id": "ctrl_newalbany_af",
+    "digitised_from": "OSM way 512398014"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.7735278,
+       40.0844325
+      ],
+      [
+       -82.7733047,
+       40.0870254
+      ],
+      [
+       -82.7733368,
+       40.087027
+      ],
+      [
+       -82.7732847,
+       40.0876321
+      ],
+      [
+       -82.7732436,
+       40.0876301
+      ],
+      [
+       -82.7732282,
+       40.0878094
+      ],
+      [
+       -82.7708279,
+       40.0876885
+      ],
+      [
+       -82.7711186,
+       40.0843112
+      ],
+      [
+       -82.7735278,
+       40.0844325
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

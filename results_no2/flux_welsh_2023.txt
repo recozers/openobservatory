@@ -1,0 +1,11 @@
+[welsh] 302 days with 2.0-12.0 m/s wind at 100 m
+  81/302 days (15s)
+  162/302 days (26s)
+  243/302 days (36s)
+  302/302 days (44s)
+[welsh] 165 usable days after cloud filter (cloud fraction <= 0.3)
+
+== welsh 2023-01-01..2023-12-31: 165 days composited
+   NO2 emission rate E = 0.81 ± 0.49 mol/s   (x0 = 36.2 km, sigma = 7.1 km, offset -0.11)
+   NOx (x1.32): 178 ± 108 kg/h  =  1414 ± 856 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.1, -9:-0.0, -7:0.0, -5:0.1, -3:0.1, -1:0.2, +1:0.3, +3:0.4, +5:0.4, +7:0.4, +9:0.4, +11:0.4, +13:0.4, +15:0.4, +17:0.4, +19:0.4, +21:0.3, +23:0.3, +25:0.3, +27:0.3, +29:0.3

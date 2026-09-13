@@ -1,0 +1,26 @@
+[cn_chongqing_liangjiang_gas] 704 days with 2.0-12.0 m/s wind at 100 m
+  81/704 days (15s)
+  162/704 days (31s)
+  243/704 days (48s)
+  324/704 days (62s)
+  405/704 days (76s)
+  486/704 days (95s)
+  567/704 days (109s)
+  648/704 days (121s)
+  704/704 days (129s)
+[cn_chongqing_liangjiang_gas] 240 usable days after cloud filter (cloud fraction <= 0.3)
+
+== cn_chongqing_liangjiang_gas 2023-01-01..2026-08-31: 240 days composited
+   NO2 emission rate E = 3.67 ± 1.71 mol/s   (x0 = 8.8 km, sigma = 8.4 km, offset -0.43)
+   NOx (x1.32): 802 ± 374 kg/h  =  6375 ± 2971 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.2, -9:-0.1, -7:0.0, -5:0.2, -3:0.3, -1:0.5, +1:0.6, +3:0.7, +5:0.7, +7:0.7, +9:0.7, +11:0.7, +13:0.6, +15:0.4, +17:0.3, +19:0.2, +21:0.0, +23:-0.1, +25:-0.1, +27:-0.1, +29:-0.2
+
+== cn_chongqing_liangjiang_gas before 2025-01-01: 126 days composited
+   NO2 emission rate E = 1.74 ± 1.21 mol/s   (x0 = 21.1 km, sigma = 4.7 km, offset -0.05)
+   NOx (x1.32): 380 ± 265 kg/h  =  3025 ± 2109 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.2, -9:-0.1, -7:0.1, -5:0.2, -3:0.4, -1:0.7, +1:0.8, +3:1.0, +5:1.1, +7:1.1, +9:1.0, +11:0.9, +13:0.9, +15:0.7, +17:0.6, +19:0.6, +21:0.6, +23:0.6, +25:0.6, +27:0.6, +29:0.4
+
+== cn_chongqing_liangjiang_gas from 2025-01-01: 114 days composited
+   NO2 emission rate E = 10.31 ± 3.26 mol/s   (x0 = 4.0 km, sigma = 11.0 km, offset -0.93)
+   NOx (x1.32): 2255 ± 713 kg/h  =  17931 ± 5671 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.1, -9:-0.1, -7:0.0, -5:0.1, -3:0.2, -1:0.3, +1:0.4, +3:0.4, +5:0.4, +7:0.3, +9:0.4, +11:0.3, +13:0.2, +15:0.1, +17:-0.1, +19:-0.3, +21:-0.6, +23:-0.8, +25:-0.8, +27:-0.9, +29:-0.9

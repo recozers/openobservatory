@@ -1,0 +1,12 @@
+[oak_grove] 331 days with 2.0-12.0 m/s wind at 100 m
+  81/331 days (11s)
+  162/331 days (21s)
+  243/331 days (32s)
+  324/331 days (41s)
+  331/331 days (42s)
+[oak_grove] 193 usable days after cloud filter (cloud fraction <= 0.3)
+
+== oak_grove 2023-01-01..2023-12-31: 193 days composited
+   NO2 emission rate E = 1.61 ± 0.41 mol/s   (x0 = 31.4 km, sigma = 9.1 km, offset -0.29)
+   NOx (x1.32): 352 ± 89 kg/h  =  2796 ± 708 short tons/yr
+   composite F(x) [mol/s] by x km: -11:0.0, -9:-0.0, -7:-0.0, -5:0.0, -3:0.1, -1:0.3, +1:0.4, +3:0.5, +5:0.5, +7:0.6, +9:0.6, +11:0.7, +13:0.8, +15:0.8, +17:0.7, +19:0.6, +21:0.5, +23:0.4, +25:0.4, +27:0.4, +29:0.4

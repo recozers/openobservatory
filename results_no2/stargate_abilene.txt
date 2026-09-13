@@ -1,0 +1,15 @@
+[stargate_abilene] 1232 days with wind >= 2.0 m/s at overpass
+[control_1] 1221 days with wind >= 2.0 m/s at overpass
+wrote results_no2/stargate_abilene.csv
+
+== stargate_abilene: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2025-07-01: +2.12 ± 0.24 (n=632)   |  from 2025-07-01: +3.38 ± 0.38 (n=302)
+   crosswind pair (null reference): before +0.35 ± 0.24 (n=632) | after -0.43 ± 0.39 (n=302)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': 3.95, '4-6': 3.58, '>6 m/s': 2.46}, 'count': {'<4': 101, '4-6': 114, '>6 m/s': 87}}
+   change in downwind excess: +1.26 ± 0.45 (2.8 sigma)
+
+== control_1: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2025-07-01: +0.75 ± 0.24 (n=605)   |  from 2025-07-01: +0.67 ± 0.37 (n=286)
+   crosswind pair (null reference): before -0.55 ± 0.24 (n=605) | after -0.82 ± 0.37 (n=286)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': 0.61, '4-6': 1.0, '>6 m/s': 0.3}, 'count': {'<4': 104, '4-6': 105, '>6 m/s': 77}}
+   change in downwind excess: -0.08 ± 0.44 (-0.2 sigma)

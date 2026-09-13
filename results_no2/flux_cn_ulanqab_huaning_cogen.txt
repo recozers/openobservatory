@@ -1,0 +1,33 @@
+[cn_ulanqab_huaning_cogen] 1236 days with 2.0-12.0 m/s wind at 100 m
+  81/1236 days (10s)
+  162/1236 days (35s)
+  243/1236 days (50s)
+  324/1236 days (66s)
+  405/1236 days (75s)
+  486/1236 days (90s)
+  567/1236 days (102s)
+  648/1236 days (120s)
+  729/1236 days (135s)
+  810/1236 days (149s)
+  891/1236 days (164s)
+  972/1236 days (175s)
+  1053/1236 days (188s)
+  1134/1236 days (205s)
+  1215/1236 days (247s)
+  1236/1236 days (252s)
+[cn_ulanqab_huaning_cogen] 719 usable days after cloud filter (cloud fraction <= 0.3)
+
+== cn_ulanqab_huaning_cogen 2023-01-01..2026-08-31: 719 days composited
+   NO2 emission rate E = 13.45 ± 1.50 mol/s   (x0 = 8.9 km, sigma = 11.2 km, offset -1.77)
+   NOx (x1.32): 2941 ± 328 kg/h  =  23387 ± 2608 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.5, -9:-0.2, -7:0.2, -5:0.6, -3:0.9, -1:1.2, +1:1.5, +3:1.7, +5:1.8, +7:1.8, +9:1.7, +11:1.6, +13:1.4, +15:1.1, +17:0.8, +19:0.6, +21:0.4, +23:0.0, +25:-0.3, +27:-0.5, +29:-0.7
+
+== cn_ulanqab_huaning_cogen before 2025-01-01: 375 days composited
+   NO2 emission rate E = 14.12 ± 2.42 mol/s   (x0 = 6.6 km, sigma = 10.2 km, offset -1.57)
+   NOx (x1.32): 3086 ± 530 kg/h  =  24545 ± 4213 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.6, -9:-0.2, -7:0.2, -5:0.6, -3:0.9, -1:1.1, +1:1.4, +3:1.5, +5:1.6, +7:1.5, +9:1.4, +11:1.3, +13:1.2, +15:0.9, +17:0.5, +19:0.2, +21:-0.1, +23:-0.4, +25:-0.9, +27:-1.2, +29:-1.4
+
+== cn_ulanqab_huaning_cogen from 2025-01-01: 344 days composited
+   NO2 emission rate E = 7.29 ± 1.14 mol/s   (x0 = 12.6 km, sigma = 8.3 km, offset -0.91)
+   NOx (x1.32): 1594 ± 249 kg/h  =  12674 ± 1981 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.5, -9:-0.2, -7:0.2, -5:0.5, -3:0.9, -1:1.2, +1:1.6, +3:1.9, +5:2.0, +7:2.1, +9:2.0, +11:1.8, +13:1.6, +15:1.5, +17:1.2, +19:1.1, +21:0.9, +23:0.5, +25:0.3, +27:0.1, +29:0.0

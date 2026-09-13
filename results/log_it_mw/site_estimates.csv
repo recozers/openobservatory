@@ -1,0 +1,8 @@
+site_id,n_frames,mean_delta_t_k,sd_delta_t_k,area_ha,pue_assumed,it_hat_mw,it_lo_mw,it_hi_mw,q_hat_mw,q_lo_mw,q_hi_mw,q_identified,slope_identified,capacity_tier,capacity_it_mw,utilisation,utilisation_identified,in_training_set
+lulea,125,2.296344049409705,1.6548059259343966,13.180851343894595,1.1,,,,,,,False,False,A2,109.09090909090908,,False,True
+nsa_utah,98,-1.8479489795918362,1.0472219151823186,10.00843126112029,1.3,,,,,,,False,False,A1,50.0,,False,True
+nscc_guangzhou,49,0.2628979591836735,0.5324110350134392,2.5616893202961606,1.3,,,,,,,False,False,A1,18.5,,False,True
+nscc_wuxi,58,0.6306896551724139,1.172321511599004,2.5621723632996165,1.3,,,,,,,False,False,A1,15.4,,False,True
+ornl_olcf,83,2.9028313253012046,1.4438528640942263,9.1056080909208,1.25,,,,,,,False,False,A1,10.1,,False,True
+prineville,219,-1.3124673689209192,1.6286553293478678,30.58678078698155,1.1,,,,,,,False,False,U,,,False,False
+riken_kobe,78,0.8666923076923075,0.8673003540273139,0.9991794913908439,1.3,,,,,,,False,False,A1,29.9,,False,True

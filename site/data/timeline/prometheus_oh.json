@@ -1,0 +1,884 @@
+{
+"site_id": "prometheus_oh",
+"name": "Meta Prometheus (New Albany)",
+"tier": "A2",
+"density_mw_per_ha": 10.1,
+"density_basis": "site documented capacity / hall area",
+"hall_area_ha": 21.4,
+"roof_on": {
+"LCO_1": "2024-05",
+"LCO_2": "2024-05",
+"NAO_1_NAO_2": "existing",
+"NAO_3": "2020-10",
+"NAO_5_NAO_6": "2021-05"
+},
+"s2_available": true,
+"no2_available": true,
+"no2_baseline": {
+"mean": 0.7478456144994362,
+"se": 0.5643911548186303,
+"n": 354
+},
+"thermal_night_available": true,
+"thermal_day_available": true,
+"quarters": [
+{
+"q": "2018Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2018Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2018Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2018Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2019Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2019Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2019Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2019Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2020Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2020Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2020Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 1,
+"halls_total": 5,
+"built_ha": 6.2,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2020Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 2,
+"halls_total": 5,
+"built_ha": 9.6,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2021Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 2,
+"halls_total": 5,
+"built_ha": 9.6,
+"fitted_ha": 6.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 56.2,
+"basis": "roofed \u22656 months (6.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2021Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 9.6,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 87.3,
+"basis": "roofed \u22656 months (9.6 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2021Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 9.6,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 87.3,
+"basis": "roofed \u22656 months (9.6 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2021Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": null,
+"day": null,
+"no2": null
+},
+{
+"q": "2022Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.29,
+"se": 0.22,
+"n": 13
+},
+"day": {
+"mean": 0.34,
+"se": 0.5,
+"n": 3
+},
+"no2": null
+},
+{
+"q": "2022Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.59,
+"se": 0.2,
+"n": 7
+},
+"day": {
+"mean": 6.33,
+"se": 0.88,
+"n": 6
+},
+"no2": null
+},
+{
+"q": "2022Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 1.21,
+"se": 0.13,
+"n": 7
+},
+"day": {
+"mean": 7.41,
+"se": 0.51,
+"n": 5
+},
+"no2": null
+},
+{
+"q": "2022Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.59,
+"se": 0.24,
+"n": 6
+},
+"day": {
+"mean": 1.26,
+"se": 0.88,
+"n": 4
+},
+"no2": null
+},
+{
+"q": "2023Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": -0.08,
+"se": 0.18,
+"n": 16
+},
+"day": {
+"mean": -0.02,
+"se": 0.95,
+"n": 4
+},
+"no2": {
+"excess": 4.11,
+"se": 2.16,
+"n": 25,
+"z": 1.5
+}
+},
+{
+"q": "2023Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.55,
+"se": 0.18,
+"n": 4
+},
+"day": {
+"mean": 4.09,
+"se": 1.36,
+"n": 4
+},
+"no2": {
+"excess": 0.23,
+"se": 1.01,
+"n": 33,
+"z": -0.4
+}
+},
+{
+"q": "2023Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.34,
+"se": 0.27,
+"n": 8
+},
+"day": {
+"mean": 5.57,
+"se": 0.68,
+"n": 8
+},
+"no2": {
+"excess": 0.3,
+"se": 1.33,
+"n": 31,
+"z": -0.3
+}
+},
+{
+"q": "2023Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.3,
+"se": 0.19,
+"n": 6
+},
+"day": {
+"mean": -0.1,
+"se": 0.04,
+"n": 2
+},
+"no2": {
+"excess": 2.42,
+"se": 2.03,
+"n": 31,
+"z": 0.8
+}
+},
+{
+"q": "2024Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 3,
+"halls_total": 5,
+"built_ha": 15.2,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.4,
+"se": 0.58,
+"n": 5
+},
+"day": {
+"mean": 1.26,
+"se": 0.33,
+"n": 3
+},
+"no2": {
+"excess": 0.9,
+"se": 1.8,
+"n": 31,
+"z": 0.1
+}
+},
+{
+"q": "2024Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.42,
+"se": 0.14,
+"n": 5
+},
+"day": {
+"mean": 5.24,
+"se": 1.35,
+"n": 4
+},
+"no2": {
+"excess": -1.44,
+"se": 1.46,
+"n": 32,
+"z": -1.4
+}
+},
+{
+"q": "2024Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 15.2,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 138.9,
+"basis": "roofed \u22656 months (15.2 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 1.06,
+"se": 0.3,
+"n": 10
+},
+"day": {
+"mean": 5.74,
+"se": 0.67,
+"n": 7
+},
+"no2": {
+"excess": -1.79,
+"se": 1.65,
+"n": 35,
+"z": -1.5
+}
+},
+{
+"q": "2024Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 195.7,
+"basis": "roofed \u22656 months (21.4 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.1,
+"se": 0.17,
+"n": 8
+},
+"day": {
+"mean": 1.64,
+"se": 1.17,
+"n": 2
+},
+"no2": {
+"excess": -2.93,
+"se": 2.55,
+"n": 33,
+"z": -1.4
+}
+},
+{
+"q": "2025Q1",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 195.7,
+"basis": "roofed \u22656 months (21.4 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.43,
+"se": 0.22,
+"n": 15
+},
+"day": {
+"mean": 1.04,
+"se": 0.34,
+"n": 3
+},
+"no2": {
+"excess": 1.29,
+"se": 2.49,
+"n": 29,
+"z": 0.2
+}
+},
+{
+"q": "2025Q2",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 195.7,
+"basis": "roofed \u22656 months (21.4 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.41,
+"se": 0.62,
+"n": 2
+},
+"day": {
+"mean": 6.28,
+"se": null,
+"n": 1
+},
+"no2": {
+"excess": 0.47,
+"se": 1.44,
+"n": 27,
+"z": -0.2
+}
+},
+{
+"q": "2025Q3",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 195.7,
+"basis": "roofed \u22656 months (21.4 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.81,
+"se": 0.21,
+"n": 10
+},
+"day": {
+"mean": 6.47,
+"se": 0.59,
+"n": 7
+},
+"no2": {
+"excess": 1.34,
+"se": 1.55,
+"n": 20,
+"z": 0.4
+}
+},
+{
+"q": "2025Q4",
+"cap_doc_mw": null,
+"cap_tier": null,
+"cap_basis": null,
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 0.0,
+"est_mid": null,
+"est_hi": 195.7,
+"basis": "roofed \u22656 months (21.4 ha) \u00d7 10.1 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"night": {
+"mean": 0.13,
+"se": 0.23,
+"n": 8
+},
+"day": {
+"mean": 1.28,
+"se": 0.64,
+"n": 5
+},
+"no2": {
+"excess": 6.35,
+"se": 2.87,
+"n": 27,
+"z": 1.9
+}
+},
+{
+"q": "2026Q1",
+"cap_doc_mw": 217.4,
+"cap_tier": "A2",
+"cap_basis": "grid_connection",
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 108.7,
+"est_mid": 173.9,
+"est_hi": 217.4,
+"basis": "documented capacity in force (A2, grid_connection) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": 0.45,
+"se": 0.43,
+"n": 12
+},
+"day": {
+"mean": 0.68,
+"se": 0.82,
+"n": 4
+},
+"no2": {
+"excess": 4.84,
+"se": 2.05,
+"n": 31,
+"z": 1.9
+}
+},
+{
+"q": "2026Q2",
+"cap_doc_mw": 217.4,
+"cap_tier": "A2",
+"cap_basis": "grid_connection",
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 108.7,
+"est_mid": 173.9,
+"est_hi": 217.4,
+"basis": "documented capacity in force (A2, grid_connection) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": 0.15,
+"se": 0.09,
+"n": 2
+},
+"day": {
+"mean": 4.88,
+"se": 0.84,
+"n": 4
+},
+"no2": {
+"excess": -1.79,
+"se": 1.73,
+"n": 28,
+"z": -1.4
+}
+},
+{
+"q": "2026Q3",
+"cap_doc_mw": 217.4,
+"cap_tier": "A2",
+"cap_basis": "grid_connection",
+"no2_flux": null,
+"halls_roofed": 5,
+"halls_total": 5,
+"built_ha": 21.4,
+"fitted_ha": 21.4,
+"est_lo": 108.7,
+"est_mid": 173.9,
+"est_hi": 217.4,
+"basis": "documented capacity in force (A2, grid_connection) \u00d7 utilisation assumption 0.5\u20131.0",
+"night": {
+"mean": 0.7,
+"se": 0.36,
+"n": 6
+},
+"day": {
+"mean": 5.25,
+"se": 1.69,
+"n": 3
+},
+"no2": {
+"excess": -3.43,
+"se": 2.16,
+"n": 20,
+"z": -1.9
+}
+}
+],
+"caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
+}

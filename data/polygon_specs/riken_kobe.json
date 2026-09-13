@@ -1,0 +1,20 @@
+{
+  "site_id": "riken_kobe",
+  "centre": [34.65640, 135.21940],
+  "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_53SNU_20210515",
+  "polygons": [
+    {
+      "name": "computer_building",
+      "ptype": "hall",
+      "confidence": "low",
+      "note": "Light-grey ~100 m box at the published R-CCS coordinates; identification among dense port-island buildings is tentative.",
+      "offsets_m": [[-40, 50], [60, 50], [60, -50], [-40, -50]]
+    },
+    {
+      "name": "campus",
+      "ptype": "campus",
+      "confidence": "low",
+      "offsets_m": [[-120, 120], [140, 120], [140, -120], [-120, -120]]
+    }
+  ]
+}

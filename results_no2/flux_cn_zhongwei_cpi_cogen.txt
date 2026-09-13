@@ -1,0 +1,32 @@
+[cn_zhongwei_cpi_cogen] 1167 days with 2.0-12.0 m/s wind at 100 m
+  81/1167 days (13s)
+  162/1167 days (27s)
+  243/1167 days (39s)
+  324/1167 days (52s)
+  405/1167 days (66s)
+  486/1167 days (79s)
+  567/1167 days (93s)
+  648/1167 days (109s)
+  729/1167 days (122s)
+  810/1167 days (138s)
+  891/1167 days (150s)
+  972/1167 days (163s)
+  1053/1167 days (175s)
+  1134/1167 days (188s)
+  1167/1167 days (193s)
+[cn_zhongwei_cpi_cogen] 791 usable days after cloud filter (cloud fraction <= 0.3)
+
+== cn_zhongwei_cpi_cogen 2023-01-01..2026-08-31: 791 days composited
+   NO2 emission rate E = 10.32 ± 1.79 mol/s   (x0 = 4.8 km, sigma = 11.4 km, offset -0.94)
+   NOx (x1.32): 2256 ± 391 kg/h  =  17942 ± 3109 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.2, -9:-0.1, -7:0.0, -5:0.2, -3:0.4, -1:0.6, +1:0.7, +3:0.7, +5:0.6, +7:0.6, +9:0.5, +11:0.4, +13:0.3, +15:0.2, +17:0.1, +19:-0.0, +21:-0.2, +23:-0.4, +25:-0.6, +27:-0.8, +29:-0.9
+
+== cn_zhongwei_cpi_cogen before 2025-01-01: 423 days composited
+   NO2 emission rate E = 9.82 ± 2.09 mol/s   (x0 = 5.4 km, sigma = 10.9 km, offset -0.97)
+   NOx (x1.32): 2146 ± 458 kg/h  =  17067 ± 3638 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.3, -9:-0.1, -7:0.1, -5:0.3, -3:0.4, -1:0.7, +1:0.8, +3:0.8, +5:0.8, +7:0.7, +9:0.6, +11:0.5, +13:0.4, +15:0.3, +17:0.1, +19:0.0, +21:-0.1, +23:-0.3, +25:-0.5, +27:-0.8, +29:-1.0
+
+== cn_zhongwei_cpi_cogen from 2025-01-01: 368 days composited
+   NO2 emission rate E = 10.17 ± 2.38 mol/s   (x0 = 4.5 km, sigma = 11.8 km, offset -0.92)
+   NOx (x1.32): 2224 ± 520 kg/h  =  17685 ± 4138 short tons/yr
+   composite F(x) [mol/s] by x km: -11:-0.1, -9:-0.1, -7:-0.0, -5:0.2, -3:0.4, -1:0.5, +1:0.6, +3:0.5, +5:0.5, +7:0.4, +9:0.3, +11:0.2, +13:0.2, +15:0.2, +17:0.1, +19:-0.1, +21:-0.3, +23:-0.4, +25:-0.6, +27:-0.8, +29:-0.9

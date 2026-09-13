@@ -1,0 +1,119 @@
+{
+ "type": "FeatureCollection",
+ "name": "lulea",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_north",
+    "ptype": "hall",
+    "confidence": "medium",
+    "note": "Dark-roofed block with rooftop cooling lanes, long axis ENE. Building identity (LLA1/2/3) not resolved at 10 m.",
+    "site_id": "lulea",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_34WET_20210829"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.1139349,
+       65.6247825
+      ],
+      [
+       22.1159316,
+       65.6235986
+      ],
+      [
+       22.1097245,
+       65.6218049
+      ],
+      [
+       22.1077278,
+       65.6229888
+      ],
+      [
+       22.1139349,
+       65.6247825
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_south",
+    "ptype": "hall",
+    "confidence": "medium",
+    "note": "Dark-roofed block south of hall_north, long axis N-S.",
+    "site_id": "lulea",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_34WET_20210829"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.1103105,
+       65.6215897
+      ],
+      [
+       22.1153022,
+       65.6217691
+      ],
+      [
+       22.1155192,
+       65.6188095
+      ],
+      [
+       22.1107445,
+       65.6185404
+      ],
+      [
+       22.1103105,
+       65.6215897
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "campus",
+    "ptype": "campus",
+    "confidence": "high",
+    "site_id": "lulea",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_34WET_20210829"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.1061869,
+       65.6179126
+      ],
+      [
+       22.1174725,
+       65.6179126
+      ],
+      [
+       22.1174725,
+       65.6253564
+      ],
+      [
+       22.1061869,
+       65.6253564
+      ],
+      [
+       22.1061869,
+       65.6179126
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+[colossus_memphis] 926 days with wind >= 2.0 m/s at overpass
+[control_1] 940 days with wind >= 2.0 m/s at overpass
+wrote results_no2/colossus_memphis.csv
+
+== colossus_memphis: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2024-07-01: +6.10 ± 0.67 (n=213)   |  from 2024-07-01: +7.46 ± 0.52 (n=330)
+   crosswind pair (null reference): before -1.94 ± 0.87 (n=213) | after -0.42 ± 0.84 (n=330)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': 8.14, '4-6': 5.68, '>6 m/s': 4.64}, 'count': {'<4': 242, '4-6': 80, '>6 m/s': 8}}
+   change in downwind excess: +1.36 ± 0.85 (1.6 sigma)
+
+== control_1: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2024-07-01: +0.18 ± 0.52 (n=205)   |  from 2024-07-01: -0.11 ± 0.46 (n=321)
+   crosswind pair (null reference): before -1.54 ± 0.83 (n=205) | after -1.30 ± 0.59 (n=321)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': -0.8, '4-6': 1.81, '>6 m/s': 3.84}, 'count': {'<4': 240, '4-6': 76, '>6 m/s': 5}}
+   change in downwind excess: -0.29 ± 0.70 (-0.4 sigma)

@@ -1,0 +1,20 @@
+{
+  "site_id": "nscc_guangzhou",
+  "centre": [23.07306, 113.38861],
+  "digitised_from": "Sentinel-2 L2A 10 m true colour, S2A_49QGF_20211210",
+  "polygons": [
+    {
+      "name": "nscc_building_box",
+      "ptype": "hall",
+      "confidence": "low",
+      "note": "160 m box centred on the published coordinates of the National Supercomputer Center in Guangzhou (en.wikipedia), inside the Sun Yat-sen University east campus; the building could not be singled out in 10 m imagery.",
+      "offsets_m": [[-80, 80], [80, 80], [80, -80], [-80, -80]]
+    },
+    {
+      "name": "campus",
+      "ptype": "campus",
+      "confidence": "low",
+      "offsets_m": [[-160, 160], [160, 160], [160, -160], [-160, -160]]
+    }
+  ]
+}

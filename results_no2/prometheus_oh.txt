@@ -1,0 +1,15 @@
+[prometheus_oh] 1038 days with wind >= 2.0 m/s at overpass
+[control_1] 1002 days with wind >= 2.0 m/s at overpass
+wrote results_no2/prometheus_oh.csv
+
+== prometheus_oh: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2026-01-01: +0.75 ± 0.56 (n=354)   |  from 2026-01-01: +0.40 ± 1.21 (n=79)
+   crosswind pair (null reference): before +0.32 ± 0.96 (n=354) | after -0.39 ± 1.91 (n=79)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': -0.39, '4-6': 0.63, '>6 m/s': 3.55}, 'count': {'<4': 41, '4-6': 30, '>6 m/s': 8}}
+   change in downwind excess: -0.35 ± 1.33 (-0.3 sigma)
+
+== control_1: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2026-01-01: -1.24 ± 0.53 (n=340)   |  from 2026-01-01: -1.70 ± 0.76 (n=82)
+   crosswind pair (null reference): before -0.30 ± 0.62 (n=340) | after +1.26 ± 1.03 (n=82)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': -2.83, '4-6': 0.11, '>6 m/s': -1.07}, 'count': {'<4': 49, '4-6': 29, '>6 m/s': 4}}
+   change in downwind excess: -0.47 ± 0.92 (-0.5 sigma)

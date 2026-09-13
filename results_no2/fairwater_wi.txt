@@ -1,0 +1,15 @@
+[fairwater_wi] 1261 days with wind >= 2.0 m/s at overpass
+[control_1] 1142 days with wind >= 2.0 m/s at overpass
+wrote results_no2/fairwater_wi.csv
+
+== fairwater_wi: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2026-04-01: +0.56 ± 0.77 (n=589)   |  from 2026-04-01: +0.38 ± 1.42 (n=80)
+   crosswind pair (null reference): before +6.83 ± 0.96 (n=589) | after +5.16 ± 1.86 (n=80)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': 1.66, '4-6': 0.29, '>6 m/s': -2.4}, 'count': {'<4': 31, '4-6': 36, '>6 m/s': 13}}
+   change in downwind excess: -0.18 ± 1.62 (-0.1 sigma)
+
+== control_1: downwind minus upwind NO2 (1e-6 mol/m2), sectors 2-15 km, ±30°
+   before 2026-04-01: -0.95 ± 0.58 (n=494)   |  from 2026-04-01: -1.67 ± 0.98 (n=65)
+   crosswind pair (null reference): before +3.13 ± 0.60 (n=494) | after +1.88 ± 1.27 (n=65)
+   after, by wind speed (a point source dilutes with wind): {'mean': {'<4': -1.84, '4-6': -2.56, '>6 m/s': 4.49}, 'count': {'<4': 41, '4-6': 20, '>6 m/s': 4}}
+   change in downwind excess: -0.72 ± 1.14 (-0.6 sigma)

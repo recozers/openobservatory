@@ -1,0 +1,52 @@
+{
+  "site_id": "prineville",
+  "centre": [44.29750, -120.88750],
+  "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815",
+  "polygons": [
+    {
+      "name": "hall_A_original",
+      "ptype": "hall",
+      "confidence": "medium",
+      "valid_from": "2011-06-01",
+      "note": "Westernmost of the three NNW-SSE halls south of the H buildings; believed to be the 2011 first building.",
+      "offsets_m": [[-60, -80], [80, -80], [80, -330], [-60, -330]]
+    },
+    {
+      "name": "hall_B",
+      "ptype": "hall",
+      "confidence": "medium",
+      "valid_from": "2013-01-01",
+      "offsets_m": [[150, -150], [300, -150], [300, -420], [150, -420]]
+    },
+    {
+      "name": "hall_C",
+      "ptype": "hall",
+      "confidence": "medium",
+      "valid_from": "2015-01-01",
+      "offsets_m": [[320, -200], [460, -200], [460, -520], [320, -520]]
+    },
+    {
+      "name": "hall_H_west",
+      "ptype": "hall",
+      "confidence": "medium",
+      "valid_from": "2018-06-01",
+      "note": "H-shaped building west of centre.",
+      "offsets_m": [[-300, 560], [-30, 560], [-30, 200], [-300, 200]]
+    },
+    {
+      "name": "hall_H_east",
+      "ptype": "hall",
+      "confidence": "medium",
+      "valid_from": "2019-01-01",
+      "note": "H-shaped building east of centre.",
+      "offsets_m": [[380, 380], [640, 380], [640, 40], [380, 40]]
+    },
+    {
+      "name": "campus",
+      "ptype": "campus",
+      "confidence": "high",
+      "note": "Whole plateau campus including the north-west construction area (excluded from the annulus).",
+      "offsets_m": [[-1150, -700], [800, -700], [800, 900], [-1150, 900]]
+    }
+  ]
+}

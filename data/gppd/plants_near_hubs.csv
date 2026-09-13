@@ -1,0 +1,12 @@
+hub,name,primary_fuel,capacity_mw,latitude,longitude,dist_km
+zhongwei_hub,CPI Zhongwei Cogen power station,Coal,700.0,37.623,105.235,4.0
+zhongwei_hub,Ningxia Meili power station,Coal,150.0,37.5124,105.2777,11.9
+ulanqab_hub,Huadian Zhuozi power station,Coal,800.0,40.9221,112.6397,39.5
+ulanqab_hub,Jingneng Energy Jining power station,Coal,700.0,41.0533,113.1533,7.4
+ulanqab_hub,Jingneng Energy Huaning Cogen power station,Coal,300.0,41.0193,113.16,5.5
+helingeer_hub,Datang Tuoketuo power station,Coal,6720.0,40.1947,111.3589,38.2
+helingeer_hub,Shengle Cogen power station,Coal,700.0,40.5637,111.8639,21.1
+helingeer_hub,Hohhot Jinqiao power station,Coal,600.0,40.7085,111.7399,32.2
+helingeer_hub,Hohhot Jinshan power station,Coal,600.0,40.7069,111.4576,37.9
+chongqing_hub,Chongqing Shuanghuai power station,Coal,1920.0,30.1621,106.5474,35.9
+chongqing_hub,Liangjiang,Gas,934.0,29.78,106.51,9.7

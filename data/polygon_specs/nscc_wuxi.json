@@ -1,0 +1,20 @@
+{
+  "site_id": "nscc_wuxi",
+  "centre": [31.54861, 120.24804],
+  "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_51RTQ_20210503",
+  "polygons": [
+    {
+      "name": "nscc_building_box",
+      "ptype": "hall",
+      "confidence": "low",
+      "note": "160 m box centred on the published coordinates of Sunway TaihuLight (zh.wikipedia); the building could not be singled out in 10 m imagery of this dense district, so the box is deliberately generous.",
+      "offsets_m": [[-80, 80], [80, 80], [80, -80], [-80, -80]]
+    },
+    {
+      "name": "campus",
+      "ptype": "campus",
+      "confidence": "low",
+      "offsets_m": [[-160, 160], [160, 160], [160, -160], [-160, -160]]
+    }
+  ]
+}

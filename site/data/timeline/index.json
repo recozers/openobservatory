@@ -1,0 +1,242 @@
+{
+ "nsa_utah": {
+  "est_mid": 40.0,
+  "est_lo": 25.0,
+  "est_hi": 50.0,
+  "basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 35
+ },
+ "lulea": {
+  "est_mid": 87.3,
+  "est_lo": 54.5,
+  "est_hi": 109.1,
+  "basis": "documented capacity in force (A2, grid_connection) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "prineville": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 412.9,
+  "basis": "roofed \u22656 months (30.6 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 35
+ },
+ "ornl_olcf": {
+  "est_mid": 19.7,
+  "est_lo": 12.3,
+  "est_hi": 24.6,
+  "basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 35
+ },
+ "riken_kobe": {
+  "est_mid": 23.9,
+  "est_lo": 14.9,
+  "est_hi": 29.9,
+  "basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 35
+ },
+ "nscc_wuxi": {
+  "est_mid": 12.3,
+  "est_lo": 7.7,
+  "est_hi": 15.4,
+  "basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 35
+ },
+ "nscc_guangzhou": {
+  "est_mid": 14.8,
+  "est_lo": 9.2,
+  "est_hi": 18.5,
+  "basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 35
+ },
+ "colossus_memphis": {
+  "est_mid": 100.0,
+  "est_lo": 62.5,
+  "est_hi": 125.0,
+  "basis": "documented capacity in force (A1, grid_connection) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": true,
+  "night": true,
+  "quarters": 35
+ },
+ "fairwater_wi": {
+  "est_mid": 278.3,
+  "est_lo": 173.9,
+  "est_hi": 347.8,
+  "basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": true,
+  "night": true,
+  "quarters": 16
+ },
+ "rainier_in": {
+  "est_mid": 862.6,
+  "est_lo": 539.1,
+  "est_hi": 1078.3,
+  "basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": true,
+  "night": true,
+  "quarters": 16
+ },
+ "prometheus_oh": {
+  "est_mid": 173.9,
+  "est_lo": 108.7,
+  "est_hi": 217.4,
+  "basis": "documented capacity in force (A2, grid_connection) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": true,
+  "night": true,
+  "quarters": 35
+ },
+ "stargate_abilene": {
+  "est_mid": 417.4,
+  "est_lo": 260.9,
+  "est_hi": 521.7,
+  "basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": true,
+  "night": true,
+  "quarters": 20
+ },
+ "hyperion_la": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 394.9,
+  "basis": "roofed \u22656 months (29.3 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "s2": true,
+  "no2": false,
+  "night": true,
+  "quarters": 4
+ },
+ "zhongwei_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "ulanqab_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "helingeer_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "zhangbei_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "guian_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "qingyang_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "chongqing_hub": {
+  "est_mid": 0.0,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "no roof yet",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "colossus2_southaven": {
+  "est_mid": 1281.0,
+  "est_lo": 689.0,
+  "est_hi": 3058.0,
+  "basis": "NO2-flux on-site generation: 1281 \u00b1 248 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 5
+ },
+ "cn_horinger_cloud_valley": {
+  "est_mid": 161.2,
+  "est_lo": 100.8,
+  "est_hi": 201.5,
+  "basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_zhangbei_alibaba": {
+  "est_mid": 112.7,
+  "est_lo": 70.4,
+  "est_hi": 140.8,
+  "basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cn_ulanqab_park": {
+  "est_mid": 147.3,
+  "est_lo": 92.1,
+  "est_hi": 184.2,
+  "basis": "documented capacity in force (A2, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+  "s2": true,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ }
+}

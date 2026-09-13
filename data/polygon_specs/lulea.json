@@ -1,0 +1,27 @@
+{
+  "site_id": "lulea",
+  "centre": [65.62150, 22.11400],
+  "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_34WET_20210829",
+  "polygons": [
+    {
+      "name": "hall_north",
+      "ptype": "hall",
+      "confidence": "medium",
+      "note": "Dark-roofed block with rooftop cooling lanes, long axis ENE. Building identity (LLA1/2/3) not resolved at 10 m.",
+      "offsets_m": [[-3, 366], [89, 234], [-197, 34], [-289, 166]]
+    },
+    {
+      "name": "hall_south",
+      "ptype": "hall",
+      "confidence": "medium",
+      "note": "Dark-roofed block south of hall_north, long axis N-S.",
+      "offsets_m": [[-170, 10], [60, 30], [70, -300], [-150, -330]]
+    },
+    {
+      "name": "campus",
+      "ptype": "campus",
+      "confidence": "high",
+      "offsets_m": [[-360, -400], [160, -400], [160, 430], [-360, 430]]
+    }
+  ]
+}

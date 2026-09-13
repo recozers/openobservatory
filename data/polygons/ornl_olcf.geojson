@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "ornl_olcf",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "east_campus_5600_complex",
+    "ptype": "hall",
+    "confidence": "medium",
+    "note": "Compact cluster of white-roofed buildings north-east of the main campus, taken to be ORNL's 5600/5700/5800 complex (Computational Sciences Building and its mechanical plant). Individual buildings not resolved.",
+    "site_id": "ornl_olcf",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_16SGE_20210926"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.3023972,
+       35.9365753
+      ],
+      [
+       -84.299516,
+       35.9365753
+      ],
+      [
+       -84.299516,
+       35.933421
+      ],
+      [
+       -84.3023972,
+       35.933421
+      ],
+      [
+       -84.3023972,
+       35.9365753
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "east_campus",
+    "ptype": "campus",
+    "confidence": "medium",
+    "site_id": "ornl_olcf",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_16SGE_20210926"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.3032837,
+       35.9372062
+      ],
+      [
+       -84.2986295,
+       35.9372062
+      ],
+      [
+       -84.2986295,
+       35.9327
+      ],
+      [
+       -84.3032837,
+       35.9327
+      ],
+      [
+       -84.3032837,
+       35.9372062
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

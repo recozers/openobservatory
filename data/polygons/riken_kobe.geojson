@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "riken_kobe",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "computer_building",
+    "ptype": "hall",
+    "confidence": "low",
+    "note": "Light-grey ~100 m box at the published R-CCS coordinates; identification among dense port-island buildings is tentative.",
+    "site_id": "riken_kobe",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_53SNU_20210515"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       135.2189636,
+       34.6568507
+      ],
+      [
+       135.2200545,
+       34.6568507
+      ],
+      [
+       135.2200545,
+       34.6559493
+      ],
+      [
+       135.2189636,
+       34.6559493
+      ],
+      [
+       135.2189636,
+       34.6568507
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "campus",
+    "ptype": "campus",
+    "confidence": "low",
+    "site_id": "riken_kobe",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_53SNU_20210515"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       135.2180909,
+       34.6574817
+      ],
+      [
+       135.2209272,
+       34.6574817
+      ],
+      [
+       135.2209272,
+       34.6553183
+      ],
+      [
+       135.2180909,
+       34.6553183
+      ],
+      [
+       135.2180909,
+       34.6574817
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

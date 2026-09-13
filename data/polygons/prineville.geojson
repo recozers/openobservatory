@@ -1,0 +1,237 @@
+{
+ "type": "FeatureCollection",
+ "name": "prineville",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_A_original",
+    "ptype": "hall",
+    "confidence": "medium",
+    "valid_from": "2011-06-01",
+    "note": "Westernmost of the three NNW-SSE halls south of the H buildings; believed to be the 2011 first building.",
+    "site_id": "prineville",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.8882518,
+       44.29678
+      ],
+      [
+       -120.8864975,
+       44.29678
+      ],
+      [
+       -120.8864975,
+       44.2945302
+      ],
+      [
+       -120.8882518,
+       44.2945302
+      ],
+      [
+       -120.8882518,
+       44.29678
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_B",
+    "ptype": "hall",
+    "confidence": "medium",
+    "valid_from": "2013-01-01",
+    "site_id": "prineville",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.8856204,
+       44.2961501
+      ],
+      [
+       -120.8837408,
+       44.2961501
+      ],
+      [
+       -120.8837408,
+       44.2937202
+      ],
+      [
+       -120.8856204,
+       44.2937202
+      ],
+      [
+       -120.8856204,
+       44.2961501
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_C",
+    "ptype": "hall",
+    "confidence": "medium",
+    "valid_from": "2015-01-01",
+    "site_id": "prineville",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.8834902,
+       44.2957001
+      ],
+      [
+       -120.8817359,
+       44.2957001
+      ],
+      [
+       -120.8817359,
+       44.2928203
+      ],
+      [
+       -120.8834902,
+       44.2928203
+      ],
+      [
+       -120.8834902,
+       44.2957001
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_H_west",
+    "ptype": "hall",
+    "confidence": "medium",
+    "valid_from": "2018-06-01",
+    "note": "H-shaped building west of centre.",
+    "site_id": "prineville",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.8912592,
+       44.3025397
+      ],
+      [
+       -120.8878759,
+       44.3025397
+      ],
+      [
+       -120.8878759,
+       44.2992999
+      ],
+      [
+       -120.8912592,
+       44.2992999
+      ],
+      [
+       -120.8912592,
+       44.3025397
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "hall_H_east",
+    "ptype": "hall",
+    "confidence": "medium",
+    "valid_from": "2019-01-01",
+    "note": "H-shaped building east of centre.",
+    "site_id": "prineville",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.8827384,
+       44.3009198
+      ],
+      [
+       -120.8794804,
+       44.3009198
+      ],
+      [
+       -120.8794804,
+       44.29786
+      ],
+      [
+       -120.8827384,
+       44.29786
+      ],
+      [
+       -120.8827384,
+       44.3009198
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "campus",
+    "ptype": "campus",
+    "confidence": "high",
+    "note": "Whole plateau campus including the north-west construction area (excluded from the annulus).",
+    "site_id": "prineville",
+    "digitised_from": "Sentinel-2 L2A 10 m true colour, S2B_10TFQ_20210815"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -120.9019102,
+       44.2912004
+      ],
+      [
+       -120.8774755,
+       44.2912004
+      ],
+      [
+       -120.8774755,
+       44.3055995
+      ],
+      [
+       -120.9019102,
+       44.3055995
+      ],
+      [
+       -120.9019102,
+       44.2912004
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

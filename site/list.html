@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Watch</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .wrap { max-width: 980px; margin: 0 auto; padding: 18px 16px 40px; }
+  .intro { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 16px; }
+  .intro h1 { font-size: 22px; margin: 0 0 6px; }
+  .intro p { margin: 6px 0; font-size: 14px; }
+  .cans { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-top: 10px; }
+  .can { border-radius: 8px; padding: 10px 12px; font-size: 13px; border: 1px solid var(--line); }
+  .can.yes { background: #e8f5ec; border-color: #b9dfc4; } .can.part { background: #fff7e6; border-color: #f0d9a8; } .can.no { background: #fdecea; border-color: #f2b8b5; }
+  .can b { display: block; margin-bottom: 2px; }
+  .toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 12px 0; font-size: 13px; }
+  .toolbar select, .toolbar input { font: inherit; padding: 4px 6px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); gap: 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .card h2 { font-size: 16px; margin: 0 0 2px; }
+  .card .meta { color: var(--muted); font-size: 12px; margin-bottom: 8px; }
+  .lines { display: grid; grid-template-columns: 92px 1fr; gap: 4px 10px; font-size: 13.5px; }
+  .lines div:nth-child(odd) { color: var(--muted); }
+  .conf { display: inline-block; font-size: 11.5px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); margin-left: 6px; }
+  .conf.high { background: #e8f5ec; } .conf.medium { background: #fff7e6; } .conf.low { background: #eeeeec; }
+  .spark { width: 100%; height: 80px; display: block; margin-top: 8px; }
+  .how { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .card a { font-size: 12.5px; }
+  @media (max-width: 500px) { .cards { grid-template-columns: 1fr; } .lines { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="intro">
+    <h1>DC Watch</h1>
+    <p>Tracking data-centre construction and activity from free satellite data, with sources shown for every claim. <span id="build-note" class="small"></span></p>
+    <div class="cans">
+      <div class="can yes"><b>We can see construction.</b> Sentinel-2 dates every hall's roof to the month and shows fit-out afterwards.</div>
+      <div class="can yes"><b>We can see fuel burning on site.</b> Where a site runs its own turbines, NO₂ plumes give a monthly activity readout, calibrated against EPA-monitored power plants.</div>
+      <div class="can no"><b>We cannot see electricity use directly.</b> Roof temperature does not track load, day or night (tested at 12 sites). Load figures below are documented capacity with a stated assumption, unless marked as measured.</div>
+    </div>
+    <p class="small"><a href="index.html">Map</a> · <a href="map.html">Quarterly detail</a> · <a href="research/index.html">Research view</a> · <a href="https://github.com/recozers/Meridian">Code and data</a></p>
+  </div>
+  <div class="toolbar">
+    <label>Sort <select id="sort"><option value="default">measured first, then by load</option><option value="name">by name</option><option value="country">by country</option></select></label>
+    <label><input type="checkbox" id="hide-hubs" checked> hide approximate hub centroids</label>
+  </div>
+  <div class="cards" id="cards"></div>
+</div>
+<script src="cards.js?v=20260913a"></script>
+</body>
+</html>

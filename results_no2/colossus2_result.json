@@ -1,0 +1,31 @@
+{
+ "site": "colossus2_southaven",
+ "change_mol_s": 0.9976043046873454,
+ "se": 0.08702615127129275,
+ "nox_kgh": 580.9746250890481,
+ "nox_se": 182.32114775514816,
+ "calibration": {
+  "factor": 2.6638677666833726,
+  "factor_se": 0.18193647912032385,
+  "scatter": 0.8030255288594504,
+  "n": 5
+ },
+ "ef_range_kg_per_mwh": [
+  0.5,
+  1.0
+ ],
+ "mw_range": [
+  398.65347733389996,
+  1526.5915456883927
+ ],
+ "plateau_calibration": {
+  "factor": 4.681558599428074,
+  "factor_se": 0.1956749686979921,
+  "scatter": 0.7266895252564571,
+  "n": 5,
+  "method": "near-source plateau 1-9 km"
+ },
+ "nox_kgh_plateau": 1021.0216836406571,
+ "nox_se_plateau": 181.80039165105683,
+ "note": "EMG-based factor 2.66 applied to a plateau quantity gave 581 kg/h (inconsistent); plateau-consistent value is nox_kgh_plateau"
+}
