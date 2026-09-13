@@ -128,6 +128,11 @@ Final phone-width review caught a wording ambiguity when a site has both an old 
   (4 frames). Colossus 1 remains the only night step (+1.24 ± 0.28 K at 125 MW, block-wide, turbine yard). Daytime steps at
   Rainier (+1.44 ± 0.60) and Fairwater (+1.35 ± 0.49) are the fit-out/roof effect seen before. The thermal null holds at the
   largest documented loads in the inventory; the refresh workflow re-runs this cheaply as 2026 frames accumulate.
+- C1/C4 result: the plume test over the inventory was stopped at 33 sites once it was clear that grid-fed campuses carry no
+  NO2 signature (Stuart's point, and the data agree). The 32 grid-fed sites serve as the null distribution: z mean -0.32,
+  sd 1.42, 95th percentile 1.89, max 2.00, none at 2.5 sigma. So the 2.5-sigma bar has a measured false-positive rate of
+  0/32 and stays. Only generator-driven sites can reach "measured": the route is Astra's B1 register plus a flux run per
+  operating fleet. results_no2/plume_batch_summary.csv keeps the per-site z-scores.
 
 ## 2026-09-13 — Astra B1 permit audit started
 
