@@ -47,7 +47,7 @@ plant in B1 that is grid-connected and reports; write `tools/campd_monthly.py` (
 build shows "yes: dedicated plant generated N MW average" for at least one site once data exists, and the code path is
 tested on Southaven CC (ORIS 6641... verify) as a non-dedicated example that must NOT become a campus load.
 
-### B3. Annual loads from published water use  [no-EE]
+### B3. Annual loads from published water use  [no-EE]  — done by Claude 13 Sep (see LOG); remaining: Microsoft metro attribution
 Google publishes per-site water withdrawal and consumption (2023 report onward) and fleet WUE; Meta publishes per-site
 water; Microsoft publishes FY25 electricity and water by metro. Water ÷ WUE gives an annual energy for water-cooled
 campuses. Extend `data/operator_disclosures.csv` and `tools/ingest_disclosures.py` (A11) with `water_derived_annual`
@@ -65,7 +65,7 @@ Utility and ISO reports of aggregate data-centre load (Dominion, AEP Ohio, ERCOT
 Singapore EMA) into `data/regional_dc_load.csv` with URLs, for the docs and for testing the inventory's regional totals.
 Not per site.
 
-### B6. Map: show the evidence kind  [no-EE]
+### B6. Map: show the evidence kind  [no-EE]  — done by Claude 13 Sep (measured/derived/detected/presumed/construction); remaining: list.html filter, default view fitting all markers, tests
 `build_status.py` gains an `evidence_kind` field (measured / detected / presumed / construction) with the rules above;
 `site/mapmin.js` and `site/cards.js` draw measured in orange, detected in a second colour, presumed in blue, construction
 white, with the legend updated; `list.html` gets a filter by kind; the default map view fits all markers. Accept: Abilene

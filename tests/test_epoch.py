@@ -30,7 +30,7 @@ class EpochTimelineTests(unittest.TestCase):
         rows = normalized_timeline('Example', self.rows(), date(2026, 9, 13))
         self.assertEqual(len(rows), 6)
         data = pd.DataFrame(rows)
-        self.assertEqual(timeline.cap_in_force(data, 'epoch_example', '2026-09-13', 1.2), (90.0, 'A2', 'it_reported'))
+        self.assertEqual(timeline.cap_in_force(data, 'epoch_example', '2026-09-13', 1.2)[:3], (90.0, 'A2', 'it_reported'))
         self.assertEqual(timeline.cap_in_force(data.iloc[::-1], 'epoch_example', '2026-09-13', 1.2)[0], 90)
         self.assertEqual(timeline.cap_in_force(data, 'epoch_example', '2026-02-01', 1.2)[0], 0)
         self.assertEqual(data.iloc[0].valid_to, '2026-05-31')

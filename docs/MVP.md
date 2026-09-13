@@ -244,3 +244,15 @@ calibration now averages hours 12–14 local standard, which brackets the overpa
 factor moves from 4.68 ± 0.20 to 4.41 ± 0.18 (scatter ±19 %); every calibrated NOx series was regenerated with
 `tools/refresh.py --dry-run`. Colossus 2's season-matched 2026 change is now about 6 % lower (latest quarter
 1,207 ± 248 kg NOx/h); the site's bands follow. The old factor is kept in `results_no2/calibration_plateau_hours19-20.json`.
+
+## Operator disclosures at scale, 13 Sep 2026 (phase 2): 31 sites with operator-derived loads
+
+Meta's Environmental Data Index gives annual electricity for all 18 of its campuses (2011–2024), so ten more Meta
+campuses joined the inventory and every one now reads "operator reports an average IT load of N MW in 2024". A measured
+whole-campus average carries forward over third-party estimates that describe only a new cluster. Google publishes
+per-campus water but no WUE; its own totals imply 1.02–1.06 L/kWh, and against Meta's metered electricity the water
+method reproduces a site's load only to about a factor of two. Twelve Google campuses therefore carry a "derived" annual IT
+load with a 0.5×–2× band, drawn in light orange, never outranking reported electricity, with air-cooled campuses excluded
+and merged campus pairs marked as upper bounds. The map now colours evidence kind: measured, derived, detected, presumed,
+construction. Grid-fed campuses show no NO₂ signature (0 of 32 at 2.5σ), so satellites can add measured sites only where
+fuel is burned on site; the generator watch list (B7) is how the next ones arrive.

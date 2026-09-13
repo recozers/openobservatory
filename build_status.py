@@ -98,9 +98,10 @@ def main():
             carried = "carried" in str(last.get("cap_basis"))
             water = "water" in str(last.get("cap_basis")) or (meas_q and "water" in str(meas_q[-1].get("cap_basis")))
             if water:
-                running = f"yes: about {cap_now:.0f} MW average IT load in {yr}, derived from the operator's published water use" + (" (carried forward)" if carried else "")
-                load = f"about {last['est_mid']:.0f} MW from water use ÷ WUE (range {last['est_lo']:.0f}–{last['est_hi']:.0f}); an annual average with ±30 % method uncertainty"
-                conf, key = "medium", "capacity"
+                ub = " and an upper bound, since one water figure covers two campuses" if last.get("cap_upper_bound") else ""
+                running = f"yes: about {cap_now:.0f} MW average IT load in {yr}, derived from the operator's published water use (uncertain to about ×2{ub})" + (" (carried forward)" if carried else "")
+                load = f"about {last['est_mid']:.0f} MW from water use ÷ WUE (range {last['est_lo']:.0f}–{last['est_hi']:.0f}); an annual average, method validated only to about ×2"
+                conf, key = "low", "capacity"
             else:
                 running = f"yes: operator reports an average IT load of {cap_now:.0f} MW in {yr}" + (" (latest published year, carried forward)" if carried else "")
                 load = f"about {last['est_mid']:.0f} MW, operator-reported annual electricity ÷ 8760 h (range {last['est_lo']:.0f}–{last['est_hi']:.0f}); an average, not a peak"
@@ -174,7 +175,7 @@ def main():
                         recent=recent, est_mid=(last or {}).get("est_mid"), est_hi=(last or {}).get("est_hi") or 0, last_q=(last or {}).get("q"),
                         polygons_low=bool(s.get("polygons") and any(p.get("confidence") == "low" for p in s["polygons"])),
                         combustion=key == "nox",
-                        evidence_kind=("measured" if (key == "nox" or running.startswith("yes: operator reports") or running.startswith("yes: about"))
+                        evidence_kind=("derived" if running.startswith("yes: about") else "measured" if (key == "nox" or running.startswith("yes: operator reports"))
                                        else "detected" if running.startswith("yes") or (str((t or {}).get("ntl_lit") or "")[:4].isdigit() and running.startswith("presumably"))
                                        else "presumed" if running.startswith("presumably")
                                        else "construction")))

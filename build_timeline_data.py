@@ -69,7 +69,7 @@ def cap_in_force(tl, sid, date, pue):
     if not meas.empty:
         meas = meas.assign(_rank=meas.capacity_basis.map(MEASURED_RANK)).sort_values(["_rank", "valid_from"], ascending=[True, False])
         m = meas.iloc[0]
-        return it_mw(float(m.capacity_mw), m.capacity_basis, pue), m.tier, m.capacity_basis
+        return it_mw(float(m.capacity_mw), m.capacity_basis, pue), m.tier, m.capacity_basis, str(m.notes)
     past = mine[mine.capacity_basis.isin(MEASURED) & (mine.valid_to != "") & (mine.valid_to < date)].sort_values("valid_to")
     if not past.empty:
         m = past.iloc[-1]
@@ -79,17 +79,17 @@ def cap_in_force(tl, sid, date, pue):
         newer = r[(r.valid_from > m.valid_to) & ((r.tier == "A1") | r.capacity_basis.isin(MEASURED))]
         if months <= 24 and newer.empty:
             basis = "carried_measured_annual" if m.capacity_basis == "facility_measured_annual" else "carried_it_measured_annual"
-            return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis
+            return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis, str(m.notes)
     if r.empty:
-        return None, None, None
+        return None, None, None, ""
     # Epoch carries IT and facility figures for the same date. Prefer direct IT
     # over a PUE conversion; never sum the two or depend on CSV row order.
     r = r.assign(it_preferred=r.capacity_basis.isin(["it_reported", "it_measured_hpl"]))
     r = r.sort_values(["it_preferred", "valid_from"]).iloc[-1]
     cap = float(r.capacity_mw)
     if r.capacity_basis == "placeholder":
-        return 0.0, r.tier, "placeholder"
-    return it_mw(cap, r.capacity_basis, pue), r.tier, r.capacity_basis
+        return 0.0, r.tier, "placeholder", str(r.notes)
+    return it_mw(cap, r.capacity_basis, pue), r.tier, r.capacity_basis, str(r.notes)
 
 
 def utilisation_prior(cap_basis, site_class):
@@ -97,7 +97,7 @@ def utilisation_prior(cap_basis, site_class):
     Lulea at 0.25-0.45 of its 120 MW grid feed (2022-2024) and New Albany at 0.24-0.36 of its 250 MW connection (2023-2024);
     ORNL Frontier averaged 12.2 MW in 2023 against 21-23 MW measured at HPL. AI-training campuses have no calibration yet."""
     if cap_basis == "water_derived_it_annual":
-        return 0.7, 1.0, 1.3, "annual IT energy derived from the operator's published water use ÷ WUE, ±30 %"
+        return 0.5, 1.0, 2.0, "annual IT energy derived from the operator's published water use ÷ WUE; validated to about ×2 against Meta's metered electricity"
     if cap_basis in MEASURED:
         return 0.9, 1.0, 1.1, "operator-reported annual average electricity ÷ 8760 h, ±10 %"
     if cap_basis in ("carried_measured_annual", "carried_it_measured_annual"):
@@ -269,7 +269,7 @@ def main():
         for q in quarters():
             qs = str(q)
             qend = min(q.end_time.strftime("%Y-%m-%d"), pd.Timestamp.utcnow().strftime("%Y-%m-%d"))
-            cap, cap_tier, cap_basis = cap_in_force(tl, sid, qend, pue)
+            cap, cap_tier, cap_basis, cap_note = cap_in_force(tl, sid, qend, pue)
             roofed = [h for h in halls if (roof_on.get(h["name"]) == "existing" and
                       (not h["roof_date_required"] or (roof_evidence.get(h["name"], {}).get("first_observation") or "9999") <= qend[:7]))
                       or (roof_on.get(h["name"]) not in ("existing", "not_yet", "unknown", None) and roof_on[h["name"]] <= qend[:7])]
@@ -298,7 +298,7 @@ def main():
             adj = "ADJACENT PLANT" in str(s.get("nox_ef_note") or "")
             if fx and ef and not adj and fx["nox_kgh"] > 2 * fx["nox_se"] and fx["nox_kgh"] > 100:
                 lo, mid, hi, basis = fx["mw_lo"], round(fx["nox_kgh"] / ((EF_LO + EF_HI) / 2), 0), fx["mw_hi"], (("ADJACENT PLANT generation, not campus load: " if adj else "NO2-flux on-site generation: ") + f"{fx['nox_kgh']:.0f} ± {fx['nox_se']:.0f} kg NOx/h (TROPOMI, calibrated on 5 plants) at {EF_LO}-{EF_HI} kg NOx/MWh, midpoint at {(EF_LO + EF_HI) / 2}")
-            rows.append(dict(q=qs, cap_doc_mw=None if cap is None else round(cap, 1), cap_tier=cap_tier, cap_basis=cap_basis, no2_flux=fx,
+            rows.append(dict(q=qs, cap_doc_mw=None if cap is None else round(cap, 1), cap_tier=cap_tier, cap_basis=cap_basis, cap_upper_bound="Upper bound" in (cap_note or ""), no2_flux=fx,
                              halls_roofed=len(roofed), halls_total=len(halls), built_ha=round(built_ha, 1), fitted_ha=round(fitted_ha, 1),
                              est_lo=round(lo, 1), est_mid=None if mid is None else round(mid, 1), est_hi=round(hi, 1), basis=basis,
                              night=night.get(qs), day=day.get(qs), no2=no2q.get(qs), ntl=ntlq.get(qs)))

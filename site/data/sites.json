@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T17:20:47.927986+00:00",
+ "generated": "2026-09-13T17:26:47.867962+00:00",
  "extract_meta": {
   "backend": "Landsat 8 C1 brightness temperature 2013-2021 (day) + Landsat 8/9 C2 surface temperature 2022-2026 (day, Earth Engine) + ECOSTRESS 2018-2026 (day and night)",
   "start": "2013-04-11",
@@ -4472,6 +4472,46 @@
      "source": "Epoch AI: Google Pryor (North); IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 2.0. Building 2 is operational, confirmed via RAAD drone imagery of spinning cooling tower fans."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 282.7,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 2,611 ML water consumed in 2022 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 2,724 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Whole Mayes County (Pryor) campus; inventory site is the North portion only. Implied fleet WUE = Google DC water consumption (690 of 5220 MG fleet) / (DC electr"
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 332.5,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 3,086 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 3,204 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Whole Mayes County (Pryor) campus; inventory site is the North portion only. Implied fleet WUE = Google DC water consumption (815 of 6101 MG fleet) / (DC electr"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 343.3,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 3,154 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 3,338 GWh facility, PUE 1.11",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Whole Mayes County (Pryor) campus; inventory site is the North portion only. Implied fleet WUE = Google DC water consumption (833 of 7787 MG fleet) / (DC electr"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 456.5,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 4,094 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 4,479 GWh facility, PUE 1.12",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Whole Mayes County (Pryor) campus; inventory site is the North portion only. Implied fleet WUE = Google DC water consumption (1081 of 10523 MG fleet) / (DC elec"
     }
    ],
    "q_hat_mw": null,
@@ -4732,6 +4772,46 @@
      "source": "Epoch AI: Google New Albany; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 5.0. Building 5 is operational. Estimated from the high-res image from May."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 20.3,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 188 ML water consumed in 2022 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 203 GWh facility, PUE 1.14",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (50 of 5220 MG fleet) / (DC electricity 20,616,500 MWh / fleet PUE 1.1); Google publishes no WUE. Estimate = 23 "
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 51.8,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 481 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 500 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (127 of 6101 MG fleet) / (DC electricity 23,980,800 MWh / fleet PUE 1.1); Google publishes no WUE. Estimate = 57"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 145.3,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,335 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 1,362 GWh facility, PUE 1.07",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (353 of 7787 MG fleet) / (DC electricity 30,637,100 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = 1"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 352.8,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 3,164 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 3,276 GWh facility, PUE 1.06",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (836 of 10523 MG fleet) / (DC electricity 42,415,800 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = "
     }
    ],
    "q_hat_mw": null,
@@ -5012,6 +5092,36 @@
      "source": "Epoch AI: Google Columbus; IT power (MW); projection",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch projection, not a meter reading. Buildings operational: 5.0. Building 5 operational. The [transmission line construction notice](https://www.aeptransmission.com/ohio/docs/Hartman%20Farms%20Extension%20No.%202%20138%20kV%20Transmission%20Line%20Project%20Construction%20Notice.pdf) that expands site by 100 MW is assumed to be entirely for Building 5, and has an in-service date of July 1, 2027 (page 3). Estimate taken on the safe side based on completion times for Building 3-4 from when roof was complete."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 9.5,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 88 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 92 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Water row is 'Lockbourne, OH'; PUE row is 'Columbus, Ohio' (same Rickenbacker-area campus). Implied fleet WUE = Google DC water consumption (23 of 6101 MG fleet"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 59.0,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 542 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 548 GWh facility, PUE 1.06",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Water row is 'Lockbourne, OH'; PUE row is 'Columbus, Ohio' (same Rickenbacker-area campus). Implied fleet WUE = Google DC water consumption (143 of 7787 MG flee"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 151.8,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,361 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 1,409 GWh facility, PUE 1.06",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Water row is 'Lockbourne, OH'; PUE row is 'Columbus, Ohio' (same Rickenbacker-area campus). Implied fleet WUE = Google DC water consumption (360 of 10523 MG fle"
     }
    ],
    "q_hat_mw": null,
@@ -5656,6 +5766,46 @@
      "source": "Epoch AI: Google Council Bluffs (East); IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 3.0. Building 3 is operational. 7 cooling towers were finally installed despite being more spread out compared to the first two buildings. Cooling towers models vary slightly between buildings. Ground clearing to the southwest seems to be setting up for two more buildings."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 367.3,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 3,392 ML water consumed in 2022 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 3,539 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Google reports one water row for both Council Bluffs campuses; PUE = mean of '1st facility' and '2nd facility'. Inventory site is the East campus only, so this "
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 399.8,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 3,710 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 3,835 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Google reports one water row for both Council Bluffs campuses; PUE = mean of '1st facility' and '2nd facility'. Inventory site is the East campus only, so this "
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 416.2,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 3,824 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 3,974 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Google reports one water row for both Council Bluffs campuses; PUE = mean of '1st facility' and '2nd facility'. Inventory site is the East campus only, so this "
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 568.2,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 5,095 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 5,450 GWh facility, PUE 1.09",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. Google reports one water row for both Council Bluffs campuses; PUE = mean of '1st facility' and '2nd facility'. Inventory site is the East campus only, so this "
     }
    ],
    "q_hat_mw": null,
@@ -6836,6 +6986,26 @@
      "source": "Epoch AI: Google Bristow; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 3.0. Building 3 is operational, based off of colored motion artifacts from cooling towers."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 34.8,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 320 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 332 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. PUE row printed as 'Bristol, Virginia' in the 2026 report; treated as Bristow. Implied fleet WUE = Google DC water consumption (84 of 7787 MG fleet) / (DC elect"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 113.0,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,013 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 1,079 GWh facility, PUE 1.09",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. PUE row printed as 'Bristol, Virginia' in the 2026 report; treated as Bristow. Implied fleet WUE = Google DC water consumption (268 of 10523 MG fleet) / (DC ele"
     }
    ],
    "q_hat_mw": null,
@@ -7964,6 +8134,26 @@
      "source": "Epoch AI: Google Omaha; IT power (MW); projection",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch projection, not a meter reading. Buildings operational: 5.0. Building 5 is operational. We expect a 5th building because there's enough land cleared for one. We assume a roughly 6-month delay after Building 4."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 13.2,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 122 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 126 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (32 of 7787 MG fleet) / (DC electricity 30,637,100 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = 14"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 77.6,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 696 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 714 GWh facility, PUE 1.05",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (184 of 10523 MG fleet) / (DC electricity 42,415,800 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = "
     }
    ],
    "q_hat_mw": null,
@@ -8492,6 +8682,46 @@
      "source": "Epoch AI: Google The Dalles; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 2.0. Building 2 is estimated to be operational, based on all external equipment being installed, and ordinary cars parked by the building."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 112.4,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,038 ML water consumed in 2022 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 1,068 GWh facility, PUE 1.08",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. One water row for both The Dalles campuses; PUE = mean of the two facilities. Implied fleet WUE = Google DC water consumption (274 of 5220 MG fleet) / (DC elect"
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 123.4,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,145 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 1,172 GWh facility, PUE 1.08",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. One water row for both The Dalles campuses; PUE = mean of the two facilities. Implied fleet WUE = Google DC water consumption (302 of 6101 MG fleet) / (DC elect"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 148.9,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,368 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 1,409 GWh facility, PUE 1.08",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. One water row for both The Dalles campuses; PUE = mean of the two facilities. Implied fleet WUE = Google DC water consumption (361 of 7787 MG fleet) / (DC elect"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 198.0,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,775 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 1,873 GWh facility, PUE 1.08",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Upper bound: one water row covers two campuses. One water row for both The Dalles campuses; PUE = mean of the two facilities. Implied fleet WUE = Google DC water consumption (469 of 10523 MG fleet) / (DC elec"
     }
    ],
    "q_hat_mw": null,
@@ -10780,6 +11010,46 @@
      "source": "Epoch AI: Google Midlothian; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 1.0. Estimated full completion of the expanded row of cooling towers and backup generators."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 38.2,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 353 ML water consumed in 2022 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 389 GWh facility, PUE 1.16",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (93 of 5220 MG fleet) / (DC electricity 20,616,500 MWh / fleet PUE 1.1); Google publishes no WUE. Estimate = 44 "
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 55.4,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 514 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 548 GWh facility, PUE 1.13",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (136 of 6101 MG fleet) / (DC electricity 23,980,800 MWh / fleet PUE 1.1); Google publishes no WUE. Estimate = 63"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 75.1,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 690 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 724 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (182 of 7787 MG fleet) / (DC electricity 30,637,100 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = 8"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 93.0,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 834 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 896 GWh facility, PUE 1.10",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (220 of 10523 MG fleet) / (DC electricity 42,415,800 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = "
     }
    ],
    "q_hat_mw": null,
@@ -11140,6 +11410,36 @@
      "source": "Epoch AI: Google Lancaster; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 2.0. At this point, Building 1 and 2 have since already been operational. Additionally, there is visible steam showing clear evidence of operational for both before this date."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 3.1,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 29 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 30 GWh facility, PUE 1.10",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. PUE row 'Central Ohio (Lancaster), Ohio'. Implied fleet WUE = Google DC water consumption (8 of 6101 MG fleet) / (DC electricity 23,980,800 MWh / fleet PUE 1.1)"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 41.7,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 383 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 398 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. PUE row 'Central Ohio (Lancaster), Ohio'. Implied fleet WUE = Google DC water consumption (101 of 7787 MG fleet) / (DC electricity 30,637,100 MWh / fleet PUE 1."
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 57.3,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 514 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 522 GWh facility, PUE 1.04",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. PUE row 'Central Ohio (Lancaster), Ohio'. Implied fleet WUE = Google DC water consumption (136 of 10523 MG fleet) / (DC electricity 42,415,800 MWh / fleet PUE 1"
     }
    ],
    "q_hat_mw": null,
@@ -12388,6 +12688,16 @@
      "source": "Epoch AI: Google Red Oak; IT power (MW); projection",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch projection, not a meter reading. Buildings operational: 2.0. Building 2 is estimated to be operational."
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 21.3,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 191 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 203 GWh facility, PUE 1.09",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (50 of 10523 MG fleet) / (DC electricity 42,415,800 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = 2"
     }
    ],
    "q_hat_mw": null,
@@ -12628,6 +12938,46 @@
      "source": "Epoch AI: Google Papillion; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 3.0. Building 4 shell mostly complete, Building 5 steel framing is underway."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 19.1,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 176 ML water consumed in 2022 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 189 GWh facility, PUE 1.13",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (47 of 5220 MG fleet) / (DC electricity 20,616,500 MWh / fleet PUE 1.1); Google publishes no WUE. Estimate = 22 "
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 55.0,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 510 ML water consumed in 2023 \u00f7 WUE 1.06 L/kWh (fleet_implied_consumption_basis) = 525 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (135 of 6101 MG fleet) / (DC electricity 23,980,800 MWh / fleet PUE 1.1); Google publishes no WUE. Estimate = 60"
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 171.8,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 1,578 ML water consumed in 2024 \u00f7 WUE 1.05 L/kWh (fleet_implied_consumption_basis) = 1,640 GWh facility, PUE 1.09",
+     "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (417 of 7787 MG fleet) / (DC electricity 30,637,100 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = 1"
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 231.4,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 2,075 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 2,210 GWh facility, PUE 1.09",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Implied fleet WUE = Google DC water consumption (548 of 10523 MG fleet) / (DC electricity 42,415,800 MWh / fleet PUE 1.09); Google publishes no WUE. Estimate = "
     }
    ],
    "q_hat_mw": null,
@@ -17536,6 +17886,16 @@
      "source": "Epoch AI: Google Fort Wayne; IT power (MW); projection",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch projection, not a meter reading. Buildings operational: 5.0. Estimated operational date of Building 6. Based on previous buildings being separated by about 5 months."
+    },
+    {
+     "valid_from": "2025-01-01",
+     "valid_to": "2025-12-31",
+     "capacity_mw": 16.0,
+     "basis": "water_derived_it_annual",
+     "tier": "A2",
+     "source": "Google environmental report: 143 ML water consumed in 2025 \u00f7 WUE 1.02 L/kWh (fleet_implied_consumption_basis) = 152 GWh facility, PUE 1.09",
+     "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+     "notes": "Annual average IT load derived from published water use; validated to about x2 against Meta's electricity. Probable match to the inventory's Fort Wayne site (Google's Fort Wayne campus is in New Haven, Allen County); verify. Implied fleet WUE = Google DC water consum"
     }
    ],
    "q_hat_mw": null,

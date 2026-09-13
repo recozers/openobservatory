@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T17:20:47.927986+00:00",
+"generated": "2026-09-13T17:26:47.867962+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -412,6 +412,176 @@
 "evidence_kind": "construction"
 },
 {
+"site_id": "epoch_google_council_bluffs_east",
+"name": "Google Council Bluffs (East)",
+"operator": "Google",
+"country": "US",
+"lat": 41.1676044,
+"lon": -95.7936882,
+"built": "5 of 5 halls; 2 present at first observations; 3 roofed Nov 2023 to Sep 2024",
+"built_conf": "medium",
+"running": "yes: about 568 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72 and an upper bound, since one water figure covers two campuses) (carried forward)",
+"load": "about 568 MW from water use \u00f7 WUE (range 398\u2013739); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Council Bluffs (East); IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": null
+},
+{
+"x": "2018Q2",
+"y": null
+},
+{
+"x": "2018Q3",
+"y": null
+},
+{
+"x": "2018Q4",
+"y": null
+},
+{
+"x": "2019Q1",
+"y": null
+},
+{
+"x": "2019Q2",
+"y": null
+},
+{
+"x": "2019Q3",
+"y": null
+},
+{
+"x": "2019Q4",
+"y": null
+},
+{
+"x": "2020Q1",
+"y": null
+},
+{
+"x": "2020Q2",
+"y": null
+},
+{
+"x": "2020Q3",
+"y": null
+},
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": null
+},
+{
+"x": "2021Q2",
+"y": null
+},
+{
+"x": "2021Q3",
+"y": null
+},
+{
+"x": "2021Q4",
+"y": null
+},
+{
+"x": "2022Q1",
+"y": 367.3
+},
+{
+"x": "2022Q2",
+"y": 367.3
+},
+{
+"x": "2022Q3",
+"y": 367.3
+},
+{
+"x": "2022Q4",
+"y": 367.3
+},
+{
+"x": "2023Q1",
+"y": 399.8
+},
+{
+"x": "2023Q2",
+"y": 399.8
+},
+{
+"x": "2023Q3",
+"y": 399.8
+},
+{
+"x": "2023Q4",
+"y": 399.8
+},
+{
+"x": "2024Q1",
+"y": 416.2
+},
+{
+"x": "2024Q2",
+"y": 416.2
+},
+{
+"x": "2024Q3",
+"y": 416.2
+},
+{
+"x": "2024Q4",
+"y": 416.2
+},
+{
+"x": "2025Q1",
+"y": 568.2
+},
+{
+"x": "2025Q2",
+"y": 568.2
+},
+{
+"x": "2025Q3",
+"y": 568.2
+},
+{
+"x": "2025Q4",
+"y": 568.2
+},
+{
+"x": "2026Q1",
+"y": 568.2
+},
+{
+"x": "2026Q2",
+"y": 568.2
+},
+{
+"x": "2026Q3",
+"y": 568.2
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 568.2,
+"est_hi": 738.7,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
+},
+{
 "site_id": "epoch_qts_cedar_rapids",
 "name": "QTS Cedar Rapids",
 "operator": "",
@@ -468,6 +638,176 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "construction"
+},
+{
+"site_id": "epoch_google_pryor_north",
+"name": "Google Pryor (North)",
+"operator": "Google",
+"country": "US",
+"lat": 36.2411721,
+"lon": -95.3300473,
+"built": "2 of 2 halls; 1 present at first observations; 1 roofed Oct 2023",
+"built_conf": "medium",
+"running": "yes: about 456 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72 and an upper bound, since one water figure covers two campuses) (carried forward)",
+"load": "about 456 MW from water use \u00f7 WUE (range 320\u2013594); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Pryor (North); IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": null
+},
+{
+"x": "2018Q2",
+"y": null
+},
+{
+"x": "2018Q3",
+"y": null
+},
+{
+"x": "2018Q4",
+"y": null
+},
+{
+"x": "2019Q1",
+"y": null
+},
+{
+"x": "2019Q2",
+"y": null
+},
+{
+"x": "2019Q3",
+"y": null
+},
+{
+"x": "2019Q4",
+"y": null
+},
+{
+"x": "2020Q1",
+"y": null
+},
+{
+"x": "2020Q2",
+"y": null
+},
+{
+"x": "2020Q3",
+"y": null
+},
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": null
+},
+{
+"x": "2021Q2",
+"y": null
+},
+{
+"x": "2021Q3",
+"y": null
+},
+{
+"x": "2021Q4",
+"y": null
+},
+{
+"x": "2022Q1",
+"y": 282.7
+},
+{
+"x": "2022Q2",
+"y": 282.7
+},
+{
+"x": "2022Q3",
+"y": 282.7
+},
+{
+"x": "2022Q4",
+"y": 282.7
+},
+{
+"x": "2023Q1",
+"y": 332.5
+},
+{
+"x": "2023Q2",
+"y": 332.5
+},
+{
+"x": "2023Q3",
+"y": 332.5
+},
+{
+"x": "2023Q4",
+"y": 332.5
+},
+{
+"x": "2024Q1",
+"y": 343.3
+},
+{
+"x": "2024Q2",
+"y": 343.3
+},
+{
+"x": "2024Q3",
+"y": 343.3
+},
+{
+"x": "2024Q4",
+"y": 343.3
+},
+{
+"x": "2025Q1",
+"y": 456.5
+},
+{
+"x": "2025Q2",
+"y": 456.5
+},
+{
+"x": "2025Q3",
+"y": 456.5
+},
+{
+"x": "2025Q4",
+"y": 456.5
+},
+{
+"x": "2026Q1",
+"y": 456.5
+},
+{
+"x": "2026Q2",
+"y": 456.5
+},
+{
+"x": "2026Q3",
+"y": 456.5
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 456.5,
+"est_hi": 593.5,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
 },
 {
 "site_id": "stargate_abilene",
@@ -654,6 +994,144 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "construction"
+},
+{
+"site_id": "epoch_google_new_albany",
+"name": "Google New Albany",
+"operator": "Google",
+"country": "US",
+"lat": 40.0567674,
+"lon": -82.7677377,
+"built": "5 of 5 halls, roofed May 2020 to Sep 2025",
+"built_conf": "medium",
+"running": "yes: about 353 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 353 MW from water use \u00f7 WUE (range 247\u2013459); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google New Albany; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2020Q1",
+"y": null
+},
+{
+"x": "2020Q2",
+"y": null
+},
+{
+"x": "2020Q3",
+"y": null
+},
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": null
+},
+{
+"x": "2021Q2",
+"y": null
+},
+{
+"x": "2021Q3",
+"y": null
+},
+{
+"x": "2021Q4",
+"y": null
+},
+{
+"x": "2022Q1",
+"y": 20.3
+},
+{
+"x": "2022Q2",
+"y": 20.3
+},
+{
+"x": "2022Q3",
+"y": 20.3
+},
+{
+"x": "2022Q4",
+"y": 20.3
+},
+{
+"x": "2023Q1",
+"y": 51.8
+},
+{
+"x": "2023Q2",
+"y": 51.8
+},
+{
+"x": "2023Q3",
+"y": 51.8
+},
+{
+"x": "2023Q4",
+"y": 51.8
+},
+{
+"x": "2024Q1",
+"y": 145.3
+},
+{
+"x": "2024Q2",
+"y": 145.3
+},
+{
+"x": "2024Q3",
+"y": 145.3
+},
+{
+"x": "2024Q4",
+"y": 145.3
+},
+{
+"x": "2025Q1",
+"y": 352.8
+},
+{
+"x": "2025Q2",
+"y": 352.8
+},
+{
+"x": "2025Q3",
+"y": 352.8
+},
+{
+"x": "2025Q4",
+"y": 352.8
+},
+{
+"x": "2026Q1",
+"y": 352.8
+},
+{
+"x": "2026Q2",
+"y": 352.8
+},
+{
+"x": "2026Q3",
+"y": 352.8
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 352.8,
+"est_hi": 458.6,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
 },
 {
 "site_id": "cn_ulanqab_park",
@@ -1179,168 +1657,240 @@
 "evidence_kind": "detected"
 },
 {
-"site_id": "epoch_google_new_albany",
-"name": "Google New Albany",
+"site_id": "epoch_google_papillion",
+"name": "Google Papillion",
 "operator": "Google",
 "country": "US",
-"lat": 40.0567674,
-"lon": -82.7677377,
-"built": "5 of 5 halls, roofed May 2020 to Sep 2025",
+"lat": 41.1359985,
+"lon": -96.1490562,
+"built": "5 of 5 halls, roofed May 2021 to May 2026",
 "built_conf": "medium",
-"running": "presumably: documented 453 MW in force since 2024Q2; not directly observed",
-"load": "91\u2013272 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
+"running": "yes: about 231 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 231 MW from water use \u00f7 WUE (range 162\u2013301); an annual average, method validated only to about \u00d72",
+"confidence": "low",
 "how": [
 "Sentinel-2 roof dating",
 "TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google New Albany; IT power (MW); reported estimate"
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Papillion; IT power (MW); reported estimate"
 ],
-"key": "roofs",
+"key": "capacity",
 "series": [
 {
-"x": "2020Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2020Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2020Q3",
-"y": 1,
-"y2": 0
-},
-{
 "x": "2020Q4",
-"y": 1,
-"y2": 2.7
+"y": 0.0
 },
 {
 "x": "2021Q1",
-"y": 1,
-"y2": 2.7
+"y": 0.0
 },
 {
 "x": "2021Q2",
-"y": 1,
-"y2": 2.7
+"y": 0.0
 },
 {
 "x": "2021Q3",
-"y": 1,
-"y2": 2.7
+"y": 0.0
 },
 {
 "x": "2021Q4",
-"y": 1,
-"y2": 2.7
+"y": 0.0
 },
 {
 "x": "2022Q1",
-"y": 1,
-"y2": 2.7
+"y": 19.1
 },
 {
 "x": "2022Q2",
-"y": 1,
-"y2": 2.7
+"y": 19.1
 },
 {
 "x": "2022Q3",
-"y": 1,
-"y2": 2.7
+"y": 19.1
 },
 {
 "x": "2022Q4",
-"y": 1,
-"y2": 2.7
+"y": 19.1
 },
 {
 "x": "2023Q1",
-"y": 1,
-"y2": 2.7
+"y": 55.0
 },
 {
 "x": "2023Q2",
-"y": 2,
-"y2": 2.7
+"y": 55.0
 },
 {
 "x": "2023Q3",
-"y": 2,
-"y2": 2.7
+"y": 55.0
 },
 {
 "x": "2023Q4",
-"y": 2,
-"y2": 5.3
+"y": 55.0
 },
 {
 "x": "2024Q1",
-"y": 2,
-"y2": 5.3
+"y": 171.8
 },
 {
 "x": "2024Q2",
-"y": 3,
-"y2": 5.3
+"y": 171.8
 },
 {
 "x": "2024Q3",
-"y": 4,
-"y2": 5.3
+"y": 171.8
 },
 {
 "x": "2024Q4",
-"y": 4,
-"y2": 8.0
+"y": 171.8
 },
 {
 "x": "2025Q1",
-"y": 4,
-"y2": 10.6
+"y": 231.4
 },
 {
 "x": "2025Q2",
-"y": 4,
-"y2": 10.6
+"y": 231.4
 },
 {
 "x": "2025Q3",
-"y": 5,
-"y2": 10.6
+"y": 231.4
 },
 {
 "x": "2025Q4",
-"y": 5,
-"y2": 10.6
+"y": 231.4
 },
 {
 "x": "2026Q1",
-"y": 5,
-"y2": 13.3
+"y": 231.4
 },
 {
 "x": "2026Q2",
-"y": 5,
-"y2": 13.3
+"y": 231.4
 },
 {
 "x": "2026Q3",
-"y": 5,
-"y2": 13.3
+"y": 231.4
 }
 ],
-"series_label": "halls roofed (of 5)",
-"recent": "last roof completed Sep 2025",
-"est_mid": 181.2,
-"est_hi": 271.8,
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 231.4,
+"est_hi": 300.8,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
-"evidence_kind": "presumed"
+"evidence_kind": "derived"
+},
+{
+"site_id": "epoch_google_the_dalles",
+"name": "Google The Dalles",
+"operator": "Google",
+"country": "US",
+"lat": 45.6242663,
+"lon": -121.2071496,
+"built": "2 of 2 halls, roofed Feb 2024 to Apr 2025",
+"built_conf": "medium",
+"running": "yes: about 198 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72 and an upper bound, since one water figure covers two campuses) (carried forward)",
+"load": "about 198 MW from water use \u00f7 WUE (range 139\u2013257); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google The Dalles; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2021Q4",
+"y": null
+},
+{
+"x": "2022Q1",
+"y": 112.4
+},
+{
+"x": "2022Q2",
+"y": 112.4
+},
+{
+"x": "2022Q3",
+"y": 112.4
+},
+{
+"x": "2022Q4",
+"y": 112.4
+},
+{
+"x": "2023Q1",
+"y": 123.4
+},
+{
+"x": "2023Q2",
+"y": 123.4
+},
+{
+"x": "2023Q3",
+"y": 123.4
+},
+{
+"x": "2023Q4",
+"y": 123.4
+},
+{
+"x": "2024Q1",
+"y": 148.9
+},
+{
+"x": "2024Q2",
+"y": 148.9
+},
+{
+"x": "2024Q3",
+"y": 148.9
+},
+{
+"x": "2024Q4",
+"y": 148.9
+},
+{
+"x": "2025Q1",
+"y": 198.0
+},
+{
+"x": "2025Q2",
+"y": 198.0
+},
+{
+"x": "2025Q3",
+"y": 198.0
+},
+{
+"x": "2025Q4",
+"y": 198.0
+},
+{
+"x": "2026Q1",
+"y": 198.0
+},
+{
+"x": "2026Q2",
+"y": 198.0
+},
+{
+"x": "2026Q3",
+"y": 198.0
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 198.0,
+"est_hi": 257.4,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
 },
 {
 "site_id": "prineville",
@@ -1511,210 +2061,6 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "measured"
-},
-{
-"site_id": "epoch_google_pryor_north",
-"name": "Google Pryor (North)",
-"operator": "Google",
-"country": "US",
-"lat": 36.2411721,
-"lon": -95.3300473,
-"built": "2 of 2 halls; 1 present at first observations; 1 roofed Oct 2023",
-"built_conf": "medium",
-"running": "presumably: documented 368 MW in force since 2024Q3; not directly observed",
-"load": "74\u2013221 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google Pryor (North); IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2018Q1",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2018Q2",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2018Q3",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2018Q4",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2019Q1",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2019Q2",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2019Q3",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2019Q4",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2020Q1",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2020Q2",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2020Q3",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2020Q4",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2021Q1",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2021Q2",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2021Q3",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2021Q4",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2022Q1",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2022Q2",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2022Q3",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2022Q4",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2023Q1",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2023Q2",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2023Q3",
-"y": 1,
-"y2": 12.9
-},
-{
-"x": "2023Q4",
-"y": 2,
-"y2": 12.9
-},
-{
-"x": "2024Q1",
-"y": 2,
-"y2": 12.9
-},
-{
-"x": "2024Q2",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2024Q3",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2024Q4",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2025Q1",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2025Q2",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2025Q3",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2025Q4",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2026Q1",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2026Q2",
-"y": 2,
-"y2": 15.5
-},
-{
-"x": "2026Q3",
-"y": 2,
-"y2": 15.5
-}
-],
-"series_label": "halls roofed (of 2)",
-"recent": "last roof completed Oct 2023",
-"est_mid": 147.2,
-"est_hi": 220.8,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
 },
 {
 "site_id": "meta_altoona",
@@ -2061,120 +2407,102 @@
 "lon": -82.9966065,
 "built": "5 of 5 halls, roofed Aug 2022 to Mar 2026",
 "built_conf": "medium",
-"running": "presumably: documented 303 MW in force since 2024Q2; not directly observed",
-"load": "61\u2013182 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
+"running": "yes: about 152 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 152 MW from water use \u00f7 WUE (range 106\u2013197); an annual average, method validated only to about \u00d72",
+"confidence": "low",
 "how": [
 "Sentinel-2 roof dating",
 "TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
 "documented capacity: Epoch AI: Google Columbus; IT power (MW); reported estimate"
 ],
-"key": "roofs",
+"key": "capacity",
 "series": [
 {
 "x": "2022Q1",
-"y": 0,
-"y2": 0
+"y": 0.0
 },
 {
 "x": "2022Q2",
-"y": 0,
-"y2": 0
+"y": 0.0
 },
 {
 "x": "2022Q3",
-"y": 1,
-"y2": 0
+"y": 0.0
 },
 {
 "x": "2022Q4",
-"y": 1,
-"y2": 0
+"y": 0.0
 },
 {
 "x": "2023Q1",
-"y": 1,
-"y2": 2.7
+"y": 9.5
 },
 {
 "x": "2023Q2",
-"y": 1,
-"y2": 2.7
+"y": 9.5
 },
 {
 "x": "2023Q3",
-"y": 1,
-"y2": 2.7
+"y": 9.5
 },
 {
 "x": "2023Q4",
-"y": 2,
-"y2": 2.7
+"y": 9.5
 },
 {
 "x": "2024Q1",
-"y": 2,
-"y2": 2.7
+"y": 59.0
 },
 {
 "x": "2024Q2",
-"y": 2,
-"y2": 5.5
+"y": 59.0
 },
 {
 "x": "2024Q3",
-"y": 3,
-"y2": 5.5
+"y": 59.0
 },
 {
 "x": "2024Q4",
-"y": 3,
-"y2": 5.5
+"y": 59.0
 },
 {
 "x": "2025Q1",
-"y": 3,
-"y2": 8.2
+"y": 151.8
 },
 {
 "x": "2025Q2",
-"y": 4,
-"y2": 8.2
+"y": 151.8
 },
 {
 "x": "2025Q3",
-"y": 4,
-"y2": 8.2
+"y": 151.8
 },
 {
 "x": "2025Q4",
-"y": 4,
-"y2": 11.0
+"y": 151.8
 },
 {
 "x": "2026Q1",
-"y": 5,
-"y2": 11.0
+"y": 151.8
 },
 {
 "x": "2026Q2",
-"y": 5,
-"y2": 11.0
+"y": 151.8
 },
 {
 "x": "2026Q3",
-"y": 5,
-"y2": 13.7
+"y": 151.8
 }
 ],
-"series_label": "halls roofed (of 5)",
-"recent": "last roof completed Mar 2026",
-"est_mid": 121.2,
-"est_hi": 181.8,
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 151.8,
+"est_hi": 197.3,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
-"evidence_kind": "presumed"
+"evidence_kind": "derived"
 },
 {
 "site_id": "epoch_amazon_madison_mega_site",
@@ -2279,89 +2607,6 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_fort_wayne",
-"name": "Google Fort Wayne",
-"operator": "Google",
-"country": "US",
-"lat": 41.0309293,
-"lon": -85.0536261,
-"built": "3 of 3 halls, roofed Jun 2024 to Feb 2026",
-"built_conf": "medium",
-"running": "unknown: roofs on, no activity evidence",
-"load": "0\u2013170 MW (roofed area \u00d7 density prior); no evidence of operation",
-"confidence": "low",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Google Fort Wayne; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2024Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2024Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q4",
-"y": 1,
-"y2": 7.1
-},
-{
-"x": "2025Q1",
-"y": 1,
-"y2": 7.1
-},
-{
-"x": "2025Q2",
-"y": 1,
-"y2": 7.1
-},
-{
-"x": "2025Q3",
-"y": 2,
-"y2": 7.1
-},
-{
-"x": "2025Q4",
-"y": 2,
-"y2": 7.1
-},
-{
-"x": "2026Q1",
-"y": 3,
-"y2": 9.9
-},
-{
-"x": "2026Q2",
-"y": 3,
-"y2": 9.9
-},
-{
-"x": "2026Q3",
-"y": 3,
-"y2": 12.6
-}
-],
-"series_label": "halls roofed (of 3)",
-"recent": "last roof completed Feb 2026",
-"est_mid": null,
-"est_hi": 170.3,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "construction"
 },
 {
 "site_id": "meta_newton",
@@ -2990,6 +3235,112 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "measured"
+},
+{
+"site_id": "epoch_google_bristow",
+"name": "Google Bristow",
+"operator": "Google",
+"country": "US",
+"lat": 38.777169,
+"lon": -77.582982,
+"built": "3 of 3 halls, roofed Jan 2023 to May 2024",
+"built_conf": "medium",
+"running": "yes: about 113 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 113 MW from water use \u00f7 WUE (range 79\u2013147); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Bristow; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2022Q1",
+"y": 0.0
+},
+{
+"x": "2022Q2",
+"y": 0.0
+},
+{
+"x": "2022Q3",
+"y": 0.0
+},
+{
+"x": "2022Q4",
+"y": 0.0
+},
+{
+"x": "2023Q1",
+"y": 0.0
+},
+{
+"x": "2023Q2",
+"y": 0.0
+},
+{
+"x": "2023Q3",
+"y": 0.0
+},
+{
+"x": "2023Q4",
+"y": 0.0
+},
+{
+"x": "2024Q1",
+"y": 34.8
+},
+{
+"x": "2024Q2",
+"y": 34.8
+},
+{
+"x": "2024Q3",
+"y": 34.8
+},
+{
+"x": "2024Q4",
+"y": 34.8
+},
+{
+"x": "2025Q1",
+"y": 113.0
+},
+{
+"x": "2025Q2",
+"y": 113.0
+},
+{
+"x": "2025Q3",
+"y": 113.0
+},
+{
+"x": "2025Q4",
+"y": 113.0
+},
+{
+"x": "2026Q1",
+"y": 113.0
+},
+{
+"x": "2026Q2",
+"y": 113.0
+},
+{
+"x": "2026Q3",
+"y": 113.0
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 113.0,
+"est_hi": 146.9,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
 },
 {
 "site_id": "meta_clonee",
@@ -3651,607 +4002,6 @@
 "est_hi": 142.8,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_bristow",
-"name": "Google Bristow",
-"operator": "Google",
-"country": "US",
-"lat": 38.777169,
-"lon": -77.582982,
-"built": "3 of 3 halls, roofed Jan 2023 to May 2024",
-"built_conf": "medium",
-"running": "presumably: documented 238 MW in force since 2024Q2; not directly observed",
-"load": "48\u2013143 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google Bristow; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2022Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q2",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q3",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q4",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q1",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2023Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2023Q3",
-"y": 1,
-"y2": 2.6
-},
-{
-"x": "2023Q4",
-"y": 2,
-"y2": 2.6
-},
-{
-"x": "2024Q1",
-"y": 2,
-"y2": 2.6
-},
-{
-"x": "2024Q2",
-"y": 3,
-"y2": 5.3
-},
-{
-"x": "2024Q3",
-"y": 3,
-"y2": 5.3
-},
-{
-"x": "2024Q4",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2025Q1",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2025Q2",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2025Q3",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2025Q4",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2026Q1",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2026Q2",
-"y": 3,
-"y2": 8.0
-},
-{
-"x": "2026Q3",
-"y": 3,
-"y2": 8.0
-}
-],
-"series_label": "halls roofed (of 3)",
-"recent": "last roof completed May 2024",
-"est_mid": 95.2,
-"est_hi": 142.8,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_council_bluffs_east",
-"name": "Google Council Bluffs (East)",
-"operator": "Google",
-"country": "US",
-"lat": 41.1676044,
-"lon": -95.7936882,
-"built": "5 of 5 halls; 2 present at first observations; 3 roofed Nov 2023 to Sep 2024",
-"built_conf": "medium",
-"running": "presumably: documented 237 MW in force since 2024Q4; not directly observed",
-"load": "47\u2013142 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google Council Bluffs (East); IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2018Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2018Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2018Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2018Q4",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2019Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2019Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2019Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2019Q4",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2020Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2020Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2020Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2020Q4",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2021Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2021Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2021Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2021Q4",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2022Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2022Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2022Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2022Q4",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2023Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2023Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2023Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2023Q4",
-"y": 3,
-"y2": 5.8
-},
-{
-"x": "2024Q1",
-"y": 3,
-"y2": 5.8
-},
-{
-"x": "2024Q2",
-"y": 4,
-"y2": 8.7
-},
-{
-"x": "2024Q3",
-"y": 5,
-"y2": 8.7
-},
-{
-"x": "2024Q4",
-"y": 5,
-"y2": 11.7
-},
-{
-"x": "2025Q1",
-"y": 5,
-"y2": 14.4
-},
-{
-"x": "2025Q2",
-"y": 5,
-"y2": 14.4
-},
-{
-"x": "2025Q3",
-"y": 5,
-"y2": 14.4
-},
-{
-"x": "2025Q4",
-"y": 5,
-"y2": 14.4
-},
-{
-"x": "2026Q1",
-"y": 5,
-"y2": 14.4
-},
-{
-"x": "2026Q2",
-"y": 5,
-"y2": 14.4
-},
-{
-"x": "2026Q3",
-"y": 5,
-"y2": 14.4
-}
-],
-"series_label": "halls roofed (of 5)",
-"recent": "last roof completed Sep 2024",
-"est_mid": 94.8,
-"est_hi": 142.2,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_omaha",
-"name": "Google Omaha",
-"operator": "Google",
-"country": "US",
-"lat": 41.341728,
-"lon": -96.0888765,
-"built": "3 of 3 halls, roofed Jul 2023 to Jun 2025",
-"built_conf": "medium",
-"running": "presumably: documented 237 MW in force since 2024Q2; not directly observed",
-"load": "47\u2013142 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google Omaha; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2022Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q2",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q3",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q4",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q2",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2023Q4",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q1",
-"y": 2,
-"y2": 2.8
-},
-{
-"x": "2024Q2",
-"y": 2,
-"y2": 2.8
-},
-{
-"x": "2024Q3",
-"y": 2,
-"y2": 5.6
-},
-{
-"x": "2024Q4",
-"y": 2,
-"y2": 5.6
-},
-{
-"x": "2025Q1",
-"y": 2,
-"y2": 5.6
-},
-{
-"x": "2025Q2",
-"y": 3,
-"y2": 5.6
-},
-{
-"x": "2025Q3",
-"y": 3,
-"y2": 5.6
-},
-{
-"x": "2025Q4",
-"y": 3,
-"y2": 8.5
-},
-{
-"x": "2026Q1",
-"y": 3,
-"y2": 8.5
-},
-{
-"x": "2026Q2",
-"y": 3,
-"y2": 8.5
-},
-{
-"x": "2026Q3",
-"y": 3,
-"y2": 8.5
-}
-],
-"series_label": "halls roofed (of 3)",
-"recent": "last roof completed Jun 2025",
-"est_mid": 94.8,
-"est_hi": 142.2,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_papillion",
-"name": "Google Papillion",
-"operator": "Google",
-"country": "US",
-"lat": 41.1359985,
-"lon": -96.1490562,
-"built": "5 of 5 halls, roofed May 2021 to May 2026",
-"built_conf": "medium",
-"running": "presumably: documented 237 MW in force since 2023Q1; not directly observed",
-"load": "47\u2013142 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google Papillion; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2020Q4",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2021Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2021Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2021Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2021Q4",
-"y": 1,
-"y2": 3.0
-},
-{
-"x": "2022Q1",
-"y": 1,
-"y2": 3.0
-},
-{
-"x": "2022Q2",
-"y": 2,
-"y2": 3.0
-},
-{
-"x": "2022Q3",
-"y": 3,
-"y2": 3.0
-},
-{
-"x": "2022Q4",
-"y": 3,
-"y2": 4.7
-},
-{
-"x": "2023Q1",
-"y": 4,
-"y2": 7.8
-},
-{
-"x": "2023Q2",
-"y": 4,
-"y2": 7.8
-},
-{
-"x": "2023Q3",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2023Q4",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2024Q1",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2024Q2",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2024Q3",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2024Q4",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2025Q1",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2025Q2",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2025Q3",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2025Q4",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2026Q1",
-"y": 4,
-"y2": 10.6
-},
-{
-"x": "2026Q2",
-"y": 5,
-"y2": 10.6
-},
-{
-"x": "2026Q3",
-"y": 5,
-"y2": 10.6
-}
-],
-"series_label": "halls roofed (of 5)",
-"recent": "last roof completed May 2026",
-"est_mid": 94.8,
-"est_hi": 142.2,
-"last_q": "2026Q3",
-"polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
 },
@@ -5337,6 +5087,127 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "epoch_google_midlothian",
+"name": "Google Midlothian",
+"operator": "Google",
+"country": "US",
+"lat": 32.4419675,
+"lon": -97.062693,
+"built": "1 of 1 halls, roofed Jun 2021",
+"built_conf": "medium",
+"running": "yes: about 93 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 93 MW from water use \u00f7 WUE (range 65\u2013121); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Midlothian; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2021Q1",
+"y": null
+},
+{
+"x": "2021Q2",
+"y": null
+},
+{
+"x": "2021Q3",
+"y": null
+},
+{
+"x": "2021Q4",
+"y": null
+},
+{
+"x": "2022Q1",
+"y": 38.2
+},
+{
+"x": "2022Q2",
+"y": 38.2
+},
+{
+"x": "2022Q3",
+"y": 38.2
+},
+{
+"x": "2022Q4",
+"y": 38.2
+},
+{
+"x": "2023Q1",
+"y": 55.4
+},
+{
+"x": "2023Q2",
+"y": 55.4
+},
+{
+"x": "2023Q3",
+"y": 55.4
+},
+{
+"x": "2023Q4",
+"y": 55.4
+},
+{
+"x": "2024Q1",
+"y": 75.1
+},
+{
+"x": "2024Q2",
+"y": 75.1
+},
+{
+"x": "2024Q3",
+"y": 75.1
+},
+{
+"x": "2024Q4",
+"y": 75.1
+},
+{
+"x": "2025Q1",
+"y": 93.0
+},
+{
+"x": "2025Q2",
+"y": 93.0
+},
+{
+"x": "2025Q3",
+"y": 93.0
+},
+{
+"x": "2025Q4",
+"y": 93.0
+},
+{
+"x": "2026Q1",
+"y": 93.0
+},
+{
+"x": "2026Q2",
+"y": 93.0
+},
+{
+"x": "2026Q3",
+"y": 93.0
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 93.0,
+"est_hi": 120.9,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
+},
+{
 "site_id": "epoch_microsoft_project_osmium",
 "name": "Microsoft Project Osmium",
 "operator": "Microsoft",
@@ -6334,6 +6205,112 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "epoch_google_omaha",
+"name": "Google Omaha",
+"operator": "Google",
+"country": "US",
+"lat": 41.341728,
+"lon": -96.0888765,
+"built": "3 of 3 halls, roofed Jul 2023 to Jun 2025",
+"built_conf": "medium",
+"running": "yes: about 78 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 78 MW from water use \u00f7 WUE (range 54\u2013101); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Omaha; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2022Q1",
+"y": 0.0
+},
+{
+"x": "2022Q2",
+"y": 0.0
+},
+{
+"x": "2022Q3",
+"y": 0.0
+},
+{
+"x": "2022Q4",
+"y": 0.0
+},
+{
+"x": "2023Q1",
+"y": 0.0
+},
+{
+"x": "2023Q2",
+"y": 0.0
+},
+{
+"x": "2023Q3",
+"y": 0.0
+},
+{
+"x": "2023Q4",
+"y": 0.0
+},
+{
+"x": "2024Q1",
+"y": 13.2
+},
+{
+"x": "2024Q2",
+"y": 13.2
+},
+{
+"x": "2024Q3",
+"y": 13.2
+},
+{
+"x": "2024Q4",
+"y": 13.2
+},
+{
+"x": "2025Q1",
+"y": 77.6
+},
+{
+"x": "2025Q2",
+"y": 77.6
+},
+{
+"x": "2025Q3",
+"y": 77.6
+},
+{
+"x": "2025Q4",
+"y": 77.6
+},
+{
+"x": "2026Q1",
+"y": 77.6
+},
+{
+"x": "2026Q2",
+"y": 77.6
+},
+{
+"x": "2026Q3",
+"y": 77.6
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 77.6,
+"est_hi": 100.9,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
+},
+{
 "site_id": "epoch_openai_stargate_uae",
 "name": "OpenAI Stargate UAE",
 "operator": "G42",
@@ -6715,115 +6692,6 @@
 "recent": "last roof completed Apr 2026",
 "est_mid": 64.4,
 "est_hi": 96.6,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_the_dalles",
-"name": "Google The Dalles",
-"operator": "Google",
-"country": "US",
-"lat": 45.6242663,
-"lon": -121.2071496,
-"built": "2 of 2 halls, roofed Feb 2024 to Apr 2025",
-"built_conf": "medium",
-"running": "presumably: documented 154 MW in force since 2025Q1; not directly observed",
-"load": "31\u201392 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"TROPOMI NO\u2082 plume test",
-"documented capacity: Epoch AI: Google The Dalles; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2022Q4",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q2",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q3",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q4",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2024Q1",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2024Q3",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2024Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2025Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2025Q2",
-"y": 2,
-"y2": 2.7
-},
-{
-"x": "2025Q3",
-"y": 2,
-"y2": 2.7
-},
-{
-"x": "2025Q4",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2026Q1",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2026Q2",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2026Q3",
-"y": 2,
-"y2": 5.4
-}
-],
-"series_label": "halls roofed (of 2)",
-"recent": "last roof completed Apr 2025",
-"est_mid": 61.6,
-"est_hi": 92.4,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
@@ -7448,119 +7316,6 @@
 "evidence_kind": "presumed"
 },
 {
-"site_id": "epoch_google_lancaster",
-"name": "Google Lancaster",
-"operator": "Google",
-"country": "US",
-"lat": 39.7270407,
-"lon": -82.6831433,
-"built": "2 of 2 halls, roofed Oct 2022 to Oct 2024",
-"built_conf": "medium",
-"running": "presumably: documented 137 MW in force since 2024Q1; not directly observed",
-"load": "27\u201382 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Google Lancaster; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2022Q3",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2022Q4",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2023Q1",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2023Q2",
-"y": 1,
-"y2": 2.9
-},
-{
-"x": "2023Q3",
-"y": 1,
-"y2": 2.9
-},
-{
-"x": "2023Q4",
-"y": 1,
-"y2": 2.9
-},
-{
-"x": "2024Q1",
-"y": 1,
-"y2": 2.9
-},
-{
-"x": "2024Q2",
-"y": 1,
-"y2": 2.9
-},
-{
-"x": "2024Q3",
-"y": 1,
-"y2": 2.9
-},
-{
-"x": "2024Q4",
-"y": 2,
-"y2": 2.9
-},
-{
-"x": "2025Q1",
-"y": 2,
-"y2": 2.9
-},
-{
-"x": "2025Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2025Q3",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2025Q4",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2026Q1",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2026Q2",
-"y": 2,
-"y2": 5.8
-},
-{
-"x": "2026Q3",
-"y": 2,
-"y2": 5.8
-}
-],
-"series_label": "halls roofed (of 2)",
-"recent": "last roof completed Oct 2024",
-"est_mid": 54.8,
-"est_hi": 82.2,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
 "site_id": "epoch_coreweave_helios",
 "name": "Coreweave Helios",
 "operator": "CoreWeave",
@@ -7854,6 +7609,103 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "measured"
+},
+{
+"site_id": "epoch_google_lancaster",
+"name": "Google Lancaster",
+"operator": "Google",
+"country": "US",
+"lat": 39.7270407,
+"lon": -82.6831433,
+"built": "2 of 2 halls, roofed Oct 2022 to Oct 2024",
+"built_conf": "medium",
+"running": "yes: about 57 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 57 MW from water use \u00f7 WUE (range 40\u201374); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Lancaster; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2022Q3",
+"y": 0.0
+},
+{
+"x": "2022Q4",
+"y": 0.0
+},
+{
+"x": "2023Q1",
+"y": 3.1
+},
+{
+"x": "2023Q2",
+"y": 3.1
+},
+{
+"x": "2023Q3",
+"y": 3.1
+},
+{
+"x": "2023Q4",
+"y": 3.1
+},
+{
+"x": "2024Q1",
+"y": 41.7
+},
+{
+"x": "2024Q2",
+"y": 41.7
+},
+{
+"x": "2024Q3",
+"y": 41.7
+},
+{
+"x": "2024Q4",
+"y": 41.7
+},
+{
+"x": "2025Q1",
+"y": 57.3
+},
+{
+"x": "2025Q2",
+"y": 57.3
+},
+{
+"x": "2025Q3",
+"y": 57.3
+},
+{
+"x": "2025Q4",
+"y": 57.3
+},
+{
+"x": "2026Q1",
+"y": 57.3
+},
+{
+"x": "2026Q2",
+"y": 57.3
+},
+{
+"x": "2026Q3",
+"y": 57.3
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 57.3,
+"est_hi": 74.5,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
 },
 {
 "site_id": "meta_forest_city",
@@ -8607,149 +8459,6 @@
 "evidence_kind": "presumed"
 },
 {
-"site_id": "epoch_google_midlothian",
-"name": "Google Midlothian",
-"operator": "Google",
-"country": "US",
-"lat": 32.4419675,
-"lon": -97.062693,
-"built": "1 of 1 halls, roofed Jun 2021",
-"built_conf": "medium",
-"running": "presumably: documented 103 MW in force since 2026Q2; not directly observed",
-"load": "21\u201362 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Google Midlothian; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2021Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2021Q2",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2021Q3",
-"y": 1,
-"y2": 0
-},
-{
-"x": "2021Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2022Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2022Q2",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2022Q3",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2022Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2023Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2023Q2",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2023Q3",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2023Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2024Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2024Q2",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2024Q3",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2024Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2025Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2025Q2",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2025Q3",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2025Q4",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2026Q1",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2026Q2",
-"y": 1,
-"y2": 2.7
-},
-{
-"x": "2026Q3",
-"y": 1,
-"y2": 2.7
-}
-],
-"series_label": "halls roofed (of 1)",
-"recent": "last roof completed Jun 2021",
-"est_mid": 41.2,
-"est_hi": 61.8,
-"last_q": "2026Q3",
-"polygons_low": false,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
 "site_id": "epoch_google_waltham_cross",
 "name": "Google Waltham Cross",
 "operator": "Google",
@@ -9341,109 +9050,6 @@
 "est_hi": 46.2,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false,
-"evidence_kind": "presumed"
-},
-{
-"site_id": "epoch_google_red_oak",
-"name": "Google Red Oak",
-"operator": "Google",
-"country": "US",
-"lat": 32.5376266,
-"lon": -96.7966747,
-"built": "2 of 2 halls, roofed May 2023 to Jun 2023",
-"built_conf": "medium",
-"running": "presumably: documented 77 MW in force since 2025Q3; not directly observed",
-"load": "15\u201346 MW assumed from documented capacity; not directly measured",
-"confidence": "medium",
-"how": [
-"Sentinel-2 roof dating",
-"documented capacity: Epoch AI: Google Red Oak; IT power (MW); reported estimate"
-],
-"key": "roofs",
-"series": [
-{
-"x": "2023Q1",
-"y": 0,
-"y2": 0
-},
-{
-"x": "2023Q2",
-"y": 2,
-"y2": 0
-},
-{
-"x": "2023Q3",
-"y": 2,
-"y2": 0
-},
-{
-"x": "2023Q4",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2024Q1",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2024Q2",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2024Q3",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2024Q4",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2025Q1",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2025Q2",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2025Q3",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2025Q4",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2026Q1",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2026Q2",
-"y": 2,
-"y2": 5.4
-},
-{
-"x": "2026Q3",
-"y": 2,
-"y2": 5.4
-}
-],
-"series_label": "halls roofed (of 2)",
-"recent": "last roof completed Jun 2023",
-"est_mid": 30.8,
-"est_hi": 46.2,
-"last_q": "2026Q3",
-"polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
 },
@@ -10578,6 +10184,95 @@
 "evidence_kind": "presumed"
 },
 {
+"site_id": "epoch_google_red_oak",
+"name": "Google Red Oak",
+"operator": "Google",
+"country": "US",
+"lat": 32.5376266,
+"lon": -96.7966747,
+"built": "2 of 2 halls, roofed May 2023 to Jun 2023",
+"built_conf": "medium",
+"running": "yes: about 21 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 21 MW from water use \u00f7 WUE (range 15\u201328); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Red Oak; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2023Q1",
+"y": null
+},
+{
+"x": "2023Q2",
+"y": 0.0
+},
+{
+"x": "2023Q3",
+"y": 0.0
+},
+{
+"x": "2023Q4",
+"y": 0.0
+},
+{
+"x": "2024Q1",
+"y": 0.0
+},
+{
+"x": "2024Q2",
+"y": 0.0
+},
+{
+"x": "2024Q3",
+"y": 0.0
+},
+{
+"x": "2024Q4",
+"y": 0.0
+},
+{
+"x": "2025Q1",
+"y": 21.3
+},
+{
+"x": "2025Q2",
+"y": 21.3
+},
+{
+"x": "2025Q3",
+"y": 21.3
+},
+{
+"x": "2025Q4",
+"y": 21.3
+},
+{
+"x": "2026Q1",
+"y": 21.3
+},
+{
+"x": "2026Q2",
+"y": 21.3
+},
+{
+"x": "2026Q3",
+"y": 21.3
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 21.3,
+"est_hi": 27.7,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
+},
+{
 "site_id": "riken_kobe",
 "name": "RIKEN Center for Computational Science (K computer / Fugaku)",
 "operator": "RIKEN",
@@ -11063,6 +10758,79 @@
 "polygons_low": false,
 "combustion": false,
 "evidence_kind": "presumed"
+},
+{
+"site_id": "epoch_google_fort_wayne",
+"name": "Google Fort Wayne",
+"operator": "Google",
+"country": "US",
+"lat": 41.0309293,
+"lon": -85.0536261,
+"built": "3 of 3 halls, roofed Jun 2024 to Feb 2026",
+"built_conf": "medium",
+"running": "yes: about 16 MW average IT load in 2025, derived from the operator's published water use (uncertain to about \u00d72) (carried forward)",
+"load": "about 16 MW from water use \u00f7 WUE (range 11\u201321); an annual average, method validated only to about \u00d72",
+"confidence": "low",
+"how": [
+"Sentinel-2 roof dating",
+"annual IT energy derived from the operator's published water use and WUE (\u00b130 %)",
+"documented capacity: Epoch AI: Google Fort Wayne; IT power (MW); reported estimate"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2024Q1",
+"y": null
+},
+{
+"x": "2024Q2",
+"y": 0.0
+},
+{
+"x": "2024Q3",
+"y": 0.0
+},
+{
+"x": "2024Q4",
+"y": 0.0
+},
+{
+"x": "2025Q1",
+"y": 16.0
+},
+{
+"x": "2025Q2",
+"y": 16.0
+},
+{
+"x": "2025Q3",
+"y": 16.0
+},
+{
+"x": "2025Q4",
+"y": 16.0
+},
+{
+"x": "2026Q1",
+"y": 16.0
+},
+{
+"x": "2026Q2",
+"y": 16.0
+},
+{
+"x": "2026Q3",
+"y": 16.0
+}
+],
+"series_label": "documented capacity, MW",
+"recent": "",
+"est_mid": 16.0,
+"est_hi": 20.8,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "derived"
 },
 {
 "site_id": "epoch_start_campus_sines_data_campus",

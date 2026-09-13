@@ -250,30 +250,30 @@
   "quarters": 15
  },
  "epoch_google_pryor_north": {
-  "est_mid": 147.2,
-  "est_lo": 73.6,
-  "est_hi": 220.8,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 456.5,
+  "est_lo": 319.5,
+  "est_hi": 593.5,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
   "quarters": 35
  },
  "epoch_google_new_albany": {
-  "est_mid": 181.2,
-  "est_lo": 90.6,
-  "est_hi": 271.8,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 352.8,
+  "est_lo": 247.0,
+  "est_hi": 458.6,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
   "quarters": 27
  },
  "epoch_google_columbus": {
-  "est_mid": 121.2,
-  "est_lo": 60.6,
-  "est_hi": 181.8,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 151.8,
+  "est_lo": 106.3,
+  "est_hi": 197.3,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
@@ -300,10 +300,10 @@
   "quarters": 32
  },
  "epoch_google_council_bluffs_east": {
-  "est_mid": 94.8,
-  "est_lo": 47.4,
-  "est_hi": 142.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 568.2,
+  "est_lo": 397.7,
+  "est_hi": 738.7,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
@@ -350,10 +350,10 @@
   "quarters": 15
  },
  "epoch_google_bristow": {
-  "est_mid": 95.2,
-  "est_lo": 47.6,
-  "est_hi": 142.8,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 113.0,
+  "est_lo": 79.1,
+  "est_hi": 146.9,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
@@ -400,10 +400,10 @@
   "quarters": 17
  },
  "epoch_google_omaha": {
-  "est_mid": 94.8,
-  "est_lo": 47.4,
-  "est_hi": 142.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 77.6,
+  "est_lo": 54.3,
+  "est_hi": 100.9,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
@@ -430,14 +430,14 @@
   "quarters": 19
  },
  "epoch_google_the_dalles": {
-  "est_mid": 61.6,
-  "est_lo": 30.8,
-  "est_hi": 92.4,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 198.0,
+  "est_lo": 138.6,
+  "est_hi": 257.4,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
-  "quarters": 16
+  "quarters": 20
  },
  "epoch_qts_richmond_3": {
   "est_mid": 57.6,
@@ -550,10 +550,10 @@
   "quarters": 24
  },
  "epoch_google_midlothian": {
-  "est_mid": 41.2,
-  "est_lo": 20.6,
-  "est_hi": 61.8,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 93.0,
+  "est_lo": 65.1,
+  "est_hi": 120.9,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
@@ -570,10 +570,10 @@
   "quarters": 31
  },
  "epoch_google_lancaster": {
-  "est_mid": 54.8,
-  "est_lo": 27.4,
-  "est_hi": 82.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 57.3,
+  "est_lo": 40.1,
+  "est_hi": 74.5,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
@@ -630,20 +630,20 @@
   "quarters": 7
  },
  "epoch_google_red_oak": {
-  "est_mid": 30.8,
-  "est_lo": 15.4,
-  "est_hi": 46.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 21.3,
+  "est_lo": 14.9,
+  "est_hi": 27.7,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,
   "quarters": 15
  },
  "epoch_google_papillion": {
-  "est_mid": 94.8,
-  "est_lo": 47.4,
-  "est_hi": 142.2,
-  "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+  "est_mid": 231.4,
+  "est_lo": 162.0,
+  "est_hi": 300.8,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": true,
   "night": false,
@@ -920,10 +920,10 @@
   "quarters": 6
  },
  "epoch_google_fort_wayne": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 170.3,
-  "basis": "roofed \u22656 months (12.6 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+  "est_mid": 16.0,
+  "est_lo": 11.2,
+  "est_hi": 20.8,
+  "basis": "documented capacity in force (A2, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
   "s2": true,
   "no2": false,
   "night": false,

@@ -137,6 +137,7 @@
 "cap_doc_mw": null,
 "cap_tier": null,
 "cap_basis": null,
+"cap_upper_bound": false,
 "no2_flux": null,
 "halls_roofed": 0,
 "halls_total": 12,
@@ -156,6 +157,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": null,
 "halls_roofed": 0,
 "halls_total": 12,
@@ -183,6 +185,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": null,
 "halls_roofed": 0,
 "halls_total": 12,
@@ -210,6 +213,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": null,
 "halls_roofed": 0,
 "halls_total": 12,
@@ -237,6 +241,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": null,
 "halls_roofed": 0,
 "halls_total": 12,
@@ -264,6 +269,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": -1.0,
 "nox_se": 133.0,
@@ -303,6 +309,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 41.0,
 "nox_se": 66.0,
@@ -342,6 +349,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 43.0,
 "nox_se": 55.0,
@@ -381,6 +389,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": -58.0,
 "nox_se": 101.0,
@@ -420,6 +429,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 14.0,
 "nox_se": 82.0,
@@ -459,6 +469,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": -50.0,
 "nox_se": 69.0,
@@ -498,6 +509,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": -47.0,
 "nox_se": 48.0,
@@ -537,6 +549,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 49.0,
 "nox_se": 68.0,
@@ -576,6 +589,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 61.0,
 "nox_se": 81.0,
@@ -615,6 +629,7 @@
 "cap_doc_mw": 0.0,
 "cap_tier": "A2",
 "cap_basis": "placeholder",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": -48.0,
 "nox_se": 68.0,
@@ -654,6 +669,7 @@
 "cap_doc_mw": 173.9,
 "cap_tier": "A2",
 "cap_basis": "facility_design",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 7.0,
 "nox_se": 63.0,
@@ -693,6 +709,7 @@
 "cap_doc_mw": 173.9,
 "cap_tier": "A2",
 "cap_basis": "facility_design",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 286.0,
 "nox_se": 119.0,
@@ -732,6 +749,7 @@
 "cap_doc_mw": 173.9,
 "cap_tier": "A2",
 "cap_basis": "facility_design",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 102.0,
 "nox_se": 124.0,
@@ -771,6 +789,7 @@
 "cap_doc_mw": 521.7,
 "cap_tier": "A2",
 "cap_basis": "facility_design",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 91.0,
 "nox_se": 91.0,
@@ -810,6 +829,7 @@
 "cap_doc_mw": 521.7,
 "cap_tier": "A2",
 "cap_basis": "facility_design",
+"cap_upper_bound": false,
 "no2_flux": {
 "nox_kgh": 80.0,
 "nox_se": 54.0,

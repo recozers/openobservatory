@@ -152,3 +152,13 @@ Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this br
   Dublin's urban plume, not the campus's gas plant. The box method cannot separate a plant on a city's edge. A near-field
   sector test (1-5 km) restricted to westerly winds, with the city excluded from the upwind sector, would be needed;
   parked. Dublin and other grid-constrained cities stay on the list only if that sector variant is built.
+- B3 done (Claude, via research agent, docs/water_derived_loads_notes.md, data/water_derived_loads.csv, 234 rows):
+  Google publishes no WUE; an implied fleet WUE of 1.02-1.06 L/kWh comes from its own totals (about 5x Meta's 0.19, 3x
+  Microsoft Americas' 0.34, so WUE never transfers across operators). Validation against Meta's metered electricity:
+  water-derived / actual = 1.08 Prineville, 0.94 New Albany, 0.35 Lulea (free-air), 0.87 Altoona, 1.25 Los Lunas, 1.59
+  Fort Worth, about 3 at Clonee/Odense; Microsoft metros 0.4-3.5. So the method is good to about a factor of two; 12
+  Google campuses now carry a "derived" annual IT load with a 0.5x-2x band (tools/ingest_water_loads.py), drawn in
+  light orange; reported electricity always beats a water derivation. Air-cooled campuses (Mesa, Storey County) excluded.
+- Meta per-site electricity extended to all 18 disclosed campuses (docs/meta_disclosures_notes.md); ten campuses added
+  to the inventory with OSM footprint coordinates. Map evidence kinds: measured 19, derived 12, detected 4, presumed 52,
+  construction 26 (113 public sites).
