@@ -80,6 +80,7 @@ counts, coordinates and dates with the document URL in `capacity_timeline.csv` (
 has at least one filed figure with URL, or a note that none was found after searching the provincial EPB and NDRC sites.
 
 ### A3. Dark-roof and grey-roof detection in the Sentinel-2 timeline
+Status: blocked (tested index rule fires on pre-construction ground and misses Hyperion deadline; astra/a3-dark-roofs)
 `tools/s2_roof_timeline.py` dates roofs by visible brightness rising above the polygon's early baseline; dark membranes
 (Hyperion) and grey Chinese roofs are missed. Add a second criterion using change against bare soil: NDVI falling below 0.15 and
 a built-up index (NDBI or BSI) rising, sustained two months; report whichever fires first and label the rule. Validate on

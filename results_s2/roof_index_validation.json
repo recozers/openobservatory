@@ -1,0 +1,177 @@
+{
+  "rule": "NDVI < 0.15; NDBI or BSI >= first-six-month median + 0.08; two consecutive months",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "extraction_start": "2018-01-01",
+  "status": "experimental; not used for public roof dating",
+  "missing_sites": [],
+  "halls": [
+    {
+      "site_id": "hyperion_la",
+      "hall": "structure_north",
+      "brightness": "not_yet",
+      "ndvi_ndbi": "2026-06",
+      "ndvi_bsi": "not_yet",
+      "combined": "2026-06"
+    },
+    {
+      "site_id": "hyperion_la",
+      "hall": "structure_south",
+      "brightness": "not_yet",
+      "ndvi_ndbi": "2023-09",
+      "ndvi_bsi": "2023-09",
+      "combined": "2023-09"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase1_block1",
+      "brightness": "2025-01",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-01"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase1_block2",
+      "brightness": "2024-07",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2024-07"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_mid_block1",
+      "brightness": "2025-05",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-05"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_mid_block2",
+      "brightness": "2025-03",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-03"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_mid_block3",
+      "brightness": "2025-04",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-04"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_mid_block4",
+      "brightness": "2025-06",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-06"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_south_block1",
+      "brightness": "2025-05",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-05"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_south_block2",
+      "brightness": "2025-04",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-04"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_south_block3",
+      "brightness": "2025-05",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-05"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_south_block4",
+      "brightness": "2025-10",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-10"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_south_block5",
+      "brightness": "2025-06",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-06"
+    },
+    {
+      "site_id": "stargate_abilene",
+      "hall": "phase2_south_block6",
+      "brightness": "2025-07",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-07"
+    },
+    {
+      "site_id": "cn_horinger_cloud_valley",
+      "hall": "block_a",
+      "brightness": "not_yet",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "not_yet"
+    },
+    {
+      "site_id": "cn_horinger_cloud_valley",
+      "hall": "block_b",
+      "brightness": "not_yet",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "not_yet"
+    },
+    {
+      "site_id": "cn_horinger_cloud_valley",
+      "hall": "block_c",
+      "brightness": "existing",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "existing"
+    },
+    {
+      "site_id": "cn_horinger_cloud_valley",
+      "hall": "block_d",
+      "brightness": "not_yet",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "not_yet"
+    },
+    {
+      "site_id": "cn_zhangbei_alibaba",
+      "hall": "west_halls",
+      "brightness": "existing",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "existing"
+    },
+    {
+      "site_id": "cn_ulanqab_park",
+      "hall": "long_halls",
+      "brightness": "2025-11",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "2025-11"
+    },
+    {
+      "site_id": "cn_ulanqab_park",
+      "hall": "white_block",
+      "brightness": "not_yet",
+      "ndvi_ndbi": "not_yet",
+      "ndvi_bsi": "not_yet",
+      "combined": "not_yet"
+    }
+  ]
+}
