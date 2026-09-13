@@ -30,8 +30,12 @@
 "radar_on": {},
 "ntl_lit": null,
 "s2_available": true,
-"no2_available": false,
-"no2_baseline": null,
+"no2_available": true,
+"no2_baseline": {
+"mean": 2.8048972489854345,
+"se": 1.517868156995196,
+"n": 31
+},
 "thermal_night_available": false,
 "thermal_day_available": false,
 "quarters": [
@@ -70,7 +74,12 @@
 "basis": "roof on (3.2 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 2.36,
+"se": 1.2,
+"n": 41,
+"z": -0.2
+},
 "ntl": null
 },
 {
@@ -89,7 +98,12 @@
 "basis": "roof on (6.1 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 4.23,
+"se": 1.18,
+"n": 51,
+"z": 0.7
+},
 "ntl": null
 },
 {
@@ -102,13 +116,18 @@
 "halls_total": 2,
 "built_ha": 6.1,
 "fitted_ha": 3.2,
-"est_lo": 0.0,
-"est_mid": null,
+"est_lo": 28.4,
+"est_mid": 56.9,
 "est_hi": 85.3,
-"basis": "roofed \u22656 months (3.2 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"basis": "roofed \u22656 months (3.2 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area); NO2 plume active this quarter \u2192 utilisation 0.3\u20130.9",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 9.59,
+"se": 1.99,
+"n": 35,
+"z": 2.7
+},
 "ntl": null
 },
 {
@@ -121,13 +140,18 @@
 "halls_total": 2,
 "built_ha": 6.1,
 "fitted_ha": 6.1,
-"est_lo": 0.0,
-"est_mid": null,
+"est_lo": 53.4,
+"est_mid": 106.8,
 "est_hi": 160.2,
-"basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area); NO2 plume active this quarter \u2192 utilisation 0.3\u20130.9",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 8.95,
+"se": 2.5,
+"n": 47,
+"z": 2.1
+},
 "ntl": null
 },
 {
@@ -146,7 +170,12 @@
 "basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 4.96,
+"se": 1.15,
+"n": 36,
+"z": 1.1
+},
 "ntl": null
 },
 {
@@ -165,7 +194,12 @@
 "basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 6.31,
+"se": 1.15,
+"n": 46,
+"z": 1.8
+},
 "ntl": null
 },
 {
@@ -178,13 +212,18 @@
 "halls_total": 2,
 "built_ha": 6.1,
 "fitted_ha": 6.1,
-"est_lo": 0.0,
-"est_mid": null,
+"est_lo": 53.4,
+"est_mid": 106.8,
 "est_hi": 160.2,
-"basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
+"basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area); NO2 plume active this quarter \u2192 utilisation 0.3\u20130.9",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 8.79,
+"se": 2.09,
+"n": 29,
+"z": 2.3
+},
 "ntl": null
 },
 {
@@ -203,7 +242,12 @@
 "basis": "roofed \u22656 months (6.1 ha) \u00d7 29.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 7.83,
+"se": 2.22,
+"n": 31,
+"z": 1.9
+},
 "ntl": null
 },
 {
@@ -222,7 +266,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 3.33,
+"se": 0.88,
+"n": 51,
+"z": 0.3
+},
 "ntl": null
 },
 {
@@ -241,7 +290,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 1.81,
+"se": 2.12,
+"n": 26,
+"z": -0.4
+},
 "ntl": null
 }
 ],

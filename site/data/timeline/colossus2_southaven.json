@@ -11,11 +11,250 @@
 "radar_on": {},
 "ntl_lit": "not_yet",
 "s2_available": false,
-"no2_available": false,
-"no2_baseline": null,
+"no2_available": true,
+"no2_baseline": {
+"mean": 6.624960149074036,
+"se": 0.6153907929233865,
+"n": 280
+},
 "thermal_night_available": false,
 "thermal_day_available": false,
 "quarters": [
+{
+"q": "2023Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": 105.0,
+"nox_se": 70.0,
+"mw_lo": 23.0,
+"mw_hi": 351.0,
+"n_days": 38
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": null,
+"ntl": 2.1
+},
+{
+"q": "2023Q4",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": 60.0,
+"nox_se": 141.0,
+"mw_lo": 0.0,
+"mw_hi": 402.0,
+"n_days": 50
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 5.88,
+"se": 2.04,
+"n": 40,
+"z": -0.4
+},
+"ntl": 20.9
+},
+{
+"q": "2024Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": -47.0,
+"nox_se": 116.0,
+"mw_lo": 0.0,
+"mw_hi": 139.0,
+"n_days": 37
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 11.91,
+"se": 1.71,
+"n": 31,
+"z": 2.9
+},
+"ntl": 20.2
+},
+{
+"q": "2024Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": -83.0,
+"nox_se": 107.0,
+"mw_lo": 0.0,
+"mw_hi": 49.0,
+"n_days": 39
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 3.69,
+"se": 1.41,
+"n": 31,
+"z": -1.9
+},
+"ntl": 20.9
+},
+{
+"q": "2024Q3",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": -92.0,
+"nox_se": 109.0,
+"mw_lo": 0.0,
+"mw_hi": 34.0,
+"n_days": 44
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 1.84,
+"se": 1.49,
+"n": 28,
+"z": -3.0
+},
+"ntl": 24.5
+},
+{
+"q": "2024Q4",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": -68.0,
+"nox_se": 97.0,
+"mw_lo": 0.0,
+"mw_hi": 57.0,
+"n_days": 43
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 8.47,
+"se": 2.0,
+"n": 34,
+"z": 0.9
+},
+"ntl": 19.5
+},
+{
+"q": "2025Q1",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": 106.0,
+"nox_se": 113.0,
+"mw_lo": 0.0,
+"mw_hi": 437.0,
+"n_days": 43
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 13.89,
+"se": 1.63,
+"n": 35,
+"z": 4.2
+},
+"ntl": 18.0
+},
+{
+"q": "2025Q2",
+"cap_doc_mw": 0.0,
+"cap_tier": "A2",
+"cap_basis": "placeholder",
+"no2_flux": {
+"nox_kgh": 102.0,
+"nox_se": 117.0,
+"mw_lo": 0.0,
+"mw_hi": 439.0,
+"n_days": 42
+},
+"halls_roofed": 0,
+"halls_total": 0,
+"built_ha": 0,
+"fitted_ha": 0,
+"est_lo": 0.0,
+"est_mid": 0.0,
+"est_hi": 0.0,
+"basis": "pre-operation (documented placeholder)",
+"night": null,
+"day": null,
+"no2": {
+"excess": 4.96,
+"se": 1.39,
+"n": 36,
+"z": -1.1
+},
+"ntl": 25.3
+},
 {
 "q": "2025Q3",
 "cap_doc_mw": 0.0,
@@ -38,7 +277,12 @@
 "basis": "pre-operation (documented placeholder)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 1.4,
+"se": 1.22,
+"n": 30,
+"z": -3.8
+},
 "ntl": 27.5
 },
 {
@@ -63,7 +307,12 @@
 "basis": "NO2-flux on-site generation: 466 \u00b1 139 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 12.07,
+"se": 1.95,
+"n": 39,
+"z": 2.7
+},
 "ntl": 22.0
 },
 {
@@ -88,7 +337,12 @@
 "basis": "NO2-flux on-site generation: 778 \u00b1 158 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 22.21,
+"se": 2.3,
+"n": 39,
+"z": 6.5
+},
 "ntl": 15.9
 },
 {
@@ -113,7 +367,12 @@
 "basis": "NO2-flux on-site generation: 1137 \u00b1 220 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 24.41,
+"se": 2.55,
+"n": 38,
+"z": 6.8
+},
 "ntl": 55.0
 },
 {
@@ -138,7 +397,12 @@
 "basis": "NO2-flux on-site generation: 1207 \u00b1 252 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 33.73,
+"se": 4.03,
+"n": 24,
+"z": 6.6
+},
 "ntl": 83.9
 }
 ],

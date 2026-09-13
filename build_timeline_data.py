@@ -39,7 +39,8 @@ def quarters(start="2018Q1", end=None):
     return list(pd.period_range(start, end, freq="Q"))
 
 
-MEASURED = ("facility_measured_annual", "it_measured_annual")
+MEASURED = ("facility_measured_annual", "it_measured_annual", "water_derived_it_annual")
+MEASURED_RANK = {"facility_measured_annual": 0, "it_measured_annual": 0, "water_derived_it_annual": 1}  # electricity beats water-derived
 
 
 def emission_factor_range(site):
@@ -66,7 +67,8 @@ def cap_in_force(tl, sid, date, pue):
     r = mine[(mine.valid_from <= date) & ((mine.valid_to == "") | (mine.valid_to >= date))]
     meas = r[r.capacity_basis.isin(MEASURED)]
     if not meas.empty:
-        m = meas.sort_values("valid_from").iloc[-1]
+        meas = meas.assign(_rank=meas.capacity_basis.map(MEASURED_RANK)).sort_values(["_rank", "valid_from"], ascending=[True, False])
+        m = meas.iloc[0]
         return it_mw(float(m.capacity_mw), m.capacity_basis, pue), m.tier, m.capacity_basis
     past = mine[mine.capacity_basis.isin(MEASURED) & (mine.valid_to != "") & (mine.valid_to < date)].sort_values("valid_to")
     if not past.empty:
@@ -92,6 +94,8 @@ def utilisation_prior(cap_basis, site_class):
     """(lo, mid, hi) multipliers on the capacity figure in force. Calibration so far: Meta per-site annual electricity gives
     Lulea at 0.25-0.45 of its 120 MW grid feed (2022-2024) and New Albany at 0.24-0.36 of its 250 MW connection (2023-2024);
     ORNL Frontier averaged 12.2 MW in 2023 against 21-23 MW measured at HPL. AI-training campuses have no calibration yet."""
+    if cap_basis == "water_derived_it_annual":
+        return 0.7, 1.0, 1.3, "annual IT energy derived from the operator's published water use ÷ WUE, ±30 %"
     if cap_basis in MEASURED:
         return 0.9, 1.0, 1.1, "operator-reported annual average electricity ÷ 8760 h, ±10 %"
     if cap_basis in ("carried_measured_annual", "carried_it_measured_annual"):

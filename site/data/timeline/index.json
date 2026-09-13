@@ -205,9 +205,9 @@
   "est_hi": 2919.0,
   "basis": "NO2-flux on-site generation: 1207 \u00b1 252 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
   "s2": false,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 5
+  "quarters": 13
  },
  "cn_horinger_cloud_valley": {
   "est_mid": null,
@@ -245,7 +245,7 @@
   "est_hi": 381.6,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 15
  },
@@ -255,7 +255,7 @@
   "est_hi": 220.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 35
  },
@@ -265,7 +265,7 @@
   "est_hi": 271.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 27
  },
@@ -275,9 +275,9 @@
   "est_hi": 181.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 18
+  "quarters": 19
  },
  "epoch_google_mesa": {
   "est_mid": 73.2,
@@ -285,9 +285,9 @@
   "est_hi": 109.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 11
+  "quarters": 14
  },
  "epoch_dayone_nusajaya": {
   "est_mid": 96.0,
@@ -305,7 +305,7 @@
   "est_hi": 142.2,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 35
  },
@@ -315,7 +315,7 @@
   "est_hi": 157.2,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 35
  },
@@ -325,7 +325,7 @@
   "est_hi": 142.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 35
  },
@@ -335,7 +335,7 @@
   "est_hi": 106.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 11
  },
@@ -345,9 +345,9 @@
   "est_hi": 170.4,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 12
+  "quarters": 15
  },
  "epoch_google_bristow": {
   "est_mid": 95.2,
@@ -355,9 +355,9 @@
   "est_hi": 142.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 16
+  "quarters": 19
  },
  "epoch_microsoft_goodyear": {
   "est_mid": 80.8,
@@ -365,7 +365,7 @@
   "est_hi": 121.2,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 27
  },
@@ -375,9 +375,9 @@
   "est_hi": 106.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 8
+  "quarters": 11
  },
  "epoch_google_kansas_city_east": {
   "est_mid": 42.0,
@@ -395,7 +395,7 @@
   "est_hi": 127.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 17
  },
@@ -405,9 +405,9 @@
   "est_hi": 142.2,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 14
+  "quarters": 19
  },
  "epoch_google_lincoln": {
   "est_mid": 56.4,
@@ -425,7 +425,7 @@
   "est_hi": 108.0,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 19
  },
@@ -435,9 +435,9 @@
   "est_hi": 92.4,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 12
+  "quarters": 16
  },
  "epoch_qts_richmond_3": {
   "est_mid": 57.6,
@@ -455,9 +455,9 @@
   "est_hi": 91.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 8
+  "quarters": 11
  },
  "epoch_meta_kuna": {
   "est_mid": 60.8,
@@ -465,7 +465,7 @@
   "est_hi": 91.2,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 15
  },
@@ -495,9 +495,9 @@
   "est_hi": 136.8,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 10
+  "quarters": 11
  },
  "epoch_meta_huntsville": {
   "est_mid": 58.4,
@@ -505,7 +505,7 @@
   "est_hi": 87.6,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 18
  },
@@ -535,9 +535,9 @@
   "est_hi": 114.0,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 29
+  "quarters": 32
  },
  "epoch_meta_eagle_mountain": {
   "est_mid": 53.2,
@@ -565,7 +565,7 @@
   "est_hi": 96.6,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 31
  },
@@ -585,9 +585,9 @@
   "est_hi": 108.0,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 19
+  "quarters": 22
  },
  "epoch_google_waltham_cross": {
   "est_mid": 35.2,
@@ -605,9 +605,9 @@
   "est_hi": 132.6,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 7
+  "quarters": 14
  },
  "epoch_huawei_horinger": {
   "est_mid": 96.7,
@@ -615,9 +615,9 @@
   "est_hi": 145.1,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 7
+  "quarters": 15
  },
  "epoch_google_arcola": {
   "est_mid": 30.8,
@@ -645,9 +645,9 @@
   "est_hi": 142.2,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
-  "quarters": 23
+  "quarters": 24
  },
  "epoch_meta_gallatin": {
   "est_mid": 34.8,
@@ -845,7 +845,7 @@
   "est_hi": 101.4,
   "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
   "s2": true,
-  "no2": false,
+  "no2": true,
   "night": false,
   "quarters": 15
  },

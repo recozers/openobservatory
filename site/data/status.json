@@ -14,11 +14,52 @@
 "load": "about 1207 MW from NO\u2082 (range 637\u20132919; absolute value uncertain 2\u20133\u00d7, month-to-month changes reliable)",
 "confidence": "high",
 "how": [
+"TROPOMI NO\u2082 plume test",
 "TROPOMI NOx flux (calibrated on EPA-monitored plants)",
 "documented capacity: Reported 59 on-site gas turbines totalling up to 495 MW, operating unpermitted from late 2"
 ],
 "key": "nox",
 "series": [
+{
+"x": "2023Q3",
+"y": 105.0,
+"se": 70.0
+},
+{
+"x": "2023Q4",
+"y": 60.0,
+"se": 141.0
+},
+{
+"x": "2024Q1",
+"y": -47.0,
+"se": 116.0
+},
+{
+"x": "2024Q2",
+"y": -83.0,
+"se": 107.0
+},
+{
+"x": "2024Q3",
+"y": -92.0,
+"se": 109.0
+},
+{
+"x": "2024Q4",
+"y": -68.0,
+"se": 97.0
+},
+{
+"x": "2025Q1",
+"y": 106.0,
+"se": 113.0
+},
+{
+"x": "2025Q2",
+"y": 102.0,
+"se": 117.0
+},
 {
 "x": "2025Q3",
 "y": 22.0,
@@ -875,6 +916,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Microsoft Fairwater Atlanta; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -1139,6 +1181,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google New Albany; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -1470,6 +1513,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Pryor (North); IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -1840,10 +1884,16 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Columbus; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2022Q1",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2022Q2",
 "y": 0,
@@ -1957,10 +2007,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Amazon Madison Mega Site; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2023Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q3",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2023Q4",
 "y": 0,
@@ -2126,6 +2192,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: CoreWeave Denton TX; IT power (MW); reported estimate"
 ],
 "key": "capacity",
@@ -2293,10 +2360,51 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Huawei Horinger; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2023Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q4",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q4",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2025Q1",
 "y": 0,
@@ -2542,6 +2650,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: QTS Richmond 1; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -2744,10 +2853,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Bristow; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2022Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2022Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2022Q3",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2022Q4",
 "y": 0,
@@ -2851,6 +2976,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Council Bluffs (East); IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -3053,10 +3179,36 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Omaha; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2022Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2022Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2022Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2022Q4",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q1",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2023Q2",
 "y": 0,
@@ -3150,10 +3302,16 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Papillion; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2020Q4",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2021Q1",
 "y": 0,
@@ -3292,10 +3450,16 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Amazon Ridgeland; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2024Q1",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2024Q2",
 "y": 0,
@@ -3369,10 +3533,46 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: VNET Bayin Ulanqab; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2023Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q4",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q4",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2025Q1",
 "y": 0,
@@ -3636,6 +3836,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: AWS New Albany; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -3918,6 +4119,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Microsoft Goodyear; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -4080,10 +4282,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Microsoft Project Osmium; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2018Q4",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2019Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2019Q2",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2019Q3",
 "y": 0,
@@ -4252,10 +4470,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Mesa; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2023Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q4",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2024Q1",
 "y": 0,
@@ -4334,6 +4568,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: QTS Richmond 2; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -4456,10 +4691,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Meta-QTS Hillsboro 2; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2021Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2021Q3",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2021Q4",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2022Q1",
 "y": 0,
@@ -4578,6 +4829,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Meta Rosemount; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -4660,10 +4912,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Meta Jeffersonville; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2024Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q3",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2024Q4",
 "y": 0,
@@ -4774,6 +5042,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Alibaba Zhangbei; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -5078,6 +5347,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google Storey County; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -5260,10 +5530,31 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Google The Dalles; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2022Q4",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2023Q3",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2023Q4",
 "y": 0,
@@ -5347,10 +5638,26 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Meta Montgomery; IT power (MW); reported estimate"
 ],
 "key": "roofs",
 "series": [
+{
+"x": "2024Q1",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q2",
+"y": 0,
+"y2": 0
+},
+{
+"x": "2024Q3",
+"y": 0,
+"y2": 0
+},
 {
 "x": "2024Q4",
 "y": 0,
@@ -5414,6 +5721,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Meta Kuna; IT power (MW); reported estimate"
 ],
 "key": "roofs",
@@ -5720,6 +6028,7 @@
 "confidence": "medium",
 "how": [
 "Sentinel-2 roof dating",
+"TROPOMI NO\u2082 plume test",
 "documented capacity: Epoch AI: Meta Huntsville; IT power (MW); reported estimate"
 ],
 "key": "roofs",

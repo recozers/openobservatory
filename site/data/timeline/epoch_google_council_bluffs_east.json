@@ -54,8 +54,12 @@
 "radar_on": {},
 "ntl_lit": null,
 "s2_available": true,
-"no2_available": false,
-"no2_baseline": null,
+"no2_available": true,
+"no2_baseline": {
+"mean": null,
+"se": null,
+"n": 0
+},
 "thermal_night_available": false,
 "thermal_day_available": false,
 "quarters": [
@@ -436,7 +440,12 @@
 "basis": "roofed \u22656 months (5.8 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 8.77,
+"se": 1.84,
+"n": 49,
+"z": null
+},
 "ntl": null
 },
 {
@@ -455,7 +464,12 @@
 "basis": "roofed \u22656 months (5.8 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 11.39,
+"se": 2.93,
+"n": 36,
+"z": null
+},
 "ntl": null
 },
 {
@@ -474,7 +488,12 @@
 "basis": "roofed \u22656 months (5.8 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 8.26,
+"se": 2.89,
+"n": 49,
+"z": null
+},
 "ntl": null
 },
 {
@@ -493,7 +512,12 @@
 "basis": "roofed \u22656 months (5.8 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 11.43,
+"se": 1.76,
+"n": 47,
+"z": null
+},
 "ntl": null
 },
 {
@@ -512,7 +536,12 @@
 "basis": "roofed \u22656 months (5.8 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 6.33,
+"se": 1.69,
+"n": 46,
+"z": null
+},
 "ntl": null
 },
 {
@@ -531,7 +560,12 @@
 "basis": "roofed \u22656 months (5.8 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 4.88,
+"se": 1.42,
+"n": 44,
+"z": null
+},
 "ntl": null
 },
 {
@@ -550,7 +584,12 @@
 "basis": "roofed \u22656 months (8.7 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 7.3,
+"se": 1.44,
+"n": 51,
+"z": null
+},
 "ntl": null
 },
 {
@@ -569,7 +608,12 @@
 "basis": "roofed \u22656 months (8.7 ha) \u00d7 16.4 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 10.37,
+"se": 1.73,
+"n": 55,
+"z": null
+},
 "ntl": null
 },
 {
@@ -588,7 +632,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 9.8,
+"se": 1.89,
+"n": 51,
+"z": null
+},
 "ntl": null
 },
 {
@@ -607,7 +656,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 8.22,
+"se": 1.89,
+"n": 51,
+"z": null
+},
 "ntl": null
 },
 {
@@ -626,7 +680,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 8.86,
+"se": 1.83,
+"n": 47,
+"z": null
+},
 "ntl": null
 },
 {
@@ -645,7 +704,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 10.88,
+"se": 1.21,
+"n": 51,
+"z": null
+},
 "ntl": null
 },
 {
@@ -664,7 +728,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 12.77,
+"se": 1.48,
+"n": 43,
+"z": null
+},
 "ntl": null
 },
 {
@@ -683,7 +752,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 10.13,
+"se": 2.03,
+"n": 42,
+"z": null
+},
 "ntl": null
 },
 {
@@ -702,7 +776,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 9.5,
+"se": 2.19,
+"n": 43,
+"z": null
+},
 "ntl": null
 },
 {
@@ -721,7 +800,12 @@
 "basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null,
+"no2": {
+"excess": 12.38,
+"se": 2.32,
+"n": 26,
+"z": null
+},
 "ntl": null
 }
 ],
