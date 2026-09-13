@@ -217,12 +217,17 @@ def main():
             n2.index = pd.to_datetime(n2.index)
             change = tl[(tl.site_id == sid) & (tl.capacity_basis != "placeholder")].valid_from.min() or None
             pre = n2[n2.index < pd.Timestamp(change)] if change else n2.iloc[: len(n2) // 2]
-            no2_base = dict(mean=float(pre.dw_minus_uw.mean()), se=float(pre.dw_minus_uw.std() / math.sqrt(max(len(pre), 1))), n=int(len(pre)))
+            pre_values = pd.to_numeric(pre.dw_minus_uw, errors="coerce").dropna()
+            no2_base = dict(mean=float(pre_values.mean()) if len(pre_values) else None,
+                            se=float(pre_values.std() / math.sqrt(len(pre_values))) if len(pre_values) > 1 else None, n=int(len(pre_values)))
             g = n2.groupby(n2.index.to_period("Q").astype(str)).dw_minus_uw.agg(["mean", "std", "count"])
             for q, r in g.iterrows():
+                if not r["count"] or not math.isfinite(float(r["mean"])):
+                    continue
                 se = float(r["std"] / math.sqrt(r["count"])) if r["count"] > 1 else None
-                z = (float(r["mean"]) - no2_base["mean"]) / math.sqrt((se or 0) ** 2 + no2_base["se"] ** 2) if se else None
-                no2q[q] = dict(excess=round(float(r["mean"]), 2), se=round(se, 2) if se else None, n=int(r["count"]), z=round(z, 1) if z is not None else None)
+                variance = se ** 2 + no2_base["se"] ** 2 if se is not None and no2_base["se"] is not None else None
+                z = (float(r["mean"]) - no2_base["mean"]) / math.sqrt(variance) if variance is not None and variance > 0 else None
+                no2q[q] = dict(excess=round(float(r["mean"]), 2), se=round(se, 2) if se is not None else None, n=int(r["count"]), z=round(z, 1) if z is not None else None)
         # NO2-flux generation estimate (sites with on-site combustion): calibrated NOx kg/h per month -> MW at an emission-factor range
         fluxf = ROOT / "results_no2" / f"flux_{sid}_monthly.csv"
         fluxq = {}

@@ -24,6 +24,13 @@ def main():
     totals = dict(epoch_records=len(audit), existing_sites=0, new_sites=0, new_sites_with_polygons=0, new_sites_with_s2=0,
                   new_sites_with_event_dates=0, hall_polygons=0, dated_halls=0, already_roof_like=0, unresolved_halls=0, repaired_geometries=0, date_conflicts=0)
     failures = []
+    def reject_constant(value):
+        raise ValueError(f"Non-JSON numeric token: {value}")
+    for path in (ROOT / "site/data").rglob("*.json"):
+        try:
+            json.loads(path.read_text(), parse_constant=reject_constant)
+        except ValueError as exc:
+            failures.append(f"{path.relative_to(ROOT)}: {exc}")
     details = []
     for row in audit:
         sid = row['site_id']
