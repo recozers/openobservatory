@@ -160,9 +160,12 @@ usable chips from the annual median. This is the construction-detection chain fo
 the optical median gives a person a chip, Sentinel-2 dates the roof where it can.
 
 **VIIRS night lights (construction and energisation, not load).** Daily Black Marble radiance (500 m), campus minus a 3–10 km
-annulus, monthly medians. Abilene sits at −9 nW/cm²/sr below its surroundings from 2019 to mid-2024, lights up in 2024-12
-(six months after ground-breaking) and climbs to +120 by 2026 as build-out continues. Colossus 1 steps up in 2025-01, six months
-after IT load began: lights follow yard and site expansion, not the operating date. As a regional scan (3-month medians, latest
+annulus, monthly medians; a site "lights up" in the first month at least max(5 MAD, 5 nW/cm²/sr) above the median of all earlier
+months, sustained six months. Every greenfield US campus lights up two to six months after ground-breaking: Rainier 2024-08,
+Fairwater 2024-10, Abilene 2024-12 (then climbing to +120 nW/cm²/sr by 2026 as build-out continued), Hyperion 2025-12. Colossus 1
+steps up in 2025-01, six months after IT load began: lights follow yard and site expansion, not the operating date. The
+nineteen other sites (legacy campuses, supercomputers, the Chinese campuses inside already-lit parks, hub centroids) show no
+step since 2019, as expected. As a regional scan (3-month medians, latest
 versus three years earlier, brightening ≥ 10 nW/cm²/sr and ratio ≥ 3, blobs ≥ 2 pixels) over 150 km boxes, it recovers six of
 seven US campuses within 0.4 km (Hyperion's blob centroid is 2.3 km from the stored coordinate) with 8–22 blobs per box, and the
 campus is the first or second blob in five boxes. It misses Colossus 1 (brownfield inside an already-lit industrial area) and the

@@ -42,15 +42,16 @@ def main():
         cf = Path(f"{tag}_candidates.csv")
         if r.returncode != 0 or not cf.exists():
             print(f"  blob {i + 1} at {b.lat},{b.lon}: radar stage failed: {r.stderr.strip()[-120:]}", file=sys.stderr)
-            rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b.early, lit_late=b.late, lit_diff=b.diff, lit_px=b.n_px, largest_ha=None, n_big=None, cand_lat=None, cand_lon=None))
+            rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b["early"], lit_late=b["late"], lit_diff=b["diff"], lit_px=b["n_px"], largest_ha=None, n_big=None, cand_lat=None, cand_lon=None))
             continue
         c = pd.read_csv(cf)
         big = c[c.area_ha >= args.min_area]
         top = c.iloc[0] if len(c) else None
-        rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b.early, lit_late=b.late, lit_diff=b.diff, lit_px=b.n_px,
+        rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b["early"], lit_late=b["late"], lit_diff=b["diff"], lit_px=b["n_px"],
                          largest_ha=float(top.area_ha) if top is not None else 0.0, n_big=int(len(big)),
                          cand_lat=float(top.lat) if top is not None else None, cand_lon=float(top.lon) if top is not None else None))
-        print(f"  blob {i + 1} at {b.lat},{b.lon}: lights +{b.diff:.0f}, largest new structure {rows[-1]['largest_ha']:.1f} ha, {len(big)} >= {args.min_area} ha", file=sys.stderr)
+        lit = float(b["diff"])
+        print(f"  blob {i + 1} at {b.lat},{b.lon}: lights +{lit:.0f}, largest new structure {rows[-1]['largest_ha']:.1f} ha, {len(big)} >= {args.min_area} ha", file=sys.stderr)
     df = pd.DataFrame(rows).sort_values("largest_ha", ascending=False, na_position="last")
     df.to_csv(out / "summary.csv", index=False)
     print(df.to_string(index=False))

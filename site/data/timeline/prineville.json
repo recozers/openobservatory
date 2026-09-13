@@ -20,7 +20,7 @@
 "hall_H_east": "s2"
 },
 "radar_on": {},
-"ntl_lit": null,
+"ntl_lit": "not_yet",
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -128,7 +128,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 40.1
 },
 {
 "q": "2019Q2",
@@ -151,7 +151,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 39.0
 },
 {
 "q": "2019Q3",
@@ -174,7 +174,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 35.6
 },
 {
 "q": "2019Q4",
@@ -197,7 +197,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 42.2
 },
 {
 "q": "2020Q1",
@@ -220,7 +220,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 52.8
 },
 {
 "q": "2020Q2",
@@ -243,7 +243,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 55.9
 },
 {
 "q": "2020Q3",
@@ -266,7 +266,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 55.6
 },
 {
 "q": "2020Q4",
@@ -289,7 +289,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 53.6
 },
 {
 "q": "2021Q1",
@@ -312,7 +312,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 61.3
 },
 {
 "q": "2021Q2",
@@ -335,7 +335,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 63.0
 },
 {
 "q": "2021Q3",
@@ -358,7 +358,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 61.4
 },
 {
 "q": "2021Q4",
@@ -381,7 +381,7 @@
 },
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 60.8
 },
 {
 "q": "2022Q1",
@@ -408,7 +408,7 @@
 "n": 7
 },
 "no2": null,
-"ntl": null
+"ntl": 68.5
 },
 {
 "q": "2022Q2",
@@ -435,7 +435,7 @@
 "n": 10
 },
 "no2": null,
-"ntl": null
+"ntl": 61.9
 },
 {
 "q": "2022Q3",
@@ -462,7 +462,7 @@
 "n": 19
 },
 "no2": null,
-"ntl": null
+"ntl": 77.2
 },
 {
 "q": "2022Q4",
@@ -489,7 +489,7 @@
 "n": 12
 },
 "no2": null,
-"ntl": null
+"ntl": 78.8
 },
 {
 "q": "2023Q1",
@@ -516,7 +516,7 @@
 "n": 9
 },
 "no2": null,
-"ntl": null
+"ntl": 70.3
 },
 {
 "q": "2023Q2",
@@ -543,7 +543,7 @@
 "n": 12
 },
 "no2": null,
-"ntl": null
+"ntl": 61.3
 },
 {
 "q": "2023Q3",
@@ -570,7 +570,7 @@
 "n": 16
 },
 "no2": null,
-"ntl": null
+"ntl": 78.3
 },
 {
 "q": "2023Q4",
@@ -597,7 +597,7 @@
 "n": 10
 },
 "no2": null,
-"ntl": null
+"ntl": 67.2
 },
 {
 "q": "2024Q1",
@@ -624,7 +624,7 @@
 "n": 7
 },
 "no2": null,
-"ntl": null
+"ntl": 70.2
 },
 {
 "q": "2024Q2",
@@ -651,7 +651,7 @@
 "n": 13
 },
 "no2": null,
-"ntl": null
+"ntl": 77.6
 },
 {
 "q": "2024Q3",
@@ -678,7 +678,7 @@
 "n": 22
 },
 "no2": null,
-"ntl": null
+"ntl": 84.6
 },
 {
 "q": "2024Q4",
@@ -705,7 +705,7 @@
 "n": 11
 },
 "no2": null,
-"ntl": null
+"ntl": 75.0
 },
 {
 "q": "2025Q1",
@@ -732,7 +732,7 @@
 "n": 12
 },
 "no2": null,
-"ntl": null
+"ntl": 79.2
 },
 {
 "q": "2025Q2",
@@ -759,7 +759,7 @@
 "n": 15
 },
 "no2": null,
-"ntl": null
+"ntl": 78.7
 },
 {
 "q": "2025Q3",
@@ -786,7 +786,7 @@
 "n": 15
 },
 "no2": null,
-"ntl": null
+"ntl": 92.4
 },
 {
 "q": "2025Q4",
@@ -813,7 +813,7 @@
 "n": 6
 },
 "no2": null,
-"ntl": null
+"ntl": 73.0
 },
 {
 "q": "2026Q1",
@@ -840,7 +840,7 @@
 "n": 6
 },
 "no2": null,
-"ntl": null
+"ntl": 70.5
 },
 {
 "q": "2026Q2",
@@ -867,7 +867,7 @@
 "n": 19
 },
 "no2": null,
-"ntl": null
+"ntl": 76.4
 },
 {
 "q": "2026Q3",
@@ -894,7 +894,7 @@
 "n": 14
 },
 "no2": null,
-"ntl": null
+"ntl": 75.9
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
