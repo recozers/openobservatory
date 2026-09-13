@@ -147,3 +147,8 @@ Replayed existing no2_flux composite and monthly methods on saved daily profiles
 Validation: 20 tests pass; dry-run rebuild strictly validates 220 JSON files; inventory audit passes. Checked the local Abilene front page and quarterly NOx strip in the browser: capacity remains explicitly assumed, new NOx values retain negative months, and no NOx-derived MW is shown. Remaining B1 work: identify permits and commissioning for unresolved leads and source hall geometry before adding new inventory sites. This is a reviewable initial implementation, not an exhaustive completed census.
 
 Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this branch for B1 follow-up; do not duplicate the register or rerun Claude C2. B2-B6 remain available when further B1 progress requires new source evidence.
+- C6 result (Dublin Grange Castle, results_no2/flux_grange_castle_dublin.csv, 373 clear days 2023-2026): the calibrated
+  plateau averages 964 ± 96 kg NOx/h with winter peaks near 1,900 and the EMG fit places the source 36 km downwind: this is
+  Dublin's urban plume, not the campus's gas plant. The box method cannot separate a plant on a city's edge. A near-field
+  sector test (1-5 km) restricted to westerly winds, with the city excluded from the upwind sector, would be needed;
+  parked. Dublin and other grid-constrained cities stay on the list only if that sector variant is built.

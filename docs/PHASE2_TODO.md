@@ -93,5 +93,5 @@ series per site from the refresh; the first detection recorded in `docs/LOG.md`.
 - **C4 (done)**: null distribution from the 32 grid-fed sites: z sd 1.42, 95th percentile 1.89, max 2.00, 0/32 at 2.5σ.
   The 2.5σ bar stays; nothing below it is claimed.
 - **C5**: classifier recalibration with the labels from phase-1 A8 and the optical review, then scores in the site JSON.
-- **C6 (running)**: generator-driven campuses outside the US: NOx flux over Dublin's Grange Castle (Microsoft's permitted
-  170 MW gas plant) and the west-Dublin cluster; then other grid-constrained markets if Dublin shows anything.
+- **C6 (done, inconclusive)**: Dublin's Grange Castle: the box method reads the city's plume (964 ± 96 kg/h, winter peaks),
+  not the campus plant; a near-field westerly-wind sector test would be needed (`docs/LOG.md`).
