@@ -63,7 +63,7 @@ a { color: #1f4e82; }
 @media (max-width: 700px) {
   .topbar { flex-direction: column; }
   .panel { top: auto; bottom: 0; right: 0; left: 0; width: auto; height: 60%; border-radius: 10px 10px 0 0; }
-  .legend { display: none; }
+  .panel:not([hidden]) ~ .legend { display: none; }
 }
 /* trimmed front page */
 .sw-comb { background: #c05621; } .sw-doc { background: #2b6cb0; } .sw-build { background: #fff; box-shadow: 0 0 0 1.5px #9a9a95; }

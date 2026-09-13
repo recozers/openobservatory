@@ -1,0 +1,7 @@
+rank,site_box,lat,lon,area_ha,rectangularity,first_change_year,chip,confidence,digitised_from,review
+1,ulanqab_hub,40.947060004906305,113.24863874004933,8.75,0.625,2026,ulanqab_hub_001.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+2,ulanqab_hub,40.96268682043965,113.23339967998378,6.25,0.6195335276971905,2026,ulanqab_hub_002.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+3,ulanqab_hub,41.050394763947416,113.16843876607246,4.5,0.6,2026,ulanqab_hub_003.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+4,ulanqab_hub,40.97958244381013,113.25491360540286,3.5,0.875,2025,ulanqab_hub_004.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+5,ulanqab_hub,40.94893635522484,113.20459780721808,3.25,0.65,2024,ulanqab_hub_005.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification
+6,ulanqab_hub,40.95424237855036,113.15639380119305,3.0,0.6,2024,ulanqab_hub_006.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification

@@ -12,8 +12,11 @@ Layer; images with fewer than --min-px valid pixels in a polygon are ignored for
 from __future__ import annotations
 
 import argparse
+import hashlib
+import json
 import os
 import sys
+import time
 from pathlib import Path
 
 import pandas as pd
@@ -24,7 +27,7 @@ from dcheat import geom as G  # noqa: E402
 
 
 def roof_on_month(series, thr=0.30, jump=0.08, roof_like=0.22):
-    v = series.dropna()
+    v = series.dropna().sort_index()
     if len(v) < 3:
         return "not_yet"
     base = float(v.iloc[:6].median())
@@ -32,7 +35,8 @@ def roof_on_month(series, thr=0.30, jump=0.08, roof_like=0.22):
         return "existing"
     level = max(min(thr, base + 2 * jump), base + jump)
     for k in range(len(v) - 1):
-        if v.iloc[k] >= level and v.iloc[k + 1] >= level:
+        consecutive = pd.Period(v.index[k], freq="M") + 1 == pd.Period(v.index[k + 1], freq="M")
+        if consecutive and v.iloc[k] >= level and v.iloc[k + 1] >= level:
             return str(v.index[k])
     return "not_yet"
 
@@ -47,10 +51,10 @@ def main():
     ap.add_argument("--min-px", type=int, default=10)
     ap.add_argument("--max-cloud", type=float, default=60.0)
     ap.add_argument("--out", default=None)
+    ap.add_argument("--cache-dir", type=Path, default=Path(__file__).resolve().parents[1] / "data/cache/s2_roofs")
     args = ap.parse_args()
-    import ee
-    ee.Initialize(project=os.environ.get("EE_PROJECT") or None)
-    ee.data.setDeadline(int(os.environ.get("EE_DEADLINE_MS", "900000")))
+    from dcheat.gee import _ee
+    ee = _ee()
     polys = [p for p in G.load_site_polygons(Path(args.polygons)) if p.ptype == args.ptype]
     if not polys:
         sys.exit(f"no polygons of ptype {args.ptype}")
@@ -60,23 +64,41 @@ def main():
     def clean(img):
         scl = img.select("SCL")
         ok = scl.neq(0).And(scl.neq(3)).And(scl.neq(8)).And(scl.neq(9)).And(scl.neq(10)).And(scl.neq(11))
-        return img.select(["B2", "B3", "B4"]).multiply(1e-4).reduce(ee.Reducer.mean()).rename("bright").updateMask(ok).set("d", img.date().format("YYYY-MM-dd"))
+        return img.select(["B2", "B3", "B4"]).multiply(1e-4).reduce(ee.Reducer.mean()).rename("bright").updateMask(ok).set("d", img.date().format("YYYY-MM-dd")).copyProperties(img, ["system:time_start"])
     rows = []
-    # Earth Engine returns at most 5000 features per query: chunk the date range so polygons x images stays under it
-    step = 12 if len(polys) <= 12 else (3 if len(polys) <= 40 else 1)
-    periods = pd.period_range(args.start[:7], end[:7], freq="M")
-    for k in range(0, len(periods), step):
-        p0, p1 = periods[k], periods[min(k + step - 1, len(periods) - 1)]
-        d0, d1 = max(args.start, p0.strftime("%Y-%m-01")), min(end, (p1 + 1).strftime("%Y-%m-01"))
+    args.cache_dir.mkdir(parents=True, exist_ok=True)
+    for y in range(int(args.start[:4]), int(end[:4]) + 1):
+        start_y, end_y = max(args.start, f"{y}-01-01"), min(end, f"{y + 1}-01-01")
+        if start_y >= end_y:
+            continue
+        key = hashlib.sha256(Path(args.polygons).read_bytes() + json.dumps([start_y, end_y, args.ptype, args.max_cloud, "bright-v2"]).encode()).hexdigest()
+        cache = args.cache_dir / f"{key}.json"
+        if cache.exists():
+            part = json.loads(cache.read_text())
+            rows.extend(part)
+            print(f"  {y}: {len(part)} cached polygon-images", file=sys.stderr)
+            continue
         s2 = (ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED").filterBounds(fc.geometry())
-              .filterDate(d0, d1).filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", args.max_cloud)).map(clean))
-        feats = s2.map(lambda img: img.reduceRegions(fc, ee.Reducer.mean().combine(ee.Reducer.count(), sharedInputs=True), 10)
-                       .map(lambda f: f.set("d", img.get("d")))).flatten().getInfo()["features"]
-        rows += [dict(name=f["properties"]["name"], d=f["properties"]["d"], bright=f["properties"].get("mean"), n=f["properties"].get("count", 0)) for f in feats]
-        print(f"  {p0}..{p1}: {len(feats)} polygon-images", file=sys.stderr)
-    df = pd.DataFrame(rows).dropna(subset=["bright"])
+              .filterDate(start_y, end_y).filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", args.max_cloud)).map(clean))
+        from dcheat.gee import _fetch_chunked
+        for attempt in range(4):
+            try:
+                feats = _fetch_chunked(ee, s2, lambda img: img.reduceRegions(fc, ee.Reducer.mean().combine(ee.Reducer.count(), sharedInputs=True), 10)
+                                      .map(lambda f: ee.Feature(None, f.toDictionary()).set("d", img.get("d"))),
+                                      start_y, end_y, len(polys), limit=1000)
+                break
+            except ee.EEException as exc:
+                if attempt == 3 or not any(msg in str(exc).lower() for msg in ("concurrent aggregations", "too many requests", "timed out", "internal error")):
+                    raise
+                print(f"  {y}: transient EE error; retry {attempt + 1}/3", file=sys.stderr)
+                time.sleep(2 ** (attempt + 1))
+        part = [dict(name=f["properties"]["name"], d=f["properties"]["d"], bright=f["properties"].get("mean"), n=f["properties"].get("count", 0)) for f in feats]
+        cache.write_text(json.dumps(part))
+        rows.extend(part)
+        print(f"  {y}: {len(feats)} polygon-images", file=sys.stderr)
+    df = pd.DataFrame(rows, columns=["name", "d", "bright", "n"]).dropna(subset=["bright"])
     df = df[df.n >= args.min_px]
-    df["ym"] = df.d.str[:7]
+    df["ym"] = df.d.astype(str).str[:7]
     piv = df.groupby(["ym", "name"]).bright.median().unstack().sort_index()
     print(piv.round(2).to_string())
     print("\nroof-on month (brightness rises >= 0.08 above the polygon's own early baseline, sustained; 'existing' if already roof-like):")
@@ -85,6 +107,13 @@ def main():
     if args.out:
         Path(args.out).parent.mkdir(parents=True, exist_ok=True)
         piv.to_csv(args.out)
+        summary = {"start": args.start, "end_exclusive": end, "rule": "visible_brightness",
+                   "source": "COPERNICUS/S2_SR_HARMONIZED", "threshold": args.threshold,
+                   "polygons_sha256": hashlib.sha256(Path(args.polygons).read_bytes()).hexdigest(),
+                   "halls": {p.name: {"roof_on": roof_on_month(piv[p.name], args.threshold) if p.name in piv else "unknown",
+                                      "first_observation": str(piv[p.name].dropna().index[0]) if p.name in piv and piv[p.name].notna().any() else None,
+                                      "valid_months": int(piv[p.name].notna().sum()) if p.name in piv else 0} for p in polys}}
+        Path(args.out).with_suffix(".roof_dates.json").write_text(json.dumps(summary, indent=2) + "\n")
         print(f"wrote {args.out}", file=sys.stderr)
 
 

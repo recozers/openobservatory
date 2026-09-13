@@ -1,0 +1,48 @@
+{
+  "site_box": "zhangbei_hub",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "season": "January 1 through September 13, same season in each year; latest year incomplete",
+  "grid_m": 50,
+  "rgb_grid_m": 20,
+  "region": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          114.79327285327865,
+          41.107385064139685
+        ],
+        [
+          114.78964489667162,
+          41.2154004268994
+        ],
+        [
+          114.6466100174003,
+          41.21256471819392
+        ],
+        [
+          114.65047223269717,
+          41.10456005221129
+        ],
+        [
+          114.79327285327865,
+          41.107385064139685
+        ]
+      ]
+    ]
+  },
+  "signature": "3082b34984106d5e4577",
+  "index_sha256": "d4d0fabddcaf7167e6e780c6853352a4c28fff6b1884b6dfde5e6a30ffcf0d63",
+  "rule": "NDVI drop >= .15, current NDVI < .25, brightness rise >= .08 OR NDBI rise >= .10; 8-connected area >= 3 ha; rectangularity >= .6",
+  "first_change_definition": "First sampled year with at least half the final candidate pixels meeting the rule against 2022; not a month or commissioning date",
+  "count": 1,
+  "validation": null,
+  "caveat": "Bare soil, construction yards, roads and other industries can pass; source identity needs review."
+}

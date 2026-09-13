@@ -1,0 +1,350 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_denton_tx",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.2105161,
+       33.2176398
+      ],
+      [
+       -97.2105307,
+       33.2173384
+      ],
+      [
+       -97.2083228,
+       33.2173139
+      ],
+      [
+       -97.2083228,
+       33.21763
+      ],
+      [
+       -97.2105161,
+       33.2176398
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.2105294,
+       33.2171645
+      ],
+      [
+       -97.2105353,
+       33.2168836
+      ],
+      [
+       -97.2083437,
+       33.2168688
+      ],
+      [
+       -97.2083379,
+       33.2171546
+      ],
+      [
+       -97.2105294,
+       33.2171645
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.21056325308729,
+       33.21355816999876
+      ],
+      [
+       -97.2105777,
+       33.2132584
+      ],
+      [
+       -97.2083787,
+       33.2132355
+      ],
+      [
+       -97.20837464965,
+       33.21355145461372
+      ],
+      [
+       -97.21056325308729,
+       33.21355816999876
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.2105959,
+       33.2130905
+      ],
+      [
+       -97.2105913,
+       33.2128195
+      ],
+      [
+       -97.2083878,
+       33.212808
+      ],
+      [
+       -97.2083878,
+       33.213079
+      ],
+      [
+       -97.2105959,
+       33.2130905
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.2105852,
+       33.2126691
+      ],
+      [
+       -97.2105898,
+       33.212402
+      ],
+      [
+       -97.2083999,
+       33.2123752
+      ],
+      [
+       -97.2083908,
+       33.2126462
+      ],
+      [
+       -97.2105852,
+       33.2126691
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.2115186,
+       33.2178795
+      ],
+      [
+       -97.2115186,
+       33.2169286
+      ],
+      [
+       -97.2111451,
+       33.2169286
+      ],
+      [
+       -97.2111451,
+       33.2178795
+      ],
+      [
+       -97.2115186,
+       33.2178795
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_012",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 12",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.20892452304689,
+       33.21573296201724
+      ],
+      [
+       -97.20892452304689,
+       33.21379384102019
+      ],
+      [
+       -97.20849619134191,
+       33.21379384102019
+      ],
+      [
+       -97.20849619134191,
+       33.21573296201724
+      ],
+      [
+       -97.20892452304689,
+       33.21573296201724
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_016",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 16",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 7,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.21202496575168,
+       33.213449767556284
+      ],
+      [
+       -97.21202496575168,
+       33.21249475949698
+      ],
+      [
+       -97.21164730141737,
+       33.21249475949698
+      ],
+      [
+       -97.21164730141737,
+       33.213449767556284
+      ],
+      [
+       -97.21202496575168,
+       33.213449767556284
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_denton_tx",
+    "name": "epoch_building_026",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Denton TX, feature 26",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 8,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

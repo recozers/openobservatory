@@ -1,0 +1,452 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_openai_stargate_shackelford",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.54367411429585,
+       32.54015098757556
+      ],
+      [
+       -99.54345456510697,
+       32.5415316976143
+      ],
+      [
+       -99.54746353329983,
+       32.541953679827074
+      ],
+      [
+       -99.5476962554404,
+       32.54058408121338
+      ],
+      [
+       -99.54367411429585,
+       32.54015098757556
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.54343607066545,
+       32.54013439659357
+      ],
+      [
+       -99.54010300802244,
+       32.53978316823401
+      ],
+      [
+       -99.53988290011223,
+       32.541154939125605
+      ],
+      [
+       -99.5432395457457,
+       32.54150616211909
+      ],
+      [
+       -99.54343607066545,
+       32.54013439659357
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.54792201613475,
+       32.540574586223954
+      ],
+      [
+       -99.5477108838431,
+       32.54197973409387
+      ],
+      [
+       -99.55101121492828,
+       32.54233570139674
+      ],
+      [
+       -99.55121123499451,
+       32.540893088334926
+      ],
+      [
+       -99.54792201613475,
+       32.540574586223954
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.55137584220469,
+       32.540910294729855
+      ],
+      [
+       -99.55116545866136,
+       32.54235386971294
+      ],
+      [
+       -99.55473708625692,
+       32.54270032425546
+      ],
+      [
+       -99.55494746980025,
+       32.541244381290255
+      ],
+      [
+       -99.55137584220469,
+       32.540910294729855
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.5551037782073,
+       32.5412507023141
+      ],
+      [
+       -99.55486081362821,
+       32.542710034432346
+      ],
+      [
+       -99.55847491174049,
+       32.543051395242045
+      ],
+      [
+       -99.55866725869888,
+       32.54159206867756
+      ],
+      [
+       -99.5551037782073,
+       32.5412507023141
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.5458466,
+       32.5466948
+      ],
+      [
+       -99.5460122,
+       32.5456222
+      ],
+      [
+       -99.5433396,
+       32.5453621
+      ],
+      [
+       -99.5433471,
+       32.5452351
+      ],
+      [
+       -99.5425491,
+       32.545159
+      ],
+      [
+       -99.542406,
+       32.5464346
+      ],
+      [
+       -99.5430836,
+       32.5465107
+      ],
+      [
+       -99.5431062,
+       32.5464028
+      ],
+      [
+       -99.5458466,
+       32.5466948
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_012",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 12",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.54199,
+       32.5462463
+      ],
+      [
+       -99.5421511,
+       32.5452182
+      ],
+      [
+       -99.5390906,
+       32.5448755
+      ],
+      [
+       -99.5389371,
+       32.5458907
+      ],
+      [
+       -99.54199,
+       32.5462463
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_013",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 13",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 7,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.549332,
+       32.5473083
+      ],
+      [
+       -99.5495036,
+       32.5459188
+      ],
+      [
+       -99.5463816,
+       32.5455666
+      ],
+      [
+       -99.5461422,
+       32.5469738
+      ],
+      [
+       -99.549332,
+       32.5473083
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_014",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 14",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 8,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.5531432,
+       32.5476186
+      ],
+      [
+       -99.5533645,
+       32.5463546
+      ],
+      [
+       -99.5498983,
+       32.5459505
+      ],
+      [
+       -99.5497016,
+       32.5472663
+      ],
+      [
+       -99.5531432,
+       32.5476186
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_015",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 15",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 9,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -99.5566954,
+       32.5479709
+      ],
+      [
+       -99.5568921,
+       32.5467794
+      ],
+      [
+       -99.5537332,
+       32.5463857
+      ],
+      [
+       -99.5535488,
+       32.5476393
+      ],
+      [
+       -99.5566954,
+       32.5479709
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_shackelford",
+    "name": "epoch_building_016",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Shackelford, feature 16",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 10,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

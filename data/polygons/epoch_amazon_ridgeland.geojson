@@ -1,0 +1,385 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_amazon_ridgeland",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.18821757750479,
+       32.413313429331595
+      ],
+      [
+       -90.18823947976529,
+       32.4132579594267
+      ],
+      [
+       -90.18821210193937,
+       32.412032990324775
+      ],
+      [
+       -90.18806973724584,
+       32.41202836776846
+      ],
+      [
+       -90.18806973724584,
+       32.41193591659068
+      ],
+      [
+       -90.18821757750479,
+       32.41191280378128
+      ],
+      [
+       -90.18821757750479,
+       32.41050753385703
+      ],
+      [
+       -90.18744004725335,
+       32.41052140175957
+      ],
+      [
+       -90.18745060515725,
+       32.411785395875484
+      ],
+      [
+       -90.18748732315589,
+       32.411788779810806
+      ],
+      [
+       -90.18749480290482,
+       32.41200987754023
+      ],
+      [
+       -90.18744004725335,
+       32.41205610310338
+      ],
+      [
+       -90.18744552281876,
+       32.4133180518227
+      ],
+      [
+       -90.18821757750479,
+       32.413313429331595
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_ridgeland",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Ridgeland, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.19264889564538,
+       32.413308193551245
+      ],
+      [
+       -90.19265314921512,
+       32.412044241634085
+      ],
+      [
+       -90.19259947183748,
+       32.41204369530952
+      ],
+      [
+       -90.19259165646046,
+       32.41179454312372
+      ],
+      [
+       -90.1926321168718,
+       32.41179399781432
+      ],
+      [
+       -90.19265395873028,
+       32.41050803146361
+      ],
+      [
+       -90.19186736124617,
+       32.41051656704391
+      ],
+      [
+       -90.19187241649264,
+       32.411781283063604
+      ],
+      [
+       -90.19203421573243,
+       32.41179103976263
+      ],
+      [
+       -90.19203421573243,
+       32.41195202513639
+      ],
+      [
+       -90.19187819503681,
+       32.41195202513639
+      ],
+      [
+       -90.19188975212553,
+       32.41330331528421
+      ],
+      [
+       -90.19264889564538,
+       32.413308193551245
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_ridgeland",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Ridgeland, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.19088049674275,
+       32.41330404584218
+      ],
+      [
+       -90.19094011673458,
+       32.41331243440911
+      ],
+      [
+       -90.19095005339966,
+       32.41202058589462
+      ],
+      [
+       -90.1907860984225,
+       32.41202478023783
+      ],
+      [
+       -90.19077616175743,
+       32.41189894985483
+      ],
+      [
+       -90.19092521173695,
+       32.41189475550581
+      ],
+      [
+       -90.19093514840205,
+       32.410506415231325
+      ],
+      [
+       -90.19016505684236,
+       32.41050222081756
+      ],
+      [
+       -90.19017499350744,
+       32.411773119295844
+      ],
+      [
+       -90.19021474016911,
+       32.411777313650546
+      ],
+      [
+       -90.19021970850164,
+       32.41202058589462
+      ],
+      [
+       -90.19018493017319,
+       32.41205833497753
+      ],
+      [
+       -90.19017002517492,
+       32.41331662869278
+      ],
+      [
+       -90.19088049674275,
+       32.41330404584218
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_ridgeland",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Ridgeland, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.1898687791452,
+       32.41332094638139
+      ],
+      [
+       -90.18988900013186,
+       32.412015034197964
+      ],
+      [
+       -90.18989405537836,
+       32.41181871896778
+      ],
+      [
+       -90.189934497351,
+       32.41182298669462
+      ],
+      [
+       -90.18994966309117,
+       32.41047864272829
+      ],
+      [
+       -90.1891408236348,
+       32.41046157156477
+      ],
+      [
+       -90.1891408236348,
+       32.41178457714513
+      ],
+      [
+       -90.18930259152606,
+       32.411788844873584
+      ],
+      [
+       -90.18930259152606,
+       32.41189980574511
+      ],
+      [
+       -90.18913576838831,
+       32.411904073468136
+      ],
+      [
+       -90.18914587888129,
+       32.4133038757556
+      ],
+      [
+       -90.1898687791452,
+       32.41332094638139
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_ridgeland",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Ridgeland, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -90.1925638,
+       32.4095082
+      ],
+      [
+       -90.1925715,
+       32.4088648
+      ],
+      [
+       -90.1910836,
+       32.408872
+      ],
+      [
+       -90.1910835,
+       32.409001
+      ],
+      [
+       -90.1908963,
+       32.4089974
+      ],
+      [
+       -90.1908965,
+       32.4088684
+      ],
+      [
+       -90.1892811,
+       32.4088576
+      ],
+      [
+       -90.1892957,
+       32.4095227
+      ],
+      [
+       -90.1907591,
+       32.4095082
+      ],
+      [
+       -90.1907592,
+       32.4094686
+      ],
+      [
+       -90.1910919,
+       32.4094614
+      ],
+      [
+       -90.1910962,
+       32.4095046
+      ],
+      [
+       -90.1925638,
+       32.4095082
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_amazon_ridgeland",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Amazon Ridgeland, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

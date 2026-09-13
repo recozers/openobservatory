@@ -1,0 +1,135 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_storey_county",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.434591,
+       39.496518
+      ],
+      [
+       -119.433881,
+       39.495597
+      ],
+      [
+       -119.43272,
+       39.496158
+      ],
+      [
+       -119.433426,
+       39.497077
+      ],
+      [
+       -119.434591,
+       39.496518
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_storey_county",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Storey County, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.43195,
+       39.492344
+      ],
+      [
+       -119.431358,
+       39.49157
+      ],
+      [
+       -119.428676,
+       39.492879
+      ],
+      [
+       -119.42927,
+       39.493642
+      ],
+      [
+       -119.43195,
+       39.492344
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_storey_county",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Storey County, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -119.431551,
+       39.49797
+      ],
+      [
+       -119.430841,
+       39.497049
+      ],
+      [
+       -119.42968,
+       39.49761
+      ],
+      [
+       -119.430386,
+       39.498529
+      ],
+      [
+       -119.431551,
+       39.49797
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_storey_county",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Storey County, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

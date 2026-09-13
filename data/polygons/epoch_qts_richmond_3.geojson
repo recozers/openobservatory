@@ -1,0 +1,241 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_qts_richmond_3",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.24977226212287,
+       37.48029708488889
+      ],
+      [
+       -77.25038849565065,
+       37.47946726144757
+      ],
+      [
+       -77.25340937677547,
+       37.48084712402168
+      ],
+      [
+       -77.25279906399099,
+       37.48172889593792
+      ],
+      [
+       -77.24974364789543,
+       37.480312181477174
+      ],
+      [
+       -77.24977226212287,
+       37.48029708488889
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_3",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 3.04 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 3, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.25043086538612,
+       37.47936174018075
+      ],
+      [
+       -77.25099090856381,
+       37.47859694857462
+      ],
+      [
+       -77.25401830364265,
+       37.479979698281426
+      ],
+      [
+       -77.25346270307071,
+       37.48074657440681
+      ],
+      [
+       -77.25042705922681,
+       37.47936693782232
+      ],
+      [
+       -77.25043086538612,
+       37.47936174018075
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_3",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 0.67 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 3, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.25180642125336,
+       37.477491642282274
+      ],
+      [
+       -77.25122372200705,
+       37.47829631408236
+      ],
+      [
+       -77.25427147263945,
+       37.47969526867769
+      ],
+      [
+       -77.25484665606676,
+       37.47886658612575
+      ],
+      [
+       -77.25180095317891,
+       37.4774755295544
+      ],
+      [
+       -77.25180642125336,
+       37.477491642282274
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_3",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 1.85 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 3, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.24836602818684,
+       37.47591665682677
+      ],
+      [
+       -77.24780312852597,
+       37.47669728995787
+      ],
+      [
+       -77.2507795255626,
+       37.47807767067495
+      ],
+      [
+       -77.25135640845396,
+       37.47726896159055
+      ],
+      [
+       -77.24837470171826,
+       37.475893308026414
+      ],
+      [
+       -77.24836602818684,
+       37.47591665682677
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_3",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 2.70 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 3, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.24705587802167,
+       37.47771438924781
+      ],
+      [
+       -77.2476732858932,
+       37.47682489618377
+      ],
+      [
+       -77.25062199955399,
+       37.47821351710104
+      ],
+      [
+       -77.2499938327228,
+       37.47910576241753
+      ],
+      [
+       -77.2470480869123,
+       37.47772487126153
+      ],
+      [
+       -77.24705587802167,
+       37.47771438924781
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_3",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 1.35 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 3, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

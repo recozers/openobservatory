@@ -1,0 +1,436 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_dayone_nusajaya",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.600618,
+       1.426829
+      ],
+      [
+       103.599762,
+       1.425619
+      ],
+      [
+       103.600899,
+       1.424788
+      ],
+      [
+       103.601763,
+       1.426031
+      ],
+      [
+       103.600618,
+       1.426829
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 9,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.598633,
+       1.426441
+      ],
+      [
+       103.597777,
+       1.425231
+      ],
+      [
+       103.598914,
+       1.4244
+      ],
+      [
+       103.599778,
+       1.425643
+      ],
+      [
+       103.598633,
+       1.426441
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 7,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.599437,
+       1.42766
+      ],
+      [
+       103.59858,
+       1.42645
+      ],
+      [
+       103.599718,
+       1.425619
+      ],
+      [
+       103.600582,
+       1.426862
+      ],
+      [
+       103.599437,
+       1.42766
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.598253,
+       1.42851
+      ],
+      [
+       103.597396,
+       1.427301
+      ],
+      [
+       103.598533,
+       1.42647
+      ],
+      [
+       103.599397,
+       1.427712
+      ],
+      [
+       103.598253,
+       1.42851
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.596075,
+       1.4359
+      ],
+      [
+       103.595273,
+       1.434738
+      ],
+      [
+       103.595926,
+       1.434283
+      ],
+      [
+       103.596731,
+       1.435449
+      ],
+      [
+       103.596075,
+       1.4359
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.595026,
+       1.434838
+      ],
+      [
+       103.594348,
+       1.43385
+      ],
+      [
+       103.59521,
+       1.433313
+      ],
+      [
+       103.595844,
+       1.43427
+      ],
+      [
+       103.595026,
+       1.434838
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.594674,
+       1.427865
+      ],
+      [
+       103.593944,
+       1.426749
+      ],
+      [
+       103.595438,
+       1.425716
+      ],
+      [
+       103.59621,
+       1.426809
+      ],
+      [
+       103.594674,
+       1.427865
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_012",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 12",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.599762,
+       1.425597
+      ],
+      [
+       103.598906,
+       1.424387
+      ],
+      [
+       103.600043,
+       1.423556
+      ],
+      [
+       103.600907,
+       1.424799
+      ],
+      [
+       103.599762,
+       1.425597
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_016",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 16",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 10,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.596933,
+       1.424708
+      ],
+      [
+       103.599824,
+       1.422653
+      ],
+      [
+       103.600312,
+       1.42335
+      ],
+      [
+       103.597467,
+       1.425416
+      ],
+      [
+       103.596933,
+       1.424708
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_017",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 17",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       103.59751,
+       1.42719
+      ],
+      [
+       103.596995,
+       1.426427
+      ],
+      [
+       103.598048,
+       1.425676
+      ],
+      [
+       103.598575,
+       1.426434
+      ],
+      [
+       103.59751,
+       1.42719
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_dayone_nusajaya",
+    "name": "epoch_building_018",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: DayOne Nusajaya, feature 18",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 8,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

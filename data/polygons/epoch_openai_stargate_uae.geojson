@@ -1,0 +1,140 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_openai_stargate_uae",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       54.44089800792264,
+       24.15071199545926
+      ],
+      [
+       54.44454755655502,
+       24.150801256075894
+      ],
+      [
+       54.444549157047334,
+       24.151008263194328
+      ],
+      [
+       54.444648521055626,
+       24.151006428242823
+      ],
+      [
+       54.44463984546036,
+       24.15137154687328
+      ],
+      [
+       54.4445032509297,
+       24.151369409492773
+      ],
+      [
+       54.44449660728995,
+       24.151555269489464
+      ],
+      [
+       54.44454175880267,
+       24.151556331315234
+      ],
+      [
+       54.44453943142568,
+       24.151681917376848
+      ],
+      [
+       54.44088505913456,
+       24.151588754497865
+      ],
+      [
+       54.44089800792264,
+       24.15071199545926
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_uae",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate UAE, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       54.44093998595014,
+       24.149765532177213
+      ],
+      [
+       54.440943046215125,
+       24.14889223069531
+      ],
+      [
+       54.44458133118036,
+       24.14898926457205
+      ],
+      [
+       54.44457943324028,
+       24.149179142009558
+      ],
+      [
+       54.44467871640995,
+       24.14918058001338
+      ],
+      [
+       54.444678746798076,
+       24.149549182326894
+      ],
+      [
+       54.44454452801017,
+       24.14954845127272
+      ],
+      [
+       54.44453565148737,
+       24.149740937066227
+      ],
+      [
+       54.44459120662245,
+       24.149742179398814
+      ],
+      [
+       54.444586941177704,
+       24.14987451175564
+      ],
+      [
+       54.44093998595014,
+       24.149765532177213
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_uae",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate UAE, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": null,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

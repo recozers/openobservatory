@@ -1,0 +1,48 @@
+{
+  "site_box": "ulanqab_hub",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "season": "January 1 through September 13, same season in each year; latest year incomplete",
+  "grid_m": 50,
+  "rgb_grid_m": 20,
+  "region": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          113.269434853349,
+          40.944609575461406
+        ],
+        [
+          113.27314453074244,
+          41.052623360907546
+        ],
+        [
+          113.13044893137737,
+          41.0553509496915
+        ],
+        [
+          113.12697168448572,
+          40.94732686645953
+        ],
+        [
+          113.269434853349,
+          40.944609575461406
+        ]
+      ]
+    ]
+  },
+  "signature": "9976e47e92c14396bc84",
+  "index_sha256": "297a891daaf857988c7193d05673b2529b4cb35473f268abca416a5cf80de024",
+  "rule": "NDVI drop >= .15, current NDVI < .25, brightness rise >= .08 OR NDBI rise >= .10; 8-connected area >= 3 ha; rectangularity >= .6",
+  "first_change_definition": "First sampled year with at least half the final candidate pixels meeting the rule against 2022; not a month or commissioning date",
+  "count": 6,
+  "validation": null,
+  "caveat": "Bare soil, construction yards, roads and other industries can pass; source identity needs review."
+}

@@ -1,0 +1,328 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_montgomery",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.32913107948518,
+       32.27384032931829
+      ],
+      [
+       -86.32913897722308,
+       32.27369342238282
+      ],
+      [
+       -86.32949437542979,
+       32.27368674478919
+      ],
+      [
+       -86.32949437542979,
+       32.273059048795446
+      ],
+      [
+       -86.32910738627145,
+       32.273052371155146
+      ],
+      [
+       -86.32910738627145,
+       32.27299895001454
+      ],
+      [
+       -86.32640635990163,
+       32.27300562765875
+      ],
+      [
+       -86.32640635990163,
+       32.27384032931829
+      ],
+      [
+       -86.32913107948518,
+       32.27384032931829
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_montgomery",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Montgomery, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.32965207706017,
+       32.2712674393313
+      ],
+      [
+       -86.32964401684708,
+       32.27120269538787
+      ],
+      [
+       -86.33002284686327,
+       32.271199287810646
+      ],
+      [
+       -86.3300147866502,
+       32.27045984051993
+      ],
+      [
+       -86.32963192652744,
+       32.27047006333461
+      ],
+      [
+       -86.32962789642089,
+       32.27040191121506
+      ],
+      [
+       -86.3263756004318,
+       32.27041554164303
+      ],
+      [
+       -86.32638769075146,
+       32.2712674393313
+      ],
+      [
+       -86.32965207706017,
+       32.2712674393313
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_montgomery",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Montgomery, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.32963761676115,
+       32.268695015407815
+      ],
+      [
+       -86.32963761676115,
+       32.26863503511126
+      ],
+      [
+       -86.32999702631963,
+       32.26862303904721
+      ],
+      [
+       -86.33001121353904,
+       32.26790327229986
+      ],
+      [
+       -86.32964234583426,
+       32.267895274859484
+      ],
+      [
+       -86.32963761676115,
+       32.26784329147999
+      ],
+      [
+       -86.32635091092848,
+       32.26784729020255
+      ],
+      [
+       -86.32635091092848,
+       32.268746998299406
+      ],
+      [
+       -86.32963761676115,
+       32.268695015407815
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_montgomery",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Montgomery, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.32907203498931,
+       32.26610896765145
+      ],
+      [
+       -86.3290674702344,
+       32.26594299372499
+      ],
+      [
+       -86.32945090964616,
+       32.265935274000086
+      ],
+      [
+       -86.32945090964616,
+       32.26532155376826
+      ],
+      [
+       -86.32908116449909,
+       32.26533313343366
+      ],
+      [
+       -86.3290765997442,
+       32.26526751531017
+      ],
+      [
+       -86.32633318204391,
+       32.265263655419034
+      ],
+      [
+       -86.32634231155369,
+       32.26610896765145
+      ],
+      [
+       -86.32907203498931,
+       32.26610896765145
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_montgomery",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Montgomery, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.32434931584379,
+       32.27570959934887
+      ],
+      [
+       -86.32434931584379,
+       32.27521500273858
+      ],
+      [
+       -86.32143399672337,
+       32.27521500273858
+      ],
+      [
+       -86.32140522712686,
+       32.275685274988476
+      ],
+      [
+       -86.32434931584379,
+       32.27570959934887
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_montgomery",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Montgomery, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.32436849557587,
+       32.27487851333936
+      ],
+      [
+       -86.32434931584483,
+       32.274428507493425
+      ],
+      [
+       -86.32142440685854,
+       32.274428507493425
+      ],
+      [
+       -86.3214292017913,
+       32.27488662153233
+      ],
+      [
+       -86.32436849557587,
+       32.27487851333936
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_montgomery",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Montgomery, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

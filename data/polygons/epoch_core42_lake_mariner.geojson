@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_core42_lake_mariner",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.605075301044,
+       43.35624335124473
+      ],
+      [
+       -78.60292146774543,
+       43.3564988986862
+      ],
+      [
+       -78.60308818705936,
+       43.35726881075405
+      ],
+      [
+       -78.60525553814055,
+       43.35702964762541
+      ],
+      [
+       -78.605075301044,
+       43.35624335124473
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_core42_lake_mariner",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Core42 Lake Mariner, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -78.60435771455536,
+       43.357207135565176
+      ],
+      [
+       -78.60289720618987,
+       43.35737257092018
+      ],
+      [
+       -78.60301404685887,
+       43.35789570137172
+      ],
+      [
+       -78.6044591814523,
+       43.35773473863662
+      ],
+      [
+       -78.60435771455536,
+       43.357207135565176
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_core42_lake_mariner",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Core42 Lake Mariner, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

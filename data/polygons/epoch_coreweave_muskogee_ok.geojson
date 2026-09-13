@@ -1,0 +1,49 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_muskogee_ok",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.38778328707409,
+       35.69625489146863
+      ],
+      [
+       -95.38778328707409,
+       35.6951335063864
+      ],
+      [
+       -95.38515277662286,
+       35.6951335063864
+      ],
+      [
+       -95.38515277662286,
+       35.69625489146863
+      ],
+      [
+       -95.38778328707409,
+       35.69625489146863
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_muskogee_ok",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Muskogee OK, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

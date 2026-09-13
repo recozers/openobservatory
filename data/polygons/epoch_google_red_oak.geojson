@@ -1,0 +1,100 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_red_oak",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.7935532254219,
+       32.54021790773916
+      ],
+      [
+       -96.79359022570158,
+       32.538114667487264
+      ],
+      [
+       -96.79369065503249,
+       32.53809684320679
+      ],
+      [
+       -96.79369065503249,
+       32.53779828598398
+      ],
+      [
+       -96.79255421786921,
+       32.53778491772697
+      ],
+      [
+       -96.79250136032691,
+       32.540204539842364
+      ],
+      [
+       -96.7935532254219,
+       32.54021790773916
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_red_oak",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Red Oak, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.7915076304041,
+       32.53672325064308
+      ],
+      [
+       -96.79438080478086,
+       32.536758937129505
+      ],
+      [
+       -96.79440196996973,
+       32.5358623098644
+      ],
+      [
+       -96.79152350429555,
+       32.535826623021734
+      ],
+      [
+       -96.7915076304041,
+       32.53672325064308
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_red_oak",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Red Oak, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "start": "2018-01-01",
+  "end_exclusive": "2026-09-14",
+  "rule": "visible_brightness",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "threshold": 0.3,
+  "polygons_sha256": "07f20d7a2e4cf23e17ac11ebe7b654c7afd9cad5df1762c7042a163bf83dae4e",
+  "halls": {
+    "epoch_building_000": {
+      "roof_on": "2023-12",
+      "first_observation": "2018-03",
+      "valid_months": 93
+    },
+    "epoch_building_001": {
+      "roof_on": "2022-08",
+      "first_observation": "2018-01",
+      "valid_months": 92
+    },
+    "epoch_building_002": {
+      "roof_on": "2024-09",
+      "first_observation": "2018-01",
+      "valid_months": 93
+    },
+    "epoch_building_003": {
+      "roof_on": "2025-06",
+      "first_observation": "2018-01",
+      "valid_months": 94
+    },
+    "epoch_building_004": {
+      "roof_on": "2026-03",
+      "first_observation": "2018-01",
+      "valid_months": 94
+    }
+  }
+}

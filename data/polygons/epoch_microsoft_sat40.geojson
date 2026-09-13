@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_microsoft_sat40",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -98.8066167,
+       29.4150218
+      ],
+      [
+       -98.8066167,
+       29.4109928
+      ],
+      [
+       -98.80611,
+       29.4109928
+      ],
+      [
+       -98.80611,
+       29.4150218
+      ],
+      [
+       -98.8066167,
+       29.4150218
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_sat40",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft SAT40, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -98.8039538,
+       29.4195993
+      ],
+      [
+       -98.8041709,
+       29.4190991
+      ],
+      [
+       -98.8018087,
+       29.4183246
+      ],
+      [
+       -98.8015795,
+       29.4188295
+      ],
+      [
+       -98.8039538,
+       29.4195993
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_sat40",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft SAT40, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

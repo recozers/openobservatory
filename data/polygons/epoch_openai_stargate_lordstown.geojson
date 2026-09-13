@@ -1,0 +1,57 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_openai_stargate_lordstown",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -80.8824657,
+       41.1557393
+      ],
+      [
+       -80.8852943,
+       41.1530771
+      ],
+      [
+       -80.8809284,
+       41.1504842
+      ],
+      [
+       -80.8771619,
+       41.154142
+      ],
+      [
+       -80.8794987,
+       41.1555542
+      ],
+      [
+       -80.8804672,
+       41.1545819
+      ],
+      [
+       -80.8824657,
+       41.1557393
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_lordstown",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Lordstown, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

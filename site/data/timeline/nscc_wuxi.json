@@ -11,6 +11,14 @@
 "roof_basis": {
 "nscc_building_box": "s2"
 },
+"roof_evidence": {
+"nscc_building_box": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 94,
+"inferred_roof_on": "not_yet"
+}
+},
 "radar_on": {},
 "ntl_lit": "not_yet",
 "s2_available": true,

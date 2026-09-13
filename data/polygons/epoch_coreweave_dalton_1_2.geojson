@@ -1,0 +1,57 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_dalton_1_2",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.9518907,
+       34.7133298
+      ],
+      [
+       -84.9519482,
+       34.7129161
+      ],
+      [
+       -84.951624,
+       34.7128799
+      ],
+      [
+       -84.9516032,
+       34.7130874
+      ],
+      [
+       -84.9501747,
+       34.7129675
+      ],
+      [
+       -84.9501465,
+       34.7131805
+      ],
+      [
+       -84.9518907,
+       34.7133298
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_dalton_1_2",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Dalton 1 & 2, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

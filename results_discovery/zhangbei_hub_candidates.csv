@@ -1,0 +1,2 @@
+rank,site_box,lat,lon,area_ha,rectangularity,first_change_year,chip,confidence,digitised_from,review
+1,zhangbei_hub,41.18760575465096,114.74722679562264,5.0,0.8,2026,zhangbei_hub_001.png,low,Sentinel-2 deterministic 50 m change component; not a hall outline,unreviewed construction candidate; not a data-centre classification

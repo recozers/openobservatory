@@ -57,6 +57,79 @@ cd site && python -m http.server 8000
 
 Earth Engine is free for non-commercial use; the Earthdata login and the EPA key are free.
 
+## Epoch inventory
+
+`data/epoch/` contains the 86-row source inventory, dated power estimates and
+saved public map annotations. Epoch AI data and annotations are used under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with attribution on the
+site. Annotation geometry is kept separately from independent Sentinel-2 roof
+observations; planned footprints do not prove construction or operation.
+
+```bash
+# One-time, serial address lookup; caches both matches and misses.
+python tools/epoch_geocode.py
+# Snapshot Epoch's published coordinates and annotated buildings.
+python tools/epoch_map_snapshot.py
+# Deterministic import from saved sources (no network).
+python tools/ingest_epoch.py --as-of 2026-09-13
+# Long EE work: one site per process, per-site logs and annual caches.
+caffeinate -i python tools/epoch_roof_batch.py --workers 3
+OBS_FILE=data/observations_all.csv REJ_FILE=data/rejections_all.csv RESULTS_DIR=results_gee python build_site.py
+python build_timeline_data.py && python build_status.py
+python tools/validate_epoch.py
+python -m unittest discover -s tests -v
+```
+
+Address geocoding follows the [Nominatim policy](https://operations.osmfoundation.org/policies/nominatim/):
+one process on one machine, identified User-Agent, at most one request/second,
+and cached responses. Never schedule the one-time geocoder. The endpoint can be
+changed with `NOMINATIM_URL` or `--endpoint`. Street/settlement centroids and distant
+matches are not promoted to address-quality coordinates; Epoch's published point
+is retained instead. The public map is the building-identity source, avoiding the
+assumption that any large OSM roof nearby is a data centre.
+
+`it_reported` is Epoch's IT-power estimate, distinct from measured HPL power.
+`facility_design` retains facility power; the build prefers IT power when both are
+available and never adds them. Tier A2 here includes sourced Epoch model estimates,
+not just company statements. Future timeline rows are explicitly projections and
+cannot supply today's status. Brightness dates that conflict with reported construction starts remain unresolved, with both sources retained for review. Every original row, including curated-site matches,
+is preserved in `normalized_capacity_timeline.csv`; existing validated site labels
+are retained. See `docs/epoch_inventory_audit.md` for per-site results and limits.
+## Monthly refresh
+
+`.github/workflows/refresh.yml` runs at 04:00 UTC on the third day of each month,
+and can be started from Actions → Monthly evidence refresh → Run workflow.
+The manual trigger defaults to **dry-run**: it skips Earth Engine, rebuilds from
+saved evidence, validates every generated JSON file, and uploads a review artifact.
+Missing service-account credentials also select dry-run, without committing.
+Pull requests run the same dry-run check without access to service-account secrets.
+
+Stuart must add `EE_SERVICE_ACCOUNT_JSON` (the full JSON key), `EARTHDATA_TOKEN`,
+and `EPA_API_KEY` under Settings → Secrets and variables → Actions. Register the
+service account's Cloud project with Earth Engine and enable its API. The optional
+repository variable `EE_PROJECT` overrides the project in the key. Keys are read
+in memory and never included in artifacts or commits. Local OAuth still works;
+`GOOGLE_APPLICATION_CREDENTIALS` can alternatively point to a local key file.
+See [Earth Engine service-account setup](https://developers.google.com/earth-engine/guides/service_account).
+
+Live refresh runs one roof-extraction process per hall-bearing site from 2018,
+recomputes the published NOx series listed in `data/refresh_flux_sources.csv`, and
+runs the three build scripts. That manifest preserves the original seasonal
+baseline and maps adjacent-plant profiles to their existing activity strips.
+Research and calibration profiles are not automatically promoted into campus
+generation estimates. NOx daily profiles are saved inputs: this workflow does
+not fetch new daily NOx observations. Earthdata and EPA keys are reserved for
+future extraction steps; the present refresh does not require them.
+
+Live runs on `main` commit only `site/data/`, retain extracted evidence as a
+30-day Actions artifact, and explicitly dispatch Pages after a successful push.
+If main changes during extraction, the push fails normally; rerun on the new
+inventory. Branch protection may require Stuart to permit the automation's
+data commits. No force pushes are used.
+
+Local check: `python tools/refresh.py --dry-run`. Dependencies, including
+Earth Engine, tabulate, openpyxl and scipy, are pinned in `requirements.txt`.
+
 ## Provenance rule
 
 Every number shown must trace to a free public dataset, a script in this repository and a polygon with a stated confidence.
