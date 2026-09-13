@@ -176,3 +176,9 @@ Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this br
 - What this is and is not: automatic, dated detection of new large hall-like structures in the hubs, with provenance;
   not confirmation of a data centre, not an operator, not a load. Confirmation is human (chips in results_s1/) or
   documents (Astra A8/A2/B8).
+- Six more hub boxes (Zhongwei, Zhangjiakou/Huailai, Wuhu, Shaoguan, Chengdu Tianfu, Tianjin Wuqing): 359 candidates,
+  76 of them >= 5 ha, none scoring >= 0.5. Chips checked: Zhongwei's largest is a power plant (cooling towers), Tianfu's
+  is apartment blocks, so the rejections are right. Two open questions: the box centres for the eastern hubs are approximate
+  and may miss the parks, and eastern Chinese data centres are often multi-storey buildings that the classifier, trained on
+  single-storey hyperscale halls, has never seen. Needs: verified park coordinates (Astra A2/B8) and eastern positives
+  before the classifier is trusted there. No entries added from these boxes.
