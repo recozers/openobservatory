@@ -100,3 +100,12 @@ Full source/limitations: docs/low_stack_calibration.md and results_no2/low_stack
 Resolved the ready implementation branches as a review stack: #2 inventory, #1 refresh, #3 Chinese project notes, #5 housekeeping. No main merge or deployment performed. Combined credential-free refresh validates all 218 public JSON files. Manual GitHub run 34763113476 passed on the expanded inventory. Current main through 17d3380 includes the previously missing Prometheus night-light source, and the rebuilt branch preserves it.
 
 Final phone-width review caught a wording ambiguity when a site has both an old roof and a dated new roof. Status now states how many were present at the first observations and how many were newly roofed, with a regression test (18 tests in the combined branch). The enlarged inventory, Epoch attribution, Open Observatory name and full-width mobile panel were inspected together. A4 is ready as PR #7; A3 and A5 remain scientific drafts #4/#6. Follow-on A8–A11, added while this run was underway, remain todo.
+
+## 2026-09-13 late (Claude): Astra's stack merged; hall-morphology classifier
+- Merged PRs #2, #1, #3, #5, #7 (stack) and the two drafts #4 and #6 after resolving docs conflicts (LOG union, brief from
+  main). Tests: 18 pass on main; dry-run build validates 218 JSON files; live site serves 103 sites.
+- Working copy is now the openobservatory clone; the Meridian branch is an archive.
+- Classifier on radar candidates (tools/cand_features.py, tools/cand_classifier.py): leave-one-group-out AUC 0.977 with
+  18 hall positives vs 1,159 industrial negatives; 0.5 keeps 14/18 halls and rejects 96 % of industry; only 4 of 249 large
+  national industrial structures pass 0.5 (all 0.54-0.78, industrial in their chips); Intel Ohio's fab is the hard false
+  positive (0.99). Details in docs/MVP.md, scores in results_cand/scores.csv.

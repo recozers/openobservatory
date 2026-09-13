@@ -181,9 +181,9 @@ Clonee), Microsoft's FY25 metro table, and Google per-site water/PUE as context 
   Zhangbei), VIIRS lit-up dates and regional scan (6/7 US greenfield campuses recovered), snow persistence (negative, closed),
   national lights scan over the hub provinces (4,026 newly lit blobs: industry dominates, lights alone are not a data-centre
   detector, so A9's radar boxes are the discriminating step). See `docs/MVP.md` and `docs/LOG.md`.
-- Hall-morphology classifier on radar-candidate chips (positives: Abilene, Rainier, Prometheus, Ulanqab, Horinger candidates;
-  negatives: the 40 national blobs in `results_s1/china/`, PV and logistics candidates) so the lights-then-radar chain
-  can rank data centres above factories.
+- Done 13 Sep late: hall-morphology classifier on radar candidates (`tools/cand_classifier.py`, leave-one-group-out AUC 0.977;
+  `results_cand/scores.csv`). Next for it: more positives from the reviewed optical candidates and the Epoch polygons, then
+  recalibration; Astra's A8 classification of the hub candidates should use the score column as a starting order.
 - Cooling-tower vapour-plume detection in Sentinel-2/Landsat as an activity indicator at evaporative sites (Climate TRACE analogue).
 - Sentinel-1 amplitude variance over yards as an activity indicator (coherence needs SLC data, not in Earth Engine).
 - A utilisation model from public data: documented capacity, construction stage, fit-out, combustion, operator disclosures,

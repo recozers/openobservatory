@@ -208,3 +208,30 @@ generator rows), which the Horinger and Ulanqab boxes show the radar scan can se
 first without any lights stage. Next: a morphology classifier trained on the candidate chips (positives from Abilene,
 Rainier, Prometheus, Ulanqab and Horinger; negatives from the 40 national blobs and the photovoltaic and logistics
 candidates), and Astra's A8/A9 to turn the found campuses into inventory entries.
+
+## Hall-morphology classifier, 13 Sep 2026 (late): ranking radar candidates
+
+`tools/cand_features.py` computes, for every radar candidate polygon, the Google satellite-embedding means (64 bands, 2025)
+in 50 m and 250 m discs around a point inside the polygon plus Sentinel-2 brightness statistics. `tools/cand_classifier.py`
+trains a standardised logistic regression on the candidates themselves and validates it leave-one-group-out, a group being
+a site box or a national blob. Labels: a candidate intersecting a known hall polygon is positive (Abilene, Rainier,
+Fairwater, Prometheus, Ulanqab, Horinger blocks; 13), plus five chip-verified campuses at Horinger and Ulanqab; candidates
+inside the 40 national industrial blobs and within 3 km of four US factory sites (Hyundai Metaplant, BlueOval City, Intel
+Ohio, TSMC Arizona) are negative; the rest are unlabeled and only ranked.
+
+Result: leave-one-group-out AUC 0.977 on 18 positives against 1,159 industrial negatives (50 m embeddings only, C = 0.01).
+A threshold of 0.5 keeps 14 of the 18 halls and 48 of the 1,159 negatives; 0.9 keeps 6 and 4. Across the six hub boxes,
+candidates of at least 5 ha score as follows: Horinger 26 of 27 above 0.5 (8 above 0.9), Ulanqab 7 of 7, Zhangbei 7 of 7
+(the 10.6 ha long white hall at 41.181/114.748 tops the box at 0.93), Gui'an 1 of 6 (the construction site, 0.51),
+Chongqing Shuitu 0 of 3 (a solar-roofed factory, correctly rejected), Qingyang 4 of 12 (0.5–0.66). Of the 249 large new
+structures in the national industrial blobs only four pass 0.5, all at 0.54–0.78, and their chips look industrial. The
+remaining hard false positives are mega-fabs under construction: the Intel Ohio candidates score 0.99 held-out.
+
+The OSM-trained model from the earlier sprint (results_campus, AUC 0.90 in cross-validation) does not transfer: on the
+same candidates it scores 86 % of the industrial negatives above 0.9 (AUC 0.70). Hard negatives from new industrial
+construction are what the problem needed, and the national lights scan supplied them.
+
+So the chain now reads: radar candidate scan in a box, classifier score, chip for anything above 0.5, polygon and roof
+date for anything a person confirms. Positives are few (18 from seven sites); Astra's reviewed optical candidates
+(`results_discovery/visual_review.csv`) and the 78 Epoch sites with polygons are the next labels to add, after which the
+score should be recalibrated. Scores: `results_cand/scores.csv` (all 1,722 candidates), features in `results_cand/`.

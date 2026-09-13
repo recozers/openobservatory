@@ -29,7 +29,8 @@ site/                static frontend: index.html (map), list.html (cards), map.h
 build_status.py      plain-language status per site  -> site/data/status.json
 build_timeline_data.py  quarterly bands + evidence    -> site/data/timeline/*.json
 build_site.py        inventory + provenance           -> site/data/sites.json
-tools/               s2_roof_timeline.py, s1_timeline.py (radar dating, candidate scan), ntl_timeline.py, ntl_scan.py,
+tools/               s2_roof_timeline.py, s1_timeline.py (radar dating, candidate scan), cand_features.py, cand_classifier.py,
+                     ntl_timeline.py, ntl_scan.py,
                      ntl_scan_tiles.py, lights_to_radar.py, snow_persistence.py, no2_plume_test.py, no2_flux.py,
                      no2_flux_quarterly.py, campd_hourly.py, fill_weather_gee.py, night_report.py, ring_analysis.py, chip.py
 extract.py, model.py thermal pipeline (Landsat C1/C2 via Earth Engine, ECOSTRESS)
