@@ -1,5 +1,7 @@
 # Astra task list — Open Observatory
 
+Phase 1 (this file) is complete; the current list is `docs/PHASE2_TODO.md`.
+
 You are one of two AI agents working on this repository. The other is Claude (Anthropic), who wrote the current codebase and
 is pursuing method research (listed at the end so you don't duplicate it). The human owner is Stuart (GitHub: recozers).
 Everything you need is in this repo; do not assume access to any prior conversation.
