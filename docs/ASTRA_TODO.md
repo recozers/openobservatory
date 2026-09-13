@@ -87,7 +87,7 @@ Abilene (12 known dates), Hyperion (roofs on by Jan 2026) and the three Chinese 
 dates; Abilene's dates move by ≤ 1 month.
 
 ### A4. Candidate-site discovery from Sentinel-2 change (the automatic-detection layer)
-Status: in progress (astra/a4-optical-discovery; 3/3 recall, two Chinese lists and all 30 chips reviewed)
+Status: done (PR #7; 3/3 US recall, 7 Chinese candidates and all 30 chips reviewed)
 Note: a radar version now exists (`tools/s1_timeline.py --candidates`, see A8/A9) and a night-lights regional scan
 (`tools/ntl_scan.py`). The optical detector is still wanted as the confirmation stage: for each radar or lights candidate,
 confirm a flat-roofed complex and date its roofs; the region-wide optical scan is the lower priority.
