@@ -175,7 +175,7 @@ def main():
                         polygons_low=bool(s.get("polygons") and any(p.get("confidence") == "low" for p in s["polygons"])),
                         combustion=key == "nox",
                         evidence_kind=("measured" if (key == "nox" or running.startswith("yes: operator reports") or running.startswith("yes: about"))
-                                       else "detected" if running.startswith("yes") or (t or {}).get("ntl_lit", "")[:4].isdigit() and running.startswith("presumably")
+                                       else "detected" if running.startswith("yes") or (str((t or {}).get("ntl_lit") or "")[:4].isdigit() and running.startswith("presumably"))
                                        else "presumed" if running.startswith("presumably")
                                        else "construction")))
     out.sort(key=lambda r: (-(1 if r["combustion"] else 0), -(r["est_hi"] or 0)))

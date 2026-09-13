@@ -92,7 +92,8 @@
 "est_hi": 2919.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": true
+"combustion": true,
+"evidence_kind": "measured"
 },
 {
 "site_id": "rainier_in",
@@ -202,7 +203,8 @@
 "est_hi": 1078.3,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "detected"
 },
 {
 "site_id": "cn_horinger_cloud_valley",
@@ -406,7 +408,8 @@
 "est_hi": 769.5,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_qts_cedar_rapids",
@@ -463,7 +466,8 @@
 "est_hi": 648.1,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "stargate_abilene",
@@ -595,7 +599,8 @@
 "est_hi": 521.7,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "detected"
 },
 {
 "site_id": "epoch_openai_stargate_shackelford",
@@ -647,7 +652,8 @@
 "est_hi": 469.5,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "cn_ulanqab_park",
@@ -851,7 +857,8 @@
 "est_hi": 425.3,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "hyperion_la",
@@ -900,7 +907,8 @@
 "est_hi": 394.9,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_microsoft_fairwater_atlanta",
@@ -1003,7 +1011,8 @@
 "est_hi": 381.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_goodnight",
@@ -1055,7 +1064,8 @@
 "est_hi": 379.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "fairwater_wi",
@@ -1165,7 +1175,8 @@
 "est_hi": 347.8,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "detected"
 },
 {
 "site_id": "epoch_google_new_albany",
@@ -1328,7 +1339,8 @@
 "est_hi": 271.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "prineville",
@@ -1497,7 +1509,8 @@
 "est_hi": 233.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_google_pryor_north",
@@ -1700,7 +1713,8 @@
 "est_hi": 220.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "meta_altoona",
@@ -1866,7 +1880,8 @@
 "est_hi": 213.9,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "cn_zhangbei_alibaba",
@@ -2034,7 +2049,8 @@
 "est_hi": 202.5,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_google_columbus",
@@ -2157,7 +2173,8 @@
 "est_hi": 181.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_amazon_madison_mega_site",
@@ -2260,7 +2277,8 @@
 "est_hi": 170.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_fort_wayne",
@@ -2342,7 +2360,8 @@
 "est_hi": 170.3,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "meta_newton",
@@ -2464,7 +2483,8 @@
 "est_hi": 159.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_coreweave_denton_tx",
@@ -2632,7 +2652,8 @@
 "est_hi": 157.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_sarpy",
@@ -2800,7 +2821,8 @@
 "est_hi": 155.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "meta_fort_worth",
@@ -2966,7 +2988,8 @@
 "est_hi": 149.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "meta_clonee",
@@ -3132,7 +3155,8 @@
 "est_hi": 145.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_huawei_horinger",
@@ -3235,7 +3259,8 @@
 "est_hi": 145.1,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_dayone_nusajaya",
@@ -3422,7 +3447,8 @@
 "est_hi": 144.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_qts_richmond_1",
@@ -3625,7 +3651,8 @@
 "est_hi": 142.8,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_bristow",
@@ -3748,7 +3775,8 @@
 "est_hi": 142.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_council_bluffs_east",
@@ -3951,7 +3979,8 @@
 "est_hi": 142.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_omaha",
@@ -4074,7 +4103,8 @@
 "est_hi": 142.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_papillion",
@@ -4222,7 +4252,8 @@
 "est_hi": 142.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_los_lunas",
@@ -4390,7 +4421,8 @@
 "est_hi": 141.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_meta_eagle_mountain",
@@ -4514,7 +4546,8 @@
 "est_hi": 138.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_amazon_ridgeland",
@@ -4597,7 +4630,8 @@
 "est_hi": 136.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_vnet_bayin_ulanqab",
@@ -4695,7 +4729,8 @@
 "est_hi": 132.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "meta_henrico",
@@ -4849,7 +4884,8 @@
 "est_hi": 128.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_aws_new_albany",
@@ -4962,7 +4998,8 @@
 "est_hi": 127.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "colossus_memphis",
@@ -5132,7 +5169,8 @@
 "est_hi": 125.0,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "detected"
 },
 {
 "site_id": "epoch_microsoft_goodyear",
@@ -5295,7 +5333,8 @@
 "est_hi": 121.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_microsoft_project_osmium",
@@ -5483,7 +5522,8 @@
 "est_hi": 114.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_mesa",
@@ -5581,7 +5621,8 @@
 "est_hi": 109.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_qts_richmond_2",
@@ -5704,7 +5745,8 @@
 "est_hi": 108.0,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_qts_hillsboro_2",
@@ -5842,7 +5884,8 @@
 "est_hi": 108.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_huntsville",
@@ -5967,7 +6010,8 @@
 "est_hi": 107.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_meta_rosemount",
@@ -6050,7 +6094,8 @@
 "est_hi": 106.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_jeffersonville",
@@ -6133,7 +6178,8 @@
 "est_hi": 106.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_anthropic_barber_lake",
@@ -6180,7 +6226,8 @@
 "est_hi": 103.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_alibaba_zhangbei",
@@ -6283,7 +6330,8 @@
 "est_hi": 101.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_openai_stargate_uae",
@@ -6485,7 +6533,8 @@
 "est_hi": 98.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_google_storey_county",
@@ -6668,7 +6717,8 @@
 "est_hi": 96.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_the_dalles",
@@ -6776,7 +6826,8 @@
 "est_hi": 92.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_montgomery",
@@ -6859,7 +6910,8 @@
 "est_hi": 91.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_kuna",
@@ -6962,7 +7014,8 @@
 "est_hi": 91.2,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_temple",
@@ -7084,7 +7137,8 @@
 "est_hi": 91.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_cheyenne",
@@ -7166,7 +7220,8 @@
 "est_hi": 91.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_qts_richmond_3",
@@ -7248,7 +7303,8 @@
 "est_hi": 86.4,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_aiken",
@@ -7315,7 +7371,8 @@
 "est_hi": 85.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_lincoln",
@@ -7387,7 +7444,8 @@
 "est_hi": 84.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_lancaster",
@@ -7499,7 +7557,8 @@
 "est_hi": 82.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_coreweave_helios",
@@ -7626,7 +7685,8 @@
 "est_hi": 79.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "meta_odense",
@@ -7792,7 +7852,8 @@
 "est_hi": 76.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "meta_forest_city",
@@ -7958,7 +8019,8 @@
 "est_hi": 72.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_google_cedar_rapids",
@@ -8015,7 +8077,8 @@
 "est_hi": 72.1,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "prometheus_oh",
@@ -8185,7 +8248,8 @@
 "est_hi": 67.3,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_aws_berwick",
@@ -8302,7 +8366,8 @@
 "est_hi": 64.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "lulea",
@@ -8470,7 +8535,8 @@
 "est_hi": 63.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_google_kansas_city_east",
@@ -8537,7 +8603,8 @@
 "est_hi": 63.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_midlothian",
@@ -8679,7 +8746,8 @@
 "est_hi": 61.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_waltham_cross",
@@ -8761,7 +8829,8 @@
 "est_hi": 52.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_stack_infrastructure_nva02",
@@ -8883,7 +8952,8 @@
 "est_hi": 51.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "meta_dekalb",
@@ -9005,7 +9075,8 @@
 "est_hi": 50.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_coreweave_chester_va",
@@ -9207,7 +9278,8 @@
 "est_hi": 49.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_arcola",
@@ -9269,7 +9341,8 @@
 "est_hi": 46.2,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_google_red_oak",
@@ -9371,7 +9444,8 @@
 "est_hi": 46.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_microsoft_sat40",
@@ -9573,7 +9647,8 @@
 "est_hi": 45.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_meta_gallatin",
@@ -9681,7 +9756,8 @@
 "est_hi": 44.5,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "epoch_oracle_batam",
@@ -9793,7 +9869,8 @@
 "est_hi": 43.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_coreweave_ellendale_nd",
@@ -9875,7 +9952,8 @@
 "est_hi": 40.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_coreweave_muskogee_ok",
@@ -9932,7 +10010,8 @@
 "est_hi": 40.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_coreweave_marble_nc",
@@ -9999,7 +10078,8 @@
 "est_hi": 39.0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_stream_phoenix",
@@ -10071,7 +10151,8 @@
 "est_hi": 38.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_core42_lake_mariner",
@@ -10133,7 +10214,8 @@
 "est_hi": 34.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "nsa_utah",
@@ -10301,7 +10383,8 @@
 "est_hi": 30.0,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_microsoft_nebius_new_jersey",
@@ -10363,7 +10446,8 @@
 "est_hi": 30.0,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_microsoft_sat14",
@@ -10490,7 +10574,8 @@
 "est_hi": 28.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "riken_kobe",
@@ -10658,7 +10743,8 @@
 "est_hi": 26.9,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_anthropic_lake_mariner",
@@ -10700,7 +10786,8 @@
 "est_hi": 25.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_coreweave_norway",
@@ -10751,7 +10838,8 @@
 "est_hi": 25.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_southgate_melbourne",
@@ -10803,7 +10891,8 @@
 "est_hi": 24.6,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "ornl_olcf",
@@ -10972,7 +11061,8 @@
 "est_hi": 22.1,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_start_campus_sines_data_campus",
@@ -11074,7 +11164,8 @@
 "est_hi": 19.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_vantage_tx1",
@@ -11161,7 +11252,8 @@
 "est_hi": 19.2,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_coreweave_dalton_1_2",
@@ -11343,7 +11435,8 @@
 "est_hi": 16.8,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "nscc_guangzhou",
@@ -11511,7 +11604,8 @@
 "est_hi": 16.7,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "nscc_wuxi",
@@ -11679,7 +11773,8 @@
 "est_hi": 13.9,
 "last_q": "2026Q3",
 "polygons_low": true,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "epoch_xai_qts_atlanta",
@@ -11846,7 +11941,8 @@
 "est_hi": 10.4,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "presumed"
 },
 {
 "site_id": "meta_mesa",
@@ -11920,7 +12016,8 @@
 "est_hi": 3.3,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "meta_kansas_city",
@@ -11994,7 +12091,8 @@
 "est_hi": 3.1,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "measured"
 },
 {
 "site_id": "zhongwei_hub",
@@ -12020,7 +12118,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "ulanqab_hub",
@@ -12045,7 +12144,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "helingeer_hub",
@@ -12070,7 +12170,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "zhangbei_hub",
@@ -12095,7 +12196,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "guian_hub",
@@ -12120,7 +12222,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "qingyang_hub",
@@ -12145,7 +12248,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "chongqing_hub",
@@ -12171,7 +12275,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_crusoe_abilene_expansion",
@@ -12213,7 +12318,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_microsoft_narvik_norway",
@@ -12415,7 +12521,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_openai_stargate_lordstown",
@@ -12617,7 +12724,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_openai_stargate_michigan",
@@ -12659,7 +12767,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_openai_stargate_milam",
@@ -12701,7 +12810,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_openai_stargate_new_mexico",
@@ -12726,7 +12836,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_openai_stargate_wisconsin",
@@ -12768,7 +12879,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 },
 {
 "site_id": "epoch_qts_eagle_mountain",
@@ -12970,7 +13082,8 @@
 "est_hi": 0,
 "last_q": "2026Q3",
 "polygons_low": false,
-"combustion": false
+"combustion": false,
+"evidence_kind": "construction"
 }
 ]
 }
