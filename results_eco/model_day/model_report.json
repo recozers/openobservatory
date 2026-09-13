@@ -41,8 +41,8 @@
   },
   "config": {
     "obs": "results_eco/obs_day.csv",
-    "sites": "data/sites.csv",
-    "polygons": "data/polygons",
+    "sites": "/Users/stuartbladon/Documents/Duke/Duke2025/Meridian/openobservatory/data/sites.csv",
+    "polygons": "/Users/stuartbladon/Documents/Duke/Duke2025/Meridian/openobservatory/data/polygons",
     "out": "results_eco/model_day",
     "ptype": "hall",
     "capacity": "density",

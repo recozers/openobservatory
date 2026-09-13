@@ -122,3 +122,9 @@ Final phone-width review caught a wording ambiguity when a site has both an old 
   CAMPD NOx (594 days, r2 0.14); naive step 44. No month exceeds 2.5 sigma (Jan-Feb 2025 at 336 ± 140 and 391 ± 180 are the
   largest). 2-sigma upper bound ~190 kg NOx/h: consistent with SCR-fitted turbines, low output, or noise; Colossus 1's
   turbine phase cannot be shown as measured. Allen itself averaged 48 kg/h at overpass during that period vs 25 outside it.
+- C3 result (night thermal revisited with ECOSTRESS frames to Sep 2026, tools/night_report.py, results_eco/): season- and
+  weather-adjusted night roof steps at the documented load levels: Abilene +0.16 ± 0.23 K at 174 MW (25 frames) and
+  +0.13 ± 0.47 K at 522 MW (5 frames); Rainier +0.06 ± 0.24 K at a documented 1,078 MW IT (24 frames); Fairwater +0.08 ± 0.43
+  (4 frames). Colossus 1 remains the only night step (+1.24 ± 0.28 K at 125 MW, block-wide, turbine yard). Daytime steps at
+  Rainier (+1.44 ± 0.60) and Fairwater (+1.35 ± 0.49) are the fit-out/roof effect seen before. The thermal null holds at the
+  largest documented loads in the inventory; the refresh workflow re-runs this cheaply as 2026 frames accumulate.
