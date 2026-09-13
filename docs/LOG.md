@@ -109,3 +109,11 @@ Final phone-width review caught a wording ambiguity when a site has both an old 
   18 hall positives vs 1,159 industrial negatives; 0.5 keeps 14/18 halls and rejects 96 % of industry; only 4 of 249 large
   national industrial structures pass 0.5 (all 0.54-0.78, industrial in their chips); Intel Ohio's fab is the hard false
   positive (0.99). Details in docs/MVP.md, scores in results_cand/scores.csv.
+
+## 2026-09-13 (Claude, phase 2 start)
+- docs/PHASE2_TODO.md written: B1-B6 for Astra (on-site generation permits, dedicated plants via CAMPD, water-derived
+  annual loads, municipal water, regional context, map evidence kinds), C1-C5 for Claude.
+- C1 running: batch plume test over 71 sites with a documented or roof-derived start (tools/plume_batch.py).
+- Calibration corrected to overpass hours 12-14 local standard (factor 4.41 ± 0.18, was 4.68); all NOx series regenerated.
+- C2 in progress: tools/known_source_subtract.py (regress the Colossus 1 plateau on Allen and Southaven CAMPD NOx at the
+  overpass hours plus a turbine-period step); CAMPD hourly for Allen 2023-2026 being fetched.

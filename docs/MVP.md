@@ -235,3 +235,12 @@ So the chain now reads: radar candidate scan in a box, classifier score, chip fo
 date for anything a person confirms. Positives are few (18 from seven sites); Astra's reviewed optical candidates
 (`results_discovery/visual_review.csv`) and the 78 Epoch sites with polygons are the next labels to add, after which the
 score should be recalibrated. Scores: `results_cand/scores.csv` (all 1,722 candidates), features in `results_cand/`.
+
+## Correction, 13 Sep 2026 (phase 2): calibration overpass hours
+
+Astra's low-stack review (PR #6) noted that EPA CAMPD reports hours in local standard time while the calibration selected
+hours 19–20 as if they were UTC, so the plant truth was taken from the evening rather than the 13:30 overpass. The
+calibration now averages hours 12–14 local standard, which brackets the overpass in both halves of the year. The plateau
+factor moves from 4.68 ± 0.20 to 4.41 ± 0.18 (scatter ±19 %); every calibrated NOx series was regenerated with
+`tools/refresh.py --dry-run`. Colossus 2's season-matched 2026 change is now about 6 % lower (latest quarter
+1,207 ± 248 kg NOx/h); the site's bands follow. The old factor is kept in `results_no2/calibration_plateau_hours19-20.json`.

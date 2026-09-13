@@ -24,3 +24,4 @@ results_campus/train_features.csv
 results_campus/large_dc_features.csv
 logs_pilot/
 venv
+.claude/

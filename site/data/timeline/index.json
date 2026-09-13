@@ -200,10 +200,10 @@
   "quarters": 35
  },
  "colossus2_southaven": {
-  "est_mid": 1281.0,
-  "est_lo": 689.0,
-  "est_hi": 3058.0,
-  "basis": "NO2-flux on-site generation: 1281 \u00b1 248 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
+  "est_mid": 1207.0,
+  "est_lo": 637.0,
+  "est_hi": 2919.0,
+  "basis": "NO2-flux on-site generation: 1207 \u00b1 252 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
   "s2": false,
   "no2": false,
   "night": false,

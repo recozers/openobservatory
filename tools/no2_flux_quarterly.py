@@ -43,7 +43,8 @@ def calibrate():
         df = pd.read_csv(ROOT / "data" / "campd" / f"{oris}_2023.csv")
         df["noxMass"] = pd.to_numeric(df.noxMass, errors="coerce")
         tot = df.groupby(["date", "hour"]).noxMass.sum().reset_index()
-        ov = tot[tot.hour.isin([19, 20])].groupby("date").noxMass.mean()
+        # CAMPD hours are local standard time; TROPOMI passes ~13:30 local clock time, so 12-14 brackets the overpass
+        ov = tot[tot.hour.isin([12, 13, 14])].groupby("date").noxMass.mean()
         ov.index = pd.to_datetime(ov.index)
         j = pd.concat([s.rename("sat"), (ov * 0.4536).rename("truth")], axis=1).dropna()
         sat_kgh = j.sat.mean() * NOX_NO2 * MW_NO2 * 3600

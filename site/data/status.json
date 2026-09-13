@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T14:09:49.038988+00:00",
+"generated": "2026-09-13T16:32:13.981443+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -11,7 +11,7 @@
 "built": "turbine yard; no halls mapped",
 "built_conf": "low",
 "running": "yes: on-site generation detected since 2025Q4",
-"load": "about 1281 MW from NO\u2082 (range 689\u20133058; absolute value uncertain 2\u20133\u00d7, month-to-month changes reliable)",
+"load": "about 1207 MW from NO\u2082 (range 637\u20132919; absolute value uncertain 2\u20133\u00d7, month-to-month changes reliable)",
 "confidence": "high",
 "how": [
 "TROPOMI NOx flux (calibrated on EPA-monitored plants)",
@@ -21,34 +21,34 @@
 "series": [
 {
 "x": "2025Q3",
-"y": 23.0,
-"se": 71.0
+"y": 22.0,
+"se": 68.0
 },
 {
 "x": "2025Q4",
-"y": 494.0,
-"se": 142.0
+"y": 466.0,
+"se": 139.0
 },
 {
 "x": "2026Q1",
-"y": 825.0,
-"se": 159.0
+"y": 778.0,
+"se": 158.0
 },
 {
 "x": "2026Q2",
-"y": 1206.0,
-"se": 219.0
+"y": 1137.0,
+"se": 220.0
 },
 {
 "x": "2026Q3",
-"y": 1281.0,
-"se": 248.0
+"y": 1207.0,
+"se": 252.0
 }
 ],
 "series_label": "NOx emission rate, kg/h (calibrated)",
 "recent": "NOx +6% vs previous quarter",
-"est_mid": 1281.0,
-"est_hi": 3058.0,
+"est_mid": 1207.0,
+"est_hi": 2919.0,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": true
