@@ -160,9 +160,12 @@ usable chips from the annual median. This is the construction-detection chain fo
 the optical median gives a person a chip, Sentinel-2 dates the roof where it can.
 
 **VIIRS night lights (construction and energisation, not load).** Daily Black Marble radiance (500 m), campus minus a 3–10 km
-annulus, monthly medians. Abilene sits at −9 nW/cm²/sr below its surroundings from 2019 to mid-2024, lights up in 2024-12
-(six months after ground-breaking) and climbs to +120 by 2026 as build-out continues. Colossus 1 steps up in 2025-01, six months
-after IT load began: lights follow yard and site expansion, not the operating date. As a regional scan (3-month medians, latest
+annulus, monthly medians; a site "lights up" in the first month at least max(5 MAD, 5 nW/cm²/sr) above the median of all earlier
+months, sustained six months. Every greenfield US campus lights up two to six months after ground-breaking: Rainier 2024-08,
+Fairwater 2024-10, Abilene 2024-12 (then climbing to +120 nW/cm²/sr by 2026 as build-out continued), Hyperion 2025-12. Colossus 1
+steps up in 2025-01, six months after IT load began: lights follow yard and site expansion, not the operating date. The
+nineteen other sites (legacy campuses, supercomputers, the Chinese campuses inside already-lit parks, hub centroids) show no
+step since 2019, as expected. As a regional scan (3-month medians, latest
 versus three years earlier, brightening ≥ 10 nW/cm²/sr and ratio ≥ 3, blobs ≥ 2 pixels) over 150 km boxes, it recovers six of
 seven US campuses within 0.4 km (Hyperion's blob centroid is 2.3 km from the stored coordinate) with 8–22 blobs per box, and the
 campus is the first or second blob in five boxes. It misses Colossus 1 (brownfield inside an already-lit industrial area) and the
@@ -191,3 +194,17 @@ disclosure or filing calibrates them. The site's "running" line says "operator r
 for these sites, confidence high. Chinese listed operators (VNET, GDS, Chindata, Sinnet, the three telcos) publish
 company-wide capacity and utilisation only; the per-campus figures that exist are opening press releases and park-committee
 statements, which stay outside the evidence (`docs/cn_operator_disclosures_notes.md`).
+
+## National scan, 13 Sep 2026 (late): what lights-then-radar finds across the Chinese hub provinces
+
+`tools/ntl_scan_tiles.py` over 24–43 N, 102–123 E (110 tiles of 2°, July–September 2026 against the same months of 2022)
+returns 4,026 newly lit blobs; the brightest are ports, coal-chemical and industrial parks of 15–100 km², and the hub
+campuses rank in the hundreds to thousands because their parks were already lit. A campus-like band (2–30 pixels, 15–130
+nW/cm²/sr now, dark before) keeps 3,212. `tools/lights_to_radar.py` then ran the radar candidate scan on the 40 brightest
+band blobs: 35 contain a new structure of at least 5 ha and 27 one of at least 20 ha, and the chips are factories,
+petrochemical sites and logistics parks. Conclusion: night lights are a "new large lit site" alert, not a data-centre
+detector; the discriminating step is hall morphology on the radar candidates (long parallel white halls, cooling yards,
+generator rows), which the Horinger and Ulanqab boxes show the radar scan can serve up. Inside a hub box the campuses rank
+first without any lights stage. Next: a morphology classifier trained on the candidate chips (positives from Abilene,
+Rainier, Prometheus, Ulanqab and Horinger; negatives from the 40 national blobs and the photovoltaic and logistics
+candidates), and Astra's A8/A9 to turn the found campuses into inventory entries.

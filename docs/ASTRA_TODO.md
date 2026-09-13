@@ -169,8 +169,12 @@ Clonee), Microsoft's FY25 metro table, and Google per-site water/PUE as context 
 ## Claude's research (do not duplicate; results land in `docs/` and `results_*/`)
 
 - Done 13 Sep: Sentinel-1 structure dating and candidate scan (validated at Abilene; new campuses found at Horinger and
-  Zhangbei), VIIRS lit-up dates and regional scan (6/7 US greenfield campuses recovered), snow persistence (negative, closed).
-  See `docs/MVP.md`, last section. In progress: tiled lights scan over the western hub provinces (`tools/ntl_scan_tiles.py`).
+  Zhangbei), VIIRS lit-up dates and regional scan (6/7 US greenfield campuses recovered), snow persistence (negative, closed),
+  national lights scan over the hub provinces (4,026 newly lit blobs: industry dominates, lights alone are not a data-centre
+  detector, so A9's radar boxes are the discriminating step). See `docs/MVP.md` and `docs/LOG.md`.
+- Hall-morphology classifier on radar-candidate chips (positives: Abilene, Rainier, Prometheus, Ulanqab, Horinger candidates;
+  negatives: the 40 national blobs in `results_s1/china/`, PV and logistics candidates) so the lights-then-radar chain
+  can rank data centres above factories.
 - Cooling-tower vapour-plume detection in Sentinel-2/Landsat as an activity indicator at evaporative sites (Climate TRACE analogue).
 - Sentinel-1 amplitude variance over yards as an activity indicator (coherence needs SLC data, not in Earth Engine).
 - A utilisation model from public data: documented capacity, construction stage, fit-out, combustion, operator disclosures,
