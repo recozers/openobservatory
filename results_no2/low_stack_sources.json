@@ -1,0 +1,19 @@
+{
+  "retrieved_on": "2026-09-13",
+  "year": 2023,
+  "hourly_endpoint": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/hourly",
+  "annual_endpoint": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/annual",
+  "egrid_source": "https://www.epa.gov/egrid/detailed-data",
+  "sensor": "COPERNICUS/S5P/OFFL/L3_NO2",
+  "wind": "ECMWF/ERA5/HOURLY",
+  "files": {
+    "data/egrid/plants_2023.csv": "8744289dd61a1eab907e3eb91390f80effc654763271fd32a70a5a84d37d2e4d",
+    "data/campd/55480_2023.csv": "5c6064446a360462f63f1caf0b1c6fb76b0d547e13cdf987db0cb9a561ed566f",
+    "data/campd/612_2023.csv": "581e3f5284d8dfd5d2dfe4124d3c960474b6aa210b8a263cbf4dd67de6f61363",
+    "data/campd/10745_2023.csv": "fa4730204d64b7f6ee3ca6563a395f36adb0eaa4ec75c0c4a053e317d95be74f",
+    "results_no2/flux_forney_gas_2023.csv": "8bf6d1242398f5e9fdee8dd02f0b52151861eb579f1da23c2ca57e3b90321b5a",
+    "results_no2/flux_fort_myers_gas_2023.csv": "cadeaf7e1e67a2a1adfb9bc732973788033307ea12a440add099767b0a551150",
+    "results_no2/flux_midland_gas_2023.csv": "f379e8d7d95837e09fa06c681f48786904ed5fe20f79e3fdb2497471a073fff3"
+  },
+  "qualified_low_stack_plants": 0
+}

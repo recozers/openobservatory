@@ -47,8 +47,9 @@ def calibrate():
         ov.index = pd.to_datetime(ov.index)
         j = pd.concat([s.rename("sat"), (ov * 0.4536).rename("truth")], axis=1).dropna()
         sat_kgh = j.sat.mean() * NOX_NO2 * MW_NO2 * 3600
-        rows.append(dict(plant=key, days=len(j), truth_kgh=j.truth.mean(), sat_kgh=sat_kgh, factor=j.truth.mean() / sat_kgh, sat_se=j.sat.std() / np.sqrt(len(j)) * NOX_NO2 * MW_NO2 * 3600))
+        rows.append(dict(plant=key, stack_class="tall_coal_reference", days=len(j), truth_kgh=j.truth.mean(), sat_kgh=sat_kgh, factor=j.truth.mean() / sat_kgh, sat_se=j.sat.std() / np.sqrt(len(j)) * NOX_NO2 * MW_NO2 * 3600))
     t = pd.DataFrame(rows)
+    t.to_csv(ROOT / "results_no2/calibration_reference_plants.csv", index=False)
     t["factor_se"] = t.factor * t.sat_se / t.sat_kgh
     w = 1 / t.factor_se ** 2
     out = dict(factor=float(np.average(t.factor, weights=w)), factor_se=float(np.sqrt(1 / w.sum())), scatter=float(t.factor.std()), n=len(t), method="near-source plateau 1-9 km")

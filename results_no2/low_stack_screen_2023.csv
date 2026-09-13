@@ -1,0 +1,78 @@
+facility_id,name,lat,lon,egrid_nox_short_tons,nearest_large_power_plant,distance_km,power_isolated,campd_status,sample_unit_type,stack_class,industrial_isolation
+58266,Port Westward Unit 2,46.178889,-123.171944,12604.704,Beaver,0.74,False,not_probed,,unverified,not_verified
+58989,Eklutna Generation Station,61.457778,-149.351389,8531.44,George M Sullivan Generation Plant 2,31.98,True,no_rows,,unverified,not_verified
+8042,Belews Creek,36.2811,-80.0603,7170.047,Roxboro,91.19,True,rows_present,Cell burner boiler,unverified,not_verified
+56500,Western 102 Power Plant,39.5603,-119.5108,5608.946,North Valmy,248.38,True,no_rows,,unverified,not_verified
+61392,F.D. Kuester Generating Station,46.512697,-87.510741,5514.068,Marquette Energy Center,8.17,False,not_probed,,unverified,not_verified
+246,Humboldt Bay,40.7415,-124.2103,4887.32,Crockett Cogen Project,344.17,True,no_rows,,unverified,not_verified
+3630,Pearsall,28.9275,-99.0919,4861.8,San Miguel,64.8,True,no_rows,,unverified,not_verified
+1403,Ninemile Point,29.9472,-90.1458,4614.748,New Orleans Power,21.2,True,rows_present,Tangentially-fired,unverified,not_verified
+64020,West Riverside Energy Center,42.582051,-89.041214,4417.099,Elm Road Generating Station,103.03,True,no_rows,,unverified,not_verified
+60928,New Orleans Power,30.0081,-89.9372,4323.921,Ninemile Point,21.2,True,no_rows,,unverified,not_verified
+2049,Watson Electric Generating Plant,30.4392,-89.0286,4074.938,Daniel Electric Generating Plant,46.52,True,rows_present,Dry bottom wall-fired boiler,unverified,not_verified
+628,Crystal River,28.9656,-82.6977,3970.34,Anclote,87.31,True,rows_present,Combined cycle,unverified,not_verified
+61147,Costa Sur Plant,18.003,-66.7597,3927.935,EcoElectrica,2.49,False,not_probed,,unverified,not_verified
+59391,Red Gate Power Plant,26.451111,-98.1775,3730.272,Ingleside Cogeneration,184.1,True,no_rows,,unverified,not_verified
+10554,Formosa Utility Venture Ltd,28.6917,-96.5417,3727.858,Coleto Creek,65.63,True,no_rows,,unverified,not_verified
+61034,EcoElectrica,17.981025,-66.75542,3712.604,Costa Sur Plant,2.49,False,not_probed,,unverified,not_verified
+61643,Denton Energy Center,33.214869,-97.209692,3682.176,Forney Power Plant,84.18,True,no_rows,,unverified,not_verified
+60768,Gila River Power Block 2,32.975,-112.694444,3246.803,Apache Station,281.65,True,no_rows,,unverified,not_verified
+6073,Daniel Electric Generating Plant,30.5322,-88.5553,3049.243,Watson Electric Generating Plant,46.52,True,rows_present,Tangentially-fired,unverified,not_verified
+2963,Northeastern,36.4317,-95.7008,2985.114,Riverside (4940),53.43,True,rows_present,Combined cycle,unverified,not_verified
+10745,Midland Cogeneration Venture,43.5861,-84.2242,2789.389,Belle River,166.67,True,rows_present,Combined cycle,unverified,not_verified
+3459,Sabine,30.0242,-93.878,2737.673,Lake Charles Polymers,56.82,True,rows_present,Tangentially-fired,unverified,not_verified
+54676,Oyster Creek Unit VIII,28.9802,-95.342,2640.067,Freeport Energy Center,5.28,False,not_probed,,unverified,not_verified
+8073,Beaver,46.172401,-123.17392,2569.103,Port Westward Unit 2,0.74,False,not_probed,,unverified,not_verified
+3490,Graham,33.1344,-98.6117,2356.014,Denton Energy Center,130.79,True,rows_present,Dry bottom wall-fired boiler,unverified,not_verified
+55313,Ingleside Cogeneration,27.882778,-97.242778,2348.69,Coleto Creek,92.34,True,no_rows,,unverified,not_verified
+61391,A.J. Mihm Generating Station,46.792669,-88.614009,2311.155,F.D. Kuester Generating Station,89.78,True,no_rows,,unverified,not_verified
+7931,Coyote Springs II,45.848039,-119.673965,2300.452,Centralia,264.71,True,no_rows,,unverified,not_verified
+10692,ExxonMobil Baytown Turbine,29.759124,-95.009648,2259.363,ExxonMobil Baytown Refinery,1.35,False,not_probed,,unverified,not_verified
+667,Northside,30.4172,-81.5525,2238.714,Seminole (136),76.46,True,rows_present,Circulating fluidized bed boiler,unverified,not_verified
+52120,Freeport Energy,28.991289,-95.407481,2127.457,Freeport Energy Center,1.21,False,not_probed,,unverified,not_verified
+50304,Shell Deer Park,29.723185,-95.128856,2062.211,Houston Chemical Complex Battleground,4.44,False,not_probed,,unverified,not_verified
+2721,Cliffside,35.22,-81.7594,2022.29,Marshall,83.28,True,rows_present,Tangentially-fired,unverified,not_verified
+2956,Seminole (2956),34.96645,-96.7258,1958.499,Horseshoe Lake,73.04,True,rows_present,Dry bottom wall-fired boiler,unverified,not_verified
+10213,El Segundo Cogen,33.9058,-118.4031,1847.482,Watson Cogeneration,17.66,True,no_rows,,unverified,not_verified
+2952,Muskogee,35.76135,-95.28732,1825.491,Riverside (4940),65.79,True,rows_present,Tangentially-fired,unverified,not_verified
+4940,Riverside (4940),35.9978,-95.9567,1805.095,Northeastern,53.43,True,rows_present,Dry bottom wall-fired boiler,unverified,not_verified
+52006,LaO Energy Systems,30.3186,-91.2325,1784.493,Westlake Plaquemine,8.08,False,not_probed,,unverified,not_verified
+2964,Southwestern,35.1009,-98.3524,1772.39,Horseshoe Lake,115.67,True,rows_present,Dry bottom wall-fired boiler,unverified,not_verified
+60559,Marquette Energy Center,46.56597,-87.437245,1750.77,F.D. Kuester Generating Station,8.17,False,not_probed,,unverified,not_verified
+3456,Newman Power Station,31.983587,-106.431777,1706.543,Apache Station,326.42,True,rows_present,Dry bottom wall-fired boiler,unverified,not_verified
+3612,V H Braunig,29.2567,-98.3825,1676.517,O W Sommers,8.04,False,not_probed,,unverified,not_verified
+58835,Elk Station,33.865,-101.843333,1586.853,Tolk Station,75.91,True,no_rows,,unverified,not_verified
+3611,O W Sommers,29.308056,-98.3242,1577.729,J K Spruce,0.42,False,not_probed,,unverified,not_verified
+64873,Pittsburgh Airport Gas Plant,40.495,-80.233,1492.115,Cardinal,44.37,True,no_rows,,unverified,not_verified
+50152,Dow St Charles Operations,29.9861,-90.4414,1453.074,Ninemile Point,28.8,True,no_rows,,unverified,not_verified
+641,Gulf Clean Energy Center,30.5661,-87.2244,1444.786,Barry,89.66,True,rows_present,Tangentially-fired,unverified,not_verified
+50216,Watson Cogeneration,33.816647,-118.244841,1437.859,El Segundo Cogen,17.66,True,no_rows,,unverified,not_verified
+55084,Crockett Cogen Project,38.0569,-122.2161,1416.778,Western 102 Power Plant,287.89,True,no_rows,,unverified,not_verified
+50043,Houston Chemical Complex Battleground,29.7314,-95.0839,1411.721,Shell Deer Park,4.44,False,not_probed,,unverified,not_verified
+66057,AbbVie LTD,18.432669,-66.56677,1398.532,Cambalache Plant,14.37,False,not_probed,,unverified,not_verified
+6558,D G Hunter,31.3207,-92.4613,1373.624,Brame Energy Center,25.62,True,no_rows,,unverified,not_verified
+55866,Basin Creek Plant,45.9293,-112.5194,1366.974,Colstrip,456.84,True,no_rows,,unverified,not_verified
+56497,Goodman Energy Center,38.9303,-99.3617,1336.308,Holcomb,178.99,True,no_rows,,unverified,not_verified
+3,Barry,31.0069,-88.0103,1325.515,Daniel Electric Generating Plant,74.14,True,rows_present,Tangentially-fired,unverified,not_verified
+61857,Toray Plastic America's CHP Plant,41.593802,-71.427609,1301.787,SEMASS Resource Recovery,57.98,True,no_rows,,unverified,not_verified
+645,Big Bend,27.7944,-82.4036,1290.85,Pinellas County Resource Recovery,28.01,True,rows_present,Wet bottom turbo-fired boiler,unverified,not_verified
+57036,Southcentral Power Project,61.167417,-149.905304,1281.209,George M Sullivan Generation Plant 2,12.25,False,not_probed,,unverified,not_verified
+50489,PPG Powerhouse C,30.22612,-93.295173,1279.321,Lake Charles Polymers,4.17,False,not_probed,,unverified,not_verified
+55480,Forney Power Plant,32.7563,-96.4916,1269.823,Denton Energy Center,84.18,True,rows_present,Combined cycle,unverified,not_verified
+55051,Westlake Plaquemine,30.2586,-91.185,1234.474,LaO Energy Systems,8.08,False,not_probed,,unverified,not_verified
+8048,Anclote,28.184444,-82.788611,1210.499,Pinellas County Resource Recovery,36.38,True,rows_present,Tangentially-fired,unverified,not_verified
+3140,"Brunner Island, LLC",40.096111,-76.6962,1175.01,Covanta Delaware Valley,115.44,True,rows_present,Tangentially-fired,unverified,not_verified
+6559,George M Sullivan Generation Plant 2,61.229713,-149.716744,1171.687,Southcentral Power Project,12.25,False,not_probed,,unverified,not_verified
+59647,Stillwater Energy Center,36.161944,-97.036944,1133.199,Horseshoe Lake,73.77,True,no_rows,,unverified,not_verified
+957,Princeton (IL),41.375528,-89.464872,1130.728,Louisa,136.07,True,no_rows,,unverified,not_verified
+10,Greene County,32.6017,-87.7811,1128.364,James H Miller Jr,132.8,True,rows_present,Cell burner boiler,unverified,not_verified
+59726,CML&P Generating Facility No. 2,37.092977,-95.585154,1127.565,Northeastern,74.25,True,no_rows,,unverified,not_verified
+3797,Chesterfield Power Station,37.3822,-77.3833,1115.992,Roxboro,180.41,True,rows_present,Tangentially-fired,unverified,not_verified
+56152,Freeport Energy Center,28.988761,-95.395417,1114.682,Freeport Energy,1.21,False,not_probed,,unverified,not_verified
+3460,Cedar Bayou,29.75,-94.9256,1107.754,ExxonMobil Baytown Refinery,6.93,False,not_probed,,unverified,not_verified
+65295,Bob Glanzer Generating Station,44.369507,-98.17223,1103.064,George Neal North,269.58,True,no_rows,,unverified,not_verified
+57884,Lake Charles Polymers,30.196571,-93.32197,1058.566,PPG Powerhouse C,4.17,False,not_probed,,unverified,not_verified
+59938,Sky Global Power One,29.550278,-96.537778,1057.2,Sam Seymour,45.68,True,no_rows,,unverified,not_verified
+2951,Horseshoe Lake,35.50866,-97.17969,1047.631,Seminole (2956),73.04,True,rows_present,Combustion turbine,unverified,not_verified
+612,Fort Myers,26.6967,-81.7831,1014.067,Big Bend,136.6,True,rows_present,Combined cycle,unverified,not_verified
+10436,ExxonMobil Baytown Refinery,29.753517,-94.997277,1008.551,ExxonMobil Baytown Turbine,1.35,False,not_probed,,unverified,not_verified

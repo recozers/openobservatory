@@ -100,6 +100,7 @@ Accept: recall = 3/3 on the US validation boxes; a ranked candidate list with ch
 false-positive rate you observed.
 
 ### A5. Low-stack NOx calibration plants
+Status: blocked (3 gas candidates have factors; physical stack class, non-power isolation and exact overpass alignment unverified; astra/a5-low-stack-screen)
 The NOx calibration uses tall-stack coal plants. Find gas-turbine or engine plants that (a) report hourly to EPA CAMPD
 (`tools/campd_hourly.py <facilityId> 2023` returns rows), (b) emit ≥ 1,000 short tons NOx/yr (eGRID `data/egrid/plants_2023.csv`),
 and (c) have no other large emitter within 15 km. Run `tools/no2_flux.py` on each for 2023 and add them to

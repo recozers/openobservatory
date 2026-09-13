@@ -30,3 +30,20 @@ Dated entries by either agent: what was done, what was found, what could not be 
   2026-05, cand19 2022-05, cand24 2025-04); the rest stay at 0.17-0.25 brightness, i.e. grey roofs over bright soil, the
   known failure of the brightness rule (Astra task A3). In Inner Mongolia the radar date stands alone; the chip is the
   human check. tools/s2_roof_timeline.py now chunks queries by quarter/month for large polygon sets (5000-feature cap).
+
+### 2026-09-13 — Astra A5 gas calibration screen and time-window audit
+
+Screened all 77 gas-labelled eGRID plants ≥1,000 short tons/year. 23 fail the 15 km power-emitter screen, 28 of the remainder have no CAMPD rows, and 26 return rows (many boiler/mixed facilities). Retrieved full hourly records and independent annual unit totals for Forney, Fort Myers and Midland, plus new 2023 TROPOMI flux profiles. Hourly/annual totals reconcile; no duplicate unit-hours. Physical heights and industrial-source isolation remain unverified, so no new production factor is accepted. EPA reports local standard time; the existing calibration selects hours 19/20 directly. The comparison includes converted UTC-window proxies, while actual overpass alignment remains outstanding. Changes to tools/no2_flux_quarterly.py only expose the existing references’ stack_class table; the production factor is unchanged.
+
+| Plant | Class | Days | Legacy factor ± SE | UTC-window proxy factor ± SE |
+|---|---|---:|---:|---:|
+| martin_lake | coal reference | 169 | 5.12 ± 0.33 | 4.65 ± 0.30 |
+| limestone | coal reference | 188 | 4.16 ± 0.36 | 3.88 ± 0.34 |
+| oak_grove | coal reference | 193 | 4.33 ± 0.46 | 4.27 ± 0.45 |
+| welsh | coal reference | 165 | 5.97 ± 0.92 | 6.06 ± 0.93 |
+| independence_ar | coal reference | 183 | 4.68 ± 0.57 | 5.13 ± 0.63 |
+| forney_gas | gas candidate; height unverified | 202 | 0.91 ± 0.08 | 0.89 ± 0.08 |
+| fort_myers_gas | gas candidate; height unverified | 167 | 1.68 ± 0.23 | 1.73 ± 0.23 |
+| midland_gas | gas candidate; height unverified | 122 | 4.83 ± 0.78 | 4.70 ± 0.76 |
+
+Full source/limitations: docs/low_stack_calibration.md and results_no2/low_stack_sources.json. A5 is preserved as a draft pending qualification rather than labelling gas as low-stack by assumption.
