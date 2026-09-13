@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
-sys.path.insert(0, "")
+sys.path.insert(0, "/Users/stuartbladon/Documents/Duke/Duke2025/Meridian/Meridian")
 obs = pd.read_csv(REPO / "data/observations_eco.csv", dtype={"product_id": str})
 sites = pd.read_csv(REPO / "data/sites.csv", dtype=str, keep_default_na=False).set_index("site_id")
 obs["t"] = pd.to_datetime(obs.datetime_utc, utc=True, format="ISO8601")

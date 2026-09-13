@@ -14,6 +14,15 @@
 "epoch_building_008": "2026-04",
 "epoch_building_009": "unknown"
 },
+"roof_basis": {
+"epoch_building_000": "s2",
+"epoch_building_003": "s2",
+"epoch_building_004": "s2",
+"epoch_building_006": "s2",
+"epoch_building_007": "s2",
+"epoch_building_008": "s2",
+"epoch_building_009": "s2"
+},
 "roof_evidence": {
 "epoch_building_000": {
 "rule": "visible_brightness",
@@ -58,6 +67,8 @@
 "inferred_roof_on": "not_yet"
 }
 },
+"radar_on": {},
+"ntl_lit": null,
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -80,7 +91,8 @@
 "basis": "no roof yet",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q3",
@@ -98,7 +110,8 @@
 "basis": "roof on (14.9 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q4",
@@ -116,7 +129,8 @@
 "basis": "roof on (14.9 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q1",
@@ -134,7 +148,8 @@
 "basis": "roofed \u22656 months (14.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q2",
@@ -152,7 +167,8 @@
 "basis": "roofed \u22656 months (14.9 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q3",
@@ -170,7 +186,8 @@
 "basis": "roofed \u22656 months (48.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."

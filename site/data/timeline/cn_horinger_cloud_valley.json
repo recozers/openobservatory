@@ -6,10 +6,16 @@
 "density_basis": "default 15 MW/ha",
 "hall_area_ha": 57.0,
 "roof_on": {
-"block_a": "existing",
-"block_b": "existing",
+"block_a": "2024-06",
+"block_b": "2019-06",
 "block_c": "existing",
 "block_d": "existing"
+},
+"roof_basis": {
+"block_a": "radar",
+"block_b": "radar",
+"block_c": "s2",
+"block_d": "s2"
 },
 "roof_evidence": {
 "block_a": {
@@ -37,6 +43,13 @@
 "inferred_roof_on": "not_yet"
 }
 },
+"radar_on": {
+"block_a": "2024-06 (base -13.0 dB, +6.2)",
+"block_b": "2019-06 (base -15.3 dB, +5.4)",
+"block_c": "not_yet",
+"block_d": "not_yet"
+},
+"ntl_lit": null,
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -49,17 +62,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 2,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 30.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q2",
@@ -67,17 +81,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 2,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 30.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q3",
@@ -85,17 +100,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 2,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 30.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q4",
@@ -103,17 +119,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 2,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 30.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q1",
@@ -121,17 +138,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 2,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 30.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q2",
@@ -139,17 +157,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q3",
@@ -157,17 +176,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 30.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 405.0,
+"basis": "roofed \u22656 months (30.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q4",
@@ -175,17 +195,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q1",
@@ -193,17 +214,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q2",
@@ -211,17 +233,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q3",
@@ -229,17 +252,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q4",
@@ -247,17 +271,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q1",
@@ -265,17 +290,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q2",
@@ -283,17 +309,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q3",
@@ -301,17 +328,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q4",
@@ -319,17 +347,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q1",
@@ -337,17 +366,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q2",
@@ -355,17 +385,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q3",
@@ -373,17 +404,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q4",
@@ -391,17 +423,18 @@
 "cap_tier": null,
 "cap_basis": null,
 "no2_flux": null,
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q1",
@@ -415,17 +448,18 @@
 "mw_hi": 1019.0,
 "n_days": 48
 },
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q2",
@@ -439,17 +473,18 @@
 "mw_hi": 2430.0,
 "n_days": 41
 },
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q3",
@@ -463,17 +498,18 @@
 "mw_hi": 2553.0,
 "n_days": 43
 },
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q4",
@@ -487,17 +523,18 @@
 "mw_hi": 6885.0,
 "n_days": 33
 },
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q1",
@@ -511,17 +548,18 @@
 "mw_hi": 3400.0,
 "n_days": 21
 },
-"halls_roofed": 4,
+"halls_roofed": 3,
 "halls_total": 4,
-"built_ha": 57.0,
-"fitted_ha": 57.0,
+"built_ha": 45.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q2",
@@ -538,14 +576,15 @@
 "halls_roofed": 4,
 "halls_total": 4,
 "built_ha": 57.0,
-"fitted_ha": 57.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q3",
@@ -562,14 +601,15 @@
 "halls_roofed": 4,
 "halls_total": 4,
 "built_ha": 57.0,
-"fitted_ha": 57.0,
+"fitted_ha": 45.0,
 "est_lo": 0.0,
 "est_mid": null,
-"est_hi": 769.5,
-"basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
+"est_hi": 607.5,
+"basis": "roofed \u22656 months (45.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q4",
@@ -593,7 +633,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q1",
@@ -617,7 +658,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q2",
@@ -641,7 +683,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q3",
@@ -665,7 +708,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q4",
@@ -689,7 +733,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q1",
@@ -713,7 +758,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q2",
@@ -737,7 +783,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q3",
@@ -761,7 +808,8 @@
 "basis": "roofed \u22656 months (57.0 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."

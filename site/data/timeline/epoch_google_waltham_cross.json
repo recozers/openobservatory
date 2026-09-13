@@ -8,6 +8,9 @@
 "roof_on": {
 "epoch_building_000": "2024-06"
 },
+"roof_basis": {
+"epoch_building_000": "s2"
+},
 "roof_evidence": {
 "epoch_building_000": {
 "rule": "visible_brightness",
@@ -16,6 +19,8 @@
 "inferred_roof_on": "2024-06"
 }
 },
+"radar_on": {},
+"ntl_lit": null,
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -38,7 +43,8 @@
 "basis": "no roof yet",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q2",
@@ -56,7 +62,8 @@
 "basis": "roof on (2.6 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q3",
@@ -74,7 +81,8 @@
 "basis": "roof on (2.6 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q4",
@@ -92,7 +100,8 @@
 "basis": "roofed \u22656 months (2.6 ha) \u00d7 33.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q1",
@@ -110,7 +119,8 @@
 "basis": "roofed \u22656 months (2.6 ha) \u00d7 33.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q2",
@@ -128,7 +138,8 @@
 "basis": "roofed \u22656 months (2.6 ha) \u00d7 33.3 MW/ha (site documented capacity / hall area) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q3",
@@ -140,13 +151,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 44.0,
-"est_mid": 70.4,
-"est_hi": 88.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 17.6,
+"est_mid": 35.2,
+"est_hi": 52.8,
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q4",
@@ -158,13 +170,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 44.0,
-"est_mid": 70.4,
-"est_hi": 88.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 17.6,
+"est_mid": 35.2,
+"est_hi": 52.8,
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q1",
@@ -176,13 +189,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 44.0,
-"est_mid": 70.4,
-"est_hi": 88.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 17.6,
+"est_mid": 35.2,
+"est_hi": 52.8,
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q2",
@@ -194,13 +208,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 44.0,
-"est_mid": 70.4,
-"est_hi": 88.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 17.6,
+"est_mid": 35.2,
+"est_hi": 52.8,
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q3",
@@ -212,13 +227,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 44.0,
-"est_mid": 70.4,
-"est_hi": 88.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 17.6,
+"est_mid": 35.2,
+"est_hi": 52.8,
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."

@@ -6,7 +6,10 @@
 "density_basis": "default 15 MW/ha",
 "hall_area_ha": 0,
 "roof_on": {},
+"roof_basis": {},
 "roof_evidence": {},
+"radar_on": {},
+"ntl_lit": "not_yet",
 "s2_available": false,
 "no2_available": false,
 "no2_baseline": null,
@@ -35,7 +38,8 @@
 "basis": "pre-operation (documented placeholder)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": 27.5
 },
 {
 "q": "2025Q4",
@@ -59,7 +63,8 @@
 "basis": "NO2-flux on-site generation: 494 \u00b1 142 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": 22.0
 },
 {
 "q": "2026Q1",
@@ -83,7 +88,8 @@
 "basis": "NO2-flux on-site generation: 825 \u00b1 159 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": 15.9
 },
 {
 "q": "2026Q2",
@@ -107,7 +113,8 @@
 "basis": "NO2-flux on-site generation: 1206 \u00b1 219 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": 55.0
 },
 {
 "q": "2026Q3",
@@ -131,7 +138,8 @@
 "basis": "NO2-flux on-site generation: 1281 \u00b1 248 kg NOx/h (TROPOMI, calibrated on 5 plants) at 0.5-1.5 kg NOx/MWh, midpoint at 1.0",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": 83.9
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."

@@ -10,9 +10,17 @@ Tracking data-centre construction and activity from free satellite data, with a 
 - **Fuel burning on site, where it happens.** Sentinel-5P TROPOMI NO₂ plumes, wind-rotated and composited over hundreds of days,
   give a monthly emission rate calibrated against five EPA-monitored power plants. At a site running its own turbines that is a
   monthly on/off/ramp readout of generation; absolute megawatts are uncertain by 2–3×, month-to-month changes are good to ~20 %.
-- **Not electricity use.** Roof temperature does not track IT load, day or night: tested with ECOSTRESS and Landsat at twelve
-  sites against nine control roofs (`docs/overnight_report_2026-09-13.md`). Load figures on the site are documented capacity
-  with a stated utilisation assumption unless marked as measured.
+- **Construction through cloud, and new sites without a prior list.** Sentinel-1 radar dates each hall's structure to within a
+  few months of the optical date (validated at Abilene) and, run as a change scan over a 12 km box, lists new structures by size
+  with a chip for review: at Horinger it found three 30–40 ha campuses missing from every inventory. VIIRS night lights, scanned
+  regionally at 500 m, recover six of seven US greenfield campuses as the brightest new blob in their box.
+- **Operator-reported loads where they exist.** Meta publishes annual electricity per campus; those averages (Prineville 197 MW in
+  2024, Luleå 54 MW against a 120 MW feed, New Albany 60 MW against a 250 MW connection) take precedence on the site and calibrate
+  the utilisation prior for cloud campuses (0.2–0.6 of a connection figure).
+- **Not electricity use from space.** Roof temperature does not track IT load, day or night: tested with ECOSTRESS and Landsat at
+  twelve sites against nine control roofs (`docs/overnight_report_2026-09-13.md`). Snow on hall roofs persists like on any other
+  roof (nine sites, eight winters). Load figures on the site are documented capacity with a stated utilisation prior unless marked
+  as operator-reported or NO₂-derived.
 
 ## Layout
 
@@ -21,13 +29,14 @@ site/                static frontend: index.html (map), list.html (cards), map.h
 build_status.py      plain-language status per site  -> site/data/status.json
 build_timeline_data.py  quarterly bands + evidence    -> site/data/timeline/*.json
 build_site.py        inventory + provenance           -> site/data/sites.json
-tools/               s2_roof_timeline.py, no2_plume_test.py, no2_flux.py, no2_flux_quarterly.py, campd_hourly.py,
-                     fill_weather_gee.py, night_report.py, ring_analysis.py, chip.py
+tools/               s2_roof_timeline.py, s1_timeline.py (radar dating, candidate scan), ntl_timeline.py, ntl_scan.py,
+                     ntl_scan_tiles.py, lights_to_radar.py, snow_persistence.py, no2_plume_test.py, no2_flux.py,
+                     no2_flux_quarterly.py, campd_hourly.py, fill_weather_gee.py, night_report.py, ring_analysis.py, chip.py
 extract.py, model.py thermal pipeline (Landsat C1/C2 via Earth Engine, ECOSTRESS)
 dcheat/              library: geometry, Landsat, Earth Engine, ECOSTRESS, WorldCover, ERA5
 data/                sites.csv, capacity_timeline.csv, polygons/, observations, Epoch tables, eGRID, CAMPD pulls
 results_*/           model reports, calibration tables, NO₂ results
-docs/                MVP definition, overnight thermal report, the original prototype README
+docs/                MVP definition and results log, utilisation model, Astra task brief, thermal report, disclosure notes
 ```
 
 ## Running it
@@ -39,6 +48,9 @@ set -a; . ./.env; set +a
 python tools/s2_roof_timeline.py data/polygons/<site>.geojson --start 2022-01-01 --out results_s2/<site>.csv
 python tools/no2_plume_test.py --lat <lat> --lon <lon> --change <YYYY-MM-DD> --control <lat,lon> --out results_no2/<site>.csv
 python tools/no2_flux.py --name <name> --lat <lat> --lon <lon> --start 2023-01-01 --end 2026-08-31 --out results_no2/flux_<name>.csv
+python tools/s1_timeline.py data/polygons/<site>.geojson --start 2018-01-01 --out results_s1/<site>.csv      # radar dates per hall
+python tools/s1_timeline.py --chip <lat> <lon> --candidates --half 6000 --early 2021 --late 2026 --out results_s1/<name>  # new structures
+python tools/ntl_scan.py --box <lat_s> <lon_w> <lat_n> <lon_e> --name <name> --out results_ntl/scan_<name>.csv        # newly lit sites
 python build_timeline_data.py && python build_status.py
 cd site && python -m http.server 8000
 ```

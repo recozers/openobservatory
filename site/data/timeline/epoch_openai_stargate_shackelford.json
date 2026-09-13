@@ -17,6 +17,18 @@
 "epoch_building_015": "2026-05",
 "epoch_building_016": "2026-03"
 },
+"roof_basis": {
+"epoch_building_000": "s2",
+"epoch_building_001": "s2",
+"epoch_building_002": "s2",
+"epoch_building_003": "s2",
+"epoch_building_005": "s2",
+"epoch_building_012": "s2",
+"epoch_building_013": "s2",
+"epoch_building_014": "s2",
+"epoch_building_015": "s2",
+"epoch_building_016": "s2"
+},
 "roof_evidence": {
 "epoch_building_000": {
 "rule": "visible_brightness",
@@ -79,6 +91,8 @@
 "inferred_roof_on": "2026-03"
 }
 },
+"radar_on": {},
+"ntl_lit": null,
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -101,7 +115,8 @@
 "basis": "no roof yet",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q4",
@@ -119,7 +134,8 @@
 "basis": "roof on (21.1 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q1",
@@ -137,7 +153,8 @@
 "basis": "roof on (34.8 ha) but not yet fitted out",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q2",
@@ -155,7 +172,8 @@
 "basis": "roofed \u22656 months (21.1 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q3",
@@ -173,7 +191,8 @@
 "basis": "roofed \u22656 months (34.8 ha) \u00d7 15.0 MW/ha (default 15 MW/ha) is the potential; no operating evidence, so 0 to potential",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."

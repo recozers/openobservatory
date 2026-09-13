@@ -60,7 +60,7 @@ have no Earth Engine access, do the tasks marked [no-EE] first. Long Earth Engin
 ## Tasks, in priority order
 
 ### A1. Ingest the Epoch AI site list as the inventory backbone  [no-EE for steps 1–3]
-Status: in progress (astra/a1-epoch-inventory)
+Status: done (PR #2; 78 new sites with polygons and S2, 71 with accepted event dates)
 
 Goal: the 86 sites in `data/epoch/data_centers.csv` (and their `data_center_timelines.csv` rows, which carry dated IT MW and
 buildings-operational counts) become proper inventory entries.
@@ -95,6 +95,9 @@ Abilene (12 known dates), Hyperion (roofs on by Jan 2026) and the three Chinese 
 dates; Abilene's dates move by ≤ 1 month.
 
 ### A4. Candidate-site discovery from Sentinel-2 change (the automatic-detection layer)
+Note: a radar version now exists (`tools/s1_timeline.py --candidates`, see A8/A9) and a night-lights regional scan
+(`tools/ntl_scan.py`). The optical detector is still wanted as the confirmation stage: for each radar or lights candidate,
+confirm a flat-roofed complex and date its roofs; the region-wide optical scan is the lower priority.
 Goal: find large new flat-roofed complexes in a region without a prior list. Method (deterministic, no ML): for a region
 box, build annual median Sentinel-2 composites (2022 and latest year), compute a built-up change mask (NDBI or brightness
 rise plus NDVI drop), connected components ≥ 3 ha with rectangularity ≥ 0.6, and rank by area. Output a candidate CSV with
@@ -130,12 +133,46 @@ are absent.
   midpoint; a calibrated flux above 2σ must), and `tools/s2_roof_timeline.roof_on_month` on synthetic series.
 - Mobile layout for `site/index.html` panel (currently overlaps the legend below 500 px).
 
+### A8. Digitise the campuses the radar scan found  [no-EE]
+`results_s1/<hub>_candidates.csv` (hub = ulanqab, horinger, zhangbei, guian, chongqing_shuitu, qingyang) lists new structures
+2021→2026 ranked by area with a chip per candidate (`results_s1/<hub>_candNN.png`, 1.2 km, annual Sentinel-2 median). For every
+candidate ≥ 5 ha, decide from the chip whether it is a data-hall complex (long white halls, cooling yards, generator rows,
+substation) or something else (PV compound, logistics, factory), and for the data-hall ones add polygons
+(`data/polygons/<site>.geojson`, `confidence=low`, `digitised_from=Sentinel-1 candidate <hub> rank N + S2 median chip`) and a
+`sites.csv` row with tier U capacity and the coordinates. Horinger ranks 1–3 (42, 38, 33 ha) and Zhangbei ranks 1–4 are the
+first to do. Then run `tools/s2_roof_timeline.py` and `tools/s1_timeline.py` on each new file. Accept: every ≥ 5 ha candidate
+in the six boxes classified with a one-line reason in `docs/LOG.md`; polygons for the data-hall ones; site rebuilt.
+
+### A9. Radar candidate boxes for every inventory site and hub
+Run `python tools/s1_timeline.py --chip LAT LON --candidates --half 6000 --early 2021 --late 2026 --out results_s1/<site>`
+for every site in `data/sites.csv` that does not yet have a `results_s1/<site>_candidates.csv` (the US AI sites are the
+validation: their known halls must appear in the top ranks), and for the Chinese hub centroids not yet covered (zhongwei_hub,
+qingyang_hub if missing). Note the recall at the known sites and the false-positive types in `docs/LOG.md`. Accept: a
+candidates CSV per site; a table of recall.
+
+### A10. Chinese operator filings, campus level  [no-EE]
+`docs/cn_operator_disclosures_notes.md` found that no listed operator gives per-campus figures in its headline tables, but
+Chindata's FY2022 20-F has a per-data-centre table (CN01–CN23, MW per site inside the Zhangjiakou/Datong clusters) that was
+not parsed, and VNET's 6-Ks mention Ulanqab orders (235 MW, a 100 MW framework) that could not be fetched. Download the
+filings from EDGAR with a declared User-Agent, parse those tables into `data/cn_operator_disclosures.csv` (campus, MW in
+service, utilised, period, URL), and run an EDGAR full-text search for "Ulanqab", "Zhangbei", "Horinger", "Gui'an",
+"Zhongwei" across VNET, GDS and Chindata filings. Accept: every per-campus MW figure in those filings recorded with its URL.
+
+### A11. Operator disclosure ingest  [no-EE]
+Write `tools/ingest_disclosures.py` that turns `data/operator_disclosures.csv` electricity rows into
+`data/capacity_timeline.csv` rows (basis `facility_measured_annual`, tier A2) idempotently, so the next Meta index (each
+July) is a one-line update. Then extend the CSV: Meta's other campuses that are in the Epoch list (Forest City, Altoona,
+Fort Worth, Los Lunas, Papillion, Henrico, Newton, Eagle Mountain, Huntsville, DeKalb, Gallatin, Kuna, Mesa, Temple, Odense,
+Clonee), Microsoft's FY25 metro table, and Google per-site water/PUE as context rows. Accept: the ingest is idempotent
+(running twice adds nothing); at least ten more sites have measured annual loads once A1 adds them to the inventory.
+
 ## Claude's research (do not duplicate; results land in `docs/` and `results_*/`)
 
+- Done 13 Sep: Sentinel-1 structure dating and candidate scan (validated at Abilene; new campuses found at Horinger and
+  Zhangbei), VIIRS lit-up dates and regional scan (6/7 US greenfield campuses recovered), snow persistence (negative, closed).
+  See `docs/MVP.md`, last section. In progress: tiled lights scan over the western hub provinces (`tools/ntl_scan_tiles.py`).
 - Cooling-tower vapour-plume detection in Sentinel-2/Landsat as an activity indicator at evaporative sites (Climate TRACE analogue).
-- Winter snow-cover on/off indicator over yards and exhaust areas (cold-climate hubs).
-- Sentinel-1 SAR coherence over fan and turbine yards as an operating indicator.
-- VIIRS night-time lights at campus energisation.
+- Sentinel-1 amplitude variance over yards as an activity indicator (coherence needs SLC data, not in Earth Engine).
 - A utilisation model from public data: documented capacity, construction stage, fit-out, combustion, operator disclosures,
   with stated priors and posteriors per site (`docs/utilisation_model.md` when it exists).
 - Emission-factor work for turbine fleets (NO₂ fraction correction) and the Colossus 2 permit follow-up.
