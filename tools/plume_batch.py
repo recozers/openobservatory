@@ -4,7 +4,7 @@
 
 For each non-control site: change date = start of the first quarter with a positive documented capacity in
 site/data/timeline/<site>.json, else the first roof date plus six months; controls = two points 0.35 degrees east and west.
-Runs tools/no2_plume_test.py with --start 2019-01-01 into results_no2/<site>.csv (which build_status.py reads), skipping
+Runs tools/no2_plume_test.py with --start two years before the change date into results_no2/<site>.csv (which build_status.py reads), skipping
 sites that already have a file, and writes results_no2/plume_batch_summary.csv with the downwind-minus-upwind change and
 its z-score computed as build_status.py does. Sites are processed in descending documented capacity.
 """
@@ -52,33 +52,45 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-mw", type=float, default=0.0)
     ap.add_argument("--limit", type=int, default=200)
+    ap.add_argument("--workers", type=int, default=3)
     args = ap.parse_args()
     sites = pd.read_csv("data/sites.csv")
     sites = sites[~sites.site_id.str.startswith("ctrl_")].copy()
     sites["cap"] = pd.to_numeric(sites.capacity_mw, errors="coerce").fillna(0)
     sites = sites[sites.cap >= args.min_mw].sort_values("cap", ascending=False).head(args.limit)
     summ = Path("results_no2/plume_batch_summary.csv")
-    rows = []
+    Path("logs_pilot").mkdir(exist_ok=True)
+    jobs, rows = [], []
     for _, s in sites.iterrows():
         sid = s.site_id
         change, basis = change_date(sid)
         if not change or change < "2019-07-01" or change > "2026-06-01":
             rows.append(dict(site_id=sid, cap_mw=s.cap, change=change, basis=basis, status="skipped: start not in mid-2019..mid-2026"))
+            continue
+        jobs.append((sid, float(s.cap), float(s.lat), float(s.lon), change, basis))
+
+    def run(job):
+        sid, cap, lat, lon, change, basis = job
+        out = Path(f"results_no2/{sid}.csv")
+        if out.exists():
+            status = "existing file"
         else:
-            out = Path(f"results_no2/{sid}.csv")
-            if out.exists():
-                status = "existing file"
-            else:
-                cmd = [sys.executable, "tools/no2_plume_test.py", "--lat", str(s.lat), "--lon", str(s.lon), "--name", sid, "--start", "2019-01-01",
-                       "--change", change, "--control", f"{s.lat},{s.lon + 0.35}", "--control", f"{s.lat},{s.lon - 0.35}", "--out", str(out)]
-                r = subprocess.run(cmd, capture_output=True, text=True)
-                Path("logs_pilot").mkdir(exist_ok=True)
-                Path(f"logs_pilot/plume_{sid}.log").write_text(r.stdout + r.stderr)
-                status = "ok" if r.returncode == 0 and out.exists() else "failed: " + r.stderr.strip()[-120:].replace("\n", " ")
-            d, z, na, nb = zscore(out, change) if out.exists() else (None, None, None, None)
-            rows.append(dict(site_id=sid, cap_mw=s.cap, change=change, basis=basis, status=status, change_umol=d, z=z, n_after=na, n_before=nb))
-            print(f"  {sid:34s} {s.cap:7.0f} MW  change {change} ({basis})  z={z}  {status[:40]}", file=sys.stderr)
-        pd.DataFrame(rows).to_csv(summ, index=False)
+            start = (pd.Timestamp(change) - pd.DateOffset(years=2)).strftime("%Y-%m-%d")
+            cmd = [sys.executable, "tools/no2_plume_test.py", "--lat", str(lat), "--lon", str(lon), "--name", sid, "--start", max(start, "2018-07-01"),
+                   "--change", change, "--control", f"{lat},{lon + 0.35}", "--control", f"{lat},{lon - 0.35}", "--out", str(out)]
+            r = subprocess.run(cmd, capture_output=True, text=True)
+            Path(f"logs_pilot/plume_{sid}.log").write_text(r.stdout + r.stderr)
+            status = "ok" if r.returncode == 0 and out.exists() else "failed: " + r.stderr.strip()[-120:].replace("\n", " ")
+        d, z, na, nb = zscore(out, change) if out.exists() else (None, None, None, None)
+        print(f"  {sid:34s} {cap:7.0f} MW  change {change} ({basis})  z={z}  {status[:40]}", file=sys.stderr, flush=True)
+        return dict(site_id=sid, cap_mw=cap, change=change, basis=basis, status=status, change_umol=d, z=z, n_after=na, n_before=nb)
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+        futs = [ex.submit(run, j) for j in jobs]
+        for f in as_completed(futs):
+            rows.append(f.result())
+            pd.DataFrame(rows).to_csv(summ, index=False)
     df = pd.DataFrame(rows)
     print(df.to_string(index=False))
 
