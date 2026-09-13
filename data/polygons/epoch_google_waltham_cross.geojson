@@ -1,0 +1,49 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_waltham_cross",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -0.049454,
+       51.697763
+      ],
+      [
+       -0.049604,
+       51.694931
+      ],
+      [
+       -0.04836,
+       51.694931
+      ],
+      [
+       -0.048263,
+       51.697743
+      ],
+      [
+       -0.049454,
+       51.697763
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_waltham_cross",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Waltham Cross, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

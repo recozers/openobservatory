@@ -6,6 +6,7 @@
 "density_basis": "default 15 MW/ha",
 "hall_area_ha": 0,
 "roof_on": {},
+"roof_evidence": {},
 "s2_available": false,
 "no2_available": false,
 "no2_baseline": null,

@@ -45,6 +45,45 @@ cd site && python -m http.server 8000
 
 Earth Engine is free for non-commercial use; the Earthdata login and the EPA key are free.
 
+## Epoch inventory
+
+`data/epoch/` contains the 86-row source inventory, dated power estimates and
+saved public map annotations. Epoch AI data and annotations are used under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with attribution on the
+site. Annotation geometry is kept separately from independent Sentinel-2 roof
+observations; planned footprints do not prove construction or operation.
+
+```bash
+# One-time, serial address lookup; caches both matches and misses.
+python tools/epoch_geocode.py
+# Snapshot Epoch's published coordinates and annotated buildings.
+python tools/epoch_map_snapshot.py
+# Deterministic import from saved sources (no network).
+python tools/ingest_epoch.py --as-of 2026-09-13
+# Long EE work: one site per process, per-site logs and annual caches.
+caffeinate -i python tools/epoch_roof_batch.py --workers 3
+OBS_FILE=data/observations_all.csv REJ_FILE=data/rejections_all.csv RESULTS_DIR=results_gee python build_site.py
+python build_timeline_data.py && python build_status.py
+python tools/validate_epoch.py
+python -m unittest discover -s tests -v
+```
+
+Address geocoding follows the [Nominatim policy](https://operations.osmfoundation.org/policies/nominatim/):
+one process on one machine, identified User-Agent, at most one request/second,
+and cached responses. Never schedule the one-time geocoder. The endpoint can be
+changed with `NOMINATIM_URL` or `--endpoint`. Street/settlement centroids and distant
+matches are not promoted to address-quality coordinates; Epoch's published point
+is retained instead. The public map is the building-identity source, avoiding the
+assumption that any large OSM roof nearby is a data centre.
+
+`it_reported` is Epoch's IT-power estimate, distinct from measured HPL power.
+`facility_design` retains facility power; the build prefers IT power when both are
+available and never adds them. Tier A2 here includes sourced Epoch model estimates,
+not just company statements. Future timeline rows are explicitly projections and
+cannot supply today's status. Brightness dates that conflict with reported construction starts remain unresolved, with both sources retained for review. Every original row, including curated-site matches,
+is preserved in `normalized_capacity_timeline.csv`; existing validated site labels
+are retained. See `docs/epoch_inventory_audit.md` for per-site results and limits.
+
 ## Provenance rule
 
 Every number shown must trace to a free public dataset, a script in this repository and a polygon with a stated confidence.

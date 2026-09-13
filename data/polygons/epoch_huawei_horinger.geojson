@@ -1,0 +1,264 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_huawei_horinger",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       111.803653,
+       40.534199
+      ],
+      [
+       111.80312,
+       40.535297
+      ],
+      [
+       111.801333,
+       40.534794
+      ],
+      [
+       111.801897,
+       40.533689
+      ],
+      [
+       111.803653,
+       40.534199
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_huawei_horinger",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Huawei Horinger, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       111.803017,
+       40.535377
+      ],
+      [
+       111.80248,
+       40.536498
+      ],
+      [
+       111.800741,
+       40.535954
+      ],
+      [
+       111.801284,
+       40.534865
+      ],
+      [
+       111.803017,
+       40.535377
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_huawei_horinger",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Huawei Horinger, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       111.804605,
+       40.534679
+      ],
+      [
+       111.806256,
+       40.535144
+      ],
+      [
+       111.805441,
+       40.536724
+      ],
+      [
+       111.803759,
+       40.536229
+      ],
+      [
+       111.804605,
+       40.534679
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_huawei_horinger",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Huawei Horinger, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       111.853943,
+       40.543357
+      ],
+      [
+       111.852891,
+       40.54413
+      ],
+      [
+       111.851608,
+       40.542991
+      ],
+      [
+       111.852694,
+       40.542274
+      ],
+      [
+       111.853943,
+       40.543357
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_huawei_horinger",
+    "name": "epoch_building_012",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Huawei Horinger, feature 12",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       111.852775,
+       40.544197
+      ],
+      [
+       111.851654,
+       40.54505
+      ],
+      [
+       111.850371,
+       40.543921
+      ],
+      [
+       111.851505,
+       40.543086
+      ],
+      [
+       111.852775,
+       40.544197
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_huawei_horinger",
+    "name": "epoch_building_013",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Huawei Horinger, feature 13",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       111.852905,
+       40.545144
+      ],
+      [
+       111.854372,
+       40.544143
+      ],
+      [
+       111.855603,
+       40.545138
+      ],
+      [
+       111.854082,
+       40.546206
+      ],
+      [
+       111.852905,
+       40.545144
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_huawei_horinger",
+    "name": "epoch_building_014",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Huawei Horinger, feature 14",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

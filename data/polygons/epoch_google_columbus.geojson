@@ -1,0 +1,253 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_columbus",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.99532,
+       39.847848
+      ],
+      [
+       -82.995265,
+       39.845422
+      ],
+      [
+       -82.994094,
+       39.845433
+      ],
+      [
+       -82.994121,
+       39.847514
+      ],
+      [
+       -82.994012,
+       39.847514
+      ],
+      [
+       -82.994012,
+       39.847848
+      ],
+      [
+       -82.99532,
+       39.847848
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_columbus",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Columbus, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.995456,
+       39.8533
+      ],
+      [
+       -82.995415,
+       39.850863
+      ],
+      [
+       -82.994271,
+       39.850853
+      ],
+      [
+       -82.994271,
+       39.852976
+      ],
+      [
+       -82.994203,
+       39.852976
+      ],
+      [
+       -82.994189,
+       39.853289
+      ],
+      [
+       -82.995456,
+       39.8533
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_columbus",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Columbus, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -83.000168,
+       39.847352
+      ],
+      [
+       -82.999703,
+       39.844966
+      ],
+      [
+       -82.998542,
+       39.845089
+      ],
+      [
+       -82.998905,
+       39.847151
+      ],
+      [
+       -82.998788,
+       39.847185
+      ],
+      [
+       -82.998847,
+       39.847474
+      ],
+      [
+       -83.000168,
+       39.847352
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_columbus",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Columbus, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -83.000604,
+       39.850186
+      ],
+      [
+       -83.000226,
+       39.847778
+      ],
+      [
+       -82.999006,
+       39.847912
+      ],
+      [
+       -82.999398,
+       39.849985
+      ],
+      [
+       -82.999282,
+       39.849985
+      ],
+      [
+       -82.99934,
+       39.850286
+      ],
+      [
+       -83.000604,
+       39.850186
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_columbus",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Columbus, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -83.000805,
+       39.853015
+      ],
+      [
+       -83.000363,
+       39.850609
+      ],
+      [
+       -82.999211,
+       39.850704
+      ],
+      [
+       -82.999636,
+       39.853126
+      ],
+      [
+       -83.000805,
+       39.853015
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_columbus",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Columbus, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

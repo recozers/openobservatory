@@ -1,0 +1,167 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_coreweave_ellendale_nd",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -98.5734933,
+       46.0155879
+      ],
+      [
+       -98.573531,
+       46.01465
+      ],
+      [
+       -98.5714646,
+       46.0146091
+      ],
+      [
+       -98.5714317,
+       46.0155558
+      ],
+      [
+       -98.5734933,
+       46.0155879
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_ellendale_nd",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Ellendale ND, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -98.5760322,
+       46.0197593
+      ],
+      [
+       -98.5760861,
+       46.0181795
+      ],
+      [
+       -98.5695125,
+       46.018113
+      ],
+      [
+       -98.5694826,
+       46.019697
+      ],
+      [
+       -98.5725898,
+       46.0197302
+      ],
+      [
+       -98.5725958,
+       46.0196055
+      ],
+      [
+       -98.5728891,
+       46.0196055
+      ],
+      [
+       -98.5728951,
+       46.0197302
+      ],
+      [
+       -98.5760322,
+       46.0197593
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_ellendale_nd",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Ellendale ND, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -98.5781699,
+       46.0236226
+      ],
+      [
+       -98.578197,
+       46.0220791
+      ],
+      [
+       -98.5715828,
+       46.0220352
+      ],
+      [
+       -98.5715647,
+       46.0235849
+      ],
+      [
+       -98.5747068,
+       46.0236123
+      ],
+      [
+       -98.5747182,
+       46.0234845
+      ],
+      [
+       -98.5750074,
+       46.0234908
+      ],
+      [
+       -98.5750042,
+       46.0236147
+      ],
+      [
+       -98.5781699,
+       46.0236226
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_coreweave_ellendale_nd",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: CoreWeave Ellendale ND, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

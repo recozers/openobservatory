@@ -8,6 +8,14 @@
 "roof_on": {
 "computer_building": "existing"
 },
+"roof_evidence": {
+"computer_building": {
+"rule": "visible_brightness",
+"first_observation": "2018-02",
+"valid_months": 99,
+"inferred_roof_on": "not_yet"
+}
+},
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,

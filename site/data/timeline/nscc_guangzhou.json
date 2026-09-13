@@ -8,6 +8,14 @@
 "roof_on": {
 "nscc_building_box": "existing"
 },
+"roof_evidence": {
+"nscc_building_box": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 80,
+"inferred_roof_on": "not_yet"
+}
+},
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,

@@ -1,0 +1,221 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_papillion",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.14565003556676,
+       41.135412862257624
+      ],
+      [
+       -96.14565003556676,
+       41.13441579618612
+      ],
+      [
+       -96.14246078719901,
+       41.13441579618612
+      ],
+      [
+       -96.14246078719901,
+       41.135412862257624
+      ],
+      [
+       -96.14565003556676,
+       41.135412862257624
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_papillion",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Papillion, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.1423496241769,
+       41.13543841292784
+      ],
+      [
+       -96.1423496241769,
+       41.13446143851522
+      ],
+      [
+       -96.14058120684562,
+       41.13446143851522
+      ],
+      [
+       -96.14058120684562,
+       41.13543841292784
+      ],
+      [
+       -96.1423496241769,
+       41.13543841292784
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_papillion",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Papillion, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.15750433599565,
+       41.134892592039336
+      ],
+      [
+       -96.15750433599565,
+       41.133893654666366
+      ],
+      [
+       -96.15423956553752,
+       41.133893654666366
+      ],
+      [
+       -96.15423956553752,
+       41.134892592039336
+      ],
+      [
+       -96.15750433599565,
+       41.134892592039336
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_papillion",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Papillion, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.15408044877756,
+       41.13490119959744
+      ],
+      [
+       -96.15408044877756,
+       41.133803465537966
+      ],
+      [
+       -96.1523411811821,
+       41.133803465537966
+      ],
+      [
+       -96.1523411811821,
+       41.13490119959744
+      ],
+      [
+       -96.15408044877756,
+       41.13490119959744
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_papillion",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Papillion, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.15199862036887,
+       41.139120382386494
+      ],
+      [
+       -96.15199862036887,
+       41.13668060503545
+      ],
+      [
+       -96.15074554251709,
+       41.13668060503545
+      ],
+      [
+       -96.15074554251709,
+       41.139120382386494
+      ],
+      [
+       -96.15199862036887,
+       41.139120382386494
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_papillion",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Papillion, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

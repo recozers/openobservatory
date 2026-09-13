@@ -1,0 +1,178 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_microsoft_project_osmium",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -93.7893312,
+       41.49605513937996
+      ],
+      [
+       -93.7893312,
+       41.4955355
+      ],
+      [
+       -93.7846198,
+       41.4955355
+      ],
+      [
+       -93.7846198,
+       41.49605513937996
+      ],
+      [
+       -93.7893312,
+       41.49605513937996
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_project_osmium",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Project Osmium, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -93.78924858541559,
+       41.49813548997574
+      ],
+      [
+       -93.78924858541559,
+       41.49761699250891
+      ],
+      [
+       -93.78462323369465,
+       41.49761699250891
+      ],
+      [
+       -93.78462323369465,
+       41.49813548997574
+      ],
+      [
+       -93.78924858541559,
+       41.49813548997574
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_project_osmium",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Project Osmium, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -93.7893291457383,
+       41.495009158066125
+      ],
+      [
+       -93.7893291457383,
+       41.494489518686166
+      ],
+      [
+       -93.78461774573829,
+       41.494489518686166
+      ],
+      [
+       -93.78461774573829,
+       41.495009158066125
+      ],
+      [
+       -93.7893291457383,
+       41.495009158066125
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_project_osmium",
+    "name": "epoch_building_011",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Project Osmium, feature 11",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -93.7892567130167,
+       41.49710093901015
+      ],
+      [
+       -93.7892567130167,
+       41.496582441543325
+      ],
+      [
+       -93.78463136129575,
+       41.496582441543325
+      ],
+      [
+       -93.78463136129575,
+       41.49710093901015
+      ],
+      [
+       -93.7892567130167,
+       41.49710093901015
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_project_osmium",
+    "name": "epoch_building_012",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Project Osmium, feature 12",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

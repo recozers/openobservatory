@@ -1,0 +1,262 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_microsoft_fairwater_atlanta",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.52440675244532,
+       33.44884464571712
+      ],
+      [
+       -84.52441698085738,
+       33.447931199351615
+      ],
+      [
+       -84.52347280013963,
+       33.447932953594076
+      ],
+      [
+       -84.52347238038273,
+       33.44811526008347
+      ],
+      [
+       -84.52066362489109,
+       33.44811784561132
+      ],
+      [
+       -84.52065643589873,
+       33.448724431795995
+      ],
+      [
+       -84.52086079148806,
+       33.44872668471258
+      ],
+      [
+       -84.52085858744795,
+       33.44858962176423
+      ],
+      [
+       -84.52402680764631,
+       33.44859423204213
+      ],
+      [
+       -84.52402952816276,
+       33.44884583323923
+      ],
+      [
+       -84.52440675244532,
+       33.44884464571712
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_fairwater_atlanta",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Fairwater Atlanta, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.52352964981668,
+       33.463243923173124
+      ],
+      [
+       -84.52506604356596,
+       33.46197787672577
+      ],
+      [
+       -84.52468203976373,
+       33.46164379522615
+      ],
+      [
+       -84.52484278141196,
+       33.46150388963403
+      ],
+      [
+       -84.52433162628077,
+       33.461099277370906
+      ],
+      [
+       -84.52416932629407,
+       33.46123866929601
+      ],
+      [
+       -84.52401437042057,
+       33.46111499053718
+      ],
+      [
+       -84.5223347422014,
+       33.46254246377734
+      ],
+      [
+       -84.52336360453263,
+       33.46339155614014
+      ],
+      [
+       -84.52352964981668,
+       33.463243923173124
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_fairwater_atlanta",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Fairwater Atlanta, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.52436486471447,
+       33.45196622276406
+      ],
+      [
+       -84.5243465573122,
+       33.449957569169925
+      ],
+      [
+       -84.52376987414421,
+       33.449957569169925
+      ],
+      [
+       -84.52376987414421,
+       33.44977426766572
+      ],
+      [
+       -84.52311996136703,
+       33.44977426766572
+      ],
+      [
+       -84.52311996136703,
+       33.4499422940589
+      ],
+      [
+       -84.52286365773695,
+       33.44993465650275
+      ],
+      [
+       -84.52284535033463,
+       33.451958585386194
+      ],
+      [
+       -84.52436486471447,
+       33.45196622276406
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_fairwater_atlanta",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Fairwater Atlanta, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -84.52891658468366,
+       33.4625289088638
+      ],
+      [
+       -84.52884691385565,
+       33.46284535396968
+      ],
+      [
+       -84.52914882077638,
+       33.462890560319096
+      ],
+      [
+       -84.5286456425753,
+       33.46507335314148
+      ],
+      [
+       -84.52847920670851,
+       33.46505397948218
+      ],
+      [
+       -84.52844437129497,
+       33.46518313712765
+      ],
+      [
+       -84.52916817378397,
+       33.4653026077779
+      ],
+      [
+       -84.52960555175865,
+       33.463429805670145
+      ],
+      [
+       -84.52979134063301,
+       33.46345886670167
+      ],
+      [
+       -84.52996551770256,
+       33.46268390252969
+      ],
+      [
+       -84.52891658468366,
+       33.4625289088638
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_microsoft_fairwater_atlanta",
+    "name": "epoch_building_014",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Microsoft Fairwater Atlanta, feature 14",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -8,6 +8,14 @@
 "roof_on": {
 "fairwater_1": "2024-04"
 },
+"roof_evidence": {
+"fairwater_1": {
+"rule": "visible_brightness",
+"first_observation": "2018-02",
+"valid_months": 88,
+"inferred_roof_on": "2024-04"
+}
+},
 "s2_available": true,
 "no2_available": true,
 "no2_baseline": {

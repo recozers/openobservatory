@@ -1,0 +1,140 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_pryor_north",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.32831734179646,
+       36.245875772507205
+      ],
+      [
+       -95.32831563499703,
+       36.244043872500214
+      ],
+      [
+       -95.32304779696472,
+       36.244045736019075
+      ],
+      [
+       -95.32304675863581,
+       36.24409430627959
+      ],
+      [
+       -95.32279748300957,
+       36.244097128035676
+      ],
+      [
+       -95.32279295284822,
+       36.24420978891503
+      ],
+      [
+       -95.32197169374894,
+       36.24420834694567
+      ],
+      [
+       -95.32197168335873,
+       36.24448823232575
+      ],
+      [
+       -95.32092186044898,
+       36.24448791086182
+      ],
+      [
+       -95.32092289968486,
+       36.24536086780145
+      ],
+      [
+       -95.3208894285437,
+       36.24536168580826
+      ],
+      [
+       -95.32088959161086,
+       36.24556228682687
+      ],
+      [
+       -95.32092119193388,
+       36.2455617204856
+      ],
+      [
+       -95.3209232080157,
+       36.245872889579545
+      ],
+      [
+       -95.32831734179646,
+       36.245875772507205
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_pryor_north",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Pryor (North), feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -95.32863710550978,
+       36.24781893261597
+      ],
+      [
+       -95.32863723448635,
+       36.24692094839659
+      ],
+      [
+       -95.32620652287738,
+       36.24692230129682
+      ],
+      [
+       -95.32620254673303,
+       36.24684453959787
+      ],
+      [
+       -95.32580856274834,
+       36.24684422729261
+      ],
+      [
+       -95.3258075392108,
+       36.24781736276252
+      ],
+      [
+       -95.32863710550978,
+       36.24781893261597
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_pryor_north",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Pryor (North), feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

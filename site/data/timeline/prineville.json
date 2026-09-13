@@ -12,6 +12,38 @@
 "hall_H_east": "2019-04",
 "hall_H_west": "2019-07"
 },
+"roof_evidence": {
+"hall_A_original": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "existing"
+},
+"hall_B": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "existing"
+},
+"hall_C": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "existing"
+},
+"hall_H_east": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2019-04"
+},
+"hall_H_west": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2019-07"
+}
+},
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,

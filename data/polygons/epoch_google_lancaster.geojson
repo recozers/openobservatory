@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_lancaster",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.6927495,
+       39.7236422
+      ],
+      [
+       -82.689661,
+       39.7235081
+      ],
+      [
+       -82.6895883,
+       39.7245034
+      ],
+      [
+       -82.6926621,
+       39.7246012
+      ],
+      [
+       -82.6927495,
+       39.7236422
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_lancaster",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Lancaster, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -82.6892492789475,
+       39.72374517734471
+      ],
+      [
+       -82.6861097,
+       39.7235942
+      ],
+      [
+       -82.68604084635852,
+       39.72460002592656
+      ],
+      [
+       -82.6891618789475,
+       39.72470417734471
+      ],
+      [
+       -82.6892492789475,
+       39.72374517734471
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_lancaster",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Lancaster, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

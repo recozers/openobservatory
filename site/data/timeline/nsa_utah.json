@@ -8,6 +8,14 @@
 "roof_on": {
 "technical_strip": "existing"
 },
+"roof_evidence": {
+"technical_strip": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 100,
+"inferred_roof_on": "existing"
+}
+},
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,

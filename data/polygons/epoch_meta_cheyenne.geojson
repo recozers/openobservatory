@@ -1,0 +1,178 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_cheyenne",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -104.823905,
+       41.078577
+      ],
+      [
+       -104.823905,
+       41.075468
+      ],
+      [
+       -104.822692,
+       41.075468
+      ],
+      [
+       -104.822692,
+       41.078577
+      ],
+      [
+       -104.823905,
+       41.078577
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_cheyenne",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Cheyenne, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -104.827143,
+       41.078124
+      ],
+      [
+       -104.827143,
+       41.075508
+      ],
+      [
+       -104.825959,
+       41.075508
+      ],
+      [
+       -104.825959,
+       41.078124
+      ],
+      [
+       -104.827143,
+       41.078124
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_cheyenne",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Cheyenne, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -104.82134,
+       41.08251
+      ],
+      [
+       -104.82134,
+       41.079976
+      ],
+      [
+       -104.820718,
+       41.079976
+      ],
+      [
+       -104.820718,
+       41.08251
+      ],
+      [
+       -104.82134,
+       41.08251
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_cheyenne",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Cheyenne, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -104.820403,
+       41.082524
+      ],
+      [
+       -104.820403,
+       41.079968
+      ],
+      [
+       -104.819749,
+       41.079968
+      ],
+      [
+       -104.819749,
+       41.082524
+      ],
+      [
+       -104.820403,
+       41.082524
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_cheyenne",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Cheyenne, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_omaha",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.086407,
+       41.338783
+      ],
+      [
+       -96.085724,
+       41.338029
+      ],
+      [
+       -96.083438,
+       41.339244
+      ],
+      [
+       -96.083387,
+       41.3392
+      ],
+      [
+       -96.083003,
+       41.339398
+      ],
+      [
+       -96.083769,
+       41.340207
+      ],
+      [
+       -96.086407,
+       41.338783
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_omaha",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Omaha, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.089389,
+       41.341448
+      ],
+      [
+       -96.088586,
+       41.340757
+      ],
+      [
+       -96.086566,
+       41.342219
+      ],
+      [
+       -96.086458,
+       41.342179
+      ],
+      [
+       -96.086152,
+       41.342402
+      ],
+      [
+       -96.087071,
+       41.343127
+      ],
+      [
+       -96.089389,
+       41.341448
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_omaha",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Omaha, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -96.094765,
+       41.345951
+      ],
+      [
+       -96.094772,
+       41.346057
+      ],
+      [
+       -96.095313,
+       41.346057
+      ],
+      [
+       -96.095306,
+       41.345049
+      ],
+      [
+       -96.09194,
+       41.345033
+      ],
+      [
+       -96.091947,
+       41.345957
+      ],
+      [
+       -96.094765,
+       41.345951
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_omaha",
+    "name": "epoch_building_011",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Omaha, feature 11",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -19,6 +19,80 @@
 "phase2_south_block5": "2025-06",
 "phase2_south_block6": "2025-07"
 },
+"roof_evidence": {
+"phase1_block1": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-01"
+},
+"phase1_block2": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2024-07"
+},
+"phase2_mid_block1": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-05"
+},
+"phase2_mid_block2": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-03"
+},
+"phase2_mid_block3": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-04"
+},
+"phase2_mid_block4": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-06"
+},
+"phase2_south_block1": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-05"
+},
+"phase2_south_block2": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-04"
+},
+"phase2_south_block3": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-05"
+},
+"phase2_south_block4": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-10"
+},
+"phase2_south_block5": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-06"
+},
+"phase2_south_block6": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 105,
+"inferred_roof_on": "2025-07"
+}
+},
 "s2_available": true,
 "no2_available": true,
 "no2_baseline": {

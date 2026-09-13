@@ -12,6 +12,38 @@
 "NAO_3": "2020-10",
 "NAO_5_NAO_6": "2021-05"
 },
+"roof_evidence": {
+"LCO_1": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 95,
+"inferred_roof_on": "2024-05"
+},
+"LCO_2": {
+"rule": "visible_brightness",
+"first_observation": "2018-03",
+"valid_months": 95,
+"inferred_roof_on": "2024-05"
+},
+"NAO_1_NAO_2": {
+"rule": "visible_brightness",
+"first_observation": "2018-03",
+"valid_months": 93,
+"inferred_roof_on": "existing"
+},
+"NAO_3": {
+"rule": "visible_brightness",
+"first_observation": "2018-03",
+"valid_months": 92,
+"inferred_roof_on": "2020-10"
+},
+"NAO_5_NAO_6": {
+"rule": "visible_brightness",
+"first_observation": "2018-01",
+"valid_months": 95,
+"inferred_roof_on": "2021-05"
+}
+},
 "s2_available": true,
 "no2_available": true,
 "no2_baseline": {
