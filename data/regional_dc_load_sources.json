@@ -1,0 +1,87 @@
+{
+  "use": "context_only",
+  "sources": [
+    {
+      "url": "https://www.dominionenergy.com/-/media/content/about/our-company/irp/pdfs/2025-integrated-resource-plan-update.pdf",
+      "retrieved_on": "2026-09-13",
+      "method": "direct_http_download",
+      "source_body_sha256": "eae4045aa76ea4f4b35e151ef72339622cad6deee33737a7321a13a8c8746979",
+      "source_body_bytes": 8234441,
+      "locators": [
+        "Figure 2.1.15; printed p19 / PDF p27; definitions p18"
+      ]
+    },
+    {
+      "url": "https://www.aepohio.com/company/news/view?releaseID=10753",
+      "retrieved_on": "2026-09-13",
+      "method": "direct_http_download",
+      "source_body_sha256": "43bac9293380f723e335b9fa4135f862686a50b9fdde98dd2e6100004c4e23d8",
+      "source_body_bytes": 185983,
+      "locators": [
+        "AEP Ohio Updates PUCO on Data Center Load; contracted totals paragraph"
+      ]
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2025/04/08/ERCOT-2025-Long-Term-Load-Forecast-Report.pdf",
+      "retrieved_on": "2026-09-13",
+      "method": "web_text_retrieval; direct HTTP download blocked/challenged",
+      "source_body_sha256": null,
+      "source_body_bytes": null,
+      "locators": [
+        "Large Flexible Forecast; PDF/printed p7"
+      ]
+    },
+    {
+      "url": "https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/",
+      "retrieved_on": "2026-09-13",
+      "method": "web_text_retrieval; direct HTTP download blocked/challenged",
+      "source_body_sha256": null,
+      "source_body_bytes": null,
+      "locators": [
+        "2025 Year in Review; opening section on late-2025 large-load evaluation"
+      ]
+    },
+    {
+      "url": "https://cms.eirgrid.ie/sites/default/files/publications/AIRAA-2026-2035_Ireland.pdf",
+      "retrieved_on": "2026-09-13",
+      "method": "direct_http_download",
+      "source_body_sha256": "0a3cddcf774462d05afa47ef2bb5aab928004aa721b6300bbed03f8c9843e5bf",
+      "source_body_bytes": 9506770,
+      "locators": [
+        "Table 4.2 / Figure 4.1; printed p50 / PDF p52",
+        "Table 4.2; printed p50 / PDF p52"
+      ]
+    },
+    {
+      "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "retrieved_on": "2026-09-13",
+      "method": "direct_http_download",
+      "source_body_sha256": "787bffae9c2b1f2bbc523d59ac5cc2940656120372e379b9b61905f1e06a48e2",
+      "source_body_bytes": 88705,
+      "locators": [
+        "Table 1; Data Centre column (2025 release vintage)"
+      ]
+    },
+    {
+      "url": "https://www.ema.gov.sg/resources/singapore-energy-statistics/chapter3",
+      "retrieved_on": "2026-09-13",
+      "method": "web_text_retrieval; direct HTTP download blocked/challenged",
+      "source_body_sha256": null,
+      "source_body_bytes": null,
+      "locators": [
+        "Electricity Consumption; opening sentence / 2024 overall chart"
+      ]
+    },
+    {
+      "url": "https://www.imda.gov.sg/-/media/imda/files/how-we-can-help/green-dc-roadmap/green-dc-roadmap.pdf",
+      "retrieved_on": "2026-09-13",
+      "method": "direct_http_download",
+      "source_body_sha256": "12265cbedd54f419e1f62bafe87548b1100e1b415160cc9aa3d97906dc25746c",
+      "source_body_bytes": 6095716,
+      "locators": [
+        "Executive Summary p4; Pioneering the Sustainable Growth of Data Centres p6",
+        "Executive Summary p4; roadmap p7"
+      ]
+    }
+  ]
+}

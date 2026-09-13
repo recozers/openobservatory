@@ -42,6 +42,10 @@ docs/                MVP definition and results log, utilisation model, Astra ta
 
 ## Running it
 
+Regional utility/ISO figures are separate context, with metric, scope and vintage retained. See
+[regional load notes](docs/regional_dc_load_notes.md) and `data/regional_dc_load.csv`.
+`python tools/regional_load.py` audits compatible annual disclosures against regional context without changing site estimates.
+
 ```bash
 python3.11 -m venv venv && . venv/bin/activate && pip install -r requirements.txt earthengine-api tabulate openpyxl
 cp .env.example .env   # EE_PROJECT (Google Earth Engine), EARTHDATA_TOKEN (NASA), EPA_API_KEY (api.data.gov)
