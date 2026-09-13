@@ -36,15 +36,19 @@ def main():
     rows = []
     for i, b in scan.iterrows():
         tag = out / f"blob{i + 1:02d}"
-        cmd = [sys.executable, "tools/s1_timeline.py", "--chip", str(b.lat), str(b.lon), "--candidates", "--half", str(args.half),
-               "--early", str(args.early), "--late", str(args.late), "--chips", "4", "--out", str(tag)]
-        r = subprocess.run(cmd, capture_output=True, text=True)
         cf = Path(f"{tag}_candidates.csv")
-        if r.returncode != 0 or not cf.exists():
-            print(f"  blob {i + 1} at {b.lat},{b.lon}: radar stage failed: {r.stderr.strip()[-120:]}", file=sys.stderr)
-            rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b["early"], lit_late=b["late"], lit_diff=b["diff"], lit_px=b["n_px"], largest_ha=None, n_big=None, cand_lat=None, cand_lon=None))
-            continue
-        c = pd.read_csv(cf)
+        if not cf.exists():  # reuse a finished blob on relaunch
+            cmd = [sys.executable, "tools/s1_timeline.py", "--chip", str(b.lat), str(b.lon), "--candidates", "--half", str(args.half),
+                   "--early", str(args.early), "--late", str(args.late), "--chips", "4", "--out", str(tag)]
+            r = subprocess.run(cmd, capture_output=True, text=True)
+            if r.returncode != 0 or not cf.exists():
+                print(f"  blob {i + 1} at {b.lat},{b.lon}: radar stage failed: {r.stderr.strip()[-120:]}", file=sys.stderr)
+                rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b["early"], lit_late=b["late"], lit_diff=b["diff"], lit_px=b["n_px"], largest_ha=None, n_big=None, cand_lat=None, cand_lon=None))
+                continue
+        try:
+            c = pd.read_csv(cf)
+        except pd.errors.EmptyDataError:  # written before the columns fix: no candidates
+            c = pd.DataFrame(columns=["rank", "lat", "lon", "area_ha", "early_db", "late_db", "rise_db"])
         big = c[c.area_ha >= args.min_area]
         top = c.iloc[0] if len(c) else None
         rows.append(dict(blob=i + 1, lat=b.lat, lon=b.lon, lit_early=b["early"], lit_late=b["late"], lit_diff=b["diff"], lit_px=b["n_px"],

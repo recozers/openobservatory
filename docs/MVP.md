@@ -194,3 +194,17 @@ disclosure or filing calibrates them. The site's "running" line says "operator r
 for these sites, confidence high. Chinese listed operators (VNET, GDS, Chindata, Sinnet, the three telcos) publish
 company-wide capacity and utilisation only; the per-campus figures that exist are opening press releases and park-committee
 statements, which stay outside the evidence (`docs/cn_operator_disclosures_notes.md`).
+
+## National scan, 13 Sep 2026 (late): what lights-then-radar finds across the Chinese hub provinces
+
+`tools/ntl_scan_tiles.py` over 24–43 N, 102–123 E (110 tiles of 2°, July–September 2026 against the same months of 2022)
+returns 4,026 newly lit blobs; the brightest are ports, coal-chemical and industrial parks of 15–100 km², and the hub
+campuses rank in the hundreds to thousands because their parks were already lit. A campus-like band (2–30 pixels, 15–130
+nW/cm²/sr now, dark before) keeps 3,212. `tools/lights_to_radar.py` then ran the radar candidate scan on the 40 brightest
+band blobs: 35 contain a new structure of at least 5 ha and 27 one of at least 20 ha, and the chips are factories,
+petrochemical sites and logistics parks. Conclusion: night lights are a "new large lit site" alert, not a data-centre
+detector; the discriminating step is hall morphology on the radar candidates (long parallel white halls, cooling yards,
+generator rows), which the Horinger and Ulanqab boxes show the radar scan can serve up. Inside a hub box the campuses rank
+first without any lights stage. Next: a morphology classifier trained on the candidate chips (positives from Abilene,
+Rainier, Prometheus, Ulanqab and Horinger; negatives from the 40 national blobs and the photovoltaic and logistics
+candidates), and Astra's A8/A9 to turn the found campuses into inventory entries.
