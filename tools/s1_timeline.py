@@ -25,6 +25,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from dcheat import geom as G  # noqa: E402
 
 
+def getinfo_retry(obj, tries=6, wait=60):
+    """Earth Engine quota errors ("Too many concurrent aggregations") clear after a minute; retry those, raise the rest."""
+    import time
+    for i in range(tries):
+        try:
+            return obj.getInfo()
+        except Exception as e:
+            if i == tries - 1 or ("concurrent" not in str(e) and "quota" not in str(e).lower()):
+                raise
+            print(f"  retry {i + 1}/{tries} after: {str(e)[:80]}", file=sys.stderr)
+            time.sleep(wait)
+
+
 def s1(aoi, start, end):
     import ee
     return (ee.ImageCollection("COPERNICUS/S1_GRD").filterBounds(aoi).filterDate(start, end)
@@ -34,7 +47,7 @@ def s1(aoi, start, end):
 
 
 def dominant_orbit(col):
-    h = col.aggregate_histogram("relativeOrbitNumber_start").getInfo()
+    h = getinfo_retry(col.aggregate_histogram("relativeOrbitNumber_start"))
     if not h:
         sys.exit("no Sentinel-1 scenes")
     orb = int(float(max(h, key=h.get)))
@@ -64,7 +77,7 @@ def timeline(args):
     for y in range(int(args.start[:4]), int(end[:4]) + 1):
         col = s1(fc.geometry(), max(args.start, f"{y}-01-01"), min(end, f"{y}-12-31")).filter(ee.Filter.eq("relativeOrbitNumber_start", orb))
         col = col.map(lambda img: img.select(["VV", "VH"]).set("d", img.date().format("YYYY-MM-dd")))
-        feats = col.map(lambda img: img.reduceRegions(fc, ee.Reducer.mean(), 10).map(lambda f: f.set("d", img.get("d")))).flatten().getInfo()["features"]
+        feats = getinfo_retry(col.map(lambda img: img.reduceRegions(fc, ee.Reducer.mean(), 10).map(lambda f: f.set("d", img.get("d")))).flatten())["features"]
         rows += [dict(name=f["properties"]["name"], d=f["properties"]["d"], VV=f["properties"].get("VV"), VH=f["properties"].get("VH")) for f in feats]
         print(f"  {y}: {len(feats)} rows", file=sys.stderr)
     raw = pd.DataFrame(rows)
@@ -131,7 +144,7 @@ def candidates(args):
     blobs = blobs.filter(ee.Filter.gte("count", args.min_px))
     stats = ee.Image.cat([early.rename("early"), late.rename("late"), diff.rename("diff")]).reduceRegions(blobs, ee.Reducer.mean(), 20)
     stats = stats.map(lambda f: f.set("lat", f.geometry().centroid(1).coordinates().get(1), "lon", f.geometry().centroid(1).coordinates().get(0)))
-    feats = stats.sort("count", False).limit(args.limit).getInfo()["features"]
+    feats = getinfo_retry(stats.sort("count", False).limit(args.limit))["features"]
     rows = [dict(rank=i + 1, lat=round(f["properties"]["lat"], 5), lon=round(f["properties"]["lon"], 5), area_ha=round(0.04 * f["properties"]["count"], 1),
                  early_db=round(f["properties"]["early"], 1), late_db=round(f["properties"]["late"], 1), rise_db=round(f["properties"]["diff"], 1))
             for i, f in enumerate(feats)]
@@ -154,11 +167,18 @@ def candidates(args):
             return img.updateMask(scl.neq(3).And(scl.neq(8)).And(scl.neq(9)).And(scl.neq(10)).And(scl.neq(0)))
         return (ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED").filterBounds(region).filterDate(f"{y}-01-01", f"{y}-12-31")
                 .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", 80)).map(mask_).median().select(["B4", "B3", "B2"]).multiply(1e-4))
+    import time
     for r in rows[:args.chips]:
         reg = ee.Geometry.Point([r["lon"], r["lat"]]).buffer(600).bounds()
-        url = s2med(args.late, reg).visualize(min=0, max=0.3).getThumbURL({"region": reg, "dimensions": 400, "format": "png"})
         p = f"{args.out}_cand{r['rank']:02d}.png"
-        open(p, "wb").write(requests.get(url, timeout=300).content)
+        for attempt in range(3):  # thumbnail downloads are the fragile step; a missing chip must not lose the run
+            try:
+                url = s2med(args.late, reg).visualize(min=0, max=0.3).getThumbURL({"region": reg, "dimensions": 400, "format": "png"})
+                open(p, "wb").write(requests.get(url, timeout=120).content)
+                break
+            except Exception as e:
+                print(f"  chip {r['rank']} attempt {attempt + 1} failed: {str(e)[:80]}", file=sys.stderr)
+                time.sleep(20)
     print(f"wrote {min(len(rows), args.chips)} candidate chips to {args.out}_candNN.png", file=sys.stderr)
 
 

@@ -21,6 +21,9 @@ KNOWN = {
     "ningxia_gansu": [("zhongwei_hub", 37.6, 105.2), ("qingyang_hub", 35.73, 107.64)],
     "guizhou": [("guian_hub", 26.4, 106.42)],
     "chongqing": [("chongqing_hub", 29.85, 106.62)],
+    "china_hubs": [("cn_ulanqab_park", 41.055, 113.16), ("cn_horinger_cloud_valley", 40.545, 111.805), ("cn_zhangbei_alibaba", 41.20, 114.73),
+                   ("zhongwei_hub", 37.6, 105.2), ("qingyang_hub", 35.73, 107.64), ("guian_hub", 26.4, 106.42), ("chongqing_hub", 29.85, 106.62),
+                   ("nscc_wuxi", 31.54861, 120.24804), ("nscc_guangzhou", 23.07306, 113.38861)],
 }
 
 

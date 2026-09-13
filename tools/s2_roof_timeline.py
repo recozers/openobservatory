@@ -62,13 +62,18 @@ def main():
         ok = scl.neq(0).And(scl.neq(3)).And(scl.neq(8)).And(scl.neq(9)).And(scl.neq(10)).And(scl.neq(11))
         return img.select(["B2", "B3", "B4"]).multiply(1e-4).reduce(ee.Reducer.mean()).rename("bright").updateMask(ok).set("d", img.date().format("YYYY-MM-dd"))
     rows = []
-    for y in range(int(args.start[:4]), int(end[:4]) + 1):
+    # Earth Engine returns at most 5000 features per query: chunk the date range so polygons x images stays under it
+    step = 12 if len(polys) <= 12 else (3 if len(polys) <= 40 else 1)
+    periods = pd.period_range(args.start[:7], end[:7], freq="M")
+    for k in range(0, len(periods), step):
+        p0, p1 = periods[k], periods[min(k + step - 1, len(periods) - 1)]
+        d0, d1 = max(args.start, p0.strftime("%Y-%m-01")), min(end, (p1 + 1).strftime("%Y-%m-01"))
         s2 = (ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED").filterBounds(fc.geometry())
-              .filterDate(max(args.start, f"{y}-01-01"), min(end, f"{y}-12-31")).filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", args.max_cloud)).map(clean))
+              .filterDate(d0, d1).filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", args.max_cloud)).map(clean))
         feats = s2.map(lambda img: img.reduceRegions(fc, ee.Reducer.mean().combine(ee.Reducer.count(), sharedInputs=True), 10)
                        .map(lambda f: f.set("d", img.get("d")))).flatten().getInfo()["features"]
         rows += [dict(name=f["properties"]["name"], d=f["properties"]["d"], bright=f["properties"].get("mean"), n=f["properties"].get("count", 0)) for f in feats]
-        print(f"  {y}: {len(feats)} polygon-images", file=sys.stderr)
+        print(f"  {p0}..{p1}: {len(feats)} polygon-images", file=sys.stderr)
     df = pd.DataFrame(rows).dropna(subset=["bright"])
     df = df[df.n >= args.min_px]
     df["ym"] = df.d.str[:7]
