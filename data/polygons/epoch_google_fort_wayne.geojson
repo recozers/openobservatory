@@ -1,0 +1,183 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_google_fort_wayne",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -85.04388494357227,
+       41.03307140103391
+      ],
+      [
+       -85.04372174574104,
+       41.02878016750009
+      ],
+      [
+       -85.0428824426057,
+       41.02880654888881
+      ],
+      [
+       -85.0429640415217,
+       41.0298705894113
+      ],
+      [
+       -85.04254438995441,
+       41.0298705894113
+      ],
+      [
+       -85.04247444802652,
+       41.02870981707909
+      ],
+      [
+       -85.04167011585551,
+       41.02872740469152
+      ],
+      [
+       -85.04184497067483,
+       41.03313295357859
+      ],
+      [
+       -85.04266095983395,
+       41.03310657392339
+      ],
+      [
+       -85.04256770392986,
+       41.031207210990004
+      ],
+      [
+       -85.04304564043768,
+       41.031198417515554
+      ],
+      [
+       -85.04309226838934,
+       41.03308019425819
+      ],
+      [
+       -85.04388494357227,
+       41.03307140103391
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_fort_wayne",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Fort Wayne, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -85.05092050724156,
+       41.03119595808684
+      ],
+      [
+       -85.05086676086347,
+       41.03031557467469
+      ],
+      [
+       -85.05034465319143,
+       41.03031557467469
+      ],
+      [
+       -85.05032929708327,
+       41.03015918954736
+      ],
+      [
+       -85.04903170595692,
+       41.03019394183025
+      ],
+      [
+       -85.04902402790334,
+       41.03035611890627
+      ],
+      [
+       -85.04768036845304,
+       41.03037928702682
+      ],
+      [
+       -85.04771108066885,
+       41.03126546153902
+      ],
+      [
+       -85.05092050724156,
+       41.03119595808684
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_fort_wayne",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Fort Wayne, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -85.05604344197948,
+       41.03655307087942
+      ],
+      [
+       -85.0560098143602,
+       41.03566528966178
+      ],
+      [
+       -85.05278156290082,
+       41.035746458727715
+      ],
+      [
+       -85.05282191604446,
+       41.03665960382037
+      ],
+      [
+       -85.05604344197948,
+       41.03655307087942
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_google_fort_wayne",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Google Fort Wayne, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

@@ -1,0 +1,436 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_vnet_bayin_ulanqab",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.316282,
+       40.98133
+      ],
+      [
+       113.315825,
+       40.980119
+      ],
+      [
+       113.317348,
+       40.979791
+      ],
+      [
+       113.317793,
+       40.981011
+      ],
+      [
+       113.316282,
+       40.98133
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.315419,
+       40.979194
+      ],
+      [
+       113.317027,
+       40.978843
+      ],
+      [
+       113.31728,
+       40.979525
+      ],
+      [
+       113.315689,
+       40.979862
+      ],
+      [
+       113.315419,
+       40.979194
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": "3",
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.31538,
+       40.979084
+      ],
+      [
+       113.315124,
+       40.978412
+      ],
+      [
+       113.316701,
+       40.978061
+      ],
+      [
+       113.316974,
+       40.978741
+      ],
+      [
+       113.31538,
+       40.979084
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": "4",
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.313468,
+       40.978783
+      ],
+      [
+       113.315025,
+       40.978449
+      ],
+      [
+       113.315516,
+       40.979681
+      ],
+      [
+       113.313922,
+       40.980019
+      ],
+      [
+       113.313468,
+       40.978783
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_005",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 5",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": "5",
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.312668,
+       40.981697
+      ],
+      [
+       113.312246,
+       40.980549
+      ],
+      [
+       113.313599,
+       40.980251
+      ],
+      [
+       113.314041,
+       40.981415
+      ],
+      [
+       113.312668,
+       40.981697
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_006",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 6",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 6,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.312123,
+       40.98033
+      ],
+      [
+       113.311665,
+       40.979137
+      ],
+      [
+       113.313076,
+       40.978844
+      ],
+      [
+       113.313526,
+       40.980032
+      ],
+      [
+       113.312123,
+       40.98033
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": "8",
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.311167,
+       40.98205
+      ],
+      [
+       113.310737,
+       40.980864
+      ],
+      [
+       113.312137,
+       40.980551
+      ],
+      [
+       113.312591,
+       40.981737
+      ],
+      [
+       113.311167,
+       40.98205
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 7,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.310604,
+       40.980666
+      ],
+      [
+       113.310199,
+       40.979441
+      ],
+      [
+       113.311606,
+       40.979169
+      ],
+      [
+       113.312043,
+       40.980358
+      ],
+      [
+       113.310604,
+       40.980666
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 9,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.317364,
+       40.98379
+      ],
+      [
+       113.316866,
+       40.982407
+      ],
+      [
+       113.318268,
+       40.982115
+      ],
+      [
+       113.318777,
+       40.983485
+      ],
+      [
+       113.317364,
+       40.98379
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_010",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 10",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 10,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       113.31588,
+       40.984122
+      ],
+      [
+       113.315369,
+       40.982721
+      ],
+      [
+       113.31677,
+       40.982416
+      ],
+      [
+       113.317278,
+       40.983829
+      ],
+      [
+       113.31588,
+       40.984122
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_vnet_bayin_ulanqab",
+    "name": "epoch_building_011",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: VNET Bayin Ulanqab, feature 11",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 11,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

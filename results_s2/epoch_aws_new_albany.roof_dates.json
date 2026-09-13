@@ -1,0 +1,80 @@
+{
+  "start": "2018-01-01",
+  "end_exclusive": "2026-09-14",
+  "rule": "visible_brightness",
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "threshold": 0.3,
+  "polygons_sha256": "413c7339c773cda3da425ddd86d7b7f4b8d064735587e3e19bc1416ac98240db",
+  "halls": {
+    "epoch_building_000": {
+      "roof_on": "2025-06",
+      "first_observation": "2018-03",
+      "valid_months": 94
+    },
+    "epoch_building_002": {
+      "roof_on": "2025-11",
+      "first_observation": "2018-03",
+      "valid_months": 93
+    },
+    "epoch_building_004": {
+      "roof_on": "2026-01",
+      "first_observation": "2018-03",
+      "valid_months": 94
+    },
+    "epoch_building_006": {
+      "roof_on": "2025-08",
+      "first_observation": "2018-03",
+      "valid_months": 92
+    },
+    "epoch_building_007": {
+      "roof_on": "2024-03",
+      "first_observation": "2018-03",
+      "valid_months": 92
+    },
+    "epoch_building_009": {
+      "roof_on": "2024-02",
+      "first_observation": "2018-03",
+      "valid_months": 92
+    },
+    "epoch_building_011": {
+      "roof_on": "2023-04",
+      "first_observation": "2018-03",
+      "valid_months": 94
+    },
+    "epoch_building_013": {
+      "roof_on": "2022-10",
+      "first_observation": "2018-03",
+      "valid_months": 94
+    },
+    "epoch_building_015": {
+      "roof_on": "2024-04",
+      "first_observation": "2018-03",
+      "valid_months": 94
+    },
+    "epoch_building_020": {
+      "roof_on": "2024-06",
+      "first_observation": "2018-03",
+      "valid_months": 92
+    },
+    "epoch_building_022": {
+      "roof_on": "2024-06",
+      "first_observation": "2018-01",
+      "valid_months": 93
+    },
+    "epoch_building_025": {
+      "roof_on": "2024-05",
+      "first_observation": "2018-03",
+      "valid_months": 91
+    },
+    "epoch_building_027": {
+      "roof_on": "2023-11",
+      "first_observation": "2018-03",
+      "valid_months": 94
+    },
+    "epoch_building_029": {
+      "roof_on": "2024-05",
+      "first_observation": "2018-03",
+      "valid_months": 93
+    }
+  }
+}

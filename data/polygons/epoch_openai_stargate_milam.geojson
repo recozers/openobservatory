@@ -1,0 +1,53 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_openai_stargate_milam",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.012092,
+       30.996701
+      ],
+      [
+       -97.012105,
+       30.996014
+      ],
+      [
+       -97.0121,
+       30.99601
+      ],
+      [
+       -97.008598,
+       30.995915
+      ],
+      [
+       -97.008568,
+       30.99661
+      ],
+      [
+       -97.012092,
+       30.996701
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_openai_stargate_milam",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: OpenAI Stargate Milam, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

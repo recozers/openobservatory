@@ -1,0 +1,53 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_anthropic_barber_lake",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -100.924989,
+       32.3973
+      ],
+      [
+       -100.924665,
+       32.396191
+      ],
+      [
+       -100.924684,
+       32.396175
+      ],
+      [
+       -100.918384,
+       32.397348
+      ],
+      [
+       -100.918727,
+       32.398441
+      ],
+      [
+       -100.924989,
+       32.3973
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_anthropic_barber_lake",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Anthropic Barber Lake, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

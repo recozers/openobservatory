@@ -1,0 +1,255 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_qts_richmond_2",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.24095878991756,
+       37.489200702370056
+      ],
+      [
+       -77.23861542272967,
+       37.487926682557614
+      ],
+      [
+       -77.23923526829286,
+       37.48716990099902
+      ],
+      [
+       -77.24156199573697,
+       37.48842806629686
+      ],
+      [
+       -77.24095878991756,
+       37.489200702370056
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_2",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 0.00 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 2, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.23948119151979,
+       37.48683546207087
+      ],
+      [
+       -77.24012985243209,
+       37.48606438259134
+      ],
+      [
+       -77.24250041130621,
+       37.48738524659613
+      ],
+      [
+       -77.24184802394367,
+       37.48816035247971
+      ],
+      [
+       -77.23945610262096,
+       37.486845708681344
+      ],
+      [
+       -77.23948119151979,
+       37.48683546207087
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_2",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 2.49 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 2, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -77.24111543963144,
+        37.48499704370515
+       ],
+       [
+        -77.24346030645737,
+        37.48630301141806
+       ],
+       [
+        -77.24278675230232,
+        37.487109153480425
+       ],
+       [
+        -77.2404309477113,
+        37.48581545120018
+       ],
+       [
+        -77.24111543963144,
+        37.48499704370515
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -77.2427832666931,
+        37.48711332522548
+       ],
+       [
+        -77.24278675230232,
+        37.487109153480425
+       ],
+       [
+        -77.242786992771,
+        37.48710928553504
+       ],
+       [
+        -77.2427832666931,
+        37.48711332522548
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_2",
+    "name": "epoch_building_002",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 0.56 m). Source self-intersection repaired with Shapely make_valid; non-area remnants discarded.",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 2, feature 2",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.24371969890707,
+       37.485954294037484
+      ],
+      [
+       -77.24130869696081,
+       37.48464683658126
+      ],
+      [
+       -77.2419669943498,
+       37.48382873018859
+      ],
+      [
+       -77.24440934045242,
+       37.48515440546775
+      ],
+      [
+       -77.24372985490935,
+       37.48596564854992
+      ],
+      [
+       -77.24371969890707,
+       37.485954294037484
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_2",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 1.55 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 2, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 4,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -77.24226981142905,
+       37.48364618807065
+      ],
+      [
+       -77.24291822469233,
+       37.482873911309625
+      ],
+      [
+       -77.24527505949399,
+       37.4841582273781
+      ],
+      [
+       -77.2446358891132,
+       37.48493585879639
+      ],
+      [
+       -77.2422538037804,
+       37.483648154521816
+      ],
+      [
+       -77.24226981142905,
+       37.48364618807065
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_qts_richmond_2",
+    "name": "epoch_building_004",
+    "ptype": "hall",
+    "confidence": "low",
+    "geometry_repair": "Source LineString outline closed (endpoint gap 1.43 m).",
+    "digitised_from": "Epoch AI public map annotation: QTS Richmond 2, feature 4",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 5,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

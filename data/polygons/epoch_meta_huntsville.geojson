@@ -1,0 +1,140 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_huntsville",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.62059,
+       34.85809
+      ],
+      [
+       -86.623399,
+       34.858076
+      ],
+      [
+       -86.623396,
+       34.858032
+      ],
+      [
+       -86.623746,
+       34.858032
+      ],
+      [
+       -86.623743,
+       34.857234
+      ],
+      [
+       -86.62338,
+       34.857237
+      ],
+      [
+       -86.623383,
+       34.857192
+      ],
+      [
+       -86.620574,
+       34.857212
+      ],
+      [
+       -86.62059,
+       34.85809
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_huntsville",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Huntsville, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.627942,
+       34.851751
+      ],
+      [
+       -86.628096,
+       34.850976
+      ],
+      [
+       -86.62764,
+       34.850911
+      ],
+      [
+       -86.627658,
+       34.85082
+      ],
+      [
+       -86.62716,
+       34.850753
+      ],
+      [
+       -86.627149,
+       34.850803
+      ],
+      [
+       -86.62445,
+       34.850436
+      ],
+      [
+       -86.624268,
+       34.851289
+      ],
+      [
+       -86.626975,
+       34.851665
+      ],
+      [
+       -86.626964,
+       34.851718
+      ],
+      [
+       -86.62747,
+       34.851783
+      ],
+      [
+       -86.62749,
+       34.851688
+      ],
+      [
+       -86.627942,
+       34.851751
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_huntsville",
+    "name": "epoch_building_009",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Huntsville, feature 9",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

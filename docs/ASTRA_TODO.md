@@ -60,9 +60,17 @@ have no Earth Engine access, do the tasks marked [no-EE] first. Long Earth Engin
 ## Tasks, in priority order
 
 ### A1. Ingest the Epoch AI site list as the inventory backbone  [no-EE for steps 1–3]
+Status: done (PR #2; 78 new sites with polygons and S2, 71 with accepted event dates)
+
 Goal: the 86 sites in `data/epoch/data_centers.csv` (and their `data_center_timelines.csv` rows, which carry dated IT MW and
 buildings-operational counts) become proper inventory entries.
-Steps: (1) geocode each address (Nominatim, 1 request/s, `User-Agent` set) and record `coords_quality=geocoded_address`;
+Update (Astra, 2026-09-13): Epoch's public map now exposes coordinates and explicit Building annotations for 85/86 entries.
+Use the saved, attributed `data/epoch/map_annotations.json` as the polygon source instead of assuming nearby OSM buildings are halls.
+Retain cached address geocoding for comparison; use `epoch_published` when there is no reliable address match.
+Annotations can include planned buildings: missing brightness detections remain unknown, not existing roofs.
+The three provisional Chinese parks are distinct from the published Epoch coordinates; their unsupported Epoch MW labels are withdrawn.
+
+Original fallback steps: (1) geocode each address (Nominatim, 1 request/s, `User-Agent` set) and record `coords_quality=geocoded_address`;
 (2) for each site, fetch OpenStreetMap building footprints within 1 km (Overpass, `out geom`) and keep buildings ≥ 0.7 ha as
 hall polygons (`confidence=medium`, `digitised_from=OSM way <id>`); where OSM has nothing, render a Sentinel-2 chip with
 `tools/chip.py` and digitise by hand (`confidence=low`); (3) convert Epoch timeline rows into `capacity_timeline.csv` rows
@@ -107,6 +115,8 @@ and (c) have no other large emitter within 15 km. Run `tools/no2_flux.py` on eac
 low-stack vs tall-stack factors in `docs/LOG.md`.
 
 ### A6. Monthly refresh workflow
+Status: done (PR #1; workflow_dispatch dry-run green)
+
 Write `.github/workflows/refresh.yml` (manual trigger plus monthly cron) that installs the environment, runs
 `tools/s2_roof_timeline.py` for every site with polygons, `tools/no2_flux_quarterly.py` for sites with flux files, then the three
 build scripts, and commits `site/data/*` to `main`. Secrets `EE_SERVICE_ACCOUNT_JSON`, `EARTHDATA_TOKEN`, `EPA_API_KEY` are to be

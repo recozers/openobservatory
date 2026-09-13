@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_los_lunas",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -106.787092,
+       34.82548
+      ],
+      [
+       -106.787092,
+       34.824833
+      ],
+      [
+       -106.785778,
+       34.824848
+      ],
+      [
+       -106.785787,
+       34.824245
+      ],
+      [
+       -106.785099,
+       34.824275
+      ],
+      [
+       -106.785117,
+       34.82484
+      ],
+      [
+       -106.783794,
+       34.824848
+      ],
+      [
+       -106.783794,
+       34.82548
+      ],
+      [
+       -106.785108,
+       34.825465
+      ],
+      [
+       -106.785099,
+       34.825778
+      ],
+      [
+       -106.785824,
+       34.825778
+      ],
+      [
+       -106.785806,
+       34.82548
+      ],
+      [
+       -106.787092,
+       34.82548
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_los_lunas",
+    "name": "epoch_building_000",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Los Lunas, feature 0",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

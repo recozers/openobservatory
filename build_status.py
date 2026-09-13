@@ -41,23 +41,28 @@ def main():
         roof_on = (t or {}).get("roof_on", {})
         halls_total = last["halls_total"] if last else 0
         # ---- built
-        dated = sorted(v for v in roof_on.values() if v not in ("existing", "not_yet", None))
+        dated = sorted(v for v in roof_on.values() if v not in ("existing", "not_yet", "unknown", None))
         existing = sum(1 for v in roof_on.values() if v == "existing")
         if halls_total == 0:
             built = "turbine yard; no halls mapped" if basis_is_comb(t) else ("no halls mapped" if s.get("polygons") else "approximate location only, no polygons")
             built_conf = "low"
         else:
             roofed = last["halls_roofed"]
-            when = f", roofed {month_label(dated[0])} to {month_label(dated[-1])}" if len(dated) > 1 else (f", roofed {month_label(dated[0])}" if dated else (", all pre-2018" if existing == halls_total else ""))
-            built = f"{roofed} of {halls_total} halls{when}"
-            built_conf = "high" if (t or {}).get("s2_available") else "medium"
+            when = f", roofed {month_label(dated[0])} to {month_label(dated[-1])}" if len(dated) > 1 else (f", roofed {month_label(dated[0])}" if dated else (", present at the start of observations" if existing == halls_total else ""))
+            unknown_roofs = sum(v == "unknown" for v in roof_on.values())
+            built = f"{roofed} of {halls_total} halls{when}" + (f"; {unknown_roofs} roof dates unresolved" if unknown_roofs else "")
+            built_conf = "low" if unknown_roofs else ("high" if (t or {}).get("s2_available") else "medium")
+            if any(p.get("confidence") == "low" for p in s.get("polygons", [])):
+                built_conf = "low"
+            elif any(p.get("confidence") == "medium" for p in s.get("polygons", [])) and built_conf == "high":
+                built_conf = "medium"
         # ---- running / load
         basis = last["basis"] if last else ""
         fx_months = []
         if t and t.get("quarters"):
             for q in Q:
                 f = q.get("no2_flux")
-                if f and f.get("nox_kgh", 0) > 2 * (f.get("nox_se") or 1e9) and f.get("nox_kgh", 0) > 100:
+                if f and f.get("nox_se") is not None and f.get("nox_kgh", 0) > 2 * f["nox_se"] and f.get("nox_kgh", 0) > 100:
                     fx_months.append(q["q"])
         # site-level plume test: combustion "detected" only if the downwind-minus-upwind change at the documented start is >= 2.5 sigma
         no2_active = []
@@ -104,8 +109,8 @@ def main():
             load = f"0–{last['est_hi']:.0f} MW (roofed area × density prior); no evidence of operation"
             conf, key = "low", "roofs"
         else:
-            running = "not yet: under construction, or no data"
-            load = "0 MW"
+            running = "unknown: no operating evidence" if cap_now is None else "not yet: no positive documented capacity"
+            load = "unknown" if cap_now is None else "0 MW documented capacity; actual load not measured"
             conf, key = "low", "roofs" if halls_total else "none"
         if adjacent:
             running += "; the NO₂ series shown is the adjacent power plant, not the campus"
@@ -155,7 +160,7 @@ def main():
             recent = f"last roof completed {month_label(dated[-1])}"
         out.append(dict(site_id=sid, name=s["name"], operator=s.get("operator", ""), country=s.get("country", ""), lat=s["lat"], lon=s["lon"],
                         built=built, built_conf=built_conf, running=running, load=load, confidence=conf, how=how, key=key, series=series, series_label=series_label,
-                        recent=recent, est_mid=(last or {}).get("est_mid") or 0, est_hi=(last or {}).get("est_hi") or 0, last_q=(last or {}).get("q"),
+                        recent=recent, est_mid=(last or {}).get("est_mid"), est_hi=(last or {}).get("est_hi") or 0, last_q=(last or {}).get("q"),
                         polygons_low=bool(s.get("polygons") and any(p.get("confidence") == "low" for p in s["polygons"])),
                         combustion=key == "nox"))
     out.sort(key=lambda r: (-(1 if r["combustion"] else 0), -(r["est_hi"] or 0)))

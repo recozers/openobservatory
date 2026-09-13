@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_gallatin",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -86.368135,
+       36.40586
+      ],
+      [
+       -86.367681,
+       36.405396
+      ],
+      [
+       -86.367165,
+       36.405786
+      ],
+      [
+       -86.366313,
+       36.404957
+      ],
+      [
+       -86.365717,
+       36.405367
+      ],
+      [
+       -86.366546,
+       36.406166
+      ],
+      [
+       -86.366251,
+       36.406369
+      ],
+      [
+       -86.36673,
+       36.406818
+      ],
+      [
+       -86.367012,
+       36.406606
+      ],
+      [
+       -86.367852,
+       36.407406
+      ],
+      [
+       -86.368448,
+       36.407016
+      ],
+      [
+       -86.367613,
+       36.406231
+      ],
+      [
+       -86.368135,
+       36.40586
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_gallatin",
+    "name": "epoch_building_001",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Gallatin, feature 1",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}

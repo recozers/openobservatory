@@ -1,0 +1,135 @@
+{
+ "type": "FeatureCollection",
+ "name": "epoch_meta_temple",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.369236,
+       31.132376
+      ],
+      [
+       -97.370288,
+       31.12965
+      ],
+      [
+       -97.368871,
+       31.129256
+      ],
+      [
+       -97.367856,
+       31.131975
+      ],
+      [
+       -97.369236,
+       31.132376
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_temple",
+    "name": "epoch_building_003",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Temple, feature 3",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 2,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.372212,
+       31.133695
+      ],
+      [
+       -97.373416,
+       31.130545
+      ],
+      [
+       -97.372077,
+       31.130174
+      ],
+      [
+       -97.370828,
+       31.133298
+      ],
+      [
+       -97.372212,
+       31.133695
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_temple",
+    "name": "epoch_building_007",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Temple, feature 7",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 1,
+    "epoch_complete": 1,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.371283,
+       31.128589
+      ],
+      [
+       -97.368098,
+       31.127711
+      ],
+      [
+       -97.367758,
+       31.128579
+      ],
+      [
+       -97.370943,
+       31.129446
+      ],
+      [
+       -97.371283,
+       31.128589
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "site_id": "epoch_meta_temple",
+    "name": "epoch_building_008",
+    "ptype": "hall",
+    "confidence": "medium",
+    "geometry_repair": "",
+    "digitised_from": "Epoch AI public map annotation: Meta Temple, feature 8",
+    "source_url": "https://epoch.ai/data/ai-data-centers/map",
+    "epoch_building_number": 3,
+    "epoch_complete": 0,
+    "roof_date_required": true,
+    "note": "Epoch AI Building annotation (CC BY 4.0); identity and boundary not independently field-verified. Includes planned footprints. Completion flag is not a roof date or operating evidence."
+   }
+  }
+ ]
+}
