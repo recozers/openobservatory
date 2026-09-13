@@ -17,7 +17,7 @@
 "structure_north": "not_yet",
 "structure_south": "not_yet"
 },
-"ntl_lit": null,
+"ntl_lit": "2025-12 (baseline -0.1, level 4.9, reached 31.5)",
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -41,7 +41,7 @@
 "night": null,
 "day": null,
 "no2": null,
-"ntl": null
+"ntl": 3.1
 },
 {
 "q": "2026Q1",
@@ -68,7 +68,7 @@
 "n": 14
 },
 "no2": null,
-"ntl": null
+"ntl": 26.4
 },
 {
 "q": "2026Q2",
@@ -95,7 +95,7 @@
 "n": 11
 },
 "no2": null,
-"ntl": null
+"ntl": 38.7
 },
 {
 "q": "2026Q3",
@@ -122,7 +122,7 @@
 "n": 15
 },
 "no2": null,
-"ntl": null
+"ntl": 53.3
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
