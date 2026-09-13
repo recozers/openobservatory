@@ -8,6 +8,11 @@
 "roof_on": {
 "nscc_building_box": "existing"
 },
+"roof_basis": {
+"nscc_building_box": "s2"
+},
+"radar_on": {},
+"ntl_lit": null,
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -24,13 +29,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q2",
@@ -42,13 +48,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q3",
@@ -60,17 +67,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.44,
 "se": null,
 "n": 1
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q4",
@@ -82,13 +90,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q1",
@@ -100,13 +109,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q2",
@@ -118,13 +128,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q3",
@@ -136,17 +147,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.38,
 "se": 0.35,
 "n": 3
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q4",
@@ -158,13 +170,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q1",
@@ -176,17 +189,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.28,
 "se": 0.26,
 "n": 4
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q2",
@@ -198,13 +212,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q3",
@@ -216,13 +231,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q4",
@@ -234,17 +250,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 1.04,
 "se": null,
 "n": 1
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q1",
@@ -256,17 +273,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": -0.02,
 "se": null,
 "n": 1
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q2",
@@ -278,13 +296,14 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q3",
@@ -296,17 +315,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.94,
 "se": null,
 "n": 1
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q4",
@@ -318,17 +338,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.14,
 "se": 0.08,
 "n": 2
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q1",
@@ -340,10 +361,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.23,
 "se": 1.21,
@@ -354,7 +375,8 @@
 "se": null,
 "n": 1
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q2",
@@ -366,10 +388,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.63,
 "se": null,
@@ -380,7 +402,8 @@
 "se": 0.59,
 "n": 6
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q3",
@@ -392,10 +415,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.35,
 "se": 0.62,
@@ -406,7 +429,8 @@
 "se": 0.41,
 "n": 9
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q4",
@@ -418,17 +442,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": {
 "mean": -0.21,
 "se": 0.12,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q1",
@@ -440,10 +465,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.6,
 "se": null,
@@ -454,7 +479,8 @@
 "se": 0.14,
 "n": 6
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q2",
@@ -466,10 +492,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 1.03,
 "se": null,
@@ -480,7 +506,8 @@
 "se": 0.33,
 "n": 5
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q3",
@@ -492,10 +519,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.2,
 "se": 0.49,
@@ -506,7 +533,8 @@
 "se": 0.87,
 "n": 3
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q4",
@@ -518,10 +546,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 1.1,
 "se": 0.52,
@@ -532,7 +560,8 @@
 "se": 0.12,
 "n": 5
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q1",
@@ -544,17 +573,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": {
 "mean": -0.6,
 "se": 0.09,
 "n": 7
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q2",
@@ -566,10 +596,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": -0.19,
 "se": 0.79,
@@ -580,7 +610,8 @@
 "se": 0.54,
 "n": 2
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q3",
@@ -592,10 +623,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": -0.03,
 "se": null,
@@ -606,7 +637,8 @@
 "se": 0.47,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q4",
@@ -618,10 +650,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 1.1,
 "se": null,
@@ -632,7 +664,8 @@
 "se": 0.09,
 "n": 7
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q1",
@@ -644,10 +677,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 1.38,
 "se": 0.75,
@@ -658,7 +691,8 @@
 "se": 0.08,
 "n": 7
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q2",
@@ -670,17 +704,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": {
 "mean": 0.57,
 "se": 0.36,
 "n": 6
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q3",
@@ -692,10 +727,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.18,
 "se": 0.21,
@@ -706,7 +741,8 @@
 "se": 0.12,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q4",
@@ -718,10 +754,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.53,
 "se": null,
@@ -732,7 +768,8 @@
 "se": 0.08,
 "n": 5
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q1",
@@ -744,10 +781,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 0.08,
 "se": 0.39,
@@ -758,7 +795,8 @@
 "se": 0.14,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q2",
@@ -770,10 +808,10 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": {
 "mean": 1.36,
 "se": null,
@@ -784,7 +822,8 @@
 "se": 0.61,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q3",
@@ -796,17 +835,18 @@
 "halls_total": 1,
 "built_ha": 2.6,
 "fitted_ha": 2.6,
-"est_lo": 7.7,
-"est_mid": 12.3,
-"est_hi": 15.4,
-"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 6.2,
+"est_mid": 9.2,
+"est_hi": 13.9,
+"basis": "documented capacity in force (A1, it_measured_hpl) \u00d7 HPL-measured system power \u00d7 annual-average factor 0.4\u20130.9 (Frontier 2023: 0.55)",
 "night": null,
 "day": {
 "mean": 0.43,
 "se": 0.32,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."

@@ -8,6 +8,11 @@
 "roof_on": {
 "technical_strip": "existing"
 },
+"roof_basis": {
+"technical_strip": "s2"
+},
+"radar_on": {},
+"ntl_lit": null,
 "s2_available": true,
 "no2_available": false,
 "no2_baseline": null,
@@ -24,13 +29,14 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q2",
@@ -42,13 +48,14 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q3",
@@ -60,17 +67,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.87,
 "se": null,
 "n": 1
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2018Q4",
@@ -82,13 +90,14 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q1",
@@ -100,13 +109,14 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": null,
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q2",
@@ -118,17 +128,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.41,
 "se": null,
 "n": 1
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q3",
@@ -140,17 +151,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.93,
 "se": 0.22,
 "n": 17
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2019Q4",
@@ -162,17 +174,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.47,
 "se": 0.21,
 "n": 19
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q1",
@@ -184,17 +197,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.25,
 "se": 0.23,
 "n": 23
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q2",
@@ -206,17 +220,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.1,
 "se": 0.24,
 "n": 5
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q3",
@@ -228,17 +243,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.35,
 "se": 0.08,
 "n": 17
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2020Q4",
@@ -250,17 +266,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.27,
 "se": 0.18,
 "n": 14
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q1",
@@ -272,17 +289,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.19,
 "se": 0.17,
 "n": 9
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q2",
@@ -294,17 +312,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.64,
 "se": 0.16,
 "n": 7
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q3",
@@ -316,17 +335,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.6,
 "se": 0.13,
 "n": 19
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2021Q4",
@@ -338,17 +358,18 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.63,
 "se": 0.22,
 "n": 14
 },
 "day": null,
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q1",
@@ -360,10 +381,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.02,
 "se": 0.16,
@@ -374,7 +395,8 @@
 "se": 0.26,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q2",
@@ -386,10 +408,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.36,
 "se": 0.59,
@@ -400,7 +422,8 @@
 "se": 0.22,
 "n": 6
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q3",
@@ -412,10 +435,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.52,
 "se": 0.11,
@@ -426,7 +449,8 @@
 "se": 0.61,
 "n": 9
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2022Q4",
@@ -438,10 +462,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.11,
 "se": 0.18,
@@ -452,7 +476,8 @@
 "se": 0.52,
 "n": 6
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q1",
@@ -464,10 +489,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.45,
 "se": 0.15,
@@ -478,7 +503,8 @@
 "se": 0.87,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q2",
@@ -490,10 +516,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.22,
 "se": 0.24,
@@ -504,7 +530,8 @@
 "se": 0.4,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q3",
@@ -516,10 +543,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.6,
 "se": 0.21,
@@ -530,7 +557,8 @@
 "se": 0.31,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2023Q4",
@@ -542,10 +570,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.73,
 "se": 0.58,
@@ -556,7 +584,8 @@
 "se": 0.19,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q1",
@@ -568,10 +597,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.22,
 "se": 0.24,
@@ -582,7 +611,8 @@
 "se": 1.04,
 "n": 5
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q2",
@@ -594,10 +624,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.54,
 "se": 0.26,
@@ -608,7 +638,8 @@
 "se": 0.27,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q3",
@@ -620,10 +651,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.24,
 "se": 0.38,
@@ -634,7 +665,8 @@
 "se": 0.3,
 "n": 10
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2024Q4",
@@ -646,10 +678,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.25,
 "se": 0.22,
@@ -660,7 +692,8 @@
 "se": 0.23,
 "n": 7
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q1",
@@ -672,10 +705,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.32,
 "se": 0.22,
@@ -686,7 +719,8 @@
 "se": 0.31,
 "n": 4
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q2",
@@ -698,10 +732,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.29,
 "se": 0.41,
@@ -712,7 +746,8 @@
 "se": 0.56,
 "n": 9
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q3",
@@ -724,10 +759,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.16,
 "se": 0.27,
@@ -738,7 +773,8 @@
 "se": 0.38,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2025Q4",
@@ -750,10 +786,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.08,
 "se": 0.26,
@@ -764,7 +800,8 @@
 "se": 0.13,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q1",
@@ -776,10 +813,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.07,
 "se": 0.21,
@@ -790,7 +827,8 @@
 "se": 0.27,
 "n": 7
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q2",
@@ -802,10 +840,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": -0.05,
 "se": 0.12,
@@ -816,7 +854,8 @@
 "se": 0.28,
 "n": 8
 },
-"no2": null
+"no2": null,
+"ntl": null
 },
 {
 "q": "2026Q3",
@@ -828,10 +867,10 @@
 "halls_total": 1,
 "built_ha": 10.0,
 "fitted_ha": 10.0,
-"est_lo": 25.0,
-"est_mid": 40.0,
-"est_hi": 50.0,
-"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation assumption 0.5\u20131.0",
+"est_lo": 10.0,
+"est_mid": 20.0,
+"est_hi": 30.0,
+"basis": "documented capacity in force (A1, facility_design) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
 "night": {
 "mean": 0.12,
 "se": 0.31,
@@ -842,7 +881,8 @@
 "se": 0.82,
 "n": 6
 },
-"no2": null
+"no2": null,
+"ntl": null
 }
 ],
 "caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
