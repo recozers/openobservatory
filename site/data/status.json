@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T16:57:53.350711+00:00",
+"generated": "2026-09-13T17:20:47.927986+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -1703,6 +1703,172 @@
 "combustion": false
 },
 {
+"site_id": "meta_altoona",
+"name": "Meta Altoona (Iowa)",
+"operator": "Meta",
+"country": "US",
+"lat": 41.6712,
+"lon": -93.5165,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 164 MW in 2024 (latest published year, carried forward)",
+"load": "about 164 MW, operator-reported annual electricity \u00f7 8760 h (range 115\u2013214); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 63.5
+},
+{
+"x": "2018Q2",
+"y": 63.5
+},
+{
+"x": "2018Q3",
+"y": 63.5
+},
+{
+"x": "2018Q4",
+"y": 63.5
+},
+{
+"x": "2019Q1",
+"y": 88.5
+},
+{
+"x": "2019Q2",
+"y": 88.5
+},
+{
+"x": "2019Q3",
+"y": 88.5
+},
+{
+"x": "2019Q4",
+"y": 88.5
+},
+{
+"x": "2020Q1",
+"y": 101.7
+},
+{
+"x": "2020Q2",
+"y": 101.7
+},
+{
+"x": "2020Q3",
+"y": 101.7
+},
+{
+"x": "2020Q4",
+"y": 101.7
+},
+{
+"x": "2021Q1",
+"y": 98.6
+},
+{
+"x": "2021Q2",
+"y": 98.6
+},
+{
+"x": "2021Q3",
+"y": 98.6
+},
+{
+"x": "2021Q4",
+"y": 98.6
+},
+{
+"x": "2022Q1",
+"y": 108.3
+},
+{
+"x": "2022Q2",
+"y": 108.3
+},
+{
+"x": "2022Q3",
+"y": 108.3
+},
+{
+"x": "2022Q4",
+"y": 108.3
+},
+{
+"x": "2023Q1",
+"y": 129.0
+},
+{
+"x": "2023Q2",
+"y": 129.0
+},
+{
+"x": "2023Q3",
+"y": 129.0
+},
+{
+"x": "2023Q4",
+"y": 129.0
+},
+{
+"x": "2024Q1",
+"y": 164.5
+},
+{
+"x": "2024Q2",
+"y": 164.5
+},
+{
+"x": "2024Q3",
+"y": 164.5
+},
+{
+"x": "2024Q4",
+"y": 164.5
+},
+{
+"x": "2025Q1",
+"y": 164.5
+},
+{
+"x": "2025Q2",
+"y": 164.5
+},
+{
+"x": "2025Q3",
+"y": 164.5
+},
+{
+"x": "2025Q4",
+"y": 164.5
+},
+{
+"x": "2026Q1",
+"y": 164.5
+},
+{
+"x": "2026Q2",
+"y": 164.5
+},
+{
+"x": "2026Q3",
+"y": 164.5
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 164.5,
+"est_hi": 213.9,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
 "site_id": "cn_zhangbei_alibaba",
 "name": "Zhangbei data-centre halls west of county town (Alibaba Miaotan campus, tentative)",
 "operator": "Alibaba Cloud (tentative)",
@@ -2179,6 +2345,128 @@
 "combustion": false
 },
 {
+"site_id": "meta_newton",
+"name": "Meta Stanton Springs / Newton County (Georgia)",
+"operator": "Meta",
+"country": "US",
+"lat": 33.6008,
+"lon": -83.7019,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 123 MW in 2024 (latest published year, carried forward)",
+"load": "about 123 MW, operator-reported annual electricity \u00f7 8760 h (range 86\u2013160); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": 22.4
+},
+{
+"x": "2021Q2",
+"y": 22.4
+},
+{
+"x": "2021Q3",
+"y": 22.4
+},
+{
+"x": "2021Q4",
+"y": 22.4
+},
+{
+"x": "2022Q1",
+"y": 66.0
+},
+{
+"x": "2022Q2",
+"y": 66.0
+},
+{
+"x": "2022Q3",
+"y": 66.0
+},
+{
+"x": "2022Q4",
+"y": 66.0
+},
+{
+"x": "2023Q1",
+"y": 100.5
+},
+{
+"x": "2023Q2",
+"y": 100.5
+},
+{
+"x": "2023Q3",
+"y": 100.5
+},
+{
+"x": "2023Q4",
+"y": 100.5
+},
+{
+"x": "2024Q1",
+"y": 122.9
+},
+{
+"x": "2024Q2",
+"y": 122.9
+},
+{
+"x": "2024Q3",
+"y": 122.9
+},
+{
+"x": "2024Q4",
+"y": 122.9
+},
+{
+"x": "2025Q1",
+"y": 122.9
+},
+{
+"x": "2025Q2",
+"y": 122.9
+},
+{
+"x": "2025Q3",
+"y": 122.9
+},
+{
+"x": "2025Q4",
+"y": 122.9
+},
+{
+"x": "2026Q1",
+"y": 122.9
+},
+{
+"x": "2026Q2",
+"y": 122.9
+},
+{
+"x": "2026Q3",
+"y": 122.9
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 122.9,
+"est_hi": 159.8,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
 "site_id": "epoch_coreweave_denton_tx",
 "name": "CoreWeave Denton TX",
 "operator": "CoreWeave",
@@ -2510,6 +2798,338 @@
 "recent": "",
 "est_mid": 119.7,
 "est_hi": 155.6,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_fort_worth",
+"name": "Meta Fort Worth (Texas)",
+"operator": "Meta",
+"country": "US",
+"lat": 32.9886,
+"lon": -97.2558,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 115 MW in 2024 (latest published year, carried forward)",
+"load": "about 115 MW, operator-reported annual electricity \u00f7 8760 h (range 81\u2013150); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 47.8
+},
+{
+"x": "2018Q2",
+"y": 47.8
+},
+{
+"x": "2018Q3",
+"y": 47.8
+},
+{
+"x": "2018Q4",
+"y": 47.8
+},
+{
+"x": "2019Q1",
+"y": 72.1
+},
+{
+"x": "2019Q2",
+"y": 72.1
+},
+{
+"x": "2019Q3",
+"y": 72.1
+},
+{
+"x": "2019Q4",
+"y": 72.1
+},
+{
+"x": "2020Q1",
+"y": 97.6
+},
+{
+"x": "2020Q2",
+"y": 97.6
+},
+{
+"x": "2020Q3",
+"y": 97.6
+},
+{
+"x": "2020Q4",
+"y": 97.6
+},
+{
+"x": "2021Q1",
+"y": 105.3
+},
+{
+"x": "2021Q2",
+"y": 105.3
+},
+{
+"x": "2021Q3",
+"y": 105.3
+},
+{
+"x": "2021Q4",
+"y": 105.3
+},
+{
+"x": "2022Q1",
+"y": 99.5
+},
+{
+"x": "2022Q2",
+"y": 99.5
+},
+{
+"x": "2022Q3",
+"y": 99.5
+},
+{
+"x": "2022Q4",
+"y": 99.5
+},
+{
+"x": "2023Q1",
+"y": 106.8
+},
+{
+"x": "2023Q2",
+"y": 106.8
+},
+{
+"x": "2023Q3",
+"y": 106.8
+},
+{
+"x": "2023Q4",
+"y": 106.8
+},
+{
+"x": "2024Q1",
+"y": 115.1
+},
+{
+"x": "2024Q2",
+"y": 115.1
+},
+{
+"x": "2024Q3",
+"y": 115.1
+},
+{
+"x": "2024Q4",
+"y": 115.1
+},
+{
+"x": "2025Q1",
+"y": 115.1
+},
+{
+"x": "2025Q2",
+"y": 115.1
+},
+{
+"x": "2025Q3",
+"y": 115.1
+},
+{
+"x": "2025Q4",
+"y": 115.1
+},
+{
+"x": "2026Q1",
+"y": 115.1
+},
+{
+"x": "2026Q2",
+"y": 115.1
+},
+{
+"x": "2026Q3",
+"y": 115.1
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 115.1,
+"est_hi": 149.6,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_clonee",
+"name": "Meta Clonee (Ireland)",
+"operator": "Meta",
+"country": "IE",
+"lat": 53.4183,
+"lon": -6.4463,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 112 MW in 2024 (latest published year, carried forward)",
+"load": "about 112 MW, operator-reported annual electricity \u00f7 8760 h (range 78\u2013145); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 20.7
+},
+{
+"x": "2018Q2",
+"y": 20.7
+},
+{
+"x": "2018Q3",
+"y": 20.7
+},
+{
+"x": "2018Q4",
+"y": 20.7
+},
+{
+"x": "2019Q1",
+"y": 39.6
+},
+{
+"x": "2019Q2",
+"y": 39.6
+},
+{
+"x": "2019Q3",
+"y": 39.6
+},
+{
+"x": "2019Q4",
+"y": 39.6
+},
+{
+"x": "2020Q1",
+"y": 50.5
+},
+{
+"x": "2020Q2",
+"y": 50.5
+},
+{
+"x": "2020Q3",
+"y": 50.5
+},
+{
+"x": "2020Q4",
+"y": 50.5
+},
+{
+"x": "2021Q1",
+"y": 65.8
+},
+{
+"x": "2021Q2",
+"y": 65.8
+},
+{
+"x": "2021Q3",
+"y": 65.8
+},
+{
+"x": "2021Q4",
+"y": 65.8
+},
+{
+"x": "2022Q1",
+"y": 69.4
+},
+{
+"x": "2022Q2",
+"y": 69.4
+},
+{
+"x": "2022Q3",
+"y": 69.4
+},
+{
+"x": "2022Q4",
+"y": 69.4
+},
+{
+"x": "2023Q1",
+"y": 99.0
+},
+{
+"x": "2023Q2",
+"y": 99.0
+},
+{
+"x": "2023Q3",
+"y": 99.0
+},
+{
+"x": "2023Q4",
+"y": 99.0
+},
+{
+"x": "2024Q1",
+"y": 111.7
+},
+{
+"x": "2024Q2",
+"y": 111.7
+},
+{
+"x": "2024Q3",
+"y": 111.7
+},
+{
+"x": "2024Q4",
+"y": 111.7
+},
+{
+"x": "2025Q1",
+"y": 111.7
+},
+{
+"x": "2025Q2",
+"y": 111.7
+},
+{
+"x": "2025Q3",
+"y": 111.7
+},
+{
+"x": "2025Q4",
+"y": 111.7
+},
+{
+"x": "2026Q1",
+"y": 111.7
+},
+{
+"x": "2026Q2",
+"y": 111.7
+},
+{
+"x": "2026Q3",
+"y": 111.7
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 111.7,
+"est_hi": 145.2,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false
@@ -4073,6 +4693,160 @@
 "recent": "last roof completed May 2026",
 "est_mid": 88.4,
 "est_hi": 132.6,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_henrico",
+"name": "Meta Henrico (Virginia)",
+"operator": "Meta",
+"country": "US",
+"lat": 37.4778,
+"lon": -77.2263,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 98 MW in 2024 (latest published year, carried forward)",
+"load": "about 98 MW, operator-reported annual electricity \u00f7 8760 h (range 69\u2013128); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q4",
+"y": null
+},
+{
+"x": "2019Q1",
+"y": 1.0
+},
+{
+"x": "2019Q2",
+"y": 1.0
+},
+{
+"x": "2019Q3",
+"y": 1.0
+},
+{
+"x": "2019Q4",
+"y": 1.0
+},
+{
+"x": "2020Q1",
+"y": 21.2
+},
+{
+"x": "2020Q2",
+"y": 21.2
+},
+{
+"x": "2020Q3",
+"y": 21.2
+},
+{
+"x": "2020Q4",
+"y": 21.2
+},
+{
+"x": "2021Q1",
+"y": 53.5
+},
+{
+"x": "2021Q2",
+"y": 53.5
+},
+{
+"x": "2021Q3",
+"y": 53.5
+},
+{
+"x": "2021Q4",
+"y": 53.5
+},
+{
+"x": "2022Q1",
+"y": 72.7
+},
+{
+"x": "2022Q2",
+"y": 72.7
+},
+{
+"x": "2022Q3",
+"y": 72.7
+},
+{
+"x": "2022Q4",
+"y": 72.7
+},
+{
+"x": "2023Q1",
+"y": 83.5
+},
+{
+"x": "2023Q2",
+"y": 83.5
+},
+{
+"x": "2023Q3",
+"y": 83.5
+},
+{
+"x": "2023Q4",
+"y": 83.5
+},
+{
+"x": "2024Q1",
+"y": 98.5
+},
+{
+"x": "2024Q2",
+"y": 98.5
+},
+{
+"x": "2024Q3",
+"y": 98.5
+},
+{
+"x": "2024Q4",
+"y": 98.5
+},
+{
+"x": "2025Q1",
+"y": 98.5
+},
+{
+"x": "2025Q2",
+"y": 98.5
+},
+{
+"x": "2025Q3",
+"y": 98.5
+},
+{
+"x": "2025Q4",
+"y": 98.5
+},
+{
+"x": "2026Q1",
+"y": 98.5
+},
+{
+"x": "2026Q2",
+"y": 98.5
+},
+{
+"x": "2026Q3",
+"y": 98.5
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 98.5,
+"est_hi": 128.0,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false
@@ -6855,6 +7629,338 @@
 "combustion": false
 },
 {
+"site_id": "meta_odense",
+"name": "Meta Odense (Denmark)",
+"operator": "Meta",
+"country": "DK",
+"lat": 55.3667,
+"lon": 10.485,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 59 MW in 2024 (latest published year, carried forward)",
+"load": "about 59 MW, operator-reported annual electricity \u00f7 8760 h (range 41\u201377); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 0.5
+},
+{
+"x": "2018Q2",
+"y": 0.5
+},
+{
+"x": "2018Q3",
+"y": 0.5
+},
+{
+"x": "2018Q4",
+"y": 0.5
+},
+{
+"x": "2019Q1",
+"y": 13.3
+},
+{
+"x": "2019Q2",
+"y": 13.3
+},
+{
+"x": "2019Q3",
+"y": 13.3
+},
+{
+"x": "2019Q4",
+"y": 13.3
+},
+{
+"x": "2020Q1",
+"y": 35.6
+},
+{
+"x": "2020Q2",
+"y": 35.6
+},
+{
+"x": "2020Q3",
+"y": 35.6
+},
+{
+"x": "2020Q4",
+"y": 35.6
+},
+{
+"x": "2021Q1",
+"y": 52.0
+},
+{
+"x": "2021Q2",
+"y": 52.0
+},
+{
+"x": "2021Q3",
+"y": 52.0
+},
+{
+"x": "2021Q4",
+"y": 52.0
+},
+{
+"x": "2022Q1",
+"y": 53.7
+},
+{
+"x": "2022Q2",
+"y": 53.7
+},
+{
+"x": "2022Q3",
+"y": 53.7
+},
+{
+"x": "2022Q4",
+"y": 53.7
+},
+{
+"x": "2023Q1",
+"y": 53.7
+},
+{
+"x": "2023Q2",
+"y": 53.7
+},
+{
+"x": "2023Q3",
+"y": 53.7
+},
+{
+"x": "2023Q4",
+"y": 53.7
+},
+{
+"x": "2024Q1",
+"y": 59.1
+},
+{
+"x": "2024Q2",
+"y": 59.1
+},
+{
+"x": "2024Q3",
+"y": 59.1
+},
+{
+"x": "2024Q4",
+"y": 59.1
+},
+{
+"x": "2025Q1",
+"y": 59.1
+},
+{
+"x": "2025Q2",
+"y": 59.1
+},
+{
+"x": "2025Q3",
+"y": 59.1
+},
+{
+"x": "2025Q4",
+"y": 59.1
+},
+{
+"x": "2026Q1",
+"y": 59.1
+},
+{
+"x": "2026Q2",
+"y": 59.1
+},
+{
+"x": "2026Q3",
+"y": 59.1
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 59.1,
+"est_hi": 76.8,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_forest_city",
+"name": "Meta Forest City (North Carolina)",
+"operator": "Meta",
+"country": "US",
+"lat": 35.3163,
+"lon": -81.8252,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 56 MW in 2024 (latest published year, carried forward)",
+"load": "about 56 MW, operator-reported annual electricity \u00f7 8760 h (range 39\u201372); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2018Q1",
+"y": 56.7
+},
+{
+"x": "2018Q2",
+"y": 56.7
+},
+{
+"x": "2018Q3",
+"y": 56.7
+},
+{
+"x": "2018Q4",
+"y": 56.7
+},
+{
+"x": "2019Q1",
+"y": 63.7
+},
+{
+"x": "2019Q2",
+"y": 63.7
+},
+{
+"x": "2019Q3",
+"y": 63.7
+},
+{
+"x": "2019Q4",
+"y": 63.7
+},
+{
+"x": "2020Q1",
+"y": 61.7
+},
+{
+"x": "2020Q2",
+"y": 61.7
+},
+{
+"x": "2020Q3",
+"y": 61.7
+},
+{
+"x": "2020Q4",
+"y": 61.7
+},
+{
+"x": "2021Q1",
+"y": 60.3
+},
+{
+"x": "2021Q2",
+"y": 60.3
+},
+{
+"x": "2021Q3",
+"y": 60.3
+},
+{
+"x": "2021Q4",
+"y": 60.3
+},
+{
+"x": "2022Q1",
+"y": 51.2
+},
+{
+"x": "2022Q2",
+"y": 51.2
+},
+{
+"x": "2022Q3",
+"y": 51.2
+},
+{
+"x": "2022Q4",
+"y": 51.2
+},
+{
+"x": "2023Q1",
+"y": 52.6
+},
+{
+"x": "2023Q2",
+"y": 52.6
+},
+{
+"x": "2023Q3",
+"y": 52.6
+},
+{
+"x": "2023Q4",
+"y": 52.6
+},
+{
+"x": "2024Q1",
+"y": 55.5
+},
+{
+"x": "2024Q2",
+"y": 55.5
+},
+{
+"x": "2024Q3",
+"y": 55.5
+},
+{
+"x": "2024Q4",
+"y": 55.5
+},
+{
+"x": "2025Q1",
+"y": 55.5
+},
+{
+"x": "2025Q2",
+"y": 55.5
+},
+{
+"x": "2025Q3",
+"y": 55.5
+},
+{
+"x": "2025Q4",
+"y": 55.5
+},
+{
+"x": "2026Q1",
+"y": 55.5
+},
+{
+"x": "2026Q2",
+"y": 55.5
+},
+{
+"x": "2026Q3",
+"y": 55.5
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 55.5,
+"est_hi": 72.2,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
 "site_id": "epoch_google_cedar_rapids",
 "name": "Google Cedar Rapids",
 "operator": "Google",
@@ -7775,6 +8881,128 @@
 "recent": "last roof completed May 2026",
 "est_mid": 34.0,
 "est_hi": 51.0,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_dekalb",
+"name": "Meta DeKalb (Illinois)",
+"operator": "Meta",
+"country": "US",
+"lat": 41.8885,
+"lon": -88.7219,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 39 MW in 2024 (latest published year, carried forward)",
+"load": "about 39 MW, operator-reported annual electricity \u00f7 8760 h (range 27\u201350); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2020Q4",
+"y": null
+},
+{
+"x": "2021Q1",
+"y": 0.5
+},
+{
+"x": "2021Q2",
+"y": 0.5
+},
+{
+"x": "2021Q3",
+"y": 0.5
+},
+{
+"x": "2021Q4",
+"y": 0.5
+},
+{
+"x": "2022Q1",
+"y": 1.7
+},
+{
+"x": "2022Q2",
+"y": 1.7
+},
+{
+"x": "2022Q3",
+"y": 1.7
+},
+{
+"x": "2022Q4",
+"y": 1.7
+},
+{
+"x": "2023Q1",
+"y": 14.5
+},
+{
+"x": "2023Q2",
+"y": 14.5
+},
+{
+"x": "2023Q3",
+"y": 14.5
+},
+{
+"x": "2023Q4",
+"y": 14.5
+},
+{
+"x": "2024Q1",
+"y": 38.6
+},
+{
+"x": "2024Q2",
+"y": 38.6
+},
+{
+"x": "2024Q3",
+"y": 38.6
+},
+{
+"x": "2024Q4",
+"y": 38.6
+},
+{
+"x": "2025Q1",
+"y": 38.6
+},
+{
+"x": "2025Q2",
+"y": 38.6
+},
+{
+"x": "2025Q3",
+"y": 38.6
+},
+{
+"x": "2025Q4",
+"y": 38.6
+},
+{
+"x": "2026Q1",
+"y": 38.6
+},
+{
+"x": "2026Q2",
+"y": 38.6
+},
+{
+"x": "2026Q3",
+"y": 38.6
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 38.6,
+"est_hi": 50.2,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false
@@ -10616,6 +11844,154 @@
 "recent": "last roof completed Mar 2020",
 "est_mid": 6.9,
 "est_hi": 10.4,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_mesa",
+"name": "Meta Mesa (Arizona)",
+"operator": "Meta",
+"country": "US",
+"lat": 33.305,
+"lon": -111.62,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 2 MW in 2024 (latest published year, carried forward)",
+"load": "about 2 MW, operator-reported annual electricity \u00f7 8760 h (range 2\u20133); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2023Q4",
+"y": null
+},
+{
+"x": "2024Q1",
+"y": 2.5
+},
+{
+"x": "2024Q2",
+"y": 2.5
+},
+{
+"x": "2024Q3",
+"y": 2.5
+},
+{
+"x": "2024Q4",
+"y": 2.5
+},
+{
+"x": "2025Q1",
+"y": 2.5
+},
+{
+"x": "2025Q2",
+"y": 2.5
+},
+{
+"x": "2025Q3",
+"y": 2.5
+},
+{
+"x": "2025Q4",
+"y": 2.5
+},
+{
+"x": "2026Q1",
+"y": 2.5
+},
+{
+"x": "2026Q2",
+"y": 2.5
+},
+{
+"x": "2026Q3",
+"y": 2.5
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 2.5,
+"est_hi": 3.3,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false
+},
+{
+"site_id": "meta_kansas_city",
+"name": "Meta Kansas City (Missouri)",
+"operator": "Meta",
+"country": "US",
+"lat": 39.3225,
+"lon": -94.5982,
+"built": "approximate location only, no polygons",
+"built_conf": "low",
+"running": "yes: operator reports an average IT load of 2 MW in 2024 (latest published year, carried forward)",
+"load": "about 2 MW, operator-reported annual electricity \u00f7 8760 h (range 2\u20133); an average, not a peak",
+"confidence": "high",
+"how": [
+"operator-reported annual electricity per site (Meta Environmental Data Index; ORNL Frontier reports)"
+],
+"key": "capacity",
+"series": [
+{
+"x": "2023Q4",
+"y": null
+},
+{
+"x": "2024Q1",
+"y": 2.4
+},
+{
+"x": "2024Q2",
+"y": 2.4
+},
+{
+"x": "2024Q3",
+"y": 2.4
+},
+{
+"x": "2024Q4",
+"y": 2.4
+},
+{
+"x": "2025Q1",
+"y": 2.4
+},
+{
+"x": "2025Q2",
+"y": 2.4
+},
+{
+"x": "2025Q3",
+"y": 2.4
+},
+{
+"x": "2025Q4",
+"y": 2.4
+},
+{
+"x": "2026Q1",
+"y": 2.4
+},
+{
+"x": "2026Q2",
+"y": 2.4
+},
+{
+"x": "2026Q3",
+"y": 2.4
+}
+],
+"series_label": "operator-reported average IT load, MW (annual; documented capacity where no report)",
+"recent": "",
+"est_mid": 2.4,
+"est_hi": 3.1,
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false

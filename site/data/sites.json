@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T16:57:53.350711+00:00",
+ "generated": "2026-09-13T17:20:47.927986+00:00",
  "extract_meta": {
   "backend": "Landsat 8 C1 brightness temperature 2013-2021 (day) + Landsat 8/9 C2 surface temperature 2022-2026 (day, Earth Engine) + ECOSTRESS 2018-2026 (day and night)",
   "start": "2013-04-11",
@@ -1124,7 +1124,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 5,000 MWh in 2012 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2013-01-01",
@@ -1134,7 +1134,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 53,000 MWh in 2013 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2014-01-01",
@@ -1144,7 +1144,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 105,000 MWh in 2014 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2015-01-01",
@@ -1154,7 +1154,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 187,000 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2016-01-01",
@@ -1164,7 +1164,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 295,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2017-01-01",
@@ -1174,7 +1174,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 301,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2018-01-01",
@@ -1184,7 +1184,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 337,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2019-01-01",
@@ -1194,7 +1194,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 373,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2020-01-01",
@@ -1204,7 +1204,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 369,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2021-01-01",
@@ -1214,7 +1214,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 306,054 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2022-01-01",
@@ -1224,7 +1224,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 267,471 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2023-01-01",
@@ -1234,7 +1234,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 351,931 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2024-01-01",
@@ -1244,7 +1244,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 468,809 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -1375,7 +1375,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 71,000 MWh in 2011 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2012-01-01",
@@ -1385,7 +1385,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 153,000 MWh in 2012 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2013-01-01",
@@ -1395,7 +1395,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 224,000 MWh in 2013 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2014-01-01",
@@ -1405,7 +1405,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 262,000 MWh in 2014 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2015-01-01",
@@ -1415,7 +1415,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 284,000 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2016-01-01",
@@ -1425,7 +1425,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 327,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2017-01-01",
@@ -1435,7 +1435,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 426,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2018-01-01",
@@ -1445,7 +1445,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 488,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2019-01-01",
@@ -1455,7 +1455,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 573,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2020-01-01",
@@ -1465,7 +1465,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 686,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2021-01-01",
@@ -1475,7 +1475,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 898,409 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2022-01-01",
@@ -1485,7 +1485,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 982,177 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2023-01-01",
@@ -1495,7 +1495,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 1,375,321 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2024-01-01",
@@ -1505,7 +1505,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 1,728,291 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -2618,7 +2618,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 38,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2020-01-01",
@@ -2628,7 +2628,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 270,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2021-01-01",
@@ -2638,7 +2638,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 511,414 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2022-01-01",
@@ -2648,7 +2648,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 702,694 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2023-01-01",
@@ -2658,7 +2658,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 793,063 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     },
     {
      "valid_from": "2024-01-01",
@@ -2668,7 +2668,7 @@
      "tier": "A2",
      "source": "Meta per-site annual electricity disclosure: 521,217 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
-     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE (Meta fleet PUE 1.08-1.10)."
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -9900,6 +9900,46 @@
      "source": "Epoch AI: Meta Huntsville; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 2.0. We estimate Building 2 becomes operational due to being 120 days after final phases of construction, 9 months since roof and cooling were done, and similar Meta data centers construction timelines."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 9.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 85,286 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 42.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 368,841 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 70.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 614,198 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 98.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 865,803 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -10568,6 +10608,46 @@
      "source": "Epoch AI: Meta Eagle Mountain; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 2.0. Satellite image shows strong evidence that Buildings 1 and 2 are operational: colored motion artifacts on many cooling fans, plus cars parked at the building entrances."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 26.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 229,946 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 57.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 504,049 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 89.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 787,740 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 127.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,115,619 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -12660,6 +12740,46 @@
      "source": "Epoch AI: Meta Gallatin; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 1.0. Building 1 is operational (estimate)."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 0.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 0 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 0.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 6,264 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 13.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 116,520 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 41.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 359,730 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -12752,6 +12872,76 @@
      "source": "Epoch AI: Meta Los Lunas; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 1.0. Building 1 looks operational."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 3.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 26,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 33.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 289,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 65.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 571,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 82.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 717,932 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 106.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 929,488 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 126.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,110,100 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 130.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,143,067 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -13120,6 +13310,76 @@
      "source": "Epoch AI: Meta Sarpy; IT power (MW); reported estimate",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch reported estimate, not a meter reading. Buildings operational: 1.0. Building 1 is operational (estimate)."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 0.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 5,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 20.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 178,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 59.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 519,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 84.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 736,810 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 115.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,007,635 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 131.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,148,091 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 143.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,258,239 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
@@ -19046,6 +19306,1076 @@
      "source": "Epoch AI: QTS Eagle Mountain; IT power (MW); projection",
      "url": "https://epoch.ai/data/ai-data-centers",
      "notes": "Epoch projection, not a meter reading. Buildings operational: 3.0. We estimate Building 3 will be fully operational by H2 2027 following a similar time line to Buildings 1 and 2 of 14 months from land clearing to operational."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_altoona",
+   "name": "Meta Altoona (Iowa)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 41.6712,
+   "lon": -93.5165,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2013-01-01",
+     "valid_to": "2013-12-31",
+     "capacity_mw": 0.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 400 MWh in 2013 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2014-01-01",
+     "valid_to": "2014-12-31",
+     "capacity_mw": 3.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 30,000 MWh in 2014 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2015-01-01",
+     "valid_to": "2015-12-31",
+     "capacity_mw": 19.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 174,000 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2016-01-01",
+     "valid_to": "2016-12-31",
+     "capacity_mw": 39.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 342,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2017-01-01",
+     "valid_to": "2017-12-31",
+     "capacity_mw": 57.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 500,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 69.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 612,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 97.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 853,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 111.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 980,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 108.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 950,705 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 119.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,043,606 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 141.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,243,306 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 181.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,585,392 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_fort_worth",
+   "name": "Meta Fort Worth (Texas)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 32.9886,
+   "lon": -97.2558,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2015-01-01",
+     "valid_to": "2015-12-31",
+     "capacity_mw": 0.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 100 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2016-01-01",
+     "valid_to": "2016-12-31",
+     "capacity_mw": 1.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 16,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2017-01-01",
+     "valid_to": "2017-12-31",
+     "capacity_mw": 21.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 189,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 52.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 461,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 79.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 695,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 107.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 941,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 115.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,014,447 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 109.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 959,419 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 117.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,029,570 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 126.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,109,004 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_newton",
+   "name": "Meta Stanton Springs / Newton County (Georgia)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 33.6008,
+   "lon": -83.7019,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 24.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 215,279 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 72.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 636,266 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 110.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 968,565 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 135.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,184,380 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_henrico",
+   "name": "Meta Henrico (Virginia)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 37.4778,
+   "lon": -77.2263,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 1.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 10,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 23.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 204,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 58.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 515,270 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 80.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 701,003 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 91.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 805,061 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 108.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 948,859 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_odense",
+   "name": "Meta Odense (Denmark)",
+   "operator": "Meta",
+   "country": "DK",
+   "region": "",
+   "lat": 55.3667,
+   "lon": 10.485,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 0.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 4,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 14.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 128,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 39.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 343,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 57.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 500,863 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 59.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 517,718 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 59.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 518,005 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 65.0,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 569,374 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_dekalb",
+   "name": "Meta DeKalb (Illinois)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 41.8885,
+   "lon": -88.7219,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 0.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 4,724 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 1.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 16,934 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 15.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 138,965 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 42.5,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 372,339 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_clonee",
+   "name": "Meta Clonee (Ireland)",
+   "operator": "Meta",
+   "country": "IE",
+   "region": "",
+   "lat": 53.4183,
+   "lon": -6.4463,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2016-01-01",
+     "valid_to": "2016-12-31",
+     "capacity_mw": 0.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2017-01-01",
+     "valid_to": "2017-12-31",
+     "capacity_mw": 0.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 22.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 200,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 43.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 382,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 55.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 487,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 72.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 634,648 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 76.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 668,290 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 108.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 953,837 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 122.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 1,076,961 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_forest_city",
+   "name": "Meta Forest City (North Carolina)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 35.3163,
+   "lon": -81.8252,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2011-01-01",
+     "valid_to": "2011-12-31",
+     "capacity_mw": 0.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 6,000 MWh in 2011 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2012-01-01",
+     "valid_to": "2012-12-31",
+     "capacity_mw": 11.2,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 98,000 MWh in 2012 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2013-01-01",
+     "valid_to": "2013-12-31",
+     "capacity_mw": 25.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 225,000 MWh in 2013 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2014-01-01",
+     "valid_to": "2014-12-31",
+     "capacity_mw": 36.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 322,000 MWh in 2014 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2015-01-01",
+     "valid_to": "2015-12-31",
+     "capacity_mw": 35.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 310,000 MWh in 2015 (Facebook Sustainability Data 2016 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2016-01-01",
+     "valid_to": "2016-12-31",
+     "capacity_mw": 38.7,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 339,000 MWh in 2016 (Facebook Sustainability Data 2020 - Electricity Use (MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2017-01-01",
+     "valid_to": "2017-12-31",
+     "capacity_mw": 49.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 433,000 MWh in 2017 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2018-01-01",
+     "valid_to": "2018-12-31",
+     "capacity_mw": 62.4,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 547,000 MWh in 2018 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2019-01-01",
+     "valid_to": "2019-12-31",
+     "capacity_mw": 70.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 614,000 MWh in 2019 (2023 Environmental Data Index, 2.1 Electricity - Electricity consumption by facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2020-01-01",
+     "valid_to": "2020-12-31",
+     "capacity_mw": 67.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 595,000 MWh in 2020 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2021-01-01",
+     "valid_to": "2021-12-31",
+     "capacity_mw": 66.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 580,842 MWh in 2021 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2022-01-01",
+     "valid_to": "2022-12-31",
+     "capacity_mw": 56.3,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 492,786 MWh in 2022 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2023-01-01",
+     "valid_to": "2023-12-31",
+     "capacity_mw": 57.9,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 507,068 MWh in 2023 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    },
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 61.1,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 535,555 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_kansas_city",
+   "name": "Meta Kansas City (Missouri)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 39.3225,
+   "lon": -94.5982,
+   "coords_quality": "osm_footprint",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint; no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 2.6,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 22,963 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
+    }
+   ],
+   "q_hat_mw": null,
+   "q_lo_mw": null,
+   "q_hi_mw": null,
+   "it_hat_mw": null,
+   "utilisation": null,
+   "q_bin": "no estimate",
+   "interval_class": "unbounded",
+   "in_training_set": false,
+   "frames_bin": "none"
+  },
+  {
+   "site_id": "meta_mesa",
+   "name": "Meta Mesa (Arizona)",
+   "operator": "Meta",
+   "country": "US",
+   "region": "",
+   "lat": 33.305,
+   "lon": -111.62,
+   "coords_quality": "approximate",
+   "cooling_arch": "",
+   "capacity_tier": "U",
+   "capacity_mw": null,
+   "capacity_basis": "",
+   "pue_assumed": 1.1,
+   "capacity_source": "",
+   "capacity_url": "",
+   "in_epoch_db": "no",
+   "notes": "Added for Meta's per-site annual electricity disclosure (Environmental Data Index); coordinates from the OSM-tagged Meta footprint (approximate: no footprint found); no hall polygons yet.",
+   "thermal_backend": "",
+   "obs_start": "",
+   "obs_end": "",
+   "case": "no_data",
+   "transfer_note": "",
+   "n_frames": 0,
+   "n_rejected_frames": 0,
+   "rejection_reasons": {},
+   "polygons": [],
+   "capacity_timeline": [
+    {
+     "valid_from": "2024-01-01",
+     "valid_to": "2024-12-31",
+     "capacity_mw": 2.8,
+     "basis": "facility_measured_annual",
+     "tier": "A2",
+     "source": "Meta per-site annual electricity disclosure: 24,657 MWh in 2024 (2025 Environmental Data Index, 2.1 Electricity - Electricity Consumption by Facility (in MWh))",
+     "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+     "notes": "Whole-campus metered electricity divided by 8760 h: the average facility load for the year, not a peak or a capacity. IT load = this / PUE."
     }
    ],
    "q_hat_mw": null,
