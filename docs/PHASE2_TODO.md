@@ -24,7 +24,7 @@ each site has.
 ## Astra tasks
 
 ### B1. On-site generation inventory from permits  [no-EE for the research, EE for the flux runs]
-Status: in progress (astra/b1; permit audit and cached-profile monthly replay)
+Status: in progress (astra/b1, draft PR #8; initial permit register and monthly replay complete; unresolved candidate permits/first fire/geometry remain)
 Data centres that burn their own fuel are directly measurable from TROPOMI (Colossus 2: 1,020 ± 180 kg NOx/h). Find every
 campus with on-site turbines or engines ≥ 50 MW, from air-permit registries (TCEQ, MDEQ, LDEQ, Ohio EPA, Wyoming DEQ,
 Arizona DEQ, Alberta) and company statements, and record: site, fuel, MW, control technology (SCR or not), permit id and
