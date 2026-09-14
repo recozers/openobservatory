@@ -1,0 +1,10 @@
+region,monitor_url,access_status,checked_on,notes
+inner_mongolia,https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publish.action,public_metadata_captcha_readings,2026-09-14,Public company list and document downloads work; automatic reading POST returned result=false and CAPTCHA required. UI offers 2019-current and legacy 2015-2018; actual reading coverage unverified.
+hebei,http://111.62.218.180:9920/,connect_timeout,2026-09-14,2024 NGO directory endpoint; connection timed out in this environment. Retention unverified.
+ningxia,https://222.75.41.50:30000/xxgk/,connect_timeout,2026-09-14,Link found on current Ningxia ecology department homepage; connection timed out. Retention unverified.
+gansu,http://125.74.7.100:8111/pollutionMonitor/publishmap.action,http_404,2026-09-14,Directory endpoint returned HTTP 404; ecology department homepage returned 412. Retention unverified.
+guizhou,https://wryjc.cnemc.cn/gkpt/mainZxjc/520000,public_route_unverified,2026-09-14,Current operator filing names national public route; this province view not inspected. Dated NGO audit says old provincial automatic platform stopped publishing; current hourly availability not established.
+chongqing,http://119.84.149.34:20003/publish2_pub/dataSearchPub/entList.aspx,connect_timeout,2026-09-14,2024 directory endpoint and current department homepage both timed out. Retention and outlet IDs unverified.
+sichuan,http://103.203.219.138:6666/hb/login,connect_timeout,2026-09-14,Historical operator-disclosed provincial login endpoint timed out. Public national route exists for 510000 but province data not inspected; no claim that no records exist.
+anhui,http://39.145.0.253:8081/gfwry/gfwryindex,connect_timeout,2026-09-14,Operator-disclosed automatic portal timed out; national public route returned app shell. No attributable plant data established.
+guangdong,https://wryjc.cnemc.cn/gkpt/mainZxjc/440000,public_ui_empty_initial_list,2026-09-14,"Current ecology department links national public portal. Browser rendered Guangdong heading, search form and initial empty company list; no inferred province-wide absence. Hourly capability unverified."

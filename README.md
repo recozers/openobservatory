@@ -151,3 +151,7 @@ ERA5 (Copernicus C3S), OpenStreetMap (ODbL), Epoch AI data-centre tables (CC BY)
 
 
 Generator watch points: `python tools/generator_watchlist.py` replays saved seasonal NOx changes; `--live` refreshes three complete months with noninteractive EE credentials. The monthly workflow runs registered watches and retains their raw profiles, monthly series and first-crossing ledger. Targets, source locations, uncertainty and pending projects are documented in [the generator watch audit](docs/generator_watchlist.md). An orange watch is a calibrated regional NOx screen, not a confirmed first fire or campus electricity measurement.
+
+Chinese plant monitors: `python tools/cn_stack_monitors.py` audits the saved annual plant emissions and report hashes.
+The [eleven-hub source/access audit](docs/cn_stack_monitors.md) distinguishes thermal park services, renewable supply and
+unverified nearby plants. Hourly collection remains access-limited; annual plant emissions are not campus electricity.
