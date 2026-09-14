@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-13T17:32:22.818423+00:00",
+"generated": "2026-09-13T18:01:02.448535+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -9852,6 +9852,7 @@
 "load": "10\u201330 MW assumed from documented capacity; not directly measured",
 "confidence": "high",
 "how": [
+"Municipal monthly water deliveries, with separate customer and return records; water evidence only, not electricity use",
 "Sentinel-2 roof dating",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: US Army Corps of Engineers power estimate (65 MW) as reported by the Salt Lake Tribune and"

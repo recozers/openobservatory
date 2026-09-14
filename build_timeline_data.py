@@ -27,6 +27,7 @@ import pandas as pd
 
 from dcheat import geom as G
 from tools.campd_monthly import quarterly_for_site
+from tools.water_monthly import for_site as water_for_site
 
 ROOT = Path(__file__).resolve().parent
 DATA, SITE = ROOT / "data", ROOT / "site"
@@ -323,6 +324,9 @@ def main():
                           "NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out.")
         if any(r.get("load_basis") == "dedicated_plant_measured" for r in rows):
             out["caveat"] = "CAMPD measures plant gross generation. Allocated output / assumed PUE is an IT equivalent proxy, not a campus meter; station and network losses are unmeasured. No uncertainty interval is established. Other quarters retain their stated capacity or satellite basis."
+        water = water_for_site(sid, ROOT)
+        if water:
+            out["water_monthly"] = water
         (OUT / f"{sid}.json").write_text(json.dumps(out, indent=0, default=str))
         last = rows[-1] if rows else None
         index[sid] = dict(est_mid=last["est_mid"] if last else 0, est_lo=last["est_lo"] if last else 0, est_hi=last["est_hi"] if last else 0,
