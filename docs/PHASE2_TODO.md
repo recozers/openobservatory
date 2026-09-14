@@ -5,7 +5,8 @@ Phase 1 is in `docs/ASTRA_TODO.md` (A1–A11, all merged or closed) and `docs/LO
 `secrets/`, official national statistics are inputs to test and never evidence.
 
 **Priority from Stuart, 14 Sep: focus more on China; US observability is already much better. The goal is utilisation, not
-power draw, and ideally telling training from inference, at the highest time resolution possible.** Prefer China tasks when
+power draw, and ideally telling training from inference, at the highest time resolution possible. Planned workload method:
+deep learning on high-resolution thermal imagery of substations and transformers, labelled by US national laboratories.** Prefer China tasks when
 choosing what to do next. Outside contributors donate agent sessions against `REQUESTS_FOR_WORK.md`. RFW-21, RFW-12 and RFW-13 there are this
 brief's B7, B8 and B9, marked reserved for Astra (renumbered 14 Sep). Before starting any other task, search open pull requests for an
 `[RFW-NN]` claim on the same work; if you finish or drop B7, B8 or B9, update its Status in that file.

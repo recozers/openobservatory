@@ -11,7 +11,9 @@ Utilisation, the share of installed computing capacity in use, is the project's 
 data reaches utilisation three ways: commercial utilisation (share of capacity leased, from operator filings, which says
 nothing about how hard equipment runs), electrical utilisation (average load divided by a capacity for the same period), and
 activity signals that bracket it. Distinguishing training from inference would need load at hourly resolution or finer, on
-the untested assumption that inference follows daily demand while training runs near-flat.
+the untested assumption that inference follows daily demand while training runs near-flat. The planned method is a
+deep-learning model on thermal imagery of substations and transformers at a few metres, several times a day, labelled with
+metered load and workload records from US national laboratories (REQUESTS_FOR_WORK.md, T-05).
 
 
 IT load in MW per site per quarter, as a 10/50/90 percentile band. Facility load = IT × PUE (site-specific where

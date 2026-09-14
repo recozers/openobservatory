@@ -20,8 +20,11 @@ from outside, so independent measurement matters most. It is also where the proj
 - **Electrical utilisation** is average power drawn divided by capacity. It needs a load and a capacity for the same period.
 - **Activity signals** such as construction, energisation and on-site fuel burning bracket utilisation without measuring it.
 
-Telling training from inference needs load at hourly resolution or finer. The working assumption, untested here, is that
-inference follows daily demand cycles while training runs near-flat for weeks.
+**Training or inference.** The planned method is a deep-learning model trained on detailed thermal imagery of campus
+substations and transformers, labelled with metered load and workload records from US national laboratories (T-05). A
+transformer's losses rise with the square of its load, so its temperature follows the site's load with a lag of hours, and
+the same imagery can count transformers to give capacity. Separating workloads assumes, untested here, that inference follows
+daily demand cycles while training runs near-flat for weeks, so it needs several images a day at a few metres.
 
 ### How close we are
 
@@ -34,7 +37,7 @@ inference follows daily demand cycles while training runs near-flat for weeks.
 | How much is in use, electrically? | Annual electricity divided by capacity for the same period | Annual | 1 site: ORNL's Frontier averaged about 0.54 of its measured peak in 2023 | None |
 | How much is in use, commercially? | Operator filings | Quarterly | Not yet collected | Company-wide only: VNET 73.9 % in mid-2026, GDS 75.5 % by area at end-2025; no campus figures |
 | How much is in use, from activity? | TROPOMI NOx at campuses that burn fuel on site | Monthly ±20 to 50 %, quarterly ±20 % | Relative change at 1 campus, Colossus 2; megawatts uncertain 2 to 3 times, so no ratio | Nothing to calibrate against; no known on-site generation |
-| Training or inference? | No working method | None | Not observed; site classes are assigned by hand from press coverage | Not observed; national planning assigns latency-tolerant work to western hubs, an official input to test |
+| Training or inference? | Planned: a deep-learning model on thermal imagery of substations and transformers, labelled by US national laboratories | Needs several images a day at a few metres | Not observed; free thermal imagery is 70 m or coarser, and site classes are assigned by hand from press coverage | Not observed; needs commercial satellite thermal, and national planning's assignment of latency-tolerant work to western hubs is an official input to test |
 
 Load without a same-period capacity does not give utilisation. Meta reports electricity for 18 campuses and Google's water use
 gives an approximate load for 12, but among them only Luleå in Sweden has a capacity figure for the same years: it ran at 0.25
@@ -47,8 +50,9 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
 - **Capacity is the weak half of utilisation.** Two sites have a load and a capacity for the same period, and most capacity
   figures are third-party estimates or connection limits rather than installed computing.
 - **Nothing is measured often enough to separate training from inference.** The finest load series is monthly, at one campus
-  that burns its own fuel. Hourly sources exist but are untested for this: EPA hourly plant records in the US, and
-  geostationary NO₂ satellites over North America (TEMPO) and East Asia (GEMS).
+  that burns its own fuel. The planned transformer method needs thermal imagery at a few metres several times a day, which no
+  free source provides, plus metered labels from laboratories. Hourly NO₂ from geostationary satellites over North America
+  (TEMPO) and East Asia (GEMS) is an untested alternative where fuel is burned.
 
 ## Donate a session
 
@@ -130,7 +134,7 @@ Status shows only standing reservations by the project's own agents. Live claims
   campuses and hub centroids found the 39 entries, six placed from approximate coordinates found nothing, and some clusters,
   such as the Yangtze River Delta demonstration zone, have never been scanned.
 - **Do:** Find each cluster's data-centre parks and their locations or boundaries in park plans, environmental impact
-  documents or land transfer notices, with URLs. Scan each park with RFW-25's command and score the candidates.
+  documents or land transfer notices, with URLs. Scan each park with RFW-26's command and score the candidates.
 - **Deliver:** `data/cn_hub_parks.csv` with cluster, park, coordinates or boundary, source URL and page; candidate files per
   park; and a one-line verdict per cluster in `docs/LOG.md`.
 
@@ -251,8 +255,9 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | open |
 | [RFW-21](#rfw-21-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Utilisation | M | none | reserved: Astra |
 | [RFW-22](#rfw-22-stated-workload-roles-for-the-rest-of-the-inventory) | Stated workload roles for the rest of the inventory | Workload | M | none | open |
-| [RFW-23](#rfw-23-utilisation-ramp-curves-from-metas-18-campuses) | Utilisation ramp curves from Meta's 18 campuses | Utilisation | M | EE optional | open |
-| [RFW-24](#rfw-24-implement-the-utilisation-model) | Implement the utilisation model | Utilisation | L | none | open |
+| [RFW-23](#rfw-23-laboratory-partners-with-metered-substation-load) | Laboratory partners with metered substation load | Utilisation, Workload | M | none | open |
+| [RFW-24](#rfw-24-utilisation-ramp-curves-from-metas-18-campuses) | Utilisation ramp curves from Meta's 18 campuses | Utilisation | M | EE optional | open |
+| [RFW-25](#rfw-25-implement-the-utilisation-model) | Implement the utilisation model | Utilisation | L | none | open |
 
 #### RFW-14 Make the plume test robust to start date and season
 
@@ -340,7 +345,20 @@ These methods are developed where ground truth exists, mostly in the US, so they
   planning documents distinct.
 - **Deliver:** Rows in `data/workload_roles.csv`, and a list of hand-assigned site classes that no source supports.
 
-#### RFW-23 Utilisation ramp curves from Meta's 18 campuses
+#### RFW-23 Laboratory partners with metered substation load
+
+- **Why:** The planned training-or-inference method (T-05) learns from substations whose load and workload are known. US
+  national laboratories run large computing systems on their own electrical infrastructure and keep metered power and job
+  records, so they are the natural source of labels.
+- **Do:** List the Department of Energy laboratories' large open-science computing facilities: Oak Ridge (OLCF), Lawrence
+  Berkeley (NERSC), Argonne (ALCF), Lawrence Livermore and NREL. For each, record what is public: facility and system power
+  data, substation and transformer ratings, the substation's location on public maps, and job or workload records. Draft a
+  data-sharing request for Stuart to send, covering metered substation load at hourly or finer resolution, transformer
+  nameplates, records of training and inference jobs by time, and permission to image the substation.
+- **Deliver:** `data/lab_partners.csv` with facility, systems, published data and URLs, and the draft request in
+  `docs/lab_partner_request.md`. Nothing is sent, and no laboratory site is imaged, without agreement.
+
+#### RFW-24 Utilisation ramp curves from Meta's 18 campuses
 
 - **Why:** How fast utilisation rises after a building is finished is the key prior for estimating it between annual
   disclosures. Meta's electricity series from 2011 to 2024 across 18 campuses measures the load side of that ramp.
@@ -348,7 +366,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
   against years since roof-on, with uncertainty.
 - **Deliver:** Fitted ramp parameters with uncertainty in `docs/utilisation_model.md`, and the per-campus fits.
 
-#### RFW-24 Implement the utilisation model
+#### RFW-25 Implement the utilisation model
 
 - **Why:** The site uses fixed rules per evidence type. `docs/utilisation_model.md` defines one model in which every source
   moves the utilisation estimate consistently, with stated priors and posteriors per site.
@@ -361,15 +379,15 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 | ID | Request | Answers | Size | Keys | Status |
 |---|---|---|---|---|---|
-| [RFW-25](#rfw-25-radar-candidate-scan-around-every-inventory-site) | Radar candidate scan around every inventory site | Where, Built | L | EE | open |
-| [RFW-26](#rfw-26-date-dark-and-grey-roofs) | Date dark and grey roofs | Built | M | EE | open |
-| [RFW-27](#rfw-27-recalibrate-the-hall-classifier-with-new-labels) | Recalibrate the hall classifier with new labels | Where | M | EE | open after RFW-01 |
-| [RFW-28](#rfw-28-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
-| [RFW-29](#rfw-29-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
-| [RFW-30](#rfw-30-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
-| [RFW-31](#rfw-31-source-link-checker) | Source link checker | Tools | S | none | open |
+| [RFW-26](#rfw-26-radar-candidate-scan-around-every-inventory-site) | Radar candidate scan around every inventory site | Where, Built | L | EE | open |
+| [RFW-27](#rfw-27-date-dark-and-grey-roofs) | Date dark and grey roofs | Built | M | EE | open |
+| [RFW-28](#rfw-28-recalibrate-the-hall-classifier-with-new-labels) | Recalibrate the hall classifier with new labels | Where | M | EE | open after RFW-01 |
+| [RFW-29](#rfw-29-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
+| [RFW-30](#rfw-30-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
+| [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
+| [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | open |
 
-#### RFW-25 Radar candidate scan around every inventory site
+#### RFW-26 Radar candidate scan around every inventory site
 
 - **Why:** Radar dates construction through cloud and finds unlisted buildings, but it has run in only 12 Chinese hub boxes, 9
   US boxes and 40 night-light areas.
@@ -379,7 +397,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** A candidate file per site; a table in `docs/LOG.md` of recall at known halls and the false-positive types by
   region. Stop and report if Earth Engine quotas make a region impractical.
 
-#### RFW-26 Date dark and grey roofs
+#### RFW-27 Date dark and grey roofs
 
 - **Why:** Brightness dating misses dark membranes and grey roofs, as at Hyperion and at Chinese campuses such as Ulanqab. A
   vegetation and built-up index rule already failed (`docs/dark_roof_validation.md`).
@@ -389,14 +407,14 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** A rule that dates Hyperion's two structures without a false early event and moves no Abilene date by more than
   a month, or a documented failure with the numbers.
 
-#### RFW-27 Recalibrate the hall classifier with new labels
+#### RFW-28 Recalibrate the hall classifier with new labels
 
 - **Why:** The classifier has 18 positives. RFW-01, RFW-11 and the 78 Epoch campuses with polygons can multiply that.
 - **Do:** Add the new labels, retrain with `tools/cand_classifier.py`, and report leave-one-group-out results by region and
   building type. Refresh the scores of existing candidates.
 - **Deliver:** Updated `results_cand/scores.csv`, results in `docs/LOG.md`, and a note on any threshold change.
 
-#### RFW-28 Standby generator permits as a capacity bound
+#### RFW-29 Standby generator permits as a capacity bound
 
 - **Why:** State air permits list the diesel standby generators at many US data centres. Their total rating bounds facility
   power, because campuses back up their full load, which gives a sourced capacity figure where none exists.
@@ -405,7 +423,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** `data/standby_generation.csv` and a note giving the ratio of standby MW to documented capacity across at least
   10 sites. Propose a capacity-bound basis only if the ratio is consistent to within about 30 %.
 
-#### RFW-29 Construction timeline on the map
+#### RFW-30 Construction timeline on the map
 
 - **Why:** Every dated building has a month, but the map shows only the present.
 - **Do:** Add a time slider to the landing map that shows sites as they were at the end of each quarter, using the dates
@@ -413,7 +431,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** The slider working at desktop and phone widths, and Node tests in the style of
   `tests/frontend_evidence.test.cjs`.
 
-#### RFW-30 Tests for the load precedence rules
+#### RFW-31 Tests for the load precedence rules
 
 - **Why:** The rules deciding which figure sets a site's load have been extended several times: reported electricity, carried
   averages, water-derived figures, third-party estimates, plant records, radar entries, generator watches.
@@ -421,7 +439,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
   each basis and each carried-forward case.
 - **Deliver:** Tests that fail if any precedence rule changes silently, all passing on `main`.
 
-#### RFW-31 Source link checker
+#### RFW-32 Source link checker
 
 - **Why:** Hundreds of source URLs back the numbers on the site, and links rot.
 - **Do:** Write `tools/check_links.py` to read every URL in `data/*.csv` and the source JSON files, check each at a polite
@@ -438,16 +456,17 @@ Research bets with a first test that fits a session and a condition for stopping
 | [T-02](#t-02-hourly-no2-from-gems-over-plants-supplying-chinese-parks) | Hourly NO2 from GEMS over plants supplying Chinese parks | Utilisation, Workload | Hourly, daytime | China | GEMS data access |
 | [T-03](#t-03-temporary-site-housing-as-a-construction-signal) | Temporary site housing as a construction signal | Built | Monthly | China | EE |
 | [T-04](#t-04-radar-backscatter-after-the-structure-goes-up) | Radar backscatter after the structure goes up | Running | Monthly | China and global | EE |
-| [T-05](#t-05-hourly-no2-from-tempo-at-turbine-fed-campuses) | Hourly NO2 from TEMPO at turbine-fed campuses | Workload | Hourly, daytime | US | Earthdata, EPA |
-| [T-06](#t-06-network-presence-as-a-sign-of-inference) | Network presence as a sign of inference | Workload | When registrations change | Global | none |
-| [T-07](#t-07-radar-coherence-over-fan-yards) | Radar coherence over fan yards | Running | 6 to 12 days | Global | Earthdata |
-| [T-08](#t-08-cooling-tower-vapour-plumes) | Cooling-tower vapour plumes | Running | Per clear scene | Global | EE |
-| [T-09](#t-09-wastewater-discharge-reports-as-a-monthly-cooling-series) | Wastewater discharge reports as a monthly cooling series | Utilisation | Monthly | US | none |
-| [T-10](#t-10-building-permits-and-occupancy-certificates-as-energisation-dates) | Building permits and occupancy certificates as energisation dates | Running | Monthly | US | none |
-| [T-11](#t-11-crane-filings-as-construction-start-signals) | Crane filings as construction-start signals | Built | Monthly | US | none |
-| [T-12](#t-12-counting-cooling-equipment-in-public-aerial-imagery) | Counting cooling equipment in public aerial imagery | Capacity | Every 2 to 3 years | US | EE |
-| [T-13](#t-13-substation-transformer-bays-as-connection-capacity) | Substation transformer bays as connection capacity | Capacity | Every 2 to 3 years | US | EE |
-| [T-14](#t-14-utility-retail-sales-where-one-campus-dominates) | Utility retail sales where one campus dominates | Utilisation | Annual | US | none |
+| [T-05](#t-05-transformer-heat-as-a-load-and-workload-signal) | Transformer heat as a load and workload signal | Utilisation, Workload | Several images a day | US laboratories, then global and China | none for the first test |
+| [T-06](#t-06-hourly-no2-from-tempo-at-turbine-fed-campuses) | Hourly NO2 from TEMPO at turbine-fed campuses | Workload | Hourly, daytime | US | Earthdata, EPA |
+| [T-07](#t-07-network-presence-as-a-sign-of-inference) | Network presence as a sign of inference | Workload | When registrations change | Global | none |
+| [T-08](#t-08-radar-coherence-over-fan-yards) | Radar coherence over fan yards | Running | 6 to 12 days | Global | Earthdata |
+| [T-09](#t-09-cooling-tower-vapour-plumes) | Cooling-tower vapour plumes | Running | Per clear scene | Global | EE |
+| [T-10](#t-10-wastewater-discharge-reports-as-a-monthly-cooling-series) | Wastewater discharge reports as a monthly cooling series | Utilisation | Monthly | US | none |
+| [T-11](#t-11-building-permits-and-occupancy-certificates-as-energisation-dates) | Building permits and occupancy certificates as energisation dates | Running | Monthly | US | none |
+| [T-12](#t-12-crane-filings-as-construction-start-signals) | Crane filings as construction-start signals | Built | Monthly | US | none |
+| [T-13](#t-13-counting-cooling-equipment-in-public-aerial-imagery) | Counting cooling equipment in public aerial imagery | Capacity | Every 2 to 3 years | US | EE |
+| [T-14](#t-14-substation-transformer-bays-as-connection-capacity) | Substation transformer bays as connection capacity | Capacity | Every 2 to 3 years | US | EE |
+| [T-15](#t-15-utility-retail-sales-where-one-campus-dominates) | Utility retail sales where one campus dominates | Utilisation | Annual | US | none |
 
 #### T-01 Chinese power-exchange market records
 
@@ -484,7 +503,23 @@ Research bets with a first test that fits a session and a condition for stopping
   Sentinel-2 six to nine months later, then apply the result to the Chinese radar entries.
 - **Stop if:** Abilene shows no post-structure rise distinguishable from month-to-month noise.
 
-#### T-05 Hourly NO2 from TEMPO at turbine-fed campuses
+#### T-05 Transformer heat as a load and workload signal
+
+- **Hypothesis:** A transformer's load losses rise with the square of its current, so its tank and radiator temperatures follow
+  the load it carries, with a lag of hours set by its oil and cooling. Imaged at a few metres several times a day, a campus
+  substation would give a load series, and the number and size of its transformers would give capacity. A deep-learning model
+  trained on substations at US national laboratories, where metered load and job records provide the labels (RFW-23), could
+  then estimate utilisation and tell training from inference at commercial campuses, including in China. This is the project's
+  planned method for the workload question.
+- **First test, free:** Use the standard transformer loading models (IEEE C57.91 and IEC 60076-7) with load profiles for
+  training and for inference, taken from public cluster traces or laboratory records, to predict surface temperature changes.
+  Compare them with the noise of thermal sensors that exist or are planned. Then sample the simulated temperatures as a
+  satellite would, add that noise, and check whether a classifier still separates the two workloads.
+- **Second test:** image one laboratory substation with metered load at several load levels and times of day (PAID-03).
+- **Stop if:** the predicted changes are smaller than achievable sensor noise at a few metres, the simulation cannot separate the
+  workloads at achievable sampling, or the laboratory pilot shows no load dependence.
+
+#### T-06 Hourly NO2 from TEMPO at turbine-fed campuses
 
 - **Hypothesis:** TEMPO, a geostationary instrument over North America, measures NO₂ every daylight hour. At a campus that
   runs its own turbines, such as Colossus 2, it could show whether generation is flat through the day, as training would be,
@@ -493,7 +528,7 @@ Research bets with a first test that fits a session and a condition for stopping
   records as truth. Only then look at the hourly shape at Colossus 2.
 - **Stop if:** the reporting plant's hourly cycle cannot be recovered.
 
-#### T-06 Network presence as a sign of inference
+#### T-07 Network presence as a sign of inference
 
 - **Hypothesis:** Inference serves users, so it needs low-latency connections: campuses listed in PeeringDB with many networks,
   or hosting a public cloud region, are more likely to run inference than isolated training campuses.
@@ -502,14 +537,14 @@ Research bets with a first test that fits a session and a condition for stopping
 - **Stop if:** network presence does not separate campuses with stated training roles from those with stated inference or
   cloud roles.
 
-#### T-07 Radar coherence over fan yards
+#### T-08 Radar coherence over fan yards
 
 - **Hypothesis:** Operating cooling and fan yards lose radar interferometric coherence faster than idle yards.
 - **First test:** Compute 6 or 12-day Sentinel-1 coherence from single-look complex data at yards and roofs before and after
   documented energisation at three US sites, then at Chinese campuses if it works.
 - **Stop if:** no step appears at the three US sites.
 
-#### T-08 Cooling-tower vapour plumes
+#### T-09 Cooling-tower vapour plumes
 
 - **Hypothesis:** On cold humid mornings, plumes above cooling towers are visible in Sentinel-2 and Landsat, and how often they
   appear tracks operation.
@@ -517,7 +552,7 @@ Research bets with a first test that fits a session and a condition for stopping
   dates.
 - **Stop if:** weather explains plume presence better than operating status.
 
-#### T-09 Wastewater discharge reports as a monthly cooling series
+#### T-10 Wastewater discharge reports as a monthly cooling series
 
 - **Hypothesis:** Where a campus discharges cooling-tower water under its own federal permit, the EPA's monthly discharge
   monitoring reports give a measured monthly flow that scales with heat rejected, and so with load.
@@ -525,7 +560,7 @@ Research bets with a first test that fits a session and a condition for stopping
   check the seasonality against wet-bulb temperature and against Meta's electricity where both exist.
 - **Stop if:** no inventory campus holds an individual permit with flow reporting.
 
-#### T-10 Building permits and occupancy certificates as energisation dates
+#### T-11 Building permits and occupancy certificates as energisation dates
 
 - **Hypothesis:** US county permit records give the month each building was certified for occupancy, which marks the step
   between a finished building and one drawing load.
@@ -533,14 +568,14 @@ Research bets with a first test that fits a session and a condition for stopping
   halls, and compare occupancy dates with radar structure-on and with Meta's load ramp.
 - **Stop if:** fewer than 10 inventory buildings can be matched.
 
-#### T-11 Crane filings as construction-start signals
+#### T-12 Crane filings as construction-start signals
 
 - **Hypothesis:** The FAA's public obstruction evaluations include temporary structures such as cranes, with coordinates and
   dates, which would flag construction starts months before radar sees a structure.
 - **First test:** Pull filings near 20 US inventory campuses and compare the first crane date with the radar structure-on month.
 - **Stop if:** filings match fewer than half the campuses or lead radar by less than a month.
 
-#### T-12 Counting cooling equipment in public aerial imagery
+#### T-13 Counting cooling equipment in public aerial imagery
 
 - **Hypothesis:** USDA's public-domain NAIP aerial imagery, at 0.6 to 1 m, resolves chillers, dry coolers and cooling towers.
   Count times unit capacity from Epoch's equipment catalogues in `data/epoch/` bounds the heat a campus can reject, and so its
@@ -548,7 +583,7 @@ Research bets with a first test that fits a session and a condition for stopping
 - **First test:** Count units at five US sites with documented capacity and compare.
 - **Stop if:** the estimate misses documented capacity by more than a factor of two.
 
-#### T-13 Substation transformer bays as connection capacity
+#### T-14 Substation transformer bays as connection capacity
 
 - **Hypothesis:** The number of transformer bays at a campus substation, visible in NAIP, indicates its grid connection
   capacity.
@@ -556,7 +591,7 @@ Research bets with a first test that fits a session and a condition for stopping
   compare bays times typical ratings, matching each figure's period to the imagery date.
 - **Stop if:** ratings vary too much to beat a factor of two.
 
-#### T-14 Utility retail sales where one campus dominates
+#### T-15 Utility retail sales where one campus dominates
 
 - **Hypothesis:** For small utilities whose load is mostly one campus, the Energy Information Administration's annual retail
   sales by utility approximate that campus's consumption.
@@ -582,7 +617,7 @@ until a pilot shows it is worth it.
 |---|---|---|---|---|
 | [PAID-01](#paid-01-sub-metre-optical-imagery-of-the-chinese-hub-parks) | Sub-metre optical imagery of the Chinese hub parks | Where, Capacity | China | 3 parks, archive scenes |
 | [PAID-02](#paid-02-high-resolution-radar-over-cloudy-southwest-hubs) | High-resolution radar over cloudy southwest hubs | Built | China | 2 parks, 4 scenes each |
-| [PAID-03](#paid-03-night-thermal-imagery-at-3-to-5-metres) | Night thermal imagery at 3 to 5 metres | Running, Utilisation | US, then China | 1 US campus with a known ramp |
+| [PAID-03](#paid-03-thermal-imagery-of-substations-and-transformers-at-a-few-metres) | Thermal imagery of substations and transformers at a few metres | Utilisation, Workload | US laboratories, then China | 1 laboratory substation with metered load |
 | [PAID-04](#paid-04-frequent-3-to-5-metre-optical-monitoring-of-chinese-parks) | Frequent 3 to 5 metre optical monitoring of Chinese parks | Built, Running | China | 5 parks, 3 months |
 | [PAID-05](#paid-05-dedicated-satellite-capacity) | Dedicated satellite capacity | All | China first | Requirements only |
 | [PAID-06](#paid-06-native-language-review-of-chinese-documents) | Native-language review of Chinese documents | Where, Built, Workload | China | 20 documents |
@@ -593,7 +628,7 @@ until a pilot shows it is worth it.
 #### PAID-01 Sub-metre optical imagery of the Chinese hub parks
 
 - **Answers:** whether the radar-found structures are data halls; counts of cooling units and generator rows, which bound
-  capacity as T-12 does with free US imagery; phase dating at building level.
+  capacity as T-13 does with free US imagery; phase dating at building level.
 - **Pilot:** one recent cloud-free archive scene each over Horinger, Ulanqab and Zhangbei, then one more a year apart.
 - **Cost drivers:** area, resolution, archive against new tasking.
 - **Success test:** RFW-01's chip-based verdicts agree with the sub-metre view, and two independent unit counts match.
@@ -606,17 +641,17 @@ until a pilot shows it is worth it.
 - **Cost drivers:** imaging mode, number of acquisitions, archive availability.
 - **Success test:** hall-level structure dates that Sentinel-1 cannot give, checked against later clear optical scenes.
 
-#### PAID-03 Night thermal imagery at 3 to 5 metres
+#### PAID-03 Thermal imagery of substations and transformers at a few metres
 
-- **Answers:** the one thermal hypothesis still open. Roofs at 70 to 100 m showed nothing, but individual dry coolers, cooling
-  towers, transformers and generator yards may be hot enough to see at 3 to 5 m. Acquisitions at several times of day could
-  also show a daily cycle.
-- **Pilot:** repeated night acquisitions over one US campus with a documented load ramp, Colossus 2 or Abilene, where ground
-  truth exists. One Chinese park only if that shows a signal.
-- **Cost drivers:** satellite tasking or an airborne survey, number of nights, area. An airborne survey is not an option over
-  China.
-- **Success test:** yard or cooling-unit temperature changes with documented load, beyond the scatter between nights. Stop if
-  the US pilot shows no signal.
+- **Answers:** the data for the planned utilisation and training-or-inference method (T-05). Free thermal imagery is 70 m or
+  coarser, while a campus transformer is a few metres across.
+- **Pilot:** repeated acquisitions, day and night, over one US national laboratory substation with metered load (RFW-23), at
+  several load levels. Then one commercial US campus with a documented load ramp, such as Abilene. Then one Chinese hub park by
+  satellite, only if the laboratory pilot shows a signal.
+- **Cost drivers:** acquisitions per day and per week, which decide whether daily cycles can be seen; satellite tasking or an
+  airborne survey; area. An airborne survey is not an option over China.
+- **Success test:** transformer or radiator temperature follows metered load beyond the scatter between acquisitions. Stop if
+  the laboratory pilot shows no load dependence.
 
 #### PAID-04 Frequent 3 to 5 metre optical monitoring of Chinese parks
 
@@ -629,8 +664,9 @@ until a pilot shows it is worth it.
 
 - **Answers:** sustained, independent monitoring of Chinese data-centre parks, the end state if a paid pilot proves an
   observable.
-- **Pilot:** none until PAID-01 or PAID-03 shows which observable works. Then write requirements: resolution, night-time
-  capability, spectral bands, revisit and the list of parks, and check whether a long-term tasking contract meets them before
+- **Pilot:** none until PAID-01 or PAID-03 shows which observable works. If PAID-03 passes, the likely requirement is thermal
+  imagery at a few metres several times a day over the listed parks' substations. Write the requirements: resolution,
+  revisit, day and night capability, spectral bands and the list of parks, and check whether a long-term tasking contract meets them before
   considering a hosted payload or a dedicated small satellite.
 - **Cost drivers:** set entirely by those requirements, so no estimate is possible yet.
 
@@ -652,7 +688,7 @@ until a pilot shows it is worth it.
 
 #### PAID-08 Compute for continental radar scans
 
-- **Answers:** RFW-02 and RFW-25 across whole provinces, if Earth Engine's non-commercial quotas block the scans.
+- **Answers:** RFW-02 and RFW-26 across whole provinces, if Earth Engine's non-commercial quotas block the scans.
 - **Pilot:** one province by batch export to cloud storage, with the cost recorded per 1,000 km².
 - **Cost drivers:** storage, processing and egress.
 - **Success test:** candidate lists for the province that match the box scans where they overlap.
@@ -660,7 +696,7 @@ until a pilot shows it is worth it.
 #### PAID-09 US public-records request fees
 
 - **Answers:** utility, water and generator records for named US campuses, where agencies charge to process requests.
-- **Pilot:** five requests to agencies serving inventory campuses, chosen to test T-09 and T-14.
+- **Pilot:** five requests to agencies serving inventory campuses, chosen to test T-10 and T-15.
 - **Cost drivers:** processing and copying fees.
 - **Success test:** at least two responses give an attributable monthly or annual series.
 
@@ -757,7 +793,10 @@ Please do not repeat these without a new idea.
   Daytime steps (Rainier +1.44 ± 0.60 K, Fairwater +1.35 ± 0.49 K) coincide with roofing and fit-out and cannot be separated
   from them; Landsat (100 m, daytime) gave no usable load signal either. Colossus 1's hall warmed by 1.24 ± 0.28 K at night,
   and its whole block, turbine yard included, by about the same. As a detector, nine ordinary roofs spanned −1.5 to +2.0 K at
-  night against −0.75 to +1.2 K for twelve data centres. See `docs/overnight_report_2026-09-13.md`.
+  night against −0.75 to +1.2 K for twelve data centres. Transformer-scale heat is untested: at 70 m, the NSA Utah site's
+  tentatively identified switchyard, about three pixels, read +0.25 ± 0.07 K at night over 299 frames, no different from the
+  halls beside it (+0.19 ± 0.05 K), and that site's documented load did not change. See
+  `docs/overnight_report_2026-09-13.md`.
 - **Snow persistence on roofs.** At eight of nine sites over eight winters, operating halls held as much snow as the
   surrounding built-up land or more. At New Albany they held less in 2024 to 2026 (0.64 to 0.78 against 0.77 to 0.91) while
   new halls were being built on the campus.

@@ -330,3 +330,11 @@ B9 is the next independent task, while B8 needs normal public reading access and
 - Correction: New Albany's 250 MW connection applies only from 2026, so its 2023-24 loads cannot give a utilisation ratio.
   The cloud prior (0.2-0.6) now cites its one same-period calibration point, Luleå at 0.25-0.45 of 120 MW in 2022-24; fixed
   in the builder's basis text, the site's methods text, docs/utilisation_model.md and docs/MVP.md.
+- Training-or-inference method set (Stuart, 14 Sep): a deep-learning model on detailed thermal imagery of campus substations
+  and transformers, labelled with metered load and workload records from US national laboratories. Added as theory T-05 (free
+  first test: IEEE C57.91 / IEC 60076-7 transformer thermal models with training and inference load profiles, sampled and
+  noised as a satellite would), request RFW-23 (laboratory partners and a draft data-sharing request), and PAID-03 refocused
+  on substation thermal imagery. Evidence so far, computed from data/observations_eco.csv: at 70 m the NSA site's tentatively
+  identified switchyard (about 3 pixels) read +0.25 ± 0.07 K at night over 299 frames, no different from its halls
+  (+0.19 ± 0.05 K), with no load change to test against, so transformer-scale heat is untested rather than failed.
+  Requests are now RFW-01 to RFW-32 and theories T-01 to T-15.
