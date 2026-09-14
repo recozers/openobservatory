@@ -391,3 +391,27 @@ Stuart asked for the repository to be ready for outside contributors and for a p
 Not changed: branch protection. Requiring pull requests on main would block the direct pushes Claude and Astra make.
 Practice claim: RFW-07 in pull request 15, from a branch in this repository because an account cannot fork its own
 repository.
+
+## 2026-09-14 (Claude): RFW-07, Chindata's per-data-centre tables and a hub-name search (pull request 15)
+
+Practice claim of the donated-session workflow: branch `rfw/07-chindata-edgar`, draft pull request 15, labelled by the claims
+workflow.
+
+- SEC's EDGAR refused automated requests whose User-Agent names the project but no contact email. No project contact address
+  is agreed, so `tools/chindata_filings.py` reads the Internet Archive's copies of the SEC URLs and records each snapshot and
+  SHA-256 in `results_cn/sec_archive_sources.csv`.
+- Chindata's 2020 prospectus and FY2021 and FY2022 20-Fs: 74 table rows, all within rounding of the reported totals; 166
+  Chinese rows added to `data/cn_operator_disclosures.csv` as `chindata_dc_table`. In the Greater Beijing Area, capacity in
+  customer use was 77.5 % of 171 MW across 7 data centres in mid-2020, 287 of 399 MW across 13 at end-2021, and 466 of 517 MW
+  across 18 at end-2022. CN11-C went from 8 to 67 of 71 MW in a year. These are commercial figures, not power.
+- The filings give no city per data centre. Chindata's releases place CN13 in Tianjin, CN14 and CN20 in Shanxi (Datong), and
+  CN18, CN19 and CN23 in Hebei (`data/chindata_dc_locations.csv`, quotes verified against the documents).
+- Correction: the 324 MW Zhangjiakou and 308 MW Datong rows were `it_capacity_mw`, which reads as capacity in service; the
+  20-F calls them total capacity, so they are now `total_capacity_mw`.
+- Hub-name search of 12 archived annual reports (VNET 5, GDS 4, Chindata 3): no capacity figure for Ulanqab, Zhangbei,
+  Horinger, Gui'an or Zhongwei. GDS runs four build-operate-transfer data centres in Zhangbei (FY2019 and FY2020 20-Fs), added
+  as a count. VNET's Ulanqab orders stay unverified: they are in quarterly releases, and the archive has none from 2025 on.
+- Left open in RFW-07: EDGAR full-text search including 6-Ks, which needs an agreed contact email, and the cities of the other
+  Chindata data centres. Tests: `tests/test_chindata_filings.py` (11). Nothing on the public site changes, because no builder
+  reads this file yet; Astra's B9 will.
+

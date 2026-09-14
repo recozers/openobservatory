@@ -1,12 +1,13 @@
 # Chinese data-centre operator disclosures for the 东数西算 hubs — what exists, what does not
 
-Companion to `data/cn_operator_disclosures.csv` (81 rows, 2026-09-13). Every row carries a URL that was fetched and read
+Companion to `data/cn_operator_disclosures.csv` (81 rows on 2026-09-13; 248 after RFW-07 on 2026-09-14, see section 6). Every row carries a URL that was fetched and read
 during this pass; where a figure appeared only in a search snippet it is flagged "unverified" in the note column and is
 not given its own row. Time-boxed to ~30 minutes, so this is a first sweep, not an exhaustive filing review.
 
 ## 1. Headline finding
 
-**No listed operator discloses capacity or utilisation at the level of an individual 东数西算 campus.**
+**No listed operator discloses capacity or utilisation at the level of an individual 东数西算 campus**, apart from
+Chindata's per-data-centre tables (section 6), which give most data centres no city.
 The three US-listed colocation operators (VNET, GDS, Chindata) report company-wide MW / sqm and utilisation each quarter;
 the three telcos report company-wide rack counts once a year; the hyperscalers (Alibaba, Tencent, Huawei) report PUE and
 clean-energy shares but no capacity. Campus-level numbers exist only in (a) operator press releases at ground-breaking or
@@ -19,7 +20,7 @@ opening (design capacity, servers "planned"), and (b) park administrative-commit
 |---|---|---|---|---|
 | **VNET** (NASDAQ: VNET) | Company-wide, split wholesale vs retail | Quarterly (6-K press release) since wholesale segment introduced ~2021; 20-F annually | Wholesale: capacity in service / committed / utilized / under construction / pre-committed (MW), utilization %, mature vs ramp-up utilization. Retail: cabinets in service, utilized, MRR/cabinet | Ulanqab appears only in narrative (order wins, near-zero-carbon demo project). The FY2025 20-F contains zero occurrences of "Ulanqab"; owned-building floor area (1,049,009 sqm) lists Inner Mongolia and Hebei among nine provinces but is not split |
 | **GDS** (NASDAQ: GDS) | Company-wide China | Quarterly since IPO (2016) | Area in service / committed / utilized / under construction (sqm), utilization %, commitment and pre-commitment rates. No MW | 20-F FY2025 names "new growth markets" Inner Mongolia, Ningxia, Shaoguan and three Zhangjiakou DCs; "Ulanqab" not in 20-F. Chinese-site press release (2023-07) gives Ulanqab phase 1 land (125 mu) and gross building area (~110,000 sqm), no MW |
-| **Chindata** (NASDAQ: CD, private since 2023) | Company-wide + region (Greater Beijing / Malaysia-India / YRD / GBA) | Quarterly 2020–Q2 2023; 20-F FY2020–FY2022 | Capacity in service / under construction / utilized (MW), utilization %, contracted+IoI ratio | Best campus granularity of any filer: 20-F FY2022 gives Zhangjiakou total capacity 324 MW, Datong 308 MW, Qingyang 150 MW planned; Q2 2023 release gives Huailai ">300 MW operational". Nothing after Aug 2023 |
+| **Chindata** (NASDAQ: CD, private since 2023) | Company-wide + region (Greater Beijing / Malaysia-India / YRD / GBA); per data centre in the 2020 prospectus and the FY2021–FY2022 20-Fs (section 6) | Quarterly 2020–Q2 2023; 20-F FY2020–FY2022 | Capacity in service / under construction / utilized (MW), utilization %, contracted+IoI ratio | Best campus granularity of any filer: 20-F FY2022 gives Zhangjiakou total capacity 324 MW, Datong 308 MW, Qingyang 150 MW planned; Q2 2023 release gives Huailai ">300 MW operational". Nothing after Aug 2023 |
 | **Sinnet** 光环新网 (SZ: 300383) | Per site, by design cabinets (4.4 kW equiv.) | Semi-annual + annual (Chinese) | Cabinets in operation (92,000 at 2026-06-30), planned cabinets per site; utilisation only qualitatively | **None in a hub cluster.** Sites are Beijing, Yanjiao (Hebei, Langfang), Tianjin, Shanghai, Hangzhou, Changsha. Only "expansion plans" in Inner Mongolia / Hainan / Malaysia. Sinnet runs AWS China (Beijing); the Zhongwei AWS region is run by NWCD 西云数据 (private, no filings; site returned 403) |
 | **Alibaba** | None for capacity | ESG report annual (FY2025 PUE 1.190 fleet-wide per search snippet, not fetched) | PUE, clean-electricity share, heat recovery | Zhangbei: design PUE 1.25 (2016 company blog); 380,000+ servers, 7 projects, 1,647 mu (Xinhua press 2021) |
 | **Tencent** | None for capacity | ESG annual; press | Fleet PUE <=1.25; servers "planned" per campus | Gui'an Qixing 300,000 servers planned; Chongqing 100k+200k; Huailai 2×>300k (press quoting Tencent) |
@@ -77,10 +78,9 @@ ambiguous in extraction (low confidence).
 - Meiligo 2025 annual report PDF itself (cninfo) — not fetched; NWCD "about" page — 403; DTDATA Zhongwei stats — 522;
   Horinger "5 centres lit" (Zhihu) — 403; Gui'an ce.cn 2025 piece (25 DCs / 1.4 m racks planned) — 504;
   guizhou.gov.cn Huawei page — failed; China Telecom full H-share annual report — download failed.
-- Chindata 20-F FY2022 per-data-centre table (CN01…CN23) — the text is in the downloaded file
-  (scratchpad `cd20f.txt`) but was not parsed in the time available; worth a follow-up since it is the only filing with
-  per-campus MW in a hub cluster.
-- EDGAR full-text search for "Ulanqab" across all 20-F/6-K (would catch VNET 6-K order announcements) — not run.
+- Chindata per-data-centre tables — parsed on 2026-09-14 (section 6).
+- EDGAR full-text search across all 20-F and 6-K filings — still not run. SEC refuses automated requests whose User-Agent has
+  no contact email. Section 6 describes the narrower search of 12 archived annual reports that was run instead.
 
 ## 5. Caveats on interpretation
 
@@ -91,3 +91,55 @@ ambiguous in extraction (low confidence).
 - Park-committee 上架率 (Ulanqab 73%, China Mobile Zhongwei 99.8%) are self-reports with no stated denominator
   definition; treat as untested inputs alongside official statistics, not as validation.
 - SEC filings require a declared User-Agent for bulk download; WebFetch truncates them — download and grep locally.
+
+## 6. Per-data-centre tables and hub-name search (RFW-07, 2026-09-14)
+
+`tools/chindata_filings.py fetch` downloads 16 documents and `build` parses them. SEC's EDGAR refuses automated requests
+without a contact email in the User-Agent, so the documents come from the Internet Archive's copies of their SEC URLs.
+`results_cn/sec_archive_sources.csv` records each snapshot and the SHA-256 of the bytes parsed; every data row cites the SEC
+URL.
+
+**Tables.** Chindata's September 2020 prospectus and its FY2021 and FY2022 20-Fs each tabulate every data centre in service
+and under construction: 74 rows across six tables, all within rounding of each table's reported totals
+(`results_cn/chindata_table_checks.csv`). The 2020 prospectus gives capacity in megawatts and the contracted, indication-of-
+interest and utilisation ratios; the 20-Fs give all four in megawatts. The 166 Chinese rows are in
+`data/cn_operator_disclosures.csv`, tagged `chindata_dc_table`; Malaysian and Indian rows stay in
+`results_cn/chindata_data_centres.csv` only. A dash in the filing is left out, not recorded as zero.
+
+Definitions, from the filings: capacity in service is "the total capacity available for utilization"; contracted capacity is
+capacity "for which clients are required to pay"; indication-of-interest capacity is under substantial negotiation. Utilised
+capacity is not defined beyond the prospectus note "the ratio of utilized capacity ... to capacity in service", and revenue is
+"recognized ... based on cumulative utilization of capacity". It is a commercial figure, capacity in customer use, not a power
+measurement.
+
+| Date | Chindata data centres in its Greater Beijing Area | In customer use |
+|---|---|---|
+| 2020-06-30 | 7 in service, 171 MW | 77.5 %, capacity-weighted from the ratios |
+| 2021-12-31 | 13 in service, 399 MW | 287 MW, 72 % |
+| 2022-12-31 | 18 in service, 517 MW | 466 MW, 90 % |
+
+New halls filled within about a year: CN11-C held 8 of 71 MW in use at the end of 2021 and 67 at the end of 2022; CN09 went
+from 32 to 48 of 52 MW; CN06 and CN07 went from 46 % and 36 % in mid-2020 to 93 % at the end of 2021. The lowest at the end of
+2022 were CN13, leased on a client's campus in Tianjin, at 4 of 13 MW, and CN02, a leased wholesale site, at 5 of 11 MW.
+Chindata's only data centres elsewhere in China, CE01 in the Yangtze River Delta and CS01 in the Greater Bay Area, were at
+10 of 17 MW and 4 of 5 MW.
+
+**Locations.** The filings give no city per data centre. `data/chindata_dc_locations.csv` holds what Chindata's own releases
+state, each with a verbatim quote that `build` checks against the cached document: CN13 in Tianjin, CN14 and CN20 at the
+Shanxi (Datong) campus, CN18, CN19 and CN23 at the Hebei campus, and CN10 as an annex to CN03 to CN05. Equating the Hebei
+campus with Zhangjiakou rests on the FY2022 20-F naming Chindata's campuses as Zhangjiakou and Datong. Every other row's hub
+says the city is not given, so these figures cannot yet be attached to inventory sites.
+
+**Correction.** The 324 MW Zhangjiakou and 308 MW Datong figures were stored as `it_capacity_mw`, the metric used for capacity
+in service. The 20-F calls them "total capacity", separately from "other reserve", and does not split them into in service and
+under construction. They are now `total_capacity_mw`.
+
+**Hub-name search.** The five hub names and their spellings (Ulanqab or Wulanchabu, Zhangbei, Horinger or Hohhot, Gui'an,
+Zhongwei) were searched in 12 annual reports: VNET's FY2019, FY2020 and FY2022 to FY2024 20-Fs, GDS's FY2019, FY2020, FY2022
+and FY2024 20-Fs, and Chindata's three documents (`results_cn/edgar_hub_mentions.csv`). The Internet Archive holds no copy of
+the others. No report gives a capacity or utilisation figure for any of the five hubs. GDS mentions Wulanchabu for
+subsidiaries, planned land and customer data centres, and its FY2019 and FY2020 reports say it uses wind power for four
+build-operate-transfer data centres in Zhangbei; that count is now a row. VNET's reports name Inner Mongolia only in a property
+list and a charity donation. VNET's reported Ulanqab orders remain unverified, because they appear only in quarterly releases
+and the archive holds none of VNET's releases from 2025 on.
+

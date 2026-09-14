@@ -205,8 +205,10 @@ to 30 MW in 2022 that no satellite method here could have seen. New Albany: 91 M
 assumption for cloud campuses (now 0.2–0.6) and supercomputers (0.4–0.9); AI-training campuses keep 0.5–1.0 until a
 disclosure or filing calibrates them. The site's "running" line says "operator reports an average IT load of N MW in YEAR"
 for these sites, confidence high. Chinese listed operators (VNET, GDS, Chindata, Sinnet, the three telcos) publish
-company-wide capacity and utilisation only; the per-campus figures that exist are opening press releases and park-committee
-statements, which stay outside the evidence (`docs/cn_operator_disclosures_notes.md`).
+company-wide capacity and utilisation. The exception is Chindata, whose prospectus and 20-Fs give capacity in service and in
+customer use per data centre for mid-2020, end-2021 and end-2022, mostly without a city [added 14 Sep, RFW-07]. Other
+per-campus figures are opening press releases and park-committee statements, which stay outside the evidence
+(`docs/cn_operator_disclosures_notes.md`).
 
 ## National scan, 13 Sep 2026 (late): what lights-then-radar finds across the Chinese hub provinces
 
