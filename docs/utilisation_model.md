@@ -14,7 +14,8 @@ activity signals that bracket it. Distinguishing training from inference would n
 the untested assumption that inference follows daily demand while training runs near-flat. The planned method is a
 deep-learning model on thermal imagery of substations and transformers at a few metres, several times a day, labelled with
 training-run records from AI labs such as OpenAI, which know when and where their runs happened (REQUESTS_FOR_WORK.md,
-T-05 and RFW-23).
+T-05 and RFW-23). Records given in confidence may train it; only aggregate validation scores and outputs for campuses the
+records do not cover are published (README, "Provenance rule").
 
 
 IT load in MW per site per quarter, as a 10/50/90 percentile band. Facility load = IT × PUE (site-specific where

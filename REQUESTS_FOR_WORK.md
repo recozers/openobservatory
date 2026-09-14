@@ -88,6 +88,7 @@ the goal question an item serves: Where, Built, Running, Capacity, Utilisation o
 ## Ground rules
 
 - Every public number traces to a free public source, a script in this repository, and a polygon with a stated confidence.
+  One exception: confidential training-run labels from AI labs may train the workload model (RFW-23 gives the conditions).
 - Official national statistics are inputs to test, never evidence.
 - State results at the scale they were tested: how many sites, against what truth, with what uncertainty.
 - Negative results stay visible. Document a failed method; do not delete it.
@@ -355,12 +356,17 @@ These methods are developed where ground truth exists, mostly in the US, so they
   data-centre partners. Record the training runs labs have announced publicly, with model, dates or duration, hardware scale
   and campus where stated, and the source URL; these are coarse public labels to start from. Draft a data-sharing request for
   Stuart to send, asking each lab for training-run start and end dates by campus, the share of capacity each run used, and
-  inference-serving periods, and what the lab would allow to be published.
+  inference-serving periods, and what the lab would allow to be published. The request sets out how labels given in
+  confidence are handled, using the label condition below.
 - **Deliver:** `data/workload_labels_public.csv` with lab, campus, model, period, scale, source type and URL; the lab-to-campus
   map; and the draft request in `docs/ai_lab_partner_request.md`. Nothing is sent without Stuart.
-- **Label condition:** every public number must trace to free public data. Labels a lab publishes, or agrees to have
-  published, can train and test the model openly. Labels given in confidence could only train it, with only validation
-  results published; allowing that is a change to the provenance rule, and it is Stuart's decision.
+- **Label condition** (decided by Stuart, 14 September 2026): labels a lab publishes, or agrees to have published, are used
+  openly. Labels given in confidence may train and validate the model. They stay in `data/private/`, which git ignores, and
+  never appear in commits, pull requests, issues or site data; only Stuart and the sessions Stuart runs handle them, so a
+  donated session never receives them. The model's code, its aggregate validation scores and its outputs for campuses the
+  labels do not cover are published, each output marked as coming from a model trained partly on confidential labels.
+  Nothing is published for the campuses and periods those labels cover, and the trained model is not released without the
+  lab's agreement, because either could reveal the labels.
 
 #### RFW-24 Utilisation ramp curves from Meta's 18 campuses
 
@@ -521,7 +527,8 @@ Research bets with a first test that fits a session and a condition for stopping
   simulated temperatures as a satellite would, add that noise, and check whether a classifier still separates the two
   workloads.
 - **Second test:** image the substation of one US campus with training-run records, across periods with and without training
-  (PAID-03), and check that the temperature pattern changes with the labels. RFW-23's label condition applies.
+  (PAID-03), and check that the temperature pattern changes with the labels. RFW-23's label condition applies: with labels
+  given in confidence, only the aggregate result is published, never a dated series for that campus.
 - **Stop if:** the predicted changes are smaller than achievable sensor noise at a few metres, the simulation cannot separate the
   workloads at achievable sampling, or the pilot campus shows no change between labelled periods.
 
@@ -657,7 +664,8 @@ until a pilot shows it is worth it.
 - **Cost drivers:** acquisitions per day and per week, which decide whether daily cycles can be seen; satellite tasking or an
   airborne survey; area. An airborne survey is not an option over China, and flights near US campuses may need permission.
 - **Success test:** substation temperature patterns differ between labelled training and non-training periods beyond the
-  scatter between acquisitions. Stop if the pilot shows no difference.
+  scatter between acquisitions. Stop if the pilot shows no difference. If the labels were given in confidence, only the
+  aggregate result is published (RFW-23's label condition).
 
 #### PAID-04 Frequent 3 to 5 metre optical monitoring of Chinese parks
 

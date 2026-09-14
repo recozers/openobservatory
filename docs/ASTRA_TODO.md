@@ -10,7 +10,8 @@ Everything you need is in this repo; do not assume access to any prior conversat
 
 Map data centres worldwide, detect new construction automatically, and estimate utilisation from public data and modelling.
 Every number shown on the site must trace to a free public dataset, a script in this repo and a polygon with a stated confidence.
-Official national statistics are inputs to test, never evidence. Negative results stay visible.
+Official national statistics are inputs to test, never evidence. Negative results stay visible. One exception, decided
+14 Sep 2026: confidential training-run labels from AI labs may train the workload model; see README, "Provenance rule".
 
 ## What exists and what is validated (read before starting)
 

@@ -25,3 +25,6 @@ results_campus/large_dc_features.csv
 logs_pilot/
 venv
 .claude/
+
+# confidential training-run labels from AI labs: never commit (README, provenance rule)
+data/private/

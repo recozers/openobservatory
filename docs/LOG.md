@@ -344,3 +344,13 @@ B9 is the next independent task, while B8 needs normal public reading access and
   Stuart); T-05 and PAID-03 now pilot on a US campus with training-run records. Flagged: labels given in confidence would
   conflict with the free-public-data provenance rule; publishing or agreeing to publish them avoids that, otherwise it is
   Stuart's decision.
+- Provenance rule amended (Stuart, 14 Sep: "i'll allow that", in reply to whether labels given in confidence may train the
+  workload model). Training-run records that AI labs supply in confidence may now train and validate the training-or-inference
+  model. Conditions written into README's provenance rule, docs/MVP.md, CONTRIBUTING.md, docs/ASTRA_TODO.md,
+  docs/PHASE2_TODO.md, docs/utilisation_model.md and RFW-23: records stay in `data/private/` (now git-ignored) and out of
+  commits, pull requests, issues and site data; only Stuart and sessions Stuart runs handle them, never donated sessions; code,
+  aggregate validation scores and outputs for campuses the records do not cover are published, marked as from a model trained
+  partly on confidential labels; nothing is published for the campuses and periods the records cover (T-05's second test and
+  PAID-03's pilot publish only aggregate results); the trained model is not released without the lab's agreement. The last
+  three safeguards are Claude's reading of the decision and Stuart can change them. Every other public number still traces to
+  free public data.

@@ -56,6 +56,18 @@ python tools/fill_weather_gee.py data/observations_eco.csv && python tools/night
 Every number shown must trace to a free public dataset, a script in this repository and a polygon with a stated confidence.
 Official national statistics are inputs to test, never evidence.
 
+**Exception for confidential training-run labels** (decided by Stuart, 14 September 2026). Training-run records that AI labs
+supply in confidence may train and validate the training-or-inference model, on these conditions:
+
+- The records stay in `data/private/`, which git ignores. They never appear in commits, pull requests, issues or site data,
+  and only Stuart and the sessions Stuart runs handle them, never donated sessions.
+- The model's code, its aggregate validation scores and its outputs for campuses the labels do not cover are published. Each
+  output is marked as coming from a model trained partly on confidential labels.
+- Nothing is published for the campuses and periods the confidential labels cover, not even a dated series from a pilot, since
+  that would reveal the labels. The trained model is not released without the lab's agreement, because it could encode them.
+
+Labels a lab publishes, or agrees to have published, are ordinary public data and need no exception.
+
 ## Update, 13 Sep 2026 afternoon: NO2-flux generation estimate (the utilisation result)
 
 `tools/no2_flux.py` estimates a point source's NOx emission rate from TROPOMI NO2 (wind-rotated along-wind line densities from
