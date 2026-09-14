@@ -414,4 +414,7 @@ workflow.
 - Left open in RFW-07: EDGAR full-text search including 6-Ks, which needs an agreed contact email, and the cities of the other
   Chindata data centres. Tests: `tests/test_chindata_filings.py` (11). Nothing on the public site changes, because no builder
   reads this file yet; Astra's B9 will.
+- Pull request 15 merged on Stuart's instruction (merge commit a1cd5e9). RFW-07 is not closed: its table part is done, but the
+  EDGAR full-text search across VNET, GDS and Chindata filings, including 6-Ks, is blocked until a contact email for SEC's
+  User-Agent is agreed, and most Chindata data centres still have no city. Its status now says so.
 

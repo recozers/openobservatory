@@ -116,7 +116,7 @@ marks them in these tables when the page loads.
 | [RFW-04](#rfw-04-land-transfer-results-for-operators-and-start-dates) | Land transfer results for operators and start dates | Where, Built | M | none | open |
 | [RFW-05](#rfw-05-procurement-tenders-and-awards-including-training-and-inference-servers) | Procurement tenders and awards, including training and inference servers | Built, Running, Workload | M | none | open |
 | [RFW-06](#rfw-06-stated-workload-roles-and-cloud-regions-at-chinese-campuses) | Stated workload roles and cloud regions at Chinese campuses | Workload | M | none | open |
-| [RFW-07](#rfw-07-chindatas-per-data-centre-table-and-an-edgar-name-search) | Chindata's per-data-centre table and an EDGAR name search | Capacity, Utilisation | S | none | open |
+| [RFW-07](#rfw-07-chindatas-per-data-centre-table-and-an-edgar-name-search) | Chindata's per-data-centre table and an EDGAR name search | Capacity, Utilisation | S | none | open: table done; EDGAR search and cities remain |
 | [RFW-08](#rfw-08-substation-and-transmission-projects-serving-the-hub-parks) | Substation and transmission projects serving the hub parks | Capacity | M | none | open |
 | [RFW-09](#rfw-09-water-withdrawal-permit-notices-for-hub-data-centres) | Water-withdrawal permit notices for hub data centres | Capacity | M | none | open |
 | [RFW-10](#rfw-10-building-scale-night-lights-inside-chinese-parks) | Building-scale night lights inside Chinese parks | Running | M | EE | open |
