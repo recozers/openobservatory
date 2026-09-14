@@ -53,7 +53,7 @@ python tools/s1_timeline.py data/polygons/<site>.geojson --start 2018-01-01 --ou
 python tools/s1_timeline.py --chip <lat> <lon> --candidates --half 6000 --early 2021 --late 2026 --out results_s1/<name>  # new structures
 python tools/ntl_scan.py --box <lat_s> <lon_w> <lat_n> <lon_e> --name <name> --out results_ntl/scan_<name>.csv        # newly lit sites
 python build_timeline_data.py && python build_status.py
-cd site && python -m http.server 8000
+python tools/serve_site.py   # http://localhost:8000, caching disabled so a rebuild shows on reload
 ```
 
 Earth Engine is free for non-commercial use; the Earthdata login and the EPA key are free.

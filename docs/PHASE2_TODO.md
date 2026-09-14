@@ -65,7 +65,7 @@ Utility and ISO reports of aggregate data-centre load (Dominion, AEP Ohio, ERCOT
 Singapore EMA) into `data/regional_dc_load.csv` with URLs, for the docs and for testing the inventory's regional totals.
 Not per site.
 
-### B6. Map: show the evidence kind  [no-EE]  — done by Claude 13 Sep (measured/derived/detected/presumed/construction); remaining: list.html filter, default view fitting all markers, tests
+### B6. Map: show the evidence kind  [no-EE]  — done by Claude 13–14 Sep: evidence kinds on the landing map, the quarterly detail page and the list (badges, filter, strongest-evidence sort); band tests added. Remaining: default map view fitting all markers
 `build_status.py` gains an `evidence_kind` field (measured / detected / presumed / construction) with the rules above;
 `site/mapmin.js` and `site/cards.js` draw measured in orange, detected in a second colour, presumed in blue, construction
 white, with the legend updated; `list.html` gets a filter by kind; the default map view fits all markers. Accept: Abilene

@@ -18,7 +18,7 @@ python build_site.py
 python build_timeline_data.py
 python build_status.py
 python -m unittest discover -s tests -v
-python -m http.server 8000 --directory site
+python tools/serve_site.py   # http://localhost:8000, caching disabled
 ```
 
 Open the changed site at desktop and narrow phone widths. Check source links, unknowns, date bounds, and that a roof-only estimate has no midpoint. Run `python tools/validate_epoch.py` for inventory changes. Use `python tools/refresh.py --dry-run` to validate saved evidence without Earth Engine.
