@@ -13,7 +13,8 @@ nothing about how hard equipment runs), electrical utilisation (average load div
 activity signals that bracket it. Distinguishing training from inference would need load at hourly resolution or finer, on
 the untested assumption that inference follows daily demand while training runs near-flat. The planned method is a
 deep-learning model on thermal imagery of substations and transformers at a few metres, several times a day, labelled with
-metered load and workload records from US national laboratories (REQUESTS_FOR_WORK.md, T-05).
+training-run records from AI labs such as OpenAI, which know when and where their runs happened (REQUESTS_FOR_WORK.md,
+T-05 and RFW-23).
 
 
 IT load in MW per site per quarter, as a 10/50/90 percentile band. Facility load = IT × PUE (site-specific where

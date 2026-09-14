@@ -21,7 +21,8 @@ from outside, so independent measurement matters most. It is also where the proj
 - **Activity signals** such as construction, energisation and on-site fuel burning bracket utilisation without measuring it.
 
 **Training or inference.** The planned method is a deep-learning model trained on detailed thermal imagery of campus
-substations and transformers, labelled with metered load and workload records from US national laboratories (T-05). A
+substations and transformers, with labels from AI labs such as OpenAI, which know when and where their training runs
+happened (T-05). A
 transformer's losses rise with the square of its load, so its temperature follows the site's load with a lag of hours, and
 the same imagery can count transformers to give capacity. Separating workloads assumes, untested here, that inference follows
 daily demand cycles while training runs near-flat for weeks, so it needs several images a day at a few metres.
@@ -37,7 +38,7 @@ daily demand cycles while training runs near-flat for weeks, so it needs several
 | How much is in use, electrically? | Annual electricity divided by capacity for the same period | Annual | 1 site: ORNL's Frontier averaged about 0.54 of its measured peak in 2023 | None |
 | How much is in use, commercially? | Operator filings | Quarterly | Not yet collected | Company-wide only: VNET 73.9 % in mid-2026, GDS 75.5 % by area at end-2025; no campus figures |
 | How much is in use, from activity? | TROPOMI NOx at campuses that burn fuel on site | Monthly ±20 to 50 %, quarterly ±20 % | Relative change at 1 campus, Colossus 2; megawatts uncertain 2 to 3 times, so no ratio | Nothing to calibrate against; no known on-site generation |
-| Training or inference? | Planned: a deep-learning model on thermal imagery of substations and transformers, labelled by US national laboratories | Needs several images a day at a few metres | Not observed; free thermal imagery is 70 m or coarser, and site classes are assigned by hand from press coverage | Not observed; needs commercial satellite thermal, and national planning's assignment of latency-tolerant work to western hubs is an official input to test |
+| Training or inference? | Planned: a deep-learning model on thermal imagery of substations and transformers, labelled with AI labs' training-run records | Needs several images a day at a few metres | Not observed; free thermal imagery is 70 m or coarser, and site classes are assigned by hand from press coverage | Not observed; needs commercial satellite thermal, and national planning's assignment of latency-tolerant work to western hubs is an official input to test |
 
 Load without a same-period capacity does not give utilisation. Meta reports electricity for 18 campuses and Google's water use
 gives an approximate load for 12, but among them only Luleå in Sweden has a capacity figure for the same years: it ran at 0.25
@@ -51,7 +52,7 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
   figures are third-party estimates or connection limits rather than installed computing.
 - **Nothing is measured often enough to separate training from inference.** The finest load series is monthly, at one campus
   that burns its own fuel. The planned transformer method needs thermal imagery at a few metres several times a day, which no
-  free source provides, plus metered labels from laboratories. Hourly NO₂ from geostationary satellites over North America
+  free source provides, plus training-run records from AI labs. Hourly NO₂ from geostationary satellites over North America
   (TEMPO) and East Asia (GEMS) is an untested alternative where fuel is burned.
 
 ## Donate a session
@@ -255,7 +256,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | open |
 | [RFW-21](#rfw-21-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Utilisation | M | none | reserved: Astra |
 | [RFW-22](#rfw-22-stated-workload-roles-for-the-rest-of-the-inventory) | Stated workload roles for the rest of the inventory | Workload | M | none | open |
-| [RFW-23](#rfw-23-laboratory-partners-with-metered-substation-load) | Laboratory partners with metered substation load | Utilisation, Workload | M | none | open |
+| [RFW-23](#rfw-23-ai-lab-partners-with-training-run-records) | AI lab partners with training-run records | Workload | M | none | open |
 | [RFW-24](#rfw-24-utilisation-ramp-curves-from-metas-18-campuses) | Utilisation ramp curves from Meta's 18 campuses | Utilisation | M | EE optional | open |
 | [RFW-25](#rfw-25-implement-the-utilisation-model) | Implement the utilisation model | Utilisation | L | none | open |
 
@@ -345,18 +346,21 @@ These methods are developed where ground truth exists, mostly in the US, so they
   planning documents distinct.
 - **Deliver:** Rows in `data/workload_roles.csv`, and a list of hand-assigned site classes that no source supports.
 
-#### RFW-23 Laboratory partners with metered substation load
+#### RFW-23 AI lab partners with training-run records
 
-- **Why:** The planned training-or-inference method (T-05) learns from substations whose load and workload are known. US
-  national laboratories run large computing systems on their own electrical infrastructure and keep metered power and job
-  records, so they are the natural source of labels.
-- **Do:** List the Department of Energy laboratories' large open-science computing facilities: Oak Ridge (OLCF), Lawrence
-  Berkeley (NERSC), Argonne (ALCF), Lawrence Livermore and NREL. For each, record what is public: facility and system power
-  data, substation and transformer ratings, the substation's location on public maps, and job or workload records. Draft a
-  data-sharing request for Stuart to send, covering metered substation load at hourly or finer resolution, transformer
-  nameplates, records of training and inference jobs by time, and permission to image the substation.
-- **Deliver:** `data/lab_partners.csv` with facility, systems, published data and URLs, and the draft request in
-  `docs/lab_partner_request.md`. Nothing is sent, and no laboratory site is imaged, without agreement.
+- **Why:** The planned training-or-inference method (T-05) needs labels: when each campus was running training, and when it was
+  serving inference. The AI labs that use these campuses, such as OpenAI, Anthropic, xAI, Google DeepMind and Meta, know when
+  and where their training runs happened.
+- **Do:** Map each lab to the inventory campuses it trains or serves on, from its own statements and those of its cloud and
+  data-centre partners. Record the training runs labs have announced publicly, with model, dates or duration, hardware scale
+  and campus where stated, and the source URL; these are coarse public labels to start from. Draft a data-sharing request for
+  Stuart to send, asking each lab for training-run start and end dates by campus, the share of capacity each run used, and
+  inference-serving periods, and what the lab would allow to be published.
+- **Deliver:** `data/workload_labels_public.csv` with lab, campus, model, period, scale, source type and URL; the lab-to-campus
+  map; and the draft request in `docs/ai_lab_partner_request.md`. Nothing is sent without Stuart.
+- **Label condition:** every public number must trace to free public data. Labels a lab publishes, or agrees to have
+  published, can train and test the model openly. Labels given in confidence could only train it, with only validation
+  results published; allowing that is a change to the provenance rule, and it is Stuart's decision.
 
 #### RFW-24 Utilisation ramp curves from Meta's 18 campuses
 
@@ -456,7 +460,7 @@ Research bets with a first test that fits a session and a condition for stopping
 | [T-02](#t-02-hourly-no2-from-gems-over-plants-supplying-chinese-parks) | Hourly NO2 from GEMS over plants supplying Chinese parks | Utilisation, Workload | Hourly, daytime | China | GEMS data access |
 | [T-03](#t-03-temporary-site-housing-as-a-construction-signal) | Temporary site housing as a construction signal | Built | Monthly | China | EE |
 | [T-04](#t-04-radar-backscatter-after-the-structure-goes-up) | Radar backscatter after the structure goes up | Running | Monthly | China and global | EE |
-| [T-05](#t-05-transformer-heat-as-a-load-and-workload-signal) | Transformer heat as a load and workload signal | Utilisation, Workload | Several images a day | US laboratories, then global and China | none for the first test |
+| [T-05](#t-05-transformer-heat-as-a-load-and-workload-signal) | Transformer heat as a load and workload signal | Utilisation, Workload | Several images a day | US AI campuses, then global and China | none for the first test |
 | [T-06](#t-06-hourly-no2-from-tempo-at-turbine-fed-campuses) | Hourly NO2 from TEMPO at turbine-fed campuses | Workload | Hourly, daytime | US | Earthdata, EPA |
 | [T-07](#t-07-network-presence-as-a-sign-of-inference) | Network presence as a sign of inference | Workload | When registrations change | Global | none |
 | [T-08](#t-08-radar-coherence-over-fan-yards) | Radar coherence over fan yards | Running | 6 to 12 days | Global | Earthdata |
@@ -508,16 +512,18 @@ Research bets with a first test that fits a session and a condition for stopping
 - **Hypothesis:** A transformer's load losses rise with the square of its current, so its tank and radiator temperatures follow
   the load it carries, with a lag of hours set by its oil and cooling. Imaged at a few metres several times a day, a campus
   substation would give a load series, and the number and size of its transformers would give capacity. A deep-learning model
-  trained on substations at US national laboratories, where metered load and job records provide the labels (RFW-23), could
-  then estimate utilisation and tell training from inference at commercial campuses, including in China. This is the project's
-  planned method for the workload question.
+  trained on substation imagery from campuses whose AI labs have supplied training-run records (RFW-23) could then estimate
+  utilisation and tell training from inference at other campuses, including in China. This is the project's planned method for
+  the workload question.
 - **First test, free:** Use the standard transformer loading models (IEEE C57.91 and IEC 60076-7) with load profiles for
-  training and for inference, taken from public cluster traces or laboratory records, to predict surface temperature changes.
-  Compare them with the noise of thermal sensors that exist or are planned. Then sample the simulated temperatures as a
-  satellite would, add that noise, and check whether a classifier still separates the two workloads.
-- **Second test:** image one laboratory substation with metered load at several load levels and times of day (PAID-03).
+  training and for inference, taken from public cluster traces and published descriptions of training load, to predict
+  surface temperature changes. Compare them with the noise of thermal sensors that exist or are planned. Then sample the
+  simulated temperatures as a satellite would, add that noise, and check whether a classifier still separates the two
+  workloads.
+- **Second test:** image the substation of one US campus with training-run records, across periods with and without training
+  (PAID-03), and check that the temperature pattern changes with the labels. RFW-23's label condition applies.
 - **Stop if:** the predicted changes are smaller than achievable sensor noise at a few metres, the simulation cannot separate the
-  workloads at achievable sampling, or the laboratory pilot shows no load dependence.
+  workloads at achievable sampling, or the pilot campus shows no change between labelled periods.
 
 #### T-06 Hourly NO2 from TEMPO at turbine-fed campuses
 
@@ -617,7 +623,7 @@ until a pilot shows it is worth it.
 |---|---|---|---|---|
 | [PAID-01](#paid-01-sub-metre-optical-imagery-of-the-chinese-hub-parks) | Sub-metre optical imagery of the Chinese hub parks | Where, Capacity | China | 3 parks, archive scenes |
 | [PAID-02](#paid-02-high-resolution-radar-over-cloudy-southwest-hubs) | High-resolution radar over cloudy southwest hubs | Built | China | 2 parks, 4 scenes each |
-| [PAID-03](#paid-03-thermal-imagery-of-substations-and-transformers-at-a-few-metres) | Thermal imagery of substations and transformers at a few metres | Utilisation, Workload | US laboratories, then China | 1 laboratory substation with metered load |
+| [PAID-03](#paid-03-thermal-imagery-of-substations-and-transformers-at-a-few-metres) | Thermal imagery of substations and transformers at a few metres | Utilisation, Workload | US AI campuses, then China | 1 US campus with training-run records |
 | [PAID-04](#paid-04-frequent-3-to-5-metre-optical-monitoring-of-chinese-parks) | Frequent 3 to 5 metre optical monitoring of Chinese parks | Built, Running | China | 5 parks, 3 months |
 | [PAID-05](#paid-05-dedicated-satellite-capacity) | Dedicated satellite capacity | All | China first | Requirements only |
 | [PAID-06](#paid-06-native-language-review-of-chinese-documents) | Native-language review of Chinese documents | Where, Built, Workload | China | 20 documents |
@@ -645,13 +651,13 @@ until a pilot shows it is worth it.
 
 - **Answers:** the data for the planned utilisation and training-or-inference method (T-05). Free thermal imagery is 70 m or
   coarser, while a campus transformer is a few metres across.
-- **Pilot:** repeated acquisitions, day and night, over one US national laboratory substation with metered load (RFW-23), at
-  several load levels. Then one commercial US campus with a documented load ramp, such as Abilene. Then one Chinese hub park by
-  satellite, only if the laboratory pilot shows a signal.
+- **Pilot:** repeated acquisitions, day and night, over the substation of one US campus whose AI lab has supplied training-run
+  records (RFW-23), spanning periods with and without training. Then a US campus without records, to test the model. Then one
+  Chinese hub park by satellite, only if the pilot shows a signal.
 - **Cost drivers:** acquisitions per day and per week, which decide whether daily cycles can be seen; satellite tasking or an
-  airborne survey; area. An airborne survey is not an option over China.
-- **Success test:** transformer or radiator temperature follows metered load beyond the scatter between acquisitions. Stop if
-  the laboratory pilot shows no load dependence.
+  airborne survey; area. An airborne survey is not an option over China, and flights near US campuses may need permission.
+- **Success test:** substation temperature patterns differ between labelled training and non-training periods beyond the
+  scatter between acquisitions. Stop if the pilot shows no difference.
 
 #### PAID-04 Frequent 3 to 5 metre optical monitoring of Chinese parks
 

@@ -338,3 +338,9 @@ B9 is the next independent task, while B8 needs normal public reading access and
   identified switchyard (about 3 pixels) read +0.25 ± 0.07 K at night over 299 frames, no different from its halls
   (+0.19 ± 0.05 K), with no load change to test against, so transformer-scale heat is untested rather than failed.
   Requests are now RFW-01 to RFW-32 and theories T-01 to T-15.
+- Correction to the workload method (Stuart, 14 Sep): the labels come from AI labs such as OpenAI, which know when and where
+  their training runs happened, not from US national laboratories. RFW-23 is now "AI lab partners with training-run records"
+  (map labs to campuses, collect publicly announced training runs as coarse labels, draft a data-sharing request for
+  Stuart); T-05 and PAID-03 now pilot on a US campus with training-run records. Flagged: labels given in confidence would
+  conflict with the free-public-data provenance rule; publishing or agreeing to publish them avoids that, otherwise it is
+  Stuart's decision.
