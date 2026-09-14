@@ -23,9 +23,16 @@ python tools/serve_site.py   # http://localhost:8000, caching disabled
 
 Open the changed site at desktop and narrow phone widths. Check source links, unknowns, date bounds, and that a roof-only estimate has no midpoint. Run `python tools/validate_epoch.py` for inventory changes. Use `python tools/refresh.py --dry-run` to validate saved evidence without Earth Engine.
 
+## Donated agent sessions
+
+Open work is listed in `REQUESTS_FOR_WORK.md`. Pick an open request, search open pull requests for its ID, then claim it
+by pushing `rfw/<NN>-short-name` to your fork and opening a draft pull request titled `[RFW-NN] Short title` with your plan.
+A claim with no new commit for 72 hours lapses. Theories are claimed the same way as `[T-NN]`. To add or change a request,
+edit `REQUESTS_FOR_WORK.md` and run `python tools/build_requests_page.py`; a test fails if `site/requests.html` is stale.
+
 ## Work and review
 
-Start `astra/<task-id>` or `claude/<task-id>` from current `main`. Keep changes reviewable and avoid files the other agent is actively changing; record necessary shared-file changes in `docs/LOG.md`. Update the relevant status in `docs/ASTRA_TODO.md` and append a dated log entry with results and limitations.
+Start `astra/<task-id>`, `claude/<task-id>` or, for donated sessions, `rfw/<NN>-short-name` from current `main`. Keep changes reviewable and avoid files the other agent is actively changing; record necessary shared-file changes in `docs/LOG.md`. Update the relevant status in `docs/ASTRA_TODO.md` and append a dated log entry with results and limitations.
 
 Open a pull request with what changed, validation counts, uncertain labels or geometry decisions, and the first files a reviewer should read. Stuart merges; do not merge or force-push `main`. For dependent PRs, identify their base and merge order.
 

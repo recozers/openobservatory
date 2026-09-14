@@ -55,6 +55,7 @@ def main():
     run("tools/campd_monthly.py", *(["--fetch"] if not dry and os.getenv("EPA_API_KEY") else []))
     run("tools/water_monthly.py")
     run("tools/generator_watchlist.py", *([] if dry else ["--live"]))
+    run("tools/build_requests_page.py")
     os.environ.update(OBS_FILE="data/observations_all.csv", REJ_FILE="data/rejections_all.csv", RESULTS_DIR="results_gee")
     for script in ("build_site.py", "build_timeline_data.py", "build_status.py"):
         run(script)

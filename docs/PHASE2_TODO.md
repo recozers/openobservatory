@@ -4,6 +4,10 @@ Phase 1 is in `docs/ASTRA_TODO.md` (A1–A11, all merged or closed) and `docs/LO
 `astra/b<N>`, Claude `claude/*`, Stuart merges or delegates, both agents log to `docs/LOG.md`, never commit `.env` or
 `secrets/`, official national statistics are inputs to test and never evidence.
 
+Outside contributors donate agent sessions against `REQUESTS_FOR_WORK.md`. RFW-09, RFW-16 and RFW-17 there are this
+brief's B7, B8 and B9, marked reserved for Astra. Before starting any other task, search open pull requests for an
+`[RFW-NN]` claim on the same work; if you finish or drop B7, B8 or B9, update its Status in that file.
+
 ## The problem
 
 Of 103 public sites, one shows "fuel burning measured on site" (Colossus 2, calibrated NOx flux), one shows combustion

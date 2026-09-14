@@ -2,7 +2,25 @@
 
 Tracking data-centre construction and activity from free satellite data, with a source for every claim.
 
-**Live site:** the `site/` folder is a static page (map, list, quarterly detail) deployed by GitHub Pages.
+**Live site:** https://recozers.github.io/openobservatory/ is the static `site/` folder (map, list, quarterly detail),
+deployed by GitHub Pages.
+
+## Donate your coding agent's time
+
+This project is built in sessions donated by people who point their coding agents at it for a while. The work that needs
+doing and the theories worth testing are listed in [REQUESTS_FOR_WORK.md](REQUESTS_FOR_WORK.md), also published at
+https://recozers.github.io/openobservatory/requests.html. Each request says how big it is, which free credentials it needs,
+and what counts as done. A negative result with numbers counts as done.
+
+To donate a session, give your agent this:
+
+```
+Fork and clone https://github.com/recozers/openobservatory, read README.md, CONTRIBUTING.md and REQUESTS_FOR_WORK.md,
+pick one open request that fits my time and credentials, claim it with a draft pull request titled "[RFW-NN] <title>",
+deliver it against its acceptance line, and hand off in the pull request and docs/LOG.md.
+```
+
+The full claiming and handoff steps, and the list of methods already tried and failed, are at the top of the requests file.
 
 ## What it can and cannot see
 
@@ -25,14 +43,16 @@ Tracking data-centre construction and activity from free satellite data, with a 
 ## Layout
 
 ```
-site/                static frontend: index.html (map), list.html (cards), map.html (quarterly detail), research/ (thermal prototype)
+REQUESTS_FOR_WORK.md open work and theories for donated agent sessions (rendered to site/requests.html)
+site/                static frontend: index.html (map), list.html (cards), map.html (quarterly detail), requests.html, research/ (thermal prototype)
 build_status.py      plain-language status per site  -> site/data/status.json
 build_timeline_data.py  quarterly bands + evidence    -> site/data/timeline/*.json
 build_site.py        inventory + provenance           -> site/data/sites.json
 tools/               s2_roof_timeline.py, s1_timeline.py (radar dating, candidate scan), cand_features.py, cand_classifier.py,
                      ntl_timeline.py, ntl_scan.py,
                      ntl_scan_tiles.py, lights_to_radar.py, snow_persistence.py, no2_plume_test.py, no2_flux.py,
-                     no2_flux_quarterly.py, campd_hourly.py, fill_weather_gee.py, night_report.py, ring_analysis.py, chip.py
+                     no2_flux_quarterly.py, campd_hourly.py, fill_weather_gee.py, night_report.py, ring_analysis.py, chip.py,
+                     build_requests_page.py (REQUESTS_FOR_WORK.md -> site/requests.html), serve_site.py
 extract.py, model.py thermal pipeline (Landsat C1/C2 via Earth Engine, ECOSTRESS)
 dcheat/              library: geometry, Landsat, Earth Engine, ECOSTRESS, WorldCover, ERA5
 data/                sites.csv, capacity_timeline.csv, polygons/, observations, Epoch tables, eGRID, CAMPD pulls
@@ -142,7 +162,8 @@ Official national statistics are inputs to test, never evidence. Negative result
 
 ## Status
 
-Pre-MVP. See `docs/MVP.md` for what is validated, what is not, and the roadmap. Issues and pull requests welcome.
+Pre-MVP. See `docs/MVP.md` for what is validated, what is not, and the roadmap. To help, pick a request from
+[REQUESTS_FOR_WORK.md](REQUESTS_FOR_WORK.md); issues and pull requests are welcome.
 
 ## Licence
 

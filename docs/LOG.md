@@ -251,3 +251,12 @@ B7 remains in progress: seven pending plant records and Cheyenne air limit need 
   estimated" wording for unconfirmed radar structures were kept; the refresh runs CAMPD, water and watch-list steps.
 - Checks: 59 Python and 5 Node tests pass; dry refresh validates 322 JSON files; landing map, list and detail pages
   load without errors and show both sets of changes. Generator watches read "not estimated" rather than "0 MW".
+
+## 2026-09-14 (Claude): Requests for work
+- `REQUESTS_FOR_WORK.md` at the repository root lists work for people who donate a coding agent's session: how to claim
+  (fork, `rfw/NN-name` branch, draft pull request titled `[RFW-NN]`, 72-hour lapse) and hand off, what already works, the
+  methods already tried and failed, 23 requests with size, credentials and an acceptance line, and 9 theories with a first
+  test and a stopping rule. RFW-09, 16 and 17 are Astra's B7, B8 and B9, marked reserved.
+- `tools/build_requests_page.py` renders it to `site/requests.html` (anchors match GitHub's), `tools/refresh.py` rebuilds
+  it, and `tests/test_requests_page.py` fails if the page is stale or a link is broken. The page is linked from the map, list
+  and detail pages; README and CONTRIBUTING describe how to donate a session.
