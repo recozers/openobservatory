@@ -1,0 +1,26 @@
+name: Report a wrong site or number
+description: A location, date, capacity, load or evidence label on the site looks wrong
+title: "[Data] "
+labels: ["data correction"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Site or page
+      description: The site name or site_id, or the page URL.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+      description: What the site shows and what you think is correct.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A free public URL that supports the correction, with the page or table if it is a long document.
+    validations:
+      required: true

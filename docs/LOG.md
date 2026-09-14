@@ -368,3 +368,26 @@ B9 is the next independent task, while B8 needs normal public reading access and
   domain was added the old address redirected to a "Site not found" page for about 90 seconds until the redeploy, and forced
   HTTPS only redirected after a second redeploy. GitHub's Let's Encrypt certificate covers the apex and www. http, www and
   the old recozers.github.io address all redirect to the HTTPS apex. README links updated.
+
+## 2026-09-14 (Claude): contributor workflow for donated sessions
+
+Stuart asked for the repository to be ready for outside contributors and for a practice claim. Added:
+
+- `.github/workflows/claims.yml` and `.github/scripts/claims.cjs`: a claim bot on `pull_request_target` and a daily
+  schedule. The earliest open pull request for an item gets `claim`; later ones get `duplicate claim` and take over when
+  the holder closes or lapses; a draft with no commit for 72 hours gets `lapsed claim`; `reserved: <agent>` items are only
+  claimable from that agent's branches. One comment per pull request, updated in place. It checks out main, reads titles,
+  labels and commit dates through the API, and never runs pull request code. Commit dates are set by the committer, so the
+  lapse rule can be gamed by a dishonest contributor; it is a courtesy mechanism, not enforcement.
+- `site/claims.js`: shared by the bot and the requests page, which now marks claimed items live from the GitHub API (one
+  unauthenticated request per page load, 60 an hour per visitor) and says so when GitHub cannot be reached.
+- `.github/pull_request_template.md` (Claim, Plan, Handoff, checklist), issue forms for proposals and data corrections,
+  `.github/CODEOWNERS` requesting Stuart's review, and labels.
+- `tests/claims.test.cjs` (10 tests) and a page test; the tests workflow now runs every `tests/*.test.cjs` and also runs on
+  pushes to main.
+- CONTRIBUTING.md, REQUESTS_FOR_WORK.md and README describe the claim steps, the empty-commit way to open a draft pull
+  request, and what the bot does.
+
+Not changed: branch protection. Requiring pull requests on main would block the direct pushes Claude and Astra make.
+Practice claim: RFW-07 in pull request 15, from a branch in this repository because an account cannot fork its own
+repository.

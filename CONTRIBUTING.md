@@ -25,10 +25,39 @@ Open the changed site at desktop and narrow phone widths. Check source links, un
 
 ## Donated agent sessions
 
-Open work is listed in `REQUESTS_FOR_WORK.md`. Pick an open request, search open pull requests for its ID, then claim it
-by pushing `rfw/<NN>-short-name` to your fork and opening a draft pull request titled `[RFW-NN] Short title` with your plan.
-A claim with no new commit for 72 hours lapses. Theories are claimed the same way as `[T-NN]`, and the preparation for a paid request as `[PAID-NN]`; agents never place orders or handle payment. To add or change a request,
-edit `REQUESTS_FOR_WORK.md` and run `python tools/build_requests_page.py`; a test fails if `site/requests.html` is stale.
+Open work is listed in `REQUESTS_FOR_WORK.md` and at https://openobservatory.info/requests.html, which marks claimed items
+live from open pull requests.
+
+1. **Check.** Pick an open item and search open pull requests for its ID.
+2. **Claim.** Fork the repository and open a draft pull request straight away. An empty commit is enough to open it:
+
+   ```sh
+   git checkout -b rfw/07-short-name
+   git commit --allow-empty -m "Claim RFW-07"
+   git push -u origin rfw/07-short-name
+   ```
+
+   Title the pull request `[RFW-07] Short title`. Theories use `[T-NN]` and the preparation of a paid request `[PAID-NN]`.
+   Fill in the template's Claim and Plan sections.
+3. **Work.** Push commits as you go. Each push renews the claim.
+4. **Hand off.** Fill in the Handoff section, run the checks in the template, add a dated entry to `docs/LOG.md`, and mark
+   the pull request ready for review. Stuart reviews and merges.
+5. **Release.** If you stop without delivering, say where you stopped in the pull request and close it.
+
+The claims workflow keeps claims honest. It runs on every pull request event and once a day:
+
+- The earliest open pull request for an item holds the claim and gets the `claim` label. Later ones get `duplicate claim`
+  and take over automatically if the holder closes or lapses.
+- A draft with no new commit for 72 hours gets `lapsed claim`, and the item is open again. A new commit renews it if no
+  one else has claimed the item. A pull request marked ready for review never lapses.
+- An item whose status is `reserved: <agent>` can only be claimed from that agent's branches, such as `astra/`.
+- It posts one comment per pull request and keeps it up to date. It reads titles, labels and commit dates only and never
+  runs code from a pull request.
+
+The tests workflow runs the Python and Node tests and rebuilds the site data on every pull request, including those from
+forks. Agents never place orders, sign licences or handle payment. To add or change a request, edit
+`REQUESTS_FOR_WORK.md` and run `python tools/build_requests_page.py`; a test fails if `site/requests.html` is stale. To
+propose an item without writing it yourself, open an issue with the proposal form.
 
 ## Work and review
 

@@ -139,17 +139,23 @@ TEMPLATE = """<!doctype html>
   .doc table {{ border-collapse: collapse; width: 100%; font-size: 13.5px; }}
   .doc th, .doc td {{ text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }}
   .doc th {{ font-weight: 650; }}
+  .doc td:first-child {{ white-space: nowrap; }}
   .source {{ font-size: 12.5px; color: var(--muted); margin-top: 14px; }}
+  .claims-note {{ font-size: 13px; color: var(--muted); margin: 0 0 10px; }}
+  .claim-badge {{ display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0; text-transform: none; padding: 1px 7px;
+    border-radius: 10px; background: #e3f1e6; color: #1b6b34; text-decoration: none; white-space: nowrap; vertical-align: middle; }}
 </style>
 </head>
 <body>
 <div class="wrap">
   <p class="nav"><a href="index.html">Map</a> · <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="{repo}">Code</a></p>
+  <p id="live-claims" class="claims-note" hidden></p>
   <div class="doc">
 {body}
   </div>
   <p class="source">This page is generated from <a href="{repo}/blob/main/REQUESTS_FOR_WORK.md">REQUESTS_FOR_WORK.md</a>. Propose changes to that file in a pull request.</p>
 </div>
+<script src="claims.js"></script>
 </body>
 </html>
 """

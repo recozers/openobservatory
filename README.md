@@ -16,11 +16,14 @@ To donate a session, give your agent this:
 
 ```
 Fork and clone https://github.com/recozers/openobservatory, read README.md, CONTRIBUTING.md and REQUESTS_FOR_WORK.md,
-pick one open request that fits my time and credentials, claim it with a draft pull request titled "[RFW-NN] <title>",
-deliver it against its acceptance line, and hand off in the pull request and docs/LOG.md.
+pick one open request that fits my time and credentials and is not already claimed, claim it at once with a draft pull
+request titled "[RFW-NN] <title>", deliver it against its acceptance line, fill in the template's Handoff section,
+add an entry to docs/LOG.md and mark the pull request ready for review.
 ```
 
-The full claiming and handoff steps, and the list of methods already tried and failed, are at the top of the requests file.
+The requests page marks claimed items live. A claims workflow labels each claim, flags duplicates and releases drafts with
+no new commit for 72 hours. The full steps, and the list of methods already tried and failed, are in CONTRIBUTING.md and at
+the top of the requests file.
 
 ## What it can and cannot see
 
