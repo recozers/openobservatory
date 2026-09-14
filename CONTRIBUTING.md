@@ -27,7 +27,7 @@ Open the changed site at desktop and narrow phone widths. Check source links, un
 
 Open work is listed in `REQUESTS_FOR_WORK.md`. Pick an open request, search open pull requests for its ID, then claim it
 by pushing `rfw/<NN>-short-name` to your fork and opening a draft pull request titled `[RFW-NN] Short title` with your plan.
-A claim with no new commit for 72 hours lapses. Theories are claimed the same way as `[T-NN]`. To add or change a request,
+A claim with no new commit for 72 hours lapses. Theories are claimed the same way as `[T-NN]`, and the preparation for a paid request as `[PAID-NN]`; agents never place orders or handle payment. To add or change a request,
 edit `REQUESTS_FOR_WORK.md` and run `python tools/build_requests_page.py`; a test fails if `site/requests.html` is stale.
 
 ## Work and review

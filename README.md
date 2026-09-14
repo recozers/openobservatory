@@ -24,21 +24,27 @@ The full claiming and handoff steps, and the list of methods already tried and f
 
 ## What it can and cannot see
 
-- **Construction, reliably.** Sentinel-2 (10 m, every few days) dates each hall's roof to the month and shows fit-out afterwards.
-- **Fuel burning on site, where it happens.** Sentinel-5P TROPOMI NO₂ plumes, wind-rotated and composited over hundreds of days,
-  give a monthly emission rate calibrated against five EPA-monitored power plants. At a site running its own turbines that is a
-  monthly on/off/ramp readout of generation; absolute megawatts are uncertain by 2–3×, month-to-month changes are good to ~20 %.
-- **Construction through cloud, and new sites without a prior list.** Sentinel-1 radar dates each hall's structure to within a
-  few months of the optical date (validated at Abilene) and, run as a change scan over a 12 km box, lists new structures by size
-  with a chip for review: at Horinger it found three 30–40 ha campuses missing from every inventory. VIIRS night lights, scanned
-  regionally at 500 m, recover six of seven US greenfield campuses as the brightest new blob in their box.
-- **Operator-reported loads where they exist.** Meta publishes annual electricity per campus; those averages (Prineville 197 MW in
-  2024, Luleå 54 MW against a 120 MW feed, New Albany 60 MW against a 250 MW connection) take precedence on the site and calibrate
-  the utilisation prior for cloud campuses (0.2–0.6 of a connection figure).
-- **Not electricity use from space.** Roof temperature does not track IT load, day or night: tested with ECOSTRESS and Landsat at
-  twelve sites against nine control roofs (`docs/overnight_report_2026-09-13.md`). Snow on hall roofs persists like on any other
-  roof (nine sites, eight winters). Load figures on the site are documented capacity with a stated utilisation prior unless marked
-  as operator-reported or NO₂-derived.
+Public data shows much more in the US than in China. Hourly plant emissions, air permits, county records, public-domain aerial
+imagery and operator disclosures are mostly American. China is the priority because it is the harder case and the one where
+independent monitoring matters most. Each claim below is stated at the scale it was tested; `docs/MVP.md` has the details and
+its corrections section.
+
+- **Construction.** Sentinel-2 brightness dates new bright roofs to the month. At all 12 Abilene halls the dates agree with
+  independent Sentinel-1 radar dates within 0 to 4 months; neither has been checked against dated construction records.
+  Brightness misses dark and grey roofs, which are common in China. Radar dates those, through cloud.
+- **New buildings without a prior list.** A Sentinel-1 change scan in 12 km boxes, scored by a hall classifier, put 39
+  hall-like structures from six Chinese hubs on the map. They are dated by radar and not confirmed as data centres. Six
+  eastern hub boxes, placed from approximate coordinates, produced none.
+- **Fuel burned on site, validated in the US only.** TROPOMI NOx flux, calibrated against five EPA-monitored coal plants,
+  measures generation at one campus so far, Colossus 2. Quarterly figures carry about ±20 % and megawatts are uncertain by
+  2 to 3 times. None of 31 campuses without known on-site generation showed a plume. China has no public hourly plant data to
+  calibrate against.
+- **Electricity use comes only from operators.** Meta reports annual electricity for 18 campuses. Google's published water
+  use gives an approximate load for 12 more: checked against Meta's electricity, the middle half of mature campuses fall
+  within 0.6 to 1.6 times and individual campuses range from 0.35 to about 3 times. No Chinese operator publishes
+  per-campus figures.
+- **Not from satellites.** Night roof temperature showed no step at documented load changes (Rainier +0.06 ± 0.24 K at a
+  documented 1,078 MW), and snow did not clear faster from operating halls than from other roofs.
 
 ## Layout
 

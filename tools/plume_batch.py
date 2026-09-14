@@ -34,9 +34,14 @@ def change_date(sid):
     return None, None
 
 
-def zscore(csv, change):
+def zscore(csv, change, series=None):
+    """Downwind-minus-upwind change after `change`, for one series. Output files hold the site and its control points in the
+    `site` column; `series` selects one (default: the file's own site, taken from its name). Mixing them dilutes the site."""
     try:
         n2 = pd.read_csv(csv, index_col=0)
+        name = series or Path(csv).stem.replace("null_", "")
+        if "site" in n2.columns:
+            n2 = n2[n2.site == name]
         n2.index = pd.to_datetime(n2.index)
         cut = pd.Timestamp(change)
         a, b = n2[n2.index >= cut].dw_minus_uw.dropna(), n2[n2.index < cut].dw_minus_uw.dropna()

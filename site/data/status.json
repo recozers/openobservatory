@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-14T11:06:58.882296+00:00",
+"generated": "2026-09-14T11:58:45.783661+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -11,7 +11,7 @@
 "built": "turbine yard; no halls mapped",
 "built_conf": "low",
 "running": "yes: on-site generation detected since 2025Q4",
-"load": "about 1207 MW from NO\u2082 (range 637\u20132919; absolute value uncertain 2\u20133\u00d7, month-to-month changes reliable)",
+"load": "about 1207 MW from NO\u2082 (range 637\u20132919; megawatts uncertain 2\u20133\u00d7 from the emission factor; quarterly NOx \u00b120 %, single months \u00b120\u201350 %)",
 "confidence": "high",
 "how": [
 "EPA CAMPD plant generation; campus allocation only where separately verified at >=80%; other plant records are evidence only",

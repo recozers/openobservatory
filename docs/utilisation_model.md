@@ -18,7 +18,7 @@ Each hall polygon `h` carries a design IT capacity `D_h` and a construction stat
 | state | meaning | dated by | validated |
 |---|---|---|---|
 | S0 pad | earthworks, foundations | Sentinel-2 bare-soil change; Sentinel-1 VV change (cloudy regions); night lights of 24 h construction | S2: Abilene; S1 and lights: pilots running |
-| S1 roofed | roof membrane on | Sentinel-2 `roof_on_month` (baseline-relative brightness) | Abilene, 12 halls, ±1 month |
+| S1 roofed | roof membrane on | Sentinel-2 `roof_on_month` (baseline-relative brightness) | agrees with Sentinel-1 radar dates within 0–4 months at 12 Abilene halls; not checked against dated construction records |
 | S2 fitted | rooftop plant installed, roof darkens | Sentinel-2 brightness fall 6–9 months after S1 | Abilene, Colossus |
 | S3 energised | substation/yard complete, generators or turbines commissioned | Sentinel-2 yard change; TROPOMI plume test; night lights (pilot) | plume test: Abilene 2.8σ |
 | S4 operating | IT load > 0 | only indirectly: NOx flux at self-generating sites, operator or utility disclosure; otherwise inferred from S3 plus elapsed time | Colossus 2 (NOx) |

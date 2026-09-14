@@ -87,7 +87,7 @@ Caveat on converting to MW: the calibration plants are tall-stack coal units who
 carries a much larger NO2 fraction, so a coal-calibrated factor likely overstates turbine NOx by up to 2x. The emission-factor range
 for the Southaven temporary fleet is therefore set to 0.5-1.5 kg/MWh (band 690-3,060 MW, midpoint 1,280 MW against Epoch's
 946 MW site). The robust statements are: the source switched on in Nov-Dec 2025, has run every month since at a level consistent
-with the whole ~1 GW site at full load, and its month-to-month changes are resolved to about ±20 %. Absolute MW is uncertain by 2-3x.
+with the whole ~1 GW site at full load. Quarterly means carry about ±20 % statistical uncertainty and single months ±20–50 % [corrected 14 Sep; first written as "month-to-month changes resolved to about ±20 %"]. Absolute MW is uncertain by 2-3x.
 
 China: three hub campuses added from 10 m chips (Horinger cloud valley, Zhangbei west halls, Ulanqab park; hall blocks low
 confidence, operators not attributed; Epoch power figures as A2 labels). Adjacent fossil plants from the WRI database are measured
@@ -153,7 +153,7 @@ Sentinel-2 says "existing" or "not yet", or when it lags radar by more than thre
 4 dB between 2021 and 2026 and now exceeds −8 dB, at least 1 ha, ranked by area, each with a chip cut from the cloud-masked
 annual Sentinel-2 median. Ulanqab: the two largest candidates (32 ha and 12 ha, +9 dB) are the campus itself; an 8 ha candidate
 5 km away is a photovoltaic compound. Horinger: 99 candidates; the top three (42, 38, 33 ha, +10 to +12 dB, at 40.535/111.815,
-40.584/111.847, 40.581/111.862) are new white-hall campuses that are not in the inventory. Zhangbei: four new 9–17 ha
+40.584/111.847, 40.581/111.862) look like new white-hall complexes in their chips and are in no inventory; none is confirmed as a data centre [wording corrected 14 Sep]. Zhangbei: four new 9–17 ha
 structures 2 km south of the digitised halls (41.18, 114.70–114.75); the digitised halls date from 2020 and correctly do not
 appear as new. Gui'an, where every individual Sentinel-2 scene is cloudy: 25 candidates, the two largest 22 and 21 ha, with
 usable chips from the annual median. This is the construction-detection chain for China: radar flags and sizes new structures,
@@ -161,14 +161,15 @@ the optical median gives a person a chip, Sentinel-2 dates the roof where it can
 
 **VIIRS night lights (construction and energisation, not load).** Daily Black Marble radiance (500 m), campus minus a 3–10 km
 annulus, monthly medians; a site "lights up" in the first month at least max(5 MAD, 5 nW/cm²/sr) above the median of all earlier
-months, sustained six months. Every greenfield US campus lights up two to six months after ground-breaking: Rainier 2024-08,
+months, sustained six months. All four greenfield US campuses tested stepped up during construction [corrected 14 Sep; first written as "two to six months after ground-breaking", for which the repository holds no ground-breaking dates]: Rainier 2024-08,
 Fairwater 2024-10, Abilene 2024-12 (then climbing to +120 nW/cm²/sr by 2026 as build-out continued), Hyperion 2025-12. Colossus 1
 steps up in 2025-01, six months after IT load began: lights follow yard and site expansion, not the operating date. The
 nineteen other sites (legacy campuses, supercomputers, the Chinese campuses inside already-lit parks, hub centroids) show no
 step since 2019, as expected. As a regional scan (3-month medians, latest
-versus three years earlier, brightening ≥ 10 nW/cm²/sr and ratio ≥ 3, blobs ≥ 2 pixels) over 150 km boxes, it recovers six of
-seven US campuses within 0.4 km (Hyperion's blob centroid is 2.3 km from the stored coordinate) with 8–22 blobs per box, and the
-campus is the first or second blob in five boxes. It misses Colossus 1 (brownfield inside an already-lit industrial area) and the
+versus three years earlier, brightening ≥ 10 nW/cm²/sr and ratio ≥ 3, blobs ≥ 2 pixels) over 150 km boxes, the nearest new
+blob lies within 0.4 km of four of seven US campuses (Abilene, Rainier, Fairwater, Colossus 2), 1.2 km of Prometheus and 2.3 km
+of Hyperion, with 8–22 blobs per box; the campus's blob ranks first or second in its box for five of seven [corrected 14 Sep;
+first written as "recovers six of seven within 0.4 km"]. It misses Colossus 1 (brownfield inside an already-lit industrial area) and the
 three Chinese campuses (already-lit parks, build-out before the three-year window): in China the radar stage does the work.
 
 **Winter snow persistence (negative, closed).** Sentinel-2 snow fraction per polygon on days when the built-up ring is at least
@@ -254,5 +255,24 @@ per-campus water but no WUE; its own totals imply 1.02–1.06 L/kWh, and against
 method reproduces a site's load only to about a factor of two. Twelve Google campuses therefore carry a "derived" annual IT
 load with a 0.5×–2× band, drawn in light orange, never outranking reported electricity, with air-cooled campuses excluded
 and merged campus pairs marked as upper bounds. The map now colours evidence kind: measured, derived, detected, presumed,
-construction. Grid-fed campuses show no NO₂ signature (0 of 32 at 2.5σ), so satellites can add measured sites only where
+construction. Campuses without on-site generation show no NO₂ signature (none of 31 at 2.5σ; see the 14 Sep correction), so satellites can add measured sites only where
 fuel is burned on site; the generator watch list (B7) is how the next ones arrive.
+
+## Corrections, 14 Sep 2026
+
+An audit of every claim on the requests page against the results files found these errors, now corrected in place above and
+in the README, the site text, `docs/LOG.md` and `docs/PHASE2_TODO.md`:
+
+- **Plume-test null distribution.** `tools/plume_batch.py` computed each z-score over the site and its two control points
+  together. Per series: of 31 campuses not known to generate on site, none reached 2.5σ (highest 2.09, Google Pryor);
+  Abilene, which has SCR-controlled turbines, reached 2.80σ; Colossus 2 reached 9.84σ (not 6.67); across 62 control points
+  none reached 2.5σ (mean −0.29, sd 1.38, highest 2.06). The earlier "0 of 32, sd 1.42, max 2.00" mixed series.
+  Per-series values: `results_no2/plume_batch_zscores_by_series.csv`.
+- **NOx precision.** Month-to-month changes were described as good to about ±20 %. Quarterly means carry about ±20 %; single
+  months ±20–50 % (Colossus 2, May–Aug 2026: 1,058 ± 512 to 1,574 ± 359 kg/h).
+- **Night-light recall.** "Six of seven US campuses within 0.4 km" was wrong: four within 0.4 km, Prometheus 1.2 km, Hyperion
+  2.3 km, Colossus 1 missed (7.7 km). The "two to six months after ground-breaking" timing had no ground-breaking dates behind it.
+- **Roof dating.** `docs/utilisation_model.md` gave Sentinel-2 roof dates as validated to ±1 month at Abilene. They agree with
+  independent Sentinel-1 radar dates within 0–4 months at all 12 halls (9 within 2 months); they have not been checked
+  against dated construction records.
+- **Horinger radar candidates.** Described as "new campuses"; they are hall-like structures seen in chips, unconfirmed.

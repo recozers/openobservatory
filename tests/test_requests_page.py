@@ -22,9 +22,11 @@ class RequestsPageTests(unittest.TestCase):
 
     def test_every_request_in_the_table_has_a_section_and_back(self):
         md = (ROOT / "REQUESTS_FOR_WORK.md").read_text(encoding="utf-8")
-        in_table = set(re.findall(r"^\| \[(RFW-\d+)\]", md, flags=re.M))
-        sections = set(re.findall(r"^#### (RFW-\d+) ", md, flags=re.M))
-        self.assertEqual(in_table, sections)
+        for prefix in ("RFW", "PAID"):
+            in_table = set(re.findall(rf"^\| \[({prefix}-\d+)\]", md, flags=re.M))
+            sections = set(re.findall(rf"^#### ({prefix}-\d+) ", md, flags=re.M))
+            self.assertTrue(in_table, prefix)
+            self.assertEqual(in_table, sections, prefix)
 
     def test_slug_matches_github_anchor_rules(self):
         self.assertEqual(page.slug("RFW-11 Near-field plume test for plants on a city's edge"),

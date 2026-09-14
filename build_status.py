@@ -104,7 +104,7 @@ def main():
             conf, key = "high", "plant"
         elif basis.startswith("NO2-flux on-site") and fx_months:
             running = f"yes: on-site generation detected since {fx_months[0]}"
-            load = f"about {last['est_mid']:.0f} MW from NO₂ (range {last['est_lo']:.0f}–{last['est_hi']:.0f}; absolute value uncertain 2–3×, month-to-month changes reliable)"
+            load = f"about {last['est_mid']:.0f} MW from NO₂ (range {last['est_lo']:.0f}–{last['est_hi']:.0f}; megawatts uncertain 2–3× from the emission factor; quarterly NOx ±20 %, single months ±20–50 %)"
             conf, key = "high", "nox"
         elif (str((last or {}).get("cap_basis") or "").endswith("measured_annual")
               or "water_derived" in str((last or {}).get("cap_basis") or "")) and cap_now is not None:

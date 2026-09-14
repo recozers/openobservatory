@@ -4,7 +4,8 @@ Phase 1 is in `docs/ASTRA_TODO.md` (A1–A11, all merged or closed) and `docs/LO
 `astra/b<N>`, Claude `claude/*`, Stuart merges or delegates, both agents log to `docs/LOG.md`, never commit `.env` or
 `secrets/`, official national statistics are inputs to test and never evidence.
 
-Outside contributors donate agent sessions against `REQUESTS_FOR_WORK.md`. RFW-09, RFW-16 and RFW-17 there are this
+**Priority from Stuart, 14 Sep: focus more on China; US observability is already much better.** Prefer China tasks when
+choosing what to do next. Outside contributors donate agent sessions against `REQUESTS_FOR_WORK.md`. RFW-09, RFW-16 and RFW-17 there are this
 brief's B7, B8 and B9, marked reserved for Astra. Before starting any other task, search open pull requests for an
 `[RFW-NN]` claim on the same work; if you finish or drop B7, B8 or B9, update its Status in that file.
 
@@ -119,14 +120,14 @@ those sites. Accept: priors applied to every Chinese site with a known listed op
 
 ## Claude tasks
 
-- **C1 (done)**: plume test over 33 sites, stopped once the grid-fed null was clear: none above 2.5σ except Colossus 2
-  (`results_no2/plume_batch_summary.csv`). Grid-fed campuses have no NO₂ signature; only generator-driven sites can.
+- **C1 (done, corrected 14 Sep)**: plume test over 33 sites. Per series, none of 31 campuses without known on-site generation
+  reached 2.5σ (highest 2.09); Abilene (SCR turbines) 2.80σ; Colossus 2 9.84σ (`results_no2/plume_batch_zscores_by_series.csv`).
 - **C2 (done, negative)**: Colossus 1 with Allen and Southaven subtracted: turbine-period step 62 ± 63 kg NOx/h, no month
   above 2.5σ; the turbine phase stays undetected (see `docs/LOG.md`, `results_no2/colossus1_subtraction.json`).
 - **C3 (done, negative)**: night thermal at the documented gigawatt-class loads: Rainier +0.06 ± 0.24 K at 1,078 MW, Abilene
   +0.13 ± 0.47 K at 522 MW; only Colossus 1's turbine-yard block shows a night step (`docs/LOG.md`, `results_eco/`).
-- **C4 (done)**: null distribution from the 32 grid-fed sites: z sd 1.42, 95th percentile 1.89, max 2.00, 0/32 at 2.5σ.
-  The 2.5σ bar stays; nothing below it is claimed.
+- **C4 (done, corrected 14 Sep)**: null distribution from 62 control points 0.35° east and west of the sites: z mean −0.29,
+  sd 1.38, 95th percentile 1.53, max 2.06, none at 2.5σ. The 2.5σ bar stays; nothing below it is claimed.
 - **C5**: classifier recalibration with the labels from phase-1 A8 and the optical review, then scores in the site JSON.
 - **C7 (running)**: China coverage from radar: every hall-like radar candidate ≥ 5 ha in the twelve hub boxes becomes an
   inventory entry with its outline, radar structure-on month and classifier score, labelled unconfirmed; eastern hubs

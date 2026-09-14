@@ -260,3 +260,19 @@ B7 remains in progress: seven pending plant records and Cheyenne air limit need 
 - `tools/build_requests_page.py` renders it to `site/requests.html` (anchors match GitHub's), `tools/refresh.py` rebuilds
   it, and `tests/test_requests_page.py` fails if the page is stale or a link is broken. The page is linked from the map, list
   and detail pages; README and CONTRIBUTING describe how to donate a session.
+
+## 2026-09-14 (Claude): corrections from an audit of the requests page
+- The plume batch's z-scores (13 Sep, C1/C4) mixed each site's series with its two control points. Recomputed per series:
+  none of 31 campuses without known on-site generation reached 2.5σ (highest 2.09); Abilene 2.80σ; Colossus 2 9.84σ; 62
+  control points mean −0.29, sd 1.38, highest 2.06, none at 2.5σ. The entry above quoting "0/32, sd 1.42, max 2.00" is
+  superseded. tools/plume_batch.py now filters to one series; results_no2/plume_batch_summary.csv is recomputed and
+  results_no2/plume_batch_zscores_by_series.csv holds every series.
+- Also corrected (details in docs/MVP.md, "Corrections, 14 Sep 2026"): NOx monthly precision (quarters ±20 %, months
+  ±20–50 %), night-light recall (four of seven within 0.4 km, not six), the unsupported "two to six months after
+  ground-breaking" timing, roof dating "±1 month" (only checked against radar), and the Horinger candidates' wording.
+- Requests page rewritten for precision and China priority (Stuart, 14 Sep: "focus a little more on China, US observability
+  is much better"): each working method now states its test scale, truth and uncertainty and whether it carries to China; a
+  new Inconclusive section; the failed list uses corrected numbers; China requests come first, with five new ones (RFW-24
+  construction index, RFW-25 land transfers, RFW-26 grid projects, RFW-27 water permits, RFW-28 building-scale lights) and
+  RFW-29 plume-test robustness; China theories T-10 (temporary site housing) and T-11 (post-structure radar); and a separate
+  "Requests that cost money" section (PAID-01 to PAID-09) with licence conditions and pilots, no prices.

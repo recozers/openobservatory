@@ -31,37 +31,37 @@ guian_hub,0.0,,,skipped: start not in mid-2019..mid-2026,,,,
 qingyang_hub,0.0,,,skipped: start not in mid-2019..mid-2026,,,,
 chongqing_hub,0.0,,,skipped: start not in mid-2019..mid-2026,,,,
 epoch_qts_eagle_mountain,0.0,,,skipped: start not in mid-2019..mid-2026,,,,
-rainier_in,1240.0,2025-10-01,documented capacity,existing file,0.267,0.31,248.0,781.0
-stargate_abilene,600.0,2025-07-01,documented capacity,existing file,0.612,1.92,588.0,1237.0
-epoch_microsoft_fairwater_atlanta,636.0,2025-10-01,documented capacity,ok,0.091,0.13,369.0,810.0
-fairwater_wi,400.0,2026-04-01,documented capacity,existing file,-0.408,-0.4,145.0,1083.0
-colossus2_southaven,495.0,2025-10-01,documented capacity,ok,5.486,6.67,411.0,799.0
-epoch_google_new_albany,453.0,2024-04-01,documented capacity,ok,0.805,1.55,858.0,806.0
-epoch_google_pryor_north,368.0,2024-07-01,documented capacity,ok,0.412,1.03,1127.0,968.0
-epoch_amazon_madison_mega_site,284.0,2025-04-01,documented capacity,ok,-0.117,-0.32,474.0,741.0
-epoch_google_columbus,303.0,2024-04-01,documented capacity,ok,0.205,0.46,966.0,881.0
+rainier_in,1240.0,2025-10-01,documented capacity,existing file,1.21,0.97,122.0,380.0
+stargate_abilene,600.0,2025-07-01,documented capacity,existing file,1.259,2.8,302.0,632.0
+epoch_microsoft_fairwater_atlanta,636.0,2025-10-01,documented capacity,ok,0.398,0.35,125.0,277.0
+fairwater_wi,400.0,2026-04-01,documented capacity,existing file,-0.177,-0.11,80.0,589.0
+colossus2_southaven,495.0,2025-10-01,documented capacity,ok,15.296,9.84,140.0,265.0
+epoch_google_new_albany,453.0,2024-04-01,documented capacity,ok,-0.344,-0.38,282.0,261.0
+epoch_google_pryor_north,368.0,2024-07-01,documented capacity,ok,1.24,2.09,391.0,340.0
+epoch_amazon_madison_mega_site,284.0,2025-04-01,documented capacity,ok,0.269,0.45,167.0,259.0
+epoch_google_columbus,303.0,2024-04-01,documented capacity,ok,1.324,1.53,306.0,281.0
 epoch_dayone_nusajaya,240.0,2024-10-01,documented capacity,"failed: e__(self, name)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ AttributeError: 'DataFrame' object has no attribute 'no2'",,,,
-epoch_coreweave_denton_tx,262.0,2025-04-01,documented capacity,ok,-1.01,-2.11,844.0,1210.0
-epoch_huawei_horinger,241.8,2025-04-01,documented capacity,ok,-6.99,-3.29,566.0,652.0
-epoch_google_bristow,238.0,2024-04-01,documented capacity,ok,0.6,1.07,868.0,674.0
-epoch_qts_richmond_1,238.0,2024-01-01,documented capacity,ok,-0.526,-1.14,1004.0,729.0
-epoch_google_council_bluffs_east,237.0,2024-10-01,documented capacity,ok,0.911,2.0,1098.0,1150.0
-epoch_amazon_ridgeland,228.0,2026-04-01,documented capacity,ok,-0.674,-1.29,161.0,731.0
-epoch_google_omaha,237.0,2024-04-01,documented capacity,ok,0.443,1.27,1422.0,1172.0
-epoch_vnet_bayin_ulanqab,221.0,2025-07-01,documented capacity,ok,-4.124,-2.97,569.0,978.0
-epoch_google_papillion,237.0,2023-01-01,documented capacity,ok,-0.737,-1.87,2095.0,1218.0
-epoch_aws_new_albany,213.0,2024-10-01,documented capacity,ok,0.337,0.58,666.0,772.0
-epoch_microsoft_goodyear,202.0,2023-04-01,documented capacity,ok,1.519,1.87,1851.0,1062.0
-epoch_google_mesa,183.0,2025-07-01,documented capacity,ok,-1.213,-1.32,598.0,1051.0
-epoch_qts_richmond_2,180.0,2025-01-01,documented capacity,ok,-0.757,-1.4,647.0,702.0
-epoch_meta_qts_hillsboro_2,180.0,2023-07-01,documented capacity,ok,-0.396,-0.47,551.0,304.0
-epoch_microsoft_project_osmium,190.0,2021-01-01,documented capacity,ok,-0.147,-0.6,3005.0,1059.0
-epoch_meta_rosemount,178.0,2026-04-01,documented capacity,ok,-1.872,-3.01,224.0,928.0
-epoch_meta_jeffersonville,178.0,2026-04-01,documented capacity,ok,-0.256,-0.33,176.0,635.0
-epoch_alibaba_zhangbei,169.0,2025-07-01,documented capacity,ok,-0.576,-0.81,591.0,967.0
-epoch_google_the_dalles,154.0,2025-01-01,documented capacity,ok,-0.194,-0.48,683.0,784.0
-epoch_google_storey_county,161.0,2023-07-01,documented capacity,ok,-0.2,-0.5,1098.0,694.0
-epoch_meta_montgomery,153.0,2026-04-01,documented capacity,ok,0.181,0.31,144.0,828.0
-colossus_memphis,150.0,2024-07-01,documented capacity,existing file,0.532,0.91,651.0,418.0
-epoch_meta_kuna,152.0,2026-04-01,documented capacity,ok,-0.463,-0.88,267.0,1060.0
-epoch_meta_huntsville,146.0,2026-01-01,documented capacity,ok,-0.298,-0.53,218.0,602.0
+epoch_coreweave_denton_tx,262.0,2025-04-01,documented capacity,ok,-1.182,-1.39,280.0,403.0
+epoch_huawei_horinger,241.8,2025-04-01,documented capacity,ok,-8.585,-2.51,256.0,318.0
+epoch_google_bristow,238.0,2024-04-01,documented capacity,ok,1.196,1.26,297.0,231.0
+epoch_qts_richmond_1,238.0,2024-01-01,documented capacity,ok,-0.007,-0.01,333.0,241.0
+epoch_google_council_bluffs_east,237.0,2024-10-01,documented capacity,ok,1.587,1.65,354.0,377.0
+epoch_amazon_ridgeland,228.0,2026-04-01,documented capacity,ok,-2.929,-3.45,56.0,250.0
+epoch_google_omaha,237.0,2024-04-01,documented capacity,ok,0.837,1.21,473.0,388.0
+epoch_vnet_bayin_ulanqab,221.0,2025-07-01,documented capacity,ok,2.947,1.07,180.0,289.0
+epoch_google_papillion,237.0,2023-01-01,documented capacity,ok,-0.583,-1.04,714.0,405.0
+epoch_aws_new_albany,213.0,2024-10-01,documented capacity,ok,0.152,0.17,218.0,255.0
+epoch_microsoft_goodyear,202.0,2023-04-01,documented capacity,ok,3.062,2.07,548.0,319.0
+epoch_google_mesa,183.0,2025-07-01,documented capacity,ok,-1.481,-1.12,186.0,333.0
+epoch_qts_richmond_2,180.0,2025-01-01,documented capacity,ok,-0.104,-0.1,219.0,229.0
+epoch_meta_qts_hillsboro_2,180.0,2023-07-01,documented capacity,ok,-1.234,-1.19,198.0,120.0
+epoch_microsoft_project_osmium,190.0,2021-01-01,documented capacity,ok,-0.591,-1.35,1002.0,350.0
+epoch_meta_rosemount,178.0,2026-04-01,documented capacity,ok,-3.623,-3.26,77.0,316.0
+epoch_meta_jeffersonville,178.0,2026-04-01,documented capacity,ok,-1.566,-1.26,63.0,209.0
+epoch_alibaba_zhangbei,169.0,2025-07-01,documented capacity,ok,-0.028,-0.02,193.0,302.0
+epoch_google_the_dalles,154.0,2025-01-01,documented capacity,ok,0.536,0.87,226.0,258.0
+epoch_google_storey_county,161.0,2023-07-01,documented capacity,ok,0.759,1.42,389.0,243.0
+epoch_meta_montgomery,153.0,2026-04-01,documented capacity,ok,0.409,0.44,48.0,289.0
+colossus_memphis,150.0,2024-07-01,documented capacity,existing file,1.36,1.6,330.0,213.0
+epoch_meta_kuna,152.0,2026-04-01,documented capacity,ok,-1.774,-2.03,96.0,373.0
+epoch_meta_huntsville,146.0,2026-01-01,documented capacity,ok,-0.355,-0.35,72.0,214.0
