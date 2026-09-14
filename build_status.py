@@ -96,7 +96,13 @@ def main():
         cap_now = last["cap_doc_mw"] if last else None
         cap_since = next((q["q"] for q in Q if (q.get("cap_doc_mw") or 0) > 0), None)
         adjacent = "ADJACENT PLANT" in str(s.get("nox_ef_note") or "")
-        if basis.startswith("NO2-flux on-site") and fx_months:
+        plant = (last or {}).get("campd") or {}
+        if plant.get("basis") == "dedicated_plant_measured":
+            gross = sum(p["gross_avg_mw"] for p in plant["plants"] if p["eligible"])
+            running = (f"yes: dedicated plant generated {gross:.0f} MW average in {last['q']}" if gross > 0 else f"no generation reported by dedicated plant in {last['q']}; campus operation unknown")
+            load = f"{plant['allocated_gross_avg_mw']:.0f} MW allocated gross output; {plant['it_equivalent_avg_mw']:.0f} MW IT equivalent using assumed PUE. Not a campus meter; losses and uncertainty unmeasured"
+            conf, key = "high", "plant"
+        elif basis.startswith("NO2-flux on-site") and fx_months:
             running = f"yes: on-site generation detected since {fx_months[0]}"
             load = f"about {last['est_mid']:.0f} MW from NO₂ (range {last['est_lo']:.0f}–{last['est_hi']:.0f}; absolute value uncertain 2–3×, month-to-month changes reliable)"
             conf, key = "high", "nox"
@@ -138,6 +144,10 @@ def main():
             running += "; the NO₂ series shown is the adjacent power plant, not the campus"
         # ---- how we know
         how = []
+        if (t or {}).get("water_monthly"):
+            how.append("Municipal monthly water deliveries, with separate customer and return records; water evidence only, not electricity use")
+        if any(q.get("campd") for q in Q):
+            how.append("EPA CAMPD plant generation; campus allocation only where separately verified at >=80%; other plant records are evidence only")
         if (t or {}).get("s2_available"):
             how.append("Sentinel-2 roof dating")
         if any(v == "radar" for v in (t or {}).get("roof_basis", {}).values()):
@@ -159,7 +169,10 @@ def main():
             how.append(f"documented capacity: {s['capacity_source'][:90]}")
         # ---- key series
         series = []
-        if key == "nox":
+        if key == "plant":
+            series = [dict(x=q["q"], y=(q.get("campd") or {}).get("allocated_gross_avg_mw")) for q in Q]
+            series_label = "allocated plant gross output, MW average (not a campus meter)"
+        elif key == "nox":
             for q in Q:
                 f = q.get("no2_flux")
                 series.append(dict(x=q["q"], y=(f or {}).get("nox_kgh"), se=(f or {}).get("nox_se")))
@@ -187,7 +200,7 @@ def main():
                         recent=recent, est_mid=(last or {}).get("est_mid"), est_hi=(last or {}).get("est_hi") or 0, last_q=(last or {}).get("q"),
                         polygons_low=bool(s.get("polygons") and any(p.get("confidence") == "low" for p in s["polygons"])),
                         combustion=key == "nox",
-                        evidence_kind=("derived" if running.startswith("yes: about") else "measured" if (key == "nox" or running.startswith("yes: operator reports"))
+                        evidence_kind=("derived" if running.startswith("yes: about") else "measured" if (key in ("nox", "plant") or running.startswith("yes: operator reports"))
                                        else "detected" if running.startswith("yes") or (str((t or {}).get("ntl_lit") or "")[:4].isdigit() and running.startswith("presumably"))
                                        else "presumed" if running.startswith("presumably")
                                        else "construction")))

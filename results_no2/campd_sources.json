@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "link_id": "southaven_control",
+      "file": "data/campd/55269_2023.csv",
+      "sha256": "79d3fbe75a201772bccdebbde6eb8cbf6fa8b1fc6451d46d36662911fa656434",
+      "api": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/hourly"
+    },
+    {
+      "link_id": "southaven_control",
+      "file": "data/campd/55269_2024.csv",
+      "sha256": "7b15ad5fe9e6dc773a21c4ea4684ead8a8edcc6b34342f99776d0def4020ef3f",
+      "api": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/hourly"
+    },
+    {
+      "link_id": "southaven_control",
+      "file": "data/campd/55269_2025.csv",
+      "sha256": "ac782bbb873ab55f50ba9c0669e1f531964c393b400cbe55ba0bb2dd223e21b1",
+      "api": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/hourly"
+    },
+    {
+      "link_id": "southaven_control",
+      "file": "data/campd/55269_2026.csv",
+      "sha256": "602b2d52ba3b5d3f33e4d8699cb5cd7319fa96bddee34acf63239e233f66f320",
+      "api": "https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/hourly"
+    }
+  ],
+  "pending": [
+    {
+      "link_id": "franklin_farms_1",
+      "reason": "Verified plant ID/unit roster and hourly records not yet available"
+    },
+    {
+      "link_id": "franklin_farms_2",
+      "reason": "Verified plant ID/unit roster and hourly records not yet available"
+    },
+    {
+      "link_id": "waterford_new_ccct",
+      "reason": "Verified plant ID/unit roster and hourly records not yet available"
+    }
+  ]
+}

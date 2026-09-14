@@ -1,6 +1,7 @@
 """Audit the Epoch import and independent roof results; fail unmet A1 criteria."""
 import csv
 import json
+import math
 from pathlib import Path
 import re
 import sys
@@ -12,6 +13,24 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.s2_roof_timeline import roof_on_month
 from tools.epoch_roof_review import construction_context, review
+
+
+def supported_timeline_row(row):
+    if not row.get('url'):
+        return False
+    if row.get('capacity_basis') in ('it_reported', 'facility_design'):
+        return True
+    # Independent annual disclosures can augment an Epoch-imported site.
+    if row.get('capacity_basis') not in ('facility_measured_annual', 'it_measured_annual', 'water_derived_it_annual'):
+        return False
+    start, end = row.get('valid_from', ''), row.get('valid_to', '')
+    try:
+        mw = float(row['capacity_mw'])
+    except (ValueError, TypeError, KeyError):
+        return False
+    return bool(row.get('source') and row.get('tier') in ('A1', 'A2')
+                and re.fullmatch(r'\d{4}-01-01', start) and end == start[:4] + '-12-31'
+                and math.isfinite(mw) and mw >= 0)
 
 
 def main():
@@ -42,7 +61,7 @@ def main():
         if not s['capacity_url'] or not s['capacity_source'] or sid not in statuses:
             failures.append(f'{sid}: missing source or public status')
         rows = [r for r in tl if r['site_id'] == sid]
-        if any(not r['url'] or r['capacity_basis'] not in ('it_reported', 'facility_design') for r in rows):
+        if any(not supported_timeline_row(r) for r in rows):
             failures.append(f'{sid}: unsupported timeline provenance or units')
         polygon = data / 'polygons' / f'{sid}.geojson'
         features = json.loads(polygon.read_text())['features'] if polygon.exists() else []

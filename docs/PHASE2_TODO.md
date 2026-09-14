@@ -24,7 +24,7 @@ each site has.
 ## Astra tasks
 
 ### B1. On-site generation inventory from permits  [no-EE for the research, EE for the flux runs]
-Status: in progress (astra/b1, draft PR #8; initial permit register and monthly replay complete; unresolved candidate permits/first fire/geometry remain)
+Status: initial pass merged (PR #8); unresolved candidate permits/first fire/geometry remain in the register notes.
 Data centres that burn their own fuel are directly measurable from TROPOMI (Colossus 2: 1,020 ± 180 kg NOx/h). Find every
 campus with on-site turbines or engines ≥ 50 MW, from air-permit registries (TCEQ, MDEQ, LDEQ, Ohio EPA, Wyoming DEQ,
 Arizona DEQ, Alberta) and company statements, and record: site, fuel, MW, control technology (SCR or not), permit id and
@@ -38,6 +38,7 @@ below detection) in the notes. Accept: the table with URLs; a monthly NOx series
 `docs/LOG.md`. Colossus 1 is Claude's (C2) because of the TVA plant next door.
 
 ### B2. Dedicated power plants → EPA CAMPD  [no-EE]
+Status: implemented on astra/b2; 42 Southaven plant-months verified, evidence-only negative control passes. Real dedicated-supply promotion awaits verified reporting IDs and physical allocation; see `docs/campd_plant_links.md`.
 Where a campus is supplied by a named plant that reports hourly to CAMPD, the plant's generation is the campus load to
 within the contracted share. Build `data/campus_plant_links.csv` (site_id, ORIS id, plant name, contracted share, source
 URL, from date) starting with Meta Hyperion (Entergy Louisiana's three combined-cycle units, when they report) and any
@@ -45,7 +46,7 @@ plant in B1 that is grid-connected and reports; write `tools/campd_monthly.py` (
 `results_no2/campd_<site>_monthly.csv` (MWh, hours, NOx); add a `dedicated_plant_measured` basis (tier A1) used by
 `build_timeline_data.py` when the share is ≥ 0.8, otherwise an evidence strip only. Accept: links table with URLs; the
 build shows "yes: dedicated plant generated N MW average" for at least one site once data exists, and the code path is
-tested on Southaven CC (ORIS 6641... verify) as a non-dedicated example that must NOT become a campus load.
+tested on Southaven CC (verified ORIS 55269; 6641 is Independence AR) as a non-dedicated example that must NOT become a campus load.
 
 ### B3. Annual loads from published water use  [no-EE]  — done by Claude 13 Sep (see LOG); remaining: Microsoft metro attribution
 Google publishes per-site water withdrawal and consumption (2023 report onward) and fleet WUE; Meta publishes per-site
@@ -55,6 +56,7 @@ rows (tier A2, band ±30 %), attributing Microsoft metros to campuses only where
 with an annual load figure and source URLs; the derivation and WUE assumptions in `docs/operator_disclosures_notes.md`.
 
 ### B4. Municipal water records  [no-EE]
+Status: public-source audit implemented on astra/b4 (stacked on PR #9): all eight cities checked; Bluffdale municipal/customer/return records retained as four separate series, 312 monthly observations. Other cities have no attributable monthly series established; access limitations and non-campus aggregates documented in `docs/water_monthly_notes.md`.
 Cities that supply water-cooled campuses sometimes publish or release monthly volumes (The Dalles, Mesa, Council
 Bluffs, Bluffdale, Prineville, Lenoir, Clarksville, Papillion). Collect what is public with URLs into
 `data/water_monthly.csv`; monthly series become an evidence strip ("water use, monthly"). Accept: whatever exists, with a

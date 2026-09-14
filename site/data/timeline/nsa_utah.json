@@ -928,5 +928,3127 @@
 "ntl": 12.8
 }
 ],
-"caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out."
+"caveat": "Load is not measured by any sensor here. The estimate is documented capacity, or roofed area \u00d7 a density prior, times a utilisation assumption. Night-time roof temperature does not respond to load (see the overnight report); NO2 plumes indicate on-site combustion only; Sentinel-2 dates roofs and fit-out.",
+"water_monthly": [
+{
+"month": "2016-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 28.85114,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 16.738349,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 11.249354,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 15.689889,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 15.689889,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 33.020309,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 26.791226,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 30.318984,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 22.449369,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 19.624696,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 15.751563,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2016-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 12.088122,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 14.863456,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 13.703983,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 17.022049,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 15.073148,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 20.574477,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 26.421181,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 31.934845,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 39.261727,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 28.789466,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 16.837027,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 18.872272,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2017-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 13.062573,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 14.074028,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 11.87843,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 18.008835,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 20.303111,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 21.37624,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 24.768315,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 41.839704,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 23.917213,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 28.999158,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 21.635271,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 16.528657,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2018-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 16.343634,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 18.847602,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 13.469622,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 24.274923,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 24.509284,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 26.51986,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 33.205331,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 38.213267,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 48.241475,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 35.400929,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 30.306649,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 26.51986,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2019-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 45.379797,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 43.77627,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 45.984203,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 55.802718,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 63.746341,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 49.018568,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 49.363943,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 45.712837,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 57.517258,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 47.044997,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 39.594767,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.030004,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2020-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 21.598267,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 22.671396,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 25.545409,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 31.108412,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 32.798282,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 35.573616,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 63.610658,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 58.479374,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 58.047655,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 49.474957,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.967451,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 27.272283,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 21.622937,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 25.582413,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 24.694306,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 34.6115,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.128683,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 49.092577,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 57.887303,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 89.082058,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 42.148074,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 67.631809,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.967451,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 27.272283,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2022-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.733089,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 24.11457,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 22.252012,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 28.900479,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 31.404448,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 60.77365,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 54.075844,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 51.140157,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 58.948097,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 50.079363,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.967451,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 25.545409,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2023-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 23.275802,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 22.893423,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 24.521619,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 27.765676,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 37.867892,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 51.880246,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 49.820331,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 73.614196,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 72.763094,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 72.405384,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 50.005354,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 28.715457,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2024-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 30.306649,
+"method": "Individual Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-01",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 17.096058,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-02",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 26.532194,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-03",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 27.790346,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-04",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 44.393011,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-05",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 36.967451,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-06",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 65.596564,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-07",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 62.574534,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-08",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 86.380733,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-09",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 38.718995,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-10",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 40.260847,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-11",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 47.279359,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2025-12",
+"series_id": "bluffdale_sold",
+"metric": "municipal_delivery",
+"volume_ml": 27.099596,
+"method": "Master Meter",
+"preferred": true,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372",
+"notes": "Municipal delivery meter. City notes a corrected April 2021 reading and planned meter relocation/recalibration. Purchases include water subsequently transferred or returned; not electricity use."
+},
+{
+"month": "2021-01",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-02",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-03",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-04",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 9.904859,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-05",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 12.199135,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-06",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 16.935706,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-07",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 21.955977,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-08",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 17.725134,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-09",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 14.814117,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-10",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 11.298694,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-11",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2021-12",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-01",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 7.672257,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-02",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 6.463445,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-03",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 5.501329,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-04",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 7.906619,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-05",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 10.669618,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-06",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 18.539232,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-07",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 20.463464,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-08",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 19.02029,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-09",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 17.367424,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-10",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 12.297814,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-11",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 4.09516,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2022-12",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 3.552428,
+"method": "Calculated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-01",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 4.650227,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-02",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 4.280182,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-03",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 7.45023,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-04",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 12.359488,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-05",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 15.517202,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-06",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 14.986804,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-07",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 14.407068,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-08",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 11.681073,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-09",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 9.991203,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-10",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 9.238779,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-11",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 3.885468,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2023-12",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 2.923352,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-01",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 3.170048,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-02",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 4.07049,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-03",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 5.525999,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-04",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 7.943623,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-05",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 10.940984,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-06",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 15.344514,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-07",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 15.25817,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-08",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 13.654644,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-09",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 12.729533,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-10",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 11.348033,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-11",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 5.698686,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2024-12",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 5.933048,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-01",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-02",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-03",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-04",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 4.40353,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-05",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 12.482836,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-06",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 13.173586,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-07",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 15.566541,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-08",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 14.61676,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-09",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 12.618519,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-10",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 4.415865,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-11",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2025-12",
+"series_id": "udc_irrigation",
+"metric": "irrigation_transfer_out",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665",
+"notes": "Cooling-tower discharge transferred for city irrigation; 2022 method is calculated. Not a campus intake or a complete discharge series."
+},
+{
+"month": "2016-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 28.863475,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 16.775353,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 11.224685,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 15.665219,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 15.665219,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 33.057313,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 26.766556,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 30.343653,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 22.449369,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 19.612361,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 15.788568,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2016-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 12.088122,
+"method": "not stated",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 14.863456,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 13.703983,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 17.022049,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 15.073148,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 20.574477,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 26.421181,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 31.934845,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 39.261727,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 28.789466,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 16.837027,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 18.872272,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2017-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 13.062573,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 14.074028,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 11.87843,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 18.008835,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 20.303111,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 21.37624,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 24.768315,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 41.815034,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 23.917213,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 28.999158,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 21.635271,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 16.528657,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2018-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 16.343634,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 18.847602,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 13.469622,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 24.274923,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 24.509284,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 26.51986,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 33.205331,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 38.213267,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 48.241475,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 35.400929,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 30.306649,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 26.51986,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2019-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 45.379797,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 43.80094,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 46.008873,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 55.827388,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 62.549864,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 49.043238,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 49.425617,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 64.659118,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 57.554263,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 47.069667,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 39.607102,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 36.042339,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2020-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 21.598267,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 22.671396,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 25.545409,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 31.108412,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 32.798282,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 35.573616,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 63.610658,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 58.479374,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 58.047655,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 49.474957,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 36.967451,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 27.272283,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2021-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 21.622937,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 25.582413,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 24.694306,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 34.6115,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 36.128683,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 49.092577,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 57.887303,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 89.082058,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 42.148074,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 67.631809,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 36.967451,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 27.272283,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2022-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 36.733089,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 24.11457,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 22.252012,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 28.900479,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 31.404448,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 60.77365,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 54.075844,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 51.140157,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 58.948097,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 50.079363,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 39.483754,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 25.545409,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2023-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 23.275802,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 22.893423,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 24.521619,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 27.765676,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 37.867892,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 51.880246,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 49.820331,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 73.614196,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 72.763094,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 72.405384,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 50.005354,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 28.715457,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2024-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 30.306649,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-01",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 17.096058,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-02",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 26.532194,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-03",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 27.790346,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-04",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 44.393011,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-05",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 36.967451,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-06",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 65.596564,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-07",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 62.574534,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-08",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 86.380733,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-09",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 38.718995,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-10",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 40.260847,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-11",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 47.279359,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-12",
+"series_id": "udc_purchased",
+"metric": "campus_purchase",
+"volume_ml": 27.099596,
+"method": "Master Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468",
+"notes": "Customer-side purchase series. Source flags 2020 meter/EMCS problems and chiller cleaning/flushing; differs from city meter in some years. Do not add to city deliveries."
+},
+{
+"month": "2025-01",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 3.441414,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-02",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 3.515423,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-03",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 7.820275,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-04",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 4.440535,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-05",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-06",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-07",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-08",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-09",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 0.0,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-10",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 5.081945,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-11",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 6.315427,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+},
+{
+"month": "2025-12",
+"series_id": "udc_river",
+"metric": "river_return",
+"volume_ml": 6.586793,
+"method": "Individual Meter",
+"preferred": false,
+"source_url": "https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606",
+"notes": "River returns reported for 2025 only. Missing earlier years are unknown; do not infer zero or calculate consumption."
+}
+]
 }

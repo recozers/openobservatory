@@ -10,7 +10,8 @@ def fetch(fac, year, key):
             r = requests.get("https://api.epa.gov/easey/emissions-mgmt/emissions/apportioned/hourly",
                              params={"beginDate": start, "endDate": end, "facilityId": fac, "page": page, "perPage": 500}, headers=h, timeout=120)
             if r.status_code != 200:
-                print("status", r.status_code, r.text[:120], file=sys.stderr); break
+                # Never return a silently truncated year after an API failure.
+                r.raise_for_status()
             items = r.json(); items = items.get("items", items) if isinstance(items, dict) else items
             rows += items
             if len(items) < 500: break
