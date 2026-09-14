@@ -354,3 +354,10 @@ B9 is the next independent task, while B8 needs normal public reading access and
   PAID-03's pilot publish only aggregate results); the trained model is not released without the lab's agreement. The last
   three safeguards are Claude's reading of the decision and Stuart can change them. Every other public number still traces to
   free public data.
+- Added RFW-33, "Crawl public records and satellite data for data centres in the rest of the world" (Stuart, 14 Sep), as the
+  last Priority 3 item, so no request was renumbered. Its figures come from data/sites.csv and site/data/status.json: 12
+  sites in 11 countries outside the US and China, eight of them Epoch AI campuses, dated buildings at 6, and five campuses
+  with halls Sentinel-2 dates to 2022 or later (DayOne Nusajaya, Google Waltham Cross, Oracle Batam, Southgate Melbourne,
+  Start Campus Sines), which serve as its recall check. No radar, optical or night-light discovery scan has run outside the
+  US and China (results_s1, results_discovery, results_ntl). The record sources it names are candidates to check, not yet
+  verified. PAID-08 now also answers RFW-33. Requests are now RFW-01 to RFW-33.

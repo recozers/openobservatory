@@ -396,6 +396,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-30](#rfw-30-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
 | [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
 | [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | open |
+| [RFW-33](#rfw-33-crawl-public-records-and-satellite-data-for-data-centres-in-the-rest-of-the-world) | Crawl public records and satellite data for data centres in the rest of the world | Where, Built, Capacity | L | none, then EE | open |
 
 #### RFW-26 Radar candidate scan around every inventory site
 
@@ -455,6 +456,47 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Do:** Write `tools/check_links.py` to read every URL in `data/*.csv` and the source JSON files, check each at a polite
   rate, and look up whether an archived copy exists without submitting new captures.
 - **Deliver:** A report of dead links with their archived alternatives, and the script documented in `CONTRIBUTING.md`.
+
+#### RFW-33 Crawl public records and satellite data for data centres in the rest of the world
+
+- **Why:** Outside the US and China the inventory has 12 sites in 11 countries, eight of them Epoch AI campuses, and dated
+  buildings at 6. No radar, optical or night-light discovery scan has run there. The only regional records are official
+  totals for Ireland and Singapore in `data/regional_dc_load.csv`, which can test a lead list's completeness but never place a
+  site. Planning, environmental and permit records name data-centre projects, locate them and date them before construction.
+- **Records:** Build a lead list, starting with sources that cover a whole country, and record what each publishes per site.
+  Sources to check: OpenStreetMap features tagged as data centres, through the Overpass API; reporting by data centres of
+  500 kW and above under the EU Energy Efficiency Directive, whose EU database is public only in aggregate, and the national
+  registers that implement it, such as Germany's; the public registers of medium combustion plants in EU countries and the UK,
+  whose entries give operator, location and rated thermal input and can include standby generators; industrial emissions
+  permits for sites whose generators pass 50 MW of thermal input, such as Ireland's EPA licences; planning applications and
+  zoning plans published as open data; environmental assessment portals such as India's PARIVESH, Chile's SEIA and the New
+  South Wales major projects portal; PeeringDB facilities; and the property lists of listed operators and data-centre REITs.
+- **Satellites:** Measure recall where the answer is known before searching. The radar scan compares 2021 with 2026, so it
+  finds buildings that went up between those years. Five rest-of-world campuses have halls that Sentinel-2 dates to 2022 or
+  later: DayOne Nusajaya, Google Waltham Cross, Oracle Batam, Southgate Melbourne and Start Campus Sines. Run RFW-26's command
+  around each, reusing its files where they exist, and score the candidates. `tools/s2_candidates.py` runs only on five fixed
+  boxes, so add a coordinate option before using it. Then scan boxes around located leads, and around announced campuses where
+  no record turns up; announcements are leads, never evidence. The classifier has never seen a multi-storey data centre,
+  common in dense metros, so report its scores by building type.
+- **Match:** A lead is confirmed when a public record names a data centre at a location where a hall-like structure is
+  visible on a chip. Add confirmed sites to `data/sites.csv` with an outline and `coords_quality`. A lead with a record but no
+  structure yet stays in the leads file as a watch point with its record date, so later scans can date it. A structure with no
+  record stays in the candidate files, unconfirmed. Keep each figure in its own unit: megawatts in a planning application,
+  kVA, thermal input and floor area are not IT capacity.
+- **Rules:** Crawl at a polite rate within robots.txt and each source's terms. At a CAPTCHA, login or ban on automated access,
+  stop and record the block in the source audit. Commit extracted facts and links, not copies of documents whose terms forbid
+  redistribution, and no personal details of people named in applications, such as objectors. Use commercial data-centre
+  directories only by hand, as leads that must resolve to a public record. Keep the original-language text that names each
+  project beside any translation.
+- **Deliver:** A first slice for two areas, for example Ireland, where official totals exist to test completeness, and Johor in
+  Malaysia, where DayOne Nusajaya is a known campus. `data/row_record_sources.csv` with country, source, what it publishes per
+  site, access method, terms on automated access, URL, date checked and outcome; `data/row_leads.csv` with country, project,
+  operator where a record names one, record type and date, stated figure and unit, location and how it was found, source URL
+  and status; the crawler scripts under `tools/`; candidate and score files per scanned area; and a table in `docs/LOG.md`
+  giving, per country, sources checked, leads, located leads, matched structures and new sites, plus the radar recall at the
+  five campuses and the false-positive types. The site rebuilds and the tests pass. If the radar scan finds fewer than three
+  of the five campuses, report the recall and stop before scanning areas without records. If Earth Engine quotas block an
+  area, say so; PAID-08 covers paid compute.
 
 ## Theories to explore
 
@@ -702,7 +744,8 @@ until a pilot shows it is worth it.
 
 #### PAID-08 Compute for continental radar scans
 
-- **Answers:** RFW-02 and RFW-26 across whole provinces, if Earth Engine's non-commercial quotas block the scans.
+- **Answers:** RFW-02, RFW-26 and RFW-33 across whole provinces or countries, if Earth Engine's non-commercial quotas block
+  the scans.
 - **Pilot:** one province by batch export to cloud storage, with the cost recorded per 1,000 km².
 - **Cost drivers:** storage, processing and egress.
 - **Success test:** candidate lists for the province that match the box scans where they overlap.
