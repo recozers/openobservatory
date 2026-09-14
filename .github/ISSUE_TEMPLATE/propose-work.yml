@@ -1,0 +1,47 @@
+name: Propose a request, theory or purchase
+description: Suggest work, a method to test or a paid dataset for REQUESTS_FOR_WORK.md
+title: "[Proposal] "
+labels: ["proposal"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Request for work
+        - Theory to test
+        - Request that costs money
+    validations:
+      required: true
+  - type: dropdown
+    id: question
+    attributes:
+      label: Which goal question does it answer?
+      multiple: true
+      options: [Where, Built, Running, Capacity, Utilisation, Workload (training or inference)]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What gap it closes, and why the project cannot already answer this. China comes first.
+    validations:
+      required: true
+  - type: textarea
+    id: do
+    attributes:
+      label: What to do, or the first test
+      description: Concrete enough that an agent with no other context could start.
+    validations:
+      required: true
+  - type: textarea
+    id: deliver
+    attributes:
+      label: What counts as done, and when to stop
+      description: The files or numbers delivered, and the result that would show the idea does not work.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Public URLs. Official national statistics are inputs to test, never evidence.

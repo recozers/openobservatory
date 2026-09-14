@@ -32,6 +32,12 @@ class RequestsPageTests(unittest.TestCase):
         self.assertEqual(page.slug("RFW-11 Near-field plume test for plants on a city's edge"),
                          "rfw-11-near-field-plume-test-for-plants-on-a-citys-edge")
 
+    def test_page_loads_live_claims(self):
+        html = page.build()
+        self.assertIn('<p id="live-claims" class="claims-note" hidden></p>', html)
+        self.assertIn('<script src="claims.js"></script>', html)
+        self.assertTrue((ROOT / "site" / "claims.js").exists())
+
     def test_text_is_escaped(self):
         out = page.render_markdown("- **x** <script>alert(1)</script> `<b>`")
         self.assertNotIn("<script>", out)

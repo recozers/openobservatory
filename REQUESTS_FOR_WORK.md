@@ -58,14 +58,17 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
 ## Donate a session
 
 1. **Read "Results so far"** at the end of this page, so you do not repeat a method that has already failed.
-2. **Pick one open item** that fits your time and credentials, from Priority 1 if you can. Search open pull requests for its
-   ID, for example `RFW-07`, to check it is free.
-3. **Claim it early.** Fork the repository, push a branch named `rfw/07-short-name`, and open a draft pull request titled
-   `[RFW-07] Short title` with your plan. A claim with no new commit for 72 hours lapses. Theories are claimed as `[T-NN]`
-   and paid-request preparation as `[PAID-NN]`.
+2. **Pick one open item** that fits your time and credentials, from Priority 1 if you can. On the website, claimed items
+   are marked live; otherwise search open pull requests for its ID, for example `RFW-07`.
+3. **Claim it early.** Fork the repository, push a branch named `rfw/07-short-name` with an empty commit
+   (`git commit --allow-empty -m "Claim RFW-07"`), and open a draft pull request titled `[RFW-07] Short title`. Fill in the
+   template's Claim and Plan. Theories are claimed as `[T-NN]` and paid-request preparation as `[PAID-NN]`.
 4. **Deliver against the acceptance line.** A negative result with numbers is a full delivery. Follow `CONTRIBUTING.md`.
-5. **Hand off.** End the pull request with what changed, the validation numbers, what remains uncertain and where you
-   stopped, and append a dated entry to `docs/LOG.md`.
+5. **Hand off.** Fill in the template's Handoff section: what changed, the validation numbers, what remains uncertain and
+   where you stopped. Append a dated entry to `docs/LOG.md` and mark the pull request ready for review.
+
+A claims workflow labels each claim. The earliest open pull request for an item holds it, later ones are marked duplicate,
+and a draft with no new commit for 72 hours lapses so the item is open again. A pull request ready for review never lapses.
 
 Copy this into your agent to start:
 
@@ -73,11 +76,12 @@ Copy this into your agent to start:
 You are donating a session to Open Observatory: https://github.com/recozers/openobservatory
 Fork and clone it, then read README.md, CONTRIBUTING.md and REQUESTS_FOR_WORK.md, including "Results so far".
 Pick one open item that fits about <N> hours and needs only these credentials: <none | Earth Engine | EPA | Earthdata>.
-Prefer Priority 1 (China). Search open pull requests for its ID. If it is free, claim it with a draft pull request titled "[RFW-NN] <title>".
+Prefer Priority 1 (China). Check it is not claimed on https://openobservatory.info/requests.html or in open pull requests.
+Claim it at once: push a branch with an empty commit and open a draft pull request titled "[RFW-NN] <title>" from the template.
 Keep every number traceable to a public source and a script. Before you finish, run:
-python -m unittest discover -s tests; node --test tests/frontend_evidence.test.cjs; python tools/refresh.py --dry-run
-Record the result in docs/LOG.md, including negative results, and end the pull request with what changed,
-validation numbers, remaining uncertainty and where you stopped.
+python -m unittest discover -s tests; node --test tests/*.test.cjs; python tools/refresh.py --dry-run
+Record the result in docs/LOG.md, including negative results, fill in the template's Handoff section with what changed,
+validation numbers, remaining uncertainty and where you stopped, then mark the pull request ready for review.
 ```
 
 **Keys:** `none` needs nothing; `EE` needs Google Earth Engine, free for non-commercial research with your own Cloud project;
@@ -99,7 +103,8 @@ the goal question an item serves: Where, Built, Running, Capacity, Utilisation o
 
 ## Requests
 
-Status shows only standing reservations by the project's own agents. Live claims are open draft pull requests.
+Status shows standing reservations by the project's own agents. Live claims come from open pull requests, and the website
+marks them in these tables when the page loads.
 
 ### Priority 1: China
 

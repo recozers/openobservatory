@@ -1,6 +1,8 @@
 name: Inventory and evidence checks
 on:
   pull_request:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,8 +23,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Test list filtering and map framing
-        run: node --test tests/frontend_evidence.test.cjs
+      - name: Test the site scripts and the claim bot
+        run: node --test tests/*.test.cjs
       - name: Rebuild saved public evidence
         env:
           OBS_FILE: data/observations_all.csv

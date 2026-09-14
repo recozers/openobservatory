@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Work on an open item
+    url: https://openobservatory.info/requests.html
+    about: No issue is needed to work on a listed item. Claim it with a draft pull request, as the page explains.
