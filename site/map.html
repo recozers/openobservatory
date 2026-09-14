@@ -26,9 +26,11 @@
   </aside>
   <div class="legend" id="legend">
     <div class="legend-title">Sites</div>
-    <div class="legend-row"><span class="sw sw-comb"></span> On-site combustion measured (NO₂ plume, calibrated)</div>
-    <div class="legend-row"><span class="sw sw-doc"></span> Documented capacity in force</div>
-    <div class="legend-row"><span class="sw sw-build"></span> Under construction, unknown, or hub centroid</div>
+    <div class="legend-row"><span class="sw sw-comb"></span> Measured: operator-reported electricity, or fuel burning seen from orbit</div>
+    <div class="legend-row"><span class="sw sw-der"></span> Derived: annual load from published water use (uncertain ×2)</div>
+    <div class="legend-row"><span class="sw sw-det"></span> Detected: combustion or energisation signal, load not measured</div>
+    <div class="legend-row"><span class="sw sw-doc"></span> Presumed: documented capacity × utilisation prior</div>
+    <div class="legend-row"><span class="sw sw-build"></span> Construction, unknown, or unconfirmed</div>
     <div class="legend-row small">Marker size = mid estimate of load</div>
     <label class="legend-row small"><input type="checkbox" id="chk-tiles" checked> OpenStreetMap tiles (needs internet)</label>
   </div>
@@ -42,6 +44,6 @@
 </div>
 
 <script src="vendor/maplibre-gl.js"></script>
-<script src="map.js?v=20260913c"></script>
+<script src="map.js?v=20260914b"></script>
 </body>
 </html>

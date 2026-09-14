@@ -1,4 +1,4 @@
-/* DC Watch front page: one card per site, in words. Data: data/status.json (from build_status.py). */
+/* Open Observatory list: one card per site, in words. Data: data/status.json (from build_status.py). */
 (async function () {
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
@@ -6,6 +6,18 @@
   document.getElementById("build-note").textContent = `Built ${String(data.generated || "").slice(0, 10)}.`;
   const all = data.sites;
   const isHub = s => /_hub$/.test(s.site_id) && !s.series.some(p => p.y);
+  const KINDS = ["measured", "derived", "detected", "presumed", "construction"];
+  const KIND_LABEL = { measured: "measured", derived: "derived from water use", detected: "detected", presumed: "presumed", construction: "construction / unconfirmed" };
+  const kindOf = s => s.evidence_kind || "construction";
+  const kindSel = document.getElementById("kind");
+  function fillKinds() {  // counts follow the hub checkbox so they match the cards shown
+    const hide = document.getElementById("hide-hubs").checked, keep = kindSel.value || "all";
+    const pool = all.filter(s => !(hide && isHub(s))), counts = {};
+    pool.forEach(s => { counts[kindOf(s)] = (counts[kindOf(s)] || 0) + 1; });
+    kindSel.innerHTML = `<option value="all">all kinds (${pool.length})</option>` + KINDS.filter(k => counts[k]).map(k => `<option value="${k}">${esc(KIND_LABEL[k])} (${counts[k]})</option>`).join("");
+    kindSel.value = [...kindSel.options].some(o => o.value === keep) ? keep : "all";
+  }
+  fillKinds();
 
   function spark(s) {
     const pts = s.series.filter(p => p.y !== null && p.y !== undefined && p.x);
@@ -30,6 +42,7 @@
   function card(s) {
     return `<div class="card">
       <h2>${esc(s.name)}</h2>
+      <div class="badges" style="margin:2px 0 4px"><span class="badge kind-${esc(kindOf(s))}">${esc(KIND_LABEL[kindOf(s)])}</span></div>
       <div class="meta">${esc(s.operator)} · ${esc(s.country)}${s.polygons_low ? " · polygons are low-confidence" : ""}</div>
       <div class="lines">
         <div>Built</div><div>${esc(s.built)}</div>
@@ -44,13 +57,15 @@
   }
 
   function render() {
-    const sort = document.getElementById("sort").value, hide = document.getElementById("hide-hubs").checked;
-    let rows = all.filter(s => !(hide && isHub(s)));
+    const sort = document.getElementById("sort").value, hide = document.getElementById("hide-hubs").checked, kind = kindSel.value;
+    let rows = all.filter(s => !(hide && isHub(s)) && (kind === "all" || kindOf(s) === kind));
+    if (sort === "default") rows = [...rows].sort((a, b) => (KINDS.indexOf(kindOf(a)) - KINDS.indexOf(kindOf(b))) || ((b.est_mid || b.est_hi || 0) - (a.est_mid || a.est_hi || 0)));
     if (sort === "name") rows = [...rows].sort((a, b) => a.name.localeCompare(b.name));
     if (sort === "country") rows = [...rows].sort((a, b) => (a.country + a.name).localeCompare(b.country + b.name));
     document.getElementById("cards").innerHTML = rows.map(card).join("");
   }
   document.getElementById("sort").addEventListener("change", render);
-  document.getElementById("hide-hubs").addEventListener("change", render);
+  kindSel.addEventListener("change", render);
+  document.getElementById("hide-hubs").addEventListener("change", () => { fillKinds(); render(); });
   render();
 })();

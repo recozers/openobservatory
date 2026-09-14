@@ -142,3 +142,23 @@ class StatusTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class UtilisationBandTests(unittest.TestCase):
+    """Bands follow the evidence: reported electricity is tight, a water derivation is wide, and carrying a figure
+    forward never narrows it."""
+
+    def test_bands_by_basis(self):
+        import build_timeline_data as tld
+        width = lambda b: tld.utilisation_prior(b, "cloud")[2] / tld.utilisation_prior(b, "cloud")[0]
+        self.assertAlmostEqual(width("facility_measured_annual"), 1.1 / 0.9)
+        self.assertGreaterEqual(width("water_derived_it_annual"), 4.0)
+        self.assertGreater(width("carried_measured_annual"), width("facility_measured_annual"))
+        self.assertGreater(width("carried_water_derived_it_annual"), width("water_derived_it_annual"))
+
+    def test_carried_water_keeps_its_basis(self):
+        import build_timeline_data as tld
+        tl = pd.DataFrame([dict(site_id="g", valid_from="2025-01-01", valid_to="2025-12-31", capacity_mw="100", capacity_basis="water_derived_it_annual", tier="A2", notes="")])
+        cap, tier, basis, _ = tld.cap_in_force(tl, "g", "2026-06-30", 1.1)
+        self.assertEqual(basis, "carried_water_derived_it_annual")
+        self.assertEqual(cap, 100.0)  # stored as IT: no PUE division

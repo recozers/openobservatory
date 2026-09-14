@@ -182,3 +182,18 @@ Draft PR #8: https://github.com/recozers/openobservatory/pull/8 . Resume this br
   and may miss the parks, and eastern Chinese data centres are often multi-storey buildings that the classifier, trained on
   single-storey hyperscale halls, has never seen. Needs: verified park coordinates (Astra A2/B8) and eastern positives
   before the classifier is trusted there. No entries added from these boxes.
+
+## 2026-09-14 (Claude): all three pages show the new evidence
+- The quarterly detail page (map.html) still used the old three-colour scheme, so Meta's measured campuses appeared as
+  "documented capacity in force". It now reads evidence_kind from status.json: same five colours, legend and kind badge as
+  the landing map, plus the built/running/load lines; the chart's dashed line is labelled by basis; methods text updated.
+- The list page gained a kind badge per card, an evidence filter with counts, and a strongest-evidence-first sort; the
+  intro says where load figures come from (operator electricity, water-derived, presumed).
+- Bug fixed: a water-derived figure carried into later quarters was renamed carried_it_measured_annual and got the 0.7-1.3
+  band for reported electricity. It keeps its own basis now (carried_water_derived_it_annual, band 0.4-2.5). Basis text
+  says "operator-reported annual electricity" or "water-derived annual IT load" instead of "documented capacity in force".
+  Tests for both added (22 pass).
+- Unconfirmed radar structures no longer carry a roofed-area potential band (it showed 0-393 MW for a structure not known
+  to be a data centre); their load reads "not estimated".
+- Local serving: tools/serve_site.py serves site/ with Cache-Control no-store, so a rebuild shows on reload; README and
+  CONTRIBUTING point to it.

@@ -1,5 +1,6 @@
-/* DC Watch front page: map + per-site load band with its evidence. Everything is precomputed into
-   data/sites.json (inventory, provenance) and data/timeline/<site>.json (quarterly bands, evidence). */
+/* Open Observatory quarterly detail: map + per-site load band with its evidence. Everything is precomputed into
+   data/sites.json (inventory, provenance), data/status.json (evidence kind, plain-language status) and
+   data/timeline/<site>.json (quarterly bands, evidence). */
 (async function () {
   const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -7,18 +8,18 @@
   const data = await (await fetch("data/sites.json", nc)).json();
   let index = {};
   try { index = await (await fetch("data/timeline/index.json", nc)).json(); } catch (e) { index = {}; }
+  let status = {};
+  try { (await (await fetch("data/status.json", nc)).json()).sites.forEach(x => { status[x.site_id] = x; }); } catch (e) { status = {}; }
   const sites = data.sites.filter(s => !String(s.site_id).startsWith("ctrl_"));
   document.getElementById("build-note").textContent = `${sites.length} sites · built ${String(data.generated || "").slice(0, 10)}`;
 
-  const klass = s => {
-    const ix = index[s.site_id] || {};
-    const b = String(ix.basis || "");
-    if (b.startsWith("NO2-flux on-site")) return "comb";
-    if (b.startsWith("documented capacity")) return "doc";
-    return "build";
-  };
-  const COLOR = { comb: "#c05621", doc: "#2b6cb0", build: "#ffffff" };
-  const STROKE = { comb: "#ffffff", doc: "#ffffff", build: "#9a9a95" };
+  // evidence kind comes from build_status.py so this page, the landing map and the list agree
+  const klass = s => (status[s.site_id] || {}).evidence_kind || "construction";
+  const COLOR = { measured: "#c05621", derived: "#f6ad55", detected: "#d69e2e", presumed: "#2b6cb0", construction: "#ffffff" };
+  const STROKE = { measured: "#ffffff", derived: "#c05621", detected: "#ffffff", presumed: "#ffffff", construction: "#9a9a95" };
+  const KIND_LABEL = { measured: "measured: operator-reported electricity or on-site fuel burning seen from orbit", derived: "derived: annual load from published water use (uncertain ×2)",
+    detected: "detected: combustion or energisation signal; load not measured", presumed: "presumed: documented capacity × utilisation prior", construction: "construction, unknown or unconfirmed" };
+  const capLabel = b => /water_derived/.test(b || "") ? "water-derived average" : /measured_annual/.test(b || "") && !/hpl/.test(b || "") ? "operator-reported average" : "documented capacity";
   const radius = s => { const ix = index[s.site_id] || {}; const m = ix.est_mid || ((ix.est_lo || 0) + (ix.est_hi || 0)) / 2; return Math.min(22, 5 + 9 * Math.sqrt((m || 0) / 500)); };
   const bandText = s => { const ix = index[s.site_id]; if (!ix) return "no timeline"; return ix.est_hi > 0 ? `${fmt(ix.est_lo, 0)}–${fmt(ix.est_hi, 0)} MW` : "0 MW"; };
 
@@ -76,12 +77,13 @@
   }
 
   function renderPanel(s, t) {
-    const k = klass(s);
+    const k = klass(s), st = status[s.site_id] || {};
     const tierLabel = { A1: "capacity: regulatory filing or measurement", A2: "capacity: company or utility statement", B: "capacity: inferred from imagery", U: "capacity unknown" }[s.capacity_tier] || "";
     let html = `<h2>${esc(s.name)}</h2><div class="meta">${esc(s.operator)} · ${esc(s.country)} · ${fmt(s.lat, 4)}, ${fmt(s.lon, 4)}</div>`;
-    html += `<div class="badges">` + (k === "comb" ? `<span class="badge comb">on-site combustion measured</span>` : ``) + (k === "doc" ? `<span class="badge doc">documented capacity in force</span>` : ``) +
+    html += `<div class="badges"><span class="badge kind-${esc(k)}">${esc(KIND_LABEL[k] || k)}</span>` +
       (tierLabel ? `<span class="badge">${esc(tierLabel)}</span>` : ``) + (s.polygons && s.polygons.some(p => p.confidence === "low") ? `<span class="badge warn">low-confidence polygons</span>` : ``) +
-      (!s.polygons || !s.polygons.length ? `<span class="badge n">no polygons</span>` : ``) + `</div>`;
+      (!s.polygons || !s.polygons.length ? `<span class="badge n">no polygons</span>` : ``) + `</div>` +
+      (st.running ? `<div class="kv"><div>built</div><div>${esc(st.built)}</div><div>running</div><div>${esc(st.running)}</div><div>load</div><div>${esc(st.load)}</div></div>` : ``);
     html += `<div id="load-section"></div>`;
     html += `<div class="section"><h3>Sources</h3><div class="kv">` +
       `<div>documented capacity</div><div>${s.capacity_mw === null || s.capacity_mw === undefined ? "unknown" : `${fmt(s.capacity_mw, 0)} MW (${esc(s.capacity_basis)})`}</div>` +
@@ -107,7 +109,7 @@
       const x = L + i * bw;
       if (q.est_hi > 0) g += `<rect x="${x + 1}" y="${y(q.est_hi)}" width="${Math.max(bw - 2, 1)}" height="${Math.max(y(q.est_lo) - y(q.est_hi), 1)}" fill="#bcd4ee"><title>${esc(q.q)}: ${fmt(q.est_lo, 0)}–${fmt(q.est_hi, 0)} MW\n${esc(q.basis)}</title></rect>` +
         (q.est_mid === null || q.est_mid === undefined ? `` : `<line x1="${x + 1}" y1="${y(q.est_mid)}" x2="${x + bw - 1}" y2="${y(q.est_mid)}" stroke="#2b6cb0" stroke-width="2"/>`);
-      if (q.cap_doc_mw !== null && q.cap_doc_mw !== undefined) g += `<line x1="${x}" y1="${y(q.cap_doc_mw)}" x2="${x + bw}" y2="${y(q.cap_doc_mw)}" stroke="#1d1d1b" stroke-width="1.5" stroke-dasharray="3 2"><title>documented capacity: ${fmt(q.cap_doc_mw, 0)} MW (${esc(q.cap_tier)})</title></line>`;
+      if (q.cap_doc_mw !== null && q.cap_doc_mw !== undefined) g += `<line x1="${x}" y1="${y(q.cap_doc_mw)}" x2="${x + bw}" y2="${y(q.cap_doc_mw)}" stroke="#1d1d1b" stroke-width="1.5" stroke-dasharray="3 2"><title>${esc(capLabel(q.cap_basis))}: ${fmt(q.cap_doc_mw, 0)} MW (${esc(q.cap_tier)}, ${esc(q.cap_basis)})</title></line>`;
       if (q.no2) { const z = q.no2.z; const c = z === null ? "#ddd" : z > 2 ? "#c53030" : z > 1 ? "#dd6b20" : "#a0aec0"; g += `<rect x="${x + 1}" y="${yb}" width="${Math.max(bw - 2, 1)}" height="7" fill="${c}"><title>${esc(q.q)} NO₂ plume excess ${fmt(q.no2.excess, 2)} (z ${fmt(z, 1)}, n=${q.no2.n})</title></rect>`; }
       if (q.night) { const v = q.night.mean; const c = v > 1 ? "#c53030" : v > 0.5 ? "#dd6b20" : v < -0.5 ? "#2b6cb0" : "#a0aec0"; g += `<rect x="${x + 1}" y="${yb + 9}" width="${Math.max(bw - 2, 1)}" height="7" fill="${c}"><title>${esc(q.q)} night roof ΔT ${fmt(v, 2)} ± ${fmt(q.night.se, 2)} K (n=${q.night.n})</title></rect>`; }
       if (q.halls_roofed) g += `<rect x="${x + 1}" y="${yb + 18}" width="${Math.max(bw - 2, 1)}" height="7" fill="${q.fitted_ha > 0 ? "#2f855a" : "#9ae6b4"}"><title>${esc(q.q)} roofs on: ${q.halls_roofed}/${q.halls_total} halls, ${fmt(q.built_ha, 1)} ha (fitted-out ${fmt(q.fitted_ha, 1)} ha)</title></rect>`;
@@ -118,11 +120,11 @@
     const rows = Q.slice(-8).reverse().map(q => `<tr><td>${esc(q.q)}</td><td class="num">${q.est_hi > 0 ? `${fmt(q.est_lo, 0)}–${fmt(q.est_hi, 0)}` : "0"}</td><td class="num">${q.cap_doc_mw === null || q.cap_doc_mw === undefined ? "—" : fmt(q.cap_doc_mw, 0)}</td><td class="num">${q.halls_roofed}/${q.halls_total}</td>` +
       `<td class="num">${q.no2 ? `${fmt(q.no2.excess, 1)}${q.no2.z !== null ? ` (z ${fmt(q.no2.z, 1)})` : ""}` : "—"}</td><td class="num">${q.no2_flux ? fmt(q.no2_flux.nox_kgh, 0) : "—"}</td><td class="num">${q.night ? `${fmt(q.night.mean, 2)}` : "—"}</td></tr>`).join("");
     el.innerHTML = `<div class="section"><h3>Estimated load per quarter</h3>` +
-      `<div class="big">${last.est_hi > 0 ? `${fmt(last.est_lo, 0)}–${fmt(last.est_hi, 0)} MW` : "0 MW"} <span class="small">(${esc(last.q)}${last.est_mid === null || last.est_mid === undefined ? "" : `, mid ${fmt(last.est_mid, 0)} MW`})</span></div>` +
+      `<div class="big">${last.est_hi > 0 ? `${fmt(last.est_lo, 0)}–${fmt(last.est_hi, 0)} MW` : /^not estimated/.test(last.basis || "") ? "not estimated" : "0 MW"} <span class="small">(${esc(last.q)}${last.est_mid === null || last.est_mid === undefined ? "" : `, mid ${fmt(last.est_mid, 0)} MW`})</span></div>` +
       `<div class="small">${esc(last.basis)}.</div>` +
       `<svg class="chart" viewBox="0 0 ${W} ${H}" style="height:${H}px">${g}</svg>` +
-      `<div class="small">Band = estimated load; dashed = documented capacity. Strips: NO₂ plume excess vs pre-change baseline (red = combustion active), night roof ΔT, roofs on (dark green = fitted out), calibrated NOx flux. Hover for values.</div>` +
-      `<table><tr><th>quarter</th><th>est. MW</th><th>doc. MW</th><th>roofs</th><th>NO₂ z</th><th>NOx kg/h</th><th>night ΔT</th></tr>${rows}</table>` +
+      `<div class="small">Band = estimated load; dashed = the figure in force (documented capacity, or an operator-reported or water-derived annual average). Strips: NO₂ plume excess vs pre-change baseline (red = combustion active), night roof ΔT, roofs on (dark green = fitted out), calibrated NOx flux. Hover for values.</div>` +
+      `<table><tr><th>quarter</th><th>est. MW</th><th>figure MW</th><th>roofs</th><th>NO₂ z</th><th>NOx kg/h</th><th>night ΔT</th></tr>${rows}</table>` +
       `<div class="callout small">${esc(t.caveat)}</div></div>`;
   }
 
@@ -135,13 +137,15 @@
     return `<h2>How the numbers are made</h2>
 <p>All inputs are free public data: Sentinel-2 (10 m optical), Sentinel-5P TROPOMI (NO₂), ECOSTRESS and Landsat (thermal), ERA5 weather, OpenStreetMap footprints, EPA hourly emissions and eGRID, Epoch AI's data-centre tables. Every number traces to a script in the repository and a polygon with a stated confidence.</p>
 <h3>Estimated load</h3>
-<p><b>Documented capacity × utilisation assumption</b> (0.5–1.0, midpoint 0.8) where a filing, measurement or company statement gives the capacity in force. Training clusters run near-constant once installed.</p>
-<p><b>NO₂-derived on-site generation</b> where a site burns its own fuel: the NOx emission rate from wind-rotated TROPOMI plumes, calibrated blind on five coal plants against EPA hourly NOx at the overpass hour (plant-to-plant scatter ±16 %), divided by an emission-factor range. Robust for on/off and month-to-month change; absolute megawatts uncertain by 2–3× because turbine exhaust has a higher NO₂ fraction than the calibration plants.</p>
+<p><b>Operator-reported electricity</b> where the operator publishes a campus's annual consumption (Meta, 18 campuses; ORNL Frontier): the year's average load, ±10 %, carried forward at ±30 % until a newer figure appears.</p>
+<p><b>Water-derived annual load</b> where an operator publishes per-campus water use but not electricity (Google, 12 campuses): water consumed ÷ the operator's own implied WUE. Checked against Meta's metered electricity it is good to about a factor of two, so the band is 0.5×–2×.</p>
+<p><b>NO₂-derived on-site generation</b> where a site burns its own fuel: the NOx emission rate from wind-rotated TROPOMI plumes, calibrated against EPA hourly NOx at the overpass hours of five coal plants, divided by the permit's emission-factor range. Robust for on/off and month-to-month change; absolute megawatts uncertain by 2–3×. Grid-fed campuses show no NO₂ signature (0 of 32 at 2.5σ).</p>
+<p><b>Documented capacity × a utilisation prior</b> everywhere else: cloud campuses 0.2–0.6 (calibrated on Meta's reported loads against their grid connections), supercomputers 0.4–0.9, AI-training campuses 0.5–1.0 (uncalibrated).</p>
 <p><b>Roofs alone give only an upper bound</b> (roofed area × a density prior). No midpoint is shown without an activity signal.</p>
 <h3>Evidence strips</h3>
 <p>NO₂ plume excess downwind minus upwind against the site's pre-change baseline; night-time roof temperature anomaly (ECOSTRESS); roofs on and fitted out from Sentinel-2 brightness; calibrated NOx flux. Adjacent power plants near the Chinese hubs are shown as an activity index only.</p>
 <h3>What is not claimed</h3>
-<p>Load or utilisation from thermal: tested at twelve sites with nine control roofs and found absent, day and night. Load at grid-fed sites: not observable from orbit at this resolution. Automatic discovery of unknown campuses: not yet.</p>
+<p>Load or utilisation from thermal: tested at twelve sites with nine control roofs and found absent, day and night, including at documented gigawatt-class loads. Load at grid-fed sites: not observable from orbit. New structures found by the Sentinel-1 radar scan (the Chinese hub entries named "radar structure") are hall-like by a classifier score, dated by radar, and unconfirmed as data centres.</p>
 <p class="small">Details, negative results and code: <code>docs/overnight_report_2026-09-13.md</code>, <code>docs/MVP.md</code>, and the <a href="research/index.html">research view</a>.</p>`;
   }
 })();

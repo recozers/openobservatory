@@ -11,7 +11,8 @@ Evidence streams (each optional; missing ones are reported as absent, never inve
   - TROPOMI NO2          results_no2/<site>.csv               downwind-minus-upwind excess, quarterly vs pre-change baseline
 
 Load estimate rule (stated in the panel):
-  documented capacity in force  -> lo 0.5x, mid 0.8x, hi 1.0x   (training clusters run near-constant once installed)
+  figure in force                -> band from utilisation_prior(): operator-reported electricity ±10 %, water-derived ×2,
+                                    documented capacity × a prior by site class (cloud 0.2–0.6, HPC 0.4–0.9, AI training 0.5–1.0)
   else roofs on >= 6 months     -> lo 0.3x, mid 0.6x, hi 0.9x of roofed area x density prior
   else                          -> 0 (roof not on, or not yet fitted out)
 Density prior: the site's own documented capacity / hall area when tier A, else 15 MW/ha (AI-era hall).
@@ -78,7 +79,7 @@ def cap_in_force(tl, sid, date, pue):
         # estimates (Epoch it_reported, facility_design) often describe just the newest cluster, not the campus
         newer = r[(r.valid_from > m.valid_to) & ((r.tier == "A1") | r.capacity_basis.isin(MEASURED))]
         if months <= 24 and newer.empty:
-            basis = "carried_measured_annual" if m.capacity_basis == "facility_measured_annual" else "carried_it_measured_annual"
+            basis = {"facility_measured_annual": "carried_measured_annual", "water_derived_it_annual": "carried_water_derived_it_annual"}.get(m.capacity_basis, "carried_it_measured_annual")
             return it_mw(float(m.capacity_mw), basis, pue), m.tier, basis, str(m.notes)
     if r.empty:
         return None, None, None, ""
@@ -96,6 +97,8 @@ def utilisation_prior(cap_basis, site_class):
     """(lo, mid, hi) multipliers on the capacity figure in force. Calibration so far: Meta per-site annual electricity gives
     Lulea at 0.25-0.45 of its 120 MW grid feed (2022-2024) and New Albany at 0.24-0.36 of its 250 MW connection (2023-2024);
     ORNL Frontier averaged 12.2 MW in 2023 against 21-23 MW measured at HPL. AI-training campuses have no calibration yet."""
+    if cap_basis == "carried_water_derived_it_annual":
+        return 0.4, 1.0, 2.5, "last water-derived annual IT load carried forward (no newer figure); method good to about ×2, widened for elapsed time"
     if cap_basis == "water_derived_it_annual":
         return 0.5, 1.0, 2.0, "annual IT energy derived from the operator's published water use ÷ WUE; validated to about ×2 against Meta's metered electricity"
     if cap_basis in MEASURED:
@@ -278,7 +281,10 @@ def main():
             fitted_ha = sum(h["area_ha"] for h in fitted)
             if cap is not None and cap > 0:
                 ulo, umid, uhi, utext = utilisation_prior(cap_basis, str(s.get("site_class") or "cloud"))
-                lo, mid, hi, basis = ulo * cap, umid * cap, uhi * cap, f"documented capacity in force ({cap_tier}, {cap_basis}) × {utext}"
+                what = ("water-derived annual IT load" if "water_derived" in str(cap_basis)
+                        else "operator-reported annual electricity" if str(cap_basis).endswith("measured_annual") and "hpl" not in str(cap_basis)
+                        else "documented capacity in force")
+                lo, mid, hi, basis = ulo * cap, umid * cap, uhi * cap, f"{what} ({cap_tier}, {cap_basis}) × {utext}"
             elif cap == 0.0 and cap_basis == "placeholder" and fitted_ha == 0:
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, "pre-operation (documented placeholder)"
             elif (fitted_ha > 0 and cap is None) or (cap == 0.0 and fitted_ha > 0):
@@ -294,6 +300,9 @@ def main():
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, f"roof on ({built_ha:.1f} ha) but not yet fitted out"
             else:
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, "no roof yet"
+            if str(s.get("coords_quality") or "") == "radar_candidate" and cap is None:
+                # a radar-detected structure is not yet known to be a data centre: no roof-potential band
+                lo, mid, hi, basis = 0.0, None, 0.0, "not estimated: radar-detected structure, unconfirmed as a data centre"
             fx = fluxq.get(qs)
             adj = "ADJACENT PLANT" in str(s.get("nox_ef_note") or "")
             if fx and ef and not adj and fx["nox_kgh"] > 2 * fx["nox_se"] and fx["nox_kgh"] > 100:

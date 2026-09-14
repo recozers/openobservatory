@@ -409,7 +409,7 @@
 "est_lo": 10.3,
 "est_mid": 11.4,
 "est_hi": 12.5,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": -1.27,
 "se": 1.61,
@@ -437,7 +437,7 @@
 "est_lo": 10.3,
 "est_mid": 11.4,
 "est_hi": 12.5,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": -0.42,
 "se": 0.35,
@@ -465,7 +465,7 @@
 "est_lo": 10.3,
 "est_mid": 11.4,
 "est_hi": 12.5,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": 0.66,
 "se": 0.22,
@@ -493,7 +493,7 @@
 "est_lo": 10.3,
 "est_mid": 11.4,
 "est_hi": 12.5,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": -0.4,
 "se": 0.29,
@@ -521,7 +521,7 @@
 "est_lo": 11.0,
 "est_mid": 12.2,
 "est_hi": 13.4,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": -0.39,
 "se": 0.29,
@@ -549,7 +549,7 @@
 "est_lo": 11.0,
 "est_mid": 12.2,
 "est_hi": 13.4,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": 0.22,
 "se": null,
@@ -577,7 +577,7 @@
 "est_lo": 11.0,
 "est_mid": 12.2,
 "est_hi": 13.4,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": -0.05,
 "se": 0.1,
@@ -605,7 +605,7 @@
 "est_lo": 11.0,
 "est_mid": 12.2,
 "est_hi": 13.4,
-"basis": "documented capacity in force (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
+"basis": "operator-reported annual electricity (A1, it_measured_annual) \u00d7 operator-reported annual average electricity \u00f7 8760 h, \u00b110 %",
 "night": {
 "mean": -0.33,
 "se": 0.33,
@@ -633,7 +633,7 @@
 "est_lo": 8.5,
 "est_mid": 12.2,
 "est_hi": 15.9,
-"basis": "documented capacity in force (A1, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
+"basis": "operator-reported annual electricity (A1, carried_it_measured_annual) \u00d7 last operator-reported annual average carried forward (no newer figure), 0.7\u20131.3",
 "night": {
 "mean": -1.88,
 "se": 1.66,

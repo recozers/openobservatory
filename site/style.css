@@ -71,3 +71,9 @@ a { color: #1f4e82; }
 .badge.doc { background: #e3edf8; border-color: #b7cfe9; color: #1f4e82; }
 .panel h2 { font-size: 17px; }
 .topbar .sub a { color: #1f4e82; }
+/* evidence kinds (build_status.py evidence_kind): one palette for map markers, legends, badges and cards */
+.badge.kind-measured { background: #fdeee2; border-color: #f4c9a6; color: #8a3d0c; }
+.badge.kind-derived { background: #fef3e2; border-color: #f6ad55; color: #7b4a12; }
+.badge.kind-detected { background: #fdf6e3; border-color: #ecc94b; color: #744210; }
+.badge.kind-presumed { background: #e3edf8; border-color: #b7cfe9; color: #1f4e82; }
+.badge.kind-construction { background: #f4f4f2; border-color: #cfcfca; color: #4a4a46; }
