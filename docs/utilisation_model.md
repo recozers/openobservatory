@@ -7,6 +7,13 @@ and so the band on the site is a stated posterior rather than a rule of thumb.
 
 ## 1. What is being estimated
 
+Utilisation, the share of installed computing capacity in use, is the project's goal; load is the route to it here. Public
+data reaches utilisation three ways: commercial utilisation (share of capacity leased, from operator filings, which says
+nothing about how hard equipment runs), electrical utilisation (average load divided by a capacity for the same period), and
+activity signals that bracket it. Distinguishing training from inference would need load at hourly resolution or finer, on
+the untested assumption that inference follows daily demand while training runs near-flat.
+
+
 IT load in MW per site per quarter, as a 10/50/90 percentile band. Facility load = IT × PUE (site-specific where
 documented, otherwise 1.1–1.4 by cooling class). "Utilisation" means IT load ÷ design IT capacity of the halls that
 exist. We never claim to observe IT load directly; we observe things that bound it.
@@ -44,11 +51,12 @@ are themselves uncertain by about ±30 %.
   | site | documented figure | operator-reported average | ratio |
   |---|---|---|---|
   | Meta Luleå | 120 MW grid feed | 30.5 MW (2022), 40.2 MW (2023), 53.5 MW (2024) | 0.25–0.45 |
-  | Meta New Albany | 250 MW connection | 90.5 MW (2023), 59.5 MW (2024) | 0.24–0.36 |
+  | Meta New Albany | 250 MW connection, from 2026 only | 90.5 MW (2023), 59.5 MW (2024) | not comparable: different periods [corrected 14 Sep] |
   | ORNL Frontier | 21–23 MW at HPL | 11.4 MW (2022), 12.2 MW (2023) | 0.5–0.55 |
   | Meta Prineville | none published | 197 MW (2024), up from 8 MW (2011) | n/a |
 
-  So the site now uses 0.2–0.6 (mid 0.4) of a connection or design figure for cloud campuses, 0.4–0.9 (mid 0.6) of an
+  So the site now uses 0.2–0.6 (mid 0.4) of a connection or design figure for cloud campuses, resting on one same-period
+  calibration point (Luleå), 0.4–0.9 (mid 0.6) of an
   HPL-measured figure for supercomputers, and keeps 0.5–1.0 for AI-training campuses, which have no calibration yet.
   Where an operator reports the year's electricity, the band is that average ±10 %, carried forward for up to 24 months
   at 0.7–1.3 when no newer figure exists. Chinese colocation operators report company-wide utilisation of in-service

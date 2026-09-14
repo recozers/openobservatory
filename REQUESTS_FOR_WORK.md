@@ -6,12 +6,22 @@ agent can pick it up with no other context.
 
 ## The goal
 
-**Full monitoring of data-centre activity, at the highest time resolution public data allows.** For every data centre in
-the world: where it is, when each building goes up, when it starts running, and how much power it draws, month by month or
-better.
+**Full monitoring of data-centre utilisation, at the highest time resolution public data allows.** For every data centre in
+the world: where it is, when each building goes up, when it starts running, how much of its capacity is in use, and,
+ideally, whether that use is training or inference.
 
 **China is the priority.** Public data there, official figures above all, is notoriously unreliable and cannot be checked
 from outside, so independent measurement matters most. It is also where the project sees least today.
+
+**What utilisation means here.** The share of installed computing capacity in use. Public data reaches it only indirectly:
+
+- **Commercial utilisation** is the share of built capacity that customers have leased, as colocation operators report it.
+  It says nothing about how hard the equipment runs.
+- **Electrical utilisation** is average power drawn divided by capacity. It needs a load and a capacity for the same period.
+- **Activity signals** such as construction, energisation and on-site fuel burning bracket utilisation without measuring it.
+
+Telling training from inference needs load at hourly resolution or finer. The working assumption, untested here, is that
+inference follows daily demand cycles while training runs near-flat for weeks.
 
 ### How close we are
 
@@ -20,18 +30,25 @@ from outside, so independent measurement matters most. It is also where the proj
 | Where is it? | Inventory, plus Sentinel-1 radar and Sentinel-2 change scans | New since 2021 | 88 sites | 54 sites, including 39 radar-found structures not yet confirmed as data centres |
 | When did each building go up? | Sentinel-2 roof brightness and Sentinel-1 radar | Monthly | Dated buildings at 69 sites | Dated buildings at 45 sites, mostly by radar |
 | When did it start running? | VIIRS night lights | Monthly | No direct signal: lights rise during construction, not at start-up | No signal: parks were already lit |
-| How much power, reported? | Operator disclosures | Annual | 18 Meta campuses, 15 of them in the US | None published |
-| How much power, from water use? | Operator water disclosures | Annual | 12 Google campuses; tested on Meta's campuses, the method gave 0.35 to about 3 times actual | None published |
-| How much power, from fuel burned on site? | TROPOMI NOx flux | Monthly ±20 to 50 %, quarterly ±20 % | 1 campus measured, 2 turbine fleets watched | Nothing to calibrate against; no known on-site generation |
-| How much power, grid-fed? | No working method | None | Not observable | Not observable |
+| What is its capacity? | Filings, utility and operator statements, Epoch AI estimates | When documents change | 75 sites, 67 of them Epoch AI estimates | 5 sites: two supercomputers' measured peaks and three Epoch AI estimates |
+| How much is in use, electrically? | Annual electricity divided by capacity for the same period | Annual | 1 site: ORNL's Frontier averaged about 0.54 of its measured peak in 2023 | None |
+| How much is in use, commercially? | Operator filings | Quarterly | Not yet collected | Company-wide only: VNET 73.9 % in mid-2026, GDS 75.5 % by area at end-2025; no campus figures |
+| How much is in use, from activity? | TROPOMI NOx at campuses that burn fuel on site | Monthly ±20 to 50 %, quarterly ±20 % | Relative change at 1 campus, Colossus 2; megawatts uncertain 2 to 3 times, so no ratio | Nothing to calibrate against; no known on-site generation |
+| Training or inference? | No working method | None | Not observed; site classes are assigned by hand from press coverage | Not observed; national planning assigns latency-tolerant work to western hubs, an official input to test |
+
+Load without a same-period capacity does not give utilisation. Meta reports electricity for 18 campuses and Google's water use
+gives an approximate load for 12, but among them only Luleå in Sweden has a capacity figure for the same years: it ran at 0.25
+to 0.45 of its 120 MW supply in 2022 to 2024.
 
 ### The biggest gaps
 
-- **China has no power measurement of any kind.** Construction dating is its only independent signal, and the radar finds
-  there are unconfirmed.
-- **Grid-fed campuses have no satellite signal.** Every thermal, snow and NO₂ approach tried so far has failed for them.
-- **No public source found so far gives power more often than monthly,** and that only where a campus burns its own fuel.
-  Elsewhere the best is one figure a year from operators that choose to publish.
+- **China has no utilisation measurement.** Operators publish company-wide commercial rates only, and construction dating is
+  the only independent signal.
+- **Capacity is the weak half of utilisation.** Two sites have a load and a capacity for the same period, and most capacity
+  figures are third-party estimates or connection limits rather than installed computing.
+- **Nothing is measured often enough to separate training from inference.** The finest load series is monthly, at one campus
+  that burns its own fuel. Hourly sources exist but are untested for this: EPA hourly plant records in the US, and
+  geostationary NO₂ satellites over North America (TEMPO) and East Asia (GEMS).
 
 ## Donate a session
 
@@ -60,7 +77,8 @@ validation numbers, remaining uncertainty and where you stopped.
 
 **Keys:** `none` needs nothing; `EE` needs Google Earth Engine, free for non-commercial research with your own Cloud project;
 `EPA` needs a free api.data.gov key; `Earthdata` needs a free NASA Earthdata login. Keep keys in a local `.env` and never
-commit them. **Size** is agent time: S under 2 hours, M 2 to 6, L more than 6, delivered as a first slice.
+commit them. **Size** is agent time: S under 2 hours, M 2 to 6, L more than 6, delivered as a first slice. **Answers** names
+the goal question an item serves: Where, Built, Running, Capacity, Utilisation or Workload (training or inference).
 
 ## Ground rules
 
@@ -70,8 +88,8 @@ commit them. **Size** is agent time: S under 2 hours, M 2 to 6, L more than 6, d
 - Negative results stay visible. Document a failed method; do not delete it.
 - Respect data licences and site terms. Do not scrape services that forbid it, never bypass a CAPTCHA, login or other access
   control, and follow the Nominatim usage policy for geocoding.
-- A document's figure keeps its own quantity. Do not turn kVA into IT megawatts, add facility and IT figures, or treat a
-  forecast as an observed load.
+- A document's figure keeps its own quantity. Do not turn kVA into IT megawatts, add facility and IT figures, compare a load
+  with a capacity from a different period, or treat a forecast as an observed load.
 
 ## Requests
 
@@ -85,14 +103,15 @@ Status shows only standing reservations by the project's own agents. Live claims
 | [RFW-02](#rfw-02-locate-every-national-computing-cluster-and-scan-it) | Locate every national computing cluster and scan it | Where | M | none, then EE | open |
 | [RFW-03](#rfw-03-quarterly-construction-index-for-each-chinese-hub) | Quarterly construction index for each Chinese hub | Built | M | none | open |
 | [RFW-04](#rfw-04-land-transfer-results-for-operators-and-start-dates) | Land transfer results for operators and start dates | Where, Built | M | none | open |
-| [RFW-05](#rfw-05-procurement-tenders-and-awards-for-named-chinese-campuses) | Procurement tenders and awards for named Chinese campuses | Built, Running | M | none | open |
-| [RFW-06](#rfw-06-substation-and-transmission-projects-serving-the-hub-parks) | Substation and transmission projects serving the hub parks | Power bound | M | none | open |
-| [RFW-07](#rfw-07-water-withdrawal-permit-notices-for-hub-data-centres) | Water-withdrawal permit notices for hub data centres | Power bound | M | none | open |
-| [RFW-08](#rfw-08-chindatas-per-data-centre-table-and-an-edgar-name-search) | Chindata's per-data-centre table and an EDGAR name search | Power bound | S | none | open |
-| [RFW-09](#rfw-09-building-scale-night-lights-inside-chinese-parks) | Building-scale night lights inside Chinese parks | Running | M | EE | open |
-| [RFW-10](#rfw-10-multi-storey-data-centre-positives-for-the-classifier) | Multi-storey data-centre positives for the classifier | Where | M | EE | open |
-| [RFW-11](#rfw-11-dedicated-plants-and-public-stack-monitors-in-china) | Dedicated plants and public stack monitors in China | Power | M | none | reserved: Astra |
-| [RFW-12](#rfw-12-operator-utilisation-priors-from-chinese-filings) | Operator utilisation priors from Chinese filings | Power | S | none | reserved: Astra |
+| [RFW-05](#rfw-05-procurement-tenders-and-awards-including-training-and-inference-servers) | Procurement tenders and awards, including training and inference servers | Built, Running, Workload | M | none | open |
+| [RFW-06](#rfw-06-stated-workload-roles-and-cloud-regions-at-chinese-campuses) | Stated workload roles and cloud regions at Chinese campuses | Workload | M | none | open |
+| [RFW-07](#rfw-07-chindatas-per-data-centre-table-and-an-edgar-name-search) | Chindata's per-data-centre table and an EDGAR name search | Capacity, Utilisation | S | none | open |
+| [RFW-08](#rfw-08-substation-and-transmission-projects-serving-the-hub-parks) | Substation and transmission projects serving the hub parks | Capacity | M | none | open |
+| [RFW-09](#rfw-09-water-withdrawal-permit-notices-for-hub-data-centres) | Water-withdrawal permit notices for hub data centres | Capacity | M | none | open |
+| [RFW-10](#rfw-10-building-scale-night-lights-inside-chinese-parks) | Building-scale night lights inside Chinese parks | Running | M | EE | open |
+| [RFW-11](#rfw-11-multi-storey-data-centre-positives-for-the-classifier) | Multi-storey data-centre positives for the classifier | Where | M | EE | open |
+| [RFW-12](#rfw-12-dedicated-plants-and-public-stack-monitors-in-china) | Dedicated plants and public stack monitors in China | Utilisation | M | none | reserved: Astra |
+| [RFW-13](#rfw-13-operator-utilisation-priors-from-chinese-filings) | Operator utilisation priors from Chinese filings | Utilisation | S | none | reserved: Astra |
 
 #### RFW-01 Confirm or reject the radar-detected structures in China
 
@@ -111,7 +130,7 @@ Status shows only standing reservations by the project's own agents. Live claims
   campuses and hub centroids found the 39 entries, six placed from approximate coordinates found nothing, and some clusters,
   such as the Yangtze River Delta demonstration zone, have never been scanned.
 - **Do:** Find each cluster's data-centre parks and their locations or boundaries in park plans, environmental impact
-  documents or land transfer notices, with URLs. Scan each park with RFW-23's command and score the candidates.
+  documents or land transfer notices, with URLs. Scan each park with RFW-25's command and score the candidates.
 - **Deliver:** `data/cn_hub_parks.csv` with cluster, park, coordinates or boundary, source URL and page; candidate files per
   park; and a one-line verdict per cluster in `docs/LOG.md`.
 
@@ -134,43 +153,58 @@ Status shows only standing reservations by the project's own agents. Live claims
 - **Deliver:** `data/cn_land_transfers.csv` with parcel, area, buyer, date, URL and the matched site, and a note on match
   confidence. An operator is attributed only when a notice names it.
 
-#### RFW-05 Procurement tenders and awards for named Chinese campuses
+#### RFW-05 Procurement tenders and awards, including training and inference servers
 
-- **Why:** Procurement notices for racks, UPS systems and cooling name campuses, quantities and dates. They time each phase of
-  fit-out, which is the closest public signal to a campus starting to run.
+- **Why:** Procurement notices for servers, racks, UPS systems and cooling name campuses, quantities and dates, which time each
+  phase of fit-out. Some Chinese server tenders state whether the servers are for training or for inference, which would be
+  the most direct public evidence of workload at a named campus.
 - **Do:** Search the China Government Procurement Network and the three telecom operators' procurement portals for tenders
   and awards naming campuses at Ulanqab, Horinger, Zhangbei, Zhongwei, Qingyang, Gui'an and Chongqing. Record campus, item,
-  quantity, units, date and URL. These are company procurement records, not statistics.
+  quantity, units, stated purpose (training, inference or general), date and URL. These are company procurement records,
+  not statistics.
 - **Deliver:** `data/cn_procurement.csv` and a note on what each portal exposes. Do not convert kVA or rack counts into IT
-  megawatts.
+  megawatts, and record a stated purpose only where the notice gives it.
 
-#### RFW-06 Substation and transmission projects serving the hub parks
+#### RFW-06 Stated workload roles and cloud regions at Chinese campuses
 
-- **Why:** Environmental impact documents and approvals for new substations and lines often state capacity and the load they
-  serve, such as a named data-centre park. That bounds the power a park can draw and dates when it could draw it.
-- **Do:** Find substation and transmission project documents near each hub park. Record voltage, transformer capacity, stated
-  served load, approval and commissioning dates, and URLs.
-- **Deliver:** `data/cn_grid_projects.csv` and a note per hub. Transformer MVA is supply capacity, not IT load; keep the units.
+- **Why:** Before any signal can separate training from inference, each campus needs its stated role to test against.
+  Public cloud regions are a start: a campus that hosts a region serves outside customers, which suggests inference and
+  general cloud work.
+- **Do:** For each Chinese inventory campus and hub, record public cloud regions or zones hosted there from providers' own
+  region lists, and the operator's stated purpose from company announcements or filings. Record national and provincial
+  planning statements separately, marked as official inputs to test.
+- **Deliver:** `data/workload_roles.csv` with site, stated role, source type, quote, URL and date. A role is recorded only
+  where a source states it.
 
-#### RFW-07 Water-withdrawal permit notices for hub data centres
+#### RFW-07 Chindata's per-data-centre table and an EDGAR name search
 
-- **Why:** Water-withdrawal permit notices for data-centre projects can state permitted annual withdrawal, which bounds cooling
-  water use. Most western hubs use little water, so absence is also informative.
-- **Do:** Search provincial water-resources bureaus' permit notices for data-centre projects in the hub parks, and record the
-  project, operator, permitted volume, date and URL.
-- **Deliver:** `data/cn_water_permits.csv` and a note. Do not convert volumes to electricity until RFW-16 has a validated
-  method.
-
-#### RFW-08 Chindata's per-data-centre table and an EDGAR name search
-
-- **Why:** Chindata's fiscal-2022 annual report on Form 20-F contains a per-data-centre table with megawatts per campus, and
-  VNET's filings mention Ulanqab orders. Neither has been parsed (`docs/cn_operator_disclosures_notes.md`).
+- **Why:** Chindata's fiscal-2022 annual report on Form 20-F contains a per-data-centre table with megawatts per campus, the
+  only campus-level capacity figures found for any Chinese hub, and VNET's filings mention Ulanqab orders. Neither has been
+  parsed (`docs/cn_operator_disclosures_notes.md`).
 - **Do:** Download the filings from EDGAR with a declared User-Agent, parse the table, and run a full-text search for
   Ulanqab, Zhangbei, Horinger, Gui'an and Zhongwei across VNET, GDS and Chindata filings.
 - **Deliver:** Every per-campus figure in `data/cn_operator_disclosures.csv` with its filing URL, period and whether it is
   capacity in service, utilised or planned.
 
-#### RFW-09 Building-scale night lights inside Chinese parks
+#### RFW-08 Substation and transmission projects serving the hub parks
+
+- **Why:** Environmental impact documents and approvals for new substations and lines often state capacity and the load they
+  serve, such as a named data-centre park. That bounds the power a park can draw, the capacity half of utilisation, and dates
+  when it could draw it.
+- **Do:** Find substation and transmission project documents near each hub park. Record voltage, transformer capacity, stated
+  served load, approval and commissioning dates, and URLs.
+- **Deliver:** `data/cn_grid_projects.csv` and a note per hub. Transformer MVA is supply capacity, not IT load; keep the units.
+
+#### RFW-09 Water-withdrawal permit notices for hub data centres
+
+- **Why:** Water-withdrawal permit notices for data-centre projects can state permitted annual withdrawal, which bounds cooling
+  water use. Most western hubs use little water, so absence is also informative.
+- **Do:** Search provincial water-resources bureaus' permit notices for data-centre projects in the hub parks, and record the
+  project, operator, permitted volume, date and URL.
+- **Deliver:** `data/cn_water_permits.csv` and a note. Do not convert volumes to electricity until RFW-17 has a validated
+  method.
+
+#### RFW-10 Building-scale night lights inside Chinese parks
 
 - **Why:** At park scale, VIIRS fails in China because the parks were already lit. The radar entries now give building
   outlines, which may be enough to see a single building energise inside a lit park.
@@ -179,7 +213,7 @@ Status shows only standing reservations by the project's own agents. Live claims
 - **Deliver:** Lit-up months where they pass the existing rule, and a verdict on whether building scale works. Stop if the
   New Albany test shows no step.
 
-#### RFW-10 Multi-storey data-centre positives for the classifier
+#### RFW-11 Multi-storey data-centre positives for the classifier
 
 - **Why:** The classifier learned from single-storey hyperscale halls. Many data centres in eastern China are multi-storey
   buildings it has never seen, which may be why six eastern hub boxes found nothing.
@@ -188,37 +222,39 @@ Status shows only standing reservations by the project's own agents. Live claims
   report leave-one-group-out results separately for single-storey and multi-storey positives.
 - **Deliver:** A labelled positives file with sources, updated scores, and the per-class results in `docs/LOG.md`.
 
-#### RFW-11 Dedicated plants and public stack monitors in China
+#### RFW-12 Dedicated plants and public stack monitors in China
 
 - **Status:** reserved by Astra (B8 in `docs/PHASE2_TODO.md`). A first pass was merged on 14 September; see
   `docs/cn_stack_monitors.md`.
 - **Why:** Plants built for hub parks may publish hourly stack monitoring on provincial platforms, the counterpart of EPA
-  plant records. So far only annual reports have been reachable, and hourly readings at the one linked plant sit behind a
-  CAPTCHA.
+  plant records, and hourly readings could show a park's daily load cycle. So far only annual reports have been reachable,
+  and hourly readings at the one linked plant sit behind a CAPTCHA.
 
-#### RFW-12 Operator utilisation priors from Chinese filings
+#### RFW-13 Operator utilisation priors from Chinese filings
 
 - **Status:** reserved by Astra (B9 in `docs/PHASE2_TODO.md`).
-- **Why:** VNET, GDS and Chindata report company-wide utilisation, a sourced prior for campuses whose operator is known.
+- **Why:** VNET, GDS and Chindata report company-wide commercial utilisation, a sourced prior for campuses whose operator is
+  known.
 
-### Priority 2: Power, at higher time resolution
+### Priority 2: Utilisation and workload, at higher time resolution
 
 These methods are developed where ground truth exists, mostly in the US, so they can be carried to China once proven.
 
 | ID | Request | Answers | Size | Keys | Status |
 |---|---|---|---|---|---|
-| [RFW-13](#rfw-13-make-the-plume-test-robust-to-start-date-and-season) | Make the plume test robust to start date and season | Power | S | none | open |
-| [RFW-14](#rfw-14-near-field-plume-test-for-plants-on-a-citys-edge) | Near-field plume test for plants on a city's edge | Power | M | EE, EPA | open |
-| [RFW-15](#rfw-15-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Power | M | none | open |
-| [RFW-16](#rfw-16-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Power | M | EE | open |
-| [RFW-17](#rfw-17-per-site-electricity-from-more-operators) | Per-site electricity from more operators | Power | M | none | open |
-| [RFW-18](#rfw-18-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Power | S | none | open |
-| [RFW-19](#rfw-19-generator-fleet-discovery-from-eia-860m) | Generator fleet discovery from EIA-860M | Power | M | none | open |
-| [RFW-20](#rfw-20-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Power | M | none | reserved: Astra |
-| [RFW-21](#rfw-21-load-ramp-curves-from-metas-18-campuses) | Load ramp curves from Meta's 18 campuses | Running, Power | M | EE optional | open |
-| [RFW-22](#rfw-22-implement-the-utilisation-model) | Implement the utilisation model | Power | L | none | open |
+| [RFW-14](#rfw-14-make-the-plume-test-robust-to-start-date-and-season) | Make the plume test robust to start date and season | Utilisation | S | none | open |
+| [RFW-15](#rfw-15-near-field-plume-test-for-plants-on-a-citys-edge) | Near-field plume test for plants on a city's edge | Utilisation | M | EE, EPA | open |
+| [RFW-16](#rfw-16-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Utilisation | M | none | open |
+| [RFW-17](#rfw-17-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Utilisation | M | EE | open |
+| [RFW-18](#rfw-18-per-site-electricity-capacity-and-commercial-utilisation-from-more-operators) | Per-site electricity, capacity and commercial utilisation from more operators | Capacity, Utilisation | M | none | open |
+| [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | open |
+| [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | open |
+| [RFW-21](#rfw-21-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Utilisation | M | none | reserved: Astra |
+| [RFW-22](#rfw-22-stated-workload-roles-for-the-rest-of-the-inventory) | Stated workload roles for the rest of the inventory | Workload | M | none | open |
+| [RFW-23](#rfw-23-utilisation-ramp-curves-from-metas-18-campuses) | Utilisation ramp curves from Meta's 18 campuses | Utilisation | M | EE optional | open |
+| [RFW-24](#rfw-24-implement-the-utilisation-model) | Implement the utilisation model | Utilisation | L | none | open |
 
-#### RFW-13 Make the plume test robust to start date and season
+#### RFW-14 Make the plume test robust to start date and season
 
 - **Why:** Abilene reaches 2.8σ with its documented start and 2.3σ with a start one month earlier, and several sites with
   spring starts show strongly negative z-scores. The test compares unmatched seasons and depends on one date.
@@ -227,7 +263,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** The revised test in `tools/plume_batch.py`, per-site date sensitivity in a results file, and a recommendation on
   whether the 2.5σ rule should change, with the control-point false-positive rate under the new test.
 
-#### RFW-14 Near-field plume test for plants on a city's edge
+#### RFW-15 Near-field plume test for plants on a city's edge
 
 - **Why:** The box method cannot separate a campus plant from a nearby city's plume, which rules out Dublin and similar
   grid-constrained markets where campuses run gas plants.
@@ -237,16 +273,17 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** The validation result against EPA truth and, only if validation passes, the Dublin result. A failed validation
   is a full delivery.
 
-#### RFW-15 Qualify gas-turbine NOx calibration plants
+#### RFW-16 Qualify gas-turbine NOx calibration plants
 
 - **Why:** The NOx calibration rests on five tall-stack coal plants, but turbine exhaust leaves from low stacks. Three gas
-  candidates gave factors from 0.89 to 4.83 and are not qualified (`docs/low_stack_calibration.md`).
+  candidates gave factors from 0.89 to 4.83 and are not qualified (`docs/low_stack_calibration.md`). Until turbines are
+  calibrated, NOx gives relative change but no utilisation ratio.
 - **Do:** Verify physical stack heights from EIA-860's environmental-equipment data or permits, check isolation from other
   sources with the EPA's point-source inventory, and align the TROPOMI overpass time with the hourly records.
 - **Deliver:** Each candidate qualified or rejected with its reason, and the calibration comparison updated for the qualified
   ones.
 
-#### RFW-16 Climate-aware water efficiency for water-derived loads
+#### RFW-17 Climate-aware water efficiency for water-derived loads
 
 - **Why:** Water use per unit of energy depends on climate, but the current method applies one fleet-wide figure. Against
   Meta's electricity it puts individual campuses anywhere from 0.35 to about 3 times their reported load.
@@ -256,17 +293,18 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** Leave-one-out errors for the current and new methods side by side; updated derived loads and a narrower band
   only if the new method is better.
 
-#### RFW-17 Per-site electricity from more operators
+#### RFW-18 Per-site electricity, capacity and commercial utilisation from more operators
 
-- **Why:** Operator-reported electricity is the strongest load evidence the project has, and it comes from one operator.
-- **Do:** Survey sustainability reports and data appendices from Apple, Equinix, Digital Realty, NTT, Iron Mountain, Switch,
-  CyrusOne, QTS, Aligned, and the Chinese operators GDS, VNET and Chindata, for per-site electricity, PUE or water, at the
-  finest period published. Add rows to `data/operator_disclosures.csv` with source URL and table, add missing campuses with
-  sourced coordinates, and run `tools/ingest_disclosures.py`.
-- **Deliver:** A table of which operators publish what, at what resolution and period; every new site-year with its source;
-  the site rebuilt with the new measured sites.
+- **Why:** Utilisation needs a load and a capacity for the same period, and only Luleå and Frontier have both. US colocation
+  operators also publish commercial utilisation, which the project has not collected.
+- **Do:** Survey sustainability reports, data appendices and investor filings from Apple, Equinix, Digital Realty, NTT, Iron
+  Mountain, Switch, CyrusOne, QTS, Aligned, and the Chinese operators GDS, VNET and Chindata, for per-site electricity,
+  capacity, PUE, water and utilisation, at the finest period published. Add rows to `data/operator_disclosures.csv` with
+  source URL, table and period, add missing campuses with sourced coordinates, and run `tools/ingest_disclosures.py`.
+- **Deliver:** A table of which operators publish what, at what resolution and period; every new figure with its source; and
+  the list of sites that now have a load and a capacity for the same period.
 
-#### RFW-18 Microsoft's metro electricity table to campuses
+#### RFW-19 Microsoft's metro electricity table to campuses
 
 - **Why:** Microsoft's 2026 data fact sheet reports fiscal-2025 electricity and water by metro area. Where a metro holds one
   campus, that is a campus figure.
@@ -275,35 +313,45 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** Rows in `data/operator_disclosures.csv` with the attribution reasoning, and a note listing the metros left as
   context and why.
 
-#### RFW-19 Generator fleet discovery from EIA-860M
+#### RFW-20 Generator fleet and dedicated plant discovery from EIA-860M
 
 - **Why:** The generator watch list was assembled by hand from permits. The US Energy Information Administration's monthly
   generator inventory lists planned and operating generators by plant, which could flag new fleets built for data centres
-  automatically.
+  and plants that serve one campus. A dedicated plant that reports hourly to the EPA would give the first hourly load shape,
+  the data needed to tell training from inference.
 - **Do:** Parse the latest EIA-860M. Flag planned or new gas turbine and engine plants whose owner, name or location links
-  them to a data centre, or that sit within a few kilometres of an inventory site. Verify each flag against a permit or
-  company statement.
-- **Deliver:** A script, a candidate table with verification notes, and verified candidates proposed for the watch list.
-  Coordinate with the RFW-20 claimant before adding watches.
+  them to a data centre, or that sit within a few kilometres of an inventory site, and check which report hourly to the EPA.
+  Verify each flag against a permit or company statement.
+- **Deliver:** A script, a candidate table with verification notes, and verified candidates proposed for the watch list or
+  as dedicated plants. Coordinate with the RFW-21 claimant before adding watches.
 
-#### RFW-20 Evidence for the pending generator watch records
+#### RFW-21 Evidence for the pending generator watch records
 
 - **Status:** reserved by Astra, working in `astra/b7`.
 - **Why:** Seven planned on-site generation fleets need filing-located coordinates, a first-fire target and a valid emission
   factor before they can be watched monthly. See `docs/generator_watchlist.md`.
 
-#### RFW-21 Load ramp curves from Meta's 18 campuses
+#### RFW-22 Stated workload roles for the rest of the inventory
 
-- **Why:** How fast load ramps after a building is finished is the key prior for estimating power between annual disclosures.
-  Meta's electricity series from 2011 to 2024 across 18 campuses measures it.
+- **Why:** The site's classes for AI-training campuses were assigned by hand from press coverage. Any training-or-inference
+  signal needs sourced labels to test against.
+- **Do:** For each non-Chinese inventory campus, record the operator's stated purpose and any public cloud region hosted there,
+  with the quote, source type, URL and date, as RFW-06 does for China. Keep company statements, press reports and official
+  planning documents distinct.
+- **Deliver:** Rows in `data/workload_roles.csv`, and a list of hand-assigned site classes that no source supports.
+
+#### RFW-23 Utilisation ramp curves from Meta's 18 campuses
+
+- **Why:** How fast utilisation rises after a building is finished is the key prior for estimating it between annual
+  disclosures. Meta's electricity series from 2011 to 2024 across 18 campuses measures the load side of that ramp.
 - **Do:** Date each campus's buildings from Sentinel-2, radar, or Landsat for older ones. Fit average load per building
   against years since roof-on, with uncertainty.
 - **Deliver:** Fitted ramp parameters with uncertainty in `docs/utilisation_model.md`, and the per-campus fits.
 
-#### RFW-22 Implement the utilisation model
+#### RFW-24 Implement the utilisation model
 
 - **Why:** The site uses fixed rules per evidence type. `docs/utilisation_model.md` defines one model in which every source
-  moves the estimate consistently, month by month, with stated priors and posteriors per site.
+  moves the utilisation estimate consistently, with stated priors and posteriors per site.
 - **Do:** Implement section 7 of that document: hall states, the evidence likelihoods, and Monte Carlo percentiles in a
   pure-Python `utilmodel.py`. Keep the timeline JSON shape so the site needs no change.
 - **Deliver:** A first slice covering reported electricity, documented capacity and roofs-only sites, behind a switch, with
@@ -313,15 +361,15 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 | ID | Request | Answers | Size | Keys | Status |
 |---|---|---|---|---|---|
-| [RFW-23](#rfw-23-radar-candidate-scan-around-every-inventory-site) | Radar candidate scan around every inventory site | Where, Built | L | EE | open |
-| [RFW-24](#rfw-24-date-dark-and-grey-roofs) | Date dark and grey roofs | Built | M | EE | open |
-| [RFW-25](#rfw-25-recalibrate-the-hall-classifier-with-new-labels) | Recalibrate the hall classifier with new labels | Where | M | EE | open after RFW-01 |
-| [RFW-26](#rfw-26-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Power bound | M | none | open |
-| [RFW-27](#rfw-27-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
-| [RFW-28](#rfw-28-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
-| [RFW-29](#rfw-29-source-link-checker) | Source link checker | Tools | S | none | open |
+| [RFW-25](#rfw-25-radar-candidate-scan-around-every-inventory-site) | Radar candidate scan around every inventory site | Where, Built | L | EE | open |
+| [RFW-26](#rfw-26-date-dark-and-grey-roofs) | Date dark and grey roofs | Built | M | EE | open |
+| [RFW-27](#rfw-27-recalibrate-the-hall-classifier-with-new-labels) | Recalibrate the hall classifier with new labels | Where | M | EE | open after RFW-01 |
+| [RFW-28](#rfw-28-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
+| [RFW-29](#rfw-29-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
+| [RFW-30](#rfw-30-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
+| [RFW-31](#rfw-31-source-link-checker) | Source link checker | Tools | S | none | open |
 
-#### RFW-23 Radar candidate scan around every inventory site
+#### RFW-25 Radar candidate scan around every inventory site
 
 - **Why:** Radar dates construction through cloud and finds unlisted buildings, but it has run in only 12 Chinese hub boxes, 9
   US boxes and 40 night-light areas.
@@ -331,7 +379,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** A candidate file per site; a table in `docs/LOG.md` of recall at known halls and the false-positive types by
   region. Stop and report if Earth Engine quotas make a region impractical.
 
-#### RFW-24 Date dark and grey roofs
+#### RFW-26 Date dark and grey roofs
 
 - **Why:** Brightness dating misses dark membranes and grey roofs, as at Hyperion and at Chinese campuses such as Ulanqab. A
   vegetation and built-up index rule already failed (`docs/dark_roof_validation.md`).
@@ -341,23 +389,23 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** A rule that dates Hyperion's two structures without a false early event and moves no Abilene date by more than
   a month, or a documented failure with the numbers.
 
-#### RFW-25 Recalibrate the hall classifier with new labels
+#### RFW-27 Recalibrate the hall classifier with new labels
 
-- **Why:** The classifier has 18 positives. RFW-01, RFW-10 and the 78 Epoch campuses with polygons can multiply that.
+- **Why:** The classifier has 18 positives. RFW-01, RFW-11 and the 78 Epoch campuses with polygons can multiply that.
 - **Do:** Add the new labels, retrain with `tools/cand_classifier.py`, and report leave-one-group-out results by region and
   building type. Refresh the scores of existing candidates.
 - **Deliver:** Updated `results_cand/scores.csv`, results in `docs/LOG.md`, and a note on any threshold change.
 
-#### RFW-26 Standby generator permits as a capacity bound
+#### RFW-28 Standby generator permits as a capacity bound
 
 - **Why:** State air permits list the diesel standby generators at many US data centres. Their total rating bounds facility
-  power, because campuses back up their full load.
+  power, because campuses back up their full load, which gives a sourced capacity figure where none exists.
 - **Do:** For inventory sites in Virginia, Ohio, Texas, Arizona and Georgia, find the air permits and record unit counts,
   ratings, fuel, permit date and URL. Compare total standby MW with documented capacity where both exist.
 - **Deliver:** `data/standby_generation.csv` and a note giving the ratio of standby MW to documented capacity across at least
   10 sites. Propose a capacity-bound basis only if the ratio is consistent to within about 30 %.
 
-#### RFW-27 Construction timeline on the map
+#### RFW-29 Construction timeline on the map
 
 - **Why:** Every dated building has a month, but the map shows only the present.
 - **Do:** Add a time slider to the landing map that shows sites as they were at the end of each quarter, using the dates
@@ -365,7 +413,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Deliver:** The slider working at desktop and phone widths, and Node tests in the style of
   `tests/frontend_evidence.test.cjs`.
 
-#### RFW-28 Tests for the load precedence rules
+#### RFW-30 Tests for the load precedence rules
 
 - **Why:** The rules deciding which figure sets a site's load have been extended several times: reported electricity, carried
   averages, water-derived figures, third-party estimates, plant records, radar entries, generator watches.
@@ -373,7 +421,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
   each basis and each carried-forward case.
 - **Deliver:** Tests that fail if any precedence rule changes silently, all passing on `main`.
 
-#### RFW-29 Source link checker
+#### RFW-31 Source link checker
 
 - **Why:** Hundreds of source URLs back the numbers on the site, and links rot.
 - **Do:** Write `tools/check_links.py` to read every URL in `data/*.csv` and the source JSON files, check each at a polite
@@ -386,17 +434,20 @@ Research bets with a first test that fits a session and a condition for stopping
 
 | ID | Theory | Answers | Resolution if it works | Region | Keys |
 |---|---|---|---|---|---|
-| [T-01](#t-01-chinese-power-exchange-market-records) | Chinese power-exchange market records | Power | Monthly or annual | China | none |
-| [T-02](#t-02-temporary-site-housing-as-a-construction-signal) | Temporary site housing as a construction signal | Built | Monthly | China | EE |
-| [T-03](#t-03-radar-backscatter-after-the-structure-goes-up) | Radar backscatter after the structure goes up | Running | Monthly | China and global | EE |
-| [T-04](#t-04-radar-coherence-over-fan-yards) | Radar coherence over fan yards | Running | 6 to 12 days | China and global | Earthdata |
-| [T-05](#t-05-cooling-tower-vapour-plumes) | Cooling-tower vapour plumes | Running | Per clear scene | Global | EE |
-| [T-06](#t-06-wastewater-discharge-reports-as-a-monthly-cooling-series) | Wastewater discharge reports as a monthly cooling series | Power | Monthly | US | none |
-| [T-07](#t-07-building-permits-and-occupancy-certificates-as-energisation-dates) | Building permits and occupancy certificates as energisation dates | Running | Monthly | US | none |
-| [T-08](#t-08-crane-filings-as-construction-start-signals) | Crane filings as construction-start signals | Built | Monthly | US | none |
-| [T-09](#t-09-counting-cooling-equipment-in-public-aerial-imagery) | Counting cooling equipment in public aerial imagery | Power bound | Every 2 to 3 years | US | EE |
-| [T-10](#t-10-substation-transformer-bays-as-connection-capacity) | Substation transformer bays as connection capacity | Power bound | Every 2 to 3 years | US | EE |
-| [T-11](#t-11-utility-retail-sales-where-one-campus-dominates) | Utility retail sales where one campus dominates | Power | Annual | US | none |
+| [T-01](#t-01-chinese-power-exchange-market-records) | Chinese power-exchange market records | Utilisation | Monthly or annual | China | none |
+| [T-02](#t-02-hourly-no2-from-gems-over-plants-supplying-chinese-parks) | Hourly NO2 from GEMS over plants supplying Chinese parks | Utilisation, Workload | Hourly, daytime | China | GEMS data access |
+| [T-03](#t-03-temporary-site-housing-as-a-construction-signal) | Temporary site housing as a construction signal | Built | Monthly | China | EE |
+| [T-04](#t-04-radar-backscatter-after-the-structure-goes-up) | Radar backscatter after the structure goes up | Running | Monthly | China and global | EE |
+| [T-05](#t-05-hourly-no2-from-tempo-at-turbine-fed-campuses) | Hourly NO2 from TEMPO at turbine-fed campuses | Workload | Hourly, daytime | US | Earthdata, EPA |
+| [T-06](#t-06-network-presence-as-a-sign-of-inference) | Network presence as a sign of inference | Workload | When registrations change | Global | none |
+| [T-07](#t-07-radar-coherence-over-fan-yards) | Radar coherence over fan yards | Running | 6 to 12 days | Global | Earthdata |
+| [T-08](#t-08-cooling-tower-vapour-plumes) | Cooling-tower vapour plumes | Running | Per clear scene | Global | EE |
+| [T-09](#t-09-wastewater-discharge-reports-as-a-monthly-cooling-series) | Wastewater discharge reports as a monthly cooling series | Utilisation | Monthly | US | none |
+| [T-10](#t-10-building-permits-and-occupancy-certificates-as-energisation-dates) | Building permits and occupancy certificates as energisation dates | Running | Monthly | US | none |
+| [T-11](#t-11-crane-filings-as-construction-start-signals) | Crane filings as construction-start signals | Built | Monthly | US | none |
+| [T-12](#t-12-counting-cooling-equipment-in-public-aerial-imagery) | Counting cooling equipment in public aerial imagery | Capacity | Every 2 to 3 years | US | EE |
+| [T-13](#t-13-substation-transformer-bays-as-connection-capacity) | Substation transformer bays as connection capacity | Capacity | Every 2 to 3 years | US | EE |
+| [T-14](#t-14-utility-retail-sales-where-one-campus-dominates) | Utility retail sales where one campus dominates | Utilisation | Annual | US | none |
 
 #### T-01 Chinese power-exchange market records
 
@@ -406,7 +457,17 @@ Research bets with a first test that fits a session and a condition for stopping
   and record what each notice gives. These are company transaction records to be tested, not statistics.
 - **Stop if:** no volume can be attributed to a campus.
 
-#### T-02 Temporary site housing as a construction signal
+#### T-02 Hourly NO2 from GEMS over plants supplying Chinese parks
+
+- **Hypothesis:** GEMS, a geostationary instrument over East Asia, measures NO₂ every daylight hour. Over a plant that supplies
+  a hub park, such as Shengle at Horinger, it could show the plant's daily output cycle, and with it the park's daily load
+  shape, where TROPOMI sees only one moment a day.
+- **First test:** Check GEMS data access and terms with Korea's National Institute of Environmental Research, then compare
+  GEMS NO₂ over Shengle at TROPOMI's early-afternoon overpass with TROPOMI itself, and look for a repeatable daytime cycle.
+- **Stop if:** GEMS and TROPOMI disagree at the overpass hour beyond the calibration scatter, or no daytime cycle stands out
+  from day-to-day noise. Plant output is not campus load without an allocation, as RFW-12 found.
+
+#### T-03 Temporary site housing as a construction signal
 
 - **Hypothesis:** Large Chinese construction sites house workers and site offices in prefabricated blocks with distinctive blue
   roofs, visible in Sentinel-2. They appear when work starts and go when it ends, so they may lead radar dating and mark
@@ -415,7 +476,7 @@ Research bets with a first test that fits a session and a condition for stopping
   and removal with the radar structure-on month.
 - **Stop if:** it does not appear at least a month before radar structure-on at three of the five.
 
-#### T-03 Radar backscatter after the structure goes up
+#### T-04 Radar backscatter after the structure goes up
 
 - **Hypothesis:** Backscatter keeps rising after a hall's structure appears, as rooftop plant and yard equipment are
   installed, which would make fit-out visible through cloud.
@@ -423,14 +484,32 @@ Research bets with a first test that fits a session and a condition for stopping
   Sentinel-2 six to nine months later, then apply the result to the Chinese radar entries.
 - **Stop if:** Abilene shows no post-structure rise distinguishable from month-to-month noise.
 
-#### T-04 Radar coherence over fan yards
+#### T-05 Hourly NO2 from TEMPO at turbine-fed campuses
+
+- **Hypothesis:** TEMPO, a geostationary instrument over North America, measures NO₂ every daylight hour. At a campus that
+  runs its own turbines, such as Colossus 2, it could show whether generation is flat through the day, as training would be,
+  or follows a daily cycle, as inference would.
+- **First test:** Recover the known hourly NOx cycle of a large EPA-reporting plant from TEMPO first, using the plant's hourly
+  records as truth. Only then look at the hourly shape at Colossus 2.
+- **Stop if:** the reporting plant's hourly cycle cannot be recovered.
+
+#### T-06 Network presence as a sign of inference
+
+- **Hypothesis:** Inference serves users, so it needs low-latency connections: campuses listed in PeeringDB with many networks,
+  or hosting a public cloud region, are more likely to run inference than isolated training campuses.
+- **First test:** Record PeeringDB facility entries and hosted cloud regions for inventory campuses, respecting PeeringDB's
+  usage policy, and compare with the sourced roles from RFW-06 and RFW-22.
+- **Stop if:** network presence does not separate campuses with stated training roles from those with stated inference or
+  cloud roles.
+
+#### T-07 Radar coherence over fan yards
 
 - **Hypothesis:** Operating cooling and fan yards lose radar interferometric coherence faster than idle yards.
 - **First test:** Compute 6 or 12-day Sentinel-1 coherence from single-look complex data at yards and roofs before and after
   documented energisation at three US sites, then at Chinese campuses if it works.
 - **Stop if:** no step appears at the three US sites.
 
-#### T-05 Cooling-tower vapour plumes
+#### T-08 Cooling-tower vapour plumes
 
 - **Hypothesis:** On cold humid mornings, plumes above cooling towers are visible in Sentinel-2 and Landsat, and how often they
   appear tracks operation.
@@ -438,15 +517,15 @@ Research bets with a first test that fits a session and a condition for stopping
   dates.
 - **Stop if:** weather explains plume presence better than operating status.
 
-#### T-06 Wastewater discharge reports as a monthly cooling series
+#### T-09 Wastewater discharge reports as a monthly cooling series
 
 - **Hypothesis:** Where a campus discharges cooling-tower water under its own federal permit, the EPA's monthly discharge
-  monitoring reports give a measured monthly flow that scales with heat rejected.
+  monitoring reports give a measured monthly flow that scales with heat rejected, and so with load.
 - **First test:** Search EPA ECHO for permits held by data-centre operators at inventory sites, pull their monthly flows, and
   check the seasonality against wet-bulb temperature and against Meta's electricity where both exist.
 - **Stop if:** no inventory campus holds an individual permit with flow reporting.
 
-#### T-07 Building permits and occupancy certificates as energisation dates
+#### T-10 Building permits and occupancy certificates as energisation dates
 
 - **Hypothesis:** US county permit records give the month each building was certified for occupancy, which marks the step
   between a finished building and one drawing load.
@@ -454,14 +533,14 @@ Research bets with a first test that fits a session and a condition for stopping
   halls, and compare occupancy dates with radar structure-on and with Meta's load ramp.
 - **Stop if:** fewer than 10 inventory buildings can be matched.
 
-#### T-08 Crane filings as construction-start signals
+#### T-11 Crane filings as construction-start signals
 
 - **Hypothesis:** The FAA's public obstruction evaluations include temporary structures such as cranes, with coordinates and
   dates, which would flag construction starts months before radar sees a structure.
 - **First test:** Pull filings near 20 US inventory campuses and compare the first crane date with the radar structure-on month.
 - **Stop if:** filings match fewer than half the campuses or lead radar by less than a month.
 
-#### T-09 Counting cooling equipment in public aerial imagery
+#### T-12 Counting cooling equipment in public aerial imagery
 
 - **Hypothesis:** USDA's public-domain NAIP aerial imagery, at 0.6 to 1 m, resolves chillers, dry coolers and cooling towers.
   Count times unit capacity from Epoch's equipment catalogues in `data/epoch/` bounds the heat a campus can reject, and so its
@@ -469,15 +548,15 @@ Research bets with a first test that fits a session and a condition for stopping
 - **First test:** Count units at five US sites with documented capacity and compare.
 - **Stop if:** the estimate misses documented capacity by more than a factor of two.
 
-#### T-10 Substation transformer bays as connection capacity
+#### T-13 Substation transformer bays as connection capacity
 
 - **Hypothesis:** The number of transformer bays at a campus substation, visible in NAIP, indicates its grid connection
   capacity.
-- **First test:** Count bays at campuses with documented connections, such as New Albany's 250 MW and Luleå's 120 MW, and
-  compare bays times typical ratings.
+- **First test:** Count bays at campuses with documented connections, such as Luleå's 120 MW and New Albany's 250 MW, and
+  compare bays times typical ratings, matching each figure's period to the imagery date.
 - **Stop if:** ratings vary too much to beat a factor of two.
 
-#### T-11 Utility retail sales where one campus dominates
+#### T-14 Utility retail sales where one campus dominates
 
 - **Hypothesis:** For small utilities whose load is mostly one campus, the Energy Information Administration's annual retail
   sales by utility approximate that campus's consumption.
@@ -501,20 +580,20 @@ until a pilot shows it is worth it.
 
 | ID | Request | Answers | Region | Pilot |
 |---|---|---|---|---|
-| [PAID-01](#paid-01-sub-metre-optical-imagery-of-the-chinese-hub-parks) | Sub-metre optical imagery of the Chinese hub parks | Where, Power bound | China | 3 parks, archive scenes |
+| [PAID-01](#paid-01-sub-metre-optical-imagery-of-the-chinese-hub-parks) | Sub-metre optical imagery of the Chinese hub parks | Where, Capacity | China | 3 parks, archive scenes |
 | [PAID-02](#paid-02-high-resolution-radar-over-cloudy-southwest-hubs) | High-resolution radar over cloudy southwest hubs | Built | China | 2 parks, 4 scenes each |
-| [PAID-03](#paid-03-night-thermal-imagery-at-3-to-5-metres) | Night thermal imagery at 3 to 5 metres | Running, Power | US, then China | 1 US campus with a known ramp |
+| [PAID-03](#paid-03-night-thermal-imagery-at-3-to-5-metres) | Night thermal imagery at 3 to 5 metres | Running, Utilisation | US, then China | 1 US campus with a known ramp |
 | [PAID-04](#paid-04-frequent-3-to-5-metre-optical-monitoring-of-chinese-parks) | Frequent 3 to 5 metre optical monitoring of Chinese parks | Built, Running | China | 5 parks, 3 months |
 | [PAID-05](#paid-05-dedicated-satellite-capacity) | Dedicated satellite capacity | All | China first | Requirements only |
-| [PAID-06](#paid-06-native-language-review-of-chinese-documents) | Native-language review of Chinese documents | Where, Built | China | 20 documents |
+| [PAID-06](#paid-06-native-language-review-of-chinese-documents) | Native-language review of Chinese documents | Where, Built, Workload | China | 20 documents |
 | [PAID-07](#paid-07-chinese-corporate-registry-data) | Chinese corporate registry data | Where | China | 10 campuses |
 | [PAID-08](#paid-08-compute-for-continental-radar-scans) | Compute for continental radar scans | Where, Built | China | 1 province |
-| [PAID-09](#paid-09-us-public-records-request-fees) | US public-records request fees | Power | US | 5 requests |
+| [PAID-09](#paid-09-us-public-records-request-fees) | US public-records request fees | Utilisation | US | 5 requests |
 
 #### PAID-01 Sub-metre optical imagery of the Chinese hub parks
 
 - **Answers:** whether the radar-found structures are data halls; counts of cooling units and generator rows, which bound
-  capacity as T-09 does with free US imagery; phase dating at building level.
+  capacity as T-12 does with free US imagery; phase dating at building level.
 - **Pilot:** one recent cloud-free archive scene each over Horinger, Ulanqab and Zhangbei, then one more a year apart.
 - **Cost drivers:** area, resolution, archive against new tasking.
 - **Success test:** RFW-01's chip-based verdicts agree with the sub-metre view, and two independent unit counts match.
@@ -530,7 +609,8 @@ until a pilot shows it is worth it.
 #### PAID-03 Night thermal imagery at 3 to 5 metres
 
 - **Answers:** the one thermal hypothesis still open. Roofs at 70 to 100 m showed nothing, but individual dry coolers, cooling
-  towers, transformers and generator yards may be hot enough to see at 3 to 5 m.
+  towers, transformers and generator yards may be hot enough to see at 3 to 5 m. Acquisitions at several times of day could
+  also show a daily cycle.
 - **Pilot:** repeated night acquisitions over one US campus with a documented load ramp, Colossus 2 or Abilene, where ground
   truth exists. One Chinese park only if that shows a signal.
 - **Cost drivers:** satellite tasking or an airborne survey, number of nights, area. An airborne survey is not an option over
@@ -556,8 +636,8 @@ until a pilot shows it is worth it.
 
 #### PAID-06 Native-language review of Chinese documents
 
-- **Answers:** whether agent extractions from environmental impact documents, land notices, procurement records and permits
-  (RFW-04 to RFW-07) are correct.
+- **Answers:** whether agent extractions from land notices, procurement records, stated roles and permits (RFW-04, RFW-05,
+  RFW-06, RFW-08 and RFW-09) are correct, including stated training or inference purposes.
 - **Pilot:** a Chinese-reading reviewer checks 20 extracted documents against the originals.
 - **Cost drivers:** reviewer hours.
 - **Success test:** an error rate per field that shows which extractions can be trusted without review.
@@ -572,7 +652,7 @@ until a pilot shows it is worth it.
 
 #### PAID-08 Compute for continental radar scans
 
-- **Answers:** RFW-02 and RFW-23 across whole provinces, if Earth Engine's non-commercial quotas block the scans.
+- **Answers:** RFW-02 and RFW-25 across whole provinces, if Earth Engine's non-commercial quotas block the scans.
 - **Pilot:** one province by batch export to cloud storage, with the cost recorded per 1,000 km².
 - **Cost drivers:** storage, processing and egress.
 - **Success test:** candidate lists for the province that match the box scans where they overlap.
@@ -580,7 +660,7 @@ until a pilot shows it is worth it.
 #### PAID-09 US public-records request fees
 
 - **Answers:** utility, water and generator records for named US campuses, where agencies charge to process requests.
-- **Pilot:** five requests to agencies serving inventory campuses, chosen to test T-06 and T-11.
+- **Pilot:** five requests to agencies serving inventory campuses, chosen to test T-09 and T-14.
 - **Cost drivers:** processing and copying fees.
 - **Success test:** at least two responses give an attributable monthly or annual series.
 
@@ -614,11 +694,20 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
   and August 2026, which is 637 to 2,919 MW at an assumed 0.5 to 1.5 kg NOx/MWh for its temporary turbine fleet. With 7 to 16
   usable days a month, quarterly figures carry about ±20 % statistical uncertainty and single months ±20 to 50 %. The
   calibration factor, 4.41 ± 0.18, comes from five US tall-stack coal plants with ±19 % plant-to-plant scatter; gas-turbine
-  references are not yet qualified. None of 31 campuses without known on-site generation reached 2.5σ, and none of 62 control
-  points did. **China:** no public hourly plant data to calibrate against, and no hub campus is known to generate on site.
+  references are not yet qualified, so the megawatt range is too wide to give a utilisation ratio. None of 31 campuses
+  without known on-site generation reached 2.5σ, and none of 62 control points did. **China:** no public hourly plant data to
+  calibrate against, and no hub campus is known to generate on site.
 - **Operator-reported electricity** (`tools/ingest_disclosures.py`). Meta's Environmental Data Index gives annual electricity
   for 18 campuses from 2011 to 2024; the 2024 figures appeared in October 2025. The site shows the 2024 average and carries it
-  into 2025 and 2026 with a wider band. **China:** no operator publishes per-campus figures.
+  into 2025 and 2026 with a wider band. A utilisation ratio needs a capacity for the same years, which only Luleå has: 0.25 to
+  0.45 of its 120 MW supply in 2022 to 2024. New Albany's 250 MW connection applies only from 2026, so it cannot be compared
+  with the 2019 to 2024 loads. **China:** no operator publishes per-campus figures.
+- **Measured supercomputer power.** ORNL reports Frontier's average power: 11.4 MW in 2022 and 12.2 MW in 2023, about 0.54 of
+  its measured peak of 21.1 and 22.7 MW. **China:** the two national supercomputers in the inventory have measured peaks only.
+- **Commercial utilisation from listed operators** (`docs/cn_operator_disclosures_notes.md`). VNET reported 70.1 % of 889 MW in
+  service at the end of 2025 and 73.9 % of 1,007 MW in mid-2026; GDS 75.5 % by area at the end of 2025; Chindata 80 % in
+  mid-2023, its last public filing. All are company-wide shares of capacity customers use or have contracted, not how hard the
+  equipment runs, and none is given per campus. **US:** not yet collected.
 - **Load derived from water use** (`tools/ingest_water_loads.py`). Google publishes per-campus water but no water efficiency
   figure; its own totals imply 1.02 to 1.06 litres per kWh. Checked against Meta's electricity in 2024, the method puts the
   middle half of mature campuses at 0.6 to 1.6 times their reported load, individual campuses from 0.35 times (Luleå,
@@ -645,18 +734,18 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
 
 - **Six eastern Chinese hub boxes** (Zhongwei, Zhangjiakou and Huailai, Wuhu, Shaoguan, Chengdu Tianfu, Tianjin Wuqing): 76
   candidates of 5 ha or more, none scored as hall-like. The box centres were approximate and the classifier has not seen
-  multi-storey buildings, so this does not show there is nothing to find. See RFW-02 and RFW-10.
+  multi-storey buildings, so this does not show there is nothing to find. See RFW-02 and RFW-11.
 - **Abilene's plume.** 2.8σ at the documented July 2025 start and 2.3σ a month earlier, with emission-controlled turbines whose
-  flux is too small to convert to megawatts. See RFW-13.
+  flux is too small to convert to megawatts. See RFW-14.
 - **Gas-turbine calibration plants.** Three candidates gave calibration factors from 0.89 to 4.83; stack heights, isolation and
-  overpass alignment are unverified. See RFW-15.
+  overpass alignment are unverified. See RFW-16.
 - **NO₂ from power plants next to Chinese hubs.** Usable as an activity index only at Ulanqab; the Horinger and Chongqing series
   were not usable.
 - **Chinese plants linked to hub parks** (`tools/cn_stack_monitors.py`, `docs/cn_stack_monitors.md`). A first pass found 14
   plant or supply leads across 11 hubs; four are renewable projects. The Shengle plant supplies the Horinger cloud park, and its
   annual emission reports give 63 records for 2019 to 2025, but no allocation of its output to any campus is established. No
   hourly or daily stack readings were retrieved: Shengle's reading service requires a CAPTCHA and other candidate services
-  timed out or returned errors. See RFW-11.
+  timed out or returned errors. See RFW-12.
 - **Radar-found structures in China.** Hall-like and dated, but unconfirmed. See RFW-01.
 
 ### Did not work
@@ -677,7 +766,7 @@ Please do not repeat these without a new idea.
 - **A campus beside large power plants.** Colossus 1's turbine phase came out at 62 ± 63 kg NOx/h after regressing out the two
   neighbouring plants' hourly EPA emissions over 594 days.
 - **The box flux method at a city's edge.** At Dublin's Grange Castle it gave 964 ± 96 kg NOx/h with winter peaks and a fitted
-  source 36 km downwind, consistent with the city's plume; it cannot isolate the campus plant. See RFW-14.
+  source 36 km downwind, consistent with the city's plume; it cannot isolate the campus plant. See RFW-15.
 - **A classifier trained on OpenStreetMap footprints.** On radar candidates its AUC was 0.70, and it scored 864 of 1,133 new
   industrial structures above 0.9.
 - **A national night-light scan as a detector in China.** Over 24 to 43°N and 102 to 123°E it found 4,026 newly lit areas. The

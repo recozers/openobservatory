@@ -4,8 +4,9 @@ Phase 1 is in `docs/ASTRA_TODO.md` (A1–A11, all merged or closed) and `docs/LO
 `astra/b<N>`, Claude `claude/*`, Stuart merges or delegates, both agents log to `docs/LOG.md`, never commit `.env` or
 `secrets/`, official national statistics are inputs to test and never evidence.
 
-**Priority from Stuart, 14 Sep: focus more on China; US observability is already much better.** Prefer China tasks when
-choosing what to do next. Outside contributors donate agent sessions against `REQUESTS_FOR_WORK.md`. RFW-20, RFW-11 and RFW-12 there are this
+**Priority from Stuart, 14 Sep: focus more on China; US observability is already much better. The goal is utilisation, not
+power draw, and ideally telling training from inference, at the highest time resolution possible.** Prefer China tasks when
+choosing what to do next. Outside contributors donate agent sessions against `REQUESTS_FOR_WORK.md`. RFW-21, RFW-12 and RFW-13 there are this
 brief's B7, B8 and B9, marked reserved for Astra (renumbered 14 Sep). Before starting any other task, search open pull requests for an
 `[RFW-NN]` claim on the same work; if you finish or drop B7, B8 or B9, update its Status in that file.
 

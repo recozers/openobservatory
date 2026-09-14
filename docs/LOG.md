@@ -320,3 +320,13 @@ B9 is the next independent task, while B8 needs normal public reading access and
   paid requests, and the detailed results at the end. Requests renumbered RFW-01 to RFW-29 in priority order (no claims
   existed); theories T-01 to T-11 with China first; Astra's B7, B8 and B9 are now RFW-20, RFW-11 and RFW-12. Earlier log
   entries use the old numbers.
+- Goal reframed (Stuart, 14 Sep: "it's not about power draw it's about utilisation; ideally distinguish training and
+  inference"). REQUESTS_FOR_WORK.md now defines utilisation (commercial, electrical, activity signals), adds capacity,
+  utilisation and training-or-inference rows to "How close we are", and adds RFW-06 and RFW-22 (sourced workload roles, cloud
+  regions), widens RFW-05 (training and inference server tenders) and RFW-18 (capacity and commercial utilisation), and adds
+  theories T-02 (hourly GEMS NO2 over plants supplying Chinese parks), T-05 (hourly TEMPO NO2 at turbine-fed campuses) and
+  T-06 (network presence as a sign of inference). Requests now RFW-01 to RFW-31, theories T-01 to T-14; Astra's B7, B8, B9
+  are RFW-21, RFW-12, RFW-13.
+- Correction: New Albany's 250 MW connection applies only from 2026, so its 2023-24 loads cannot give a utilisation ratio.
+  The cloud prior (0.2-0.6) now cites its one same-period calibration point, Luleå at 0.25-0.45 of 120 MW in 2022-24; fixed
+  in the builder's basis text, the site's methods text, docs/utilisation_model.md and docs/MVP.md.

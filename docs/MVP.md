@@ -188,8 +188,8 @@ Meta publishes annual electricity per campus in its Environmental Data Index (20
 holds the series with URLs; `data/capacity_timeline.csv` carries them as `facility_measured_annual` rows (tier A2), which
 now take precedence over any other capacity figure in the site build and give a band of ±10 % around the year's average.
 Prineville: 8 MW average in 2011 to 197 MW in 2024 (1,728 GWh). Luleå: 54 MW in 2024 against a 120 MW grid feed, with a dip
-to 30 MW in 2022 that no satellite method here could have seen. New Albany: 91 MW in 2023, 60 MW in 2024 against a 250 MW
-connection. ORNL Frontier: 12.2 MW average in 2023 against 21–23 MW at HPL. These ratios replace the 0.5–1.0 utilisation
+to 30 MW in 2022 that no satellite method here could have seen. New Albany: 91 MW in 2023, 60 MW in 2024; its 250 MW connection figure applies only from 2026, so the two cannot be compared
+[corrected 14 Sep]. ORNL Frontier: 12.2 MW average in 2023 against 21–23 MW at HPL. The Luleå and Frontier ratios replace the 0.5–1.0 utilisation
 assumption for cloud campuses (now 0.2–0.6) and supercomputers (0.4–0.9); AI-training campuses keep 0.5–1.0 until a
 disclosure or filing calibrates them. The site's "running" line says "operator reports an average IT load of N MW in YEAR"
 for these sites, confidence high. Chinese listed operators (VNET, GDS, Chindata, Sinnet, the three telcos) publish
@@ -276,3 +276,7 @@ in the README, the site text, `docs/LOG.md` and `docs/PHASE2_TODO.md`:
   independent Sentinel-1 radar dates within 0–4 months at all 12 halls (9 within 2 months); they have not been checked
   against dated construction records.
 - **Horinger radar candidates.** Described as "new campuses"; they are hall-like structures seen in chips, unconfirmed.
+- **Cloud utilisation prior.** It was described as calibrated on Luleå and New Albany. New Albany's 250 MW connection
+  figure applies from 2026 while its reported loads run 2019–2024, so that ratio compared different periods. The prior
+  (0.2–0.6 of a documented figure) now cites its one same-period calibration point, Luleå at 0.25–0.45 of its 120 MW supply in
+  2022–24; ORNL Frontier (about 0.54 of its measured peak in 2022–23) informs the supercomputer prior.

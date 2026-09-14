@@ -24,8 +24,9 @@ The full claiming and handoff steps, and the list of methods already tried and f
 
 ## What it can and cannot see
 
-The goal is full monitoring of data-centre activity at the highest time resolution public data allows: where each data centre
-is, when each building goes up, when it starts running, and how much power it draws. China is the priority, because public
+The goal is full monitoring of data-centre utilisation at the highest time resolution public data allows: where each data
+centre is, when each building goes up, when it starts running, how much of its capacity is in use, and ideally whether that
+use is training or inference. China is the priority, because public
 data there, official figures above all, is notoriously unreliable. It is also where the project sees least: hourly plant
 emissions, air permits, county records, public-domain aerial imagery and operator disclosures are mostly American. Each claim below is stated at the scale it was tested; `docs/MVP.md` has the details and
 its corrections section.

@@ -110,7 +110,7 @@ def utilisation_prior(cap_basis, site_class):
     if cap_basis == "it_measured_hpl":
         return 0.4, 0.6, 0.9, "HPL-measured system power × annual-average factor 0.4–0.9 (Frontier 2023: 0.55)"
     if site_class in ("cloud", "mixed_cloud_ai", "hub"):
-        return 0.2, 0.4, 0.6, "utilisation 0.2–0.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24–0.45)"
+        return 0.2, 0.4, 0.6, "utilisation 0.2–0.6 of the connection/design figure (one same-period calibration point: Meta Luleå ran at 0.25–0.45 of its 120 MW supply in 2022–24)"
     return 0.5, 0.8, 1.0, "utilisation assumption 0.5–1.0 (AI-training campus, uncalibrated)"
 
 

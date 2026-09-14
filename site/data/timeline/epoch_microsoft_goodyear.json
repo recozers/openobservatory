@@ -375,7 +375,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -400,7 +400,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -425,7 +425,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -450,7 +450,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -475,7 +475,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -500,7 +500,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -525,7 +525,7 @@
 "est_lo": 8.0,
 "est_mid": 16.0,
 "est_hi": 24.0,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -550,7 +550,7 @@
 "est_lo": 16.2,
 "est_mid": 32.4,
 "est_hi": 48.6,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -575,7 +575,7 @@
 "est_lo": 16.2,
 "est_mid": 32.4,
 "est_hi": 48.6,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -600,7 +600,7 @@
 "est_lo": 40.4,
 "est_mid": 80.8,
 "est_hi": 121.2,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -625,7 +625,7 @@
 "est_lo": 40.4,
 "est_mid": 80.8,
 "est_hi": 121.2,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -650,7 +650,7 @@
 "est_lo": 40.4,
 "est_mid": 80.8,
 "est_hi": 121.2,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -675,7 +675,7 @@
 "est_lo": 40.4,
 "est_mid": 80.8,
 "est_hi": 121.2,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
@@ -700,7 +700,7 @@
 "est_lo": 40.4,
 "est_mid": 80.8,
 "est_hi": 121.2,
-"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (Meta Lulea and New Albany run at 0.24\u20130.45)",
+"basis": "documented capacity in force (A2, it_reported) \u00d7 utilisation 0.2\u20130.6 of the connection/design figure (one same-period calibration point: Meta Lule\u00e5 ran at 0.25\u20130.45 of its 120 MW supply in 2022\u201324)",
 "night": null,
 "day": null,
 "no2": {
