@@ -76,6 +76,10 @@ and the operator-reported sites no longer look presumed; a synthetic test per ki
 
 
 ### B7. Watch list for generator fleets under construction  [EE for the monthly runs]
+Status: in progress (astra/b7; two filing-located watches; seven plant records still pending)
+
+14 September: Fermi and Cheyenne power-site points have monthly watch pipelines. Cheyenne's filed traffic study expects power operation by 2030, separately from the data centre's 2027 target. No first-fire date or two-sided operating emission factor has been verified for these watches; no campus MW is inferred. See `docs/generator_watchlist.md` for the nine-record audit and remaining gaps.
+
 B1's register shows that, apart from Colossus 2, Abilene (SCR) and the historical Colossus 1, every on-site generation
 fleet in scope is planned or under construction for 2026–2028 (Fermi Matador, Vantage Frontier, Poolside Horizon, Cheyenne
 Project Jade, Ohio Apollo, Wonder Valley, Entergy's Hyperion plants). Add each as a site with `site_class=generator_planned`,

@@ -80,3 +80,18 @@ test('deep link keeps selected view; invalid hash and empty inventory are safe',
   assert.equal((await mapRuntime([fixture('measured')], '#missing')).fits.length, 1);
   assert.equal((await mapRuntime([])).fits.length, 0);
 });
+
+test('generator watch renders signed bars and contained uncertainty without a false orange bar', async () => {
+  const s = { ...fixture('construction'), key: 'generator_watch',
+    series: [{ x: '2026-01', y: -300, se: 100 }, { x: '2026-02', y: 150, se: 100 }],
+    sources: [{label: 'Permit', url: 'https://example.org/permit'}] };
+  const els = elements();
+  await vm.runInNewContext(source('cards.js'), runtime([s], els));
+  assert.match(els.cards.innerHTML, /2026-01: -300/);
+  assert.match(els.cards.innerHTML, /href="https:\/\/example.org\/permit"/);
+  const svg = els.cards.innerHTML.match(/<svg[\s\S]*?<\/svg>/)[0];
+  assert.ok(!svg.includes('#dd6b20'));
+  for (const m of svg.matchAll(/\by[12]?="([\d.-]+)"/g)) assert.ok(+m[1] >= 0 && +m[1] <= 80);
+  const heights = [...svg.matchAll(/\bheight="([\d.]+)"/g)].map(m => +m[1]);
+  assert.ok(heights.every(h => h > 1));
+});

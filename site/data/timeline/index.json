@@ -1518,5 +1518,25 @@
   "no2": false,
   "night": false,
   "quarters": 11
+ },
+ "fermi_matador": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "generator watch: campus load unknown; NOx screen only",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
+ },
+ "cheyenne_jade_power": {
+  "est_mid": null,
+  "est_lo": 0.0,
+  "est_hi": 0.0,
+  "basis": "generator watch: campus load unknown; NOx screen only",
+  "s2": false,
+  "no2": false,
+  "night": false,
+  "quarters": 35
  }
 }
