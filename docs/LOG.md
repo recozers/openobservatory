@@ -240,3 +240,14 @@ Initial live OAuth extraction: Fermi 632 usable days, Cheyenne 401, January 2024
 Monthly refresh now fetches a three-month complete-calendar overlap for registered watches, keeps baseline profiles, replays dry runs, retains raw/monthly evidence, and idempotently logs the first future crossing. Orange means measured regional NOx change requiring source follow-up, not verified fleet commissioning. Existing non-watch load/status records are unchanged. Signed chart/error bars and direct source links checked in the browser. Local validation: 35 Python tests, 5 Node frontend tests, dry refresh strictly parses 322 JSON files, Epoch audit has zero failures.
 
 B7 remains in progress: seven pending plant records and Cheyenne air limit need source evidence. No real first-threshold event yet; the automatic log/colour path is covered synthetically. Draft PR targets astra/b6 / PR #12 to preserve its evidence filter and map work. Stuart handles merges; no deployment or main merge performed.
+
+## 2026-09-14 (Claude): Codex's phase-2 branches integrated
+- Merged astra/b2 (via b4), b4, b5, b6 (via b7) and b7 into main: EPA CAMPD plant evidence with a verified-allocation
+  guard (Southaven CC at Colossus 2 stays evidence only), municipal monthly water (NSA Utah, 312 records, eight-city
+  audit), regional data-centre load context with an inventory energy audit, the tested list filter and default map fit,
+  and the generator watch list (Fermi Matador and Cheyenne Jade, both below threshold).
+- Conflicts resolved: where B6 and Claude's same-day evidence-kind UI overlapped, Codex's tested list script and toolbar
+  and its map framing were kept; Claude's quarterly-detail page, intro banner, carried water-derived band and "not
+  estimated" wording for unconfirmed radar structures were kept; the refresh runs CAMPD, water and watch-list steps.
+- Checks: 59 Python and 5 Node tests pass; dry refresh validates 322 JSON files; landing map, list and detail pages
+  load without errors and show both sets of changes. Generator watches read "not estimated" rather than "0 MW".
