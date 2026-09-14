@@ -102,6 +102,14 @@ orange automatically. Accept: the watch list on the map with a documented first-
 series per site from the refresh; the first detection recorded in `docs/LOG.md`.
 
 ### B8. China: dedicated plants and public stack monitors  [no-EE]
+Status: in progress (astra/b8; eleven-hub source/access audit and 63 annual Shengle emission records; hourly/daily collection blocked by CAPTCHA or inaccessible endpoints).
+
+14 September: `docs/cn_stack_monitors.md` records fourteen plant/supply leads across all eleven hubs and nine provincial
+access outcomes. Shengle's seven annual reports and current monitoring plan are retained; its automatic readings require
+a CAPTCHA. Liangjiang has an operator-described waste-heat cooling link, without verified electrical allocation. Renewable
+source-grid-load-storage projects have no combustion stacks. No campus load is promoted; the hourly/daily acceptance
+criterion remains unmet. The 2024 annual NOx report's five-tonne total discrepancy is preserved and flagged.
+
 Chinese hub campuses have no operator disclosure and no self-generation, but several sit beside plants built for them
 (源网荷储一体化 projects, park cogeneration) and large plants publish hourly stack monitoring (重点排污单位自动监测数据: SO₂,
 NOx, flue-gas flow per outlet) on provincial platforms. That is the plant's own monitor, not a statistic, and the analogue

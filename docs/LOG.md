@@ -276,3 +276,33 @@ B7 remains in progress: seven pending plant records and Cheyenne air limit need 
   construction index, RFW-25 land transfers, RFW-26 grid projects, RFW-27 water permits, RFW-28 building-scale lights) and
   RFW-29 plume-test robustness; China theories T-10 (temporary site housing) and T-11 (post-structure radar); and a separate
   "Requests that cost money" section (PAID-01 to PAID-09) with licence conditions and pilots, no prices.
+
+## 14 September 2026 — Astra B8: eleven-hub plant/monitor audit; hourly access unresolved
+
+Branch `astra/b8` from integrated main `5000633`. Reconciled Claude's integration of B2/B4/B5/B6 and the two initial B7
+watches before starting; no duplicate implementation. First-pass B8 register has fourteen plant/supply records across all
+eleven requested Chinese hubs, nine regional access outcomes, and explicit source URLs/locators/access states. Shengle
+is a cloud-park CHP support plant, with documented heat sales and planned grid electricity sales; Liangjiang has an
+operator-described waste-heat cooling connection to China Telecom. Neither establishes a dedicated electrical share.
+Four source-grid-load-storage leads are renewable projects; Jingning, Huaning and Zhongwei nearby thermal plants remain
+unattributed. No campus generation, capacity, load or evidence-kind promotion.
+
+Inner Mongolia's public enterprise/document endpoints work. Shengle enterprise ID is B91752F8E785428E8900B78EA180D9AC;
+2025 report describes hourly SO2/NOx/PM at #1/#2 desulfurisation outlets. Database outlet IDs and flow remain unknown.
+An August 2026 automatic reading query returned a CAPTCHA requirement; no bypass attempted. Other provincial endpoints
+returned connection timeouts, 404 or 412; national public app is distinct from the login route. Dated third-party platform
+closure claims are discovery context, not current proof. Hourly/daily acceptance remains unmet; B8 stays in progress.
+
+Downloaded seven annual Shengle reports (2019-2025) and the latest listed stamped 2026 monitoring plan, retaining eight
+PDFs (~6.3MB) and hashes. The listed 2018 report returned an unsynchronised/missing-file HTML message. Saved 63 **annual**
+SO2/NOx/PM emission-mass records: unit 1/unit 2/whole-plant for seven years, metric tonnes, overlapping scopes explicitly
+labelled. 2023 is scanned, visually read at physical p15. The 2024 NOx source total is 606.6 t but units 282.47 + 319.13 = 601.60 t;
+all originals preserved and discrepancy flagged, visually confirmed on p19. Twenty of 21 pollutant-year totals reconcile.
+2019 listing contains 测试; retained as a source metadata caveat. No missing readings replaced by zeros.
+
+`tools/cn_stack_monitors.py` verifies PDF hashes, annual periods/units, record uniqueness, report-year identity and source
+arithmetic flags; added to validation CI. Local checks: audit 63 records/8 PDFs/11 hubs, 59 Python tests, 5 Node tests, dry refresh 322
+strict JSON files, Epoch audit zero failures. Rebuilt page visually checked at localhost:8011. Public outputs differ only
+in two generated timestamps, discarded after inspecting the diff. No main merge or deployment. Start review with
+`docs/cn_stack_monitors.md`, `data/cn_plant_links.csv`, and `data/cn_stack_monitors/README.md`. Monitor remains active;
+B9 is the next independent task, while B8 needs normal public reading access and further physical-allocation filings.
