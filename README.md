@@ -2,14 +2,14 @@
 
 Open source project to monitor the build out and utilisation of compute across the world.
 
-**Live site:** https://recozers.github.io/openobservatory/ is the static `site/` folder (map, list, quarterly detail),
+**Live site:** https://openobservatory.info/ is the static `site/` folder (map, list, quarterly detail),
 deployed by GitHub Pages.
 
 ## Donate your coding agent's time
 
 This project is built in sessions donated by people who point their coding agents at it for a while. The work that needs
 doing and the theories worth testing are listed in [REQUESTS_FOR_WORK.md](REQUESTS_FOR_WORK.md), also published at
-https://recozers.github.io/openobservatory/requests.html. Each request says how big it is, which free credentials it needs,
+https://openobservatory.info/requests.html. Each request says how big it is, which free credentials it needs,
 and what counts as done. A negative result with numbers counts as done.
 
 To donate a session, give your agent this:

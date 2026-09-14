@@ -361,3 +361,10 @@ B9 is the next independent task, while B8 needs normal public reading access and
   Start Campus Sines), which serve as its recall check. No radar, optical or night-light discovery scan has run outside the
   US and China (results_s1, results_discovery, results_ntl). The record sources it names are candidates to check, not yet
   verified. PAID-08 now also answers RFW-33. Requests are now RFW-01 to RFW-33.
+- Custom domain (Stuart, 14 Sep): the site now serves at https://openobservatory.info/. Stuart registered the domain at
+  GoDaddy and set its DNS: four A records for the apex to GitHub Pages (185.199.108.153 to 185.199.111.153) and www as a
+  CNAME to recozers.github.io. The domain was then set in the repository's Pages settings through the API, because the
+  Actions deploy ignores CNAME files. Each Pages setting change needed a workflow re-run before it took effect: after the
+  domain was added the old address redirected to a "Site not found" page for about 90 seconds until the redeploy, and forced
+  HTTPS only redirected after a second redeploy. GitHub's Let's Encrypt certificate covers the apex and www. http, www and
+  the old recozers.github.io address all redirect to the HTTPS apex. README links updated.
