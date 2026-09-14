@@ -44,7 +44,8 @@ delivered as a first slice.
 - Negative results stay visible. Do not delete a failed method; document it.
 - State results at the scale they were tested: how many sites, against what truth, with what uncertainty.
 - Respect data licences and site terms. Do not scrape services that forbid it, such as map products or commercial
-  data-centre directories. Follow the Nominatim usage policy for geocoding.
+  data-centre directories, and never bypass a CAPTCHA, login or other access control. Follow the Nominatim usage policy for
+  geocoding.
 - A document's figure keeps its own quantity. Do not turn kVA into IT megawatts, add facility and IT figures, or treat a
   forecast as an observed load.
 
@@ -115,6 +116,11 @@ Each line gives what was tested, the result, and whether it carries over to Chin
   and overpass alignment are unverified. See RFW-12.
 - **NO₂ from power plants next to Chinese hubs.** Usable as an activity index only at Ulanqab; the Horinger and Chongqing
   series were not usable.
+- **Chinese plants linked to hub parks** (`tools/cn_stack_monitors.py`, `docs/cn_stack_monitors.md`). A first pass found 14
+  plant or supply leads across 11 hubs; four are renewable projects. The Shengle plant supplies the Horinger cloud park, and
+  its annual emission reports give 63 records for 2019 to 2025, but no allocation of its output to any campus is established.
+  No hourly or daily stack readings were retrieved: Shengle's reading service requires a CAPTCHA and other candidate services
+  timed out or returned errors. See RFW-16.
 - **Radar-found structures in China.** Hall-like and dated, but unconfirmed. See RFW-01.
 
 ## Did not work
@@ -280,9 +286,10 @@ The Status column shows only standing reservations by the project's own agents. 
 
 #### RFW-16 Dedicated plants and public stack monitors in China
 
-- **Status:** reserved by Astra as the next phase-2 task (B8 in `docs/PHASE2_TODO.md`). Listed so nobody duplicates it.
+- **Status:** reserved by Astra (B8 in `docs/PHASE2_TODO.md`). A first pass was merged on 14 September; see
+  `docs/cn_stack_monitors.md`.
 - **Why:** Plants built for hub parks may publish hourly stack monitoring on provincial platforms, the counterpart of EPA
-  plant records.
+  plant records. So far only annual reports have been reachable; hourly readings sit behind a CAPTCHA at the one linked plant.
 
 #### RFW-17 Operator utilisation priors from Chinese filings
 

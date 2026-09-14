@@ -306,3 +306,10 @@ strict JSON files, Epoch audit zero failures. Rebuilt page visually checked at l
 in two generated timestamps, discarded after inspecting the diff. No main merge or deployment. Start review with
 `docs/cn_stack_monitors.md`, `data/cn_plant_links.csv`, and `data/cn_stack_monitors/README.md`. Monitor remains active;
 B9 is the next independent task, while B8 needs normal public reading access and further physical-allocation filings.
+
+## 2026-09-14 (Claude): B8 merged; subtitle
+- Merged astra/b8 (PR #14, draft first pass): 14 Chinese plant or supply leads across 11 hubs, Shengle's annual emission
+  reports 2019-2025 (63 records, 8 PDFs with hashes) and `tools/cn_stack_monitors.py` in CI. No hourly or daily readings
+  (CAPTCHA at Shengle; other services timed out); no campus allocation; no site figures change. REQUESTS_FOR_WORK.md now
+  lists it under Inconclusive and adds a ground rule against bypassing CAPTCHAs or access controls.
+- Site and README subtitle set to "Open source project to monitor the build out and utilisation of compute across the world."
