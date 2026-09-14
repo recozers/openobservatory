@@ -1,0 +1,316 @@
+{
+  "use": "context_only",
+  "records": [
+    {
+      "record_id": "dom_202307_esa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202307_cloa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202307_firm",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202307_eloa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202307_total",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202407_esa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202407_cloa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202407_firm",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202407_eloa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202407_total",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202507_esa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202507_cloa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202507_firm",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202507_eloa",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "dom_202507_total",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "aep_20260212_new_tariff",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "aep_20260212_pre_tariff",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "aep_20260212_total",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "ercot_lfl_2025",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "pjm_dc_growth_2025_2030",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "eirgrid_2024_dc_ntl",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "eirgrid_2035_dc_ntl_low",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "eirgrid_2035_dc_ntl_median",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "eirgrid_2035_dc_ntl_high",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "cso_ie_dc_2015",
+      "year": 2015,
+      "status": "no_disclosures",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 1240000.0,
+      "regional_grid_average_mw": 141.553,
+      "inventory_facility_mwh": null,
+      "facility_to_regional_grid_ratio": null,
+      "included_sites": [],
+      "inventory_sites_without_disclosure": [
+        "meta_clonee"
+      ],
+      "review_exceeds_regional_grid": null,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2016",
+      "year": 2016,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 1482000.0,
+      "regional_grid_average_mw": 168.716,
+      "inventory_facility_mwh": 1000.0,
+      "facility_to_regional_grid_ratio": 0.000675,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2017",
+      "year": 2017,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 1762000.0,
+      "regional_grid_average_mw": 201.142,
+      "inventory_facility_mwh": 1000.0,
+      "facility_to_regional_grid_ratio": 0.000568,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2018",
+      "year": 2018,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 2182000.0,
+      "regional_grid_average_mw": 249.087,
+      "inventory_facility_mwh": 200000.0,
+      "facility_to_regional_grid_ratio": 0.091659,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2019",
+      "year": 2019,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 2490000.0,
+      "regional_grid_average_mw": 284.247,
+      "inventory_facility_mwh": 382000.0,
+      "facility_to_regional_grid_ratio": 0.153414,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2020",
+      "year": 2020,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 3030000.0,
+      "regional_grid_average_mw": 344.945,
+      "inventory_facility_mwh": 487000.0,
+      "facility_to_regional_grid_ratio": 0.160726,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2021",
+      "year": 2021,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 4012000.0,
+      "regional_grid_average_mw": 457.991,
+      "inventory_facility_mwh": 634648.0,
+      "facility_to_regional_grid_ratio": 0.158187,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2022",
+      "year": 2022,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 5273000.0,
+      "regional_grid_average_mw": 601.941,
+      "inventory_facility_mwh": 668290.0,
+      "facility_to_regional_grid_ratio": 0.126738,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2023",
+      "year": 2023,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 6339000.0,
+      "regional_grid_average_mw": 723.63,
+      "inventory_facility_mwh": 953837.0,
+      "facility_to_regional_grid_ratio": 0.150471,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2024",
+      "year": 2024,
+      "status": "partial_inventory_context",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 6973000.0,
+      "regional_grid_average_mw": 793.83,
+      "inventory_facility_mwh": 1076961.0,
+      "facility_to_regional_grid_ratio": 0.154447,
+      "included_sites": [
+        "meta_clonee"
+      ],
+      "inventory_sites_without_disclosure": [],
+      "review_exceeds_regional_grid": false,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "cso_ie_dc_2025",
+      "year": 2025,
+      "status": "no_disclosures",
+      "source_url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
+      "regional_grid_mwh": 7663000.0,
+      "regional_grid_average_mw": 874.772,
+      "inventory_facility_mwh": null,
+      "facility_to_regional_grid_ratio": null,
+      "included_sites": [],
+      "inventory_sites_without_disclosure": [
+        "meta_clonee"
+      ],
+      "review_exceeds_regional_grid": null,
+      "reason": "Partial campus roster; facility electricity vs national grid meters. Ratio is context, not coverage or accuracy; no rescaling."
+    },
+    {
+      "record_id": "ema_sg_all_2024",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "imda_sg_capacity_2024",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    },
+    {
+      "record_id": "imda_sg_additional_target_2024",
+      "status": "not_comparable",
+      "reason": "Different metric, sector, or unverified utility-territory membership."
+    }
+  ]
+}

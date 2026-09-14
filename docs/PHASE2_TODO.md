@@ -63,6 +63,11 @@ Bluffs, Bluffdale, Prineville, Lenoir, Clarksville, Papillion). Collect what is 
 note per city on what was searched and what was not public.
 
 ### B5. Regional data-centre load context  [no-EE]
+Status: ready for review (astra/b5, based on astra/b2). 38 sourced records across all six areas; contracts,
+forecasts, MVA and actual annual energy kept separate. Independent Irish disclosure/context audit and six tests;
+no site evidence or load changes. See `docs/regional_dc_load_notes.md`. Singapore EMA has only an all-sector
+energy total in the inspected chapter; IMDA capacity context is separately labelled. Other utility comparisons
+remain unavailable without verified service-territory membership and compatible observed demand.
 Utility and ISO reports of aggregate data-centre load (Dominion, AEP Ohio, ERCOT large flexible load, PJM, EirGrid,
 Singapore EMA) into `data/regional_dc_load.csv` with URLs, for the docs and for testing the inventory's regional totals.
 Not per site.
