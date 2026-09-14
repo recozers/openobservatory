@@ -1,0 +1,30 @@
+{
+  "accessed": "2026-09-14",
+  "sources": [
+    {
+      "file": "fermi_final.pdf",
+      "url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=GET_FILE&allowInterrupt=1&dDocName=8281239&dID=9562400",
+      "sha256": "0d31975ec96d668bec3b1149643c53d16c5cef2c3edb9780442603af93426403",
+      "cache": "../openobservatory-astra-b1/data/cache/b1/fermi_final.pdf"
+    },
+    {
+      "file": "apollo_final.pdf",
+      "url": "https://ukozvhzgrcnkcatjqfoo.supabase.co/storage/v1/object/public/03-00-air-construction/2026.06.15_Apollo_Generating_Station_P0139272_Final_Permit_3e471ff2",
+      "sha256": "c675c5d93d394d2d5e05d07be564a9c3f2507f0c597a00514b662fd5a2ed24b3",
+      "bytes": 1320900
+    },
+    {
+      "file": "apollo_application.pdf",
+      "url": "https://ukozvhzgrcnkcatjqfoo.supabase.co/storage/v1/object/public/03-00-air-construction/2025.12.05_Apollo%20Generating%20Station_P0139272%20Application_82180af1.pdf",
+      "sha256": "577c0db093114b1583b7528ff69902f7f6e0831b7d5c635253ba523514c58e7e",
+      "bytes": 854637
+    },
+    {
+      "file": "jade_plan.pdf",
+      "url": "https://laramiecounty.legistar.com/View.ashx?GUID=0946D063-8DEE-42DD-B75C-867B3A63027D&ID=15061112&M=F",
+      "sha256": "ca9d90137cbd32deb63818a7f0181326e149b55d8ab6c77709e7c8d48c09f3cb",
+      "bytes": 79279523
+    }
+  ],
+  "apollo_host_note": "Primary documents hosted on Environmental Integrity Project mirror; not agency-hosted copies."
+}

@@ -192,6 +192,9 @@ def main():
                                        else "detected" if running.startswith("yes") or (str((t or {}).get("ntl_lit") or "")[:4].isdigit() and running.startswith("presumably"))
                                        else "presumed" if running.startswith("presumably")
                                        else "construction")))
+        if s.get("site_class") == "generator_planned":
+            from tools.generator_watchlist import public_status
+            out[-1].update(public_status(ROOT, s))
     out.sort(key=lambda r: (-(1 if r["combustion"] else 0), -(r["est_hi"] or 0)))
     (SITE / "data" / "status.json").write_text(json.dumps(dict(generated=data.get("generated"), sites=out), indent=0))
     for r in out:

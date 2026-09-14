@@ -57,11 +57,12 @@
     const pts = s.series.filter(p => p.y !== null && p.y !== undefined);
     if (!pts.length) return "";
     const W = 380, H = 80, L = 32, R = 6, T = 8, B = 18, iw = W - L - R, ih = H - T - B, n = s.series.length, bw = iw / n;
-    const maxv = Math.max(1, ...pts.map(p => p.y + (p.se || 0))), y = v => T + ih - (v / maxv) * ih;
+    const maxv = Math.max(1, ...pts.map(p => p.y + (p.se || 0))), minv = Math.min(0, ...pts.map(p => p.y - (p.se || 0)));
+    const y = v => T + ih - ((v - minv) / (maxv - minv)) * ih;
     let g = `<line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="#bbb"/><text x="${L - 3}" y="${T + 8}" font-size="9" text-anchor="end" fill="#666">${fmt(maxv, 0)}</text>`;
     s.series.forEach((p, i) => { if (p.y === null || p.y === undefined) return; const x = L + i * bw;
-      const c = s.key === "nox" ? (p.y > 500 ? "#c53030" : p.y > 150 ? "#dd6b20" : "#a0aec0") : s.key === "roofs" ? "#2f855a" : "#2b6cb0";
-      g += `<rect x="${x + 1}" y="${y(Math.max(p.y, 0))}" width="${Math.max(bw - 2, 1)}" height="${Math.max(y(0) - y(Math.max(p.y, 0)), 0.5)}" fill="${c}"><title>${esc(p.x)}: ${fmt(p.y, 0)}${p.se ? ` ± ${fmt(p.se, 0)}` : ""}</title></rect>`;
+      const c = s.key === "generator_watch" ? (p.y > 100 && p.y > 2 * p.se ? "#dd6b20" : "#a0aec0") : s.key === "nox" ? (p.y > 500 ? "#c53030" : p.y > 150 ? "#dd6b20" : "#a0aec0") : s.key === "roofs" ? "#2f855a" : "#2b6cb0";
+      g += `<rect x="${x + 1}" y="${Math.min(y(p.y), y(0))}" width="${Math.max(bw - 2, 1)}" height="${Math.max(Math.abs(y(0) - y(p.y)), 0.5)}" fill="${c}"><title>${esc(p.x)}: ${fmt(p.y, 0)}${p.se ? ` ± ${fmt(p.se, 0)}` : ""}</title></rect>`;
       if (p.se) g += `<line x1="${x + bw / 2}" y1="${y(p.y - p.se)}" x2="${x + bw / 2}" y2="${y(p.y + p.se)}" stroke="#555"/>`; });
     const step = Math.max(1, Math.round(n / 5));
     s.series.forEach((p, i) => { if (i % step === 0) g += `<text x="${L + i * bw + bw / 2}" y="${H - 5}" font-size="9" text-anchor="middle" fill="#666">${esc(p.x)}</text>`; });
@@ -73,7 +74,7 @@
     map.flyTo({ center: [s.lon, s.lat], zoom: Math.max(map.getZoom(), 4.5), speed: 1.2 });
     body.innerHTML = `<h2>${esc(s.name)}</h2><div class="meta">${esc(s.operator)} · ${esc(s.country)}${s.polygons_low ? " · polygons low-confidence" : ""}</div>
       <div class="lines"><div>Built</div><div>${esc(s.built)}</div><div>Running</div><div>${esc(s.running)}</div><div>Load</div><div>${esc(s.load)}</div><div>Confidence</div><div><span class="conf ${esc(s.confidence)}">${esc(s.confidence)}</span></div></div>
-      ${spark(s)}<div class="how"><b>How we know:</b> ${s.how.map(esc).join("; ") || "no evidence yet"}</div>
+      ${spark(s)}${s.sources?.length ? `<div class="small">Sources: ${s.sources.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>`).join(" · ")}</div>` : ""}<div class="how"><b>How we know:</b> ${s.how.map(esc).join("; ") || "no evidence yet"}</div>
       <div style="margin-top:6px"><a href="map.html#${esc(s.site_id)}">quarterly detail</a> · <a href="list.html">all sites</a></div>`;
   }
 })();

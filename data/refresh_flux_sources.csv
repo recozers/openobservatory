@@ -1,7 +1,9 @@
-site_id,profile,baseline_before,notes
-colossus2_southaven,results_no2/flux_colossus2.csv,2025-07-01,Season-matched baseline cutoff reproduces the checked-in monthly NOx series within CSV rounding (0.05 kg/h).
-cn_horinger_cloud_valley,results_no2/flux_cn_horinger_shengle_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
-cn_ulanqab_park,results_no2/flux_cn_ulanqab_jining_700.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
-zhongwei_hub,results_no2/flux_cn_zhongwei_cpi_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
-chongqing_hub,results_no2/flux_cn_chongqing_liangjiang_gas.csv,,Adjacent plant only; preserve its existing activity-index interpretation.
-stargate_abilene,results_no2/flux_abilene.csv,2025-01-01,Pre-2025 analysis baseline; SCR permit ceiling does not establish a two-sided emission factor or campus MW.
+site_id,profile,baseline_before,notes,refresh_mode
+colossus2_southaven,results_no2/flux_colossus2.csv,2025-07-01,Season-matched baseline cutoff reproduces the checked-in monthly NOx series within CSV rounding (0.05 kg/h).,
+cn_horinger_cloud_valley,results_no2/flux_cn_horinger_shengle_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.,
+cn_ulanqab_park,results_no2/flux_cn_ulanqab_jining_700.csv,,Adjacent plant only; preserve its existing activity-index interpretation.,
+zhongwei_hub,results_no2/flux_cn_zhongwei_cpi_cogen.csv,,Adjacent plant only; preserve its existing activity-index interpretation.,
+chongqing_hub,results_no2/flux_cn_chongqing_liangjiang_gas.csv,,Adjacent plant only; preserve its existing activity-index interpretation.,
+stargate_abilene,results_no2/flux_abilene.csv,2025-01-01,Pre-2025 analysis baseline; SCR permit ceiling does not establish a two-sided emission factor or campus MW.,
+fermi_matador,results_no2/generator_watch/fermi_matador.csv,2026-01-01,"2024-2025 seasonal baseline; includes baseline SE. Live refresh re-fetches three complete months, preserving baseline. NOx screen only.",generator_watch
+cheyenne_jade_power,results_no2/generator_watch/cheyenne_jade_power.csv,2026-01-01,2024-2025 analysis baseline; fresh complete-month profiles. Power target 2030; air limit unknown.,generator_watch

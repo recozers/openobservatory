@@ -144,3 +144,6 @@ Pre-MVP. See `docs/MVP.md` for what is validated, what is not, and the roadmap. 
 
 MIT. Data sources carry their own licences: Copernicus Sentinel data (free and open), NASA ECOSTRESS and Landsat (public domain),
 ERA5 (Copernicus C3S), OpenStreetMap (ODbL), Epoch AI data-centre tables (CC BY), EPA and eGRID (public domain).
+
+
+Generator watch points: `python tools/generator_watchlist.py` replays saved seasonal NOx changes; `--live` refreshes three complete months with noninteractive EE credentials. The monthly workflow runs registered watches and retains their raw profiles, monthly series and first-crossing ledger. Targets, source locations, uncertainty and pending projects are documented in [the generator watch audit](docs/generator_watchlist.md). An orange watch is a calibrated regional NOx screen, not a confirmed first fire or campus electricity measurement.
