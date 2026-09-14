@@ -64,6 +64,8 @@ def sanitize(obj):
 
 
 def main():
+    from tools.generator_watchlist import registry
+    watches = {r["site_id"]: r for r in registry(ROOT) if r["status"] == "watching"}
     sites = pd.read_csv(DATA / "sites.csv", dtype=str).fillna("")
     tl = pd.read_csv(DATA / "capacity_timeline.csv", dtype=str).fillna("")
     import os
@@ -129,6 +131,8 @@ def main():
             thermal_backend=s.thermal_backend, obs_start=s.obs_start, obs_end=s.obs_end, case=case, transfer_note=transfer_note,
             n_frames=n_frames, n_rejected_frames=n_rej_frames, rejection_reasons=rej_counts, polygons=polys, capacity_timeline=timeline,
         )
+        if s.get("site_class") == "generator_planned":
+            rec.update(site_class="generator_planned", generator_watch=watches[sid])
         if e is not None:
             rec.update(dict(
                 q_hat_mw=none_if_nan(float(e.q_hat_mw)), q_lo_mw=none_if_nan(float(e.q_lo_mw)), q_hi_mw=none_if_nan(float(e.q_hi_mw)),

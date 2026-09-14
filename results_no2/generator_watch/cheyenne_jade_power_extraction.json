@@ -1,0 +1,10 @@
+{
+  "start": "2024-01-01",
+  "through": "2026-08-31",
+  "lat": 41.022293,
+  "lon": -104.819811,
+  "half_width_km": 12,
+  "max_cloud": 0.3,
+  "wind_utc": "19:00\u201321:00",
+  "source": "COPERNICUS/S5P/OFFL/L3_NO2; ECMWF/ERA5/HOURLY"
+}

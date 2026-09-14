@@ -1,0 +1,24 @@
+[
+  {
+    "site_id": "fermi_matador",
+    "months": 8,
+    "threshold_months": [],
+    "first_threshold_month": null,
+    "baseline_before": "2026-01-01",
+    "baseline_is": "analysis cutoff, not a first-fire date",
+    "scope": "regional NOx change; fleet attribution unconfirmed",
+    "calibration_sha256": "84f83b17c4094e162daf3a539234dc85f3a8883f4c91c75257cc65f34ccd7b53",
+    "profile_sha256": "2c424f516212a8ecf118c992b537e0e7c49c84f63d2dc31de91725874e00aa3b"
+  },
+  {
+    "site_id": "cheyenne_jade_power",
+    "months": 8,
+    "threshold_months": [],
+    "first_threshold_month": null,
+    "baseline_before": "2026-01-01",
+    "baseline_is": "analysis cutoff, not a first-fire date",
+    "scope": "regional NOx change; fleet attribution unconfirmed",
+    "calibration_sha256": "84f83b17c4094e162daf3a539234dc85f3a8883f4c91c75257cc65f34ccd7b53",
+    "profile_sha256": "06b13508a27bb8ea178210a27763ef9ac60c8447ef83926fd4ab072bcedf8d14"
+  }
+]

@@ -62,6 +62,7 @@ jobs:
             site/data/
             results_s2/
             results_no2/*_monthly.csv
+            results_no2/generator_watch/
           retention-days: 30
       - name: Commit site data to main
         id: commit
@@ -69,7 +70,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site/data/
+          git add site/data/ results_no2/generator_watch/ results_no2/flux_*_monthly.csv docs/LOG.md
           if git diff --cached --quiet; then
             exit 0
           fi

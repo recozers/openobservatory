@@ -44,6 +44,8 @@ def main():
     with (ROOT / "data/refresh_flux_sources.csv").open() as f:
         flux_sources = list(csv.DictReader(f))
     for source in flux_sources:
+        if source.get("refresh_mode") == "generator_watch":
+            continue  # Fresh extraction and baseline uncertainty handled below.
         if not (ROOT / source["profile"]).exists():
             raise FileNotFoundError(f"Missing approved flux profile: {source['profile']}")
         cmd = ["tools/no2_flux_quarterly.py", source["profile"], "--site", source["site_id"]]
@@ -52,6 +54,7 @@ def main():
         run(*cmd)
     run("tools/campd_monthly.py", *(["--fetch"] if not dry and os.getenv("EPA_API_KEY") else []))
     run("tools/water_monthly.py")
+    run("tools/generator_watchlist.py", *([] if dry else ["--live"]))
     os.environ.update(OBS_FILE="data/observations_all.csv", REJ_FILE="data/rejections_all.csv", RESULTS_DIR="results_gee")
     for script in ("build_site.py", "build_timeline_data.py", "build_status.py"):
         run(script)

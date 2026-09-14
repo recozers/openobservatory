@@ -48,7 +48,7 @@ MEASURED_RANK = {"facility_measured_annual": 0, "it_measured_annual": 0, "water_
 
 def emission_factor_range(site):
     """A permit ceiling is not a two-sided operating emission-factor estimate."""
-    if str(site.get("nox_ef_basis") or "") == "permit_upper_limit":
+    if site.get("site_class") == "generator_planned" or str(site.get("nox_ef_basis") or "") in ("permit_upper_limit", "unknown"):
         return None
     try:
         lo_raw, hi_raw = site.get("nox_ef_lo"), site.get("nox_ef_hi")
@@ -263,6 +263,10 @@ def main():
             fm["q"] = pd.PeriodIndex(fm.index, freq="M").asfreq("Q").astype(str)
             for q, g in fm.groupby("q"):
                 kgh = float(g.nox_kgh_cal.mean()); se = float(np.sqrt((g.nox_se ** 2).sum()) / len(g))
+                if s.get("site_class") == "generator_planned":
+                    # Conservative bound: shared calibration/baseline errors do not
+                    # disappear on averaging. Only the monthly screen changes colour.
+                    se = float(g.nox_se.mean())
                 fluxq[q] = dict(nox_kgh=round(kgh, 0), nox_se=round(se, 0),
                                mw_lo=round(max(kgh - se, 0) / EF_HI, 0) if ef else None,
                                mw_hi=round(max(kgh + se, 0) / EF_LO, 0) if ef else None,
@@ -307,6 +311,8 @@ def main():
                 # a radar-detected structure is not yet known to be a data centre: no roof-potential band
                 lo, mid, hi, basis = 0.0, None, 0.0, "not estimated: radar-detected structure, unconfirmed as a data centre"
             fx = fluxq.get(qs)
+            if s.get("site_class") == "generator_planned":
+                lo, mid, hi, basis = 0.0, None, 0.0, "generator watch: campus load unknown; NOx screen only"
             adj = "ADJACENT PLANT" in str(s.get("nox_ef_note") or "")
             if fx and ef and not adj and fx["nox_kgh"] > 2 * fx["nox_se"] and fx["nox_kgh"] > 100:
                 lo, mid, hi, basis = fx["mw_lo"], round(fx["nox_kgh"] / ((EF_LO + EF_HI) / 2), 0), fx["mw_hi"], (("ADJACENT PLANT generation, not campus load: " if adj else "NO2-flux on-site generation: ") + f"{fx['nox_kgh']:.0f} ± {fx['nox_se']:.0f} kg NOx/h (TROPOMI, calibrated on 5 plants) at {EF_LO}-{EF_HI} kg NOx/MWh, midpoint at {(EF_LO + EF_HI) / 2}")
