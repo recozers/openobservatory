@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-14T10:55:53.319515+00:00",
+"generated": "2026-09-14T11:06:58.882296+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -14,12 +14,28 @@
 "load": "about 1207 MW from NO\u2082 (range 637\u20132919; absolute value uncertain 2\u20133\u00d7, month-to-month changes reliable)",
 "confidence": "high",
 "how": [
+"EPA CAMPD plant generation; campus allocation only where separately verified at >=80%; other plant records are evidence only",
 "TROPOMI NO\u2082 plume test",
 "TROPOMI NOx flux (calibrated on EPA-monitored plants)",
 "documented capacity: Reported 59 on-site gas turbines totalling up to 495 MW, operating unpermitted from late 2"
 ],
 "key": "nox",
 "series": [
+{
+"x": "2022Q4",
+"y": null,
+"se": null
+},
+{
+"x": "2023Q1",
+"y": -49.0,
+"se": 123.0
+},
+{
+"x": "2023Q2",
+"y": -55.0,
+"se": 115.0
+},
 {
 "x": "2023Q3",
 "y": 105.0,
@@ -9998,6 +10014,7 @@
 "load": "10\u201330 MW assumed from documented capacity; not directly measured",
 "confidence": "high",
 "how": [
+"Municipal monthly water deliveries, with separate customer and return records; water evidence only, not electricity use",
 "Sentinel-2 roof dating",
 "ECOSTRESS night thermal (negative: roofs do not track load)",
 "documented capacity: US Army Corps of Engineers power estimate (65 MW) as reported by the Salt Lake Tribune and"
@@ -16370,6 +16387,168 @@
 "polygons_low": true,
 "combustion": false,
 "evidence_kind": "construction"
+},
+{
+"site_id": "fermi_matador",
+"name": "Fermi Project Matador generator fleet",
+"operator": "Fermi America",
+"country": "US",
+"lat": 35.2843,
+"lon": -101.5776,
+"built": "filing-located generator monitoring point; hall geometry not mapped",
+"built_conf": "medium",
+"running": "watching: generator fleet under construction",
+"load": "unknown: no two-sided operating emission factor or measured campus load",
+"confidence": "low",
+"how": [
+"Target: 2026 (developer first-power year); first fire unverified",
+"Permit: 181009; PSDTX1670; GHGPSDTX254; SCR: 2 ppmvd combined-cycle; 4 ppmvd GE6B simple-cycle at 15% O2 dry; 24h NOx average; MSS excluded",
+"TROPOMI calibrated seasonal change including baseline uncertainty; 2\u03c3 and >100 kg/h screening threshold",
+"Regional plume and repeated-testing uncertainty; source attribution requires follow-up"
+],
+"key": "generator_watch",
+"series": [
+{
+"x": "2026-01",
+"y": -71.74411937197665,
+"se": 209.89332759810657
+},
+{
+"x": "2026-02",
+"y": 96.97805666542749,
+"se": 213.12154336546777
+},
+{
+"x": "2026-03",
+"y": 313.02495886477743,
+"se": 218.867352697878
+},
+{
+"x": "2026-04",
+"y": 190.2787525871429,
+"se": 211.68800051690832
+},
+{
+"x": "2026-05",
+"y": -382.44049541935186,
+"se": 215.77213331434248
+},
+{
+"x": "2026-06",
+"y": 20.997219514281426,
+"se": 250.2319181003375
+},
+{
+"x": "2026-07",
+"y": 84.94108464677855,
+"se": 127.34912416993996
+},
+{
+"x": "2026-08",
+"y": -7.909754237399814,
+"se": 133.7297937886037
+}
+],
+"series_label": "Monthly NOx change from seasonal baseline, kg/h (\u00b11\u03c3)",
+"recent": "latest complete observation: 2026-08",
+"est_mid": null,
+"est_hi": 0,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "construction",
+"first_threshold_month": null,
+"sources": [
+{
+"label": "Permit / siting location",
+"url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=GET_FILE&allowInterrupt=1&dDocName=8281239&dID=9562400"
+},
+{
+"label": "First-power target",
+"url": "https://fermiamerica.com/"
+}
+]
+},
+{
+"site_id": "cheyenne_jade_power",
+"name": "Project Jade: BFC Power and Cheyenne Power Hub",
+"operator": "Tallgrass Integrated Logistics Solutions",
+"country": "US",
+"lat": 41.022293,
+"lon": -104.819811,
+"built": "filing-located generator monitoring point; hall geometry not mapped",
+"built_conf": "medium",
+"running": "watching: generator fleet under construction",
+"load": "unknown: no two-sided operating emission factor or measured campus load",
+"confidence": "low",
+"how": [
+"Target: by 2030 (power-plant operation assumption in filed traffic study); first fire unverified",
+"Permit: Laramie County BFC/Cheyenne Power Hub siting plan; air permit unresolved; unknown: air permit not verified",
+"TROPOMI calibrated seasonal change including baseline uncertainty; 2\u03c3 and >100 kg/h screening threshold",
+"Regional plume and repeated-testing uncertainty; source attribution requires follow-up"
+],
+"key": "generator_watch",
+"series": [
+{
+"x": "2026-01",
+"y": 510.60508296268387,
+"se": 545.9751199590803
+},
+{
+"x": "2026-02",
+"y": 1454.515098547114,
+"se": 823.8066402163378
+},
+{
+"x": "2026-03",
+"y": 215.5957564906818,
+"se": 196.25022601837372
+},
+{
+"x": "2026-04",
+"y": 79.44626312838813,
+"se": 306.3377706649211
+},
+{
+"x": "2026-05",
+"y": 531.0610848129089,
+"se": 304.87034721050566
+},
+{
+"x": "2026-06",
+"y": -310.15527152265105,
+"se": 233.6271971686513
+},
+{
+"x": "2026-07",
+"y": -139.8951431990911,
+"se": 131.0815315428921
+},
+{
+"x": "2026-08",
+"y": 92.02731382760867,
+"se": 180.73450620074516
+}
+],
+"series_label": "Monthly NOx change from seasonal baseline, kg/h (\u00b11\u03c3)",
+"recent": "latest complete observation: 2026-08",
+"est_mid": null,
+"est_hi": 0,
+"last_q": "2026Q3",
+"polygons_low": false,
+"combustion": false,
+"evidence_kind": "construction",
+"first_threshold_month": null,
+"sources": [
+{
+"label": "Permit / siting location",
+"url": "https://laramiecounty.legistar.com/View.ashx?GUID=0946D063-8DEE-42DD-B75C-867B3A63027D&ID=15061112&M=F"
+},
+{
+"label": "First-power target",
+"url": "https://laramiecounty.legistar.com/View.ashx?GUID=0946D063-8DEE-42DD-B75C-867B3A63027D&ID=15061112&M=F"
+}
+]
 }
 ]
 }
