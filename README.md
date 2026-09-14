@@ -1,6 +1,6 @@
 # Open Observatory
 
-Tracking data-centre construction and activity from free satellite data, with a source for every claim.
+Open source project to monitor the build out and utilisation of compute across the world.
 
 **Live site:** https://recozers.github.io/openobservatory/ is the static `site/` folder (map, list, quarterly detail),
 deployed by GitHub Pages.
