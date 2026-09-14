@@ -78,9 +78,11 @@ def monthly_frame(s, cut, cal, today=None):
 
 
 def crossings(frame):
-    valid = (np.isfinite(frame.nox_kgh_cal) & np.isfinite(frame.nox_se)
-             & (frame.nox_se >= 0) & (frame.n_days >= 3))
-    return frame[valid & (frame.nox_kgh_cal > 100) & (frame.nox_kgh_cal > 2 * frame.nox_se)]
+    rate = pd.to_numeric(frame.nox_kgh_cal, errors="coerce")
+    error = pd.to_numeric(frame.nox_se, errors="coerce")
+    days = pd.to_numeric(frame.n_days, errors="coerce")
+    valid = np.isfinite(rate) & np.isfinite(error) & (error >= 0) & (days >= 3)
+    return frame[valid & (rate > 100) & (rate > 2 * error)]
 
 
 def refresh_profile(row, root, fetch, today=None):

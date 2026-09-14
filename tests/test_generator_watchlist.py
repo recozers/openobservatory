@@ -44,6 +44,8 @@ class GeneratorWatchTests(unittest.TestCase):
         s = pd.Series([1]*8, index=pd.to_datetime(['2024-01-01','2024-01-02',
             '2026-01-01','2026-01-02','2026-01-03','2026-02-01','2026-02-02','2026-02-03']))
         self.assertTrue(watch.monthly_frame(s, '2026-01-01', {'factor':1,'scatter':0}, '2026-03-01').empty)
+        empty = pd.read_csv(io.StringIO('month,nox_kgh_cal,nox_se,n_days\n'), index_col=0)
+        self.assertTrue(watch.crossings(empty).empty)
 
     def test_signed_changes_and_strict_threshold(self):
         f = pd.DataFrame(dict(nox_kgh_cal=[-200,100,200,201,500,500],
