@@ -64,7 +64,9 @@ are themselves uncertain by about ±30 %.
   HPL-measured figure for supercomputers, and keeps 0.5–1.0 for AI-training campuses, which have no calibration yet.
   Where an operator reports the year's electricity, the band is that average ±10 %, carried forward for up to 24 months
   at 0.7–1.3 when no newer figure exists. Chinese colocation operators report company-wide utilisation of in-service
-  capacity (VNET 70–74 %, GDS 75 %, Chindata 80 % in 2023) but nothing per campus (`docs/cn_operator_disclosures_notes.md`).
+  capacity (VNET 70–74 %, GDS 75 %, Chindata 80 % in 2023). Only Chindata's filings give it per data centre, to end-2022 and
+  mostly without a city: 466 of 517 MW in customer use across its Greater Beijing Area data centres. These are commercial
+  figures, not power (`docs/cn_operator_disclosures_notes.md`, section 6).
 - Grid-fed halls: `u_h` is not observable from satellites. The band on the site is the prior, and it says so.
 
 ## 4. Evidence and how each enters

@@ -1,0 +1,8 @@
+data_center,stated_location,hub,hub_basis,quote,source_key,published
+CN10,"annex to CN03, CN04 and CN05",Greater Beijing Area (Chindata region; city not stated),same site as CN03 to CN05; the filing gives no city,"An additional annex project to our existing hyperscale data centers CN03, CN04 and CN05.",cd_ipo_2020,2020-09-29
+CN13,a client's campus in Tianjin,Beijing-Tianjin-Hebei hub (Tianjin),stated,"CN13, a 13MW leased hyperscale project located in client’s campus in Tianjin, China",cd_pr_2022q2,2022-08-25
+CN14,the Company's Shanxi campus,Shanxi (Datong; outside the 8 hubs),the FY2022 20-F names Chindata's Shanxi campus as its Datong campus,"CN14 and CN18, located in the Company’s Shanxi and Hebei campuses respectively",cd_pr_2022q3,2022-11-22
+CN18,the Company's Hebei campus,Beijing-Tianjin-Hebei hub (Zhangjiakou cluster),the FY2022 20-F names Chindata's Hebei campus as its Zhangjiakou campus,"CN14 and CN18, located in the Company’s Shanxi and Hebei campuses respectively",cd_pr_2022q3,2022-11-22
+CN19,the Company's Hebei campus,Beijing-Tianjin-Hebei hub (Zhangjiakou cluster),the FY2022 20-F names Chindata's Hebei campus as its Zhangjiakou campus,11MW IOI capacity on CN19 in the Company’s Hebei campus,cd_pr_2022q3,2022-11-22
+CN20,the Company's Datong campus in Shanxi Province,Shanxi (Datong; outside the 8 hubs),stated,"CN20 and MY06-2, located in the Company’s Datong campus in Shanxi Province",cd_pr_2023q2,2023-08-31
+CN23,"Hebei, China",Beijing-Tianjin-Hebei hub (Zhangjiakou cluster),the FY2022 20-F names Chindata's Hebei campus as its Zhangjiakou campus,"CN23, a 26MW project located in Hebei, China",cd_pr_2023q2,2023-08-31

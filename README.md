@@ -49,7 +49,7 @@ its corrections section.
 - **Electricity use comes only from operators.** Meta reports annual electricity for 18 campuses. Google's published water
   use gives an approximate load for 12 more: checked against Meta's electricity, the middle half of mature campuses fall
   within 0.6 to 1.6 times and individual campuses range from 0.35 to about 3 times. No Chinese operator publishes
-  per-campus figures.
+  electricity per campus. Chindata's filings to 2022 give capacity in customer use per data centre, mostly without a city.
 - **Not from satellites.** Night roof temperature showed no step at documented load changes (Rainier +0.06 ± 0.24 K at a
   documented 1,078 MW), and snow did not clear faster from operating halls than from other roofs.
 

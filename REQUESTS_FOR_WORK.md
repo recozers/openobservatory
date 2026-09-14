@@ -36,7 +36,7 @@ daily demand cycles while training runs near-flat for weeks, so it needs several
 | When did it start running? | VIIRS night lights | Monthly | No direct signal: lights rise during construction, not at start-up | No signal: parks were already lit |
 | What is its capacity? | Filings, utility and operator statements, Epoch AI estimates | When documents change | 75 sites, 67 of them Epoch AI estimates | 5 sites: two supercomputers' measured peaks and three Epoch AI estimates |
 | How much is in use, electrically? | Annual electricity divided by capacity for the same period | Annual | 1 site: ORNL's Frontier averaged about 0.54 of its measured peak in 2023 | None |
-| How much is in use, commercially? | Operator filings | Quarterly | Not yet collected | Company-wide only: VNET 73.9 % in mid-2026, GDS 75.5 % by area at end-2025; no campus figures |
+| How much is in use, commercially? | Operator filings | Quarterly | Not yet collected | Per data centre only from Chindata, last at end-2022: 466 of 517 MW in customer use across its 18 Greater Beijing Area data centres, most without a stated city. Company-wide for VNET, 73.9 % in mid-2026, and GDS, 75.5 % by area at end-2025 |
 | How much is in use, from activity? | TROPOMI NOx at campuses that burn fuel on site | Monthly ±20 to 50 %, quarterly ±20 % | Relative change at 1 campus, Colossus 2; megawatts uncertain 2 to 3 times, so no ratio | Nothing to calibrate against; no known on-site generation |
 | Training or inference? | Planned: a deep-learning model on thermal imagery of substations and transformers, labelled with AI labs' training-run records | Needs several images a day at a few metres | Not observed; free thermal imagery is 70 m or coarser, and site classes are assigned by hand from press coverage | Not observed; needs commercial satellite thermal, and national planning's assignment of latency-tolerant work to western hubs is an official input to test |
 
@@ -46,8 +46,8 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
 
 ### The biggest gaps
 
-- **China has no utilisation measurement.** Operators publish company-wide commercial rates only, and construction dating is
-  the only independent signal.
+- **China has no utilisation measurement.** Operators publish commercial rates, per data centre only in Chindata's filings up
+  to 2022 and mostly without a city. Construction dating is the only independent signal.
 - **Capacity is the weak half of utilisation.** Two sites have a load and a capacity for the same period, and most capacity
   figures are third-party estimates or connection limits rather than installed computing.
 - **Nothing is measured often enough to separate training from inference.** The finest load series is monthly, at one campus
@@ -189,13 +189,20 @@ marks them in these tables when the page loads.
 
 #### RFW-07 Chindata's per-data-centre table and an EDGAR name search
 
-- **Why:** Chindata's fiscal-2022 annual report on Form 20-F contains a per-data-centre table with megawatts per campus, the
-  only campus-level capacity figures found for any Chinese hub, and VNET's filings mention Ulanqab orders. Neither has been
-  parsed (`docs/cn_operator_disclosures_notes.md`).
-- **Do:** Download the filings from EDGAR with a declared User-Agent, parse the table, and run a full-text search for
-  Ulanqab, Zhangbei, Horinger, Gui'an and Zhongwei across VNET, GDS and Chindata filings.
-- **Deliver:** Every per-campus figure in `data/cn_operator_disclosures.csv` with its filing URL, period and whether it is
-  capacity in service, utilised or planned.
+- **Done so far:** a first slice was delivered in [pull request 15](https://github.com/recozers/openobservatory/pull/15).
+  `tools/chindata_filings.py` put Chindata's per-data-centre tables for mid-2020, end-2021 and end-2022 into
+  `data/cn_operator_disclosures.csv`, 166 rows whose sums match each table's totals. It relabelled the 324 MW Zhangjiakou and
+  308 MW Datong figures as total capacity, not capacity in service. A hub-name search of 12 annual reports from VNET, GDS and
+  Chindata found no capacity figure for Ulanqab, Zhangbei, Horinger, Gui'an or Zhongwei; GDS reports four data centres in
+  Zhangbei. See `docs/cn_operator_disclosures_notes.md`, section 6.
+- **Why the rest matters:** the tables give most data centres no city, so their figures cannot yet be tied to a campus. VNET's
+  Ulanqab orders appear only in quarterly releases, and the Internet Archive holds none of VNET's releases from 2025 on.
+- **Do:** Run EDGAR's full-text search for the five hub names across VNET, GDS and Chindata filings, including 6-K current
+  reports. SEC requires a contact email in the User-Agent, so agree the address with Stuart first. Find the city of each
+  remaining Chindata data centre in its other public documents, such as quarterly releases or Chinese-language land and
+  environmental records.
+- **Deliver:** New per-campus figures in `data/cn_operator_disclosures.csv` and locations in `data/chindata_dc_locations.csv`,
+  each with its source URL and a verbatim quote.
 
 #### RFW-08 Substation and transmission projects serving the hub parks
 
@@ -799,13 +806,17 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
   for 18 campuses from 2011 to 2024; the 2024 figures appeared in October 2025. The site shows the 2024 average and carries it
   into 2025 and 2026 with a wider band. A utilisation ratio needs a capacity for the same years, which only Luleå has: 0.25 to
   0.45 of its 120 MW supply in 2022 to 2024. New Albany's 250 MW connection applies only from 2026, so it cannot be compared
-  with the 2019 to 2024 loads. **China:** no operator publishes per-campus figures.
+  with the 2019 to 2024 loads. **China:** no operator publishes electricity per campus.
 - **Measured supercomputer power.** ORNL reports Frontier's average power: 11.4 MW in 2022 and 12.2 MW in 2023, about 0.54 of
   its measured peak of 21.1 and 22.7 MW. **China:** the two national supercomputers in the inventory have measured peaks only.
 - **Commercial utilisation from listed operators** (`docs/cn_operator_disclosures_notes.md`). VNET reported 70.1 % of 889 MW in
   service at the end of 2025 and 73.9 % of 1,007 MW in mid-2026; GDS 75.5 % by area at the end of 2025; Chindata 80 % in
-  mid-2023, its last public filing. All are company-wide shares of capacity customers use or have contracted, not how hard the
-  equipment runs, and none is given per campus. **US:** not yet collected.
+  mid-2023, its last public filing. These are company-wide shares of capacity customers use or have contracted, not how hard
+  the equipment runs. Chindata's filings also give each data centre's capacity in service and capacity in customer use
+  (`tools/chindata_filings.py`). In its Greater Beijing Area that was 466 of 517 MW across 18 data centres at the end of 2022,
+  up from 287 of 399 MW across 13 a year earlier. New halls filled within about a year: CN11-C went from 8 to 67 of its 71 MW.
+  The filings give no city for most data centres; Chindata's releases place five of them in Hebei, Shanxi or Tianjin.
+  **US:** not yet collected.
 - **Load derived from water use** (`tools/ingest_water_loads.py`). Google publishes per-campus water but no water efficiency
   figure; its own totals imply 1.02 to 1.06 litres per kWh. Checked against Meta's electricity in 2024, the method puts the
   middle half of mature campuses at 0.6 to 1.6 times their reported load, individual campuses from 0.35 times (Luleå,

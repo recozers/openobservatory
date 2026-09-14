@@ -128,6 +128,8 @@ operator is known (VNET Ulanqab, GDS Ulanqab, Chindata Zhangjiakou/Datong), that
 provenance. Add `operator_utilisation` rows to `data/cn_operator_disclosures.csv` per filing period and let
 `build_timeline_data.py` use the operator's latest reported utilisation (±10 points) instead of the generic cloud prior for
 those sites. Accept: priors applied to every Chinese site with a known listed operator; the basis text names the filing.
+Note, 14 Sep: RFW-07 (pull request 15) added Chindata's per-data-centre utilised capacity for mid-2020, end-2021 and end-2022
+as `chindata_dc_table` rows. They are commercial figures, and most give no city (`docs/cn_operator_disclosures_notes.md`, section 6).
 
 ## Claude tasks
 
