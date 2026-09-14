@@ -5,7 +5,18 @@ const path = require('node:path');
 const claims = require('../site/claims.js');
 const bot = require('../.github/scripts/claims.cjs');
 
-const requests = claims.parseRequests(fs.readFileSync(path.join(__dirname, '../REQUESTS_FOR_WORK.md'), 'utf8'));
+// The claim rules are tested against a fixed table, so editing a status in REQUESTS_FOR_WORK.md cannot break them.
+const FIXTURE = [
+  '| ID | Request | Answers | Size | Keys | Status |',
+  '|---|---|---|---|---|---|',
+  '| [RFW-07](#rfw-07-chindatas-per-data-centre-table) | Chindata table | Capacity | S | none | open: table done; EDGAR search remains |',
+  '| [RFW-12](#rfw-12-dedicated-plants) | Dedicated plants | Utilisation | M | none | reserved: Astra |',
+  '| ID | Theory | Answers | Resolution if it works | Region | Keys |',
+  '| [T-05](#t-05-transformer-heat) | Transformer heat | Workload | Hourly | US | EE |',
+  '| [PAID-03](#paid-03-thermal-imagery) | Thermal imagery | Workload | US | 1 campus |',
+].join('\n');
+const requests = claims.parseRequests(FIXTURE);
+const real = claims.parseRequests(fs.readFileSync(path.join(__dirname, '../REQUESTS_FOR_WORK.md'), 'utf8'));
 const HOUR = 3600e3;
 const NOW = Date.parse('2026-09-20T12:00:00Z');
 const iso = hoursAgo => new Date(NOW - hoursAgo * HOUR).toISOString();
@@ -25,14 +36,21 @@ test('claim titles parse to a padded ID, and near misses are caught', () => {
   assert.equal(claims.looksLikeClaim('Serve the site at https://openobservatory.info'), false);
 });
 
-test('every table row in REQUESTS_FOR_WORK.md is readable, with statuses and reservations', () => {
-  const ids = Object.keys(requests);
-  assert.ok(ids.filter(id => id.startsWith('RFW-')).length >= 33);
-  assert.ok(ids.some(id => id.startsWith('T-')) && ids.some(id => id.startsWith('PAID-')));
-  assert.equal(requests['RFW-07'].status, 'open');
+test('request tables give each item its anchor, status and any reservation', () => {
+  assert.deepEqual(Object.keys(requests), ['RFW-07', 'RFW-12', 'T-05', 'PAID-03']);
+  assert.equal(requests['RFW-07'].status, 'open: table done; EDGAR search remains');
+  assert.equal(requests['RFW-07'].reservedFor, null);
   assert.match(requests['RFW-07'].anchor, /^rfw-07-/);
   assert.equal(requests['RFW-12'].reservedFor, 'Astra');
   assert.equal(requests['T-05'].status, null);
+});
+
+test('every table row in REQUESTS_FOR_WORK.md is readable', () => {
+  const ids = Object.keys(real);
+  assert.ok(ids.filter(id => id.startsWith('RFW-')).length >= 33);
+  assert.ok(ids.some(id => id.startsWith('T-')) && ids.some(id => id.startsWith('PAID-')));
+  assert.ok(ids.every(id => real[id].anchor.startsWith(`${id.toLowerCase()}-`)));
+  assert.ok(ids.filter(id => id.startsWith('RFW-')).every(id => real[id].status), 'every request has a status');
 });
 
 test('the earliest open pull request holds a claim and later ones are duplicates', () => {
