@@ -313,3 +313,10 @@ B9 is the next independent task, while B8 needs normal public reading access and
   (CAPTCHA at Shengle; other services timed out); no campus allocation; no site figures change. REQUESTS_FOR_WORK.md now
   lists it under Inconclusive and adds a ground rule against bypassing CAPTCHAs or access controls.
 - Site and README subtitle set to "Open source project to monitor the build out and utilisation of compute across the world."
+- Requests page reorganised (Stuart: "organise the rfw cleaner"; goal is full monitoring of data-centre activity at the
+  highest possible time resolution; China the priority because its public data is notoriously unreliable). New order: the
+  goal, a "How close we are" table by question and time resolution for the US and China, the biggest gaps, how to donate,
+  ground rules, requests in three priority tiers (1 China, 2 power at higher time resolution, 3 coverage and tools), theories,
+  paid requests, and the detailed results at the end. Requests renumbered RFW-01 to RFW-29 in priority order (no claims
+  existed); theories T-01 to T-11 with China first; Astra's B7, B8 and B9 are now RFW-20, RFW-11 and RFW-12. Earlier log
+  entries use the old numbers.

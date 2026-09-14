@@ -22,7 +22,7 @@ class RequestsPageTests(unittest.TestCase):
 
     def test_every_request_in_the_table_has_a_section_and_back(self):
         md = (ROOT / "REQUESTS_FOR_WORK.md").read_text(encoding="utf-8")
-        for prefix in ("RFW", "PAID"):
+        for prefix in ("RFW", "PAID", "T"):
             in_table = set(re.findall(rf"^\| \[({prefix}-\d+)\]", md, flags=re.M))
             sections = set(re.findall(rf"^#### ({prefix}-\d+) ", md, flags=re.M))
             self.assertTrue(in_table, prefix)
