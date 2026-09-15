@@ -454,3 +454,24 @@ Claimed from a fork (`rfw/01-cn-radar-review`), draft pull request 16 on recozer
   Esri and Google tiles were used only to look, and their capture dates are not shown. A Chinese-reading reviewer (PAID-06)
   or sub-metre imagery (PAID-01) would settle most of the unclear entries; land and procurement records (RFW-04, RFW-05)
   could attribute them.
+
+## 2026-09-15 (donated session, Claude): RFW-03, quarterly construction index for the Chinese hubs (pull request 17)
+
+Branch `rfw/03-cn-construction-index`, based on the RFW-01 branch (pull request 16), which supplies the verdicts.
+
+- `tools/cn_construction_index.py`: for each of the 39 reviewed radar structures, area from the scan and structure-on month
+  from `results_s1/<site_id>.csv` with the site's rule (`s1_on`, 4 dB sustained six months); the dating window runs from the
+  onset of the rise (first month of the run at or above base + 2 dB leading into the plateau, at most six months back) to the
+  plateau month. Aggregated by hub, quarter and verdict into `results_cn/construction_index.csv`, with the area whose whole
+  window lies inside the quarter ("firm") and the area whose window overlaps it ("possible") as low and high bounds; per-entry
+  rows in `results_cn/construction_index_entries.csv`.
+- Numbers: 39 structures, all dated; onset-to-plateau spread median 2 months, maximum 6; 18 of 39 windows lie inside one
+  quarter. Confirmed data-hall area 54 ha in three structures (Horinger 2022Q2 27 ha and 2024Q2 18 ha, Qingyang 2025Q1 9 ha);
+  unclear 288 ha in 24; rejected 114 ha in 12. Horinger's biggest quarter is 2024Q3 with 72 ha in five structures. One entry,
+  `cn_horinger_r21`, dates to 2020Q1, before the scan window, and is flagged.
+- The note in `docs/MVP.md` states what the index can and cannot show, with the table behind each quarter. A first attempt at
+  the uncertainty re-ran the dating rule over a grid of thresholds (3 to 5 dB) and sustain lengths (3 to 9 months); the loose
+  variants fired on seasonal swings as early as 2018 and gave windows of up to 86 months, so that was dropped for the
+  onset-to-plateau window.
+- Tests: `tests/test_cn_construction_index.py` (6), including a check that the committed index matches the review file.
+  Nothing on the public site changes; no builder reads the index yet.
