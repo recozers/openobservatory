@@ -287,7 +287,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-16](#rfw-16-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Utilisation | M | none | open |
 | [RFW-17](#rfw-17-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Utilisation | M | EE | open |
 | [RFW-18](#rfw-18-per-site-electricity-capacity-and-commercial-utilisation-from-more-operators) | Per-site electricity, capacity and commercial utilisation from more operators | Capacity, Utilisation | M | none | open |
-| [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | open |
+| [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | delivered in pull request 21 as context: no metro is one inventory campus; Boydton is a candidate site for RFW-18 |
 | [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | open |
 | [RFW-21](#rfw-21-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Utilisation | M | none | reserved: Astra |
 | [RFW-22](#rfw-22-stated-workload-roles-for-the-rest-of-the-inventory) | Stated workload roles for the rest of the inventory | Workload | M | none | open |
@@ -358,8 +358,12 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-19 Microsoft's metro electricity table to campuses
 
-- **Why:** Microsoft's 2026 data fact sheet reports fiscal-2025 electricity and water by metro area. Where a metro holds one
-  campus, that is a campus figure.
+- **Done so far:** pull request 21 parsed all 29 rows of Table 15 (`tools/microsoft_metro_table.py`,
+  `data/microsoft_metro_fy25.csv`, 15.9 TWh in FY25) into `data/operator_disclosures.csv` as metro rows, and mapped them
+  to the inventory (`docs/microsoft_metro_notes.md`). No metro is effectively one inventory campus: Phoenix, San Antonio and
+  Des Moines each hold several Microsoft campuses besides Goodyear, SAT14/SAT40 and Project Osmium, and Fairwater Atlanta
+  started after FY25, so every row stays context and no campus load changed. Boydton (3.11 TWh, one campus, 355 MW average)
+  is the row worth turning into a site under RFW-18.
 - **Do:** Map each metro row to inventory campuses. Attribute a figure only where the metro is effectively one campus, and
   record the rest as context.
 - **Deliver:** Rows in `data/operator_disclosures.csv` with the attribution reasoning, and a note listing the metros left as
