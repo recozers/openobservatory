@@ -605,7 +605,7 @@ Branch `rfw/20-eia860m` from main.
 - `tools/eia860m_scan.py` downloads the newest EIA-860M workbook (July 2026, SHA-256 in `results/eia860m_scan_summary.json`),
   keeps fossil and fuel-cell generators that are planned or have operated since 2023 (986 generators, 271 plants), and flags a
   plant when it lies within 10 km of one of the 88 US inventory sites or its plant or owner name carries a data-centre term or
-  operator. EPA hourly reporting is read from eGRID 2023 by ORIS code; new plants are marked unknown (the CAMPD facility list
+  operator. Presence in eGRID 2023 is recorded by ORIS code, which does not show hourly reporting to EPA; plants not in it are marked unknown (the CAMPD facility list
   needs an EPA key). Hand verification in `data/eia860m_review.csv` is merged into `results/eia860m_candidates.csv`.
 - 18 plants flagged, all by distance; the keyword flag caught only Fermi, because EIA names rarely carry the customer. Verdicts:
   1 on-site fleet already watched (Fermi Project Matador: 157 generators, 11,679 MW, first units March 2027, 0.78 km from the

@@ -36,7 +36,7 @@ class ScanTests(unittest.TestCase):
         self.assertTrue(near.flag_near)
         self.assertEqual(near.nearest_site, "campus")
         self.assertLess(near.distance_km, 2.5)
-        self.assertTrue(near.epa_hourly.startswith("yes"))
+        self.assertTrue(near.epa_hourly.startswith("in eGRID 2023"))
         kw = out[out.plant_id == 2].iloc[0]
         self.assertFalse(kw.flag_near)
         self.assertEqual(kw.flag_keyword, "stargate; crusoe")

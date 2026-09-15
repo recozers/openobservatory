@@ -14,8 +14,9 @@ Two flags, per plant:
   keyword   the plant or owner name carries a data-centre operator or term (KEYWORDS below)
 Kept generators: fossil and fuel-cell prime movers (gas turbines, combined cycle, engines, steam, fuel cells) that are planned,
 or operating since --since. Solar, wind, hydro and batteries are dropped: they emit no NOx and cannot be watched by TROPOMI.
-Whether a plant reports hourly to the EPA is looked up in data/egrid/plants_2023.csv by ORIS code (EIA plant id = ORIS):
-"yes (eGRID 2023)" for plants in that file, else "unknown: not in eGRID 2023 (new plant or non-reporting); needs the CAMPD
+Whether a plant is in data/egrid/plants_2023.csv, the eGRID 2023 fossil plants with emissions estimates, is looked up by ORIS
+code (EIA plant id = ORIS): "in eGRID 2023; hourly EPA reporting not checked" for plants in that file, because eGRID lists
+plants whether or not they report hourly to EPA's CAMPD, else "unknown: not in eGRID 2023 (new plant or non-reporting); needs the CAMPD
 facility list, EPA key". Hand verification lives in data/eia860m_review.csv (plant_id, verdict, evidence_url, note) and is
 merged in; every other row is "unverified".
 
@@ -145,7 +146,7 @@ def scan(g: pd.DataFrame, sites: pd.DataFrame, radius_km: float, epa: set[int], 
             n_generators=len(pg), nameplate_mw=round(float(cap.sum()), 1), technologies=tech, statuses=statuses, first_operation=first_txt,
             flag_near=bool(near), nearest_site=d.site_id, nearest_site_name=d["name"], nearest_site_class=d.site_class, distance_km=round(float(d.km), 2),
             flag_keyword="; ".join(kws),
-            epa_hourly="yes (eGRID 2023)" if int(pid) in epa else "unknown: not in eGRID 2023 (new plant or non-reporting); needs the CAMPD facility list, EPA key",
+            epa_hourly="in eGRID 2023; hourly EPA reporting not checked" if int(pid) in epa else "unknown: not in eGRID 2023 (new plant or non-reporting); needs the CAMPD facility list, EPA key",
             verdict=rv.get("verdict", "unverified"), evidence_url=rv.get("evidence_url", ""), review_note=rv.get("note", ""),
         ))
     out = pd.DataFrame(rows)
