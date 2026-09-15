@@ -32,7 +32,7 @@ daily demand cycles while training runs near-flat for weeks, so it needs several
 | Question | Method | Time resolution | US today | China today |
 |---|---|---|---|---|
 | Where is it? | Inventory, plus Sentinel-1 radar and Sentinel-2 change scans | New since 2021 | 88 sites | 42 sites, including 27 radar-found structures: 3 reviewed as data-hall complexes, 24 unclear; 12 rejected after review |
-| When did each building go up? | Sentinel-2 roof brightness and Sentinel-1 radar | Monthly | Dated buildings at 69 sites | Dated buildings at 45 sites, mostly by radar |
+| When did each building go up? | Sentinel-2 roof brightness and Sentinel-1 radar | Monthly | Dated buildings at 69 sites | Dated buildings at 33 sites, mostly by radar |
 | When did it start running? | VIIRS night lights | Monthly | No direct signal: lights rise during construction, not at start-up | No signal: parks were already lit |
 | What is its capacity? | Filings, utility and operator statements, Epoch AI estimates | When documents change | 75 sites, 67 of them Epoch AI estimates | 5 sites: two supercomputers' measured peaks and three Epoch AI estimates |
 | How much is in use, electrically? | Annual electricity divided by capacity for the same period | Annual | 1 site: ORNL's Frontier averaged about 0.54 of its measured peak in 2023 | None |
@@ -66,6 +66,10 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
 4. **Deliver against the acceptance line.** A negative result with numbers is a full delivery. Follow `CONTRIBUTING.md`.
 5. **Hand off.** Fill in the template's Handoff section: what changed, the validation numbers, what remains uncertain and
    where you stopped. Append a dated entry to `docs/LOG.md` and mark the pull request ready for review.
+6. **Get on the leaderboard.** Report the tokens the work used in the template's Donation section, measured as the
+   "Token leaderboard" section of `CONTRIBUTING.md` describes. They are added to the
+   [token leaderboard](https://openobservatory.info/leaderboard.html) when the pull request is merged. Counts are
+   self-reported, and you can choose to be listed as anonymous.
 
 A claims workflow labels each claim. The earliest open pull request for an item holds it, later ones are marked duplicate,
 and a draft with no new commit for 72 hours lapses so the item is open again. A pull request ready for review never lapses.
@@ -81,7 +85,8 @@ Claim it at once: push a branch with an empty commit and open a draft pull reque
 Keep every number traceable to a public source and a script. Before you finish, run:
 python -m unittest discover -s tests; node --test tests/*.test.cjs; python tools/refresh.py --dry-run
 Record the result in docs/LOG.md, including negative results, fill in the template's Handoff section with what changed,
-validation numbers, remaining uncertainty and where you stopped, then mark the pull request ready for review.
+validation numbers, remaining uncertainty and where you stopped, report the session's total tokens in the Donation section,
+then mark the pull request ready for review.
 ```
 
 **Keys:** `none` needs nothing; `EE` needs Google Earth Engine, free for non-commercial research with your own Cloud project;

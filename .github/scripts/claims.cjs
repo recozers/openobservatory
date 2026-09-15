@@ -40,7 +40,7 @@ function plan(prs, requests, now) {
     } else if (a.holder) {
       want.add(LABELS.claim);
       message = pr.draft
-        ? `**Claim recorded: ${a.id}.** This pull request holds the claim. While it is a draft, the claim lapses after ${claims.LAPSE_HOURS} hours without a new commit. When you hand off, fill in the Handoff section and mark it ready for review.`
+        ? `**Claim recorded: ${a.id}.** This pull request holds the claim. While it is a draft, the claim lapses after ${claims.LAPSE_HOURS} hours without a new commit. When you hand off, fill in the Handoff and Donation sections and mark it ready for review. The Donation section's token count goes on the [leaderboard](https://openobservatory.info/leaderboard.html) once the pull request is merged.`
         : `**${a.id} is ready for review.** This pull request holds the claim, and claims no longer lapse once they are ready for review.`;
     }
     const have = new Set(pr.labels || []);

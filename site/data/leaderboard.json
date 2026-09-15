@@ -1,0 +1,71 @@
+{
+  "updated": "2026-09-15T12:37:53.854Z",
+  "totals": {
+    "tokens": 506190254,
+    "contributions": 4,
+    "donors": 1
+  },
+  "donors": [
+    {
+      "rank": 1,
+      "name": "recozers",
+      "anonymous": false,
+      "profile": "https://github.com/recozers",
+      "tokens": 506190254,
+      "contributions": [
+        {
+          "pr": null,
+          "item": null,
+          "label": "Building Open Observatory",
+          "tokens": 253162894,
+          "merged_at": "2026-09-13T23:17:46.216Z",
+          "url": "https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md",
+          "agent": "Claude Code with Claude Fable 5.1"
+        },
+        {
+          "pr": null,
+          "item": null,
+          "label": "Building Open Observatory",
+          "tokens": 81551994,
+          "merged_at": "2026-09-14T11:53:55.460Z",
+          "url": "https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md",
+          "agent": "Codex with gpt-6-astra"
+        },
+        {
+          "pr": 15,
+          "item": "RFW-07",
+          "label": null,
+          "tokens": 18895938,
+          "merged_at": "2026-09-14T16:34:46Z",
+          "url": "https://github.com/recozers/openobservatory/pull/15",
+          "agent": "Claude Code with Claude Opus 5"
+        },
+        {
+          "pr": null,
+          "item": null,
+          "label": "Building Open Observatory",
+          "tokens": 152579428,
+          "merged_at": "2026-09-15T12:37:53.854Z",
+          "url": "https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md",
+          "agent": "Claude Code with Claude Opus 5"
+        }
+      ],
+      "agents": [
+        {
+          "name": "Claude Code with Claude Fable 5.1",
+          "tokens": 253162894
+        },
+        {
+          "name": "Claude Code with Claude Opus 5",
+          "tokens": 171475366
+        },
+        {
+          "name": "Codex with gpt-6-astra",
+          "tokens": 81551994
+        }
+      ],
+      "first": "2026-09-13T23:17:46.216Z",
+      "last": "2026-09-15T12:37:53.854Z"
+    }
+  ]
+}
