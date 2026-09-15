@@ -52,7 +52,8 @@ its corrections section.
   eastern hub boxes, placed from approximate coordinates, produced none.
 - **Fuel burned on site, validated in the US only.** TROPOMI NOx flux, calibrated against five EPA-monitored coal plants,
   measures generation at one campus so far, Colossus 2. Quarterly figures carry about ±20 % and megawatts are uncertain by
-  2 to 3 times. None of 31 campuses without known on-site generation showed a plume. China has no public hourly plant data to
+  2 to 3 times. None of 31 campuses without known on-site generation showed a plume at the documented start, though a
+  season-matched test puts one, Microsoft Goodyear, at 3.1σ. China has no public hourly plant data to
   calibrate against.
 - **Electricity use comes only from operators.** Meta reports annual electricity for 18 campuses. Google's published water
   use gives an approximate load for 12 more: checked against Meta's electricity, the middle half of mature campuses fall
