@@ -671,3 +671,23 @@ Branch `rfw/20-eia860m` from main.
   adjacent plants (RFW-15, RFW-16).
 - Tests: `tests/test_eia860m_scan.py` (5): near and keyword flags with the review merge, whole-word keyword matching,
   aggregation of a plant's generators, haversine, and consistency of the committed candidates, summary and review file.
+
+## 2026-09-15 (Claude): second batch of donated pull requests merged
+
+Three more from @ric897, reviewed and merged. The Donations workflow recorded each with its dollar value at API list prices.
+
+| Pull request | Item | Tokens | API value |
+|---|---|---|---|
+| 20 | RFW-31, tests for the load precedence rules | 4,033,095 | $3.17 |
+| 21 | RFW-19, Microsoft's FY25 metro table | 7,235,917 | $4.66 |
+| 22 | RFW-20, EIA-860M generator scan | 7,414,673 | $4.27 |
+
+- Pull request 20: the 28 tests were run in a separate worktree. They left the repository untouched and passed with the full
+  suite.
+- Pull request 21: checked against the source. The fact sheet's SHA-256 matched the recorded value. The Boydton, Des
+  Moines, San Antonio, Phoenix, Dublin, Quincy, Atlanta and Singapore rows, and Table 13's 37,026,353 MWh, matched the PDF
+  exactly. Every metro stays context, and `tools/ingest_disclosures.py` skips the metro IDs, so no site load changed.
+- Pull request 22: maintainer fix. Four plants found in `data/egrid/plants_2023.csv` were labelled `yes (eGRID 2023)` for
+  hourly EPA reporting. eGRID lists plants whether or not they report hourly to CAMPD, so the label now says hourly
+  reporting was not checked. No verdict depended on it.
+- Each branch had main merged in before merging. Checks passed on every final commit.
