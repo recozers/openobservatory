@@ -352,3 +352,26 @@ backscatter plateau; the onset of the rise sits 0 to 6 months earlier (median 2 
 their whole window inside one quarter), and the rule has been checked only against Sentinel-2 roof dates at Abilene, never
 against construction records. One structure, `cn_horinger_r21`, dates to 2020Q1, before the 2021 to 2026 scan window it was
 found in, and stays in the file flagged. New parks from RFW-02 extend the index only after they are scanned and reviewed.
+
+## Plume test, start date and season, 15 Sep 2026 (RFW-14)
+
+The plume test compares all downwind-minus-upwind days after the documented start with all days before it, so a campus whose
+start falls in spring is compared against a baseline weighted towards winter, when NO₂ columns are highest. `season_zscore`
+in `tools/plume_batch.py` compares each calendar month's after-days with the same month's before-days and combines months by
+inverse variance. `python tools/plume_batch.py --sensitivity` runs both tests for the 33 tested sites and their 62 control
+points at the documented start and at every month within three months of it (`results_no2/plume_date_sensitivity.csv`).
+
+- Spring-start negatives shrink: Rosemount −3.26σ to −0.17σ, Ridgeland −3.45σ to −1.60σ, Mesa −1.12σ to +0.28σ, Kuna
+  −2.03σ to −1.60σ.
+- Colossus 2 stays at 9.1σ (9.8σ before), and above 7.8σ at every start date tried. Abilene: 3.0σ at the documented start,
+  2.3σ one month earlier, 2.6 to 3.1σ otherwise; the current test gives 2.8σ and 2.3σ, so the one-month sensitivity is real.
+- Controls: none of 62 reach 2.5σ at the documented date under either test. Over the seven start dates, one control reaches
+  2.53σ under the current test and none under the season-matched one (maximum 2.48σ). The standard deviation of control
+  z-scores falls from 1.38 to 1.22, still above 1, so daily values are not independent and 2.5σ is not a 0.6 % tail.
+- New: Microsoft Goodyear rises from 2.07σ to 3.14σ and exceeds 2.5σ at six of seven start dates. No on-site generation is
+  known there; the campus is on the fast-growing western edge of Phoenix, so a city-edge plume (RFW-15) is the first thing to
+  rule out.
+
+Recommendation: switch `build_status.py` to the season-matched test, keep 2.5σ, and call combustion "detected" only when the
+documented start and the months either side all clear it; that keeps Colossus 2, drops Abilene (2.34σ one month early),
+and would admit Goodyear, which is why the switch waits for the near-field check. Not changed on the site in this pull request.

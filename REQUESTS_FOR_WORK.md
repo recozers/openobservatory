@@ -282,7 +282,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 | ID | Request | Answers | Size | Keys | Status |
 |---|---|---|---|---|---|
-| [RFW-14](#rfw-14-make-the-plume-test-robust-to-start-date-and-season) | Make the plume test robust to start date and season | Utilisation | S | none | open |
+| [RFW-14](#rfw-14-make-the-plume-test-robust-to-start-date-and-season) | Make the plume test robust to start date and season | Utilisation | S | none | open: season-matched test and date sensitivity delivered; the site still uses the current test until the Goodyear result is understood |
 | [RFW-15](#rfw-15-near-field-plume-test-for-plants-on-a-citys-edge) | Near-field plume test for plants on a city's edge | Utilisation | M | EE, EPA | open |
 | [RFW-16](#rfw-16-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Utilisation | M | none | open |
 | [RFW-17](#rfw-17-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Utilisation | M | EE | open |
@@ -297,8 +297,19 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-14 Make the plume test robust to start date and season
 
-- **Why:** Abilene reaches 2.8σ with its documented start and 2.3σ with a start one month earlier, and several sites with
-  spring starts show strongly negative z-scores. The test compares unmatched seasons and depends on one date.
+- **Done so far:** pull request 19 added `season_zscore` and a `--sensitivity` mode to `tools/plume_batch.py`, and
+  `results_no2/plume_date_sensitivity.csv` holds both tests for all 33 sites and 62 control points at seven start dates
+  (documented and ±1 to 3 months). The season-matched test compares after-days with before-days of the same calendar month
+  and combines months by inverse variance. It shrinks the spring-start negatives (Rosemount −3.26σ to −0.17σ, Ridgeland
+  −3.45σ to −1.60σ, Mesa −1.12σ to +0.28σ), leaves Colossus 2 at 9.1σ, and puts Abilene at 3.0σ at its documented start
+  but 2.3σ one month earlier under either test. Control points: none of 62 reach 2.5σ at the documented date under either
+  test; across all seven start dates one control reaches 2.53σ under the current test and none under the season-matched
+  (max 2.48σ; standard deviation of control z-scores 1.22 against 1.38). One campus without known on-site generation,
+  Microsoft Goodyear, moves from 2.07σ to 3.14σ and stays above 2.5σ at six of seven start dates.
+- **Recommendation:** adopt the season-matched test and keep 2.5σ, but require the score at the documented start and at
+  the months either side to all exceed it before the site says "detected"; on that rule Colossus 2 passes, Abilene does not
+  (2.34σ one month early), and Goodyear passes, which is why the site has not switched yet: Goodyear sits on the growing
+  western edge of Phoenix, so a city-edge plume (RFW-15) is the first explanation to rule out, with the near-field test.
 - **Do:** Using the saved daily series in `results_no2/<site>.csv`, add a season-matched version of the test and report each
   site's z-score across start dates within three months of the documented one. Re-run the 62 control points the same way.
 - **Deliver:** The revised test in `tools/plume_batch.py`, per-site date sensitivity in a results file, and a recommendation on
@@ -822,7 +833,8 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
   usable days a month, quarterly figures carry about ±20 % statistical uncertainty and single months ±20 to 50 %. The
   calibration factor, 4.41 ± 0.18, comes from five US tall-stack coal plants with ±19 % plant-to-plant scatter; gas-turbine
   references are not yet qualified, so the megawatt range is too wide to give a utilisation ratio. None of 31 campuses
-  without known on-site generation reached 2.5σ, and none of 62 control points did. **China:** no public hourly plant data to
+  without known on-site generation reached 2.5σ, and none of 62 control points did; under the season-matched test of
+  RFW-14 one campus, Microsoft Goodyear on the edge of Phoenix, reaches 3.1σ and the controls still stay below 2.5σ. **China:** no public hourly plant data to
   calibrate against, and no hub campus is known to generate on site.
 - **Operator-reported electricity** (`tools/ingest_disclosures.py`). Meta's Environmental Data Index gives annual electricity
   for 18 campuses from 2011 to 2024; the 2024 figures appeared in October 2025. The site shows the 2024 average and carries it
@@ -867,7 +879,8 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
   candidates of 5 ha or more, none scored as hall-like. The box centres were approximate and the classifier has not seen
   multi-storey buildings, so this does not show there is nothing to find. See RFW-02 and RFW-11.
 - **Abilene's plume.** 2.8σ at the documented July 2025 start and 2.3σ a month earlier, with emission-controlled turbines whose
-  flux is too small to convert to megawatts. See RFW-14.
+  flux is too small to convert to megawatts. The season-matched test (RFW-14) gives 3.0σ at the documented start and 2.3σ a
+  month earlier, so the start-date sensitivity is not a seasonal artefact.
 - **Gas-turbine calibration plants.** Three candidates gave calibration factors from 0.89 to 4.83; stack heights, isolation and
   overpass alignment are unverified. See RFW-16.
 - **NO₂ from power plants next to Chinese hubs.** Usable as an activity index only at Ulanqab; the Horinger and Chongqing series
@@ -899,6 +912,8 @@ Please do not repeat these without a new idea.
   new halls were being built on the campus.
 - **NO₂ at campuses without on-site generation.** None of 31 reached 2.5σ; the highest was 2.09. None of 62 control points
   reached 2.5σ either.
+  Season-matched (RFW-14): still none of 62 control points at any of seven start dates, but Microsoft Goodyear reaches
+  3.1σ, unexplained; the spring-start negatives shrink (Rosemount −3.3σ to −0.2σ, Ridgeland −3.5σ to −1.6σ), so they were largely seasonal.
 - **A campus beside large power plants.** Colossus 1's turbine phase came out at 62 ± 63 kg NOx/h after regressing out the two
   neighbouring plants' hourly EPA emissions over 594 days.
 - **The box flux method at a city's edge.** At Dublin's Grange Castle it gave 964 ± 96 kg NOx/h with winter peaks and a fitted

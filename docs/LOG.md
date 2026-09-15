@@ -571,3 +571,21 @@ finished ones came from @ric897 and were merged. The Donations workflow recorded
 - RFW-03 and RFW-32 are marked done. RFW-01 stays open for its 24 unclear entries. Pull request 19, ric897's draft claim on
   RFW-14, stays open.
 
+## 2026-09-15 (donated session, Claude): RFW-14, plume test robust to start date and season (pull request 19)
+
+Branch `rfw/14-plume-season` from main.
+
+- `tools/plume_batch.py`: `season_zscore` (after-days against before-days of the same calendar month, at least five days
+  each, inverse-variance combination across months) and `--sensitivity`, which re-reads the saved daily series for the 33
+  sites and 62 control points in `results_no2/plume_batch_zscores_by_series.csv` at seven start dates (documented, ±1 to 3
+  months) under both tests and writes `results_no2/plume_date_sensitivity.csv` (665 rows). No Earth Engine.
+- Numbers: controls 0 of 62 at 2.5σ at the documented date under both tests; over all seven dates 1 of 62 (2.53σ) under the
+  current test, 0 of 62 (max 2.48σ) under the season-matched one; control sd 1.38 to 1.22. Spring-start negatives
+  (Rosemount, Ridgeland, Kuna, Mesa) shrink towards zero. Colossus 2 9.84σ to 9.12σ. Abilene 2.80σ to 2.99σ at the
+  documented start, 2.34σ a month earlier under both. Microsoft Goodyear 2.07σ to 3.14σ, above 2.5σ at six of seven dates,
+  with no known on-site generation: flagged, not explained.
+- Recommendation written into RFW-14 and `docs/MVP.md`: adopt the season-matched test, keep 2.5σ, require the documented
+  start and the months either side to all clear it. `build_status.py` is unchanged until Goodyear is checked (RFW-15).
+- Tests: `tests/test_plume_season.py` (4): a synthetic seasonal cycle with a spring start fools the current test (below
+  −2.5σ) and not the season-matched one; a real step is found by both; a short series returns Nones; the committed
+  sensitivity file reproduces the recorded per-series z-scores at offset 0 within 0.01.
