@@ -22,3 +22,4 @@ openpyxl==3.1.5
 # optional
 # tabpfn>=2.0               # secondary learner; needs model weights from Hugging Face
 # playwright==1.62.0        # screenshot check of the static site
+# pypdf>=5                 # tools/microsoft_metro_table.py reads the Microsoft data fact sheet PDF

@@ -1,0 +1,30 @@
+site_id,region,location,country,electricity_mwh,avg_mw,water_withdrawal_ml,non_potable_pct,pools,replenishment_ml,replenishment_flag,inventory_campuses,attribution
+microsoft_auckland,Asia Pacific,Auckland,New Zealand,19465,2.2,,,,,,,context: no inventory campus in this metro
+microsoft_busan,Asia Pacific,Busan,South Korea,196701,22.5,7,,3,,,,context: no inventory campus in this metro
+microsoft_jakarta,Asia Pacific,Jakarta,Indonesia,22172,2.5,84,,33,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_kuala_lumpur,Asia Pacific,Kuala Lumpur,Malaysia,19971,2.3,23,,9,,,,context: no inventory campus in this metro
+microsoft_melbourne,Asia Pacific,Melbourne,Australia,12821,1.5,9,,3,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_singapore,Asia Pacific,Singapore,Singapore,338845,38.7,423,99,169,,,,context: no inventory campus in this metro
+microsoft_sydney,Asia Pacific,Sydney,Australia,7704,0.9,8,,3,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_taipei,Asia Pacific,Taipei,Taiwan,81671,9.3,4,,2,,,,context: no inventory campus in this metro
+microsoft_copenhagen,Europe,Copenhagen,Denmark,29964,3.4,3,,1,,,,context: no inventory campus in this metro
+microsoft_dublin,Europe,Dublin,Ireland,1308581,149.4,18,,7,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory Microsoft campus (Grange Castle is in the inventory only through the NO2 flux work); useful against Ireland's official total in data/regional_dc_load.csv
+microsoft_gavle_sandviken,Europe,Gävle – Sandviken,Sweden,704549,80.4,14,,6,,,,context: no inventory campus in this metro
+microsoft_hollands_kroon,Europe,Hollands Kroon,Netherlands,1291170,147.4,46,,18,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_madrid,Europe,Madrid,Spain,22588,2.6,15,,6,515,,,context: no inventory campus in this metro
+microsoft_malmo,Europe,Malmo,Sweden,41681,4.8,1,,1,,,,context: no inventory campus in this metro
+microsoft_milan,Europe,Milan,Italy,46989,5.4,6,,2,,,,context: no inventory campus in this metro
+microsoft_vienna,Europe,Vienna,Austria,13849,1.6,4,,1,,,,context: no inventory campus in this metro
+microsoft_warsaw,Europe,Warsaw,Poland,82613,9.4,2,,1,,,,context: no inventory campus in this metro
+microsoft_ashburn,Americas,Ashburn (VA),United States of America,828925,94.6,239,,95,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_atlanta,Americas,Atlanta (GA),United States of America,11718,1.3,19,,7,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",epoch_microsoft_fairwater_atlanta,"context: Fairwater Atlanta went live in October 2025, after FY25, so this small row is Microsoft's other Atlanta capacity, not Fairwater"
+microsoft_boydton,Americas,Boydton (VA),United States of America,3113847,355.5,362,,145,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,"context: effectively one campus (Microsoft's Boydton site), but no inventory campus yet; a candidate for RFW-18 with sourced coordinates and polygons"
+microsoft_cheyenne,Americas,Cheyenne (WY),United States of America,1091460,124.6,188,,75,61,,,context: no inventory Microsoft campus; the Cheyenne inventory sites are Meta's and the Project Jade generator watch
+microsoft_chicago,Americas,Chicago (IL),United States of America,369328,42.2,204,,81,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,"context: no inventory campus; Fairwater (Mount Pleasant, WI) is 100 km north and was not operating in FY25"
+microsoft_des_moines,Americas,Des Moines (IA),United States of America,2152335,245.7,264,,105,122,,epoch_microsoft_project_osmium,"context: the Des Moines metro holds several West Des Moines campuses (Project Osmium is one), so the row is an upper bound for Osmium, not its load"
+microsoft_east_wenatchee,Americas,East Wenatchee (WA),United States of America,299727,34.2,51,,20,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_manassas,Americas,Manassas (VA),United States of America,39968,4.6,11,,4,,"* priority replenishment location, no volumetric benefit yet (expected by FY30)",,context: no inventory campus in this metro
+microsoft_phoenix,Americas,Phoenix (AZ),United States of America,954206,108.9,981,,392,2675,,epoch_microsoft_goodyear,"context: the Phoenix metro holds several Microsoft campuses (Goodyear and El Mirage among them), so the row is an upper bound for Goodyear, not its load"
+microsoft_queretaro,Americas,Queretaro,Mexico,6362,0.7,19,,8,1119,,,context: no inventory campus in this metro
+microsoft_quincy,Americas,Quincy (WA),United States of America,1381569,157.7,1292,74,517,833,,,context: no inventory campus in this metro
+microsoft_san_antonio,Americas,San Antonio (TX),United States of America,1440710,164.5,420,79,168,922,,epoch_microsoft_sat14;epoch_microsoft_sat40,"context: the San Antonio metro holds SAT14, SAT40 and Microsoft's older Westover Hills campus, so the row is an upper bound for either inventory campus, not its load"
