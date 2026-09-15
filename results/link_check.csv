@@ -1,0 +1,376 @@
+url,status,final_url,archive_url,archive_ts,note,n_files,used_in,checked_at
+http://103.203.219.138:6666/hb/login,error,,http://web.archive.org/web/20220709204149/http://103.203.219.138:6666/hb/login,20220709204149,ConnectTimeout,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+http://111.62.218.180:9920/,error,,http://web.archive.org/web/20250521220155/http://111.62.218.180:9920/,20250521220155,ConnectTimeout,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+http://119.84.149.34:20003/publish2_pub/dataSearchPub/entList.aspx,error,,,,ConnectTimeout,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+http://125.74.7.100:8111/pollutionMonitor/publishmap.action,404,,http://web.archive.org/web/20240612014411/http://125.74.7.100:8111/pollutionMonitor/publishmap.action,20240612014411,,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+http://39.145.0.253:8081/gfwry/gfwryindex,error,,,,ConnectTimeout,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+http://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260324/a5332b5875774b298ffa4807c14d8f4c.PDF,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+http://osm.org/copyright,200,https://www.openstreetmap.org/copyright,,,,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+http://paper.people.com.cn/rmrb/pc/content/202501/16/content_30052326.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+http://www.cq.gov.cn/ywdt/jrcq/202405/t20240527_13236651_app.html,error,,,,ConnectionError,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+http://www.jjckb.cn/2021-04/02/c_139854619.htm,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+http://xinpi.zqrb.cn/pdf/SH/600050/2026/0320/0f06cbdc9d2d5549e80beb6e4967a508.pdf,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://222.75.41.50:30000/xxgk/,error,,,,ConnectTimeout,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://23712035.hs-sites.com/hubfs/SINES_02.PDF.pdf?hsCtaAttrib=199407154715,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://apps.mesaaz.gov/meetingarchive/ArchiveDocuments/ClerkDetailedMinutes/February%2012%2C%202026%20STY.pdf,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://apps.wrd.state.or.us/apps/wr/wateruse_query/wr_wur_entity_report.aspx?directory_id=106207,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://archive.is/8CFXN,429,,,,blocked or rate-limited (429): the page may exist; check by hand,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://archive.ph/bJDHl,429,,,,blocked or rate-limited (429): the page may exist; check by hand,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://archive.sltrib.com/article.php?id=2118801&itype=CMSID,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://archive.sltrib.com/article.php?id=56493868&itype=CMSID,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://archive.sltrib.com/article.php?id=57866849&itype=CMSID,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://baike.baidu.com/item/%E8%A5%BF%E9%83%A8%E4%BA%91%E5%9F%BA%E5%9C%B0%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83/13831155,,,,,skipped: robots.txt disallows,1,data/sites.csv,2026-09-15T12:59Z
+https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/waltham-cross-data-centre/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://bulkinfrastructure.com/newsroom/bulk-data-centers-unveils-plan-for-data-center-expansion-following-unprecedented-demand,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://bulkinfrastructure.com/newsroom/coreweave-partners-with-bulk-infrastructure,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf,200,,,,,1,data/water_derived_loads.csv,2026-09-15T12:59Z
+https://cityoflenoir.com/Archive/ViewFile/Item/140,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://cityofprineville.com/sites/default/files/fileattachments/finance/page/92/4th_quarter_report_6-30-20.pdf,404,https://www.cityofprineville.com/sites/default/files/fileattachments/finance/page/92/4th_quarter_report_6-30-20.pdf,http://web.archive.org/web/20230803024009/https://cityofprineville.com/sites/default/files/fileattachments/finance/page/92/4th_quarter_report_6-30-20.pdf,20230803024009,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://clarksvilletn.gov/Archive.aspx?AMID=54,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://cloud.heimalanshi.com/Uploads/pecc/File/202502/10/173915716423/%E5%8D%81%E5%B9%B4%E5%9C%A8%E7%BA%BF%E7%9B%91%E6%B5%8B%E4%BF%A1%E6%81%AF%E5%85%AC%E5%BC%80%EF%BC%8C%E5%85%B1%E7%BB%98%E7%A2%A7%E6%B0%B4%E8%93%9D%E5%A4%A9.pdf,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://cms.eirgrid.ie/sites/default/files/publications/AIRAA-2026-2035_Ireland.pdf,200,,,,,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://cn.chinadaily.com.cn/a/202308/23/WS64e5590da3109d7585e4a5b4.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://content.govdelivery.com/accounts/OHPUC/bulletins/4077fa5,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://corridorbusiness.com/scope-of-qts-data-project-in-cedar-rapids-continuing-to-grow/,403,,http://web.archive.org/web/20251204194955/https://corridorbusiness.com/scope-of-qts-data-project-in-cedar-rapids-continuing-to-grow/,20251204194955,blocked or rate-limited (403): the page may exist; check by hand,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://creativecommons.org/licenses/by/4.0/,200,,,,,1,data/epoch/map_annotations.json,2026-09-15T12:59Z
+https://d1io3yog0oux5.cloudfront.net/_68280da94b2098ec46fcbe3f4628ea40/corescientific/db/1066/11282/pdf/Q2+FY26+earnings+deck+7.28+AM.pdf,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://d1io3yog0oux5.cloudfront.net/_68280da94b2098ec46fcbe3f4628ea40/corescientific/db/1085/11265/presentation/Q4+FY25+earnings+deck+vfinal.2+PDF.pdf,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://datacenters.atmeta.com/richland-parish-data-center/,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://datacenters.google/locations/nebraska/,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://datacenters.microsoft.com/sustainability/efficiency/,200,,,,,2,data/operator_disclosures.csv;data/water_derived_loads.csv,2026-09-15T12:59Z
+https://developer.aliyun.com/article/60956,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-regions.html,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://docs.oracle.com/en-us/iaas/releasenotes/oci/new-region-batam.htm,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://drive.google.com/file/d/1ft2ZzqAYZtsTqMwyML4eo_EFYuclVxE6/view?usp=sharing,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@29.4149522,-98.80304495,292.48816289a,1532.49619452d,35y,0h,0t,0r/",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@29.476115,-98.68118,277.21295794a,724.52967601d,35y,0h,0t,0r/",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@32.53855187,-96.7936939,182.71625265a,4648.56607908d,30.00094375y,3.66969189h,0t,0r/",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@33.35450568,-111.67805903,407.02398359a,2119.1496037d,35y,-0h,0t,0r/data=ChYqEAgBEgoyMDI1LTAzLTAyGAFCAggBQgIIAEoNCP___________wEQAA",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.48033002,-77.25002949,65.53442036a,2152.9927926d,30.00094375y,-0.00000001h,0.59169466t,0r/data=CgwqBggBEgAYAUICCAEyKQonCiUKITFZU1hJZlBmRzJ1dUxibWdQOTJzY05sTVB6cXVUZFVXZyABOgMKATBCAggASggIw4mB_QIQAQ",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.48350155,-77.25010039,60.24751599a,83.68032361d,30.00094375y,3.66969189h,0t,0r/data=CgwqBggBEgAYAUICCAEyKQonCiUKITFZU1hJZlBmRzJ1dUxibWdQOTJzY05sTVB6cXVUZFVXZyABOgMKATBCAggASggIw4mB_QIQAQ",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.48655608,-77.24244153,55.96289131a,2859.52501034d,30.00094375y,0h,0.5917603t,0r/data=ChYqEAgBEgoyMDI0LTA2LTIzGAFCAggBMikKJwolCiExWVNYSWZQZkcydXVMYm1nUDkyc2NObE1QenF1VGRVV2cgAToDCgEwQgIIAEoICMOJgf0CEAE",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.48673632,-77.24119214,61.15398527a,3616.77426559d,30.00094375y,0.00000001h,0.59183057t,0r/data=CgwqBggBEgAYAUICCAEyKQonCiUKITFZU1hJZlBmRzJ1dUxibWdQOTJzY05sTVB6cXVUZFVXZyABOgMKATBCAggASggIw4mB_QIQAQ",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.48747566,-77.2485616,47.03705985a,2549.72172121d,30.00094375y,3.66969189h,0t,0r/data=ChYqEAgBEgoyMDI1LTExLTE5GAFCAggBMikKJwolCiExWVNYSWZQZkcydXVMYm1nUDkyc2NObE1QenF1VGRVV2cgAToDCgEwQgIIAEoICMOJgf0CEAE",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.4875167,-77.24806799,43.67572425a,2395.6622579d,30.00094375y,3.66969189h,0t,0r/data=ChYqEAgBEgoyMDI0LTAyLTA2GAFCAggBMikKJwolCiExWVNYSWZQZkcydXVMYm1nUDkyc2NObE1QenF1VGRVV2cgAToDCgEwQgIIAEoICMOJgf0CEAE",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@37.48913637,-77.24705465,44.31788662a,1464.06665017d,30.00094375y,3.66969189h,0t,0r/data=ChYqEAgBEgoyMDIzLTExLTAyGAFCAggBMikKJwolCiExWVNYSWZQZkcydXVMYm1nUDkyc2NObE1QenF1VGRVV2cgAToDCgEwQgIIAEoICMOJgf0CEAE",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@39.4948785,-119.43174359,1568.8659293a,562.69639351d,35y,-0h,0t,0r/",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@39.49733738,-119.43113543,1552.05877612a,1467.7067385d,35y,0h,0t,0r/",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/@39.72490515,-82.68845499,280.4138206a,1128.806013d,35y,-0h,0t,0r/data=CnUaXRJXCiUweDg4NDc4OWI3MDRhZGE1MWQ6MHg0Y2Q1MjE2ZGM0YTQ0YTc5GSZeVEH73ENAISDkBo2qq1TAKhwxMDQgV2hpbGV5IFJkLCBMYW5jYXN0ZXIsIE9IGAIgASoQCAESCjIwMjMtMDUtMTAYAUICCAFCAggASg0I____________ARAA",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/search/38%c2%b044%2745%2e12%22N+77%c2%b032%2716%2e47%22W/@38.7458667,-77.5379083,83.89135729a,642.01325639d,35y,0h,0t,0r/data=CjQiJgokCTo0Rh9P7TVAETk0Rh9P7TXAGX6C6a6li0VAIQ_0AAa-ik7AKgYIARIAGAFCAggBQgIIAEoNCP___________wEQAA",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+"https://earth.google.com/web/search/Berwick,+PA/@41.08459175,-76.14321499,203.05778839a,756.59305105d,35y,0h,0t,0r/data=CiwiJgokCYCDFkPTLDRAEX6DFkPTLDTAGUGoL_2-pEVAIRNn30rGL03AQgIIAUICCABKDQj___________8BEAA",,,,,"skipped: Google Earth viewer link, not a source",1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://econews.pt/2025/03/24/start-campus-to-start-construction-of-second-data-centre-building-in-sines-by-end-june/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://en.wikipedia.org/wiki/Colossus_(data_center),200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://en.wikipedia.org/wiki/Utah_Data_Center,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://epoch.ai/data-insights/fairwater-power-usage,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://epoch.ai/data/ai-data-centers,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://epoch.ai/data/ai-data-centers/map,200,,,,,2,data/epoch/map_annotations.json;data/epoch/validation.json,2026-09-15T12:59Z
+https://fairfieldenergycenter.com/home/data-center-power-supply,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://fermiamerica.com/,200,,,,,2,data/generator_watchlist.csv;data/onsite_generation.csv,2026-09-15T12:59Z
+https://finance.sina.com.cn/jjxw/2024-04-29/doc-inatncei1543887.shtml,200,,,,TLS certificate not trusted by this client (common for Chinese government hosts); content not verified,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://finance.sina.com.cn/jjxw/2024-10-12/doc-incshhpi0582292.shtml,200,,,,TLS certificate not trusted by this client (common for Chinese government hosts); content not verified,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://firmus.co/newsroom/southgate-expansion,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://fzggw.cq.gov.cn/zwgk/zfxxgkml/sphzbaxx/202010/t20201019_8033213.html,error,,,,SSLError,1,data/china_project_documents.json,2026-09-15T12:59Z
+https://fzggw.cq.gov.cn/zwgk/zfxxgkml/sphzbaxx/202406/t20240606_13270491_wap.html,error,,,,SSLError,2,data/china_project_documents.json;data/sites.csv,2026-09-15T12:59Z
+https://fzggw.nx.gov.cn/zzb/xzsp/202411/t20241114_4726940.html,200,,,,,1,data/china_project_documents.json,2026-09-15T12:59Z
+https://gansu.gansudaily.com.cn/system/2025/02/19/031139717.shtml,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://gdee.gd.gov.cn/wryml/content/post_3841259.html,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://github.com/recozers/openobservatory/blob/main/results_no2/colossus1_subtraction.json,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://gxt.hebei.gov.cn/sme/zx/gzdt9/2025042122120672072/index.html,error,,,,SSLError,2,data/china_project_documents.json;data/sites.csv,2026-09-15T12:59Z
+https://gxt.hebei.gov.cn/sme/zx/snxw34/2025061817183987933/index.html,error,,,,SSLError,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://gzw.wuhu.gov.cn/xwzx/gzyw/8927779.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://he.spb.gov.cn/hbsyzglj/c100756/c100761/202301/a4d2168913aa4dbabe461202d0ededd4.shtml,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://info.ornl.gov/sites/publications/Files/Pub207081.pdf,200,,,,,2,data/capacity_timeline.csv;data/operator_disclosures.csv,2026-09-15T12:59Z
+https://info.ornl.gov/sites/publications/Files/Pub225618.pdf,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/,error,,http://web.archive.org/web/20260512185530/https://insidelines.pjm.com/2025-year-in-review-planning-prepares-for-burgeoning-electricity-demand/,20260512185530,ConnectionError,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://investor.galaxy.com/news/news-details/2025/Galaxy-Announces-Commitment-with-CoreWeave-to-Host-Additional-Artificial-Intelligence-and-High-Performance-Computing-Infrastructure-at-Helios-Data-Center-Campus/default.aspx,404,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investor.galaxy.com/news/news-details/2025/Galaxy-Announces-Third-Quarter-2025-Financial-Results/default.aspx,404,,http://web.archive.org/web/20251125183642/https://investor.galaxy.com/news/news-details/2025/Galaxy-Announces-Third-Quarter-2025-Financial-Results/default.aspx,20251125183642,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.corescientific.com/news-events/press-releases/detail/74/core-scientific-to-provide-approximately-200-mw-of-infrastructure-to-host-coreweaves-high-performance-computing-services-capturing-significant-ai-compute-opportunity,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.corescientific.com/news-events/press-releases/detail/99/core-scientific-and-port-muskogee-break-ground-on-100-mw-hpc-data-center,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001140361-25-039864/0001140361-25-039864.pdf,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001628280-25-023161/q12025corescientificinc-ea.htm,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Partnership-with-Foundation-Model-Company-Poolside-to-Deliver-AI-Cloud-Services/default.aspx,200,,,,,2,data/generator_watchlist.csv;data/onsite_generation.csv,2026-09-15T12:59Z
+https://investors.terawulf.com/news-events/press-releases/detail/126/terawulf-reports-third-quarter-2025-results,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.terawulf.com/news-events/press-releases/detail/132/terawulf-reports-fourth-quarter-and-full-year-2025-results,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://investors.terawulf.com/news-events/press-releases/detail/99/terawulf-to-deliver-over-70-mw-of-data-center,200,https://investors.terawulf.com/news-events/press-releases/detail/99/terawulf-to-deliver-over-70-mw-of-data-center-infrastructure-for-g42s-us-operations,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://ir.applieddigital.com/news-events/press-releases/detail/128/applied-digital-finalizes-additional-150mw-lease-with,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://ir.applieddigital.com/news-events/press-releases/detail/133/applied-digital-achieves-ready-for-service-for-phase-1-at,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://ir.applieddigital.com/news-events/press-releases/detail/137/applied-digital-completes-phase-ii-ready-for-service-at,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://ir.applieddigital.com/news-events/press-releases/detail/75/applied-digital-announces-groundbreaking-of,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://khaznadatacenters.com/press-release/khazna-announces-the-uaes-first-ai-optimized-data-center-and-the-largest-in-its-portfolio-powering-the-nations-drive-toward-ai-leadership/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://khaznadatacenters.com/press-release/khazna-expands-infrastructure-to-accelerate-uaes-leadership-in-artificial-intelligence/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://laramiecounty.legistar.com/LegislationDetail.aspx?GUID=1623FD5B-974F-4551-9E2F-53A415151CCE&ID=7792288,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://laramiecounty.legistar.com/View.ashx?GUID=0946D063-8DEE-42DD-B75C-867B3A63027D&ID=15061112&M=F,200,,,,,3,data/generator_watch_sources.json;data/generator_watchlist.csv;data/sites.csv,2026-09-15T12:59Z
+https://ljxq.cq.gov.cn/zwgk_199/fdzdgknr/xzxk/bljg1/cfsthjfj/202205/W020220520639725589824.pdf,error,,http://web.archive.org/web/20240409055855/https://ljxq.cq.gov.cn/zwgk_199/fdzdgknr/xzxk/bljg1/cfsthjfj/202205/W020220520639725589824.pdf,20240409055855,ConnectionError,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://lp.startcampus.pt/start-campus-hosts-eus-first-nvidia-gb300-chips-with-nscale-for-microsoft,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://m.c114.com.cn/w126-1183443.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://m.thepaper.cn/baijiahao_10261395,200,,,,,1,data/sites.csv,2026-09-15T12:59Z
+https://mdgreenview.ab.ca/wp-content/uploads/2025/02/mountains-to-meadows_january-2025_reduced.pdf,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://mdgreenview.ab.ca/wp-content/uploads/2026/05/WV-Project-Newsletter-Spring-2026.pdf,200,,,,,2,data/generator_watchlist.csv;data/onsite_generation.csv,2026-09-15T12:59Z
+https://measuredai.substack.com/p/aws-new-carlisle-data-center-campus,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://measuredai.substack.com/p/meta-prometheus-google-ohio,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://mesa.legistar.com/View.ashx?G=6D482A9C-B912-4765-B79B-550C367FA729&GUID=92E85865-1264-4087-9E34-8EF3B34AC125&ID=14322941&M=F,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://mi-psc.my.site.com/sfc/servlet.shepherd/version/download/068cs00001MH71XAAT,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://ndep-onbase.nv.gov/api/Document/AeFo%C3%89pjclbkomJ7CWpPryLOjA6FQT9HFrkSuMWbMXTpKCzSR%C3%81W1f8zzFhGhik1iZCcNSpuTRRqNXD1inrrpBxtA%3D/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://new.tzxm.gov.cn/zckd/fzgh/202411/t20241122_1394663.shtml,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://newalbanyohio.org/wp-content/uploads/2025/01/CD-2024-12.pdf,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-datacenters-to-build-its-first-ai-superfactory/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://news.qq.com/rain/a/20241216A06QUH00,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://news.qq.com/rain/a/20250102A03Z7A00,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://newsletter.semianalysis.com/p/stop-saying-half-of-2026-us-datacenter,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1+Community+Cir%2C+New+Albany%2C+OH+43054&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1+Meta+Lp%2C+Gallatin%2C+TN+37066&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=10001+Lima+Rd%2C+Claude%2C+TX+79019&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1025+Jefferson+Street+NW%2C+Atlanta%2C+GA+30318&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=10410+Bunge+Ave%2C+Council+Bluffs%2C+IA+51503&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=105+Whiley+Rd%2C+Lancaster%2C+OH+43130&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1101+Beech+Rd+SW%2C+New+Albany%2C+OH+43054&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=11110+State+St%2C+Omaha%2C+NE+68142&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1125+Electron+Ave%2C+Berwick%2C+PA+18603&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1275+N+Community+Cir%2C+Eagle+Mountain%2C+UT+84005&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=13001+Rollins+Ford+Road%2C+Bristow%2C+VA+20136&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=13360+Miller+Rd+NW&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1401+Meadowville+Technology+Parkway%2C+Chester%2C+VA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=14250+W+Broadway+Rd%2C+Goodyear%2C+AZ+85338&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1435+Hwy+54+W%2C+Fayetteville%2C+GA+30214&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=14436-14998+Fairview+Rd%2C+Springfield%2C+NE+68059%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=14651-15249+Gold+Coast+Rd+68138+Papillion+Nebraska%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=14720+Omicron+Dr%2C+San+Antonio%2C+TX+78245&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=15000+Lambda+Drive%2C+San+Antonio%2C+TX+78245&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1525+W+43rd+St+S%2C+Muskogee%2C+OK+74401%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=155+Palmer+Ln%2C+Marble%2C+NC+28905&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1626+County+Line+Road+Ridgeland%2C+Mississippi&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=175+Private+Road+1604%2C+Abilene%2C+TX+79601%2C+Shackelford+County&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=1772-2396+145th+St%2C+Rosemount%2C+MN+55068%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=2205+Industrial+South+Rd%2C+Dalton%2C+GA%2C+30721&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=2300+Hallock+Young+Rd%2C+Warren%2C+OH+44481&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=2310+Eberhardt+Rd%2C+Temple%2C+TX+76504&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=2950+S.+Litchfield+Road&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=3231+Riverport+Rd%2C+Memphis%2C+TN+38109&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=3250+Railport+Parkway%2C+Midlothian%2C+TX+76065&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=330+Austin+Blvd%2C+Red+Oak%2C+TX+75154&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=3500+River+Rd%2C+The+Dalles%2C+OR&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=3525%E2%80%933543+Portugee+Rd%2C+Sandston%2C+VA+23150&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=3545+Wiseman+Boulevard%2C+San+Antonio%2C+TX+78251&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=3963+S+Lincoln+Ave%2C+Vineland%2C+New+Jersey&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=4250+Messenger+Lp%2C+Los+Lunas%2C+NM+87031&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=42575+Arcola+Blvd%2C+Sterling%2C+VA+20166&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=4581+Webb+St%2C+Pryor%2C+OK+74361&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=4755+NE+Huffman+St%2C+Hillsboro%2C+OR+97124&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=4800+90th+St%2C+Mount+Pleasant%2C+WI+53403&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=500+8th+St%2C+Jeffersonville%2C+IN+47130%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5076+S+High+St%2C+Columbus%2C+OH+43207&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5400+Prosperity+Dr+NW%2C+Toney%2C+AL&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5420+Tulane+Rd%2C+Memphis%2C+TN+38109&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5475+Cloud+Ct%2C+Lincoln%2C+NE+68514&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=55001+Larrison+Blvd%2C+New+Carlisle%2C+IN+46552&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5502+Spinks+Rd%2C+Abilene%2C+TX+79601&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5800+EDGEWOOD+RD+SW+CEDAR+RAPIDS%2C+IA+52404&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=5855+SW+Kerry+St%2C+Cumming%2C+IA+50061&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=6000+Technology+Blvd%2C+Sandston%2C+VA+23150&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=601+Kuna+Mora+Rd%2C++Kuna+ID+83634&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=6015+Adams+Center+Road%2C+Fort+Wayne%2C+IN+46806&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=6030%E2%80%936070+Technology+Blvd%2C+Sandston%2C+VA+23150&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=6200+76th+Ave+SW%2C+Fairfax%2C+IA+52228&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=652+E+Hyperscale+Way%2C+Eagle+Mountain%2C+UT+84013&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=7601+State+Hwy+105%2C+Trenton%2C+SC+29847%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=7725+Lake+Rd%2C+Barker%2C+NY+14012&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=8171+Jim+Christal+Rd%2C+Denton%2C+TX+76207&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=9590+Hornbaker+Rd%2C+Manassas%2C+VA+20109&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=9685+87th+Ave+SE%2C+Ellendale%2C+ND+58436&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=984+County+Road+112%2C+Afton%2C+TX+79220&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Alibaba+Zhangbei+Yun+Calculation+Data+Center%2C+Zhangbei+County%2C+Zhangjiakou%2C+Hebei%2C+China%2C+076471&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Amazon+Data+Services+Inc%2C+Madison+Mega+Site+Nissan+Parkway+and+Highway+22+Canton%2C+Mississippi+Madison+County&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Bayin%2C+Ulanqab%2C+China&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Cheyenne%2C+WY+82007%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Co+Rd+42%2C+Montgomery%2C+AL+36105%2C+USA&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Holly+Ridge%2C+LA+71269&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Huawei%2C+Horinger%2C+China&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Land+at+Maxwell%27s+Farm+West%2C+Great+Cambridge+Road%2C+Cheshunt%2C+EN8+8XH&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Nexus+L%26T+Project+Office%2C+Al+Bihouth%2C+Al+Dhafrah%2C+Abu+Dhabi%2C+United+Arab+Emirates&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=St%C3%B8levegen+39%2C+4715+%C3%98vreb%C3%B8%2C+Norway&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nominatim.openstreetmap.org/search?q=Start+Campus+-+Sustainable+Data+Center+Services%2C+Sines%2C+Portugal&format=jsonv2&limit=3&addressdetails=1,,,,,skipped: Nominatim usage policy,1,data/epoch/geocoding.json,2026-09-15T12:59Z
+https://nyj.guizhou.gov.cn/ztzl/zsyz/201908/t20190805_28839775.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://nyj.guizhou.gov.cn/zwgk/xxgkml/zdlyxx/xnygl/202301/t20230125_78005802.html,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://nyj.nmg.gov.cn/tzgg/202404/t20240409_2491156.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://ohiocapitaljournal.com/2023/08/29/google-announces-plans-to-invest-1-7-billion-in-a-trio-of-central-ohio-data-centers/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://opcgis.deq.state.ms.us/enOnline/ai_info.aspx?ai=12592,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://opcgis.deq.state.ms.us/ensearchonline/get_doc.aspx?dt=finalp&id=1834338,200,,,,,2,data/onsite_generation.csv;data/onsite_generation_sources.json,2026-09-15T12:59Z
+https://openai.com/index/five-new-stargate-sites/,403,,,,blocked or rate-limited (403): the page may exist; check by hand,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://permit.mee.gov.cn/,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://raad.com/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://records.tceq.texas.gov/cs/idcplg?IdcService=GET_FILE&allowInterrupt=1&dDocName=8281239&dID=9562400,200,,,,,5,data/generator_watch_sources.json;data/generator_watchlist.csv;data/onsite_generation.csv;data/onsite_generation_sources.json;data/sites.csv,2026-09-15T12:59Z
+https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&Rendition=Web&dID=8600163,200,,,,,3,data/onsite_generation.csv;data/onsite_generation_sources.json;data/sites.csv,2026-09-15T12:59Z
+https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&Rendition=Web&dID=8600639,200,,,,,1,data/onsite_generation_sources.json,2026-09-15T12:59Z
+https://static.cninfo.com.cn/finalpage/2016-06-27/1202409707.PDF,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://static.cninfo.com.cn/finalpage/2026-08-27/1225510324.PDF,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://static.newdc.org.cn/zsdh/pdf/whitepaper/,200,,,,,1,data/sites.csv,2026-09-15T12:59Z
+https://stcn.com/article/detail/1606256.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://sthj.gansu.gov.cn/,412,,,,blocked or rate-limited (412): the page may exist; check by hand,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202405/P020240515682131370766.pdf,error,,,,SSLError,2,data/china_project_documents.json;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202503/P020250321602011794355.pdf,error,,http://web.archive.org/web/20260117135012/https://sthj.guizhou.gov.cn/zwgk/zdlyxx/fsjg/fslxmspqgs/202503/P020250321602011794355.pdf,20260117135012,SSLError,2,data/china_project_documents.json;data/sites.csv,2026-09-15T12:59Z
+https://sthjj.cq.gov.cn/,error,,http://web.archive.org/web/20260821223526/https://sthjj.cq.gov.cn/,20260821223526,SSLError,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publish.action,200,,,,,3,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=402861b57e41aaca017e43942990452e,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=402861b59babb33a019bb04463b53c26,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=402861b59f5acb9f019f5f81eb9c3119,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=402875b58ced38bc018ced417b1b0269,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=402875b58f247fc0018f2cab766657c1,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=402875b59471bcb701947267845e1073,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=4028fdb56a459cb3016a4ccd26431660,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=4028fdb56f805b45016f87cd2f1b4208,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishDownFile.action?fileId=4028fdb577126bf00177130718da028a,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=247112141339328&type=30,200,,,,,1,data/cn_plant_links.csv,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=80B48D912F8A47A3BFAE4D0E48F28B77&type=30,200,,,,,1,data/cn_plant_links.csv,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=B91752F8E785428E8900B78EA180D9AC&type=20,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=B91752F8E785428E8900B78EA180D9AC&type=30,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=B91752F8E785428E8900B78EA180D9AC&type=40,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=B91752F8E785428E8900B78EA180D9AC&type=60,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseInfo.action?back=list&ID=B91752F8E785428E8900B78EA180D9AC&type=900,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishEnterpriseList.action,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishJCFAlist.action?ID=B91752F8E785428E8900B78EA180D9AC,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishNDBGlist.action?ID=B91752F8E785428E8900B78EA180D9AC,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/publishZXJGlist.action?ID=B91752F8E785428E8900B78EA180D9AC,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/qyzxjc/PollutionMonitor/res/publish/js/publish.js?version=3.7.2,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/P020250110624290837677.pdf,200,,,,,1,data/china_project_documents.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/wrfz2021/fsgl_8115/hyfshjjg_8116/202501/t20250110_2651491.html,200,,,,,2,data/china_project_documents.json;data/sites.csv,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/P020250210586317957570.pdf,200,,,,,1,data/china_project_documents.json,2026-09-15T12:59Z
+https://sthjt.nmg.gov.cn/xxgk/sthjzdlyxxgk/wrfzhssxg/hyfshjjg/202502/t20250210_2664372.html,200,,,,,2,data/china_project_documents.json;data/sites.csv,2026-09-15T12:59Z
+https://sthjt.nx.gov.cn/,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://sthjt.nx.gov.cn/zwgk/hjpj_63348/hjyxpjsl/202605/t20260509_5235732.html,200,,,,,2,data/china_project_documents.json;data/sites.csv,2026-09-15T12:59Z
+https://stockmc.xueqiu.com/202603/600941_20260327_EIXS.pdf,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://sustainability.atmeta.com/wp-content/uploads/2021/06/2020_FB_Sustainability-Data.pdf,200,,,,,2,data/capacity_timeline.csv;data/operator_disclosures.csv,2026-09-15T12:59Z
+https://sustainability.atmeta.com/wp-content/uploads/2023/04/2016-Facebook-Sustainability-Data-Disclosure.pdf,200,,,,,2,data/capacity_timeline.csv;data/operator_disclosures.csv,2026-09-15T12:59Z
+https://sustainability.atmeta.com/wp-content/uploads/2023/07/Meta-2023-Environmental-Data-Index.pdf,200,,,,,2,data/capacity_timeline.csv;data/operator_disclosures.csv,2026-09-15T12:59Z
+https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf,200,,,,,3,data/capacity_timeline.csv;data/operator_disclosures.csv;data/water_derived_loads.csv,2026-09-15T12:59Z
+https://sustainability.fb.com/wp-content/uploads/2022/06/2021-Meta-Sustainability-ESG-Data-Index.pdf,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://sustainability.google/files/google-2026-environmental-report.pdf,200,,,,,2,data/capacity_timeline.csv;data/water_derived_loads.csv,2026-09-15T12:59Z
+https://ukozvhzgrcnkcatjqfoo.supabase.co/storage/v1/object/public/03-00-air-construction/2025.12.05_Apollo%20Generating%20Station_P0139272%20Application_82180af1.pdf,200,,,,,1,data/generator_watch_sources.json,2026-09-15T12:59Z
+https://ukozvhzgrcnkcatjqfoo.supabase.co/storage/v1/object/public/03-00-air-construction/2026.06.15_Apollo_Generating_Station_P0139272_Final_Permit_3e471ff2,200,,,,,2,data/generator_watch_sources.json;data/generator_watchlist.csv,2026-09-15T12:59Z
+https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx,200,,,,,2,data/generator_watchlist.csv;data/onsite_generation.csv,2026-09-15T12:59Z
+https://vantage-dc.com/news/vantage-data-centers-and-voltagrid-establish-partnership-to-deploy-more-than-one-gigawatt-of-power-generation/,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://wap.sasac.gov.cn/n2588025/n2588129/c35451088/content.html,200,,,,TLS certificate not trusted by this client (common for Chinese government hosts); content not verified,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://web.archive.org/web/20230506044058id_/https://www.sec.gov/Archives/edgar/data/1807192/000095017023015950/cd-20221231.htm,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://web.archive.org/web/20241231165420/https://dayonedc.com/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://web.archive.org/web/20250620154431/https://www.vnet.com/portal/article/index/cid/14/id/876.html,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://web.archive.org/web/20250915053756id_/https://www.sec.gov/Archives/edgar/data/1807192/000119312520259613/d853939d424b4.htm,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://web.archive.org/web/20260206060640id_/https://www.sec.gov/Archives/edgar/data/1807192/000156459022016827/cd-20f_20211231.htm,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://web.archive.org/web/20260624112951/http://nmg.news.cn/20231008/57bb95be6791497db95bc7d2f229a68e/c.html,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://wryjc.cnemc.cn/assets/index-C_Ki0x-a.js,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://wryjc.cnemc.cn/gkpt/mainZxjc/340000,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://wryjc.cnemc.cn/gkpt/mainZxjc/440000,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv,2026-09-15T12:59Z
+https://wryjc.cnemc.cn/gkpt/mainZxjc/520000,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_platforms.csv,2026-09-15T12:59Z
+https://wryjc.cnemc.cn/hb/home,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.aepohio.com/company/news/view?releaseID=10753,200,,,,,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://www.aeptransmission.com/ohio/docs/Hartman%20Farms%20Extension%20No.%202%20138%20kV%20Transmission%20Line%20Project%20Construction%20Notice.pdf,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.alibabacloud.com/blog/how-alibaba-cloud-data-centers-will-reach-100%25-clean-energy-by-2030_598748,200,https://www.alibabacloud.com/notfound,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.bisnow.com/washington-dc/news/data-center/peterson-cos-partnering-to-build-4m-sf-data-center-campus-in-manassas-102646,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.businessinsider.com/xai-elon-musk-x-new-atlanta-data-center-2025-2,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.cac.gov.cn/2018-12/30/c_1123925765.htm,200,,,,,1,data/sites.csv,2026-09-15T12:59Z
+https://www.cbwaterworks.com/meetings-and-reports/board-meetings/,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.cbwaterworks.com/wp-content/uploads/2024/09/2023-Annual-Report.pdf,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.chd.com.cn/site/2/2026-04-16/e08bb6a319a1442a8704ef3476b9a132.html,200,,,,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.chinatelecom.com.cn/ct/news/yunjisuanjisuanli/154820.html,412,,,,blocked or rate-limited (412): the page may exist; check by hand,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.chnenergybidding.com.cn/bidweb/001/001002/001002002/20260709/0d5acb92-2566-4125-9547-c08f1a1ce9c2.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.cityofprineville.com/1345/Utility-Rates,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.clarksvilletn.gov/Archive.aspx?AMID=39,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.cls.cn/detail/943127,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.cnbc.com/2025/10/29/amazon-opens-11-billion-ai-data-center-project-rainier-in-indiana.html,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.co.armstrong.tx.us/upload/page/5361/Phase%201%20Tax%20Abatement%20Agreement%20-%20Signed.pdf,404,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.cq.gov.cn/ywdt/jrcq/202508/t20250816_14906879.html,error,,,,SSLError,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.crusoe.ai/resources/blog/an-inside-look-at-the-abilene-ai-data-center,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/,200,,,,,3,data/regional_dc_load.csv;data/regional_dc_load_sources.json;data/regional_inventory_audit.json,2026-09-15T12:59Z
+https://www.datacenterdynamics.com/en/news/aws-confirmed-as-company-behind-10bn-mississippi-data-center-development/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.datacenterdynamics.com/en/news/chirisa-secures-200-million-loan-to-fit-out-virginia-data-center-for-coreweave/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.datacenterdynamics.com/en/news/talen-energy-to-build-300mw-nuclear-powered-cryptomining-facility-and-data-center-in-us/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.datacenterknowledge.com/hyperscalers/live-in-lulea-facebook-goes-global-and-gets-greener,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.datacentermap.com/usa/oregon/prineville/meta-prineville-data-center/,429,,http://web.archive.org/web/20241204091316/https://www.datacentermap.com/usa/oregon/prineville/meta-prineville-data-center/,20241204091316,blocked or rate-limited (429): the page may exist; check by hand,1,data/sites.csv,2026-09-15T12:59Z
+https://www.deq.louisiana.gov/public-notices?pn=3,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://www.developfultoncounty.com/meetings-and-minutes_239_547601452.pdf,error,,http://web.archive.org/web/20240227174922/https://www.developfultoncounty.com/meetings-and-minutes_239_547601452.pdf,20240227174922,SSLError,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.distilled.earth/p/openais-stargate-data-centers-are,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.dominionenergy.com/-/media/content/about/our-company/irp/pdfs/2025-integrated-resource-plan-update.pdf,200,,,,,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://www.ema.gov.sg/resources/singapore-energy-statistics/chapter3,200,,,,,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability,200,,,,,2,data/campus_plant_links.csv;data/generator_watchlist.csv,2026-09-15T12:59Z
+https://www.epa.gov/sites/default/files/2016-09/documents/allocationtable.pdf,200,,,,,1,data/campus_plant_links.csv,2026-09-15T12:59Z
+https://www.ercot.com/files/docs/2025/04/08/ERCOT-2025-Long-Term-Load-Forecast-Report.pdf,200,,,,,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://www.fool.com/earnings/call-transcripts/2026/03/02/core-scientific-corz-q4-2025-earnings-transcript/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.galaxy.com/data-centers,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.gaxq.gov.cn/zsyz_34948/zsyzxmjcyjs_34949/201904/t20190428_2445981.html,error,,,,SSLError,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.gds-services.com/zh_cn/newsshow_243.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.globenewswire.com/news-release/2023/08/31/2735129/0/en/Chindata-Group-Reports-Fiscal-Year-2023-Second-Quarter-and-Half-Year-Unaudited-Financial-Results.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.globenewswire.com/news-release/2025/09/25/3156107/0/en/Cipher-Mining-Signs-168-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.globenewswire.com/news-release/2025/11/20/3191801/0/en/Cipher-Mining-Signs-Additional-56-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.globenewswire.com/news-release/2026/03/17/3257009/0/en/gds-holdings-limited-reports-fourth-quarter-and-full-year-2025-results.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.govtech.com/artificial-intelligence/indiana-data-center-could-bring-significant-power-use,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://www.gstatic.com/gumdrop/sustainability/google-2023-environmental-report.pdf,,,,,"skipped: Google static content behind map annotations, not a source",3,data/capacity_timeline.csv;data/operator_disclosures.csv;data/water_derived_loads.csv,2026-09-15T12:59Z
+https://www.gstatic.com/gumdrop/sustainability/google-2024-environmental-report.pdf,,,,,"skipped: Google static content behind map annotations, not a source",3,data/capacity_timeline.csv;data/operator_disclosures.csv;data/water_derived_loads.csv,2026-09-15T12:59Z
+https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf,,,,,"skipped: Google static content behind map annotations, not a source",3,data/capacity_timeline.csv;data/operator_disclosures.csv;data/water_derived_loads.csv,2026-09-15T12:59Z
+https://www.idcquan.com/xw/203947.shtml,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.imda.gov.sg/-/media/imda/files/how-we-can-help/green-dc-roadmap/green-dc-roadmap.pdf,202,,,,,2,data/regional_dc_load.csv;data/regional_dc_load_sources.json,2026-09-15T12:59Z
+https://www.jingnengpower.com/nmgjnslrdyxgs/index.jhtml,404,,http://web.archive.org/web/20230312004437/https://www.jingnengpower.com/nmgjnslrdyxgs/index.jhtml,20230312004437,,1,data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.linkedin.com/posts/dayonedc-datacenter-batam-ugcPost-7450899048925986816-Wxqu/,,,,,skipped: robots.txt disallows,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.miit.gov.cn/jgsj/jns/nyjy/art/2021/art_8226a3a538384d63be03447b2a3081a7.html,200,,,,,1,data/china_project_documents.json,2026-09-15T12:59Z
+https://www.moomoo.com/news/post/41886329/support-ai-computing-deployment-gds-holdings-nusajaya-technology-park-datacenter?level=1&data_ticket=1778269491837872,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.nature.com/articles/s41597-024-03913-w,200,,,,,2,data/capacity_timeline.csv;data/operator_disclosures.csv,2026-09-15T12:59Z
+https://www.ncwater.org/wudc/app/lwsp/report.php?pwsid=01-14-010&year=2025,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.nda.gov.cn/sjj/zhuanti/ztdsjblh/ztxwfb/0924/20240924133430913242032_pc.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.nmg.chinanews.com.cn/news/20250514/49935.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.opb.org/article/2026/01/23/the-dalles-mayor-data-center-google/,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.pacodeandbulletin.gov/secure/pabulletin/data/vol56/56-4/56-4.pdf,,,,,skipped: robots.txt disallows,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.papillion.org/ArchiveCenter/ViewFile/Item/202,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.prnewswire.com/news-releases/cumulus-data-completes-key-milestones-in-construction-of-its-flagship-zero-carbon-susquehanna-data-center-campus-301722751.html,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.prnewswire.com/news-releases/vnet-reports-unaudited-second-quarter-2026-financial-results-302853949.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/107263/000119312526112664/wmb_2025_ars.pdf,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/generator_watchlist.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1144879/000164117225013199/form8-k.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1508475/000110465926044361/vnet-20251231x20f.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1526125/000110465921049104/gds-20201231x20f.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1526125/000110465926051006/gds-20251231x20f.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1622536/000162828025023501/tln-20250331.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1807192/000095017023015950/cd-20221231.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1807192/000119312520259613/d853939d424b4.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1807192/000156459022016827/cd-20f_20211231.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1839341/000119312526165121/d149019dex992.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1839341/000162828025008302/core-20241231.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.sec.gov/Archives/edgar/data/1839341/000162828026030918/exhibit991polarispressre.htm,,,,,skipped: SEC EDGAR needs a contact email in the User-Agent (RFW-07),1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.selc.org/news/xai-built-an-illegal-power-plant-to-power-its-data-center/,200,,,,,3,data/capacity_timeline.csv;data/onsite_generation.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.sg.gov.cn/zw/zdlyxxgk/dzjg/sgssthjj/hjbhxxgk/jsxmhjyxpjxx/content/post_2855829.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://www.sohu.com/a/687610191_210640,,,,,skipped: robots.txt disallows,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.srbc.gov/waav/Search/getdocket?documenttype=Approval&isabre=False&projectnumber=20260301,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.srbc.gov/waav/search/GetPending?documentType=Application&isABRe=false&projectNumber=2024-056,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.stcn.com/article/detail/3802556.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.stdaily.com/web/gdxw/2026-08/20/content_567111.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.streamdatacenters.com/wp-content/uploads/2026/01/SDC-Goodyear-CaseStudy-251218.pdf,202,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Projects/TABS2026028247,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fProjects%2fTABS2026028247&aspxerrorpath=/TABS/Projects/TABS2026028247,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Print/TABS2025005706,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fPrint%2fTABS2025005706&aspxerrorpath=/TABS/Search/Print/TABS2025005706,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2021019471,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2021019471&aspxerrorpath=/TABS/Search/Project/TABS2021019471,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2021019588,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2021019588&aspxerrorpath=/TABS/Search/Project/TABS2021019588,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2021019686,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2021019686&aspxerrorpath=/TABS/Search/Project/TABS2021019686,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2022017728,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2022017728&aspxerrorpath=/TABS/Search/Project/TABS2022017728,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2024007561,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2024007561&aspxerrorpath=/TABS/Search/Project/TABS2024007561,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025027064,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2025027064&aspxerrorpath=/TABS/Search/Project/TABS2025027064,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2025027065,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2025027065&aspxerrorpath=/TABS/Search/Project/TABS2025027065,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2026001234,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2026001234&aspxerrorpath=/TABS/Search/Project/TABS2026001234,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2026008019,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2026008019&aspxerrorpath=/TABS/Search/Project/TABS2026008019,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2026008308,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2026008308&aspxerrorpath=/TABS/Search/Project/TABS2026008308,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tdlr.texas.gov/TABS/Search/Project/TABS2026010861,200,https://www.tdlr.texas.gov/TABS/Account/Login?ReturnUrl=%2fTABS%2fError%3faspxerrorpath%3d%2fTABS%2fSearch%2fProject%2fTABS2026010861&aspxerrorpath=/TABS/Search/Project/TABS2026010861,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.top500.org/system/177232/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.top500.org/system/177975/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.top500.org/system/177999/,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.top500.org/system/178764/,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.top500.org/system/179397/,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.top500.org/system/179807/,200,,,,,2,data/capacity_timeline.csv;data/sites.csv,2026-09-15T12:59Z
+https://www.top500.org/system/180047/,200,,,,,1,data/capacity_timeline.csv,2026-09-15T12:59Z
+https://www.tucsonaz.gov/files/sharedassets/public/v/1/government/city-manager-office/documents/project-blue_faq-responses_final.pdf,200,,,,,1,data/onsite_generation.csv,2026-09-15T12:59Z
+https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant,403,,http://web.archive.org/web/20260813175423/https://www.tva.com/energy/our-power-system/natural-gas/southaven-combined-cycle-plant,20260813175423,blocked or rate-limited (403): the page may exist; check by hand,1,data/campus_plant_links.csv,2026-09-15T12:59Z
+https://www.vnet.com/portal/article/index/cid/14/id/1007.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418,200,,,,,1,data/water_monthly_searches.csv,2026-09-15T12:59Z
+https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108544468,200,,,,,2,data/water_monthly.csv;data/water_sources/manifest.json,2026-09-15T12:59Z
+https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108546665,200,,,,,2,data/water_monthly.csv;data/water_sources/manifest.json,2026-09-15T12:59Z
+https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=11418#108548606,200,,,,,2,data/water_monthly.csv;data/water_sources/manifest.json,2026-09-15T12:59Z
+https://www.waterrights.utah.gov/asp_apps/viewEditPWS/pwsView.asp?SYSTEM_ID=1264#108544372,200,,,,,3,data/water_monthly.csv;data/water_monthly_searches.csv;data/water_sources/manifest.json,2026-09-15T12:59Z
+https://www.wpr.org/news/microsoft-data-centers-8-million-gallons-water-each-year,200,,,,,1,data/operator_disclosures.csv,2026-09-15T12:59Z
+https://www.xlgl.gov.cn/xlgl/zt/yhyshjxlglzxd/tszs/2024060716584819497/index.html,200,,,,,1,data/cn_operator_disclosures.csv,2026-09-15T12:59Z
+https://xbj.nea.gov.cn/dtyw/hyxx/202606/t20260626_303639.html,200,,,,,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
+https://zgqingyang.gov.cn/zw/bmdt/content_343777,403,,,,blocked or rate-limited (403): the page may exist; check by hand,2,data/cn_plant_links.csv;data/cn_stack_monitor_sources.json,2026-09-15T12:59Z
