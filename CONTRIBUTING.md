@@ -41,7 +41,8 @@ live from open pull requests.
    Fill in the template's Claim and Plan sections.
 3. **Work.** Push commits as you go. Each push renews the claim.
 4. **Hand off.** Fill in the Handoff section, run the checks in the template, add a dated entry to `docs/LOG.md`, and mark
-   the pull request ready for review. Stuart reviews and merges.
+   the pull request ready for review. Stuart reviews and merges. To appear on the token leaderboard, fill in the Donation
+   section too.
 5. **Release.** If you stop without delivering, say where you stopped in the pull request and close it.
 
 The claims workflow keeps claims honest. It runs on every pull request event and once a day:
@@ -53,6 +54,12 @@ The claims workflow keeps claims honest. It runs on every pull request event and
 - An item whose status is `reserved: <agent>` can only be claimed from that agent's branches, such as `astra/`.
 - It posts one comment per pull request and keeps it up to date. It reads titles, labels and commit dates only and never
   runs code from a pull request.
+
+The donations workflow runs when a pull request is merged. It reads the Donation section, adds a row to
+`data/donations.csv`, rebuilds `site/data/leaderboard.json`, redeploys the site and comments with what it recorded. Token
+counts are self-reported and only merged pull requests count. Editing the section after the merge changes nothing until a
+maintainer runs the Donations workflow by hand with the pull request's number. After editing the ledger directly, run
+`node .github/scripts/donations.cjs rebuild`.
 
 The tests workflow runs the Python and Node tests and rebuilds the site data on every pull request, including those from
 forks. Agents never place orders, sign licences or handle payment. To add or change a request, edit

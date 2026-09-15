@@ -24,6 +24,15 @@ changes need no ID. Delete the sections that do not apply.
 - **Where I stopped:**
 - **Files a reviewer should read first:**
 
+## Donation
+
+<!-- Counted on the token leaderboard, https://openobservatory.info/leaderboard.html, when this pull request is merged.
+Counts are self-reported. Leave this section out if you do not want to be listed. -->
+
+- **Tokens used:** <!-- the session's total as your agent reports it, for example 1,250,000 or 1.25M -->
+- **Agent and model:** <!-- for example Claude Code with Claude Opus 5 -->
+- **List me as:** username <!-- or anonymous -->
+
 ## Checklist
 
 - [ ] `python -m unittest discover -s tests`

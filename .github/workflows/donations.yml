@@ -1,0 +1,66 @@
+name: Donations
+# When a pull request is merged, records the tokens its Donation section reports in data/donations.csv, rebuilds
+# site/data/leaderboard.json on main and redeploys the site. Counts are self-reported; only merged pull requests count.
+# To record a pull request again after its Donation section is fixed, run this workflow by hand with its number.
+on:
+  pull_request_target:
+    types: [closed]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Number of a merged pull request to record again
+        required: true
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: donations
+  cancel-in-progress: false
+jobs:
+  record:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Always main, never the pull request: this job can push to main, so it must not run contributed code.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - id: record
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const bot = require(`${process.env.GITHUB_WORKSPACE}/.github/scripts/donations.cjs`);
+            await bot.record({ github, context, core });
+      - name: Commit the ledger and leaderboard
+        if: steps.record.outputs.changed == 'true'
+        env:
+          PR: ${{ steps.record.outputs.pr }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/donations.csv site/data/leaderboard.json
+          git commit -m "Record donated tokens from pull request #${PR}"
+          pushed=false
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then pushed=true; break; fi
+            git pull --rebase origin main
+          done
+          $pushed
+      - name: Redeploy the site
+        if: steps.record.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"
+      - name: Tell the pull request what was recorded
+        if: steps.record.outputs.comment != ''
+        uses: actions/github-script@v7
+        env:
+          COMMENT: ${{ steps.record.outputs.comment }}
+          PR: ${{ steps.record.outputs.pr }}
+        with:
+          script: |
+            const bot = require(`${process.env.GITHUB_WORKSPACE}/.github/scripts/donations.cjs`);
+            await bot.comment({ github, context, pr: Number(process.env.PR), body: process.env.COMMENT });

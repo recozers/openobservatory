@@ -418,3 +418,23 @@ workflow.
   EDGAR full-text search across VNET, GDS and Chindata filings, including 6-Ks, is blocked until a contact email for SEC's
   User-Agent is agreed, and most Chindata data centres still have no city. Its status now says so.
 
+
+## 2026-09-15 (Claude): token leaderboard
+
+Stuart asked for a token donation leaderboard. Added:
+
+- A Donation section in the pull request template: tokens used, agent and model, and whether to list the GitHub username or
+  "anonymous".
+- `.github/workflows/donations.yml` and `.github/scripts/donations.cjs`. When a pull request is merged, the workflow checks
+  out main and reads the section. It adds a row to the ledger `data/donations.csv`, rebuilds `site/data/leaderboard.json`,
+  commits both to main, dispatches the Pages deploy and comments with what it recorded. Pushes made with the workflow token do
+  not trigger other workflows, so it dispatches Pages explicitly. A maintainer can run it by hand with a pull request number
+  to record one again.
+- `site/leaderboard.html` and `site/leaderboard.js`, linked from every page's navigation, ranking donors by reported tokens,
+  then sessions, then who donated first.
+- `tests/donations.test.cjs` (9 tests).
+
+Limits, stated on the page: token counts are self-reported and cannot be verified; merging reviews the work, not the count.
+Only merged pull requests count, and edits to the section after merging change nothing until a maintainer re-runs the
+workflow. Anonymous donors are stored under a hash of their username, which hides the name on the board but not on the public
+pull request. The board starts empty: the practice claim in pull request 15 reported no token count.
