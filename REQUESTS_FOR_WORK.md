@@ -288,7 +288,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-17](#rfw-17-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Utilisation | M | EE | open |
 | [RFW-18](#rfw-18-per-site-electricity-capacity-and-commercial-utilisation-from-more-operators) | Per-site electricity, capacity and commercial utilisation from more operators | Capacity, Utilisation | M | none | open |
 | [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | delivered in pull request 21 as context: no metro is one inventory campus; Boydton is a candidate site for RFW-18 |
-| [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | open |
+| [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | first slice in pull request 22: 18 plants flagged and verified, none a new dedicated plant; the on-site fleets are absent from EIA-860M |
 | [RFW-21](#rfw-21-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Utilisation | M | none | reserved: Astra |
 | [RFW-22](#rfw-22-stated-workload-roles-for-the-rest-of-the-inventory) | Stated workload roles for the rest of the inventory | Workload | M | none | open |
 | [RFW-23](#rfw-23-ai-lab-partners-with-training-run-records) | AI lab partners with training-run records | Workload | M | none | open |
@@ -371,10 +371,16 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-20 Generator fleet and dedicated plant discovery from EIA-860M
 
-- **Why:** The generator watch list was assembled by hand from permits. The US Energy Information Administration's monthly
-  generator inventory lists planned and operating generators by plant, which could flag new fleets built for data centres
-  and plants that serve one campus. A dedicated plant that reports hourly to the EPA would give the first hourly load shape,
-  the data needed to tell training from inference.
+- **Done so far:** `tools/eia860m_scan.py` (pull request 22) reads the July 2026 EIA-860M, keeps the 986 fossil and fuel-cell
+  generators planned or operating since 2023 at 271 plants, and flags plants within 10 km of an inventory site or named for a
+  data-centre operator: 18 plants, each verified in `data/eia860m_review.csv` (`results/eia860m_candidates.csv`). Findings:
+  Fermi's Project Matador appears as 157 planned generators, 11,679 MW, 0.8 km from the existing watch point; Entergy's
+  Richland Parish plants for Hyperion appear twice (as Franklin Farms 1&2 for December 2028 and Richland Parish Power Station
+  1&2 for March 2030) plus units 3 and 4; Entergy Mississippi's Traceview plant (754 MW, 2028) sits 3 km from Amazon Ridgeland
+  and Entergy names AWS as the reason for it; Trumbull Energy Center (950 MW merchant combined cycle, running since January
+  2026) sits 2.5 km from Stargate Lordstown and GRDA's 426 MW Unit 4 (September 2026) 7 km from Google Pryor, so both are
+  adjacent NOx sources for any plume test there. No flagged plant is a dedicated plant reporting hourly, and the on-site
+  fleets at Abilene, Memphis, Ohio Apollo, Vantage Frontier and Poolside are not in EIA-860M at all.
 - **Do:** Parse the latest EIA-860M. Flag planned or new gas turbine and engine plants whose owner, name or location links
   them to a data centre, or that sit within a few kilometres of an inventory site, and check which report hourly to the EPA.
   Verify each flag against a permit or company statement.

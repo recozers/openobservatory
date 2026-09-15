@@ -644,3 +644,30 @@ Branch `rfw/19-microsoft-metros` from main.
 - Tests: `tests/test_microsoft_metros.py` (7): parser placement of the optional columns on sample lines, a missing row is an
   error, 29 rows and region totals, water agrees with the water file, pools equal withdrawal / 2.5, no metro id in
   `data/sites.csv` and every named campus is, disclosure rows match the table.
+
+## 2026-09-15 (donated session, Claude): RFW-20, generator fleets and dedicated plants from EIA-860M (pull request 22)
+
+Branch `rfw/20-eia860m` from main.
+
+- `tools/eia860m_scan.py` downloads the newest EIA-860M workbook (July 2026, SHA-256 in `results/eia860m_scan_summary.json`),
+  keeps fossil and fuel-cell generators that are planned or have operated since 2023 (986 generators, 271 plants), and flags a
+  plant when it lies within 10 km of one of the 88 US inventory sites or its plant or owner name carries a data-centre term or
+  operator. Presence in eGRID 2023 is recorded by ORIS code, which does not show hourly reporting to EPA; plants not in it are marked unknown (the CAMPD facility list
+  needs an EPA key). Hand verification in `data/eia860m_review.csv` is merged into `results/eia860m_candidates.csv`.
+- 18 plants flagged, all by distance; the keyword flag caught only Fermi, because EIA names rarely carry the customer. Verdicts:
+  1 on-site fleet already watched (Fermi Project Matador: 157 generators, 11,679 MW, first units March 2027, 0.78 km from the
+  TCEQ-permit coordinate); 8 utility plants built or approved for data-centre load growth (Entergy Louisiana's Richland Parish 1&2,
+  3 and 4 for Hyperion, Entergy Mississippi's Traceview for Amazon Ridgeland, OPPD's Turtle Creek and Standing Bear Lake,
+  Dominion's Chesterfield, GRDA's GREC Unit 4); 1 merchant plant beside a campus (Trumbull Energy Center, 2.5 km from Stargate
+  Lordstown); 2 utility expansions (Terry Bundy, Cheyenne Prairie); 1 duplicate EIA record (Franklin Farms 1&2 = Richland
+  Parish 1&2, different dates and coordinates); 5 unrelated (HEB microgrids and store generator, a hospital, a chemicals plant).
+- Negative results: no flagged plant is a dedicated plant with hourly EPA data, so RFW-20's hope of a first hourly load shape
+  is not met by this filing. The on-site fleets the project tracks (Abilene's 360 MW registered turbines, xAI's Memphis
+  turbines, Ohio Apollo, Vantage Frontier, Poolside) do not appear in EIA-860M as of July 2026; behind-the-meter and mobile
+  fleets are outside or lag the survey. Nothing is proposed for the watch list beyond what RFW-21 holds; Traceview is a
+  candidate `campus_plant_links` planned_supply row like Franklin Farms.
+- Side findings for other requests: Trumbull (950 MW) and GREC Unit 4 (426 MW) are large new NOx sources within 7 km of
+  Stargate Lordstown and Google Pryor; Pryor's 2.09 sigma plume result (RFW-14) and any Lordstown test must treat them as
+  adjacent plants (RFW-15, RFW-16).
+- Tests: `tests/test_eia860m_scan.py` (5): near and keyword flags with the review merge, whole-word keyword matching,
+  aggregation of a plant's generators, haversine, and consistency of the committed candidates, summary and review file.
