@@ -3,7 +3,8 @@
 
     python tools/check_links.py [--out results/link_check.csv] [--limit N]
 
-Collects URLs from data/*.csv (every cell) and every .json file under data/ (every string), deduplicates them, and checks
+Collects URLs from data/*.csv (every cell) and every .json file under data/ (every string) except those under data/private/
+and data/cache/, deduplicates them, and checks
 each one once: HEAD, then GET if HEAD is refused, following redirects, with an identified User-Agent and a 20 s timeout.
 Politeness: one request at a time per host with at least PAUSE seconds between them, at most WORKERS hosts in parallel, and
 robots.txt is read once per host and honoured. Some hosts are never fetched and are reported as skipped instead:
@@ -90,8 +91,17 @@ def rel(p: Path) -> str:
         return str(p)
 
 
+# Never read: data/private/ holds confidential training-run labels that must not leave the machine or reach a commit
+# (README, provenance rule), and data/cache/ holds re-creatable downloads rather than cited sources.
+EXCLUDED_DIRS = {"private", "cache"}
+
+
+def excluded(p: Path, data_dir: Path) -> bool:
+    return any(part in EXCLUDED_DIRS for part in p.relative_to(data_dir).parts[:-1])
+
+
 def collect(data_dir: Path) -> dict[str, set[str]]:
-    """url -> set of relative file paths that mention it."""
+    """url -> set of relative file paths that mention it. Files under data/private/ and data/cache/ are never read."""
     found = defaultdict(set)
     for p in sorted(data_dir.glob("*.csv")):
         with open(p, newline="", encoding="utf-8", errors="replace") as f:
@@ -100,6 +110,8 @@ def collect(data_dir: Path) -> dict[str, set[str]]:
                     for u in urls_in_text(cell):
                         found[u].add(rel(p))
     for p in sorted(data_dir.rglob("*.json")):
+        if excluded(p, data_dir):
+            continue
         try:
             obj = json.load(open(p, encoding="utf-8"))
         except (json.JSONDecodeError, UnicodeDecodeError):

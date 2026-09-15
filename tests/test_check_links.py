@@ -31,6 +31,19 @@ class ExtractionTests(unittest.TestCase):
             self.assertEqual(set(found), {"https://one.org/p", "https://two.org/q", "https://three.org/r"})
             self.assertEqual(found["https://one.org/p"], {"data/a.csv", "data/sub/s.json"})
 
+    def test_private_and_cache_folders_are_never_read(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            d = Path(tmp) / "data"
+            for sub in ("private", "cache/gee", "public"):
+                (d / sub).mkdir(parents=True)
+            (d / "private" / "labels.json").write_text(json.dumps({"run": "https://lab.example/secret-run"}))
+            (d / "private" / "labels.csv").write_text("url\nhttps://lab.example/secret.csv\n")
+            (d / "cache" / "gee" / "tile.json").write_text(json.dumps({"u": "https://cache.example/tile"}))
+            (d / "public" / "ok.json").write_text(json.dumps({"u": "https://public.example/source"}))
+            with patch.object(cl, "ROOT", Path(tmp)):
+                found = cl.collect(d)
+            self.assertEqual(set(found), {"https://public.example/source"})
+
 
 class SkipAndReportTests(unittest.TestCase):
     def test_skip_hosts_are_not_fetched(self):

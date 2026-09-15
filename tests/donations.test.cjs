@@ -58,18 +58,34 @@ test('unmerged pull requests, missing sections and unreadable counts record noth
   assert.match(typo.comment, /could not be read/);
 });
 
-test('the leaderboard ranks by tokens, then sessions, then who came first, and ties share a rank', () => {
-  const row = (n, donor, tokens, day) => ({ pr: String(n), merged_at: `2026-09-${day}T00:00:00Z`, donor, anonymous: 'false', item: '', tokens: String(tokens), agent: 'A' });
+test('the leaderboard ranks by tokens, then contributions, then who came first, and ties share a rank', () => {
+  const row = (n, donor, tokens, day) => ({ pr: String(n), merged_at: `2026-09-${day}T00:00:00Z`, donor, anonymous: 'false', item: '', tokens: String(tokens), agent: 'A', label: '', url: '' });
   const rows = [row(1, 'ada', 500, '10'), row(2, 'bob', 900, '11'), row(3, 'ada', 400, '12'), row(4, 'cy', 900, '13'), row(5, 'dee', 900, '09')];
   const out = donations.buildLeaderboard(rows);
-  assert.deepEqual(out.donors.map(d => [d.name, d.rank, d.tokens, d.sessions]),
+  assert.deepEqual(out.donors.map(d => [d.name, d.rank, d.tokens, d.contributions.length]),
     [['ada', 1, 900, 2], ['dee', 2, 900, 1], ['bob', 2, 900, 1], ['cy', 2, 900, 1]]);
-  assert.deepEqual(out.totals, { tokens: 3600, sessions: 5, donors: 4 });
+  assert.deepEqual(out.totals, { tokens: 3600, contributions: 5, donors: 4 });
   assert.equal(out.updated, '2026-09-13T00:00:00Z');
 });
 
+test('maintainer rows without a pull request keep their label and link, and agents get subtotals', () => {
+  const doc = 'https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md';
+  const rows = [
+    { pr: '', merged_at: '2026-09-13T00:00:00Z', donor: 'max', anonymous: 'false', item: '', tokens: '300', agent: 'Codex', label: 'Building Open Observatory', url: doc },
+    { pr: '15', merged_at: '2026-09-14T00:00:00Z', donor: 'max', anonymous: 'false', item: 'RFW-07', tokens: '100', agent: 'Claude Code', label: '', url: '' },
+    { pr: '', merged_at: '2026-09-15T00:00:00Z', donor: 'max', anonymous: 'false', item: '', tokens: '200', agent: 'Claude Code', label: 'Building Open Observatory', url: doc },
+  ];
+  const [max] = donations.buildLeaderboard(rows).donors;
+  assert.equal(max.tokens, 600);
+  assert.deepEqual(max.agents, [{ name: 'Claude Code', tokens: 300 }, { name: 'Codex', tokens: 300 }]);
+  assert.deepEqual(max.contributions.map(c => [c.pr, c.label, c.url]), [[null, 'Building Open Observatory', doc],
+    [15, null, 'https://github.com/recozers/openobservatory/pull/15'], [null, 'Building Open Observatory', doc]]);
+  const merged = donations.upsert(rows, { ...rows[1], tokens: '150' });
+  assert.equal(merged.length, 3, 'recording a pull request again leaves maintainer rows alone');
+});
+
 test('the ledger round-trips through CSV, quoting awkward agent names', () => {
-  const rows = [{ pr: '9', merged_at: '2026-09-20T00:00:00Z', donor: 'eve', anonymous: 'false', item: 'T-05', tokens: '42000', agent: 'Agent "X", v2' }];
+  const rows = [{ pr: '9', merged_at: '2026-09-20T00:00:00Z', donor: 'eve', anonymous: 'false', item: 'T-05', tokens: '42000', agent: 'Agent "X", v2', label: '', url: '' }];
   assert.deepEqual(donations.parseCsv(donations.toCsv(rows)), rows);
   const updated = donations.upsert(rows, { ...rows[0], tokens: '50000' });
   assert.equal(updated.length, 1);
@@ -89,18 +105,23 @@ test('the page renders rows with text only, and says so when the board is empty'
     appendChild(c) { this.children.push(c); return c; }, setAttribute(k, v) { this.attrs[k] = v; } }; made.push(n); return n; };
   const els = { totals: node('p'), rows: node('tbody'), board: node('div') };
   const doc = { getElementById: id => els[id], createElement: node, createTextNode: text => ({ text }) };
-  assert.equal(board.render(doc, { totals: { tokens: 0, sessions: 0, donors: 0 }, donors: [] }), 0);
+  assert.equal(board.render(doc, { totals: { tokens: 0, contributions: 0, donors: 0 }, donors: [] }), 0);
   assert.match(els.totals.textContent, /No donated sessions/);
   assert.equal(els.board.hidden, true);
-  const data = donations.buildLeaderboard([{ pr: '15', merged_at: '2026-09-14T16:34:46Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: 'RFW-07', tokens: '1250000', agent: 'Claude Code' }]);
+  const data = donations.buildLeaderboard([{ pr: '15', merged_at: '2026-09-14T16:34:46Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: 'RFW-07', tokens: '1250000', agent: 'Claude Code', label: '', url: '' },
+    { pr: '', merged_at: '2026-09-13T00:00:00Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: '', tokens: '750000', agent: 'Codex', label: 'Building Open Observatory', url: 'https://evil.example/x' }]);
   data.donors[0].profile = 'javascript:alert(1)';
   assert.equal(board.render(doc, data), 1);
   assert.equal(els.board.hidden, false);
   const row = els.rows.children[0];
   assert.equal(row.children[1].children[0].tag, 'span', 'a profile link that is not on github.com is not a link');
   assert.equal(row.children[1].children[0].textContent, '<img src=x onerror=alert(1)>');
-  assert.equal(row.children[2].textContent, '1.25M');
-  assert.equal(row.children[4].children[0].attrs.href, 'https://github.com/recozers/openobservatory/pull/15');
-  assert.equal(row.children[4].children[0].textContent, 'RFW-07 (#15)');
-  assert.match(els.totals.textContent, /1\.25M tokens donated across 1 merged session by 1 donor/);
+  assert.equal(row.children[2].textContent, '2M');
+  const [build, pr15] = row.children[3].children;
+  assert.equal(build.children[0].tag, 'span', 'a link outside the repository is shown as text');
+  assert.equal(build.children[0].textContent, 'Building Open Observatory');
+  assert.equal(pr15.children[0].attrs.href, 'https://github.com/recozers/openobservatory/pull/15');
+  assert.equal(pr15.children[0].textContent, 'RFW-07 (#15)');
+  assert.match(row.children[1].textContent, /Claude Code: 1\.25M/);
+  assert.match(els.totals.textContent, /2M tokens from 1 donor across 2 contributions/);
 });

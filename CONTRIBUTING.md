@@ -55,7 +55,7 @@ live from open pull requests.
 3. **Work.** Push commits as you go. Each push renews the claim.
 4. **Hand off.** Fill in the Handoff section, run the checks in the template, add a dated entry to `docs/LOG.md`, and mark
    the pull request ready for review. Stuart reviews and merges. To appear on the token leaderboard, fill in the Donation
-   section too.
+   section too, as [Token leaderboard](#token-leaderboard) describes.
 5. **Release.** If you stop without delivering, say where you stopped in the pull request and close it.
 
 The claims workflow keeps claims honest. It runs on every pull request event and once a day:
@@ -68,16 +68,73 @@ The claims workflow keeps claims honest. It runs on every pull request event and
 - It posts one comment per pull request and keeps it up to date. It reads titles, labels and commit dates only and never
   runs code from a pull request.
 
-The donations workflow runs when a pull request is merged. It reads the Donation section, adds a row to
-`data/donations.csv`, rebuilds `site/data/leaderboard.json`, redeploys the site and comments with what it recorded. Token
-counts are self-reported and only merged pull requests count. Editing the section after the merge changes nothing until a
-maintainer runs the Donations workflow by hand with the pull request's number. After editing the ledger directly, run
-`node .github/scripts/donations.cjs rebuild`.
-
 The tests workflow runs the Python and Node tests and rebuilds the site data on every pull request, including those from
 forks. Agents never place orders, sign licences or handle payment. To add or change a request, edit
 `REQUESTS_FOR_WORK.md` and run `python tools/build_requests_page.py`; a test fails if `site/requests.html` is stale. To
 propose an item without writing it yourself, open an issue with the proposal form.
+
+## Token leaderboard
+
+[openobservatory.info/leaderboard.html](https://openobservatory.info/leaderboard.html) counts the tokens that build Open
+Observatory: donated sessions, once their pull request is merged, and the maintainers' own sessions.
+
+### Getting listed
+
+Fill in the pull request template's Donation section before you mark the pull request ready for review:
+
+- **Tokens used:** the total for the work in this pull request, measured as below. You can add a breakdown in brackets
+  after the number, for example `1,250,000 (1,200,000 cache reads, 40,000 cache writes, 10,000 output)`.
+- **Agent and model:** for example `Claude Code with Claude Opus 5` or `Codex with gpt-5-codex`.
+- **List me as:** `username`, or `anonymous` to hide your GitHub username on the board. The pull request itself stays public.
+
+When the pull request is merged, the donations workflow reads the section from `main`. It adds a row to
+`data/donations.csv`, rebuilds `site/data/leaderboard.json`, redeploys the site and comments with what it recorded. If it
+cannot read the count, it says so in a comment and records nothing. Editing the section after the merge changes nothing
+until a maintainer records the pull request again.
+
+### Measuring tokens
+
+Count every token the model processed for the work in the pull request: uncached input, cache writes, cache reads and
+output. Cache reads are usually most of the total, because every call re-reads the conversation so far. The build rows
+include them, so include yours. Leave out work in the same session that is not part of the pull request, and never count
+the same tokens in two pull requests.
+
+If your agent keeps local session logs, `tools/agent_token_usage.py` counts them the same way the build rows were counted.
+Times are UTC.
+
+```sh
+# Claude Code keeps sessions in ~/.claude/projects/<folder>/<session>.jsonl, and subagents in <session>/subagents/.
+python tools/agent_token_usage.py claude ~/.claude/projects/<folder>/<session>.jsonl ~/.claude/projects/<folder>/<session>/subagents/*.jsonl \
+  --until 2026-09-20T18:00:00Z --window unrelated=2026-09-20T15:00:00Z..2026-09-20T15:30:00Z
+
+# Codex keeps sessions in ~/.codex/sessions/<year>/<month>/<day>/rollout-<id>.jsonl.
+python tools/agent_token_usage.py codex ~/.codex/sessions/2026/09/20/rollout-<id>.jsonl --until 2026-09-20T18:00:00Z
+```
+
+- **Which number to report.** The script puts every model response in one group. Report the sum of the `counted` groups:
+  `total` for Claude Code and `total_tokens` for Codex.
+- **Leaving work out.** `--until` leaves out everything from the time you finished. Each `--window` puts a stretch of
+  unrelated work in its own group, so it stays out of the `counted` groups. A response that touches a window belongs to
+  that window.
+- **Codex.** `total_tokens` is input, cached input included, plus output. The script adds up Codex's per-response records,
+  which can come to more than the running counter Codex shows on screen. `matches_thread_total` confirms they equal the
+  thread total Codex stores.
+- **Other agents.** Use the usage their logs or dashboard report, and say in brackets what the number includes.
+
+### What the numbers mean
+
+- Counts are self-reported and cannot be verified. Merging means a maintainer reviewed the work, not the count, and a
+  maintainer may ask how you measured it.
+- The rows labelled "Building Open Observatory" were measured from the maintainers' own session logs with the same script.
+  `docs/token_accounting.md` gives the method, the exclusions and the breakdown.
+
+### For maintainers
+
+- To record a pull request again after its Donation section is corrected, run the Donations workflow by hand with the pull
+  request's number, from the Actions tab or with `gh workflow run donations.yml -f pr=NN`.
+- Rows with no pull request, such as build tokens, go straight into `data/donations.csv` with a `label` and a `url` that
+  explains the count. Then run `node .github/scripts/donations.cjs rebuild`; a test fails if the leaderboard does not
+  match the ledger.
 
 ## Work and review
 

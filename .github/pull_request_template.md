@@ -29,7 +29,7 @@ changes need no ID. Delete the sections that do not apply.
 <!-- Counted on the token leaderboard, https://openobservatory.info/leaderboard.html, when this pull request is merged.
 Counts are self-reported. Leave this section out if you do not want to be listed. -->
 
-- **Tokens used:** <!-- the session's total as your agent reports it, for example 1,250,000 or 1.25M -->
+- **Tokens used:** <!-- every token the model processed for this work, cache reads included, for example 1,250,000 or 1.25M. CONTRIBUTING.md, "Token leaderboard", shows how to measure it -->
 - **Agent and model:** <!-- for example Claude Code with Claude Opus 5 -->
 - **List me as:** username <!-- or anonymous -->
 

@@ -438,6 +438,80 @@ Limits, stated on the page: token counts are self-reported and cannot be verifie
 Only merged pull requests count, and edits to the section after merging change nothing until a maintainer re-runs the
 workflow. Anonymous donors are stored under a hash of their username, which hides the name on the board but not on the public
 pull request. The board starts empty: the practice claim in pull request 15 reported no token count.
+- Build tokens added (Stuart, 15 Sep: "add codex's tokens to the leaderboard too, and also the tokens we used to build the
+  whole thing"). `tools/agent_token_usage.py` counted them from the local session logs, and `docs/token_accounting.md` has
+  the method, exclusions and breakdown. Three rows labelled "Building Open Observatory" were added for recozers: Claude Code
+  with Claude Fable 5.1, 253,162,894 tokens over 593 responses; Codex with gpt-6-astra, 81,551,994 over 558; and Claude Code
+  with Claude Opus 5, 152,579,428 over 279. With RFW-07's 18,895,938 the total is 506,190,254. Excluded: the RFW-07 windows,
+  already a row via pull request 15; the personal-website node turn, 7,619,108 tokens; everything after 12:39:59 UTC on 15
+  Sep; and the original cloud session, whose usage is not in local logs. A first count double-counted one response on an
+  RFW-07 window boundary; responses now belong to a window if any of their transcript lines fall in it. Codex's per-response
+  records sum to its thread total, 81,551,994; its running counter showed 80,035,718. The ledger gained `label` and `url`
+  columns, and the page now shows per-agent subtotals and lists contributions without a pull request.
+- Contribution guide updated for the leaderboard (Stuart, 15 Sep). CONTRIBUTING.md has a "Token leaderboard" section:
+  getting listed, measuring tokens with `tools/agent_token_usage.py` so donated counts match the build rows (cache reads
+  included, unrelated work left out, nothing counted twice), what the numbers mean, and maintainer tasks. The script now takes
+  `--until` and `--window` for Codex as well as Claude Code, names its groups `counted <model>`, and has tests
+  (`tests/test_agent_token_usage.py`). The pull request template, the requests page and the leaderboard page point to the
+  guide instead of "as your agent reports it". The published figures are unchanged.
+
+## 2026-09-15 (donated session, Claude): RFW-01, review of the radar-detected structures in China (pull request 16)
+
+Claimed from a fork (`rfw/01-cn-radar-review`), draft pull request 16 on recozers/openobservatory.
+
+- Method. `tools/radar_review_chips.py` renders, for each `cn_<hub>_r<rank>` entry, a two-panel Sentinel-2 chip from AWS open
+  data (least cloudy summer scene of 2021 and of 2026, 1.4 km wide, the entry's 20 m radar outline in red, other radar
+  outlines yellow, digitised campuses cyan) into `results_cn/radar_review/<site_id>.png`; scene ids are in `scenes.csv`.
+  One Overpass query per entry (400 m radius, 1 request/s, identified User-Agent) gave named or industrial OpenStreetMap
+  features (`osm_context.csv`, raw `osm_context.json`). `tools/radar_review_viewer.html` shows an outline over Esri World
+  Imagery or Google tiles in a browser as a viewing aid; nothing from those services is saved, and their imagery predates
+  every entry dated 2025 or later. Verdicts are one person's reading of the chips, recorded with a reason and a confidence.
+- Result, `data/cn_radar_review.csv` (39 rows): 3 data-hall complexes, 12 not data centres, 24 unclear.
+  - Confirmed (medium or low confidence, from layout and OSM park names, not documents): `cn_horinger_r04`, a regular grid of
+    about ten blocks inside the China Telecom cloud-computing Inner Mongolia information park landuse, 0.2 km from Epoch's
+    Huawei Horinger point; `cn_horinger_r06`, a two-row grid of about ten blocks 350 m from China Mobile's Hohhot data centre;
+    `cn_qingyang_r07`, blocks under construction inside the China Telecom Qingyang intelligent-computing park landuse, next
+    to China Mobile's and China Unicom's Qingyang data-centre landuse.
+  - Rejected: Ulanqab r05 and r03 (rows of narrow sheds), r07 (village compound); Horinger r27 (sports hall by a running
+    track), r03 (walled factory with tanks and a stack), r19 (factory inside Xibei food-industry landuse), r14 (curved
+    commercial complex with a bank inside the outline), r25 (Inner Mongolia Normal University campus); Zhangbei r03 (an
+    850 m shed with shed rows), r05 (photovoltaic array by the expressway service area), r06 and r07 (blocks inside the
+    county town). These left `data/sites.csv`; their polygons, radar timelines and chips stay, and
+    `tools/ingest_radar_candidates.py` now reads the review file so it never re-adds them.
+  - Unclear (24, 16 at Horinger): mostly big-box buildings of 100 to 200 m that 10 m imagery cannot tell from logistics or
+    workshops, several under construction or built after the newest web imagery. Notable: Horinger r02 and r05 (rows of
+    200 m boxes, r05 beside the Shengle power plant), r11 and r12 (blocks beside the digitised cloud valley, r12 laid out like
+    dormitories), Gui'an r01 (a 2 by 3 grid of white buildings on a graded terrace), Qingyang r12 and r11 (inside or beside
+    OSM landuse named for China Energy Engineering's big-data park and Chindata's zero-carbon base).
+- Site: 151 sites, of which 27 radar entries; `site/data/timeline/` files for the 12 rejected entries removed. The
+  requests page table now reads 42 Chinese sites including 27 radar-found structures.
+- Tests: `tests/test_radar_review.py` (4) checks verdict values, evidence paths, that every inventory radar entry is reviewed
+  and not rejected, that rejected entries keep their evidence files, and that the ingest skips them.
+- Limits. No verdict rests on a document; the three confirmations could still be offices inside a data-centre park. The
+  Esri and Google tiles were used only to look, and their capture dates are not shown. A Chinese-reading reviewer (PAID-06)
+  or sub-metre imagery (PAID-01) would settle most of the unclear entries; land and procurement records (RFW-04, RFW-05)
+  could attribute them.
+
+## 2026-09-15 (donated session, Claude): RFW-03, quarterly construction index for the Chinese hubs (pull request 17)
+
+Branch `rfw/03-cn-construction-index`, based on the RFW-01 branch (pull request 16), which supplies the verdicts.
+
+- `tools/cn_construction_index.py`: for each of the 39 reviewed radar structures, area from the scan and structure-on month
+  from `results_s1/<site_id>.csv` with the site's rule (`s1_on`, 4 dB sustained six months); the dating window runs from the
+  onset of the rise (first month of the run at or above base + 2 dB leading into the plateau, at most six months back) to the
+  plateau month. Aggregated by hub, quarter and verdict into `results_cn/construction_index.csv`, with the area whose whole
+  window lies inside the quarter ("firm") and the area whose window overlaps it ("possible") as low and high bounds; per-entry
+  rows in `results_cn/construction_index_entries.csv`.
+- Numbers: 39 structures, all dated; onset-to-plateau spread median 2 months, maximum 6; 18 of 39 windows lie inside one
+  quarter. Confirmed data-hall area 54 ha in three structures (Horinger 2022Q2 27 ha and 2024Q2 18 ha, Qingyang 2025Q1 9 ha);
+  unclear 288 ha in 24; rejected 114 ha in 12. Horinger's biggest quarter is 2024Q3 with 72 ha in five structures. One entry,
+  `cn_horinger_r21`, dates to 2020Q1, before the scan window, and is flagged.
+- The note in `docs/MVP.md` states what the index can and cannot show, with the table behind each quarter. A first attempt at
+  the uncertainty re-ran the dating rule over a grid of thresholds (3 to 5 dB) and sustain lengths (3 to 9 months); the loose
+  variants fired on seasonal swings as early as 2018 and gave windows of up to 86 months, so that was dropped for the
+  onset-to-plateau window.
+- Tests: `tests/test_cn_construction_index.py` (6), including a check that the committed index matches the review file.
+  Nothing on the public site changes; no builder reads the index yet.
 
 ## 2026-09-15 (donated session, Claude): RFW-32, source link checker (pull request 18)
 
