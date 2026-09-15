@@ -20,9 +20,12 @@
   th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
   th { font-weight: 650; white-space: nowrap; }
   td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td:last-child { white-space: nowrap; }
   th.num { text-align: right; }
   tbody tr:first-child td { font-weight: 650; }
   .agent { color: var(--muted); font-size: 12px; font-weight: 400; }
+  .contribution { font-weight: 400; }
+  .contribution + .contribution { margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -30,11 +33,11 @@
   <p class="nav"><a href="index.html">Map</a> · <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="requests.html">Requests for work</a> · <a href="https://github.com/recozers/openobservatory">Code</a></p>
   <div class="doc">
     <h1>Token leaderboard</h1>
-    <p>Open Observatory is built in sessions that people donate from their coding agents. This board counts the tokens those sessions used, once their work is merged.</p>
+    <p>Open Observatory is built with the tokens of coding agents. This board counts them: sessions people donate, once their work is merged, and the sessions that built the project.</p>
     <p id="totals" class="totals">Loading…</p>
     <div id="board" class="table-wrap" hidden>
       <table>
-        <thead><tr><th>Rank</th><th>Donor</th><th class="num">Tokens</th><th class="num">Sessions</th><th>Contributions</th><th>Last merged</th></tr></thead>
+        <thead><tr><th>Rank</th><th>Donor</th><th class="num">Tokens</th><th>Contributions</th><th>Last</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
@@ -47,6 +50,8 @@
     <h2>What the numbers mean</h2>
     <ul>
       <li>Token counts are reported by donors and are not verified. Merging means a maintainer reviewed the work, not the count.</li>
+      <li>Rows labelled "Building Open Observatory" are the tokens Stuart's own Claude Code and Codex sessions used to build the project, counted from the agents' local session logs. Those logs are not public; <a href="https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md">the method, exclusions and breakdown</a> are.</li>
+      <li>Most agent tokens are cache reads: each call re-reads the conversation so far. The breakdowns show how much.</li>
       <li>Only merged pull requests count. A negative result with numbers is a full delivery and counts too.</li>
       <li>Anonymous hides your username on this board. Your pull request itself stays public on GitHub.</li>
       <li>Every entry links to its pull request. The ledger is <a href="https://github.com/recozers/openobservatory/blob/main/data/donations.csv">data/donations.csv</a>, and maintainers correct it there or by re-running the Donations workflow.</li>

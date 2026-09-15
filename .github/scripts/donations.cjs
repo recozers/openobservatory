@@ -1,7 +1,8 @@
 // Token leaderboard. When a pull request is merged, .github/workflows/donations.yml runs `record` from main: it reads the
 // pull request's Donation section, updates the ledger data/donations.csv, and rebuilds site/data/leaderboard.json.
 // Token counts are reported by donors and cannot be verified; merging is the only check. The job never runs code from a
-// pull request. After editing the ledger by hand, run `node .github/scripts/donations.cjs rebuild`.
+// pull request. Maintainers can also add rows with no pull request, such as the tokens used to build the project, with a
+// label and a URL explaining the count. After editing the ledger by hand, run `node .github/scripts/donations.cjs rebuild`.
 'use strict';
 const crypto = require('node:crypto');
 const fs = require('node:fs');
@@ -11,7 +12,7 @@ const claims = require('../../site/claims.js');
 const ROOT = path.resolve(__dirname, '../..');
 const LEDGER = path.join(ROOT, 'data', 'donations.csv');
 const BOARD = path.join(ROOT, 'site', 'data', 'leaderboard.json');
-const FIELDS = ['pr', 'merged_at', 'donor', 'anonymous', 'item', 'tokens', 'agent'];
+const FIELDS = ['pr', 'merged_at', 'donor', 'anonymous', 'item', 'tokens', 'agent', 'label', 'url'];
 const MARK = '<!-- open-observatory-donation-bot -->';
 const MAX_TOKENS = 10e9;  // larger reports are treated as typos and left for a maintainer
 const REPO_URL = 'https://github.com/recozers/openobservatory';
@@ -88,7 +89,7 @@ function toCsv(rows) {
 function ledgerRow(pr, donation) {
   return { pr: String(pr.number), merged_at: pr.merged_at, donor: donation.anonymous ? pseudonym(pr.user.login) : pr.user.login,
     anonymous: donation.anonymous ? 'true' : 'false', item: (claims.parseClaimTitle(pr.title) || {}).id || '',
-    tokens: String(donation.tokens), agent: donation.agent };
+    tokens: String(donation.tokens), agent: donation.agent, label: '', url: '' };
 }
 
 function upsert(rows, row) {
@@ -96,35 +97,39 @@ function upsert(rows, row) {
     .sort((a, b) => a.merged_at.localeCompare(b.merged_at) || Number(a.pr) - Number(b.pr));
 }
 
-// Donors ranked by reported tokens, then by sessions, then by who donated first. Equal tokens and sessions share a rank.
+// Donors ranked by tokens, then by number of contributions, then by who contributed first; equal tokens and contribution
+// counts share a rank. A contribution is a merged pull request or a maintainer-added row with a label and a URL.
 function buildLeaderboard(rows) {
   const byDonor = new Map();
   for (const r of rows) {
     const tokens = Number(r.tokens);
     if (!Number.isFinite(tokens) || tokens <= 0) continue;
-    const d = byDonor.get(r.donor) || { key: r.donor, anonymous: r.anonymous === 'true', tokens: 0, sessions: 0, contributions: [], agents: [],
+    const d = byDonor.get(r.donor) || { key: r.donor, anonymous: r.anonymous === 'true', tokens: 0, contributions: [], agents: new Map(),
       first: r.merged_at, last: r.merged_at };
     d.tokens += tokens;
-    d.sessions += 1;
-    d.contributions.push({ pr: Number(r.pr), item: r.item || null, tokens, merged_at: r.merged_at, url: `${REPO_URL}/pull/${r.pr}` });
-    if (r.agent && !d.agents.includes(r.agent)) d.agents.push(r.agent);
+    const pr = r.pr ? Number(r.pr) : null;
+    d.contributions.push({ pr, item: r.item || null, label: r.label || null, tokens, merged_at: r.merged_at,
+      url: pr ? `${REPO_URL}/pull/${pr}` : (r.url || null), agent: r.agent || null });
+    if (r.agent) d.agents.set(r.agent, (d.agents.get(r.agent) || 0) + tokens);
     if (r.merged_at < d.first) d.first = r.merged_at;
     if (r.merged_at > d.last) d.last = r.merged_at;
     byDonor.set(r.donor, d);
   }
-  const donors = [...byDonor.values()].sort((a, b) => b.tokens - a.tokens || b.sessions - a.sessions || a.first.localeCompare(b.first));
+  const donors = [...byDonor.values()].sort((a, b) => b.tokens - a.tokens || b.contributions.length - a.contributions.length || a.first.localeCompare(b.first));
   let rank = 0;
   donors.forEach((d, i) => {
     const prev = donors[i - 1];
-    rank = prev && prev.tokens === d.tokens && prev.sessions === d.sessions ? rank : i + 1;
+    rank = prev && prev.tokens === d.tokens && prev.contributions.length === d.contributions.length ? rank : i + 1;
     d.rank = rank;
   });
   return {
     updated: rows.length ? rows.map(r => r.merged_at).sort().slice(-1)[0] : null,
-    totals: { tokens: donors.reduce((s, d) => s + d.tokens, 0), sessions: donors.reduce((s, d) => s + d.sessions, 0), donors: donors.length },
+    totals: { tokens: donors.reduce((s, d) => s + d.tokens, 0), contributions: donors.reduce((s, d) => s + d.contributions.length, 0), donors: donors.length },
     donors: donors.map(d => ({ rank: d.rank, name: d.anonymous ? 'Anonymous donor' : d.key, anonymous: d.anonymous,
-      profile: d.anonymous ? null : `https://github.com/${d.key}`, tokens: d.tokens, sessions: d.sessions,
-      contributions: d.contributions.sort((a, b) => a.merged_at.localeCompare(b.merged_at)), agents: d.agents, first: d.first, last: d.last })),
+      profile: d.anonymous ? null : `https://github.com/${d.key}`, tokens: d.tokens,
+      contributions: d.contributions.sort((a, b) => a.merged_at.localeCompare(b.merged_at) || (a.pr || 0) - (b.pr || 0)),
+      agents: [...d.agents.entries()].map(([name, tokens]) => ({ name, tokens })).sort((a, b) => b.tokens - a.tokens || a.name.localeCompare(b.name)),
+      first: d.first, last: d.last })),
   };
 }
 

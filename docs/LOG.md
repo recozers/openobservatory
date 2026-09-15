@@ -438,3 +438,14 @@ Limits, stated on the page: token counts are self-reported and cannot be verifie
 Only merged pull requests count, and edits to the section after merging change nothing until a maintainer re-runs the
 workflow. Anonymous donors are stored under a hash of their username, which hides the name on the board but not on the public
 pull request. The board starts empty: the practice claim in pull request 15 reported no token count.
+- Build tokens added (Stuart, 15 Sep: "add codex's tokens to the leaderboard too, and also the tokens we used to build the
+  whole thing"). `tools/agent_token_usage.py` counted them from the local session logs, and `docs/token_accounting.md` has
+  the method, exclusions and breakdown. Three rows labelled "Building Open Observatory" were added for recozers: Claude Code
+  with Claude Fable 5.1, 253,162,894 tokens over 593 responses; Codex with gpt-6-astra, 81,551,994 over 558; and Claude Code
+  with Claude Opus 5, 152,579,428 over 279. With RFW-07's 18,895,938 the total is 506,190,254. Excluded: the RFW-07 windows,
+  already a row via pull request 15; the personal-website node turn, 7,619,108 tokens; everything after 12:39:59 UTC on 15
+  Sep; and the original cloud session, whose usage is not in local logs. A first count double-counted one response on an
+  RFW-07 window boundary; responses now belong to a window if any of their transcript lines fall in it. Codex's per-response
+  records sum to its thread total, 81,551,994; its running counter showed 80,035,718. The ledger gained `label` and `url`
+  columns, and the page now shows per-agent subtotals and lists contributions without a pull request.
+

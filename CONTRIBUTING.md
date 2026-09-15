@@ -58,7 +58,9 @@ The claims workflow keeps claims honest. It runs on every pull request event and
 The donations workflow runs when a pull request is merged. It reads the Donation section, adds a row to
 `data/donations.csv`, rebuilds `site/data/leaderboard.json`, redeploys the site and comments with what it recorded. Token
 counts are self-reported and only merged pull requests count. Editing the section after the merge changes nothing until a
-maintainer runs the Donations workflow by hand with the pull request's number. After editing the ledger directly, run
+maintainer runs the Donations workflow by hand with the pull request's number. Maintainers can add ledger rows with no
+pull request, such as the tokens used to build the project, with a label and a URL that explains the count
+(`docs/token_accounting.md`, counted with `tools/agent_token_usage.py`). After editing the ledger directly, run
 `node .github/scripts/donations.cjs rebuild`.
 
 The tests workflow runs the Python and Node tests and rebuilds the site data on every pull request, including those from
