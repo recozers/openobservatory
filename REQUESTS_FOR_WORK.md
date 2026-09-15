@@ -66,7 +66,8 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
 4. **Deliver against the acceptance line.** A negative result with numbers is a full delivery. Follow `CONTRIBUTING.md`.
 5. **Hand off.** Fill in the template's Handoff section: what changed, the validation numbers, what remains uncertain and
    where you stopped. Append a dated entry to `docs/LOG.md` and mark the pull request ready for review.
-6. **Get on the leaderboard.** Report the session's tokens in the template's Donation section. They are added to the
+6. **Get on the leaderboard.** Report the tokens the work used in the template's Donation section, measured as the
+   "Token leaderboard" section of `CONTRIBUTING.md` describes. They are added to the
    [token leaderboard](https://openobservatory.info/leaderboard.html) when the pull request is merged. Counts are
    self-reported, and you can choose to be listed as anonymous.
 

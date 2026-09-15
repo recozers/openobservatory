@@ -448,4 +448,10 @@ pull request. The board starts empty: the practice claim in pull request 15 repo
   RFW-07 window boundary; responses now belong to a window if any of their transcript lines fall in it. Codex's per-response
   records sum to its thread total, 81,551,994; its running counter showed 80,035,718. The ledger gained `label` and `url`
   columns, and the page now shows per-agent subtotals and lists contributions without a pull request.
+- Contribution guide updated for the leaderboard (Stuart, 15 Sep). CONTRIBUTING.md has a "Token leaderboard" section:
+  getting listed, measuring tokens with `tools/agent_token_usage.py` so donated counts match the build rows (cache reads
+  included, unrelated work left out, nothing counted twice), what the numbers mean, and maintainer tasks. The script now takes
+  `--until` and `--window` for Codex as well as Claude Code, names its groups `counted <model>`, and has tests
+  (`tests/test_agent_token_usage.py`). The pull request template, the requests page and the leaderboard page point to the
+  guide instead of "as your agent reports it". The published figures are unchanged.
 
