@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15T12:42:01.839111+00:00",
+ "generated": "2026-09-15T13:58:33.360151+00:00",
  "extract_meta": {
   "backend": "Landsat 8 C1 brightness temperature 2013-2021 (day) + Landsat 8/9 C2 surface temperature 2022-2026 (day, Earth Engine) + ECOSTRESS 2018-2026 (day and night)",
   "start": "2013-04-11",
@@ -1982,7 +1982,7 @@
    "capacity_basis": "grid_connection",
    "pue_assumed": 1.2,
    "capacity_source": "Memphis Light Gas & Water / TVA approvals: 8 MW initial grid supply (mid-2024) then 150 MW (approved late 2024 / early 2025); on-site gas turbines supplied the balance in 2024",
-   "capacity_url": "https://en.wikipedia.org/wiki/Colossus_(data_center)/",
+   "capacity_url": "https://en.wikipedia.org/wiki/Colossus_(data_center)",
    "in_epoch_db": "yes",
    "notes": "Post-2021 site: needs the GEE backend (Landsat C2 L2). No thermal observations in this build. On-site gas turbines are a large confounding heat source.",
    "thermal_backend": "gee",

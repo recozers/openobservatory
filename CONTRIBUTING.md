@@ -23,6 +23,19 @@ python tools/serve_site.py   # http://localhost:8000, caching disabled
 
 Open the changed site at desktop and narrow phone widths. Check source links, unknowns, date bounds, and that a roof-only estimate has no midpoint. Run `python tools/validate_epoch.py` for inventory changes. Use `python tools/refresh.py --dry-run` to validate saved evidence without Earth Engine.
 
+## Check the source links
+
+Hundreds of URLs in `data/*.csv` and the JSON files under `data/` back the numbers on the site, and links rot.
+`python tools/check_links.py` collects every distinct URL, checks each once (HEAD, then GET if HEAD is refused; one request
+at a time per host, 1.5 s apart, robots.txt honoured, an identified User-Agent) and, for each dead link, asks the Internet
+Archive's availability API for the closest existing snapshot without submitting a capture. It writes
+`results/link_check.csv` (every URL with status, final URL, archive copy and the files that use it) and
+`results/link_check_dead.csv` (the dead ones). SEC EDGAR, the Nominatim and Overpass APIs and Google tile servers are listed
+as skipped, not fetched: EDGAR wants a contact email in the User-Agent that has not been agreed, and the others have usage
+policies that a checker should not test. Run it by hand before a release or about once a month; it takes a few minutes.
+When a link is dead, prefer replacing it with the publisher's new URL; fall back to the archived copy and keep the original
+URL beside it in the notes so the provenance chain stays visible. `--limit N` checks only the first N URLs for a dry run.
+
 ## Donated agent sessions
 
 Open work is listed in `REQUESTS_FOR_WORK.md` and at https://openobservatory.info/requests.html, which marks claimed items

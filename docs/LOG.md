@@ -512,3 +512,38 @@ Branch `rfw/03-cn-construction-index`, based on the RFW-01 branch (pull request 
   onset-to-plateau window.
 - Tests: `tests/test_cn_construction_index.py` (6), including a check that the committed index matches the review file.
   Nothing on the public site changes; no builder reads the index yet.
+
+## 2026-09-15 (donated session, Claude): RFW-32, source link checker (pull request 18)
+
+Branch `rfw/32-link-checker` from main, independent of pull requests 16 and 17.
+
+- `tools/check_links.py` collects every URL in `data/*.csv` and the JSON files under `data/` (375 distinct URLs in 22 files),
+  checks each once (HEAD, then GET when HEAD is refused; one request per host at a time, 1.5 s apart, four hosts in parallel,
+  robots.txt honoured, identified User-Agent), and asks the Internet Archive's availability API for the closest snapshot of
+  each dead or blocked link without submitting a capture. Reports: `results/link_check.csv` (all rows) and
+  `results/link_check_dead.csv` (dead, then blocked). Documented in CONTRIBUTING.md under "Check the source links".
+  Never fetched, listed as skipped (107): 72 Nominatim query URLs kept by the geocoder cache, 16 Google Earth viewer links,
+  3 gstatic images, 12 SEC EDGAR URLs (a contact email for the User-Agent is not agreed, see RFW-07) and 4 URLs whose hosts'
+  robots.txt disallow the fetch.
+- Result on 15 September: 235 reachable (17 of them redirected), 24 dead, 9 blocked, 3 reachable only with an untrusted TLS
+  certificate (sina.com.cn, sasac.gov.cn: Chinese certificate chains this client's bundle lacks; content not verified).
+  Of the 24 dead links 11 have an archived copy. By kind:
+  - 7 Chinese provincial stack-monitor platforms on raw IP addresses (connection refused or timed out), already recorded as
+    unreachable in `docs/cn_stack_monitors.md`; two have archived copies of their login or index pages only.
+  - 10 Chinese government pages (Chongqing, Hebei, Guizhou, Gui'an, Gansu) that fail the TLS handshake or time out from this
+    client, most likely geoblocking or protocol quirks rather than removal; 4 have archived copies. They need a check from a
+    connection inside China or a Chinese-reading reviewer (PAID-06).
+  - 7 US and corporate pages: City of Prineville 2020 water report PDF (404, archived), two Galaxy investor releases (404, one
+    archived), Armstrong County tax-abatement PDF (404, no archive), a PJM Inside Lines article (connection error, archived),
+    Develop Fulton County minutes PDF (connection error, archived), Jingneng Power's Shengle plant page (404, archived).
+  - Blocked (9): archive.is, archive.ph and datacentermap.com return 429; openai.com, corridorbusiness.com, tva.com and
+    zgqingyang.gov.cn return 403; sthj.gansu.gov.cn and chinatelecom.com.cn return 412 (a WAF response). The pages probably
+    exist; 3 have archived copies.
+- One correction from the run: the Colossus Wikipedia URL in `data/sites.csv` carried a trailing slash that returns 404;
+  removed. No other data changed: replacing dead links with archived copies is a data decision for Stuart, and the report
+  gives him the archive URL for each.
+- A first version counted 403, 412 and 429 as dead and treated TLS failures as dead; both were wrong, so those are now
+  separate categories (blocked; TLS untrusted) and the checker retries a TLS failure once without verification to learn
+  the status.
+- Tests: `tests/test_check_links.py` (5), all offline: URL extraction from CSV cells and nested JSON, bracket and
+  punctuation trimming, skip rules, the dead and blocked definitions, and the report files from a mocked run.
