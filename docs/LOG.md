@@ -418,6 +418,43 @@ workflow.
   EDGAR full-text search across VNET, GDS and Chindata filings, including 6-Ks, is blocked until a contact email for SEC's
   User-Agent is agreed, and most Chindata data centres still have no city. Its status now says so.
 
+
+## 2026-09-15 (Claude): token leaderboard
+
+Stuart asked for a token donation leaderboard. Added:
+
+- A Donation section in the pull request template: tokens used, agent and model, and whether to list the GitHub username or
+  "anonymous".
+- `.github/workflows/donations.yml` and `.github/scripts/donations.cjs`. When a pull request is merged, the workflow checks
+  out main and reads the section. It adds a row to the ledger `data/donations.csv`, rebuilds `site/data/leaderboard.json`,
+  commits both to main, dispatches the Pages deploy and comments with what it recorded. Pushes made with the workflow token do
+  not trigger other workflows, so it dispatches Pages explicitly. A maintainer can run it by hand with a pull request number
+  to record one again.
+- `site/leaderboard.html` and `site/leaderboard.js`, linked from every page's navigation, ranking donors by reported tokens,
+  then sessions, then who donated first.
+- `tests/donations.test.cjs` (9 tests).
+
+Limits, stated on the page: token counts are self-reported and cannot be verified; merging reviews the work, not the count.
+Only merged pull requests count, and edits to the section after merging change nothing until a maintainer re-runs the
+workflow. Anonymous donors are stored under a hash of their username, which hides the name on the board but not on the public
+pull request. The board starts empty: the practice claim in pull request 15 reported no token count.
+- Build tokens added (Stuart, 15 Sep: "add codex's tokens to the leaderboard too, and also the tokens we used to build the
+  whole thing"). `tools/agent_token_usage.py` counted them from the local session logs, and `docs/token_accounting.md` has
+  the method, exclusions and breakdown. Three rows labelled "Building Open Observatory" were added for recozers: Claude Code
+  with Claude Fable 5.1, 253,162,894 tokens over 593 responses; Codex with gpt-6-astra, 81,551,994 over 558; and Claude Code
+  with Claude Opus 5, 152,579,428 over 279. With RFW-07's 18,895,938 the total is 506,190,254. Excluded: the RFW-07 windows,
+  already a row via pull request 15; the personal-website node turn, 7,619,108 tokens; everything after 12:39:59 UTC on 15
+  Sep; and the original cloud session, whose usage is not in local logs. A first count double-counted one response on an
+  RFW-07 window boundary; responses now belong to a window if any of their transcript lines fall in it. Codex's per-response
+  records sum to its thread total, 81,551,994; its running counter showed 80,035,718. The ledger gained `label` and `url`
+  columns, and the page now shows per-agent subtotals and lists contributions without a pull request.
+- Contribution guide updated for the leaderboard (Stuart, 15 Sep). CONTRIBUTING.md has a "Token leaderboard" section:
+  getting listed, measuring tokens with `tools/agent_token_usage.py` so donated counts match the build rows (cache reads
+  included, unrelated work left out, nothing counted twice), what the numbers mean, and maintainer tasks. The script now takes
+  `--until` and `--window` for Codex as well as Claude Code, names its groups `counted <model>`, and has tests
+  (`tests/test_agent_token_usage.py`). The pull request template, the requests page and the leaderboard page point to the
+  guide instead of "as your agent reports it". The published figures are unchanged.
+
 ## 2026-09-15 (donated session, Claude): RFW-01, review of the radar-detected structures in China (pull request 16)
 
 Claimed from a fork (`rfw/01-cn-radar-review`), draft pull request 16 on recozers/openobservatory.

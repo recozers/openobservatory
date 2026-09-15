@@ -5,9 +5,9 @@
   Shows a radar entry's outline over a web basemap, for the RFW-01 review of radar-detected structures.
   Serve the repository root (python -m http.server 8765) and open
     http://localhost:8765/tools/radar_review_viewer.html#cn_horinger_r15
-  Add ,google to the hash to use Google's satellite tiles instead of Esri World Imagery, and ,z18 for a zoom level.
-  Tiles are viewed in the browser under each provider's terms and are never saved; the evidence files are the
-  Sentinel-2 chips in results_cn/radar_review/.
+  Add ,z18 to the hash for a zoom level. Tiles are Esri World Imagery, viewed in the browser under Esri's terms with its
+  attribution and never saved; the evidence files are the Sentinel-2 chips in results_cn/radar_review/. Google's satellite
+  tiles are not offered, because Google's terms do not allow loading them outside its own map APIs.
 -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -17,13 +17,12 @@
 window.addEventListener("hashchange", () => location.reload());
 const parts = location.hash.slice(1).split(",");
 const sid = parts[0] || "cn_horinger_r15";
-const provider = parts.includes("google") ? "google" : "esri";
+const provider = "esri";
 const zPart = parts.find(p => /^z\d+$/.test(p));
 const zoom = zPart ? parseInt(zPart.slice(1)) : 17;
 const map = L.map("map", {zoomControl: true});
 const layers = {
   esri: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {maxZoom: 19, attribution: "Esri World Imagery"}),
-  google: L.tileLayer("https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}", {maxZoom: 20, attribution: "Google"}),
 };
 layers[provider].addTo(map);
 fetch(`/data/polygons/${sid}.geojson`).then(r => r.json()).then(gj => {

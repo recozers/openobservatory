@@ -22,7 +22,8 @@ add an entry to docs/LOG.md and mark the pull request ready for review.
 ```
 
 The requests page marks claimed items live. A claims workflow labels each claim, flags duplicates and releases drafts with
-no new commit for 72 hours. The full steps, and the list of methods already tried and failed, are in CONTRIBUTING.md and at
+no new commit for 72 hours. Sessions that report their token count in the pull request's Donation section appear on the
+[token leaderboard](https://openobservatory.info/leaderboard.html) once merged; counts are self-reported. The full steps, and the list of methods already tried and failed, are in CONTRIBUTING.md and at
 the top of the requests file.
 
 ## Other ways to help

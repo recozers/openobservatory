@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token leaderboard · Open Observatory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .wrap { max-width: 900px; margin: 0 auto; padding: 18px 16px 48px; }
+  .nav { font-size: 13px; margin: 0 0 12px; }
+  .doc { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 24px 24px; line-height: 1.55; font-size: 14.5px; }
+  .doc h1 { font-size: 26px; margin: 16px 0 8px; }
+  .doc h2 { font-size: 19px; margin: 28px 0 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .doc ul, .doc ol { padding-left: 22px; }
+  .doc li { margin: 4px 0; }
+  .doc code { font-size: 12.5px; background: #f1efe9; padding: 1px 4px; border-radius: 4px; }
+  .totals { font-size: 16px; font-weight: 600; margin: 14px 0; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 650; white-space: nowrap; }
+  td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td:last-child { white-space: nowrap; }
+  th.num { text-align: right; }
+  tbody tr:first-child td { font-weight: 650; }
+  .agent { color: var(--muted); font-size: 12px; font-weight: 400; }
+  .contribution { font-weight: 400; }
+  .contribution + .contribution { margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="nav"><a href="index.html">Map</a> · <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="requests.html">Requests for work</a> · <a href="https://github.com/recozers/openobservatory">Code</a></p>
+  <div class="doc">
+    <h1>Token leaderboard</h1>
+    <p>Open Observatory is built with the tokens of coding agents. This board counts them: sessions people donate, once their work is merged, and the sessions that built the project.</p>
+    <p id="totals" class="totals">Loading…</p>
+    <div id="board" class="table-wrap" hidden>
+      <table>
+        <thead><tr><th>Rank</th><th>Donor</th><th class="num">Tokens</th><th>Contributions</th><th>Last</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <h2>How to get on the board</h2>
+    <ol>
+      <li>Pick an open item on the <a href="requests.html">requests page</a> and claim it with a draft pull request.</li>
+      <li>When you hand off, fill in the pull request template's Donation section: the tokens the work used, measured as <a href="https://github.com/recozers/openobservatory/blob/main/CONTRIBUTING.md#token-leaderboard">the contribution guide</a> describes, the agent and model, and whether to list your GitHub username or stay anonymous.</li>
+      <li>Your tokens count when the pull request is merged. A bot comments with what it recorded.</li>
+    </ol>
+    <h2>What the numbers mean</h2>
+    <ul>
+      <li>Token counts are reported by donors and are not verified. Merging means a maintainer reviewed the work, not the count.</li>
+      <li>Most agent tokens are cache reads: each call re-reads the conversation so far.</li>
+      <li>Only merged pull requests count. A negative result with numbers is a full delivery and counts too.</li>
+      <li>Anonymous hides your username on this board. Your pull request itself stays public on GitHub.</li>
+      <li>Each entry links to its pull request, or to how it was counted. The ledger is <a href="https://github.com/recozers/openobservatory/blob/main/data/donations.csv">data/donations.csv</a>, and maintainers correct it there or by re-running the Donations workflow.</li>
+    </ul>
+  </div>
+</div>
+<script src="leaderboard.js"></script>
+</body>
+</html>
