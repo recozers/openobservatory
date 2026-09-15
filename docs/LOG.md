@@ -598,6 +598,53 @@ Branch `rfw/14-plume-season` from main.
   $14.31, ric897's four pull requests $22.10, total $455.86. The page shows an API value column and says the figure is not
   what anyone paid.
 
+## 2026-09-15 (donated session, Claude): RFW-31, tests for the load precedence rules (pull request 20)
+
+Branch `rfw/31-precedence-tests` from main. `tests/test_load_precedence.py`, 28 tests in four classes, all on synthetic
+inputs:
+
+- `CapInForceTests` (9): measured electricity beats it_reported, facility_design and an A1 grid connection in force at the
+  same date; it_measured_annual is not divided by PUE; electricity beats water-derived; the newest measured year wins; a
+  measured year is carried forward at 24 months and expires at 25; each measured basis has its own carried name; a carried
+  average is displaced by an A1 row that starts after the measured year but not by one that started during it, and by a
+  newer measurement; an IT figure beats a facility figure whatever the row order or date; placeholder and nothing-in-force
+  returns; which bases `it_mw` divides by PUE.
+- `UtilisationPriorTests` (3): every multiplier tuple, basis before site class, the cloud/mixed/hub prior against the
+  uncalibrated AI-training prior.
+- `QuarterBandTests` (10): runs `build_timeline_data.main` on a temporary root with one 1 ha hall at the equator. Documented
+  capacity × cloud prior; measured then carried (36-40-44 then 28-40-52 from 40 MW IT) with an it_reported row in force that
+  does not displace it; water-derived and carried water; roof on but not fitted out, then potential 0 to 13.5 MW with no
+  midpoint; site density from documented capacity; placeholder means pre-operation; radar entry never estimated; generator
+  watch overrides capacity and a permit ceiling gives no megawatts; significant flux overrides the band with the exact
+  628-1000-2115 MW from 1000 ± 58 kg/h at 0.5-1.5 kg/MWh; weak flux and an adjacent-plant note leave the band alone.
+- `StatusPrecedenceTests` (6): runs `build_status.main` on synthetic timelines. Dedicated plant beats flux beats reported
+  electricity; carried electricity says "carried forward" and stays measured; water-derived and carried water are derived
+  with the upper-bound clause; documented capacity is presumed, high confidence only at A1, detected only with night lights;
+  roofs-only and radar entries are construction.
+- Not covered: the CAMPD plant allocation itself (`tests/test_campd_monthly.py` has it) and the roof-date rules, which are
+  dating, not load precedence. No production code changed; all tests pass on main.
+
+## 2026-09-15 (donated session, Claude): RFW-19, Microsoft's metro electricity table to campuses (pull request 21)
+
+Branch `rfw/19-microsoft-metros` from main.
+
+- `tools/microsoft_metro_table.py` downloads Microsoft's 2026 Environmental Data Fact Sheet (SHA-256 checked), reads page 25
+  with pypdf (added to requirements.txt as optional) and parses the 29 rows of Table 15: electricity (MWh), water withdrawal
+  (ML), non-potable share, Olympic pools and replenishment. The pools column, withdrawal / 2.5 ML, tells the optional columns
+  apart. Output `data/microsoft_metro_fy25.csv` and 29 `electricity_mwh` rows in `data/operator_disclosures.csv` under
+  `microsoft_<metro>` ids (the ids `data/water_derived_loads.csv` already uses), year 2025 with the FY25 period in the note.
+- Total 15,931,489 MWh over 29 metros (1,819 MW average); largest Boydton 3,113,847 MWh (355 MW), Des Moines 2,152,335,
+  San Antonio 1,440,710, Quincy 1,381,569, Dublin 1,308,581, Hollands Kroon 1,291,170, Cheyenne 1,091,460. Water per metro
+  equals the 13 September extraction for all 29 rows.
+- Attribution: none. The four metros holding inventory campuses (Phoenix with Goodyear, San Antonio with SAT14 and SAT40,
+  Des Moines with Project Osmium, Atlanta with Fairwater Atlanta) each hold several Microsoft campuses or the campus was not
+  operating in FY25, so the rows are upper bounds at best and stay context. `tools/ingest_disclosures.py` lists the 29 ids as
+  not in the inventory; no site figure changed. `docs/microsoft_metro_notes.md` has the table and the reasons; Boydton is
+  flagged for RFW-18.
+- Tests: `tests/test_microsoft_metros.py` (7): parser placement of the optional columns on sample lines, a missing row is an
+  error, 29 rows and region totals, water agrees with the water file, pools equal withdrawal / 2.5, no metro id in
+  `data/sites.csv` and every named campus is, disclosure rows match the table.
+
 ## 2026-09-15 (donated session, Claude): RFW-20, generator fleets and dedicated plants from EIA-860M (pull request 22)
 
 Branch `rfw/20-eia860m` from main.

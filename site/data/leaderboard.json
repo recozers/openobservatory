@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-15T14:10:30Z",
+  "updated": "2026-09-15T15:31:25Z",
   "totals": {
-    "tokens": 524950916,
-    "contributions": 8,
+    "tokens": 536219928,
+    "contributions": 10,
     "donors": 2,
-    "usd": 455.86,
+    "usd": 463.69,
     "usd_complete": true
   },
   "donors": [
@@ -86,8 +86,8 @@
       "name": "ric897",
       "anonymous": false,
       "profile": "https://github.com/ric897",
-      "tokens": 18760662,
-      "usd": 22.1,
+      "tokens": 30029674,
+      "usd": 29.92,
       "usd_complete": true,
       "contributions": [
         {
@@ -129,18 +129,38 @@
           "merged_at": "2026-09-15T14:10:30Z",
           "url": "https://github.com/recozers/openobservatory/pull/19",
           "agent": "Claude Code with Claude Fable 5.1"
+        },
+        {
+          "pr": 20,
+          "item": "RFW-31",
+          "label": null,
+          "tokens": 4033095,
+          "usd": 3.17,
+          "merged_at": "2026-09-15T15:26:31Z",
+          "url": "https://github.com/recozers/openobservatory/pull/20",
+          "agent": "Claude Code with Claude Fable 5.1"
+        },
+        {
+          "pr": 21,
+          "item": "RFW-19",
+          "label": null,
+          "tokens": 7235917,
+          "usd": 4.66,
+          "merged_at": "2026-09-15T15:31:25Z",
+          "url": "https://github.com/recozers/openobservatory/pull/21",
+          "agent": "Claude Code with Claude Fable 5.1"
         }
       ],
       "agents": [
         {
           "name": "Claude Code with Claude Fable 5.1",
-          "tokens": 18760662,
-          "usd": 22.1,
+          "tokens": 30029674,
+          "usd": 29.92,
           "usd_complete": true
         }
       ],
       "first": "2026-09-15T13:52:58Z",
-      "last": "2026-09-15T14:10:30Z"
+      "last": "2026-09-15T15:31:25Z"
     }
   ]
 }

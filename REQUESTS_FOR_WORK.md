@@ -287,7 +287,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-16](#rfw-16-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Utilisation | M | none | open |
 | [RFW-17](#rfw-17-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Utilisation | M | EE | open |
 | [RFW-18](#rfw-18-per-site-electricity-capacity-and-commercial-utilisation-from-more-operators) | Per-site electricity, capacity and commercial utilisation from more operators | Capacity, Utilisation | M | none | open |
-| [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | open |
+| [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | delivered in pull request 21 as context: no metro is one inventory campus; Boydton is a candidate site for RFW-18 |
 | [RFW-20](#rfw-20-generator-fleet-and-dedicated-plant-discovery-from-eia-860m) | Generator fleet and dedicated plant discovery from EIA-860M | Utilisation, Workload | M | none | first slice in pull request 22: 18 plants flagged and verified, none a new dedicated plant; the on-site fleets are absent from EIA-860M |
 | [RFW-21](#rfw-21-evidence-for-the-pending-generator-watch-records) | Evidence for the pending generator watch records | Utilisation | M | none | reserved: Astra |
 | [RFW-22](#rfw-22-stated-workload-roles-for-the-rest-of-the-inventory) | Stated workload roles for the rest of the inventory | Workload | M | none | open |
@@ -358,8 +358,12 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-19 Microsoft's metro electricity table to campuses
 
-- **Why:** Microsoft's 2026 data fact sheet reports fiscal-2025 electricity and water by metro area. Where a metro holds one
-  campus, that is a campus figure.
+- **Done so far:** pull request 21 parsed all 29 rows of Table 15 (`tools/microsoft_metro_table.py`,
+  `data/microsoft_metro_fy25.csv`, 15.9 TWh in FY25) into `data/operator_disclosures.csv` as metro rows, and mapped them
+  to the inventory (`docs/microsoft_metro_notes.md`). No metro is effectively one inventory campus: Phoenix, San Antonio and
+  Des Moines each hold several Microsoft campuses besides Goodyear, SAT14/SAT40 and Project Osmium, and Fairwater Atlanta
+  started after FY25, so every row stays context and no campus load changed. Boydton (3.11 TWh, one campus, 355 MW average)
+  is the row worth turning into a site under RFW-18.
 - **Do:** Map each metro row to inventory campuses. Attribute a figure only where the metro is effectively one campus, and
   record the rest as context.
 - **Deliver:** Rows in `data/operator_disclosures.csv` with the attribution reasoning, and a note listing the metros left as
@@ -445,7 +449,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-28](#rfw-28-recalibrate-the-hall-classifier-with-new-labels) | Recalibrate the hall classifier with new labels | Where | M | EE | open after RFW-01 |
 | [RFW-29](#rfw-29-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
 | [RFW-30](#rfw-30-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
-| [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
+| [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | delivered in pull request 20: 28 tests in `tests/test_load_precedence.py` |
 | [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | done in pull request 18 |
 | [RFW-33](#rfw-33-crawl-public-records-and-satellite-data-for-data-centres-in-the-rest-of-the-world) | Crawl public records and satellite data for data centres in the rest of the world | Where, Built, Capacity | L | none, then EE | open |
 
@@ -495,8 +499,13 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-31 Tests for the load precedence rules
 
-- **Why:** The rules deciding which figure sets a site's load have been extended several times: reported electricity, carried
-  averages, water-derived figures, third-party estimates, plant records, radar entries, generator watches.
+- **Done so far:** `tests/test_load_precedence.py` (pull request 20) pins `cap_in_force` (measured beats every other basis,
+  electricity beats water, the newest measured year wins, a measured year is carried forward for exactly 24 months and is
+  displaced only by an A1 row or a newer measurement, IT figures beat facility figures whatever the row order, placeholder,
+  nothing in force, which bases are divided by PUE), every `utilisation_prior` multiplier, and the quarterly band and status
+  built from synthetic sites: capacity band, measured then carried, water-derived, roofs-only potential without a midpoint,
+  placeholder, radar entry, generator watch, significant and weak NOx flux, adjacent plant, dedicated plant over flux over
+  reported electricity over water over documented capacity over roofs, and the evidence kind and confidence of each.
 - **Do:** Write synthetic cases for `cap_in_force`, `utilisation_prior` and the evidence kinds in `build_status.py`, covering
   each basis and each carried-forward case.
 - **Deliver:** Tests that fail if any precedence rule changes silently, all passing on `main`.
