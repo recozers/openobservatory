@@ -64,20 +64,23 @@ test('the leaderboard ranks by tokens, then contributions, then who came first, 
   const out = donations.buildLeaderboard(rows);
   assert.deepEqual(out.donors.map(d => [d.name, d.rank, d.tokens, d.contributions.length]),
     [['ada', 1, 900, 2], ['dee', 2, 900, 1], ['bob', 2, 900, 1], ['cy', 2, 900, 1]]);
-  assert.deepEqual(out.totals, { tokens: 3600, contributions: 5, donors: 4 });
+  assert.deepEqual(out.totals, { tokens: 3600, contributions: 5, donors: 4, usd: 0, usd_complete: false });
   assert.equal(out.updated, '2026-09-13T00:00:00Z');
 });
 
 test('maintainer rows without a pull request keep their label and link, and agents get subtotals', () => {
   const doc = 'https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md';
   const rows = [
-    { pr: '', merged_at: '2026-09-13T00:00:00Z', donor: 'max', anonymous: 'false', item: '', tokens: '300', agent: 'Codex', label: 'Building Open Observatory', url: doc },
-    { pr: '15', merged_at: '2026-09-14T00:00:00Z', donor: 'max', anonymous: 'false', item: 'RFW-07', tokens: '100', agent: 'Claude Code', label: '', url: '' },
-    { pr: '', merged_at: '2026-09-15T00:00:00Z', donor: 'max', anonymous: 'false', item: '', tokens: '200', agent: 'Claude Code', label: 'Building Open Observatory', url: doc },
+    { pr: '', merged_at: '2026-09-13T00:00:00Z', donor: 'max', anonymous: 'false', item: '', tokens: '300', agent: 'Codex', label: 'Building Open Observatory', url: doc, usd: '3.004' },
+    { pr: '15', merged_at: '2026-09-14T00:00:00Z', donor: 'max', anonymous: 'false', item: 'RFW-07', tokens: '100', agent: 'Claude Code', label: '', url: '', usd: '1.5' },
+    { pr: '', merged_at: '2026-09-15T00:00:00Z', donor: 'max', anonymous: 'false', item: '', tokens: '200', agent: 'Claude Code', label: 'Building Open Observatory', url: doc, usd: '1.25' },
   ];
-  const [max] = donations.buildLeaderboard(rows).donors;
+  const board = donations.buildLeaderboard(rows);
+  const [max] = board.donors;
   assert.equal(max.tokens, 600);
-  assert.deepEqual(max.agents, [{ name: 'Claude Code', tokens: 300 }, { name: 'Codex', tokens: 300 }]);
+  assert.equal(max.usd, 5.75);
+  assert.deepEqual(board.totals, { tokens: 600, contributions: 3, donors: 1, usd: 5.75, usd_complete: true });
+  assert.deepEqual(max.agents, [{ name: 'Claude Code', tokens: 300, usd: 2.75, usd_complete: true }, { name: 'Codex', tokens: 300, usd: 3, usd_complete: true }]);
   assert.deepEqual(max.contributions.map(c => [c.pr, c.label, c.url]), [[null, 'Building Open Observatory', doc],
     [15, null, 'https://github.com/recozers/openobservatory/pull/15'], [null, 'Building Open Observatory', doc]]);
   const merged = donations.upsert(rows, { ...rows[1], tokens: '150' });
@@ -85,7 +88,8 @@ test('maintainer rows without a pull request keep their label and link, and agen
 });
 
 test('the ledger round-trips through CSV, quoting awkward agent names', () => {
-  const rows = [{ pr: '9', merged_at: '2026-09-20T00:00:00Z', donor: 'eve', anonymous: 'false', item: 'T-05', tokens: '42000', agent: 'Agent "X", v2', label: '', url: '' }];
+  const rows = [{ pr: '9', merged_at: '2026-09-20T00:00:00Z', donor: 'eve', anonymous: 'false', item: 'T-05', tokens: '42000', agent: 'Agent "X", v2', label: '', url: '',
+    input_tokens: '1000', cache_write_tokens: '1000', cache_read_tokens: '39000', output_tokens: '1000', usd: '0.1' }];
   assert.deepEqual(donations.parseCsv(donations.toCsv(rows)), rows);
   const updated = donations.upsert(rows, { ...rows[0], tokens: '50000' });
   assert.equal(updated.length, 1);
@@ -108,8 +112,8 @@ test('the page renders rows with text only, and says so when the board is empty'
   assert.equal(board.render(doc, { totals: { tokens: 0, contributions: 0, donors: 0 }, donors: [] }), 0);
   assert.match(els.totals.textContent, /No donated sessions/);
   assert.equal(els.board.hidden, true);
-  const data = donations.buildLeaderboard([{ pr: '15', merged_at: '2026-09-14T16:34:46Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: 'RFW-07', tokens: '1250000', agent: 'Claude Code', label: '', url: '' },
-    { pr: '', merged_at: '2026-09-13T00:00:00Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: '', tokens: '750000', agent: 'Codex', label: 'Building Open Observatory', url: 'https://evil.example/x' }]);
+  const data = donations.buildLeaderboard([{ pr: '15', merged_at: '2026-09-14T16:34:46Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: 'RFW-07', tokens: '1250000', agent: 'Claude Code', label: '', url: '', usd: '12.5' },
+    { pr: '', merged_at: '2026-09-13T00:00:00Z', donor: '<img src=x onerror=alert(1)>', anonymous: 'false', item: '', tokens: '750000', agent: 'Codex', label: 'Building Open Observatory', url: 'https://evil.example/x', usd: '' }]);
   data.donors[0].profile = 'javascript:alert(1)';
   assert.equal(board.render(doc, data), 1);
   assert.equal(els.board.hidden, false);
@@ -117,11 +121,49 @@ test('the page renders rows with text only, and says so when the board is empty'
   assert.equal(row.children[1].children[0].tag, 'span', 'a profile link that is not on github.com is not a link');
   assert.equal(row.children[1].children[0].textContent, '<img src=x onerror=alert(1)>');
   assert.equal(row.children[2].textContent, '2M');
-  const [build, pr15] = row.children[3].children;
+  assert.equal(row.children[3].textContent, 'at least $12.50', 'a donor with an unpriced contribution shows a lower bound');
+  const [build, pr15] = row.children[4].children;
   assert.equal(build.children[0].tag, 'span', 'a link outside the repository is shown as text');
   assert.equal(build.children[0].textContent, 'Building Open Observatory');
   assert.equal(pr15.children[0].attrs.href, 'https://github.com/recozers/openobservatory/pull/15');
   assert.equal(pr15.children[0].textContent, 'RFW-07 (#15)');
-  assert.match(row.children[1].textContent, /Claude Code: 1\.25M/);
-  assert.match(els.totals.textContent, /2M tokens from 1 donor across 2 contributions/);
+  assert.match(row.children[1].textContent, /Claude Code: 1\.25M · \$12\.50/);
+  assert.match(pr15.textContent, /RFW-07 \(#15\) · 1\.25M, \$12\.50/);
+  assert.match(els.totals.textContent, /2M tokens, worth at least \$12\.50 at API list prices, from 1 donor across 2 contributions/);
 });
+
+test('a token breakdown is read from the Donation line and priced at the model\'s list rates', () => {
+  const line = '6,753,386 (6,268,161 cache reads, 414,418 cache writes, 1,190 uncached input, 69,617 output; 40 responses)';
+  const parts = donations.parseBreakdown(line, 6753386);
+  assert.deepEqual(parts, { input_tokens: 1190, cache_write_tokens: 414418, cache_read_tokens: 6268161, output_tokens: 69617 });
+  const pricing = [{ model_id: 'claude-fable-5-1', names: 'Claude Fable 5.1;claude-fable-5-1', tier: 'standard', input_per_mtok: '10',
+    cache_write_5m_per_mtok: '12.50', cache_write_1h_per_mtok: '20', cache_read_per_mtok: '0.25', output_per_mtok: '50' }];
+  assert.equal(donations.priceBreakdown('Claude Code with Claude Fable 5.1', parts, pricing), 13.3482);
+  assert.equal(donations.priceBreakdown('Some Other Agent', parts, pricing), null, 'unknown models get no price');
+  assert.equal(donations.parseBreakdown('1.25M', 1250000), null, 'a bare total has no breakdown');
+  assert.equal(donations.parseBreakdown('100 (10 cache reads, 10 cache writes, 10 uncached input, 10 output)', 100), null, 'parts must add up');
+  const codex = donations.parseBreakdown('81,551,994 (2,856,260 uncached input, 78,356,096 cached input, 0 cache writes, 339,638 output)', 81551994);
+  assert.equal(codex.cache_read_tokens, 78356096);
+});
+
+test('the bot says what a merge is worth, or why it has no dollar value', () => {
+  const priced = pr(8, fill('6,753,386 (6,268,161 cache reads, 414,418 cache writes, 1,190 uncached input, 69,617 output)', 'Claude Code with Claude Fable 5.1'));
+  const outcome = donations.decide(priced, donations.parseDonation(priced.body), []);
+  assert.equal(outcome.row.cache_read_tokens, '6268161');
+  assert.equal(outcome.row.usd, '13.3482');
+  assert.match(outcome.comment, /worth \$13\.35 at API list prices/);
+  const bare = pr(9, fill('1.25M'));
+  const plain = donations.decide(bare, donations.parseDonation(bare.body), []);
+  assert.equal(plain.row.usd, '');
+  assert.match(plain.comment, /No dollar value was recorded/);
+});
+
+test('every ledger row with a breakdown adds up to its total', () => {
+  for (const r of donations.readLedger()) {
+    if (!r.input_tokens) continue;
+    const sum = ['input_tokens', 'cache_write_tokens', 'cache_read_tokens', 'output_tokens'].reduce((s, f) => s + Number(r[f]), 0);
+    assert.equal(sum, Number(r.tokens), `row ${r.pr || r.label} ${r.agent}`);
+    assert.ok(Number(r.usd) > 0, `row ${r.pr || r.label} has a dollar value`);
+  }
+});
+

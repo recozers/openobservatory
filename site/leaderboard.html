@@ -37,7 +37,7 @@
     <p id="totals" class="totals">Loading…</p>
     <div id="board" class="table-wrap" hidden>
       <table>
-        <thead><tr><th>Rank</th><th>Donor</th><th class="num">Tokens</th><th>Contributions</th><th>Last</th></tr></thead>
+        <thead><tr><th>Rank</th><th>Donor</th><th class="num">Tokens</th><th class="num">API value</th><th>Contributions</th><th>Last</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
@@ -51,6 +51,7 @@
     <ul>
       <li>Token counts are reported by donors and are not verified. Merging means a maintainer reviewed the work, not the count.</li>
       <li>Most agent tokens are cache reads: each call re-reads the conversation so far.</li>
+      <li>The API value is what the tokens would cost at list prices, from each model's published rates for uncached input, cache writes, cache reads and output (<a href="https://github.com/recozers/openobservatory/blob/main/data/api_pricing.csv">prices and sources</a>). It is not what anyone paid: coding-agent subscriptions cost far less. Donors' cache writes are priced at the one-hour rate, and a contribution with no token breakdown has no dollar value.</li>
       <li>Only merged pull requests count. A negative result with numbers is a full delivery and counts too.</li>
       <li>Anonymous hides your username on this board. Your pull request itself stays public on GitHub.</li>
       <li>Each entry links to its pull request, or to how it was counted. The ledger is <a href="https://github.com/recozers/openobservatory/blob/main/data/donations.csv">data/donations.csv</a>, and maintainers correct it there or by re-running the Donations workflow.</li>

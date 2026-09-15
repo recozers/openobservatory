@@ -1,9 +1,9 @@
-pr,merged_at,donor,anonymous,item,tokens,agent,label,url
-,2026-09-13T23:17:46.216Z,recozers,false,,253162894,Claude Code with Claude Fable 5.1,Building Open Observatory,https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md
-,2026-09-14T11:53:55.460Z,recozers,false,,81551994,Codex with gpt-6-astra,Building Open Observatory,https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md
-15,2026-09-14T16:34:46Z,recozers,false,RFW-07,18895938,Claude Code with Claude Opus 5,,
-,2026-09-15T12:37:53.854Z,recozers,false,,152579428,Claude Code with Claude Opus 5,Building Open Observatory,https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md
-16,2026-09-15T13:52:58Z,ric897,false,RFW-01,6753386,Claude Code with Claude Fable 5.1,,
-17,2026-09-15T13:57:02Z,ric897,false,RFW-03,2425148,Claude Code with Claude Fable 5.1,,
-18,2026-09-15T14:01:11Z,ric897,false,RFW-32,5206362,Claude Code with Claude Fable 5.1,,
-19,2026-09-15T14:10:30Z,ric897,false,RFW-14,4375766,Claude Code with Claude Fable 5.1,,
+pr,merged_at,donor,anonymous,item,tokens,agent,label,url,input_tokens,cache_write_tokens,cache_read_tokens,output_tokens,usd
+,2026-09-13T23:17:46.216Z,recozers,false,,253162894,Claude Code with Claude Fable 5.1,Building Open Observatory,https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md,13848,3237820,248743935,1167291,180.8555
+,2026-09-14T11:53:55.460Z,recozers,false,,81551994,Codex with gpt-6-astra,Building Open Observatory,https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md,2856260,0,78356096,339638,123.9006
+15,2026-09-14T16:34:46Z,recozers,false,RFW-07,18895938,Claude Code with Claude Opus 5,,,96,194709,18578006,123127,14.3148
+,2026-09-15T12:37:53.854Z,recozers,false,,152579428,Claude Code with Claude Opus 5,Building Open Observatory,https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md,572,2583710,149429668,565478,114.6917
+16,2026-09-15T13:52:58Z,ric897,false,RFW-01,6753386,Claude Code with Claude Fable 5.1,,,1190,414418,6268161,69617,13.3482
+17,2026-09-15T13:57:02Z,ric897,false,RFW-03,2425148,Claude Code with Claude Fable 5.1,,,256,40622,2362233,22037,2.5074
+18,2026-09-15T14:01:11Z,ric897,false,RFW-32,5206362,Claude Code with Claude Fable 5.1,,,420,43311,5138057,24574,3.3836
+19,2026-09-15T14:10:30Z,ric897,false,RFW-14,4375766,Claude Code with Claude Fable 5.1,,,322,35793,4318487,21164,2.8569

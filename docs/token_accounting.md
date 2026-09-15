@@ -25,6 +25,38 @@ context many times.
 | Claude Code, RFW-07 | 96 | 194,709 | 18,578,006 | 123,127 |
 | Codex, build | 2,856,260 | 0 recorded | 78,356,096 | 339,638, of which 80,078 reasoning |
 
+## Dollars at API list prices
+
+Each row also has what its tokens would cost at the providers' list prices, from `data/api_pricing.csv`, which records each
+rate with its source page and the date it was read. This is a value, not a cost: nobody paid these amounts, and
+coding-agent subscriptions cost far less.
+
+| Row | Agent and model | API value |
+|---|---|---|
+| Building Open Observatory | Claude Code with Claude Fable 5.1 | $180.86 |
+| Building Open Observatory | Codex with gpt-6-astra | $123.90 |
+| Building Open Observatory | Claude Code with Claude Opus 5 | $114.69 |
+| RFW-07, pull request 15 | Claude Code with Claude Opus 5 | $14.31 |
+| **All four** | | **$433.76** |
+
+- **Claude** rates per million tokens, from Anthropic's pricing page on 15 September 2026:
+
+  | Model | Input | 5-minute cache writes | 1-hour cache writes | Cache reads | Output |
+  |---|---|---|---|---|---|
+  | Fable 5.1 | $10 | $12.50 | $20 | $0.25 | $50 |
+  | Opus 5 | $5 | $6.25 | $10 | $0.50 | $25 |
+
+  The logs record each cache write's lifetime. Opus 5 wrote only 1-hour caches. Fable 5.1 wrote 2,625,834 tokens at the
+  1-hour rate and 611,986 at the 5-minute rate, most of the latter from subagents. Every response ran at the standard
+  speed and tier, with no data-residency multiplier.
+- **Codex** with gpt-6-astra, from OpenAI's model page on the same day: $10 input, $1 cached input, $12.50 cache writes and
+  $50 output. A request with more than 272K input tokens is billed at long-context rates for the whole request, but none of
+  the 558 requests crossed that line. The log records no cache writes.
+
+Donated rows are priced from the breakdown in their Donation line when it adds up to the total. They use the model's
+standard rates, with cache writes at the one-hour rate that Claude Code uses. The four merged donations by @ric897 come to
+$22.10.
+
 ## What was counted
 
 - **Claude Code:** the one session that built the project in this repository's parent folder, plus its four subagents.
@@ -51,11 +83,11 @@ On the machine with the logs:
 ```sh
 L=~/.claude/projects/-Users-stuartbladon-Documents-Duke-Duke2025-Meridian
 python tools/agent_token_usage.py claude "$L"/c86b0055-6aad-4703-9bda-9b4946f14ec7.jsonl "$L"/c86b0055-6aad-4703-9bda-9b4946f14ec7/subagents/*.jsonl \
-  --until 2026-09-15T12:39:59.836Z \
+  --pricing data/api_pricing.csv --until 2026-09-15T12:39:59.836Z \
   --window rfw07_claim=2026-09-14T15:15:15.518Z..2026-09-14T15:23:25.684Z \
   --window rfw07_work=2026-09-14T15:33:34.393Z..2026-09-14T16:10:18.562Z \
   --window personal_website=2026-09-15T12:13:23.043Z..2026-09-15T12:21:13.515Z
-python tools/agent_token_usage.py codex ~/.codex/sessions/2026/09/13/rollout-2026-09-13T14-14-37-01a09ae7-ca82-7672-9e42-711591290c92.jsonl
+python tools/agent_token_usage.py codex ~/.codex/sessions/2026/09/13/rollout-2026-09-13T14-14-37-01a09ae7-ca82-7672-9e42-711591290c92.jsonl --pricing data/api_pricing.csv
 ```
 
 The rows are in `data/donations.csv`. After editing them, run `node .github/scripts/donations.cjs rebuild`.

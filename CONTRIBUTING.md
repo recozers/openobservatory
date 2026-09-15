@@ -82,8 +82,10 @@ Observatory: donated sessions, once their pull request is merged, and the mainta
 
 Fill in the pull request template's Donation section before you mark the pull request ready for review:
 
-- **Tokens used:** the total for the work in this pull request, measured as below. You can add a breakdown in brackets
-  after the number, for example `1,250,000 (1,200,000 cache reads, 40,000 cache writes, 10,000 output)`.
+- **Tokens used:** the total for the work in this pull request, measured as below. Add the breakdown in brackets after the
+  number to get a dollar value on the board, for example
+  `1,250,000 (1,190,000 cache reads, 40,000 cache writes, 10,000 uncached input, 10,000 output)`. The four parts must add up to
+  the total. For Codex, write the cached input as cache reads.
 - **Agent and model:** for example `Claude Code with Claude Opus 5` or `Codex with gpt-5-codex`.
 - **List me as:** `username`, or `anonymous` to hide your GitHub username on the board. The pull request itself stays public.
 
@@ -112,7 +114,10 @@ python tools/agent_token_usage.py codex ~/.codex/sessions/2026/09/20/rollout-<id
 ```
 
 - **Which number to report.** The script puts every model response in one group. Report the sum of the `counted` groups:
-  `total` for Claude Code and `total_tokens` for Codex.
+  `total` for Claude Code and `total_tokens` for Codex. The breakdown fields are `input_tokens`,
+  `cache_creation_input_tokens`, `cache_read_input_tokens` and `output_tokens` for Claude Code. For Codex they are the
+  uncached input (`input_tokens` minus `cached_input_tokens`), `cached_input_tokens` and `output_tokens`. With
+  `--pricing data/api_pricing.csv` the script also reports each group's `usd`.
 - **Leaving work out.** `--until` leaves out everything from the time you finished. Each `--window` puts a stretch of
   unrelated work in its own group, so it stays out of the `counted` groups. A response that touches a window belongs to
   that window.
@@ -125,6 +130,10 @@ python tools/agent_token_usage.py codex ~/.codex/sessions/2026/09/20/rollout-<id
 
 - Counts are self-reported and cannot be verified. Merging means a maintainer reviewed the work, not the count, and a
   maintainer may ask how you measured it.
+- The dollar value is what the tokens would cost at API list prices, from `data/api_pricing.csv`. The workflow prices a
+  donation from its breakdown at the model's standard rates, with cache writes at the one-hour rate Claude Code uses. It is
+  not what anyone paid. A contribution without a breakdown, or from a model the pricing file does not list, gets no dollar
+  value.
 - The rows labelled "Building Open Observatory" were measured from the maintainers' own session logs with the same script.
   `docs/token_accounting.md` gives the method, the exclusions and the breakdown.
 
@@ -132,6 +141,9 @@ python tools/agent_token_usage.py codex ~/.codex/sessions/2026/09/20/rollout-<id
 
 - To record a pull request again after its Donation section is corrected, run the Donations workflow by hand with the pull
   request's number, from the Actions tab or with `gh workflow run donations.yml -f pr=NN`.
+- When a donation uses a model the pricing file does not list, add its standard rates to `data/api_pricing.csv` with the
+  provider's pricing page as `source_url` and the date read. Existing rows keep the dollar value recorded when they were
+  merged.
 - Rows with no pull request, such as build tokens, go straight into `data/donations.csv` with a `label` and a `url` that
   explains the count. Then run `node .github/scripts/donations.cjs rebuild`; a test fails if the leaderboard does not
   match the ledger.

@@ -3,7 +3,9 @@
   "totals": {
     "tokens": 524950916,
     "contributions": 8,
-    "donors": 2
+    "donors": 2,
+    "usd": 455.86,
+    "usd_complete": true
   },
   "donors": [
     {
@@ -12,12 +14,15 @@
       "anonymous": false,
       "profile": "https://github.com/recozers",
       "tokens": 506190254,
+      "usd": 433.76,
+      "usd_complete": true,
       "contributions": [
         {
           "pr": null,
           "item": null,
           "label": "Building Open Observatory",
           "tokens": 253162894,
+          "usd": 180.86,
           "merged_at": "2026-09-13T23:17:46.216Z",
           "url": "https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md",
           "agent": "Claude Code with Claude Fable 5.1"
@@ -27,6 +32,7 @@
           "item": null,
           "label": "Building Open Observatory",
           "tokens": 81551994,
+          "usd": 123.9,
           "merged_at": "2026-09-14T11:53:55.460Z",
           "url": "https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md",
           "agent": "Codex with gpt-6-astra"
@@ -36,6 +42,7 @@
           "item": "RFW-07",
           "label": null,
           "tokens": 18895938,
+          "usd": 14.31,
           "merged_at": "2026-09-14T16:34:46Z",
           "url": "https://github.com/recozers/openobservatory/pull/15",
           "agent": "Claude Code with Claude Opus 5"
@@ -45,6 +52,7 @@
           "item": null,
           "label": "Building Open Observatory",
           "tokens": 152579428,
+          "usd": 114.69,
           "merged_at": "2026-09-15T12:37:53.854Z",
           "url": "https://github.com/recozers/openobservatory/blob/main/docs/token_accounting.md",
           "agent": "Claude Code with Claude Opus 5"
@@ -53,15 +61,21 @@
       "agents": [
         {
           "name": "Claude Code with Claude Fable 5.1",
-          "tokens": 253162894
+          "tokens": 253162894,
+          "usd": 180.86,
+          "usd_complete": true
         },
         {
           "name": "Claude Code with Claude Opus 5",
-          "tokens": 171475366
+          "tokens": 171475366,
+          "usd": 129.01,
+          "usd_complete": true
         },
         {
           "name": "Codex with gpt-6-astra",
-          "tokens": 81551994
+          "tokens": 81551994,
+          "usd": 123.9,
+          "usd_complete": true
         }
       ],
       "first": "2026-09-13T23:17:46.216Z",
@@ -73,12 +87,15 @@
       "anonymous": false,
       "profile": "https://github.com/ric897",
       "tokens": 18760662,
+      "usd": 22.1,
+      "usd_complete": true,
       "contributions": [
         {
           "pr": 16,
           "item": "RFW-01",
           "label": null,
           "tokens": 6753386,
+          "usd": 13.35,
           "merged_at": "2026-09-15T13:52:58Z",
           "url": "https://github.com/recozers/openobservatory/pull/16",
           "agent": "Claude Code with Claude Fable 5.1"
@@ -88,6 +105,7 @@
           "item": "RFW-03",
           "label": null,
           "tokens": 2425148,
+          "usd": 2.51,
           "merged_at": "2026-09-15T13:57:02Z",
           "url": "https://github.com/recozers/openobservatory/pull/17",
           "agent": "Claude Code with Claude Fable 5.1"
@@ -97,6 +115,7 @@
           "item": "RFW-32",
           "label": null,
           "tokens": 5206362,
+          "usd": 3.38,
           "merged_at": "2026-09-15T14:01:11Z",
           "url": "https://github.com/recozers/openobservatory/pull/18",
           "agent": "Claude Code with Claude Fable 5.1"
@@ -106,6 +125,7 @@
           "item": "RFW-14",
           "label": null,
           "tokens": 4375766,
+          "usd": 2.86,
           "merged_at": "2026-09-15T14:10:30Z",
           "url": "https://github.com/recozers/openobservatory/pull/19",
           "agent": "Claude Code with Claude Fable 5.1"
@@ -114,7 +134,9 @@
       "agents": [
         {
           "name": "Claude Code with Claude Fable 5.1",
-          "tokens": 18760662
+          "tokens": 18760662,
+          "usd": 22.1,
+          "usd_complete": true
         }
       ],
       "first": "2026-09-15T13:52:58Z",

@@ -589,3 +589,12 @@ Branch `rfw/14-plume-season` from main.
 - Tests: `tests/test_plume_season.py` (4): a synthetic seasonal cycle with a spring start fools the current test (below
   −2.5σ) and not the season-matched one; a real step is found by both; a short series returns Nones; the committed
   sensitivity file reproduces the recorded per-series z-scores at offset 0 within 0.01.
+- Dollars on the leaderboard (Stuart, 15 Sep: "add dollars to the leaderboard using api pricing"). `data/api_pricing.csv`
+  records the list prices with their sources. Claude Fable 5.1 and Claude Opus 5 come from Anthropic's pricing page, and
+  gpt-6-astra from OpenAI's model page, where openai.com/api/pricing refused the fetch. The ledger gained per-type token
+  columns and `usd`. `tools/agent_token_usage.py --pricing` prices each logged response by its cache-write lifetime, speed
+  and, for Codex, the 272K long-context threshold, which no request crossed. The recorder prices donated breakdowns at
+  standard rates with one-hour cache writes. Values: build $419.45 (Fable $180.86, Codex $123.90, Opus $114.69), RFW-07
+  $14.31, ric897's four pull requests $22.10, total $455.86. The page shows an API value column and says the figure is not
+  what anyone paid.
+

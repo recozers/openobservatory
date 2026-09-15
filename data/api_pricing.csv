@@ -1,0 +1,5 @@
+model_id,names,provider,tier,applies,input_per_mtok,cache_write_5m_per_mtok,cache_write_1h_per_mtok,cache_read_per_mtok,output_per_mtok,source_url,retrieved_on
+claude-fable-5-1,Claude Fable 5.1;claude-fable-5-1,Anthropic,standard,every request; the full 1M-token context is at standard pricing,10,12.50,20,0.25,50,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-15
+claude-opus-5,Claude Opus 5;claude-opus-5,Anthropic,standard,every request; the full 1M-token context is at standard pricing,5,6.25,10,0.50,25,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-15
+gpt-6-astra,gpt-6-astra;GPT-6 Astra,OpenAI,standard,requests with at most 272K input tokens,10,12.50,12.50,1,50,https://developers.openai.com/api/docs/models/gpt-6-astra,2026-09-15
+gpt-6-astra,gpt-6-astra;GPT-6 Astra,OpenAI,long_context,"requests with more than 272K input tokens: 2x input and cache rates, 1.5x output, for the full request",20,25,25,2,75,https://developers.openai.com/api/docs/models/gpt-6-astra,2026-09-15

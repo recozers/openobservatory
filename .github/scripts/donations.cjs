@@ -12,7 +12,9 @@ const claims = require('../../site/claims.js');
 const ROOT = path.resolve(__dirname, '../..');
 const LEDGER = path.join(ROOT, 'data', 'donations.csv');
 const BOARD = path.join(ROOT, 'site', 'data', 'leaderboard.json');
-const FIELDS = ['pr', 'merged_at', 'donor', 'anonymous', 'item', 'tokens', 'agent', 'label', 'url'];
+const FIELDS = ['pr', 'merged_at', 'donor', 'anonymous', 'item', 'tokens', 'agent', 'label', 'url',
+  'input_tokens', 'cache_write_tokens', 'cache_read_tokens', 'output_tokens', 'usd'];
+const PRICING = path.join(ROOT, 'data', 'api_pricing.csv');
 const MARK = '<!-- open-observatory-donation-bot -->';
 const MAX_TOKENS = 10e9;  // larger reports are treated as typos and left for a maintainer
 const REPO_URL = 'https://github.com/recozers/openobservatory';
@@ -31,6 +33,37 @@ function parseTokens(text) {
   return Number.isFinite(tokens) && tokens > 0 && tokens <= MAX_TOKENS ? tokens : null;
 }
 
+// "1,250,000 (1,200,000 cache reads, 40,000 cache writes, 0 uncached input, 10,000 output)" gives the four parts. They are
+// kept only if all four are there and add up to the total.
+function parseBreakdown(text, total) {
+  const s = String(text || '');
+  const part = label => {
+    const m = new RegExp(`(\\d[\\d,\\s]*?)\\s*(?:${label})`, 'i').exec(s);
+    return m ? parseInt(m[1].replace(/[,\\s]/g, ''), 10) : null;
+  };
+  const parts = { input_tokens: part('uncached input|(?<!cached )input\\b'), cache_write_tokens: part('cache[- ]writes?'),
+    cache_read_tokens: part('cache[- ]reads?|cached input'), output_tokens: part('output') };
+  if (Object.values(parts).some(v => v === null || !Number.isFinite(v))) return null;
+  const sum = Object.values(parts).reduce((a, b) => a + b, 0);
+  return total && Math.abs(sum - total) <= Math.max(1, total * 0.001) ? parts : null;
+}
+
+function readPricing(file = PRICING) {
+  return fs.existsSync(file) ? parseCsv(fs.readFileSync(file, 'utf8')) : [];
+}
+
+// Dollars at API list prices, standard tier, from the breakdown. Claude Code writes one-hour caches, so cache writes are
+// priced at the one-hour rate; a donor's report does not say which lifetime was used.
+function priceBreakdown(agent, parts, pricing = readPricing()) {
+  if (!parts) return null;
+  const text = String(agent || '').toLowerCase();
+  const rate = pricing.find(r => r.tier === 'standard' && String(r.names || '').split(';').some(n => n && text.includes(n.toLowerCase())));
+  if (!rate) return null;
+  const usd = (parts.input_tokens * Number(rate.input_per_mtok) + parts.cache_write_tokens * Number(rate.cache_write_1h_per_mtok)
+    + parts.cache_read_tokens * Number(rate.cache_read_per_mtok) + parts.output_tokens * Number(rate.output_per_mtok)) / 1e6;
+  return Math.round(usd * 1e4) / 1e4;
+}
+
 function cleanText(text, max = 80) {
   const plain = String(text || '').replace(/<[^>]*>/g, ' ').replace(/[*_`#[\]]/g, '').replace(/\s+/g, ' ').trim();
   return plain.length > max ? `${plain.slice(0, max - 1)}…` : plain;
@@ -47,8 +80,9 @@ function parseDonation(body) {
     return m ? m[1].trim() : '';
   };
   const tokensText = field('Tokens used');
-  return { found: true, tokens: parseTokens(tokensText), tokensText: cleanText(tokensText, 40), agent: cleanText(field('Agent and model')),
-    anonymous: /\banonym/i.test(field('List me as')) };
+  const tokens = parseTokens(tokensText);
+  return { found: true, tokens, tokensText: cleanText(tokensText, 40), agent: cleanText(field('Agent and model')),
+    anonymous: /\banonym/i.test(field('List me as')), breakdown: parseBreakdown(tokensText, tokens) };
 }
 
 function pseudonym(login) {
@@ -86,10 +120,15 @@ function toCsv(rows) {
   return [FIELDS.join(','), ...rows.map(r => FIELDS.map(f => cell(r[f] ?? '')).join(','))].join('\n') + '\n';
 }
 
-function ledgerRow(pr, donation) {
+function ledgerRow(pr, donation, pricing = readPricing()) {
+  const parts = donation.breakdown || null;
+  const usd = priceBreakdown(donation.agent, parts, pricing);
   return { pr: String(pr.number), merged_at: pr.merged_at, donor: donation.anonymous ? pseudonym(pr.user.login) : pr.user.login,
     anonymous: donation.anonymous ? 'true' : 'false', item: (claims.parseClaimTitle(pr.title) || {}).id || '',
-    tokens: String(donation.tokens), agent: donation.agent, label: '', url: '' };
+    tokens: String(donation.tokens), agent: donation.agent, label: '', url: '',
+    input_tokens: parts ? String(parts.input_tokens) : '', cache_write_tokens: parts ? String(parts.cache_write_tokens) : '',
+    cache_read_tokens: parts ? String(parts.cache_read_tokens) : '', output_tokens: parts ? String(parts.output_tokens) : '',
+    usd: usd === null ? '' : String(usd) };
 }
 
 function upsert(rows, row) {
@@ -104,13 +143,20 @@ function buildLeaderboard(rows) {
   for (const r of rows) {
     const tokens = Number(r.tokens);
     if (!Number.isFinite(tokens) || tokens <= 0) continue;
-    const d = byDonor.get(r.donor) || { key: r.donor, anonymous: r.anonymous === 'true', tokens: 0, contributions: [], agents: new Map(),
-      first: r.merged_at, last: r.merged_at };
+    const d = byDonor.get(r.donor) || { key: r.donor, anonymous: r.anonymous === 'true', tokens: 0, usd: 0, usdMissing: 0, contributions: [],
+      agents: new Map(), first: r.merged_at, last: r.merged_at };
     d.tokens += tokens;
+    const usd = r.usd === '' || r.usd === undefined ? null : Number(r.usd);
+    if (usd === null || !Number.isFinite(usd)) d.usdMissing += 1; else d.usd += usd;
     const pr = r.pr ? Number(r.pr) : null;
-    d.contributions.push({ pr, item: r.item || null, label: r.label || null, tokens, merged_at: r.merged_at,
+    d.contributions.push({ pr, item: r.item || null, label: r.label || null, tokens, usd: Number.isFinite(usd) ? usd : null, merged_at: r.merged_at,
       url: pr ? `${REPO_URL}/pull/${pr}` : (r.url || null), agent: r.agent || null });
-    if (r.agent) d.agents.set(r.agent, (d.agents.get(r.agent) || 0) + tokens);
+    if (r.agent) {
+      const a = d.agents.get(r.agent) || { tokens: 0, usd: 0, usdMissing: 0 };
+      a.tokens += tokens;
+      if (Number.isFinite(usd)) a.usd += usd; else a.usdMissing += 1;
+      d.agents.set(r.agent, a);
+    }
     if (r.merged_at < d.first) d.first = r.merged_at;
     if (r.merged_at > d.last) d.last = r.merged_at;
     byDonor.set(r.donor, d);
@@ -124,14 +170,19 @@ function buildLeaderboard(rows) {
   });
   return {
     updated: rows.length ? rows.map(r => r.merged_at).sort().slice(-1)[0] : null,
-    totals: { tokens: donors.reduce((s, d) => s + d.tokens, 0), contributions: donors.reduce((s, d) => s + d.contributions.length, 0), donors: donors.length },
+    totals: { tokens: donors.reduce((s, d) => s + d.tokens, 0), contributions: donors.reduce((s, d) => s + d.contributions.length, 0), donors: donors.length,
+      usd: roundCents(donors.reduce((s, d) => s + d.usd, 0)), usd_complete: donors.every(d => d.usdMissing === 0) },
     donors: donors.map(d => ({ rank: d.rank, name: d.anonymous ? 'Anonymous donor' : d.key, anonymous: d.anonymous,
-      profile: d.anonymous ? null : `https://github.com/${d.key}`, tokens: d.tokens,
-      contributions: d.contributions.sort((a, b) => a.merged_at.localeCompare(b.merged_at) || (a.pr || 0) - (b.pr || 0)),
-      agents: [...d.agents.entries()].map(([name, tokens]) => ({ name, tokens })).sort((a, b) => b.tokens - a.tokens || a.name.localeCompare(b.name)),
+      profile: d.anonymous ? null : `https://github.com/${d.key}`, tokens: d.tokens, usd: roundCents(d.usd), usd_complete: d.usdMissing === 0,
+      contributions: d.contributions.sort((a, b) => a.merged_at.localeCompare(b.merged_at) || (a.pr || 0) - (b.pr || 0))
+        .map(c => ({ ...c, usd: c.usd === null ? null : roundCents(c.usd) })),
+      agents: [...d.agents.entries()].map(([name, a]) => ({ name, tokens: a.tokens, usd: roundCents(a.usd), usd_complete: a.usdMissing === 0 }))
+        .sort((a, b) => b.tokens - a.tokens || a.name.localeCompare(b.name)),
       first: d.first, last: d.last })),
   };
 }
+
+function roundCents(x) { return Math.round(Number(x) * 100) / 100; }
 
 function readLedger() { return fs.existsSync(LEDGER) ? parseCsv(fs.readFileSync(LEDGER, 'utf8')) : []; }
 
@@ -162,7 +213,7 @@ function decide(pr, donation, existing) {
   const same = before && FIELDS.every(f => String(before[f]) === String(row[f]));
   const who = donation.anonymous ? 'an anonymous donor' : `@${pr.user.login}`;
   return { row: same ? null : row,
-    comment: `${MARK}\n**Recorded on the [token leaderboard](https://openobservatory.info/leaderboard.html): ${formatExact(donation.tokens)} tokens from ${who}${row.item ? ` for ${row.item}` : ''}.** Token counts are reported by donors and are not verified.` };
+    comment: `${MARK}\n**Recorded on the [token leaderboard](https://openobservatory.info/leaderboard.html): ${formatExact(donation.tokens)} tokens from ${who}${row.item ? ` for ${row.item}` : ''}${row.usd ? `, worth $${Number(row.usd).toFixed(2)} at API list prices` : ''}.** Token counts are reported by donors and are not verified.${row.usd ? '' : ' No dollar value was recorded: that needs the model in "Agent and model" and a breakdown after the total (cache reads, cache writes, uncached input, output), as CONTRIBUTING.md shows.'}` };
 }
 
 async function record({ github, context, core }) {
@@ -189,7 +240,7 @@ async function comment({ github, context, pr, body }) {
   else if (mine.body !== body) await github.rest.issues.updateComment({ owner, repo, comment_id: mine.id, body });
 }
 
-module.exports = { MARK, FIELDS, parseTokens, parseDonation, pseudonym, parseCsv, toCsv, ledgerRow, upsert, buildLeaderboard, decide, record, comment, readLedger, writeAll };
+module.exports = { MARK, FIELDS, parseBreakdown, priceBreakdown, readPricing, parseTokens, parseDonation, pseudonym, parseCsv, toCsv, ledgerRow, upsert, buildLeaderboard, decide, record, comment, readLedger, writeAll };
 
 if (require.main === module) {
   if (process.argv[2] !== 'rebuild') { console.error('usage: node .github/scripts/donations.cjs rebuild'); process.exit(2); }

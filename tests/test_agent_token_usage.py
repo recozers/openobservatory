@@ -89,5 +89,44 @@ class CodexUsage(unittest.TestCase):
                          ("lunch", ("2026-09-20T12:00:00Z", "2026-09-20T13:00:00Z")))
 
 
+class Pricing(unittest.TestCase):
+    RATES = {("claude-x", "standard"): {"input_per_mtok": 10, "cache_write_5m_per_mtok": 12.5, "cache_write_1h_per_mtok": 20,
+                                        "cache_read_per_mtok": 0.25, "output_per_mtok": 50},
+             ("gpt-x", "standard"): {"input_per_mtok": 10, "cache_write_5m_per_mtok": 12.5, "cache_write_1h_per_mtok": 12.5,
+                                     "cache_read_per_mtok": 1, "output_per_mtok": 50},
+             ("gpt-x", "long_context"): {"input_per_mtok": 20, "cache_write_5m_per_mtok": 25, "cache_write_1h_per_mtok": 25,
+                                         "cache_read_per_mtok": 2, "output_per_mtok": 75}}
+
+    def test_claude_prices_each_cache_lifetime_and_doubles_fast_mode(self):
+        r = {"model": "claude-x", "speed": "standard", "input_tokens": 1_000_000, "cache_write_5m": 1_000_000, "cache_write_1h": 1_000_000,
+             "cache_read_input_tokens": 4_000_000, "output_tokens": 100_000}
+        self.assertAlmostEqual(atu.claude_cost(r, self.RATES), 10 + 12.5 + 20 + 1 + 5)
+        self.assertAlmostEqual(atu.claude_cost({**r, "speed": "fast"}, self.RATES), 2 * 48.5)
+        self.assertIsNone(atu.claude_cost({**r, "model": "unknown"}, self.RATES))
+
+    def test_codex_uses_long_context_rates_above_272k_input(self):
+        short = {"model": "gpt-x", "input_tokens": 200_000, "cached_input_tokens": 150_000, "cache_write_input_tokens": 0, "output_tokens": 10_000}
+        self.assertAlmostEqual(atu.codex_cost(short, self.RATES), (50_000 * 10 + 150_000 * 1 + 10_000 * 50) / 1e6)
+        long = {**short, "input_tokens": 300_000, "cached_input_tokens": 250_000}
+        self.assertAlmostEqual(atu.codex_cost(long, self.RATES), (50_000 * 20 + 250_000 * 2 + 10_000 * 75) / 1e6)
+
+    def test_groups_carry_dollars_and_count_unpriced_responses(self):
+        rows = [claude_line("m1", "2026-09-20T10:00:00Z", inp=1_000_000), claude_line("m2", "2026-09-20T10:01:00Z", model="mystery", out=5)]
+        rows[0]["message"]["usage"]["cache_creation"] = {"ephemeral_1h_input_tokens": 0, "ephemeral_5m_input_tokens": 0}
+        tmp = tempfile.NamedTemporaryFile("w", suffix=".jsonl", delete=False)
+        tmp.write("\n".join(json.dumps(r) for r in rows) + "\n")
+        tmp.close()
+        self.addCleanup(Path(tmp.name).unlink)
+        groups = atu.claude_usage([Path(tmp.name)], pricing=self.RATES)
+        self.assertEqual(groups["counted claude-x"]["usd"], 10.0)
+        self.assertEqual(groups["counted mystery"]["unpriced_responses"], 1)
+        self.assertNotIn("usd", groups["counted mystery"])
+
+    def test_the_committed_pricing_file_loads(self):
+        pricing = atu.load_pricing(Path(__file__).resolve().parents[1] / "data" / "api_pricing.csv")
+        self.assertIn(("claude-fable-5-1", "standard"), pricing)
+        self.assertEqual(pricing[("gpt-6-astra", "long_context")]["output_per_mtok"], 75.0)
+
+
 if __name__ == "__main__":
     unittest.main()
