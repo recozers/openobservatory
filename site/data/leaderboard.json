@@ -1,9 +1,32 @@
 {
-  "updated": null,
+  "updated": "2026-09-14T16:34:46Z",
   "totals": {
-    "tokens": 0,
-    "sessions": 0,
-    "donors": 0
+    "tokens": 18895938,
+    "sessions": 1,
+    "donors": 1
   },
-  "donors": []
+  "donors": [
+    {
+      "rank": 1,
+      "name": "recozers",
+      "anonymous": false,
+      "profile": "https://github.com/recozers",
+      "tokens": 18895938,
+      "sessions": 1,
+      "contributions": [
+        {
+          "pr": 15,
+          "item": "RFW-07",
+          "tokens": 18895938,
+          "merged_at": "2026-09-14T16:34:46Z",
+          "url": "https://github.com/recozers/openobservatory/pull/15"
+        }
+      ],
+      "agents": [
+        "Claude Code with Claude Opus 5"
+      ],
+      "first": "2026-09-14T16:34:46Z",
+      "last": "2026-09-14T16:34:46Z"
+    }
+  ]
 }
