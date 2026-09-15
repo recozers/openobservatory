@@ -439,7 +439,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-28](#rfw-28-recalibrate-the-hall-classifier-with-new-labels) | Recalibrate the hall classifier with new labels | Where | M | EE | open after RFW-01 |
 | [RFW-29](#rfw-29-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
 | [RFW-30](#rfw-30-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
-| [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
+| [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | delivered in pull request 20: 28 tests in `tests/test_load_precedence.py` |
 | [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | done in pull request 18 |
 | [RFW-33](#rfw-33-crawl-public-records-and-satellite-data-for-data-centres-in-the-rest-of-the-world) | Crawl public records and satellite data for data centres in the rest of the world | Where, Built, Capacity | L | none, then EE | open |
 
@@ -489,8 +489,13 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-31 Tests for the load precedence rules
 
-- **Why:** The rules deciding which figure sets a site's load have been extended several times: reported electricity, carried
-  averages, water-derived figures, third-party estimates, plant records, radar entries, generator watches.
+- **Done so far:** `tests/test_load_precedence.py` (pull request 20) pins `cap_in_force` (measured beats every other basis,
+  electricity beats water, the newest measured year wins, a measured year is carried forward for exactly 24 months and is
+  displaced only by an A1 row or a newer measurement, IT figures beat facility figures whatever the row order, placeholder,
+  nothing in force, which bases are divided by PUE), every `utilisation_prior` multiplier, and the quarterly band and status
+  built from synthetic sites: capacity band, measured then carried, water-derived, roofs-only potential without a midpoint,
+  placeholder, radar entry, generator watch, significant and weak NOx flux, adjacent plant, dedicated plant over flux over
+  reported electricity over water over documented capacity over roofs, and the evidence kind and confidence of each.
 - **Do:** Write synthetic cases for `cap_in_force`, `utilisation_prior` and the evidence kinds in `build_status.py`, covering
   each basis and each carried-forward case.
 - **Deliver:** Tests that fail if any precedence rule changes silently, all passing on `main`.
