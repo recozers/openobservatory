@@ -124,7 +124,7 @@ marks them in these tables when the page loads.
 |---|---|---|---|---|---|
 | [RFW-01](#rfw-01-confirm-or-reject-the-radar-detected-structures-in-china) | Confirm or reject the radar-detected structures in China | Where | S | none | open: first pass done, 3 confirmed, 12 rejected, 24 unclear; the unclear entries need better imagery or documents |
 | [RFW-02](#rfw-02-locate-every-national-computing-cluster-and-scan-it) | Locate every national computing cluster and scan it | Where | M | none, then EE | open |
-| [RFW-03](#rfw-03-quarterly-construction-index-for-each-chinese-hub) | Quarterly construction index for each Chinese hub | Built | M | none | open |
+| [RFW-03](#rfw-03-quarterly-construction-index-for-each-chinese-hub) | Quarterly construction index for each Chinese hub | Built | M | none | done in pull request 17; rerun when RFW-02 adds parks |
 | [RFW-04](#rfw-04-land-transfer-results-for-operators-and-start-dates) | Land transfer results for operators and start dates | Where, Built | M | none | open |
 | [RFW-05](#rfw-05-procurement-tenders-and-awards-including-training-and-inference-servers) | Procurement tenders and awards, including training and inference servers | Built, Running, Workload | M | none | open |
 | [RFW-06](#rfw-06-stated-workload-roles-and-cloud-regions-at-chinese-campuses) | Stated workload roles and cloud regions at Chinese campuses | Workload | M | none | open |
@@ -429,7 +429,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-29](#rfw-29-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
 | [RFW-30](#rfw-30-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
 | [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
-| [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | open |
+| [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | done in pull request 18 |
 | [RFW-33](#rfw-33-crawl-public-records-and-satellite-data-for-data-centres-in-the-rest-of-the-world) | Crawl public records and satellite data for data centres in the rest of the world | Where, Built, Capacity | L | none, then EE | open |
 
 #### RFW-26 Radar candidate scan around every inventory site

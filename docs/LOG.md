@@ -547,3 +547,27 @@ Branch `rfw/32-link-checker` from main, independent of pull requests 16 and 17.
   the status.
 - Tests: `tests/test_check_links.py` (5), all offline: URL extraction from CSV cells and nested JSON, bracket and
   punctuation trimming, skip rules, the dead and blocked definitions, and the report files from a mocked run.
+
+## 2026-09-15 (Claude): first donated pull requests reviewed and merged
+
+Stuart asked for the submitted pull requests to be reviewed, merged where possible, and the leaderboard updated. All three
+finished ones came from @ric897 and were merged. The Donations workflow recorded each automatically.
+
+| Pull request | Item | Tokens recorded |
+|---|---|---|
+| 16 | RFW-01, review of the 39 radar-detected structures | 6,753,386 |
+| 17 | RFW-03, quarterly construction index | 2,425,148 |
+| 18 | RFW-32, source link checker | 5,206,362 |
+
+- GitHub held the test workflow for the first-time contributor. Workflow runs were approved after reading the diffs, which
+  touched no workflow files. Each branch had main merged in, and its checks passed before merging.
+- Maintainer fixes pushed to the contributor's branches:
+  - Pull request 16: China's dated-building count in "How close we are" corrected to 33, and the Google tiles option removed
+    from `tools/radar_review_viewer.html` under Google's terms. No verdict used it.
+  - Pull request 18: `tools/check_links.py` no longer reads `data/private/` or `data/cache/`, with a test, and
+    `site/data/sites.json` rebuilt for the corrected Colossus URL.
+- Flagged for a second look, not changed: `cn_zhangbei_r03`'s rejection. Its 2026 chip also fits a campus layout, and the
+  Esri check behind it has no capture date.
+- RFW-03 and RFW-32 are marked done. RFW-01 stays open for its 24 unclear entries. Pull request 19, ric897's draft claim on
+  RFW-14, stays open.
+
