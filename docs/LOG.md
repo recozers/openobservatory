@@ -455,6 +455,122 @@ pull request. The board starts empty: the practice claim in pull request 15 repo
   (`tests/test_agent_token_usage.py`). The pull request template, the requests page and the leaderboard page point to the
   guide instead of "as your agent reports it". The published figures are unchanged.
 
+## 2026-09-15 (donated session, Claude): RFW-01, review of the radar-detected structures in China (pull request 16)
+
+Claimed from a fork (`rfw/01-cn-radar-review`), draft pull request 16 on recozers/openobservatory.
+
+- Method. `tools/radar_review_chips.py` renders, for each `cn_<hub>_r<rank>` entry, a two-panel Sentinel-2 chip from AWS open
+  data (least cloudy summer scene of 2021 and of 2026, 1.4 km wide, the entry's 20 m radar outline in red, other radar
+  outlines yellow, digitised campuses cyan) into `results_cn/radar_review/<site_id>.png`; scene ids are in `scenes.csv`.
+  One Overpass query per entry (400 m radius, 1 request/s, identified User-Agent) gave named or industrial OpenStreetMap
+  features (`osm_context.csv`, raw `osm_context.json`). `tools/radar_review_viewer.html` shows an outline over Esri World
+  Imagery or Google tiles in a browser as a viewing aid; nothing from those services is saved, and their imagery predates
+  every entry dated 2025 or later. Verdicts are one person's reading of the chips, recorded with a reason and a confidence.
+- Result, `data/cn_radar_review.csv` (39 rows): 3 data-hall complexes, 12 not data centres, 24 unclear.
+  - Confirmed (medium or low confidence, from layout and OSM park names, not documents): `cn_horinger_r04`, a regular grid of
+    about ten blocks inside the China Telecom cloud-computing Inner Mongolia information park landuse, 0.2 km from Epoch's
+    Huawei Horinger point; `cn_horinger_r06`, a two-row grid of about ten blocks 350 m from China Mobile's Hohhot data centre;
+    `cn_qingyang_r07`, blocks under construction inside the China Telecom Qingyang intelligent-computing park landuse, next
+    to China Mobile's and China Unicom's Qingyang data-centre landuse.
+  - Rejected: Ulanqab r05 and r03 (rows of narrow sheds), r07 (village compound); Horinger r27 (sports hall by a running
+    track), r03 (walled factory with tanks and a stack), r19 (factory inside Xibei food-industry landuse), r14 (curved
+    commercial complex with a bank inside the outline), r25 (Inner Mongolia Normal University campus); Zhangbei r03 (an
+    850 m shed with shed rows), r05 (photovoltaic array by the expressway service area), r06 and r07 (blocks inside the
+    county town). These left `data/sites.csv`; their polygons, radar timelines and chips stay, and
+    `tools/ingest_radar_candidates.py` now reads the review file so it never re-adds them.
+  - Unclear (24, 16 at Horinger): mostly big-box buildings of 100 to 200 m that 10 m imagery cannot tell from logistics or
+    workshops, several under construction or built after the newest web imagery. Notable: Horinger r02 and r05 (rows of
+    200 m boxes, r05 beside the Shengle power plant), r11 and r12 (blocks beside the digitised cloud valley, r12 laid out like
+    dormitories), Gui'an r01 (a 2 by 3 grid of white buildings on a graded terrace), Qingyang r12 and r11 (inside or beside
+    OSM landuse named for China Energy Engineering's big-data park and Chindata's zero-carbon base).
+- Site: 151 sites, of which 27 radar entries; `site/data/timeline/` files for the 12 rejected entries removed. The
+  requests page table now reads 42 Chinese sites including 27 radar-found structures.
+- Tests: `tests/test_radar_review.py` (4) checks verdict values, evidence paths, that every inventory radar entry is reviewed
+  and not rejected, that rejected entries keep their evidence files, and that the ingest skips them.
+- Limits. No verdict rests on a document; the three confirmations could still be offices inside a data-centre park. The
+  Esri and Google tiles were used only to look, and their capture dates are not shown. A Chinese-reading reviewer (PAID-06)
+  or sub-metre imagery (PAID-01) would settle most of the unclear entries; land and procurement records (RFW-04, RFW-05)
+  could attribute them.
+
+## 2026-09-15 (donated session, Claude): RFW-03, quarterly construction index for the Chinese hubs (pull request 17)
+
+Branch `rfw/03-cn-construction-index`, based on the RFW-01 branch (pull request 16), which supplies the verdicts.
+
+- `tools/cn_construction_index.py`: for each of the 39 reviewed radar structures, area from the scan and structure-on month
+  from `results_s1/<site_id>.csv` with the site's rule (`s1_on`, 4 dB sustained six months); the dating window runs from the
+  onset of the rise (first month of the run at or above base + 2 dB leading into the plateau, at most six months back) to the
+  plateau month. Aggregated by hub, quarter and verdict into `results_cn/construction_index.csv`, with the area whose whole
+  window lies inside the quarter ("firm") and the area whose window overlaps it ("possible") as low and high bounds; per-entry
+  rows in `results_cn/construction_index_entries.csv`.
+- Numbers: 39 structures, all dated; onset-to-plateau spread median 2 months, maximum 6; 18 of 39 windows lie inside one
+  quarter. Confirmed data-hall area 54 ha in three structures (Horinger 2022Q2 27 ha and 2024Q2 18 ha, Qingyang 2025Q1 9 ha);
+  unclear 288 ha in 24; rejected 114 ha in 12. Horinger's biggest quarter is 2024Q3 with 72 ha in five structures. One entry,
+  `cn_horinger_r21`, dates to 2020Q1, before the scan window, and is flagged.
+- The note in `docs/MVP.md` states what the index can and cannot show, with the table behind each quarter. A first attempt at
+  the uncertainty re-ran the dating rule over a grid of thresholds (3 to 5 dB) and sustain lengths (3 to 9 months); the loose
+  variants fired on seasonal swings as early as 2018 and gave windows of up to 86 months, so that was dropped for the
+  onset-to-plateau window.
+- Tests: `tests/test_cn_construction_index.py` (6), including a check that the committed index matches the review file.
+  Nothing on the public site changes; no builder reads the index yet.
+
+## 2026-09-15 (donated session, Claude): RFW-32, source link checker (pull request 18)
+
+Branch `rfw/32-link-checker` from main, independent of pull requests 16 and 17.
+
+- `tools/check_links.py` collects every URL in `data/*.csv` and the JSON files under `data/` (375 distinct URLs in 22 files),
+  checks each once (HEAD, then GET when HEAD is refused; one request per host at a time, 1.5 s apart, four hosts in parallel,
+  robots.txt honoured, identified User-Agent), and asks the Internet Archive's availability API for the closest snapshot of
+  each dead or blocked link without submitting a capture. Reports: `results/link_check.csv` (all rows) and
+  `results/link_check_dead.csv` (dead, then blocked). Documented in CONTRIBUTING.md under "Check the source links".
+  Never fetched, listed as skipped (107): 72 Nominatim query URLs kept by the geocoder cache, 16 Google Earth viewer links,
+  3 gstatic images, 12 SEC EDGAR URLs (a contact email for the User-Agent is not agreed, see RFW-07) and 4 URLs whose hosts'
+  robots.txt disallow the fetch.
+- Result on 15 September: 235 reachable (17 of them redirected), 24 dead, 9 blocked, 3 reachable only with an untrusted TLS
+  certificate (sina.com.cn, sasac.gov.cn: Chinese certificate chains this client's bundle lacks; content not verified).
+  Of the 24 dead links 11 have an archived copy. By kind:
+  - 7 Chinese provincial stack-monitor platforms on raw IP addresses (connection refused or timed out), already recorded as
+    unreachable in `docs/cn_stack_monitors.md`; two have archived copies of their login or index pages only.
+  - 10 Chinese government pages (Chongqing, Hebei, Guizhou, Gui'an, Gansu) that fail the TLS handshake or time out from this
+    client, most likely geoblocking or protocol quirks rather than removal; 4 have archived copies. They need a check from a
+    connection inside China or a Chinese-reading reviewer (PAID-06).
+  - 7 US and corporate pages: City of Prineville 2020 water report PDF (404, archived), two Galaxy investor releases (404, one
+    archived), Armstrong County tax-abatement PDF (404, no archive), a PJM Inside Lines article (connection error, archived),
+    Develop Fulton County minutes PDF (connection error, archived), Jingneng Power's Shengle plant page (404, archived).
+  - Blocked (9): archive.is, archive.ph and datacentermap.com return 429; openai.com, corridorbusiness.com, tva.com and
+    zgqingyang.gov.cn return 403; sthj.gansu.gov.cn and chinatelecom.com.cn return 412 (a WAF response). The pages probably
+    exist; 3 have archived copies.
+- One correction from the run: the Colossus Wikipedia URL in `data/sites.csv` carried a trailing slash that returns 404;
+  removed. No other data changed: replacing dead links with archived copies is a data decision for Stuart, and the report
+  gives him the archive URL for each.
+- A first version counted 403, 412 and 429 as dead and treated TLS failures as dead; both were wrong, so those are now
+  separate categories (blocked; TLS untrusted) and the checker retries a TLS failure once without verification to learn
+  the status.
+- Tests: `tests/test_check_links.py` (5), all offline: URL extraction from CSV cells and nested JSON, bracket and
+  punctuation trimming, skip rules, the dead and blocked definitions, and the report files from a mocked run.
+
+## 2026-09-15 (Claude): first donated pull requests reviewed and merged
+
+Stuart asked for the submitted pull requests to be reviewed, merged where possible, and the leaderboard updated. All three
+finished ones came from @ric897 and were merged. The Donations workflow recorded each automatically.
+
+| Pull request | Item | Tokens recorded |
+|---|---|---|
+| 16 | RFW-01, review of the 39 radar-detected structures | 6,753,386 |
+| 17 | RFW-03, quarterly construction index | 2,425,148 |
+| 18 | RFW-32, source link checker | 5,206,362 |
+
+- GitHub held the test workflow for the first-time contributor. Workflow runs were approved after reading the diffs, which
+  touched no workflow files. Each branch had main merged in, and its checks passed before merging.
+- Maintainer fixes pushed to the contributor's branches:
+  - Pull request 16: China's dated-building count in "How close we are" corrected to 33, and the Google tiles option removed
+    from `tools/radar_review_viewer.html` under Google's terms. No verdict used it.
+  - Pull request 18: `tools/check_links.py` no longer reads `data/private/` or `data/cache/`, with a test, and
+    `site/data/sites.json` rebuilt for the corrected Colossus URL.
+- Flagged for a second look, not changed: `cn_zhangbei_r03`'s rejection. Its 2026 chip also fits a campus layout, and the
+  Esri check behind it has no capture date.
+- RFW-03 and RFW-32 are marked done. RFW-01 stays open for its 24 unclear entries. Pull request 19, ric897's draft claim on
+  RFW-14, stays open.
+
 ## 2026-09-15 (donated session, Claude): RFW-14, plume test robust to start date and season (pull request 19)
 
 Branch `rfw/14-plume-season` from main.
@@ -466,7 +582,7 @@ Branch `rfw/14-plume-season` from main.
 - Numbers: controls 0 of 62 at 2.5σ at the documented date under both tests; over all seven dates 1 of 62 (2.53σ) under the
   current test, 0 of 62 (max 2.48σ) under the season-matched one; control sd 1.38 to 1.22. Spring-start negatives
   (Rosemount, Ridgeland, Kuna, Mesa) shrink towards zero. Colossus 2 9.84σ to 9.12σ. Abilene 2.80σ to 2.99σ at the
-  documented start, 2.34σ a month earlier under both. Microsoft Goodyear 2.07σ to 3.14σ, above 2.5σ at five of seven dates,
+  documented start, 2.34σ a month earlier under both. Microsoft Goodyear 2.07σ to 3.14σ, above 2.5σ at six of seven dates,
   with no known on-site generation: flagged, not explained.
 - Recommendation written into RFW-14 and `docs/MVP.md`: adopt the season-matched test, keep 2.5σ, require the documented
   start and the months either side to all clear it. `build_status.py` is unchanged until Goodyear is checked (RFW-15).

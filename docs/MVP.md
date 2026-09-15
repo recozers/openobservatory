@@ -295,6 +295,64 @@ in the README, the site text, `docs/LOG.md` and `docs/PHASE2_TODO.md`:
   (0.2–0.6 of a documented figure) now cites its one same-period calibration point, Luleå at 0.25–0.45 of its 120 MW supply in
   2022–24; ORNL Frontier (about 0.54 of its measured peak in 2022–23) informs the supercomputer prior.
 
+## Construction index for the Chinese hubs, 15 Sep 2026 (RFW-03)
+
+`tools/cn_construction_index.py` turns the radar-found structures into a quarterly series per hub: new hall-like floor area
+(the 20 m radar blob's area, 5 ha or more) by the quarter of the structure's radar structure-on month, with the RFW-01
+verdicts kept in separate columns so nobody has to take the unclear entries as data halls. Output:
+`results_cn/construction_index.csv` (hub, quarter, verdict, count, area, and the area whose dating window sits wholly inside
+the quarter) and `results_cn/construction_index_entries.csv` (one row per structure with its window). Counts and areas in
+brackets are structures and hectares; "firm" is the area whose whole dating window falls inside that quarter.
+
+| Hub | Quarter | Data-hall complexes | Unclear | Not data centres |
+|---|---|---|---|---|
+| Horinger | 2020Q1 | – | 1 (7 ha, 0 firm) | – |
+| Horinger | 2021Q2 | – | 1 (17 ha) | – |
+| Horinger | 2021Q3 | – | – | 1 (8 ha, 0 firm) |
+| Horinger | 2022Q1 | – | 1 (12 ha, 0 firm) | – |
+| Horinger | 2022Q2 | 1 (27 ha) | – | – |
+| Horinger | 2023Q1 | – | 2 (34 ha, 14 firm) | – |
+| Horinger | 2023Q2 | – | 1 (6 ha) | 1 (33 ha, 0 firm) |
+| Horinger | 2023Q3 | – | 1 (6 ha) | – |
+| Horinger | 2024Q2 | 1 (18 ha) | 1 (8 ha) | – |
+| Horinger | 2024Q3 | – | 3 (55 ha, 0 firm) | 2 (17 ha) |
+| Horinger | 2025Q2 | – | 1 (8 ha) | – |
+| Horinger | 2025Q3 | – | 3 (28 ha, 16 firm) | 1 (5 ha, 0 firm) |
+| Horinger | 2026Q2 | – | 1 (12 ha, 0 firm) | – |
+| Ulanqab | 2021Q3 | – | – | 1 (6 ha, 0 firm) |
+| Ulanqab | 2022Q1 | – | – | 1 (7 ha) |
+| Ulanqab | 2022Q4 | – | – | 1 (8 ha) |
+| Ulanqab | 2023Q2 | – | 1 (7 ha, 0 firm) | – |
+| Ulanqab | 2025Q1 | – | 1 (8 ha, 0 firm) | – |
+| Zhangbei | 2022Q4 | – | 1 (17 ha, 0 firm) | – |
+| Zhangbei | 2023Q2 | – | – | 1 (11 ha) |
+| Zhangbei | 2023Q4 | – | – | 1 (8 ha) |
+| Zhangbei | 2024Q3 | – | 1 (17 ha, 0 firm) | – |
+| Zhangbei | 2025Q1 | – | – | 1 (7 ha, 0 firm) |
+| Zhangbei | 2026Q2 | – | – | 1 (5 ha, 0 firm) |
+| Qingyang | 2023Q3 | – | 1 (5 ha) | – |
+| Qingyang | 2024Q2 | – | 1 (6 ha, 0 firm) | – |
+| Qingyang | 2024Q3 | – | 1 (12 ha, 0 firm) | – |
+| Qingyang | 2025Q1 | 1 (9 ha, 0 firm) | – | – |
+| Gui'an | 2025Q1 | – | 1 (22 ha) | – |
+
+**What it can show.** Whether large new structures keep appearing in a hub box and when: at Horinger the radar entries fall in
+every year from 2021 to 2026, with the largest quarter 2024Q3 (72 ha across five structures, of which 55 ha unclear and 17 ha a
+sports hall and a commercial block), and only two of 23 structures are reviewed as data-hall complexes (27 ha in 2022Q2, 18 ha
+in 2024Q2). Ulanqab's five entries are three sheds and two unclear buildings; Zhangbei's six are four rejected and two unclear
+industrial compounds; Qingyang has one confirmed complex (2025Q1) and three unclear; Gui'an one unclear grid of six buildings
+(2025Q1). Confirmed data-hall area in the six boxes so far: 54 ha in three structures.
+
+**What it cannot show.** It is a count of large new buildings in six 12 km boxes, not of data centres: 24 of 39 structures are
+unclear and the three confirmations rest on layout and OpenStreetMap park names, not documents. It misses anything under 5 ha,
+anything the classifier scored below 0.5, structures inside already-listed campus polygons (excluded by the ingest), the six
+eastern hub boxes where the scan found nothing, and everything outside the boxes. Area is footprint, not floors, so a
+multi-storey hall counts the same as a shed of equal footprint. The structure-on month is the first month of a sustained
+backscatter plateau; the onset of the rise sits 0 to 6 months earlier (median 2 months across the 39 structures; 18 of 39 have
+their whole window inside one quarter), and the rule has been checked only against Sentinel-2 roof dates at Abilene, never
+against construction records. One structure, `cn_horinger_r21`, dates to 2020Q1, before the 2021 to 2026 scan window it was
+found in, and stays in the file flagged. New parks from RFW-02 extend the index only after they are scanned and reviewed.
+
 ## Plume test, start date and season, 15 Sep 2026 (RFW-14)
 
 The plume test compares all downwind-minus-upwind days after the documented start with all days before it, so a campus whose
@@ -303,14 +361,14 @@ in `tools/plume_batch.py` compares each calendar month's after-days with the sam
 inverse variance. `python tools/plume_batch.py --sensitivity` runs both tests for the 33 tested sites and their 62 control
 points at the documented start and at every month within three months of it (`results_no2/plume_date_sensitivity.csv`).
 
-- Spring-start artefact removed: Rosemount −3.26σ to −0.17σ, Ridgeland −3.45σ to −1.60σ, Mesa −1.12σ to +0.28σ, Kuna
+- Spring-start negatives shrink: Rosemount −3.26σ to −0.17σ, Ridgeland −3.45σ to −1.60σ, Mesa −1.12σ to +0.28σ, Kuna
   −2.03σ to −1.60σ.
 - Colossus 2 stays at 9.1σ (9.8σ before), and above 7.8σ at every start date tried. Abilene: 3.0σ at the documented start,
   2.3σ one month earlier, 2.6 to 3.1σ otherwise; the current test gives 2.8σ and 2.3σ, so the one-month sensitivity is real.
 - Controls: none of 62 reach 2.5σ at the documented date under either test. Over the seven start dates, one control reaches
   2.53σ under the current test and none under the season-matched one (maximum 2.48σ). The standard deviation of control
   z-scores falls from 1.38 to 1.22, still above 1, so daily values are not independent and 2.5σ is not a 0.6 % tail.
-- New: Microsoft Goodyear rises from 2.07σ to 3.14σ and exceeds 2.5σ at five of seven start dates. No on-site generation is
+- New: Microsoft Goodyear rises from 2.07σ to 3.14σ and exceeds 2.5σ at six of seven start dates. No on-site generation is
   known there; the campus is on the fast-growing western edge of Phoenix, so a city-edge plume (RFW-15) is the first thing to
   rule out.
 

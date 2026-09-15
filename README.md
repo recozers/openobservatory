@@ -47,9 +47,11 @@ its corrections section.
 - **Construction.** Sentinel-2 brightness dates new bright roofs to the month. At all 12 Abilene halls the dates agree with
   independent Sentinel-1 radar dates within 0 to 4 months; neither has been checked against dated construction records.
   Brightness misses dark and grey roofs, which are common in China. Radar dates those, through cloud.
-- **New buildings without a prior list.** A Sentinel-1 change scan in 12 km boxes, scored by a hall classifier, put 39
-  hall-like structures from six Chinese hubs on the map. They are dated by radar and not confirmed as data centres. Six
-  eastern hub boxes, placed from approximate coordinates, produced none.
+- **New buildings without a prior list.** A Sentinel-1 change scan in 12 km boxes, scored by a hall classifier, found 39
+  hall-like structures in six Chinese hubs, dated by radar. A review of before-and-after chips and OpenStreetMap context
+  (`data/cn_radar_review.csv`) kept 27 on the map: 3 read as data-hall complexes from their layout and the named parks around
+  them, 24 are unclear, and 12 were sheds, a solar array, factories, town blocks or campus buildings. Six eastern hub boxes,
+  placed from approximate coordinates, produced none.
 - **Fuel burned on site, validated in the US only.** TROPOMI NOx flux, calibrated against five EPA-monitored coal plants,
   measures generation at one campus so far, Colossus 2. Quarterly figures carry about ±20 % and megawatts are uncertain by
   2 to 3 times. None of 31 campuses without known on-site generation showed a plume at the documented start, though a

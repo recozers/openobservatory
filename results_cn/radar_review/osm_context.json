@@ -1,0 +1,3765 @@
+{
+ "cn_ulanqab_r05": [],
+ "cn_ulanqab_r04": [
+  {
+   "type": "node",
+   "id": 8023392731,
+   "lat": 41.0729941,
+   "lon": 113.1485286,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 542148284,
+   "center": {
+    "lat": 41.0809931,
+    "lon": 113.1497128
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "name": "韩土路",
+    "oneway": "no",
+    "ref": "G208",
+    "source": "GPS"
+   }
+  },
+  {
+   "type": "way",
+   "id": 860862296,
+   "center": {
+    "lat": 41.0608045,
+    "lon": 113.1438757
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 860862356,
+   "center": {
+    "lat": 41.0878022,
+    "lon": 113.1703465
+   },
+   "tags": {
+    "cables": "3",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1448700614,
+   "center": {
+    "lat": 41.0759125,
+    "lon": 113.144489
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1448700615,
+   "center": {
+    "lat": 41.0755598,
+    "lon": 113.1436951
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 395709,
+   "center": {
+    "lat": 38.42243,
+    "lon": 112.2976138
+   },
+   "tags": {
+    "from": "二连浩特",
+    "int_ref": "G208",
+    "name": "208国道 二淅线",
+    "name:en": "China National Highway 208",
+    "name:zh": "208国道 二淅线",
+    "name:zh-Hant": "208國道 二淅綫",
+    "network": "CN:national",
+    "official_name": "二连浩特－淅川公路",
+    "ref": "G208",
+    "ref:colour": "red",
+    "route": "road",
+    "short_name": "二淅线",
+    "to": "淅川",
+    "type": "route",
+    "wikipedia": "zh:208国道",
+    "wikipedia:en": "China National Highway 208"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 20030627,
+   "center": {
+    "lat": 41.4404724,
+    "lon": 113.1851304
+   },
+   "tags": {
+    "name": "乌兰察布城际公交集宁-土牧尔台线 集宁至白音查干至土牧尔台镇",
+    "ref": "集宁-土牧尔台城际公交",
+    "route": "bus",
+    "type": "route"
+   }
+  }
+ ],
+ "cn_ulanqab_r03": [
+  {
+   "type": "relation",
+   "id": 10477426,
+   "center": {
+    "lat": 41.0637759,
+    "lon": 113.231397
+   },
+   "tags": {
+    "admin_level": "8",
+    "boundary": "administrative",
+    "division_code": "150902105000",
+    "name": "白海子镇",
+    "name:ru": "Байхайцзы",
+    "name:zh": "白海子镇",
+    "name:zh-Latn-pinyin": "bái hǎi zǐ zhèn",
+    "type": "boundary"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 10477427,
+   "center": {
+    "lat": 41.0877328,
+    "lon": 113.1130207
+   },
+   "tags": {
+    "admin_level": "8",
+    "boundary": "administrative",
+    "division_code": "150902205000",
+    "name": "马莲渠乡",
+    "name:ru": "Маляньцюй",
+    "name:zh": "马莲渠乡",
+    "name:zh-Latn-pinyin": "mǎ lián qú xiāng",
+    "type": "boundary"
+   }
+  }
+ ],
+ "cn_ulanqab_r07": [
+  {
+   "type": "node",
+   "id": 8023409341,
+   "lat": 41.0489962,
+   "lon": 113.1749055,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8023409342,
+   "lat": 41.0471028,
+   "lon": 113.1750825,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8481597412,
+   "lat": 41.0472202,
+   "lon": 113.168106,
+   "tags": {
+    "name": "侯家",
+    "name:en": "Houjia",
+    "name:zh": "侯家",
+    "place": "hamlet"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436803913,
+   "center": {
+    "lat": 41.044553,
+    "lon": 113.2499319
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "name": "承塔线",
+    "oneway": "yes",
+    "ref": "G335",
+    "source": "bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 444203192,
+   "center": {
+    "lat": 41.0444786,
+    "lon": 113.2499777
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "name": "承塔线",
+    "oneway": "yes",
+    "ref": "G335",
+    "source": "bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 542148297,
+   "center": {
+    "lat": 41.0515204,
+    "lon": 113.174364
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "3",
+    "name": "机场快速通道",
+    "name:en": "Airport Expressway",
+    "name:zh": "机场快速通道",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 542148298,
+   "center": {
+    "lat": 41.0519322,
+    "lon": 113.174065
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "3",
+    "name": "机场快速通道",
+    "name:en": "Airport Expressway",
+    "name:zh": "机场快速通道",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 543567114,
+   "center": {
+    "lat": 41.0427032,
+    "lon": 113.1711854
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 543567116,
+   "center": {
+    "lat": 41.0428436,
+    "lon": 113.1718611
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 783305726,
+   "center": {
+    "lat": 41.0431339,
+    "lon": 113.1690956
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 783305727,
+   "center": {
+    "lat": 41.0471458,
+    "lon": 113.1697633
+   },
+   "tags": {
+    "landuse": "residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 860862305,
+   "center": {
+    "lat": 41.0493693,
+    "lon": 113.1689483
+   },
+   "tags": {
+    "cables": "3",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1033005936,
+   "center": {
+    "lat": 41.0432947,
+    "lon": 113.1686337
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 13754572,
+   "center": {
+    "lat": 42.254881,
+    "lon": 103.8402526
+   },
+   "tags": {
+    "from": "承德",
+    "name": "335国道 承塔线",
+    "name:en": "China National Highway 335",
+    "name:zh": "335国道 承塔线",
+    "name:zh-Hant": "335國道 承塔綫",
+    "network": "CN:national",
+    "official_name": "承德－塔城公路",
+    "ref": "G335",
+    "ref:colour": "red",
+    "route": "road",
+    "short_name": "承塔线",
+    "to": "塔城",
+    "type": "route"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 13757325,
+   "center": {
+    "lat": 41.0428257,
+    "lon": 113.2474749
+   },
+   "tags": {
+    "name": "Primary",
+    "route": "road",
+    "to": "X554;S54",
+    "type": "route"
+   }
+  }
+ ],
+ "cn_ulanqab_r06": [],
+ "cn_horinger_r15": [
+  {
+   "type": "way",
+   "id": 545743782,
+   "center": {
+    "lat": 40.5463952,
+    "lon": 111.8351797
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "盛云路",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743783,
+   "center": {
+    "lat": 40.5463549,
+    "lon": 111.8351014
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "盛云路",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743785,
+   "center": {
+    "lat": 40.5429235,
+    "lon": 111.8213557
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743786,
+   "center": {
+    "lat": 40.5430755,
+    "lon": 111.8212751
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233277,
+   "center": {
+    "lat": 40.5506314,
+    "lon": 111.8354767
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "丹岱祥苑"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233416,
+   "center": {
+    "lat": 40.5410927,
+    "lon": 111.8290536
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国电信云计算内蒙古信息园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966318,
+   "center": {
+    "lat": 40.5456749,
+    "lon": 111.8325413
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419646914,
+   "center": {
+    "lat": 40.5485207,
+    "lon": 111.8345883
+   },
+   "tags": {
+    "amenity": "restaurant",
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419647453,
+   "center": {
+    "lat": 40.5489701,
+    "lon": 111.8365236
+   },
+   "tags": {
+    "construction": "yes",
+    "landuse": "residential",
+    "name": "雲谷佳苑"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1549658655,
+   "center": {
+    "lat": 40.5461421,
+    "lon": 111.8379599
+   },
+   "tags": {
+    "amenity": "bank",
+    "brand": "交通银行",
+    "brand:en": "Bank of Communications",
+    "brand:wikidata": "Q806680",
+    "brand:zh": "交通银行",
+    "building": "yes",
+    "name": "交通银行",
+    "name:en": "Bank of Communications",
+    "name:zh": "交通银行"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550276179,
+   "center": {
+    "lat": 40.5495718,
+    "lon": 111.8340302
+   },
+   "tags": {
+    "building": "retail"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550276180,
+   "center": {
+    "lat": 40.5505933,
+    "lon": 111.8334864
+   },
+   "tags": {
+    "building": "retail"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550573433,
+   "center": {
+    "lat": 40.5464911,
+    "lon": 111.8308194
+   },
+   "tags": {
+    "amenity": "toilets",
+    "building": "yes",
+    "toilets:disposal": "flush"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574098,
+   "center": {
+    "lat": 40.5523598,
+    "lon": 111.8293917
+   },
+   "tags": {
+    "construction": "industrial",
+    "landuse": "construction"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574531,
+   "center": {
+    "lat": 40.547826,
+    "lon": 111.8317969
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574532,
+   "center": {
+    "lat": 40.5493457,
+    "lon": 111.8309861
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574758,
+   "center": {
+    "lat": 40.5471737,
+    "lon": 111.8274334
+   },
+   "tags": {
+    "construction": "industrial",
+    "landuse": "construction"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550578917,
+   "center": {
+    "lat": 40.542804,
+    "lon": 111.8348592
+   },
+   "tags": {
+    "landuse": "construction"
+   }
+  }
+ ],
+ "cn_horinger_r27": [],
+ "cn_horinger_r16": [
+  {
+   "type": "node",
+   "id": 13599520929,
+   "lat": 40.5192087,
+   "lon": 111.8345886,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13599520930,
+   "lat": 40.5226219,
+   "lon": 111.8310749,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545363349,
+   "center": {
+    "lat": 40.5409746,
+    "lon": 111.8215815
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "金盛路",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545363350,
+   "center": {
+    "lat": 40.5409463,
+    "lon": 111.8214179
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "金盛路",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458424012,
+   "center": {
+    "lat": 40.5274881,
+    "lon": 111.8241486
+   },
+   "tags": {
+    "cables": "3",
+    "power": "line",
+    "voltage": "220000"
+   }
+  }
+ ],
+ "cn_horinger_r13": [
+  {
+   "type": "way",
+   "id": 545743782,
+   "center": {
+    "lat": 40.5463952,
+    "lon": 111.8351797
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "盛云路",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743783,
+   "center": {
+    "lat": 40.5463549,
+    "lon": 111.8351014
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "盛云路",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233277,
+   "center": {
+    "lat": 40.5506314,
+    "lon": 111.8354767
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "丹岱祥苑"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1549659163,
+   "center": {
+    "lat": 40.551154,
+    "lon": 111.8253493
+   },
+   "tags": {
+    "landuse": "commercial",
+    "name": "人才创新谷"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550274596,
+   "center": {
+    "lat": 40.551645,
+    "lon": 111.832692
+   },
+   "tags": {
+    "amenity": "toilets",
+    "building": "yes",
+    "toilets:disposal": "flush"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550276179,
+   "center": {
+    "lat": 40.5495718,
+    "lon": 111.8340302
+   },
+   "tags": {
+    "building": "retail"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550276180,
+   "center": {
+    "lat": 40.5505933,
+    "lon": 111.8334864
+   },
+   "tags": {
+    "building": "retail"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574098,
+   "center": {
+    "lat": 40.5523598,
+    "lon": 111.8293917
+   },
+   "tags": {
+    "construction": "industrial",
+    "landuse": "construction"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574531,
+   "center": {
+    "lat": 40.547826,
+    "lon": 111.8317969
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574532,
+   "center": {
+    "lat": 40.5493457,
+    "lon": 111.8309861
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574758,
+   "center": {
+    "lat": 40.5471737,
+    "lon": 111.8274334
+   },
+   "tags": {
+    "construction": "industrial",
+    "landuse": "construction"
+   }
+  }
+ ],
+ "cn_horinger_r03": [],
+ "cn_horinger_r04": [
+  {
+   "type": "node",
+   "id": 8006956068,
+   "lat": 40.5350264,
+   "lon": 111.8262559,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006956069,
+   "lat": 40.5354402,
+   "lon": 111.8282072,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006956070,
+   "lat": 40.5358785,
+   "lon": 111.8301921,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998389,
+   "lat": 40.5369181,
+   "lon": 111.8255237,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998390,
+   "lat": 40.5362566,
+   "lon": 111.8281093,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998391,
+   "lat": 40.5356716,
+   "lon": 111.8261875,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545363349,
+   "center": {
+    "lat": 40.5409746,
+    "lon": 111.8215815
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "金盛路",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545363350,
+   "center": {
+    "lat": 40.5409463,
+    "lon": 111.8214179
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "金盛路",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233416,
+   "center": {
+    "lat": 40.5410927,
+    "lon": 111.8290536
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国电信云计算内蒙古信息园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699967332,
+   "center": {
+    "lat": 40.5368771,
+    "lon": 111.8163596
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国移动呼和浩特数据中心"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950373,
+   "center": {
+    "lat": 40.5759263,
+    "lon": 111.8509141
+   },
+   "tags": {
+    "cables": "3",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950377,
+   "center": {
+    "lat": 40.5359641,
+    "lon": 111.8271484
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950378,
+   "center": {
+    "lat": 40.5362949,
+    "lon": 111.8258556
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950381,
+   "center": {
+    "lat": 40.5318146,
+    "lon": 111.8086566
+   },
+   "tags": {
+    "cables": "12",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966305,
+   "center": {
+    "lat": 40.5418069,
+    "lon": 111.8258725
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966311,
+   "center": {
+    "lat": 40.5413489,
+    "lon": 111.8277954
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966312,
+   "center": {
+    "lat": 40.541242,
+    "lon": 111.8272903
+   },
+   "tags": {
+    "building": "yes"
+   }
+  }
+ ],
+ "cn_horinger_r26": [],
+ "cn_horinger_r24": [
+  {
+   "type": "node",
+   "id": 8006998244,
+   "lat": 40.5708465,
+   "lon": 111.8423358,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998520,
+   "lat": 40.5709484,
+   "lon": 111.8426684,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950383,
+   "center": {
+    "lat": 40.5754308,
+    "lon": 111.8429259
+   },
+   "tags": {
+    "cables": "12",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1353216581,
+   "center": {
+    "lat": 40.5638795,
+    "lon": 111.8136535
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "220000"
+   }
+  }
+ ],
+ "cn_horinger_r02": [],
+ "cn_horinger_r19": [
+  {
+   "type": "way",
+   "id": 566233277,
+   "center": {
+    "lat": 40.5506314,
+    "lon": 111.8354767
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "丹岱祥苑"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233278,
+   "center": {
+    "lat": 40.5490626,
+    "lon": 111.838736
+   },
+   "tags": {
+    "highway": "unclassified",
+    "name": "祥苑路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966255,
+   "center": {
+    "lat": 40.5511312,
+    "lon": 111.8407169
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1385295617,
+   "center": {
+    "lat": 40.5564765,
+    "lon": 111.8426851
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "京东亚洲一号呼和浩特物流园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419648198,
+   "center": {
+    "lat": 40.5512285,
+    "lon": 111.8401439
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419648199,
+   "center": {
+    "lat": 40.555072,
+    "lon": 111.8380839
+   },
+   "tags": {
+    "industrial": "food_industry",
+    "landuse": "industrial",
+    "name": "西贝"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550584397,
+   "center": {
+    "lat": 40.552607,
+    "lon": 111.8446881
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  }
+ ],
+ "cn_horinger_r21": [],
+ "cn_horinger_r20": [
+  {
+   "error": "504 Server Error: Gateway Timeout for url: https://overpass-api.de/api/interpreter"
+  }
+ ],
+ "cn_horinger_r17": [
+  {
+   "type": "way",
+   "id": 988966371,
+   "center": {
+    "lat": 40.5035728,
+    "lon": 111.8250221
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966372,
+   "center": {
+    "lat": 40.5042012,
+    "lon": 111.8246974
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966374,
+   "center": {
+    "lat": 40.5047821,
+    "lon": 111.8266599
+   },
+   "tags": {
+    "building": "yes"
+   }
+  }
+ ],
+ "cn_horinger_r06": [
+  {
+   "type": "way",
+   "id": 545743785,
+   "center": {
+    "lat": 40.5429235,
+    "lon": 111.8213557
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743786,
+   "center": {
+    "lat": 40.5430755,
+    "lon": 111.8212751
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233285,
+   "center": {
+    "lat": 40.543574,
+    "lon": 111.8127807
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "克略和苑"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699967332,
+   "center": {
+    "lat": 40.5368771,
+    "lon": 111.8163596
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国移动呼和浩特数据中心"
+   }
+  }
+ ],
+ "cn_horinger_r23": [
+  {
+   "error": "504 Server Error: Gateway Timeout for url: https://overpass-api.de/api/interpreter"
+  }
+ ],
+ "cn_horinger_r14": [
+  {
+   "type": "way",
+   "id": 545743782,
+   "center": {
+    "lat": 40.5463952,
+    "lon": 111.8351797
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "盛云路",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743783,
+   "center": {
+    "lat": 40.5463549,
+    "lon": 111.8351014
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "盛云路",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743785,
+   "center": {
+    "lat": 40.5429235,
+    "lon": 111.8213557
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743786,
+   "center": {
+    "lat": 40.5430755,
+    "lon": 111.8212751
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233278,
+   "center": {
+    "lat": 40.5490626,
+    "lon": 111.838736
+   },
+   "tags": {
+    "highway": "unclassified",
+    "name": "祥苑路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 566233416,
+   "center": {
+    "lat": 40.5410927,
+    "lon": 111.8290536
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国电信云计算内蒙古信息园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 988966318,
+   "center": {
+    "lat": 40.5456749,
+    "lon": 111.8325413
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419643091,
+   "center": {
+    "lat": 40.5463811,
+    "lon": 111.8442544
+   },
+   "tags": {
+    "industrial": "factory",
+    "landuse": "industrial",
+    "name": "智能制造产业园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419646914,
+   "center": {
+    "lat": 40.5485207,
+    "lon": 111.8345883
+   },
+   "tags": {
+    "amenity": "restaurant",
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419647453,
+   "center": {
+    "lat": 40.5489701,
+    "lon": 111.8365236
+   },
+   "tags": {
+    "construction": "yes",
+    "landuse": "residential",
+    "name": "雲谷佳苑"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419647717,
+   "center": {
+    "lat": 40.5432919,
+    "lon": 111.8395045
+   },
+   "tags": {
+    "landuse": "construction"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660236,
+   "center": {
+    "lat": 40.5451905,
+    "lon": 111.8419011
+   },
+   "tags": {
+    "building": "construction"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660249,
+   "center": {
+    "lat": 40.5468216,
+    "lon": 111.840867
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D2-1"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660250,
+   "center": {
+    "lat": 40.5461304,
+    "lon": 111.8412406
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D3-1"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660251,
+   "center": {
+    "lat": 40.5472178,
+    "lon": 111.8411113
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D1-3"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660252,
+   "center": {
+    "lat": 40.546529,
+    "lon": 111.8414808
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D2-3"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660254,
+   "center": {
+    "lat": 40.545772,
+    "lon": 111.8413588
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D3-2"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660256,
+   "center": {
+    "lat": 40.5469478,
+    "lon": 111.8412981
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D2-4"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660258,
+   "center": {
+    "lat": 40.5464527,
+    "lon": 111.8410038
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D2-2"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419660259,
+   "center": {
+    "lat": 40.5471424,
+    "lon": 111.8406349
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D1-2"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419879427,
+   "center": {
+    "lat": 40.5475795,
+    "lon": 111.8407402
+   },
+   "tags": {
+    "building": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419879428,
+   "center": {
+    "lat": 40.5468884,
+    "lon": 111.8411124
+   },
+   "tags": {
+    "building": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1419879429,
+   "center": {
+    "lat": 40.546197,
+    "lon": 111.8414799
+   },
+   "tags": {
+    "building": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1549658655,
+   "center": {
+    "lat": 40.5461421,
+    "lon": 111.8379599
+   },
+   "tags": {
+    "amenity": "bank",
+    "brand": "交通银行",
+    "brand:en": "Bank of Communications",
+    "brand:wikidata": "Q806680",
+    "brand:zh": "交通银行",
+    "building": "yes",
+    "name": "交通银行",
+    "name:en": "Bank of Communications",
+    "name:zh": "交通银行"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550574531,
+   "center": {
+    "lat": 40.547826,
+    "lon": 111.8317969
+   },
+   "tags": {
+    "landuse": "industrial"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1550578917,
+   "center": {
+    "lat": 40.542804,
+    "lon": 111.8348592
+   },
+   "tags": {
+    "landuse": "construction"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 19424057,
+   "center": {
+    "lat": 40.5482165,
+    "lon": 111.8407139
+   },
+   "tags": {
+    "building": "yes",
+    "name": "E1",
+    "type": "multipolygon"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 19424060,
+   "center": {
+    "lat": 40.5475032,
+    "lon": 111.840497
+   },
+   "tags": {
+    "building": "industrial",
+    "name": "D1-1",
+    "type": "multipolygon"
+   }
+  }
+ ],
+ "cn_horinger_r18": [
+  {
+   "type": "way",
+   "id": 566233285,
+   "center": {
+    "lat": 40.543574,
+    "lon": 111.8127807
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "克略和苑"
+   }
+  }
+ ],
+ "cn_horinger_r05": [
+  {
+   "type": "node",
+   "id": 8006956057,
+   "lat": 40.5543272,
+   "lon": 111.857839,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006956058,
+   "lat": 40.552975,
+   "lon": 111.8573467,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998533,
+   "lat": 40.5571904,
+   "lon": 111.8531907,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13375407185,
+   "lat": 40.5523402,
+   "lon": 111.852724,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 14061590296,
+   "lat": 40.5575045,
+   "lon": 111.8511736,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 14061590301,
+   "lat": 40.554729,
+   "lon": 111.8527024,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 14061590302,
+   "lat": 40.5516884,
+   "lon": 111.85436,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950373,
+   "center": {
+    "lat": 40.5759263,
+    "lon": 111.8509141
+   },
+   "tags": {
+    "cables": "3",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950385,
+   "center": {
+    "lat": 40.5561965,
+    "lon": 111.8546006
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1473258335,
+   "center": {
+    "lat": 40.5916954,
+    "lon": 111.8666078
+   },
+   "tags": {
+    "cables": "6",
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1483068811,
+   "center": {
+    "lat": 40.5497152,
+    "lon": 111.8527749
+   },
+   "tags": {
+    "cables": "3",
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1546007803,
+   "center": {
+    "lat": 40.5505308,
+    "lon": 111.8534723
+   },
+   "tags": {
+    "cables": "6",
+    "power": "line",
+    "voltage": "220000"
+   }
+  }
+ ],
+ "cn_horinger_r08": [
+  {
+   "type": "way",
+   "id": 1331155485,
+   "center": {
+    "lat": 40.5021581,
+    "lon": 111.8032795
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "盛乐北街",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1331155486,
+   "center": {
+    "lat": 40.5021969,
+    "lon": 111.8032026
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "盛乐北街",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342808670,
+   "center": {
+    "lat": 40.4975038,
+    "lon": 111.8167658
+   },
+   "tags": {
+    "leisure": "park",
+    "name": "蒙草草博园"
+   }
+  }
+ ],
+ "cn_horinger_r22": [
+  {
+   "error": "504 Server Error: Gateway Timeout for url: https://overpass-api.de/api/interpreter"
+  }
+ ],
+ "cn_horinger_r11": [
+  {
+   "type": "way",
+   "id": 545743785,
+   "center": {
+    "lat": 40.5429235,
+    "lon": 111.8213557
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743786,
+   "center": {
+    "lat": 40.5430755,
+    "lon": 111.8212751
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  }
+ ],
+ "cn_horinger_r12": [
+  {
+   "type": "node",
+   "id": 8006995023,
+   "lat": 40.5305956,
+   "lon": 111.7958839,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006995025,
+   "lat": 40.5310675,
+   "lon": 111.7949975,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006995029,
+   "lat": 40.533365,
+   "lon": 111.793761,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006995030,
+   "lat": 40.5321724,
+   "lon": 111.7943966,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006995031,
+   "lat": 40.5321429,
+   "lon": 111.7950511,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006995032,
+   "lat": 40.5338135,
+   "lon": 111.7941874,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743785,
+   "center": {
+    "lat": 40.5429235,
+    "lon": 111.8213557
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545743786,
+   "center": {
+    "lat": 40.5430755,
+    "lon": 111.8212751
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "云展东街",
+    "oneway": "yes",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950380,
+   "center": {
+    "lat": 40.5309493,
+    "lon": 111.8073459
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950381,
+   "center": {
+    "lat": 40.5318146,
+    "lon": 111.8086566
+   },
+   "tags": {
+    "cables": "12",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458424012,
+   "center": {
+    "lat": 40.5274881,
+    "lon": 111.8241486
+   },
+   "tags": {
+    "cables": "3",
+    "power": "line",
+    "voltage": "220000"
+   }
+  }
+ ],
+ "cn_horinger_r25": [
+  {
+   "type": "node",
+   "id": 8006956276,
+   "lat": 40.496301,
+   "lon": 111.7811586,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006956277,
+   "lat": 40.4959726,
+   "lon": 111.7793038,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006956278,
+   "lat": 40.4956554,
+   "lon": 111.7774692,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006956279,
+   "lat": 40.4953699,
+   "lon": 111.7759417,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998892,
+   "lat": 40.4965906,
+   "lon": 111.7804626,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998893,
+   "lat": 40.4960827,
+   "lon": 111.7776275,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 8006998894,
+   "lat": 40.4957095,
+   "lon": 111.7756453,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13958137925,
+   "lat": 40.4956724,
+   "lon": 111.7762964,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "师大盛乐校区北门",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13958137926,
+   "lat": 40.4954733,
+   "lon": 111.7759853,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "师大盛乐校区北门",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545363289,
+   "center": {
+    "lat": 40.4895417,
+    "lon": 111.779961
+   },
+   "tags": {
+    "amenity": "university",
+    "education": "university",
+    "name": "内蒙古师范大学(盛乐校区)",
+    "name:en": "Inner Mongolia Normal University Shengle Campus",
+    "name:zh": "内蒙古师范大学盛乐校区",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545405719,
+   "center": {
+    "lat": 40.4929278,
+    "lon": 111.7775323
+   },
+   "tags": {
+    "landuse": "grass",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545405720,
+   "center": {
+    "lat": 40.4938385,
+    "lon": 111.7772379
+   },
+   "tags": {
+    "landuse": "grass",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 545405727,
+   "center": {
+    "lat": 40.4908697,
+    "lon": 111.7813107
+   },
+   "tags": {
+    "highway": "unclassified",
+    "name": "创业大道",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 858950400,
+   "center": {
+    "lat": 40.4926032,
+    "lon": 111.7490496
+   },
+   "tags": {
+    "frequency": "50",
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1331155485,
+   "center": {
+    "lat": 40.5021581,
+    "lon": 111.8032795
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "盛乐北街",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1331155486,
+   "center": {
+    "lat": 40.5021969,
+    "lon": 111.8032026
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "盛乐北街",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1331155489,
+   "center": {
+    "lat": 40.4907699,
+    "lon": 111.7813452
+   },
+   "tags": {
+    "highway": "unclassified",
+    "name": "创业大道",
+    "source": "DigitalGlobe Premium Imagery"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1483068804,
+   "center": {
+    "lat": 40.4969174,
+    "lon": 111.7822986
+   },
+   "tags": {
+    "cables": "6",
+    "frequency": "50",
+    "power": "line",
+    "voltage": "220000;110000"
+   }
+  }
+ ],
+ "cn_zhangbei_r03": [],
+ "cn_zhangbei_r05": [
+  {
+   "type": "node",
+   "id": 14099907394,
+   "lat": 41.2211721,
+   "lon": 114.7342265,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 14099907395,
+   "lat": 41.2194451,
+   "lon": 114.7291624,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 209054538,
+   "center": {
+    "lat": 41.2188353,
+    "lon": 114.7307638
+   },
+   "tags": {
+    "highway": "motorway",
+    "name": "海张高速",
+    "name:en": "Hailar–Zhangjiakou Expressway",
+    "name:fa": "آزادراه هایلار - ژانپویاکوو",
+    "name:zh": "海张高速",
+    "oneway": "yes",
+    "ref": "G1013",
+    "source": "Yahoo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 317776150,
+   "center": {
+    "lat": 41.2189027,
+    "lon": 114.730671
+   },
+   "tags": {
+    "highway": "motorway",
+    "name": "海张高速",
+    "name:en": "Hailar–Zhangjiakou Expressway",
+    "name:fa": "آزادراه هایلار - ژانپویاکوو",
+    "name:zh": "海张高速",
+    "oneway": "yes",
+    "ref": "G1013",
+    "source": "Yahoo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 528326189,
+   "center": {
+    "lat": 41.2170991,
+    "lon": 114.7321349
+   },
+   "tags": {
+    "area": "yes",
+    "highway": "services",
+    "name": "张北服务区"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458065990,
+   "center": {
+    "lat": 41.1825229,
+    "lon": 114.7168833
+   },
+   "tags": {
+    "power": "line",
+    "voltage": "220000"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 12758541,
+   "center": {
+    "lat": 42.2846116,
+    "lon": 115.4095433
+   },
+   "tags": {
+    "name": "海张高速",
+    "name:zh": "海张高速",
+    "name:zh-Hant": "海張高速",
+    "network": "CN:expressway",
+    "ref": "G1013",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q89722384"
+   }
+  }
+ ],
+ "cn_zhangbei_r01": [
+  {
+   "type": "way",
+   "id": 911543765,
+   "center": {
+    "lat": 41.1779098,
+    "lon": 114.7017869
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "揽胜西路"
+   }
+  }
+ ],
+ "cn_zhangbei_r06": [
+  {
+   "type": "node",
+   "id": 5172986127,
+   "lat": 41.1612956,
+   "lon": 114.7175295,
+   "tags": {
+    "name": "新村",
+    "place": "village"
+   }
+  },
+  {
+   "type": "way",
+   "id": 209057064,
+   "center": {
+    "lat": 41.1589053,
+    "lon": 114.7256091
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "兴华东路"
+   }
+  },
+  {
+   "type": "way",
+   "id": 209058666,
+   "center": {
+    "lat": 41.1462677,
+    "lon": 114.7260946
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "中都南大街"
+   }
+  },
+  {
+   "type": "way",
+   "id": 402102321,
+   "center": {
+    "lat": 41.1651486,
+    "lon": 114.712509
+   },
+   "tags": {
+    "landuse": "residential",
+    "source": "bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1056614634,
+   "center": {
+    "lat": 41.1653704,
+    "lon": 114.7220515
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "中都北大街"
+   }
+  }
+ ],
+ "cn_zhangbei_r07": [
+  {
+   "type": "node",
+   "id": 10772745006,
+   "lat": 41.1627722,
+   "lon": 114.7298437,
+   "tags": {
+    "bus": "yes",
+    "name": "新村",
+    "name:zh": "新村",
+    "public_transport": "stop_position"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10772745007,
+   "lat": 41.1627238,
+   "lon": 114.7297525,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "新村",
+    "name:zh": "新村",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10772745008,
+   "lat": 41.1623603,
+   "lon": 114.7300422,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "新村",
+    "name:zh": "新村",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10772745009,
+   "lat": 41.1623199,
+   "lon": 114.7299671,
+   "tags": {
+    "bus": "yes",
+    "name": "新村",
+    "name:zh": "新村",
+    "public_transport": "stop_position"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1056614634,
+   "center": {
+    "lat": 41.1653704,
+    "lon": 114.7220515
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "中都北大街"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157877328,
+   "center": {
+    "lat": 41.1613971,
+    "lon": 114.7301444
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "察哈尔南大街"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1237687638,
+   "center": {
+    "lat": 41.1604231,
+    "lon": 114.7325927
+   },
+   "tags": {
+    "power": "line"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 15655457,
+   "center": {
+    "lat": 41.1521058,
+    "lon": 114.7328076
+   },
+   "tags": {
+    "from": "王家湾",
+    "name": "张北1路：王家湾 -> 新汽车站",
+    "name:zh": "张北1路：王家湾 -> 新汽车站",
+    "network": "张北公交",
+    "network:zh": "张北公交",
+    "opening_hours": "Jan 01-Apr 30 07:00-17:40; May 01-Oct 07 06:50-18:10; Oct 08-Dec 31 07:00-17:40",
+    "operator": "张北县公交有限责任公司",
+    "operator:zh": "张北县公交有限责任公司",
+    "public_transport:version": "2",
+    "ref": "张北1",
+    "route": "bus",
+    "to": "新汽车站",
+    "type": "route"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 15655459,
+   "center": {
+    "lat": 41.1518445,
+    "lon": 114.7330409
+   },
+   "tags": {
+    "from": "新汽车站",
+    "name": "张北1路：新汽车站 -> 王家湾",
+    "name:zh": "张北1路：新汽车站 -> 王家湾",
+    "network": "张北公交",
+    "network:zh": "张北公交",
+    "opening_hours": "Jan 01-Apr 30 07:00-17:40; May 01-Oct 07 06:50-18:10; Oct 08-Dec 31 07:00-17:40",
+    "operator": "张北县公交有限责任公司",
+    "operator:zh": "张北县公交有限责任公司",
+    "public_transport:version": "2",
+    "ref": "张北1",
+    "route": "bus",
+    "to": "王家湾",
+    "type": "route"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 15661874,
+   "center": {
+    "lat": 41.1625461,
+    "lon": 114.7298974
+   },
+   "tags": {
+    "name": "新村",
+    "name:zh": "新村",
+    "public_transport": "stop_area",
+    "type": "public_transport"
+   }
+  }
+ ],
+ "cn_zhangbei_r02": [
+  {
+   "type": "node",
+   "id": 2192876420,
+   "lat": 41.1918327,
+   "lon": 114.6931017,
+   "tags": {
+    "highway": "motorway_junction",
+    "name": "张北北",
+    "ref": "1359"
+   }
+  },
+  {
+   "type": "way",
+   "id": 251384171,
+   "center": {
+    "lat": 41.1887076,
+    "lon": 114.6897451
+   },
+   "tags": {
+    "highway": "motorway",
+    "name": "海张高速",
+    "name:en": "Hailar–Zhangjiakou Expressway",
+    "name:fa": "آزادراه هایلار - ژانپویاکوو",
+    "name:zh": "海张高速",
+    "oneway": "yes",
+    "ref": "G1013",
+    "source": "Yahoo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 317776113,
+   "center": {
+    "lat": 41.19265,
+    "lon": 114.7199013
+   },
+   "tags": {
+    "name": "东洋河",
+    "waterway": "river"
+   }
+  },
+  {
+   "type": "way",
+   "id": 317776166,
+   "center": {
+    "lat": 41.1886467,
+    "lon": 114.6898463
+   },
+   "tags": {
+    "highway": "motorway",
+    "name": "海张高速",
+    "name:en": "Hailar–Zhangjiakou Expressway",
+    "name:fa": "آزادراه هایلار - ژانپویاکوو",
+    "name:zh": "海张高速",
+    "oneway": "yes",
+    "ref": "G1013",
+    "source": "Yahoo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 528327929,
+   "center": {
+    "lat": 41.1862783,
+    "lon": 114.6922721
+   },
+   "tags": {
+    "area": "yes",
+    "barrier": "toll_booth",
+    "building": "yes",
+    "layer": "1",
+    "name": "张北北收费站"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 12758541,
+   "center": {
+    "lat": 42.2846116,
+    "lon": 115.4095433
+   },
+   "tags": {
+    "name": "海张高速",
+    "name:zh": "海张高速",
+    "name:zh-Hant": "海張高速",
+    "network": "CN:expressway",
+    "ref": "G1013",
+    "route": "road",
+    "type": "route",
+    "wikidata": "Q89722384"
+   }
+  }
+ ],
+ "cn_guian_r01": [
+  {
+   "type": "way",
+   "id": 460030918,
+   "center": {
+    "lat": 26.3814335,
+    "lon": 106.4851201
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "4",
+    "name": "永安大道",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 540236444,
+   "center": {
+    "lat": 26.3813446,
+    "lon": 106.4850536
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "4",
+    "name": "永安大道",
+    "oneway": "yes"
+   }
+  }
+ ],
+ "cn_qingyang_r12": [
+  {
+   "type": "way",
+   "id": 780223989,
+   "center": {
+    "lat": 35.7413911,
+    "lon": 107.6959344
+   },
+   "tags": {
+    "landuse": "residential"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253779787,
+   "center": {
+    "lat": 35.7433664,
+    "lon": 107.6934457
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244;G309"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253779788,
+   "center": {
+    "lat": 35.7432688,
+    "lon": 107.6932878
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244;G309"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1344546500,
+   "center": {
+    "lat": 35.7372759,
+    "lon": 107.6984468
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742460,
+   "center": {
+    "lat": 35.7349279,
+    "lon": 107.7038095
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横一路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1395668287,
+   "center": {
+    "lat": 35.7348621,
+    "lon": 107.7038378
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横一路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1412509897,
+   "center": {
+    "lat": 35.7335478,
+    "lon": 107.7044087
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "秦淮数据零碳数据中心产业基地"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1412509914,
+   "center": {
+    "lat": 35.7368006,
+    "lon": 107.6987116
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国能建庆阳大数据中心产业园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465640996,
+   "center": {
+    "lat": 35.7343627,
+    "lon": 107.7008646
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465640998,
+   "center": {
+    "lat": 35.7343721,
+    "lon": 107.7009633
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552397197,
+   "center": {
+    "lat": 35.7335113,
+    "lon": 107.6951075
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552397198,
+   "center": {
+    "lat": 35.7334781,
+    "lon": 107.6949174
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552409409,
+   "center": {
+    "lat": 35.7332452,
+    "lon": 107.698387
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "智慧蓝图西部智算中心"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 919124,
+   "center": {
+    "lat": 36.290191,
+    "lon": 112.0263572
+   },
+   "tags": {
+    "from": "青岛",
+    "name": "309国道 青兰线",
+    "name:en": "China National Highway 309",
+    "name:zh": "309国道 青兰线",
+    "name:zh-Hant": "309國道 靑蘭綫",
+    "network": "CN:national",
+    "official_name": "青岛－兰州公路",
+    "ref": "G309",
+    "ref:colour": "red",
+    "route": "road",
+    "short_name": "青兰线",
+    "to": "兰州",
+    "type": "route"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 8885991,
+   "center": {
+    "lat": 35.5463286,
+    "lon": 107.71347
+   },
+   "tags": {
+    "landuse": "farmland",
+    "name": "董志塬",
+    "source": "bing",
+    "type": "multipolygon"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 20294324,
+   "center": {
+    "lat": 35.7885274,
+    "lon": 107.6910256
+   },
+   "tags": {
+    "name": "244国道 乌江线（甘肃段）",
+    "name:en": "China National Highway 244 (Gansu section)",
+    "name:zh": "244国道 乌江线（甘肃段）",
+    "name:zh-Hant": "244國道 烏江綫（甘肅段）",
+    "network": "CN:national",
+    "ref": "G244",
+    "route": "road",
+    "type": "route"
+   }
+  }
+ ],
+ "cn_qingyang_r03": [
+  {
+   "type": "way",
+   "id": 536122861,
+   "center": {
+    "lat": 35.6946756,
+    "lon": 107.620021
+   },
+   "tags": {
+    "highway": "motorway",
+    "lanes": "2",
+    "name": "青兰高速",
+    "name:en": "Qinglan Expressway",
+    "name:zh": "青兰高速",
+    "name:zh-Hant": "青蘭高速",
+    "oneway": "yes",
+    "ref": "G22",
+    "toll": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 536122863,
+   "center": {
+    "lat": 35.6946143,
+    "lon": 107.6199193
+   },
+   "tags": {
+    "highway": "motorway",
+    "lanes": "2",
+    "name": "青兰高速",
+    "name:en": "Qinglan Expressway",
+    "name:zh": "青兰高速",
+    "name:zh-Hant": "青蘭高速",
+    "oneway": "yes",
+    "ref": "G22",
+    "toll": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978078,
+   "center": {
+    "lat": 35.7005742,
+    "lon": 107.6150368
+   },
+   "tags": {
+    "building": "house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978080,
+   "center": {
+    "lat": 35.6987856,
+    "lon": 107.6135319
+   },
+   "tags": {
+    "building": "house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978081,
+   "center": {
+    "lat": 35.6988262,
+    "lon": 107.6137313
+   },
+   "tags": {
+    "building": "house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978082,
+   "center": {
+    "lat": 35.6984634,
+    "lon": 107.6121246
+   },
+   "tags": {
+    "building": "house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978083,
+   "center": {
+    "lat": 35.698441,
+    "lon": 107.6118075
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978086,
+   "center": {
+    "lat": 35.698169,
+    "lon": 107.6153972
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978087,
+   "center": {
+    "lat": 35.6981251,
+    "lon": 107.6157186
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978092,
+   "center": {
+    "lat": 35.7018654,
+    "lon": 107.6101106
+   },
+   "tags": {
+    "building": "house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978093,
+   "center": {
+    "lat": 35.7016095,
+    "lon": 107.6101092
+   },
+   "tags": {
+    "building": "house"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978095,
+   "center": {
+    "lat": 35.7024816,
+    "lon": 107.613196
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978103,
+   "center": {
+    "lat": 35.7010116,
+    "lon": 107.6131286
+   },
+   "tags": {
+    "landuse": "orchard"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1262978104,
+   "center": {
+    "lat": 35.6993523,
+    "lon": 107.6120385
+   },
+   "tags": {
+    "landuse": "orchard"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 2067232,
+   "center": {
+    "lat": 35.9784536,
+    "lon": 112.1427305
+   },
+   "tags": {
+    "from": "青岛",
+    "from:en": "Qingdao",
+    "name": "青兰高速",
+    "name:en": "G22 Qingdao–Lanzhou Expressway",
+    "name:zh": "青兰高速",
+    "name:zh-Hant": "青蘭高速",
+    "network": "CN:expressway",
+    "official_name": "青岛－兰州高速公路",
+    "ref": "G22",
+    "route": "road",
+    "short_name": "青兰高速",
+    "state": "connection",
+    "to": "兰州",
+    "to:en": "Lanzhou",
+    "toll": "yes",
+    "type": "route",
+    "wikidata": "Q785396",
+    "wikipedia": "en:G22 Qingdao–Lanzhou Expressway"
+   }
+  }
+ ],
+ "cn_qingyang_r07": [
+  {
+   "type": "node",
+   "id": 9973105226,
+   "lat": 35.7218505,
+   "lon": 107.6970317,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9973105227,
+   "lat": 35.7229132,
+   "lon": 107.7009692,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9973647203,
+   "lat": 35.7248217,
+   "lon": 107.6943894,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564340786,
+   "lat": 35.7265344,
+   "lon": 107.6994708,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564340787,
+   "lat": 35.7259313,
+   "lon": 107.7019545,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564340789,
+   "lat": 35.7270636,
+   "lon": 107.6972915,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564340790,
+   "lat": 35.7271725,
+   "lon": 107.6960282,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564386825,
+   "lat": 35.7234413,
+   "lon": 107.6991141,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564386826,
+   "lat": 35.7235219,
+   "lon": 107.6974833,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10564386827,
+   "lat": 35.7267217,
+   "lon": 107.6941332,
+   "tags": {
+    "power": "tower"
+   }
+  },
+  {
+   "type": "way",
+   "id": 641307112,
+   "center": {
+    "lat": 35.7193842,
+    "lon": 107.7291607
+   },
+   "tags": {
+    "power": "line",
+    "voltage": "110000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1088554778,
+   "center": {
+    "lat": 35.7217852,
+    "lon": 107.6927241
+   },
+   "tags": {
+    "power": "line",
+    "voltage": "330000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1133062479,
+   "center": {
+    "lat": 35.7264637,
+    "lon": 107.6927251
+   },
+   "tags": {
+    "power": "line"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1133064243,
+   "center": {
+    "lat": 35.7236981,
+    "lon": 107.7294927
+   },
+   "tags": {
+    "power": "line"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1153619505,
+   "center": {
+    "lat": 35.8267066,
+    "lon": 107.6651476
+   },
+   "tags": {
+    "cables": "3",
+    "power": "line",
+    "source": "digitalGlobe Premium",
+    "voltage": "330000"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253303072,
+   "center": {
+    "lat": 35.7134541,
+    "lon": 107.698285
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1253779802,
+   "center": {
+    "lat": 35.7134187,
+    "lon": 107.6980828
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1290012392,
+   "center": {
+    "lat": 35.7221127,
+    "lon": 107.695514
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742453,
+   "center": {
+    "lat": 35.723542,
+    "lon": 107.7075555
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "园区横四路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742454,
+   "center": {
+    "lat": 35.7288718,
+    "lon": 107.701212
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742455,
+   "center": {
+    "lat": 35.7268004,
+    "lon": 107.7064942
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横三路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465641025,
+   "center": {
+    "lat": 35.7278969,
+    "lon": 107.6908907
+   },
+   "tags": {
+    "highway": "unclassified",
+    "name": "西合公路(旧)",
+    "source": "bing"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552397191,
+   "center": {
+    "lat": 35.7254405,
+    "lon": 107.6945433
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国移动(甘肃·庆阳)数据中心"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552397192,
+   "center": {
+    "lat": 35.7266322,
+    "lon": 107.700201
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国电信庆阳智算产业园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552397193,
+   "center": {
+    "lat": 35.7227813,
+    "lon": 107.6953958
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国联通庆阳数据中心"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552484451,
+   "center": {
+    "lat": 35.7290249,
+    "lon": 107.6963665
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552484452,
+   "center": {
+    "lat": 35.7279156,
+    "lon": 107.6966778
+   },
+   "tags": {
+    "bridge": "yes",
+    "highway": "trunk",
+    "lanes": "2",
+    "layer": "1",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552484453,
+   "center": {
+    "lat": 35.7289916,
+    "lon": 107.6961899
+   },
+   "tags": {
+    "highway": "trunk",
+    "lanes": "2",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552484454,
+   "center": {
+    "lat": 35.7278812,
+    "lon": 107.6964949
+   },
+   "tags": {
+    "bridge": "yes",
+    "highway": "trunk",
+    "lanes": "2",
+    "layer": "1",
+    "motorroad": "yes",
+    "name": "庆阳东绕城",
+    "oneway": "yes",
+    "ref": "G244"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552591207,
+   "center": {
+    "lat": 35.7268916,
+    "lon": 107.7064723
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横三路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552591208,
+   "center": {
+    "lat": 35.7249235,
+    "lon": 107.697413
+   },
+   "tags": {
+    "highway": "construction",
+    "name": "园区横三路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552591209,
+   "center": {
+    "lat": 35.723943,
+    "lon": 107.6931506
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横三路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552591210,
+   "center": {
+    "lat": 35.7248218,
+    "lon": 107.6974315
+   },
+   "tags": {
+    "highway": "construction",
+    "name": "园区横三路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552591214,
+   "center": {
+    "lat": 35.7216111,
+    "lon": 107.6982852
+   },
+   "tags": {
+    "highway": "construction",
+    "name": "园区横四路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 20294324,
+   "center": {
+    "lat": 35.7885274,
+    "lon": 107.6910256
+   },
+   "tags": {
+    "name": "244国道 乌江线（甘肃段）",
+    "name:en": "China National Highway 244 (Gansu section)",
+    "name:zh": "244国道 乌江线（甘肃段）",
+    "name:zh-Hant": "244國道 烏江綫（甘肅段）",
+    "network": "CN:national",
+    "ref": "G244",
+    "route": "road",
+    "type": "route"
+   }
+  }
+ ],
+ "cn_qingyang_r11": [
+  {
+   "type": "way",
+   "id": 1339487748,
+   "center": {
+    "lat": 35.7335009,
+    "lon": 107.7022221
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1339487749,
+   "center": {
+    "lat": 35.7332371,
+    "lon": 107.7013938
+   },
+   "tags": {
+    "building": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1339487755,
+   "center": {
+    "lat": 35.7269434,
+    "lon": 107.7031148
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742454,
+   "center": {
+    "lat": 35.7288718,
+    "lon": 107.701212
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742460,
+   "center": {
+    "lat": 35.7349279,
+    "lon": 107.7038095
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横一路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1392742461,
+   "center": {
+    "lat": 35.7313145,
+    "lon": 107.6938759
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "尚勤路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1395668287,
+   "center": {
+    "lat": 35.7348621,
+    "lon": 107.7038378
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区横一路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1412509894,
+   "center": {
+    "lat": 35.7312709,
+    "lon": 107.6939071
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "尚勤路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1412509895,
+   "center": {
+    "lat": 35.726923,
+    "lon": 107.7030242
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1412509897,
+   "center": {
+    "lat": 35.7335478,
+    "lon": 107.7044087
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "秦淮数据零碳数据中心产业基地"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1412509914,
+   "center": {
+    "lat": 35.7368006,
+    "lon": 107.6987116
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "中国能建庆阳大数据中心产业园"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1461636283,
+   "center": {
+    "lat": 35.7296411,
+    "lon": 107.6933927
+   },
+   "tags": {
+    "construction": "trunk",
+    "highway": "trunk",
+    "name": "西合公路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1461636286,
+   "center": {
+    "lat": 35.7296624,
+    "lon": 107.6939684
+   },
+   "tags": {
+    "construction": "trunk",
+    "highway": "trunk",
+    "name": "西合公路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1461636287,
+   "center": {
+    "lat": 35.7319046,
+    "lon": 107.7046778
+   },
+   "tags": {
+    "construction": "trunk",
+    "highway": "trunk",
+    "name": "西合公路",
+    "oneway": "yes",
+    "ref": "G309"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1461636288,
+   "center": {
+    "lat": 35.7321225,
+    "lon": 107.7051679
+   },
+   "tags": {
+    "construction": "trunk",
+    "highway": "trunk",
+    "name": "西合公路",
+    "oneway": "yes",
+    "ref": "G309"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465640996,
+   "center": {
+    "lat": 35.7343627,
+    "lon": 107.7008646
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465640997,
+   "center": {
+    "lat": 35.7313385,
+    "lon": 107.7015282
+   },
+   "tags": {
+    "construction": "tertiary",
+    "highway": "construction",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465640998,
+   "center": {
+    "lat": 35.7343721,
+    "lon": 107.7009633
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1465640999,
+   "center": {
+    "lat": 35.7313594,
+    "lon": 107.7016254
+   },
+   "tags": {
+    "construction": "tertiary",
+    "highway": "construction",
+    "name": "园区纵二路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552397206,
+   "center": {
+    "lat": 35.7313083,
+    "lon": 107.7013385
+   },
+   "tags": {
+    "construction": "trunk",
+    "highway": "trunk",
+    "name": "西合公路",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1552409409,
+   "center": {
+    "lat": 35.7332452,
+    "lon": 107.698387
+   },
+   "tags": {
+    "landuse": "industrial",
+    "name": "智慧蓝图西部智算中心"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 919124,
+   "center": {
+    "lat": 36.290191,
+    "lon": 112.0263572
+   },
+   "tags": {
+    "from": "青岛",
+    "name": "309国道 青兰线",
+    "name:en": "China National Highway 309",
+    "name:zh": "309国道 青兰线",
+    "name:zh-Hant": "309國道 靑蘭綫",
+    "network": "CN:national",
+    "official_name": "青岛－兰州公路",
+    "ref": "G309",
+    "ref:colour": "red",
+    "route": "road",
+    "short_name": "青兰线",
+    "to": "兰州",
+    "type": "route"
+   }
+  },
+  {
+   "type": "relation",
+   "id": 18558847,
+   "center": {
+    "lat": 35.6393852,
+    "lon": 107.696198
+   },
+   "tags": {
+    "from": "五里墩(陕甘界)",
+    "name": "318省道",
+    "ref": "S318",
+    "route": "road",
+    "to": "郿岘",
+    "type": "route",
+    "via": "九岘乡;金村乡;湘乐镇;段家集乡;合水县城;吉岘镇;罗家畔;什社乡;西峰区;太平镇;临泾镇;镇原县城;平泉镇;新城镇;草峰镇"
+   }
+  }
+ ]
+}

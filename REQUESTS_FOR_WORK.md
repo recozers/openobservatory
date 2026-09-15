@@ -31,8 +31,8 @@ daily demand cycles while training runs near-flat for weeks, so it needs several
 
 | Question | Method | Time resolution | US today | China today |
 |---|---|---|---|---|
-| Where is it? | Inventory, plus Sentinel-1 radar and Sentinel-2 change scans | New since 2021 | 88 sites | 54 sites, including 39 radar-found structures not yet confirmed as data centres |
-| When did each building go up? | Sentinel-2 roof brightness and Sentinel-1 radar | Monthly | Dated buildings at 69 sites | Dated buildings at 45 sites, mostly by radar |
+| Where is it? | Inventory, plus Sentinel-1 radar and Sentinel-2 change scans | New since 2021 | 88 sites | 42 sites, including 27 radar-found structures: 3 reviewed as data-hall complexes, 24 unclear; 12 rejected after review |
+| When did each building go up? | Sentinel-2 roof brightness and Sentinel-1 radar | Monthly | Dated buildings at 69 sites | Dated buildings at 33 sites, mostly by radar |
 | When did it start running? | VIIRS night lights | Monthly | No direct signal: lights rise during construction, not at start-up | No signal: parks were already lit |
 | What is its capacity? | Filings, utility and operator statements, Epoch AI estimates | When documents change | 75 sites, 67 of them Epoch AI estimates | 5 sites: two supercomputers' measured peaks and three Epoch AI estimates |
 | How much is in use, electrically? | Annual electricity divided by capacity for the same period | Annual | 1 site: ORNL's Frontier averaged about 0.54 of its measured peak in 2023 | None |
@@ -122,9 +122,9 @@ marks them in these tables when the page loads.
 
 | ID | Request | Answers | Size | Keys | Status |
 |---|---|---|---|---|---|
-| [RFW-01](#rfw-01-confirm-or-reject-the-radar-detected-structures-in-china) | Confirm or reject the radar-detected structures in China | Where | S | none | open |
+| [RFW-01](#rfw-01-confirm-or-reject-the-radar-detected-structures-in-china) | Confirm or reject the radar-detected structures in China | Where | S | none | open: first pass done, 3 confirmed, 12 rejected, 24 unclear; the unclear entries need better imagery or documents |
 | [RFW-02](#rfw-02-locate-every-national-computing-cluster-and-scan-it) | Locate every national computing cluster and scan it | Where | M | none, then EE | open |
-| [RFW-03](#rfw-03-quarterly-construction-index-for-each-chinese-hub) | Quarterly construction index for each Chinese hub | Built | M | none | open |
+| [RFW-03](#rfw-03-quarterly-construction-index-for-each-chinese-hub) | Quarterly construction index for each Chinese hub | Built | M | none | done in pull request 17; rerun when RFW-02 adds parks |
 | [RFW-04](#rfw-04-land-transfer-results-for-operators-and-start-dates) | Land transfer results for operators and start dates | Where, Built | M | none | open |
 | [RFW-05](#rfw-05-procurement-tenders-and-awards-including-training-and-inference-servers) | Procurement tenders and awards, including training and inference servers | Built, Running, Workload | M | none | open |
 | [RFW-06](#rfw-06-stated-workload-roles-and-cloud-regions-at-chinese-campuses) | Stated workload roles and cloud regions at Chinese campuses | Workload | M | none | open |
@@ -138,8 +138,18 @@ marks them in these tables when the page loads.
 
 #### RFW-01 Confirm or reject the radar-detected structures in China
 
-- **Why:** 39 inventory entries named `cn_<hub>_r<rank>` are new hall-like structures found by radar, dated, and unconfirmed.
-  Each needs a verdict before it counts as a data centre.
+- **Done so far:** a first pass in pull request 16 reviewed all 39 entries from before-and-after Sentinel-2 chips
+  (`tools/radar_review_chips.py`, `results_cn/radar_review/`), OpenStreetMap context within 400 m and a look at web imagery:
+  3 data-hall complexes (`cn_horinger_r04` inside the China Telecom park, `cn_horinger_r06` beside China Mobile's Hohhot data
+  centre, `cn_qingyang_r07` inside China Telecom's Qingyang computing park), 12 not data centres (sheds, a solar array, a
+  factory, a food plant, a mall, a sports hall, a university, town blocks) and 24 unclear, mostly big-box buildings that
+  10 m imagery cannot tell from logistics or workshops. `data/cn_radar_review.csv` holds every verdict with its reason; the
+  12 rejected entries left `data/sites.csv` and keep their polygons and radar timelines.
+- **Why the rest matters:** 24 entries, 16 of them at Horinger, remain unclear, and the three confirmations rest on layout and
+  OSM park names, not on a document.
+- **Do next:** for each unclear entry, find a document that names the building or its plot (land transfer, environmental
+  approval, procurement notice or operator statement, RFW-04 to RFW-06), or inspect sub-metre imagery when PAID-01 provides
+  it, and update the verdict in the review file. Entries dated 2025 or later have no web imagery yet.
 - **Do:** For each entry, look at its chip (`results_s1/<hub>_candNN.png`, or render one with `tools/chip.py`) and its
   classifier score in `results_cand/scores.csv`. Classify it as data-hall complex, not a data centre, or unclear, with a
   one-line reason naming what you see: long parallel halls, cooling yards, generator rows, a substation. For confirmed halls,
@@ -290,16 +300,16 @@ These methods are developed where ground truth exists, mostly in the US, so they
 - **Done so far:** pull request 19 added `season_zscore` and a `--sensitivity` mode to `tools/plume_batch.py`, and
   `results_no2/plume_date_sensitivity.csv` holds both tests for all 33 sites and 62 control points at seven start dates
   (documented and ±1 to 3 months). The season-matched test compares after-days with before-days of the same calendar month
-  and combines months by inverse variance. It removes the spring-start artefact (Rosemount −3.26σ to −0.17σ, Ridgeland
+  and combines months by inverse variance. It shrinks the spring-start negatives (Rosemount −3.26σ to −0.17σ, Ridgeland
   −3.45σ to −1.60σ, Mesa −1.12σ to +0.28σ), leaves Colossus 2 at 9.1σ, and puts Abilene at 3.0σ at its documented start
   but 2.3σ one month earlier under either test. Control points: none of 62 reach 2.5σ at the documented date under either
   test; across all seven start dates one control reaches 2.53σ under the current test and none under the season-matched
   (max 2.48σ; standard deviation of control z-scores 1.22 against 1.38). One campus without known on-site generation,
-  Microsoft Goodyear, moves from 2.07σ to 3.14σ and stays above 2.5σ at five of seven start dates.
+  Microsoft Goodyear, moves from 2.07σ to 3.14σ and stays above 2.5σ at six of seven start dates.
 - **Recommendation:** adopt the season-matched test and keep 2.5σ, but require the score at the documented start and at
   the months either side to all exceed it before the site says "detected"; on that rule Colossus 2 passes, Abilene does not
   (2.34σ one month early), and Goodyear passes, which is why the site has not switched yet: Goodyear sits on the growing
-  western edge of Phoenix, so a city-edge plume (RFW-15) is the likely explanation and needs the near-field test first.
+  western edge of Phoenix, so a city-edge plume (RFW-15) is the first explanation to rule out, with the near-field test.
 - **Do:** Using the saved daily series in `results_no2/<site>.csv`, add a season-matched version of the test and report each
   site's z-score across start dates within three months of the documented one. Re-run the 62 control points the same way.
 - **Deliver:** The revised test in `tools/plume_batch.py`, per-site date sensitivity in a results file, and a recommendation on
@@ -430,7 +440,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 | [RFW-29](#rfw-29-standby-generator-permits-as-a-capacity-bound) | Standby generator permits as a capacity bound | Capacity | M | none | open |
 | [RFW-30](#rfw-30-construction-timeline-on-the-map) | Construction timeline on the map | Built | M | none | open |
 | [RFW-31](#rfw-31-tests-for-the-load-precedence-rules) | Tests for the load precedence rules | Tools | S | none | open |
-| [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | open |
+| [RFW-32](#rfw-32-source-link-checker) | Source link checker | Tools | S | none | done in pull request 18 |
 | [RFW-33](#rfw-33-crawl-public-records-and-satellite-data-for-data-centres-in-the-rest-of-the-world) | Crawl public records and satellite data for data centres in the rest of the world | Where, Built, Capacity | L | none, then EE | open |
 
 #### RFW-26 Radar candidate scan around every inventory site
@@ -880,7 +890,9 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
   annual emission reports give 63 records for 2019 to 2025, but no allocation of its output to any campus is established. No
   hourly or daily stack readings were retrieved: Shengle's reading service requires a CAPTCHA and other candidate services
   timed out or returned errors. See RFW-12.
-- **Radar-found structures in China.** Hall-like and dated, but unconfirmed. See RFW-01.
+- **Radar-found structures in China.** Of 39 hall-like, dated structures, a chip review confirmed 3 as data-hall complexes from
+  layout and the named parks around them, rejected 12 and left 24 unclear: at 10 m, big-box buildings cannot be told from
+  logistics or workshops, and web imagery predates the entries built since 2025. See RFW-01 and `data/cn_radar_review.csv`.
 
 ### Did not work
 
@@ -901,7 +913,7 @@ Please do not repeat these without a new idea.
 - **NO₂ at campuses without on-site generation.** None of 31 reached 2.5σ; the highest was 2.09. None of 62 control points
   reached 2.5σ either.
   Season-matched (RFW-14): still none of 62 control points at any of seven start dates, but Microsoft Goodyear reaches
-  3.1σ, unexplained; the spring-start negatives (Rosemount −3.3σ, Ridgeland −3.5σ) vanish, so they were seasonal.
+  3.1σ, unexplained; the spring-start negatives shrink (Rosemount −3.3σ to −0.2σ, Ridgeland −3.5σ to −1.6σ), so they were largely seasonal.
 - **A campus beside large power plants.** Colossus 1's turbine phase came out at 62 ± 63 kg NOx/h after regressing out the two
   neighbouring plants' hourly EPA emissions over 594 days.
 - **The box flux method at a city's edge.** At Dublin's Grange Castle it gave 964 ± 96 kg NOx/h with winter peaks and a fitted

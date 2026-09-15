@@ -1,0 +1,56 @@
+hub,quarter,verdict,n,area_ha,n_firm,area_firm_ha,area_possible_ha,entries
+guian,2025Q1,unclear,1,22.4,1,22.4,22.4,cn_guian_r01
+horinger,2019Q3,unclear,0,0.0,0,0.0,7.0,
+horinger,2019Q4,unclear,0,0.0,0,0.0,7.0,
+horinger,2020Q1,unclear,1,7.0,0,0.0,7.0,cn_horinger_r21
+horinger,2021Q2,not a data centre,0,0.0,0,0.0,7.6,
+horinger,2021Q2,unclear,1,16.9,1,16.9,16.9,cn_horinger_r08
+horinger,2021Q3,not a data centre,1,7.6,0,0.0,7.6,cn_horinger_r19
+horinger,2021Q4,unclear,0,0.0,0,0.0,12.5,
+horinger,2022Q1,unclear,1,12.5,0,0.0,12.5,cn_horinger_r12
+horinger,2022Q2,data-hall complex,1,26.6,1,26.6,26.6,cn_horinger_r04
+horinger,2022Q3,unclear,0,0.0,0,0.0,20.6,
+horinger,2022Q4,unclear,0,0.0,0,0.0,20.6,
+horinger,2023Q1,not a data centre,0,0.0,0,0.0,33.2,
+horinger,2023Q1,unclear,2,34.5,1,13.9,34.5,cn_horinger_r05;cn_horinger_r11
+horinger,2023Q2,not a data centre,1,33.2,0,0.0,33.2,cn_horinger_r03
+horinger,2023Q2,unclear,1,6.4,1,6.4,6.4,cn_horinger_r22
+horinger,2023Q3,unclear,1,5.6,1,5.6,5.6,cn_horinger_r24
+horinger,2024Q2,data-hall complex,1,18.4,1,18.4,18.4,cn_horinger_r06
+horinger,2024Q2,unclear,1,8.0,1,8.0,63.1,cn_horinger_r18
+horinger,2024Q3,not a data centre,2,17.0,2,17.0,17.0,cn_horinger_r27;cn_horinger_r14
+horinger,2024Q3,unclear,3,55.1,0,0.0,55.1,cn_horinger_r02;cn_horinger_r17;cn_horinger_r23
+horinger,2025Q1,unclear,0,0.0,0,0.0,12.4,
+horinger,2025Q2,not a data centre,0,0.0,0,0.0,5.1,
+horinger,2025Q2,unclear,1,7.5,1,7.5,19.9,cn_horinger_r20
+horinger,2025Q3,not a data centre,1,5.1,0,0.0,5.1,cn_horinger_r25
+horinger,2025Q3,unclear,3,28.2,2,15.8,28.2,cn_horinger_r16;cn_horinger_r13;cn_horinger_r26
+horinger,2026Q1,unclear,0,0.0,0,0.0,11.9,
+horinger,2026Q2,unclear,1,11.9,0,0.0,11.9,cn_horinger_r15
+qingyang,2023Q3,unclear,1,5.1,1,5.1,5.1,cn_qingyang_r12
+qingyang,2024Q1,unclear,0,0.0,0,0.0,6.0,
+qingyang,2024Q2,unclear,1,6.0,0,0.0,18.0,cn_qingyang_r11
+qingyang,2024Q3,unclear,1,12.0,0,0.0,12.0,cn_qingyang_r03
+qingyang,2024Q4,data-hall complex,0,0.0,0,0.0,8.6,
+qingyang,2025Q1,data-hall complex,1,8.6,0,0.0,8.6,cn_qingyang_r07
+ulanqab,2021Q2,not a data centre,0,0.0,0,0.0,5.5,
+ulanqab,2021Q3,not a data centre,1,5.5,0,0.0,5.5,cn_ulanqab_r07
+ulanqab,2022Q1,not a data centre,1,7.0,1,7.0,7.0,cn_ulanqab_r05
+ulanqab,2022Q4,not a data centre,1,8.0,1,8.0,8.0,cn_ulanqab_r03
+ulanqab,2023Q1,unclear,0,0.0,0,0.0,6.7,
+ulanqab,2023Q2,unclear,1,6.7,0,0.0,6.7,cn_ulanqab_r06
+ulanqab,2024Q3,unclear,0,0.0,0,0.0,7.6,
+ulanqab,2024Q4,unclear,0,0.0,0,0.0,7.6,
+ulanqab,2025Q1,unclear,1,7.6,0,0.0,7.6,cn_ulanqab_r04
+zhangbei,2022Q3,unclear,0,0.0,0,0.0,17.4,
+zhangbei,2022Q4,unclear,1,17.4,0,0.0,17.4,cn_zhangbei_r01
+zhangbei,2023Q2,not a data centre,1,10.6,1,10.6,10.6,cn_zhangbei_r03
+zhangbei,2023Q4,not a data centre,1,8.0,1,8.0,8.0,cn_zhangbei_r05
+zhangbei,2024Q2,unclear,0,0.0,0,0.0,16.8,
+zhangbei,2024Q3,not a data centre,0,0.0,0,0.0,6.6,
+zhangbei,2024Q3,unclear,1,16.8,0,0.0,16.8,cn_zhangbei_r02
+zhangbei,2024Q4,not a data centre,0,0.0,0,0.0,6.6,
+zhangbei,2025Q1,not a data centre,1,6.6,0,0.0,6.6,cn_zhangbei_r06
+zhangbei,2025Q4,not a data centre,0,0.0,0,0.0,5.0,
+zhangbei,2026Q1,not a data centre,0,0.0,0,0.0,5.0,
+zhangbei,2026Q2,not a data centre,1,5.0,0,0.0,5.0,cn_zhangbei_r07

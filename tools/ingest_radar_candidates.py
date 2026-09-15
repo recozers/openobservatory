@@ -7,7 +7,8 @@ existing site's hall polygons becomes a site `cn_<hub>_r<rank>` (coords_quality 
 tier U) with a one-feature polygon file (ptype hall, confidence low) cut from the radar blob outline, and a note carrying
 the score, area and VV rise. Also writes results_s1/<hub>_newsites.geojson (all new outlines of the hub, names = site ids)
 for one tools/s1_timeline.py run per hub; tools/split_s1_hub.py then writes results_s1/<site>.csv per site so the build
-picks up the radar structure-on month. Idempotent: existing site ids are left alone.
+picks up the radar structure-on month. Idempotent: existing site ids are left alone, and ids that data/cn_radar_review.csv
+(RFW-01) has rejected as "not a data centre" are never re-added.
 """
 from __future__ import annotations
 
@@ -36,6 +37,15 @@ def existing_halls(sites):
     return unary_union(geoms) if geoms else None
 
 
+def rejected_ids(path=None):
+    """Site ids whose RFW-01 review verdict is "not a data centre"; they stay out of the inventory."""
+    path = path or ROOT / "data" / "cn_radar_review.csv"
+    if not path.exists():
+        return set()
+    rev = pd.read_csv(path, dtype=str).fillna("")
+    return set(rev.loc[rev.verdict.str.strip() == "not a data centre", "site_id"])
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--scores", default="results_cand/scores.csv")
@@ -47,6 +57,7 @@ def main():
     sc["key"] = sc.file.str.extract(r"results_s1/(?:china/)?([^/]+)_candidates")[0]
     sites = pd.read_csv(ROOT / "data" / "sites.csv", dtype=str).fillna("")
     have = set(sites.site_id)
+    rejected = rejected_ids()
     known = existing_halls(sites)
     new_rows, n_new = [], 0
     for hub in args.hubs:
@@ -65,7 +76,7 @@ def main():
             geom = shape(f["geometry"])
             if known is not None and geom.intersects(known):
                 continue  # already an inventory site's hall
-            if sid in have:
+            if sid in have or sid in rejected:
                 continue
             rp = geom.representative_point()
             feat = {"type": "Feature", "geometry": f["geometry"],
