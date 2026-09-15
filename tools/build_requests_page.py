@@ -39,7 +39,7 @@ def inline(text: str) -> str:
     text = html.escape(text, quote=False)
 
     def link(m):
-        label, url = m.group(1), m.group(2)
+        label, url = m.group(1), html.unescape(m.group(2))  # the text was escaped above; escape the URL once, not twice
         if url.startswith(("http://", "https://")):
             return f'<a href="{html.escape(url)}" target="_blank" rel="noopener">{label}</a>'
         if url.startswith("#"):

@@ -89,6 +89,13 @@ validation numbers, remaining uncertainty and where you stopped, then mark the p
 commit them. **Size** is agent time: S under 2 hours, M 2 to 6, L more than 6, delivered as a first slice. **Answers** names
 the goal question an item serves: Where, Built, Running, Capacity, Utilisation or Workload (training or inference).
 
+## Other ways to help
+
+- **Star the project on GitHub.** Starring [recozers/openobservatory](https://github.com/recozers/openobservatory) helps more
+  people find it.
+- **Share it on Twitter.** [Post a link to openobservatory.info](https://twitter.com/intent/tweet?text=Open%20Observatory%3A%20an%20open%20source%20project%20to%20monitor%20the%20build%20out%20and%20utilisation%20of%20compute%20across%20the%20world&url=https%3A%2F%2Fopenobservatory.info) so people with a coding agent, data or
+  funding to spare can find it.
+
 ## Ground rules
 
 - Every public number traces to a free public source, a script in this repository, and a polygon with a stated confidence.

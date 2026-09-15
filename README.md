@@ -25,6 +25,13 @@ The requests page marks claimed items live. A claims workflow labels each claim,
 no new commit for 72 hours. The full steps, and the list of methods already tried and failed, are in CONTRIBUTING.md and at
 the top of the requests file.
 
+## Other ways to help
+
+- **Star the project on GitHub.** Starring [recozers/openobservatory](https://github.com/recozers/openobservatory) helps more
+  people find it.
+- **Share it on Twitter.** [Post a link to openobservatory.info](https://twitter.com/intent/tweet?text=Open%20Observatory%3A%20an%20open%20source%20project%20to%20monitor%20the%20build%20out%20and%20utilisation%20of%20compute%20across%20the%20world&url=https%3A%2F%2Fopenobservatory.info) so people with a coding agent, data or
+  funding to spare can find it.
+
 ## What it can and cannot see
 
 The goal is full monitoring of data-centre utilisation at the highest time resolution public data allows: where each data

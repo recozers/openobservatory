@@ -38,6 +38,11 @@ class RequestsPageTests(unittest.TestCase):
         self.assertIn('<script src="claims.js"></script>', html)
         self.assertTrue((ROOT / "site" / "claims.js").exists())
 
+    def test_link_urls_are_escaped_once(self):
+        out = page.render_markdown("[share](https://twitter.com/intent/tweet?text=a%20b&url=https%3A%2F%2Fx.test)")
+        self.assertIn('href="https://twitter.com/intent/tweet?text=a%20b&amp;url=https%3A%2F%2Fx.test"', out)
+        self.assertNotIn("&amp;amp;", out)
+
     def test_text_is_escaped(self):
         out = page.render_markdown("- **x** <script>alert(1)</script> `<b>`")
         self.assertNotIn("<script>", out)
