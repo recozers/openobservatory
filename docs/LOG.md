@@ -734,6 +734,7 @@ and a source URL showed.
   - `tests/test_evidence.py` (13): committed findings validate; every adapter reads its files; RFW-01 keeps all 39 verdicts;
     Chindata totals match the notes; every plume series is reported; request anchors exist on the requests page; 16 bad-row
     cases are refused with a reason; the latest verdict applies; radar lines follow the verdict.
-  - `tests/test_rebuild_site_data.py` (3) covers timestamp-only changes.
+  - `tests/test_rebuild_site_data.py` (4) covers timestamp-only changes and Mac-versus-Linux float rounding, which the first
+    workflow run committed as a change before the check tolerated it.
   - `tests/findings.test.cjs` (4) covers grouping, links, relative paths and escaping; one card test was added.
-  - 163 Python and 34 Node tests pass.
+  - 164 Python and 34 Node tests pass.

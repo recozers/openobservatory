@@ -8,14 +8,16 @@ by hand. It works the same way locally.
     python tools/rebuild_site_data.py --check   # the same, then exit 1 if anything changed for real
 
 It renders site/requests.html, then runs build_site.py, build_timeline_data.py and build_status.py (which also writes the
-findings) with the saved-evidence settings the tests workflow uses. A JSON file whose only difference from the last commit
-is its top-level "generated" timestamp has not changed. If any file has changed for real, every rebuilt file is kept, so
-the build dates on the pages agree.
+findings) with the saved-evidence settings the tests workflow uses. A JSON file has not changed if it differs from the
+last commit only in its top-level "generated" timestamp or in the last digits of floating-point numbers, which differ
+between a Mac and the Linux runner. If any file has changed for real, every rebuilt file is kept, so the build dates on
+the pages agree.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import subprocess
 import sys
@@ -26,6 +28,19 @@ STEPS = (["tools/build_requests_page.py"], ["build_site.py"], ["build_timeline_d
 SAVED_EVIDENCE = dict(OBS_FILE="data/observations_all.csv", REJ_FILE="data/rejections_all.csv", RESULTS_DIR="results_gee")
 OUTPUTS = ("site/data", "site/requests.html")
 TIMESTAMPS = ("generated",)
+REL_TOL = 1e-9  # platform rounding shows up in the 16th significant digit; real data changes are far larger
+
+
+def same_values(a, b) -> bool:
+    if isinstance(a, bool) or isinstance(b, bool):
+        return a is b
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        return a == b or math.isclose(a, b, rel_tol=REL_TOL, abs_tol=1e-12)
+    if isinstance(a, dict) and isinstance(b, dict):
+        return a.keys() == b.keys() and all(same_values(a[k], b[k]) for k in a)
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(same_values(x, y) for x, y in zip(a, b))
+    return a == b
 
 
 def same_apart_from_timestamps(path: str, old: str, new: str) -> bool:
@@ -41,7 +56,7 @@ def same_apart_from_timestamps(path: str, old: str, new: str) -> bool:
         for key in TIMESTAMPS:
             a.pop(key, None)
             b.pop(key, None)
-    return a == b
+    return same_values(a, b)
 
 
 def changed_files() -> list[str]:

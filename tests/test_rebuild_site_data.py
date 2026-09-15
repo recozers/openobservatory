@@ -1,4 +1,4 @@
-"""tools/rebuild_site_data.py: a rebuild that only moves the build timestamp is not a change."""
+"""tools/rebuild_site_data.py: a rebuild that only moves the build timestamp or platform rounding is not a change."""
 import json
 import unittest
 
@@ -15,6 +15,14 @@ class TimestampOnlyTests(unittest.TestCase):
         old = json.dumps(dict(generated="a", sites=[1, 2]))
         self.assertFalse(same("site/data/status.json", old, json.dumps(dict(generated="b", sites=[1, 3]))))
         self.assertFalse(same("site/data/status.json", old, json.dumps(dict(generated="a", sites=[1, 2], findings=[]))))
+
+    def test_platform_rounding_is_not_a_change_but_a_real_difference_is(self):
+        mac = '{"mean": 12.606660625659432, "q": [{"se": 209.89332759810657, "n": 3, "ok": true}]}'
+        linux = '{"mean": 12.606660625659433, "q": [{"se": 209.8933275981065, "n": 3, "ok": true}]}'
+        self.assertTrue(same("site/data/timeline/a.json", mac, linux))
+        self.assertFalse(same("site/data/timeline/a.json", mac, linux.replace("12.606660625659433", "12.6067")))
+        self.assertFalse(same("site/data/timeline/a.json", mac, linux.replace('"n": 3', '"n": 4')))
+        self.assertFalse(same("site/data/timeline/a.json", '{"ok": true}', '{"ok": 1}'))
 
     def test_other_files_and_broken_json_compare_as_text(self):
         self.assertTrue(same("site/requests.html", "<p>x</p>", "<p>x</p>"))
