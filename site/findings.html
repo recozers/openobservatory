@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Findings · Open Observatory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .wrap { width: 100%; max-width: 900px; margin: 0 auto; padding: 18px 16px 48px; }
+  .nav { font-size: 13px; margin: 0 0 12px; }
+  .doc { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 24px 24px; line-height: 1.5; font-size: 14.5px; }
+  .doc h1 { font-size: 26px; margin: 16px 0 8px; }
+  .doc h2 { font-size: 17px; margin: 26px 0 6px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .doc code { font-size: 12.5px; background: #f1efe9; padding: 1px 4px; border-radius: 4px; }
+  .toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 14px 0 4px; font-size: 13px; }
+  .toolbar label { display: inline-flex; align-items: center; gap: 6px; min-width: 0; max-width: 100%; }
+  .toolbar select { font: inherit; padding: 4px 6px; min-width: 0; max-width: 100%; }
+  @media (max-width: 500px) { .doc { padding: 4px 14px 18px; } .doc h1 { font-size: 22px; } }
+  .doc .finding { font-size: 14px; }
+  .empty { padding: 16px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="nav"><a href="index.html">Map</a> · <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="research/index.html">Research view</a> · <a href="requests.html">Requests for work</a> · <a href="leaderboard.html">Leaderboard</a> · <a href="https://github.com/recozers/openobservatory">Code</a></p>
+  <div class="doc">
+    <h1>Findings from requests for work</h1>
+    <p>What merged requests for work found, site by site. When a pull request is merged, the site data is rebuilt from <code>main</code>, so each finding appears here and in its site's panel on the quarterly detail and research views without anyone wiring it in. Findings sit beside the estimates and do not change a number. The one exception is an imagery verdict, which updates the Built line of a structure found by radar.</p>
+    <p class="small">To put your own results on the site, see <a href="https://github.com/recozers/openobservatory/blob/main/CONTRIBUTING.md#get-your-results-onto-the-site">Get your results onto the site</a>.</p>
+    <div class="toolbar">
+      <label>Request <select id="request"></select></label>
+      <label>Question <select id="answers"></select></label>
+    </div>
+    <p id="count" class="small" role="status" aria-live="polite">Loading…</p>
+    <div id="groups"></div>
+  </div>
+</div>
+<script src="findings.js?v=20260915b"></script>
+<script src="findings-page.js?v=20260915b"></script>
+</body>
+</html>

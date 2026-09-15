@@ -1,4 +1,5 @@
-/* Static frontend: everything is precomputed into data/sites.json and data/obs/<site>.json. */
+/* Static frontend: everything is precomputed into data/sites.json and data/obs/<site>.json; findings from requests for
+   work come from data/evidence.json and are drawn by ../findings.js. */
 (async function () {
   const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -11,6 +12,9 @@
 
   const data = await (await fetch("../data/sites.json", { cache: "no-cache" })).json();
   const sites = data.sites.filter(s => !String(s.site_id).startsWith("ctrl_"));  // control roofs stay in the data files but are not data centres
+  const F = window.OOFindings;
+  let findings = {};
+  try { findings = F ? F.bySubject(await (await fetch("../data/evidence.json", { cache: "no-cache" })).json()) : {}; } catch (e) { findings = {}; }
   const model = data.model || {};
   document.getElementById("build-note").textContent = data.extract_meta && data.extract_meta.backend
     ? `thermal backend: ${data.extract_meta.backend} (${data.extract_meta.start} → ${data.extract_meta.end}), ${data.extract_meta.n_obs} observations, ${data.extract_meta.n_rej} rejections`
@@ -130,6 +134,7 @@
       (s.polygons.length === 0 ? `<span class="badge n">no polygons digitised</span>` : ``) + `</div>`;
     if (s.transfer_note) html += `<div class="callout ${s.case === "unvalidated_transfer" ? "red" : ""}">${esc(s.transfer_note)}</div>`;
     html += `<div id="load-section"></div>`;
+    html += F ? F.section(findings[s.site_id], "../") : "";
 
     // Q̂ / U block
     html += `<div class="section"><h3>Implied heat rejection Q̂</h3>`;

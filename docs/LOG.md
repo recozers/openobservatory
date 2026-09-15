@@ -691,3 +691,49 @@ Three more from @ric897, reviewed and merged. The Donations workflow recorded ea
   hourly EPA reporting. eGRID lists plants whether or not they report hourly to CAMPD, so the label now says hourly
   reporting was not checked. No verdict depended on it.
 - Each branch had main merged in before merging. Checks passed on every final commit.
+
+## 2026-09-15 (Claude): requests for work reach the site automatically
+
+Stuart, 15 Sep: "set it up so rfw's automatically merge into the map view/research view etc". Until now a merged request
+changed the site only if someone wired its results into a build script. Of the seven merged requests, only RFW-01's removals
+and a source URL showed.
+
+- **Findings format.** `tools/evidence.py` gathers findings. Each is one claim about a site, a country or the whole inventory,
+  with request, question answered, confidence, period, source and pull request. Findings come from two places. Contributors
+  write `data/evidence/<ID>.csv` (columns in `data/evidence/README.md`). Adapters read a merged request's committed results
+  directly, so a rerun updates the site. Validation refuses unknown sites and requests, bad vocabulary, missing or private
+  sources and verdicts on anything but a site; `build_status.py` stops on any problem.
+- **Adapters for the merged work, 153 findings on 85 sites plus country and global rows.**
+  - RFW-01: 39 imagery verdicts. The 12 rejected structures are reported on their hub entries, so they stay visible.
+  - RFW-03: 27 radar dating windows and 5 hub construction summaries.
+  - RFW-07: Chindata's in-customer-use capacity for its Greater Beijing Area at three dates (77.5 %, 72 %, 90 %), the stated
+    locations, and the hub-name search for five hubs (negative).
+  - RFW-14: the plume test at the documented start for 33 sites under both tests, and the control-point false-alarm counts.
+  - RFW-19: Microsoft's FY25 metro electricity as context on five campuses, and the 25 metros without a campus.
+  - RFW-20: 18 EIA-860M plants on their nearest sites, with verdicts.
+  - RFW-32: 14 failed source links on the sites that cite them, and the overall count.
+- **What changes on the site.**
+  - `site/data/evidence.json` holds every finding.
+  - The quarterly detail and research panels show a site's findings grouped by question (`site/findings.js`).
+  - The map card and the list count them.
+  - A new findings page, `site/findings.html`, lists all of them with request and question filters, and is linked from
+    every page's navigation.
+  - An imagery verdict now sets a radar entry's Built and Running lines. The 3 confirmed entries read "imagery review
+    (RFW-01): data-hall complex" and the 24 unclear ones say the review could not tell. The radar load basis no longer says
+    "unconfirmed", so it holds under any verdict.
+  - No estimate changed.
+- **Automatic rebuild.** `.github/workflows/site-data.yml` runs on every push to `main` that touches anything but the site,
+  docs, tests or other workflows. It runs `tools/rebuild_site_data.py`, which renders `site/requests.html`, runs the three
+  build scripts with saved evidence, and undoes files whose only change is the `generated` timestamp. It commits real
+  changes, retries from the new `main` if the push races another commit, and dispatches `pages.yml`, because pushes made
+  with GITHUB_TOKEN trigger no workflows.
+- **Docs.** `CONTRIBUTING.md` has a new section, "Get your results onto the site". The pull request template gains a "Findings
+  for the site" line and an `evidence.py --check` item. REQUESTS_FOR_WORK's hand-off step and agent prompt point to
+  `data/evidence/`.
+- **Tests.**
+  - `tests/test_evidence.py` (13): committed findings validate; every adapter reads its files; RFW-01 keeps all 39 verdicts;
+    Chindata totals match the notes; every plume series is reported; request anchors exist on the requests page; 16 bad-row
+    cases are refused with a reason; the latest verdict applies; radar lines follow the verdict.
+  - `tests/test_rebuild_site_data.py` (3) covers timestamp-only changes.
+  - `tests/findings.test.cjs` (4) covers grouping, links, relative paths and escaping; one card test was added.
+  - 163 Python and 34 Node tests pass.

@@ -31,6 +31,13 @@ test('list filters all kinds, composes with hub filter and preserves sorting', a
   assert.ok(els.cards.innerHTML.indexOf('Hidden hub') < els.cards.innerHTML.indexOf('<h2>measured'));
 });
 
+test('cards count findings from requests for work and link to the quarterly detail', async () => {
+  const els = elements();
+  await vm.runInNewContext(source('cards.js'), runtime([{ ...fixture('construction'), findings: { n: 2, requests: ['RFW-01', 'RFW-03'] } }, fixture('presumed', 1)], els));
+  assert.match(els.cards.innerHTML, /2 findings \(RFW-01, RFW-03\), <a href="map\.html#construction">read them<\/a>/);
+  assert.equal((els.cards.innerHTML.match(/From requests for work/g) || []).length, 1);
+});
+
 test('empty results and unknown kinds remain explicit and escaped', async () => {
   const els = elements();
   await vm.runInNewContext(source('cards.js'), runtime([{ ...fixture(null), name: '<script>alert(1)</script>' }], els));

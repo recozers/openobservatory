@@ -22,6 +22,7 @@ changes need no ID. Delete the sections that do not apply.
 - **Validation numbers:**
 - **What remains uncertain:**
 - **Where I stopped:**
+- **Findings for the site:** <!-- rows in data/evidence/<ID>.csv or an adapter in tools/evidence.py (CONTRIBUTING.md, "Get your results onto the site"), or "none" -->
 - **Files a reviewer should read first:**
 
 ## Donation
@@ -38,6 +39,7 @@ Counts are self-reported. Leave this section out if you do not want to be listed
 - [ ] `python -m unittest discover -s tests`
 - [ ] `node --test tests/*.test.cjs`
 - [ ] `python tools/refresh.py --dry-run`
+- [ ] `python tools/evidence.py --check`
 - [ ] Every new number has a free public source URL and a script that reproduces it
 - [ ] Negative results are recorded, not dropped
 - [ ] A dated entry in `docs/LOG.md`

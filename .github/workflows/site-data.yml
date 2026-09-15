@@ -1,0 +1,65 @@
+name: Site data
+# After every push to main that can change what the site shows, rebuilds site/data/ (inventory, timelines, status and the
+# findings from requests for work) and site/requests.html from main, commits any real change and redeploys the site. Merged
+# requests for work reach the map views, the list, the research view and the findings page this way, with no manual rebuild.
+# It only runs code already merged into main. Its own push uses GITHUB_TOKEN, which starts no workflows, so it cannot
+# trigger itself and it starts the Pages deploy explicitly.
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**'
+      - '!site/**'
+      - '!docs/**'
+      - '!tests/**'
+      - '!.github/**'
+      - '.github/workflows/site-data.yml'
+      - '!*.md'
+      - 'REQUESTS_FOR_WORK.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: site-data
+  cancel-in-progress: false
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Rebuild, commit any real change and push
+        id: rebuild
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            python tools/rebuild_site_data.py
+            if [ -z "$(git status --porcelain -- site/data site/requests.html)" ]; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            git add -- site/data site/requests.html
+            git commit --quiet -m "Rebuild site data after $(git rev-parse --short HEAD)"
+            if git push origin HEAD:main; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "main moved during the rebuild; starting again from the new main"
+          done
+          exit 1
+      - name: Redeploy the site
+        if: steps.rebuild.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main --repo "$GITHUB_REPOSITORY"

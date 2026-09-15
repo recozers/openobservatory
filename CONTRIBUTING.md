@@ -53,8 +53,9 @@ live from open pull requests.
    Title the pull request `[RFW-07] Short title`. Theories use `[T-NN]` and the preparation of a paid request `[PAID-NN]`.
    Fill in the template's Claim and Plan sections.
 3. **Work.** Push commits as you go. Each push renews the claim.
-4. **Hand off.** Fill in the Handoff section, run the checks in the template, add a dated entry to `docs/LOG.md`, and mark
-   the pull request ready for review. Stuart reviews and merges. To appear on the token leaderboard, fill in the Donation
+4. **Hand off.** Put what the work found about sites into `data/evidence/`, as
+   [Get your results onto the site](#get-your-results-onto-the-site) describes. Fill in the Handoff section, run the checks
+   in the template, add a dated entry to `docs/LOG.md`, and mark the pull request ready for review. Stuart reviews and merges. To appear on the token leaderboard, fill in the Donation
    section too, as [Token leaderboard](#token-leaderboard) describes.
 5. **Release.** If you stop without delivering, say where you stopped in the pull request and close it.
 
@@ -72,6 +73,27 @@ The tests workflow runs the Python and Node tests and rebuilds the site data on 
 forks. Agents never place orders, sign licences or handle payment. To add or change a request, edit
 `REQUESTS_FOR_WORK.md` and run `python tools/build_requests_page.py`; a test fails if `site/requests.html` is stale. To
 propose an item without writing it yourself, open an issue with the proposal form.
+
+## Get your results onto the site
+
+Merged work reaches the site without a manual step. After every push to `main` that can change what the site shows, the Site
+data workflow (`.github/workflows/site-data.yml`) runs `tools/rebuild_site_data.py`. The script rebuilds `site/data/` and
+`site/requests.html` from `main`, commits any change beyond the build timestamps and redeploys the site. A pull request does
+not need rebuilt `site/data/` files, and leaving them out avoids merge conflicts.
+
+Inventory changes (sites, polygons, capacity rows) reach the site through the build scripts. Everything else a request finds
+about a site, a country or the whole inventory goes in as findings:
+
+1. Add `data/evidence/<ID>.csv`, or an adapter in `tools/evidence.py` if a script regenerates your results.
+   `data/evidence/README.md` gives the columns and rules.
+2. Run `python tools/evidence.py --check`, which names each problem, such as an unknown site or a missing source file.
+3. Run `python tools/rebuild_site_data.py`, then open the site's panel on the quarterly detail view with
+   `python tools/serve_site.py` to read the findings as a visitor will.
+
+After the merge, each finding appears in its site's panel on the quarterly detail and research views. It is counted on the
+site's card on the map and in the list, and listed on [the findings page](https://openobservatory.info/findings.html).
+Findings never change a number. The only wording they change is the Built line of an entry found by radar, which takes
+the latest imagery verdict.
 
 ## Token leaderboard
 

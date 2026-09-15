@@ -68,13 +68,15 @@
     s.series.forEach((p, i) => { if (i % step === 0) g += `<text x="${L + i * bw + bw / 2}" y="${H - 5}" font-size="9" text-anchor="middle" fill="#666">${esc(p.x)}</text>`; });
     return `<svg class="spark" viewBox="0 0 ${W} ${H}">${g}</svg><div class="small">${esc(s.series_label)}${s.recent ? ` · ${esc(s.recent)}` : ""}</div>`;
   }
+  // findings from merged requests for work are counted in status.json and shown in full on the quarterly detail
+  const findingsLine = s => s.findings && s.findings.n ? `<div class="how"><b>From requests for work:</b> ${s.findings.n} finding${s.findings.n === 1 ? "" : "s"} (${s.findings.requests.map(esc).join(", ")}), <a href="map.html#${esc(s.site_id)}">read them</a></div>` : "";
   function openSite(id) {
     const s = sites.find(x => x.site_id === id); if (!s) return;
     location.hash = id; panel.hidden = false;
     map.flyTo({ center: [s.lon, s.lat], zoom: Math.max(map.getZoom(), 4.5), speed: 1.2 });
     body.innerHTML = `<h2>${esc(s.name)}</h2><div class="meta">${esc(s.operator)} · ${esc(s.country)}${s.polygons_low ? " · polygons low-confidence" : ""}</div>
       <div class="lines"><div>Built</div><div>${esc(s.built)}</div><div>Running</div><div>${esc(s.running)}</div><div>Load</div><div>${esc(s.load)}</div><div>Confidence</div><div><span class="conf ${esc(s.confidence)}">${esc(s.confidence)}</span></div></div>
-      ${spark(s)}${s.sources?.length ? `<div class="small">Sources: ${s.sources.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>`).join(" · ")}</div>` : ""}<div class="how"><b>How we know:</b> ${s.how.map(esc).join("; ") || "no evidence yet"}</div>
+      ${spark(s)}${s.sources?.length ? `<div class="small">Sources: ${s.sources.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>`).join(" · ")}</div>` : ""}<div class="how"><b>How we know:</b> ${s.how.map(esc).join("; ") || "no evidence yet"}</div>${findingsLine(s)}
       <div style="margin-top:6px"><a href="map.html#${esc(s.site_id)}">quarterly detail</a> · <a href="list.html">all sites</a></div>`;
   }
 })();

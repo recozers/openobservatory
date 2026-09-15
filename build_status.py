@@ -1,6 +1,7 @@
 """Plain-language status per site for the front page: built / running / load / confidence / how we know,
 plus one key series to draw.  Reads site/data/sites.json and site/data/timeline/<site>.json; writes
-site/data/status.json.
+site/data/status.json.  Also gathers the findings from merged requests for work (tools/evidence.py), writes
+site/data/evidence.json and counts each site's findings; an imagery verdict updates a radar-found entry's lines.
 
     python build_status.py
 """
@@ -11,8 +12,16 @@ from pathlib import Path
 
 import pandas as pd
 
+from tools import evidence
+
 ROOT = Path(__file__).resolve().parent
 SITE = ROOT / "site"
+RADAR_RUNNING = {
+    None: "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+    "unclear": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
+    "data-hall complex": "unknown: imagery review shows a data-hall complex; no activity evidence",
+    "not a data centre": "no: imagery review found it is not a data centre",
+}
 
 
 def basis_is_comb(t):
@@ -27,8 +36,23 @@ def month_label(ym):
         return str(ym)
 
 
+def review_note(review):
+    """How the latest imagery verdict reads in a Built line, or "unconfirmed" when there is none."""
+    return f"imagery review ({review['request']}): {review['verdict']}" if review else "unconfirmed"
+
+
+def radar_lines(review):
+    """Running and load lines for a radar-found entry, given its latest imagery verdict (or None)."""
+    verdict = (review or {}).get("verdict")
+    running = RADAR_RUNNING.get(verdict, RADAR_RUNNING[None])
+    load = "none: not a data centre" if verdict == "not a data centre" else "not estimated (no capacity or activity evidence)" if verdict == "data-hall complex" else "not estimated (unconfirmed structure)"
+    return running, load
+
+
 def main():
     data = json.loads((SITE / "data" / "sites.json").read_text())
+    # validates every finding and writes site/data/evidence.json; a test root without the inventory has no findings
+    findings = evidence.build(ROOT) if (ROOT / "data" / "sites.csv").exists() else {}
     out = []
     for s in data["sites"]:
         sid = s["site_id"]
@@ -39,6 +63,8 @@ def main():
         Q = t["quarters"] if t else []
         last = Q[-1] if Q else None
         roof_on = (t or {}).get("roof_on", {})
+        site_findings = findings.get(sid, [])
+        review = evidence.latest_verdict(site_findings)
         halls_total = last["halls_total"] if last else 0
         # ---- built
         dated = sorted(v for v in roof_on.values() if v not in ("existing", "not_yet", "unknown", None))
@@ -61,7 +87,7 @@ def main():
                 score, area = (m.group(1), m.group(2)) if m else ("?", "?")
                 ron = str((t or {}).get("radar_on", {}).get("structure") or "")
                 first = f"structure on {month_label(ron[:7])} (radar)" if ron[:4].isdigit() else ("radar sees no sustained step since 2018 yet" if ron.startswith("not_yet") else "structure date pending (radar timeline not run)")
-                built = f"radar-detected new structure, {float(area):.0f} ha, {first}; hall-like score {score}; unconfirmed, operator unknown"
+                built = f"radar-detected new structure, {float(area):.0f} ha, {first}; hall-like score {score}; {review_note(review)}, operator unknown"
                 built_conf = "low"
             if any(p.get("confidence") == "low" for p in s.get("polygons", [])):
                 built_conf = "low"
@@ -138,9 +164,10 @@ def main():
             load = "unknown" if cap_now is None else "0 MW documented capacity; actual load not measured"
             conf, key = "low", "roofs" if halls_total else "none"
         if s.get("coords_quality") == "radar_candidate":
-            running = "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence"
-            load = "not estimated (unconfirmed structure)"
+            running, load = radar_lines(review)
             conf, key = "low", "roofs"
+        elif review:
+            built += f"; {review_note(review)}"
         if adjacent:
             running += "; the NO₂ series shown is the adjacent power plant, not the campus"
         # ---- how we know
@@ -168,6 +195,7 @@ def main():
             how.append("annual IT energy derived from the operator's published water use and WUE (±30 %)")
         if s.get("capacity_source"):
             how.append(f"documented capacity: {s['capacity_source'][:90]}")
+        requests = sorted({f["request"] for f in site_findings}, key=evidence.request_key)
         # ---- key series
         series = []
         if key == "plant":
@@ -200,7 +228,7 @@ def main():
                         built=built, built_conf=built_conf, running=running, load=load, confidence=conf, how=how, key=key, series=series, series_label=series_label,
                         recent=recent, est_mid=(last or {}).get("est_mid"), est_hi=(last or {}).get("est_hi") or 0, last_q=(last or {}).get("q"),
                         polygons_low=bool(s.get("polygons") and any(p.get("confidence") == "low" for p in s["polygons"])),
-                        combustion=key == "nox",
+                        combustion=key == "nox", findings=dict(n=len(site_findings), requests=requests),
                         evidence_kind=("derived" if running.startswith("yes: about") else "measured" if (key in ("nox", "plant") or running.startswith("yes: operator reports"))
                                        else "detected" if running.startswith("yes") or (str((t or {}).get("ntl_lit") or "")[:4].isdigit() and running.startswith("presumably"))
                                        else "presumed" if running.startswith("presumably")

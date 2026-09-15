@@ -51,6 +51,7 @@
       ${spark(s)}
       ${s.sources?.length ? `<div class="small">Sources: ${s.sources.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.label)}</a>`).join(" · ")}</div>` : ""}
       <div class="how"><b>How we know:</b> ${s.how.map(esc).join("; ") || "no evidence yet"}</div>
+      ${s.findings && s.findings.n ? `<div class="how"><b>From requests for work:</b> ${s.findings.n} finding${s.findings.n === 1 ? "" : "s"} (${s.findings.requests.map(esc).join(", ")}), <a href="map.html#${esc(s.site_id)}">read them</a></div>` : ""}
       <div style="margin-top:6px"><a href="map.html#${esc(s.site_id)}">quarterly detail</a></div>
     </div>`;
   }

@@ -68,8 +68,10 @@ its corrections section.
 
 ```
 REQUESTS_FOR_WORK.md open work and theories for donated agent sessions (rendered to site/requests.html)
-site/                static frontend: index.html (map), list.html (cards), map.html (quarterly detail), requests.html, research/ (thermal prototype)
-build_status.py      plain-language status per site  -> site/data/status.json
+site/                static frontend: index.html (map), list.html (cards), map.html (quarterly detail), findings.html (findings from
+                     requests for work), requests.html, research/ (thermal prototype)
+build_status.py      plain-language status per site  -> site/data/status.json, and via tools/evidence.py the findings
+                     from requests for work (adapters + data/evidence/*.csv) -> site/data/evidence.json
 build_timeline_data.py  quarterly bands + evidence    -> site/data/timeline/*.json
 build_site.py        inventory + provenance           -> site/data/sites.json
 tools/               s2_roof_timeline.py, s1_timeline.py (radar dating, candidate scan), cand_features.py, cand_classifier.py,
@@ -103,6 +105,11 @@ python tools/ntl_scan.py --box <lat_s> <lon_w> <lat_n> <lon_e> --name <name> --o
 python build_timeline_data.py && python build_status.py
 python tools/serve_site.py   # http://localhost:8000, caching disabled so a rebuild shows on reload
 ```
+
+After every merge the Site data workflow (`.github/workflows/site-data.yml`) runs `python tools/rebuild_site_data.py` on
+`main`, which rebuilds `site/data/` and `site/requests.html`, commits any change beyond the build timestamps and redeploys
+the site. Results from requests for work reach the map, list, research view and findings page this way; `CONTRIBUTING.md`
+("Get your results onto the site") and `data/evidence/README.md` give the format.
 
 Earth Engine is free for non-commercial use; the Earthdata login and the EPA key are free.
 

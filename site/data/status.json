@@ -1,5 +1,5 @@
 {
-"generated": "2026-09-15T12:42:01.839111+00:00",
+"generated": "2026-09-15T18:32:18.668549+00:00",
 "sites": [
 {
 "site_id": "colossus2_southaven",
@@ -109,6 +109,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": true,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-32"
+]
+},
 "evidence_kind": "measured"
 },
 {
@@ -279,6 +286,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -449,6 +462,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-20"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -560,6 +580,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "detected"
 },
 {
@@ -698,6 +724,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -903,6 +935,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -961,6 +997,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -1087,6 +1129,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -1220,6 +1268,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "detected"
 },
 {
@@ -1330,6 +1384,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -1383,6 +1443,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -1588,6 +1652,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -1638,6 +1706,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 4,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -1742,6 +1816,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-19"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -1795,6 +1876,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -1901,6 +1988,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-20"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -2012,6 +2106,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "detected"
 },
 {
@@ -2118,6 +2218,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -2288,6 +2394,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "measured"
 },
 {
@@ -2409,6 +2521,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "derived"
 },
 {
@@ -2576,6 +2692,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -2745,6 +2865,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -2851,6 +2977,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-20"
+]
+},
 "evidence_kind": "derived"
 },
 {
@@ -2955,6 +3088,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -3078,6 +3217,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -3247,6 +3390,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -3416,6 +3565,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "measured"
 },
 {
@@ -3583,6 +3738,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "measured"
 },
 {
@@ -3750,6 +3911,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -3854,6 +4019,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -4042,6 +4213,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -4139,6 +4316,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "derived"
 },
 {
@@ -4343,6 +4524,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -4512,6 +4699,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -4637,6 +4828,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -4721,6 +4916,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-20"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -4820,6 +5022,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-32"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -4975,6 +5184,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -5089,6 +5302,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -5260,6 +5479,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "detected"
 },
 {
@@ -5424,6 +5649,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-19"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -5613,6 +5845,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-14",
+"RFW-19"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -5712,6 +5951,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -5836,6 +6081,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -5975,6 +6226,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -6101,6 +6358,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "measured"
 },
 {
@@ -6185,6 +6448,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -6269,6 +6538,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -6317,6 +6592,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -6421,6 +6700,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -6624,6 +6909,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -6808,6 +7097,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -6892,6 +7187,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -6996,6 +7297,12 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-14"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7119,6 +7426,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7202,6 +7515,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7285,6 +7604,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7353,6 +7676,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7426,6 +7753,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7554,6 +7887,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -7721,6 +8060,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -7888,6 +8231,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -7946,6 +8293,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -8117,6 +8468,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -8235,6 +8590,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -8404,6 +8763,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -8472,6 +8835,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -8561,6 +8928,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "derived"
 },
 {
@@ -8644,6 +9015,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -8767,6 +9142,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -8890,6 +9269,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -9093,6 +9476,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9156,6 +9545,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9359,6 +9752,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-19"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9468,6 +9867,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -9581,6 +9984,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9664,6 +10071,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9722,6 +10133,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -9795,6 +10210,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "derived"
 },
 {
@@ -9863,6 +10282,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9936,6 +10359,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -9999,6 +10426,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10169,6 +10600,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10232,6 +10667,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10360,6 +10799,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-19"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10529,6 +10974,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10572,6 +11021,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10624,6 +11077,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10677,6 +11134,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10847,6 +11308,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -10950,6 +11415,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -11038,6 +11507,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -11221,6 +11694,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -11390,6 +11867,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -11559,6 +12040,10 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "presumed"
 },
 {
@@ -11727,6 +12212,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-20",
+"RFW-32"
+]
+},
 "evidence_kind": "presumed"
 },
 {
@@ -11802,6 +12294,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -11877,6 +12373,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "measured"
 },
 {
@@ -11904,6 +12404,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-07"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -11930,6 +12436,14 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 5,
+"requests": [
+"RFW-01",
+"RFW-03",
+"RFW-07"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -11956,6 +12470,14 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 7,
+"requests": [
+"RFW-01",
+"RFW-03",
+"RFW-07"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -11982,6 +12504,15 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 7,
+"requests": [
+"RFW-01",
+"RFW-03",
+"RFW-07",
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -12008,6 +12539,14 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 3,
+"requests": [
+"RFW-03",
+"RFW-07",
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -12034,6 +12573,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -12061,6 +12606,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -12104,6 +12655,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12307,6 +12862,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12510,6 +13069,13 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-20",
+"RFW-32"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -12553,6 +13119,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12596,6 +13166,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12622,6 +13196,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12665,6 +13243,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12868,6 +13450,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction"
 },
 {
@@ -12877,9 +13463,9 @@
 "country": "CN",
 "lat": 41.0725,
 "lon": 113.14398,
-"built": "radar-detected new structure, 8 ha, structure on Jan 2025 (radar); hall-like score 0.86; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 8 ha, structure on Jan 2025 (radar); hall-like score 0.86; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -12935,6 +13521,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -12944,9 +13537,9 @@
 "country": "CN",
 "lat": 41.06514,
 "lon": 113.14937,
-"built": "radar-detected new structure, 7 ha, structure on Jun 2023 (radar); hall-like score 0.67; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 7 ha, structure on Jun 2023 (radar); hall-like score 0.67; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13037,6 +13630,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13046,9 +13646,9 @@
 "country": "CN",
 "lat": 40.54771,
 "lon": 111.83235,
-"built": "radar-detected new structure, 12 ha, structure on Apr 2026 (radar); hall-like score 0.95; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 12 ha, structure on Apr 2026 (radar); hall-like score 0.95; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13079,6 +13679,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13088,9 +13695,9 @@
 "country": "CN",
 "lat": 40.5204,
 "lon": 111.83028,
-"built": "radar-detected new structure, 11 ha, structure on Aug 2025 (radar); hall-like score 0.94; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 11 ha, structure on Aug 2025 (radar); hall-like score 0.94; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13136,6 +13743,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13145,9 +13759,9 @@
 "country": "CN",
 "lat": 40.55202,
 "lon": 111.83064,
-"built": "radar-detected new structure, 12 ha, structure on Aug 2025 (radar); hall-like score 0.94; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 12 ha, structure on Aug 2025 (radar); hall-like score 0.94; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13193,6 +13807,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13202,10 +13823,10 @@
 "country": "CN",
 "lat": 40.53836,
 "lon": 111.82705,
-"built": "radar-detected new structure, 27 ha, structure on Jun 2022 (radar); hall-like score 0.93; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 27 ha, structure on Jun 2022 (radar); hall-like score 0.93; imagery review (RFW-01): data-hall complex, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
-"load": "not estimated (unconfirmed structure)",
+"running": "unknown: imagery review shows a data-hall complex; no activity evidence",
+"load": "not estimated (no capacity or activity evidence)",
 "confidence": "low",
 "how": [
 "Sentinel-1 radar structure dating (where brightness dating could not)"
@@ -13315,6 +13936,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13324,9 +13952,9 @@
 "country": "CN",
 "lat": 40.52992,
 "lon": 111.73632,
-"built": "radar-detected new structure, 5 ha, structure on Aug 2025 (radar); hall-like score 0.90; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 5 ha, structure on Aug 2025 (radar); hall-like score 0.90; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13372,6 +14000,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13381,9 +14016,9 @@
 "country": "CN",
 "lat": 40.57178,
 "lon": 111.84645,
-"built": "radar-detected new structure, 6 ha, structure on Aug 2023 (radar); hall-like score 0.90; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 6 ha, structure on Aug 2023 (radar); hall-like score 0.90; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13469,6 +14104,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13478,9 +14120,9 @@
 "country": "CN",
 "lat": 40.58436,
 "lon": 111.84582,
-"built": "radar-detected new structure, 38 ha, structure on Jul 2024 (radar); hall-like score 0.90; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 38 ha, structure on Jul 2024 (radar); hall-like score 0.90; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13546,6 +14188,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13555,9 +14204,9 @@
 "country": "CN",
 "lat": 40.54106,
 "lon": 111.7957,
-"built": "radar-detected new structure, 7 ha, structure on Feb 2020 (radar); hall-like score 0.89; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 7 ha, structure on Feb 2020 (radar); hall-like score 0.89; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13713,6 +14362,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13722,9 +14378,9 @@
 "country": "CN",
 "lat": 40.54106,
 "lon": 111.83648,
-"built": "radar-detected new structure, 8 ha, structure on Apr 2025 (radar); hall-like score 0.87; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 8 ha, structure on Apr 2025 (radar); hall-like score 0.87; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13775,6 +14431,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13784,9 +14447,9 @@
 "country": "CN",
 "lat": 40.50171,
 "lon": 111.82732,
-"built": "radar-detected new structure, 10 ha, structure on Aug 2024 (radar); hall-like score 0.85; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 10 ha, structure on Aug 2024 (radar); hall-like score 0.85; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -13852,6 +14515,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13861,10 +14531,10 @@
 "country": "CN",
 "lat": 40.54169,
 "lon": 111.80944,
-"built": "radar-detected new structure, 18 ha, structure on Jun 2024 (radar); hall-like score 0.84; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 18 ha, structure on Jun 2024 (radar); hall-like score 0.84; imagery review (RFW-01): data-hall complex, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
-"load": "not estimated (unconfirmed structure)",
+"running": "unknown: imagery review shows a data-hall complex; no activity evidence",
+"load": "not estimated (no capacity or activity evidence)",
 "confidence": "low",
 "how": [
 "Sentinel-1 radar structure dating (where brightness dating could not)"
@@ -13934,6 +14604,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -13943,9 +14620,9 @@
 "country": "CN",
 "lat": 40.56388,
 "lon": 111.85058,
-"built": "radar-detected new structure, 6 ha, structure on Jul 2024 (radar); hall-like score 0.84; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 6 ha, structure on Jul 2024 (radar); hall-like score 0.84; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14011,6 +14688,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14020,9 +14704,9 @@
 "country": "CN",
 "lat": 40.54555,
 "lon": 111.8089,
-"built": "radar-detected new structure, 8 ha, structure on Jun 2024 (radar); hall-like score 0.79; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 8 ha, structure on Jun 2024 (radar); hall-like score 0.79; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14093,6 +14777,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14102,9 +14793,9 @@
 "country": "CN",
 "lat": 40.55507,
 "lon": 111.854,
-"built": "radar-detected new structure, 21 ha, structure on Mar 2023 (radar); hall-like score 0.77; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 21 ha, structure on Mar 2023 (radar); hall-like score 0.77; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14200,6 +14891,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14209,9 +14907,9 @@
 "country": "CN",
 "lat": 40.50405,
 "lon": 111.81465,
-"built": "radar-detected new structure, 17 ha, structure on May 2021 (radar); hall-like score 0.71; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 17 ha, structure on May 2021 (radar); hall-like score 0.71; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14342,6 +15040,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14351,9 +15056,9 @@
 "country": "CN",
 "lat": 40.54115,
 "lon": 111.8398,
-"built": "radar-detected new structure, 6 ha, structure on Jun 2023 (radar); hall-like score 0.70; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 6 ha, structure on Jun 2023 (radar); hall-like score 0.70; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14444,6 +15149,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14453,9 +15165,9 @@
 "country": "CN",
 "lat": 40.53872,
 "lon": 111.8001,
-"built": "radar-detected new structure, 14 ha, structure on Mar 2023 (radar); hall-like score 0.62; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 14 ha, structure on Mar 2023 (radar); hall-like score 0.62; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14551,6 +15263,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14560,9 +15279,9 @@
 "country": "CN",
 "lat": 40.53333,
 "lon": 111.79839,
-"built": "radar-detected new structure, 12 ha, structure on Mar 2022 (radar); hall-like score 0.59; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 12 ha, structure on Mar 2022 (radar); hall-like score 0.59; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14678,6 +15397,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14687,9 +15413,9 @@
 "country": "CN",
 "lat": 41.18246,
 "lon": 114.70175,
-"built": "radar-detected new structure, 17 ha, structure on Nov 2022 (radar); hall-like score 0.85; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 17 ha, structure on Nov 2022 (radar); hall-like score 0.85; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14790,6 +15516,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14799,9 +15532,9 @@
 "country": "CN",
 "lat": 41.18874,
 "lon": 114.69384,
-"built": "radar-detected new structure, 17 ha, structure on Sep 2024 (radar); hall-like score 0.61; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 17 ha, structure on Sep 2024 (radar); hall-like score 0.61; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14867,6 +15600,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14876,9 +15616,9 @@
 "country": "CN",
 "lat": 26.38181,
 "lon": 106.45638,
-"built": "radar-detected new structure, 22 ha, structure on Mar 2025 (radar); hall-like score 0.51; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 22 ha, structure on Mar 2025 (radar); hall-like score 0.51; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -14934,6 +15674,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -14943,9 +15690,9 @@
 "country": "CN",
 "lat": 35.73669,
 "lon": 107.69803,
-"built": "radar-detected new structure, 5 ha, structure on Sep 2023 (radar); hall-like score 0.66; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 5 ha, structure on Sep 2023 (radar); hall-like score 0.66; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -15031,6 +15778,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -15040,9 +15794,9 @@
 "country": "CN",
 "lat": 35.69995,
 "lon": 107.61242,
-"built": "radar-detected new structure, 12 ha, structure on Jul 2024 (radar); hall-like score 0.60; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 12 ha, structure on Jul 2024 (radar); hall-like score 0.60; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -15108,6 +15862,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -15117,10 +15878,10 @@
 "country": "CN",
 "lat": 35.72519,
 "lon": 107.69767,
-"built": "radar-detected new structure, 9 ha, structure on Feb 2025 (radar); hall-like score 0.53; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 9 ha, structure on Feb 2025 (radar); hall-like score 0.53; imagery review (RFW-01): data-hall complex, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
-"load": "not estimated (unconfirmed structure)",
+"running": "unknown: imagery review shows a data-hall complex; no activity evidence",
+"load": "not estimated (no capacity or activity evidence)",
 "confidence": "low",
 "how": [
 "Sentinel-1 radar structure dating (where brightness dating could not)"
@@ -15175,6 +15936,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -15184,9 +15952,9 @@
 "country": "CN",
 "lat": 35.73274,
 "lon": 107.70189,
-"built": "radar-detected new structure, 6 ha, structure on Jun 2024 (radar); hall-like score 0.51; unconfirmed, operator unknown",
+"built": "radar-detected new structure, 6 ha, structure on Jun 2024 (radar); hall-like score 0.51; imagery review (RFW-01): unclear, operator unknown",
 "built_conf": "low",
-"running": "unknown: new structure found by radar, not confirmed as a data centre; no activity evidence",
+"running": "unknown: new structure found by radar; imagery review could not tell whether it is a data centre; no activity evidence",
 "load": "not estimated (unconfirmed structure)",
 "confidence": "low",
 "how": [
@@ -15257,6 +16025,13 @@
 "last_q": "2026Q3",
 "polygons_low": true,
 "combustion": false,
+"findings": {
+"n": 2,
+"requests": [
+"RFW-01",
+"RFW-03"
+]
+},
 "evidence_kind": "construction"
 },
 {
@@ -15327,6 +16102,12 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 1,
+"requests": [
+"RFW-20"
+]
+},
 "evidence_kind": "construction",
 "first_threshold_month": null,
 "sources": [
@@ -15408,6 +16189,10 @@
 "last_q": "2026Q3",
 "polygons_low": false,
 "combustion": false,
+"findings": {
+"n": 0,
+"requests": []
+},
 "evidence_kind": "construction",
 "first_threshold_month": null,
 "sources": [

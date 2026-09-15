@@ -1,6 +1,7 @@
 /* Open Observatory quarterly detail: map + per-site load band with its evidence. Everything is precomputed into
-   data/sites.json (inventory, provenance), data/status.json (evidence kind, plain-language status) and
-   data/timeline/<site>.json (quarterly bands, evidence). */
+   data/sites.json (inventory, provenance), data/status.json (evidence kind, plain-language status),
+   data/timeline/<site>.json (quarterly bands, evidence) and data/evidence.json (findings from requests for work,
+   drawn by findings.js). */
 (async function () {
   const fmt = (v, d = 0) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -10,6 +11,9 @@
   try { index = await (await fetch("data/timeline/index.json", nc)).json(); } catch (e) { index = {}; }
   let status = {};
   try { (await (await fetch("data/status.json", nc)).json()).sites.forEach(x => { status[x.site_id] = x; }); } catch (e) { status = {}; }
+  const F = window.OOFindings;
+  let findings = {};
+  try { findings = F ? F.bySubject(await (await fetch("data/evidence.json", nc)).json()) : {}; } catch (e) { findings = {}; }
   const sites = data.sites.filter(s => !String(s.site_id).startsWith("ctrl_"));
   document.getElementById("build-note").textContent = `${sites.length} sites · built ${String(data.generated || "").slice(0, 10)}`;
 
@@ -85,6 +89,7 @@
       (!s.polygons || !s.polygons.length ? `<span class="badge n">no polygons</span>` : ``) + `</div>` +
       (st.running ? `<div class="kv"><div>built</div><div>${esc(st.built)}</div><div>running</div><div>${esc(st.running)}</div><div>load</div><div>${esc(st.load)}</div></div>` : ``);
     html += `<div id="load-section"></div>`;
+    html += F ? F.section(findings[s.site_id]) : "";
     html += `<div class="section"><h3>Sources</h3><div class="kv">` +
       `<div>documented capacity</div><div>${s.capacity_mw === null || s.capacity_mw === undefined ? "unknown" : `${fmt(s.capacity_mw, 0)} MW (${esc(s.capacity_basis)})`}</div>` +
       `<div>source</div><div>${esc(s.capacity_source || "—")}${s.capacity_url ? ` <a href="${esc(s.capacity_url)}" target="_blank" rel="noopener">link</a>` : ""}</div>` +
@@ -173,6 +178,8 @@
 <p><b>Roofs alone give only an upper bound</b> (roofed area × a density prior). No midpoint is shown without an activity signal.</p>
 <h3>Evidence strips</h3>
 <p>NO₂ plume excess downwind minus upwind against the site's pre-change baseline; night-time roof temperature anomaly (ECOSTRESS); roofs on and fitted out from Sentinel-2 brightness; calibrated NOx flux. Adjacent power plants near the Chinese hubs are shown as an activity index only.</p>
+<h3>Findings from requests for work</h3>
+<p>Results from merged requests for work appear in a site's panel under “Findings from requests for work”, and all of them on the <a href="findings.html">findings page</a>. The site data is rebuilt after every merge, so they arrive without manual wiring. They are evidence beside the estimate and never change a number; an imagery verdict on a radar-found structure updates its Built line.</p>
 <h3>What is not claimed</h3>
 <p>Load or utilisation from thermal: at night, roof temperature showed no step at documented load changes (Rainier +0.06 ± 0.24 K at 1,078 MW; Abilene +0.13 ± 0.47 K at 522 MW); daytime steps coincide with roofing and fit-out and cannot be separated from them. Twelve data centres and nine ordinary roofs were compared. Load at grid-fed sites: not observable from orbit. New structures found by the Sentinel-1 radar scan (the Chinese hub entries named "radar structure") are hall-like by a classifier score, dated by radar, and unconfirmed as data centres.</p>
 <p class="small">Details, negative results and code: <code>docs/overnight_report_2026-09-13.md</code>, <code>docs/MVP.md</code>, and the <a href="research/index.html">research view</a>.</p>`;

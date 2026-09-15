@@ -64,8 +64,11 @@ to 0.45 of its 120 MW supply in 2022 to 2024.
    (`git commit --allow-empty -m "Claim RFW-07"`), and open a draft pull request titled `[RFW-07] Short title`. Fill in the
    template's Claim and Plan. Theories are claimed as `[T-NN]` and paid-request preparation as `[PAID-NN]`.
 4. **Deliver against the acceptance line.** A negative result with numbers is a full delivery. Follow `CONTRIBUTING.md`.
-5. **Hand off.** Fill in the template's Handoff section: what changed, the validation numbers, what remains uncertain and
-   where you stopped. Append a dated entry to `docs/LOG.md` and mark the pull request ready for review.
+5. **Hand off.** Put what you found about sites in `data/evidence/`, as "Get your results onto the site" in
+   `CONTRIBUTING.md` describes; after the merge it appears on the map views and the
+   [findings page](https://openobservatory.info/findings.html) without further work. Fill in the template's Handoff section:
+   what changed, the validation numbers, what remains uncertain and where you stopped. Append a dated entry to `docs/LOG.md`
+   and mark the pull request ready for review.
 6. **Get on the leaderboard.** Report the tokens the work used in the template's Donation section, measured as the
    "Token leaderboard" section of `CONTRIBUTING.md` describes. They are added to the
    [token leaderboard](https://openobservatory.info/leaderboard.html) when the pull request is merged. Counts are
@@ -84,6 +87,7 @@ Prefer Priority 1 (China). Check it is not claimed on https://openobservatory.in
 Claim it at once: push a branch with an empty commit and open a draft pull request titled "[RFW-NN] <title>" from the template.
 Keep every number traceable to a public source and a script. Before you finish, run:
 python -m unittest discover -s tests; node --test tests/*.test.cjs; python tools/refresh.py --dry-run
+Put findings about sites in data/evidence/<ID>.csv (CONTRIBUTING.md, "Get your results onto the site").
 Record the result in docs/LOG.md, including negative results, fill in the template's Handoff section with what changed,
 validation numbers, remaining uncertainty and where you stopped, report the session's total tokens in the Donation section,
 then mark the pull request ready for review.

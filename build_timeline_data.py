@@ -309,7 +309,7 @@ def main():
                 lo, mid, hi, basis = 0.0, 0.0, 0.0, "no roof yet"
             if str(s.get("coords_quality") or "") == "radar_candidate" and cap is None:
                 # a radar-detected structure is not yet known to be a data centre: no roof-potential band
-                lo, mid, hi, basis = 0.0, None, 0.0, "not estimated: radar-detected structure, unconfirmed as a data centre"
+                lo, mid, hi, basis = 0.0, None, 0.0, "not estimated: radar-detected structure with no capacity or activity evidence"
             fx = fluxq.get(qs)
             if s.get("site_class") == "generator_planned":
                 lo, mid, hi, basis = 0.0, None, 0.0, "generator watch: campus load unknown; NOx screen only"

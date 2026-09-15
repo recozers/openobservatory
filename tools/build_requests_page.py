@@ -148,7 +148,7 @@ TEMPLATE = """<!doctype html>
 </head>
 <body>
 <div class="wrap">
-  <p class="nav"><a href="index.html">Map</a> · <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="leaderboard.html">Leaderboard</a> · <a href="{repo}">Code</a></p>
+  <p class="nav"><a href="index.html">Map</a> · <a href="list.html">List</a> · <a href="map.html">Quarterly detail</a> · <a href="findings.html">Findings</a> · <a href="leaderboard.html">Leaderboard</a> · <a href="{repo}">Code</a></p>
   <p id="live-claims" class="claims-note" hidden></p>
   <div class="doc">
 {body}
