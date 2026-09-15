@@ -1129,16 +1129,6 @@
   "night": false,
   "quarters": 12
  },
- "cn_ulanqab_r05": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 20
- },
  "cn_ulanqab_r04": {
   "est_mid": null,
   "est_lo": 0.0,
@@ -1148,26 +1138,6 @@
   "no2": false,
   "night": false,
   "quarters": 8
- },
- "cn_ulanqab_r03": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 17
- },
- "cn_ulanqab_r07": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 22
  },
  "cn_ulanqab_r06": {
   "est_mid": null,
@@ -1189,16 +1159,6 @@
   "night": false,
   "quarters": 3
  },
- "cn_horinger_r27": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 10
- },
  "cn_horinger_r16": {
   "est_mid": null,
   "est_lo": 0.0,
@@ -1218,16 +1178,6 @@
   "no2": false,
   "night": false,
   "quarters": 6
- },
- "cn_horinger_r03": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 15
  },
  "cn_horinger_r04": {
   "est_mid": null,
@@ -1268,16 +1218,6 @@
   "no2": false,
   "night": false,
   "quarters": 10
- },
- "cn_horinger_r19": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 22
  },
  "cn_horinger_r21": {
   "est_mid": null,
@@ -1320,16 +1260,6 @@
   "quarters": 11
  },
  "cn_horinger_r23": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 10
- },
- "cn_horinger_r14": {
   "est_mid": null,
   "est_lo": 0.0,
   "est_hi": 0.0,
@@ -1399,36 +1329,6 @@
   "night": false,
   "quarters": 20
  },
- "cn_horinger_r25": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 6
- },
- "cn_zhangbei_r03": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 15
- },
- "cn_zhangbei_r05": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 13
- },
  "cn_zhangbei_r01": {
   "est_mid": null,
   "est_lo": 0.0,
@@ -1438,26 +1338,6 @@
   "no2": false,
   "night": false,
   "quarters": 17
- },
- "cn_zhangbei_r06": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 8
- },
- "cn_zhangbei_r07": {
-  "est_mid": null,
-  "est_lo": 0.0,
-  "est_hi": 0.0,
-  "basis": "not estimated: radar-detected structure, unconfirmed as a data centre",
-  "s2": false,
-  "no2": false,
-  "night": false,
-  "quarters": 3
  },
  "cn_zhangbei_r02": {
   "est_mid": null,

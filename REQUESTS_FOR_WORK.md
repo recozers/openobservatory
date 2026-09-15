@@ -31,7 +31,7 @@ daily demand cycles while training runs near-flat for weeks, so it needs several
 
 | Question | Method | Time resolution | US today | China today |
 |---|---|---|---|---|
-| Where is it? | Inventory, plus Sentinel-1 radar and Sentinel-2 change scans | New since 2021 | 88 sites | 54 sites, including 39 radar-found structures not yet confirmed as data centres |
+| Where is it? | Inventory, plus Sentinel-1 radar and Sentinel-2 change scans | New since 2021 | 88 sites | 42 sites, including 27 radar-found structures: 3 reviewed as data-hall complexes, 24 unclear; 12 rejected after review |
 | When did each building go up? | Sentinel-2 roof brightness and Sentinel-1 radar | Monthly | Dated buildings at 69 sites | Dated buildings at 45 sites, mostly by radar |
 | When did it start running? | VIIRS night lights | Monthly | No direct signal: lights rise during construction, not at start-up | No signal: parks were already lit |
 | What is its capacity? | Filings, utility and operator statements, Epoch AI estimates | When documents change | 75 sites, 67 of them Epoch AI estimates | 5 sites: two supercomputers' measured peaks and three Epoch AI estimates |
@@ -117,7 +117,7 @@ marks them in these tables when the page loads.
 
 | ID | Request | Answers | Size | Keys | Status |
 |---|---|---|---|---|---|
-| [RFW-01](#rfw-01-confirm-or-reject-the-radar-detected-structures-in-china) | Confirm or reject the radar-detected structures in China | Where | S | none | open |
+| [RFW-01](#rfw-01-confirm-or-reject-the-radar-detected-structures-in-china) | Confirm or reject the radar-detected structures in China | Where | S | none | open: first pass done, 3 confirmed, 12 rejected, 24 unclear; the unclear entries need better imagery or documents |
 | [RFW-02](#rfw-02-locate-every-national-computing-cluster-and-scan-it) | Locate every national computing cluster and scan it | Where | M | none, then EE | open |
 | [RFW-03](#rfw-03-quarterly-construction-index-for-each-chinese-hub) | Quarterly construction index for each Chinese hub | Built | M | none | open |
 | [RFW-04](#rfw-04-land-transfer-results-for-operators-and-start-dates) | Land transfer results for operators and start dates | Where, Built | M | none | open |
@@ -133,8 +133,18 @@ marks them in these tables when the page loads.
 
 #### RFW-01 Confirm or reject the radar-detected structures in China
 
-- **Why:** 39 inventory entries named `cn_<hub>_r<rank>` are new hall-like structures found by radar, dated, and unconfirmed.
-  Each needs a verdict before it counts as a data centre.
+- **Done so far:** a first pass in pull request 16 reviewed all 39 entries from before-and-after Sentinel-2 chips
+  (`tools/radar_review_chips.py`, `results_cn/radar_review/`), OpenStreetMap context within 400 m and a look at web imagery:
+  3 data-hall complexes (`cn_horinger_r04` inside the China Telecom park, `cn_horinger_r06` beside China Mobile's Hohhot data
+  centre, `cn_qingyang_r07` inside China Telecom's Qingyang computing park), 12 not data centres (sheds, a solar array, a
+  factory, a food plant, a mall, a sports hall, a university, town blocks) and 24 unclear, mostly big-box buildings that
+  10 m imagery cannot tell from logistics or workshops. `data/cn_radar_review.csv` holds every verdict with its reason; the
+  12 rejected entries left `data/sites.csv` and keep their polygons and radar timelines.
+- **Why the rest matters:** 24 entries, 16 of them at Horinger, remain unclear, and the three confirmations rest on layout and
+  OSM park names, not on a document.
+- **Do next:** for each unclear entry, find a document that names the building or its plot (land transfer, environmental
+  approval, procurement notice or operator statement, RFW-04 to RFW-06), or inspect sub-metre imagery when PAID-01 provides
+  it, and update the verdict in the review file. Entries dated 2025 or later have no web imagery yet.
 - **Do:** For each entry, look at its chip (`results_s1/<hub>_candNN.png`, or render one with `tools/chip.py`) and its
   classifier score in `results_cand/scores.csv`. Classify it as data-hall complex, not a data centre, or unclear, with a
   one-line reason naming what you see: long parallel halls, cooling yards, generator rows, a substation. For confirmed halls,
@@ -862,7 +872,9 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
   annual emission reports give 63 records for 2019 to 2025, but no allocation of its output to any campus is established. No
   hourly or daily stack readings were retrieved: Shengle's reading service requires a CAPTCHA and other candidate services
   timed out or returned errors. See RFW-12.
-- **Radar-found structures in China.** Hall-like and dated, but unconfirmed. See RFW-01.
+- **Radar-found structures in China.** Of 39 hall-like, dated structures, a chip review confirmed 3 as data-hall complexes from
+  layout and the named parks around them, rejected 12 and left 24 unclear: at 10 m, big-box buildings cannot be told from
+  logistics or workshops, and web imagery predates the entries built since 2025. See RFW-01 and `data/cn_radar_review.csv`.
 
 ### Did not work
 

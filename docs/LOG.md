@@ -418,3 +418,39 @@ workflow.
   EDGAR full-text search across VNET, GDS and Chindata filings, including 6-Ks, is blocked until a contact email for SEC's
   User-Agent is agreed, and most Chindata data centres still have no city. Its status now says so.
 
+## 2026-09-15 (donated session, Claude): RFW-01, review of the radar-detected structures in China (pull request 16)
+
+Claimed from a fork (`rfw/01-cn-radar-review`), draft pull request 16 on recozers/openobservatory.
+
+- Method. `tools/radar_review_chips.py` renders, for each `cn_<hub>_r<rank>` entry, a two-panel Sentinel-2 chip from AWS open
+  data (least cloudy summer scene of 2021 and of 2026, 1.4 km wide, the entry's 20 m radar outline in red, other radar
+  outlines yellow, digitised campuses cyan) into `results_cn/radar_review/<site_id>.png`; scene ids are in `scenes.csv`.
+  One Overpass query per entry (400 m radius, 1 request/s, identified User-Agent) gave named or industrial OpenStreetMap
+  features (`osm_context.csv`, raw `osm_context.json`). `tools/radar_review_viewer.html` shows an outline over Esri World
+  Imagery or Google tiles in a browser as a viewing aid; nothing from those services is saved, and their imagery predates
+  every entry dated 2025 or later. Verdicts are one person's reading of the chips, recorded with a reason and a confidence.
+- Result, `data/cn_radar_review.csv` (39 rows): 3 data-hall complexes, 12 not data centres, 24 unclear.
+  - Confirmed (medium or low confidence, from layout and OSM park names, not documents): `cn_horinger_r04`, a regular grid of
+    about ten blocks inside the China Telecom cloud-computing Inner Mongolia information park landuse, 0.2 km from Epoch's
+    Huawei Horinger point; `cn_horinger_r06`, a two-row grid of about ten blocks 350 m from China Mobile's Hohhot data centre;
+    `cn_qingyang_r07`, blocks under construction inside the China Telecom Qingyang intelligent-computing park landuse, next
+    to China Mobile's and China Unicom's Qingyang data-centre landuse.
+  - Rejected: Ulanqab r05 and r03 (rows of narrow sheds), r07 (village compound); Horinger r27 (sports hall by a running
+    track), r03 (walled factory with tanks and a stack), r19 (factory inside Xibei food-industry landuse), r14 (curved
+    commercial complex with a bank inside the outline), r25 (Inner Mongolia Normal University campus); Zhangbei r03 (an
+    850 m shed with shed rows), r05 (photovoltaic array by the expressway service area), r06 and r07 (blocks inside the
+    county town). These left `data/sites.csv`; their polygons, radar timelines and chips stay, and
+    `tools/ingest_radar_candidates.py` now reads the review file so it never re-adds them.
+  - Unclear (24, 16 at Horinger): mostly big-box buildings of 100 to 200 m that 10 m imagery cannot tell from logistics or
+    workshops, several under construction or built after the newest web imagery. Notable: Horinger r02 and r05 (rows of
+    200 m boxes, r05 beside the Shengle power plant), r11 and r12 (blocks beside the digitised cloud valley, r12 laid out like
+    dormitories), Gui'an r01 (a 2 by 3 grid of white buildings on a graded terrace), Qingyang r12 and r11 (inside or beside
+    OSM landuse named for China Energy Engineering's big-data park and Chindata's zero-carbon base).
+- Site: 151 sites, of which 27 radar entries; `site/data/timeline/` files for the 12 rejected entries removed. The
+  requests page table now reads 42 Chinese sites including 27 radar-found structures.
+- Tests: `tests/test_radar_review.py` (4) checks verdict values, evidence paths, that every inventory radar entry is reviewed
+  and not rejected, that rejected entries keep their evidence files, and that the ingest skips them.
+- Limits. No verdict rests on a document; the three confirmations could still be offices inside a data-centre park. The
+  Esri and Google tiles were used only to look, and their capture dates are not shown. A Chinese-reading reviewer (PAID-06)
+  or sub-metre imagery (PAID-01) would settle most of the unclear entries; land and procurement records (RFW-04, RFW-05)
+  could attribute them.

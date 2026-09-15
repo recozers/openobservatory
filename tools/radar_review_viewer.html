@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Radar review viewer</title>
+<!--
+  Shows a radar entry's outline over a web basemap, for the RFW-01 review of radar-detected structures.
+  Serve the repository root (python -m http.server 8765) and open
+    http://localhost:8765/tools/radar_review_viewer.html#cn_horinger_r15
+  Add ,google to the hash to use Google's satellite tiles instead of Esri World Imagery, and ,z18 for a zoom level.
+  Tiles are viewed in the browser under each provider's terms and are never saved; the evidence files are the
+  Sentinel-2 chips in results_cn/radar_review/.
+-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>html,body,#map{height:100%;margin:0}#label{position:absolute;top:8px;left:60px;z-index:1000;background:#fff;padding:4px 8px;font:13px sans-serif}</style>
+<div id="map"></div><div id="label"></div>
+<script>
+window.addEventListener("hashchange", () => location.reload());
+const parts = location.hash.slice(1).split(",");
+const sid = parts[0] || "cn_horinger_r15";
+const provider = parts.includes("google") ? "google" : "esri";
+const zPart = parts.find(p => /^z\d+$/.test(p));
+const zoom = zPart ? parseInt(zPart.slice(1)) : 17;
+const map = L.map("map", {zoomControl: true});
+const layers = {
+  esri: L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {maxZoom: 19, attribution: "Esri World Imagery"}),
+  google: L.tileLayer("https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}", {maxZoom: 20, attribution: "Google"}),
+};
+layers[provider].addTo(map);
+fetch(`/data/polygons/${sid}.geojson`).then(r => r.json()).then(gj => {
+  const g = L.geoJSON(gj, {style: {color: "#ff2828", weight: 3, fill: false}}).addTo(map);
+  map.fitBounds(g.getBounds().pad(0.6));
+  if (zPart) map.setZoom(zoom);
+  document.getElementById("label").textContent = `${sid} — ${provider} — outline: radar blob (20 m)`;
+});
+</script>
