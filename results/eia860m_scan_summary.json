@@ -1,0 +1,17 @@
+{
+ "workbook": "july_generator2026.xlsx",
+ "workbook_title": "Inventory of Operating Generators as of July 2026",
+ "url": "https://www.eia.gov/electricity/data/eia860m/xls/july_generator2026.xlsx",
+ "sha256": "9f348be6d6609b7e0c49a8c3cf872354a3bd2370051d0d4720246dc81bbe540d",
+ "scanned_utc": "2026-09-15T14:59Z",
+ "generators_kept": 986,
+ "plants_kept": 271,
+ "inventory_sites": 88,
+ "radius_km": 10.0,
+ "since": 2023,
+ "candidates": 18,
+ "near": 18,
+ "keyword": 1,
+ "both": 1,
+ "epa_known": 4
+}
