@@ -1,0 +1,18 @@
+{
+ "eia860_url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602024.zip",
+ "eia860_sha256": "0aaae04812cd4ab87a3e346bdf93848a3cc15053fd4dc2a4cf82d2aeac95f12b",
+ "nei_endpoint": "https://data.epa.gov/efservice/nei.vw_facility_summaries_2020/pollutant_code/equals/NOX/state_abbr/equals/{st}/JSON",
+ "nei_states": [
+  "AR",
+  "FL",
+  "MI",
+  "TX"
+ ],
+ "rules": {
+  "low_stack_m": 60.0,
+  "isolation_km": 10.0,
+  "isolation_share": 0.1,
+  "isolation_single_share": 0.05,
+  "overpass_solar_hour": 13.5
+ }
+}

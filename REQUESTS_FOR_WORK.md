@@ -288,7 +288,7 @@ These methods are developed where ground truth exists, mostly in the US, so they
 |---|---|---|---|---|---|
 | [RFW-14](#rfw-14-make-the-plume-test-robust-to-start-date-and-season) | Make the plume test robust to start date and season | Utilisation | S | none | open: season-matched test and date sensitivity delivered; the site still uses the current test until the Goodyear result is understood |
 | [RFW-15](#rfw-15-near-field-plume-test-for-plants-on-a-citys-edge) | Near-field plume test for plants on a city's edge | Utilisation | M | EE, EPA | open |
-| [RFW-16](#rfw-16-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Utilisation | M | none | open |
+| [RFW-16](#rfw-16-qualify-gas-turbine-nox-calibration-plants) | Qualify gas-turbine NOx calibration plants | Utilisation | M | none | first pass in pull request 23: Midland qualified as a low-stack reference, Forney and Fort Myers rejected; turbines still uncalibrated as a class |
 | [RFW-17](#rfw-17-climate-aware-water-efficiency-for-water-derived-loads) | Climate-aware water efficiency for water-derived loads | Utilisation | M | EE | open |
 | [RFW-18](#rfw-18-per-site-electricity-capacity-and-commercial-utilisation-from-more-operators) | Per-site electricity, capacity and commercial utilisation from more operators | Capacity, Utilisation | M | none | open |
 | [RFW-19](#rfw-19-microsofts-metro-electricity-table-to-campuses) | Microsoft's metro electricity table to campuses | Utilisation | S | none | delivered in pull request 21 as context: no metro is one inventory campus; Boydton is a candidate site for RFW-18 |
@@ -331,9 +331,16 @@ These methods are developed where ground truth exists, mostly in the US, so they
 
 #### RFW-16 Qualify gas-turbine NOx calibration plants
 
-- **Why:** The NOx calibration rests on five tall-stack coal plants, but turbine exhaust leaves from low stacks. Three gas
-  candidates gave factors from 0.89 to 4.83 and are not qualified (`docs/low_stack_calibration.md`). Until turbines are
-  calibrated, NOx gives relative change but no utilisation ratio.
+- **Done so far:** pull request 23 checked all eight plants with public data (`tools/turbine_calibration_qualify.py`,
+  `results_no2/calibration_plant_qualification.csv`): stack heights from EIA-860 2024 (coal references 91 to 305 m, Forney
+  47 m, Midland 20 to 46 m, Fort Myers unreported), isolation from every NOx source in the EPA's 2020 NEI within 10 km
+  (coal references under 1 %, Midland 5 %, Forney 12 %, Fort Myers 77 % because of a waste-to-energy plant 7.5 km away), and
+  the nominal Sentinel-5P overpass hour from longitude as a third CAMPD window. Midland qualifies as a low-stack reference,
+  factor 4.70 ± 0.76 over 122 days; Forney and Fort Myers are rejected. Forney's 0.89 ± 0.08 at the same stack height as
+  Midland means one qualified plant does not calibrate turbines as a class, so the production factor is unchanged.
+- **Do next:** more isolated low-stack gas plants with hourly EPA data (the 2023 screen left 26 plants with hourly rows and
+  no large power neighbour; run the same NEI test on them), Fort Myers' stack heights from its FDEP permit, and the per-day
+  overpass time, which needs the profiles re-extracted with timestamps (Earth Engine).
 - **Do:** Verify physical stack heights from EIA-860's environmental-equipment data or permits, check isolation from other
   sources with the EPA's point-source inventory, and align the TROPOMI overpass time with the hourly records.
 - **Deliver:** Each candidate qualified or rejected with its reason, and the calibration comparison updated for the qualified
@@ -900,8 +907,10 @@ Each result is stated at the scale it was tested. Numbers and corrections are in
 - **Abilene's plume.** 2.8σ at the documented July 2025 start and 2.3σ a month earlier, with emission-controlled turbines whose
   flux is too small to convert to megawatts. The season-matched test (RFW-14) gives 3.0σ at the documented start and 2.3σ a
   month earlier, so the start-date sensitivity is not a seasonal artefact.
-- **Gas-turbine calibration plants.** Three candidates gave calibration factors from 0.89 to 4.83; stack heights, isolation and
-  overpass alignment are unverified. See RFW-16.
+- **Gas-turbine calibration plants.** Three candidates gave calibration factors from 0.89 to 4.83. RFW-16 verified stack heights
+  (Forney 47 m, Midland 20 to 46 m, Fort Myers unreported), isolation (Forney 12 % of its NOx from neighbours within 10 km,
+  Fort Myers 77 %, Midland 5 %) and the nominal overpass hour: Midland qualifies as a low-stack reference at 4.70 ± 0.76, the
+  other two are rejected, and turbines remain uncalibrated as a class because Forney gives 0.89 at the same stack height.
 - **NO₂ from power plants next to Chinese hubs.** Usable as an activity index only at Ulanqab; the Horinger and Chongqing series
   were not usable.
 - **Chinese plants linked to hub parks** (`tools/cn_stack_monitors.py`, `docs/cn_stack_monitors.md`). A first pass found 14

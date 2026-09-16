@@ -1,0 +1,162 @@
+plant,eis_facility_id,site_name,facility_type,naics_code,county,state,latitude,longitude,nox_short_tons,distance_km,role
+forney_gas,9146511,FORNEY POWER PLANT,Electricity Generation via Combustion,221112,Kaufman,TX,32.756361,-96.491269,1192.22,0.03,own
+forney_gas,9112011,Mesquite Metro,Airport,488119,Dallas,TX,32.74696,-96.53042,4.84,3.78,neighbour
+forney_gas,6378411,FORNEY MILL,Pulp and Paper Plant,322130,Kaufman,TX,32.7383,-96.4397,73.94,5.25,neighbour
+forney_gas,11548211,SMITH FIELD,Airport,488119,Kaufman,TX,32.7376,-96.428,0.21,6.3,neighbour
+forney_gas,6491111,SUNNYVALE MANUFACTURING PLANT,"Brick, Structural Clay, or Clay Ceramics Plant",327120,Dallas,TX,32.767131,-96.564175,65.29,6.89,neighbour
+forney_gas,4836411,LAKE RAY HUBBARD,Electricity Generation via Combustion,221112,Dallas,TX,32.836667,-96.545828,133.71,10.27,neighbour
+forney_gas,11525911,AIRPARK EAST,Airport,488119,Kaufman,TX,32.812864,-96.351906,0.21,14.49,neighbour
+forney_gas,5725011,MESQUITE PLANT,,332999,Dallas,TX,32.772778,-96.647217,6.73,14.67,neighbour
+forney_gas,4588211,TILE AND OIL FIELD PRODUCTS,"Concrete Block, Pipe or Other Manuf",327390,Dallas,TX,32.772447,-96.651731,3.18,15.08,neighbour
+forney_gas,17910511,HUNTER PANELS,,326140,Kaufman,TX,32.727558,-96.327594,2.02,15.67,neighbour
+forney_gas,16927611,MESQUITE,Rail Yard,488210,Dallas,TX,32.783221,-96.661646,26.26,16.18,neighbour
+forney_gas,11760411,SEAGOVILLE,Airport,488119,Dallas,TX,32.6099,-96.5269,0.02,16.61,neighbour
+forney_gas,14752711,CONECSUS TEJAS FACILITY,"Secondary Non-ferrous Metal Smelting/Refining Plant (not Lead, Aluminum, or Copper)",331492,Kaufman,TX,32.729153,-96.316783,1.85,16.63,neighbour
+forney_gas,16448211,AMERESCO DALLAS,,221121,Dallas,TX,32.648792,-96.645133,22.34,18.69,neighbour
+forney_gas,17727911,ROCKWALL PLANT,Bakeries,311812,Rockwall,TX,32.911242,-96.411097,4.7,18.8,neighbour
+forney_gas,13385911,WHITMORES LUBRICANT COMPOUNDING FACILITY,,324191,Rockwall,TX,32.922528,-96.447825,1.85,18.93,neighbour
+forney_gas,17976511,SPR PACKAGING,,326112,Rockwall,TX,32.9225,-96.441944,6.32,19.05,neighbour
+forney_gas,9146311,Rockwall Muni,Airport,488119,Rockwall,TX,32.93059,-96.43549,1.74,20.08,neighbour
+forney_gas,5725811,CASTLE DRIVE LANDFILL,Landfill,562212,Dallas,TX,32.933556,-96.584158,3.38,21.52,neighbour
+forney_gas,9144611,Terrell Muni,Airport,488119,Kaufman,TX,32.71005,-96.26742,1.45,21.59,neighbour
+forney_gas,17731411,MCCOMMAS BLUFF LANDFILL,,562212,Dallas,TX,32.682631,-96.714611,8.94,22.41,neighbour
+forney_gas,16913611,Garland 2,Rail Yard,488210,Dallas,TX,32.888027,-96.673711,0.26,22.45,neighbour
+forney_gas,4163411,GARLAND FACILITY,,325510,Dallas,TX,32.892747,-96.670239,0.56,22.56,neighbour
+forney_gas,6493711,HATCO,,315990,Dallas,TX,32.907194,-96.655111,0.61,22.69,neighbour
+forney_gas,5843711,GARLAND,Munition or Explosives Plant,332993,Dallas,TX,32.921956,-96.637803,12.42,22.93,neighbour
+forney_gas,9102111,Garland/Dfw Heloplex,Airport,488119,Dallas,TX,32.88763,-96.68361,1.58,23.13,neighbour
+forney_gas,14751911,CHARLES M HINTON JR REGIONAL LANDFILL,Landfill,562212,Dallas,TX,32.9597,-96.5439,20.68,23.14,neighbour
+forney_gas,6476811,VALSPAR COATINGS,,325510,Dallas,TX,32.906847,-96.666644,7.39,23.4,neighbour
+forney_gas,6490911,EPIROC DRILLING SOLUTIONS,,336510,Dallas,TX,32.933333,-96.629439,1.26,23.52,neighbour
+forney_gas,17984811,ANDERSEN REGIONAL MFG GARLAND ASSEMBLY,,326121,Dallas,TX,32.88975,-96.6887,0.1,23.65,neighbour
+forney_gas,4899311,MCCOMMAS BLUFF LANDFILL GAS PROCESSING FACILITY,Electricity Generation via Combustion,221210,Dallas,TX,32.680058,-96.728861,12.5,23.76,neighbour
+forney_gas,16927411,MILLER YARD,Rail Yard,488210,Dallas,TX,32.710739,-96.74846,118.15,24.55,neighbour
+forney_gas,9117911,HENRY ROOF SEALANTS,Hot Mix Asphalt Plant,324122,Dallas,TX,32.90315,-96.688161,1.72,24.58,neighbour
+forney_gas,4853411,DALLAS PLANT,Hot Mix Asphalt Plant,324122,Dallas,TX,32.71495,-96.752583,8.17,24.84,neighbour
+forney_gas,4161711,OCCIDENTAL CHEMICAL DALLAS,Chemical Plant,325180,Dallas,TX,32.754722,-96.779439,10.51,26.92,neighbour
+forney_gas,5843611,BAYLOR UNIVERSITY MEDICAL CENTER,"Institutional (school, hospital, prison, etc.)",622110,Dallas,TX,32.790892,-96.7815,7.09,27.38,neighbour
+forney_gas,5856411,AQUATIC,Fiberglass Products Manuf,326191,Dallas,TX,32.6136,-96.7407,0.31,28.2,neighbour
+forney_gas,12153011,PHILLIPS FLYING RANCH,Airport,488119,Hunt,TX,32.8681,-96.2191,0.05,28.34,neighbour
+forney_gas,6494311,SKYLINE RECYCLING AND DISPOSAL FACILITY,Landfill,562212,Ellis,TX,32.5471,-96.6709,31.18,28.69,neighbour
+forney_gas,9118011,Dallas Cbd Vertiport,Airport,488119,Dallas,TX,32.77333,-96.80028,0.03,28.92,neighbour
+forney_gas,9111911,Lancaster,Airport,488119,Dallas,TX,32.57919,-96.71905,3.2,29.0,neighbour
+forney_gas,6476511,DALLAS MILL,Pulp and Paper Plant,322120,Dallas,TX,32.743717,-96.807286,11.57,29.56,neighbour
+fort_myers_gas,922311,FLORIDA POWER & LIGHT,Electricity Generation via Combustion,221112,Lee,FL,26.6967,-81.7831,933.11,0.0,own
+fort_myers_gas,922411,LEE COUNTY DEPT. OF SOLID WASTE MGT.,Municipal Waste Combustor,562219,Lee,FL,26.631667,-81.761389,714.84,7.55,neighbour
+fort_myers_gas,8515111,WASTE MANAGEMENT INC. OF FLORIDA,Landfill,562219,Lee,FL,26.6031,-81.7663,0.36,10.54,neighbour
+fort_myers_gas,11687111,PINE SHADOWS AIRPARK,Airport,488119,Lee,FL,26.7328,-81.8973,0.05,12.03,neighbour
+fort_myers_gas,9792811,Page Field,Airport,488119,Lee,FL,26.5841,-81.8703,7.29,15.23,neighbour
+fort_myers_gas,9792711,Southwest Florida Intl,Airport,488119,Lee,FL,26.5275,-81.7709,180.81,18.85,neighbour
+fort_myers_gas,18967511,"SLD LANDFILL, INC.",,562219,Charlotte,FL,26.79906,-81.954137,0.47,20.44,neighbour
+fort_myers_gas,4327211,CHARLOTTE COUNTY DEPT OF PUBLIC WORKS,Landfill,562219,Charlotte,FL,26.795556,-81.960556,6.94,20.77,neighbour
+fort_myers_gas,12790111,COMMUNITY ASPHALT CORPORATION,Hot Mix Asphalt Plant,324121,Lee,FL,26.498011,-81.82881,2.63,22.56,neighbour
+fort_myers_gas,12777611,LEE COUNTY BOARD OF COUNTY COMMISSIONERS,Landfill,562219,Hendry,FL,26.572167,-81.525583,0.02,29.1,neighbour
+independence_ar,1083411,ENTERGY ARKANSAS LLC-INDEPENDENCE PLANT,Electricity Generation via Combustion,221112,Independence,AR,35.6795,-91.4102,2996.53,0.18,own
+independence_ar,1082811,FUTUREFUEL CHEMICAL COMPANY,Chemical Plant,325199,Independence,AR,35.7192,-91.5256,295.95,11.48,neighbour
+independence_ar,17868911,NEWPORT,Rail Yard,488210,Jackson,AR,35.609045,-91.280945,13.13,13.89,neighbour
+independence_ar,660311,Granges Americas,,331315,Jackson,AR,35.647945,-91.252704,3.63,14.5,neighbour
+independence_ar,1083611,ARKANSAS STEEL ASSOCIATES,Steel Mill,331221,Jackson,AR,35.648518,-91.244662,39.15,15.19,neighbour
+independence_ar,1101511,TUCKERMAN COMPRESSOR STATION,Compressor Station,486210,Jackson,AR,35.715,-91.220834,73.19,17.45,neighbour
+independence_ar,10503511,Newport Muni,Airport,488119,Jackson,AR,35.63772,-91.17638,0.92,21.48,neighbour
+independence_ar,10503911,Batesville Regional,Airport,488119,Independence,AR,35.72611,-91.64736,0.77,22.19,neighbour
+limestone,5650511,LIMESTONE ELECTRIC GENERATION STATION,Electricity Generation via Combustion,221112,Limestone,TX,31.423182,-96.251658,5028.38,0.16,own
+limestone,13388011,FARRAR TREATING PLANT,,2111,Limestone,TX,31.442808,-96.261714,26.52,2.48,neighbour
+limestone,15628411,BLALOCK COMPRESSOR STATION,Compressor Station,211130,Limestone,TX,31.413489,-96.295604,16.57,4.2,neighbour
+limestone,4930611,NUCOR STEEL,Steel Mill,331221,Leon,TX,31.354802,-96.165199,195.72,11.15,neighbour
+limestone,16920811,Newby,Rail Yard,488210,Leon,TX,31.349208,-96.169407,0.26,11.29,neighbour
+limestone,9136811,ROTHERMEL COMPRESSOR,Compressor Station,486210,Limestone,TX,31.459079,-96.438452,102.83,18.12,neighbour
+limestone,16929011,Teague,Rail Yard,488210,Freestone,TX,31.63,-96.287795,24.36,23.38,neighbour
+limestone,11628311,TEAGUE MUNI,Airport,488119,Freestone,TX,31.6613,-96.31,0.1,27.17,neighbour
+limestone,3052411,DOWDY RANCH CENTRAL GATHERING FACILITY,Oil or Gas Facility (On-shore),2111,Freestone,TX,31.611667,-96.043611,50.27,28.94,neighbour
+martin_lake,4207311,MARTIN LAKE ELECTRICAL STATION,Electricity Generation via Combustion,221112,Rusk,TX,32.259653,-94.570331,10109.41,0.11,own
+martin_lake,16910511,Dirgin,Rail Yard,488210,Rusk,TX,32.260767,-94.566016,0.26,0.43,neighbour
+martin_lake,16925511,Beckville,Rail Yard,488210,Panola,TX,32.231131,-94.50244,24.36,7.2,neighbour
+martin_lake,13380611,OAKHILL COMPRESSOR STATION,Compressor Station,2111,Gregg,TX,32.379889,-94.594208,31.8,13.45,neighbour
+martin_lake,9110611,BECKVILLE COMPRESSOR STATION,Compressor Station,486210,Panola,TX,32.223583,-94.431658,65.59,13.7,neighbour
+martin_lake,4020611,AEP KNOX LEE POWER PLANT,Electricity Generation via Combustion,221112,Gregg,TX,32.376522,-94.64225,102.83,14.54,neighbour
+martin_lake,13390011,CARTHAGE GAS PLANT,Gas Plant,211130,Panola,TX,32.167,-94.421897,101.24,17.44,neighbour
+martin_lake,5765111,CENTRAL COMPRESSOR STATION,Compressor Station,2111,Panola,TX,32.161339,-94.3983,48.18,19.61,neighbour
+martin_lake,9123111,HARRISON COUNTY POWER PROJECT,Electricity Generation via Combustion,221112,Harrison,TX,32.395058,-94.435467,164.82,19.62,neighbour
+martin_lake,9123811,East Texas Rgnl,Airport,488119,Gregg,TX,32.3927,-94.7194,23.78,20.28,neighbour
+martin_lake,4020811,LONGVIEW GAS PLANT,Gas Plant,211130,Gregg,TX,32.413481,-94.699992,97.7,20.9,neighbour
+martin_lake,4845511,STATION 304,Compressor Station,486210,Harrison,TX,32.407733,-94.429817,1.5,21.04,neighbour
+martin_lake,4180311,CARTHAGE ORIENTED STRANDBOARD MILL,Plywood & Engineered Wood Products,321219,Panola,TX,32.188333,-94.361389,158.2,21.26,neighbour
+martin_lake,13404111,GAS BLOCKER COMPRESSOR STATION,Compressor Station,486210,Harrison,TX,32.409167,-94.425833,37.44,21.4,neighbour
+martin_lake,5779011,GEORGE GRAY GAS PLANT,Gas Plant,211130,Panola,TX,32.243611,-94.342777,1.0,21.51,neighbour
+martin_lake,7925311,MITCHELL COMPRESSOR STATION,Compressor Station,2111,Panola,TX,32.195,-94.343056,59.98,22.61,neighbour
+martin_lake,4941511,TEXAS OPERATIONS,Chemical Plant,325110,Harrison,TX,32.438056,-94.69,1297.67,22.7,neighbour
+martin_lake,13399711,WESTLAKE LONGVIEW,,325211,Harrison,TX,32.439278,-94.688436,738.4,22.74,neighbour
+martin_lake,4863811,INVISTA LONGVIEW,,325211,Harrison,TX,32.440183,-94.686361,6.6,22.74,neighbour
+martin_lake,16929611,Ferguson Creek Reservoir,Rail Yard,488210,Harrison,TX,32.440928,-94.68728,0.26,22.85,neighbour
+martin_lake,19469211,Kodak,Rail Yard,488210,Gregg,TX,32.435556,-94.704353,26.26,23.16,neighbour
+martin_lake,9123011,LONGVIEW POX ASU PLT,,325120,Harrison,TX,32.447778,-94.6875,20.27,23.53,neighbour
+martin_lake,4845611,AEP PIRKEY POWER PLANT,Electricity Generation via Combustion,221112,Harrison,TX,32.460267,-94.485225,2188.0,23.61,neighbour
+martin_lake,7908711,EASTMAN COGENERATION FACILITY,Electricity Generation via Combustion,221121,Harrison,TX,32.448056,-94.690278,315.82,23.68,neighbour
+martin_lake,4207211,HENDERSON PLANT 1,"Brick, Structural Clay, or Clay Ceramics Plant",327120,Rusk,TX,32.182572,-94.805811,28.67,23.77,neighbour
+martin_lake,6498511,HENDERSON LUMBER MILL,Lumber/Sawmill,321113,Rusk,TX,32.172778,-94.803056,39.4,23.95,neighbour
+martin_lake,4021511,LONGVIEW #2 COMPRESSOR STATION,Compressor Station,486210,Gregg,TX,32.45459,-94.71108,7.71,25.29,neighbour
+martin_lake,9124211,LONGVIEW COMPRESSOR STATION,Compressor Station,486210,Gregg,TX,32.456325,-94.711211,0.33,25.46,neighbour
+martin_lake,10677911,CARTHAGE COMPRESSOR STATION 2,Compressor Station,486210,Panola,TX,32.139722,-94.337222,0.73,25.75,neighbour
+martin_lake,6642111,LONGVIEW 1 COMP STATION,Compressor Station,486210,Gregg,TX,32.456375,-94.725967,0.09,26.21,neighbour
+martin_lake,6641511,JOY GLOBAL LONGVIEW OPERATIONS,Steel Mill,336510,Gregg,TX,32.459707,-94.737374,4.51,27.12,neighbour
+martin_lake,9110911,Panola County-Sharpe Fi,Airport,488119,Panola,TX,32.17608,-94.29881,0.06,27.24,neighbour
+martin_lake,17906911,NUCOR STEEL LONGVIEW,,331221,Gregg,TX,32.459747,-94.739842,113.48,27.26,neighbour
+martin_lake,6498311,ELECTRIC POWER GENERATION,Electricity Generation via Combustion,221112,Rusk,TX,32.0176,-94.6194,540.58,27.41,neighbour
+martin_lake,4845811,TRINITY INDUSTRIES PLANT 19,,336510,Harrison,TX,32.503808,-94.637414,3.8,27.76,neighbour
+martin_lake,16637511,RIO COMPRESSOR STATION,Compressor Station,211130,Rusk,TX,32.030278,-94.685,8.24,27.78,neighbour
+martin_lake,16923411,Longview Heights,Rail Yard,488210,Harrison,TX,32.503887,-94.639639,52.51,27.82,neighbour
+martin_lake,9125911,DANVILLE COMPRESSOR STAT,Compressor Station,486210,Gregg,TX,32.425803,-94.802494,0.9,28.5,neighbour
+martin_lake,16628711,ATKINSON COMPRESSOR STATION,Compressor Station,2111,Rusk,TX,32.015356,-94.681028,19.23,29.18,neighbour
+martin_lake,18896711,PANOLA II GAS PLANT,Gas Plant,211130,Panola,TX,32.191917,-94.267631,13.49,29.5,neighbour
+martin_lake,9145911,Rusk County,Airport,488119,Rusk,TX,32.14172,-94.85172,2.75,29.57,neighbour
+martin_lake,17867911,LONGVIEW_2,Rail Yard,488210,Gregg,TX,32.494549,-94.726926,52.51,29.87,neighbour
+martin_lake,19756311,Bodie,Rail Yard,488210,Gregg,TX,32.470552,-94.76923,26.26,29.88,neighbour
+midland_gas,6473711,Midland Cogeneration Venture (B6527),Electricity Generation via Combustion,221112,Midland,MI,43.5861,-84.2242,3880.9,0.0,own
+midland_gas,11364411,DOW DIVISION,Airport,488119,Midland,MI,43.5922,-84.2244,0.01,0.68,neighbour
+midland_gas,8159411,"The Dow Chemical Company U.S.A., Midland (A4033)",Pharmaceutical Manufacturing,325220,Midland,MI,43.6003,-84.2234,135.8,1.58,neighbour
+midland_gas,8246211,Dow Silicones Corporation (A4043),Chemical Plant,325211,Midland,MI,43.5921,-84.205,22.7,1.68,neighbour
+midland_gas,7779911,Cabot Corporation (N6251),,325180,Midland,MI,43.5956,-84.2042,0.01,1.93,neighbour
+midland_gas,18982211,SK Saran Americas LLC,,325211,Midland,MI,43.6014,-84.211,0.29,2.01,neighbour
+midland_gas,18982311,Corteva Agriscience LLC (P1028),,325320,Midland,MI,43.6069,-84.2174,0.41,2.38,neighbour
+midland_gas,18989011,"DDP Specialty Electronic Materials US, LLC (P1027)",,325211,Midland,MI,43.6017,-84.2031,11.15,2.43,neighbour
+midland_gas,18982111,Trinseo LLC (P1025),,325211,Midland,MI,43.6085,-84.2236,12.12,2.49,neighbour
+midland_gas,18980811,Cintas Corporation (P0698),,812332,Midland,MI,43.6243,-84.2269,0.3,4.25,neighbour
+midland_gas,6538411,City of Midland Utilities Division (N6004),Landfill,562212,Midland,MI,43.6332,-84.1745,14.53,6.59,neighbour
+midland_gas,18979411,Dow Silicones Corporation (B4022),,325520,Bay,MI,43.5873,-84.1129,2.75,8.97,neighbour
+midland_gas,9506711,Jack Barstow,Airport,488119,Midland,MI,43.66292,-84.26133,0.69,9.05,neighbour
+midland_gas,9527811,Mbs Intl,Airport,488119,Saginaw,MI,43.532,-84.0908,5.46,12.32,neighbour
+midland_gas,7238411,Hemlock Semiconductor Operations LLC (B2644),,327992,Saginaw,MI,43.4368,-84.1603,46.08,17.38,neighbour
+midland_gas,4140211,Delta College (N5930),"Institutional (school, hospital, prison, etc.)",611310,Bay,MI,43.5607,-83.9859,2.88,19.4,neighbour
+midland_gas,4140411,Riverside - Monitor 11 CPF (N6076),Oil or Gas Facility (On-shore),211130,Bay,MI,43.6263,-83.9537,3.05,22.23,neighbour
+midland_gas,8145011,Michigan Sugar Company - Bay City (B1493),Sugar Mill,311313,Bay,MI,43.5753,-83.919,91.12,24.61,neighbour
+midland_gas,4140111,Bay City Electric Light & Power (N3195),Electricity Generation via Combustion,221118,Bay,MI,43.595,-83.8999,11.44,26.14,neighbour
+midland_gas,4171511,Bay City Electric Light & Power (B7529),Electricity Generation via Combustion,221118,Bay,MI,43.58087,-83.89737,5.3,26.33,neighbour
+midland_gas,9557411,Michigan Agricultural Commodities - Ransom (B4986),,424510,Gratiot,MI,43.411,-84.4496,1.64,26.64,neighbour
+midland_gas,9554611,James Clements Muni,Airport,488119,Bay,MI,43.54692,-83.8955,0.66,26.84,neighbour
+midland_gas,6803811,Bunge (B7117),,493130,Saginaw,MI,43.459,-83.93,0.87,27.61,neighbour
+midland_gas,15069611,COVENANT HEALTH CARE,,622110,Saginaw,MI,43.4306,-83.9535,8.75,27.85,neighbour
+midland_gas,4773411,General Motors LLC - Bay City (B2460),Automobile/Truck or Parts Plant,336350,Bay,MI,43.6081,-83.8796,5.79,27.86,neighbour
+midland_gas,17884111,"Yeager Paving Materials, LLC (P0443)",Hot Mix Asphalt Plant,324121,Saginaw,MI,43.4566,-83.9253,1.69,28.07,neighbour
+midland_gas,6819411,Ace-Saginaw Paving Company - Plant 9 (N1580),Hot Mix Asphalt Plant,324121,Saginaw,MI,43.4616,-83.9172,19.72,28.36,neighbour
+midland_gas,13681311,Michigan Agricultural Commodities (B1619),,424510,Gratiot,MI,43.4093,-84.4783,0.4,28.4,neighbour
+midland_gas,4140611,RIVERSIDE - FRASER 8 CPF,Oil or Gas Facility (On-shore),211130,Bay,MI,43.7968,-84.0203,0.0,28.59,neighbour
+midland_gas,4773311,Bay City Wastewater Treatment Plant (B1486),Wastewater Treatment Facility,221320,Bay,MI,43.6118,-83.8693,0.39,28.72,neighbour
+midland_gas,7382911,GM LLC Saginaw Metal Casting Operations (B1991),"Foundries, non-ferrous",331524,Saginaw,MI,43.4503,-83.920477,27.17,28.77,neighbour
+midland_gas,4171411,MPLX Terminals LLC - Bay City Marquette Terminal (B6037),Petroleum Storage Facility,424710,Bay,MI,43.6169,-83.8658,0.01,29.06,neighbour
+midland_gas,13672011,MyMichigan Health - Saginaw (M1952),"Institutional (school, hospital, prison, etc.)",622110,Saginaw,MI,43.4239,-83.9384,4.45,29.27,neighbour
+oak_grove,13385811,OAK GROVE STEAM ELECTRIC STATION,Electricity Generation via Combustion,221112,Robertson,TX,31.1818,-96.4874,4750.39,0.18,own
+oak_grove,7552911,TWIN OAKS,Electricity Generation via Combustion,221112,Robertson,TX,31.092778,-96.695828,2109.55,22.16,neighbour
+welsh,4164411,WELSH POWER PLANT,Electricity Generation via Combustion,221112,Titus,TX,33.055134,-94.83983,3671.71,0.02,own
+welsh,6493811,PITTSBURG PLANT,Gas Plant,211130,Camp,TX,32.938847,-94.887667,24.43,13.68,neighbour
+welsh,9072111,Mount Pleasant Municipa,Airport,488119,Titus,TX,33.12936,-94.97564,0.57,15.09,neighbour
+welsh,11619611,GREATER MORRIS COUNTY,Airport,488119,Morris,TX,33.1268,-94.6988,0.0,15.37,neighbour
+welsh,14467611,MOUNT PLEASANT,Rail Yard,488210,Titus,TX,33.159441,-94.966074,13.13,16.5,neighbour
+welsh,14752511,PLEASANT OAKS LANDFILL,Landfill,562212,Titus,TX,33.116156,-95.01665,1.56,17.8,neighbour
+welsh,16916111,Daingerfield,Rail Yard,488210,Morris,TX,32.995427,-94.659246,0.26,18.12,neighbour
+welsh,16924111,Lake Monticello,Rail Yard,488210,Titus,TX,33.091947,-95.033686,0.26,18.5,neighbour
+welsh,16926211,TN,Rail Yard,488210,Morris,TX,32.924907,-94.712187,1.45,18.76,neighbour
+welsh,4205611,LONE STAR TUBULAR OPERATIONS,Steel Mill,331210,Morris,TX,32.9159,-94.7181,6.71,19.22,neighbour
+welsh,15528811,HUGHES SPRINGS,Rail Yard,488210,Cass,TX,32.999436,-94.638894,14.78,19.75,neighbour
+welsh,16923611,Lone Star,Rail Yard,488210,Morris,TX,32.95318,-94.663554,0.26,19.99,neighbour
+welsh,9065811,COFFEEVILLE HEADER STATION,Compressor Station,486210,Upshur,TX,32.840522,-94.758142,0.45,25.07,neighbour
+welsh,5746311,GILMER COMPRESSOR STATION,Compressor Station,486210,Upshur,TX,32.825369,-94.915308,18.27,26.51,neighbour
