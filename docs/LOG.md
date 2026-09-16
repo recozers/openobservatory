@@ -738,3 +738,26 @@ and a source URL showed.
     workflow run committed as a change before the check tolerated it.
   - `tests/findings.test.cjs` (4) covers grouping, links, relative paths and escaping; one card test was added.
   - 164 Python and 34 Node tests pass.
+
+## 2026-09-16 (donated session, Claude): RFW-16, qualify the gas-turbine calibration plants (pull request 23)
+
+Branch `rfw/16-turbine-calibration` from main.
+
+- `tools/turbine_calibration_qualify.py`: stack heights from EIA-860 2024 schedule 6 (archive zip, SHA-256 recorded), isolation
+  from the EPA 2020 NEI facility summaries through the Envirofacts API (NOX by state; the plant's own record within 1.5 km,
+  every other facility within 30 km saved to `data/nei_2020_nox_near_calibration_plants.csv`), and the nominal Sentinel-5P
+  overpass hour from longitude (13:30 mean local solar time) mapped to CAMPD local standard hours. Rules: a candidate qualifies
+  with a reported stack under 60 m, other sources within 10 km under 10 % of its own NOx in total and under 5 % singly.
+  `tools/compare_stack_calibration.py` reads the classes and adds the solar window as a third row per plant (24 rows).
+- Numbers: stacks Independence 304.8 m, Limestone 171.6, Martin Lake 137.8, Oak Grove 137.2, Welsh 91.4, Forney 47.2, Midland
+  45.7 (HRSG) and 19.8 (auxiliary boilers), Fort Myers none on file. Isolation within 10 km: coal references 0 to 0.9 %;
+  Forney 12.1 % (largest 6.2 %), Fort Myers 76.6 % (Lee County waste-to-energy, 715 t, 7.5 km), Midland 5.2 % (Dow Midland
+  3.5 %, 1.6 km). Overpass window equals the UTC 19/20 proxy everywhere except Fort Myers (13/14 EST instead of 14/15;
+  factor 1.71 instead of 1.73). Verdicts: Midland qualified low-stack reference (4.70 ± 0.76, 122 days); Forney rejected
+  (isolation); Fort Myers rejected (stack unreported, isolation). Production factor unchanged.
+- Negative result: one qualified low-stack plant with a factor near the coal value (4.70 against 4.41) and a rejected one at
+  0.89 with the same stack height show that stack height does not explain the gas spread; turbines stay uncalibrated as a class.
+  The single-neighbour limit was first set at an absolute 100 short tons, which rejected Midland for a 3.5 % neighbour; it was
+  changed to a relative 5 % because the bias scales with the plant's own emissions.
+- Tests: `tests/test_turbine_calibration_qualify.py` (6): overpass window arithmetic, the qualification rules on synthetic rows,
+  and the committed qualification, comparison, neighbour and metadata files.
